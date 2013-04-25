@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
-# Bookmark&Search
+# PlaceMarkers
+# Create placeMarkers folders if don't exist
+# Date: 25/04/2013
 # Added a different keystroke to delete bookmarks
 # Date: 16/04/2013
 # Version: 2.0: Added accValue in file names to use EPUBReader
@@ -27,6 +29,8 @@ from logHandler import log
 addonHandler.initTranslation()
 
 _basePath = os.path.join(os.path.dirname(__file__), "placeMarkers")
+_searchFolder = os.path.join(_basePath, "search")
+_bookmarksFolder = os.path.join(_basePath, "bookmarks")
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -53,17 +57,35 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except wx.PyDeadObjectError:
 			pass
 
-	def onSpecificSearch(self, evt):
-		searchFolder = os.path.join(_basePath, "search")
+	def createSearchFolder(self):
+		if os.path.isdir(_searchFolder):
+			return
 		try:
-			os.startfile(searchFolder)
+			os.makedirs(_searchFolder)
+		except Exception, e:
+			log.debugWarning("Error creating search folder", exc_info=True)
+			raise e
+
+	def createBookmarksFolder(self):
+		if os.path.isdir(_bookmarksFolder):
+			return
+		try:
+			os.makedirs(_bookmarksFolder)
+		except Exception, e:
+			log.debugWarning("Error creating bookmarks folder", exc_info=True)
+			raise e
+
+	def onSpecificSearch(self, evt):
+		self.createSearchFolder()
+		try:
+			os.startfile(_searchFolder)
 		except WindowsError:
 			pass
 
 	def onBookmarks(self, evt):
-		bookmarksFolder = os.path.join(_basePath, "bookmarks")
+		self.createBookmarksFolder()
 		try:
-			os.startfile(bookmarksFolder)
+			os.startfile(_bookmarksFolder)
 		except WindowsError:
 			pass
 
@@ -142,20 +164,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.runScriptModalDialog(d, callback)
 
 	def saveSpecificFindText(self, text):
+		self.createSearchFolder()
 		if not text:
 			try:
 				os.remove(self.getFileSearch())
 			except WindowsError:
 				log.debugWarning("Error deleting specific search file", exc_info=True)
-
 			return
 		try:
 			f = open (self.getFileSearch(), "w")
 			f.write(text.encode("mbcs"))
 			f.close
-		except:
+		except Exception, e:
 			log.debugWarning("Error saving specific search", exc_info=True)
-
+			raise e
 
 	def script_specificSave(self,gesture): 
 		obj=api.getFocusObject()
@@ -216,6 +238,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._states = []
 
 	def getPickle(self):
+		self.createBookmarksFolder()
 		self._pickle = self.getFile("bookmarks", ".pickle")
 
 	def script_saveBookmark(self, gesture):
@@ -243,10 +266,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			cPickle.dump(self._states, file(fileName, "wb"))
 			ui.message(_("Saved position: character %d") %count)
-		except:
+		except Exception, e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
-
 			ui.message(_("Cannot save bookmark"))
+			raise e
 	script_saveBookmark.__doc__ = _("Saves the current position as a bookmark. Pressed two times, deletes the bookmark corresponding to the current position.")
 
 	def script_deleteBookmark(self, gesture):
@@ -289,7 +312,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			except WindowsError:
 				pass
 		log.debugWarning("Error saving bookmarks", exc_info=True)
-
 		ui.message(_("Cannot delete bookmark"))
 	script_deleteBookmark.__doc__ = _("Deletes the current bookmark.")
 
