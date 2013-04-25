@@ -1,0 +1,32 @@
+1. Utilidad
+
+Sirve para guardar y buscar textos específicos y marcas en páginas web, o en documentos mostrados en el modo navegación de NVDA.
+El complemento guarda las búsquedas y marcas en ficheros de texto y con extensión pickle.
+El nombre de estos archivos se basa en el título del documento actual.
+Al ejecutar el comando de búsqueda específica, NVDA abrirá un diálogo que mostrará el texto correspondiente al documento actual, si se ha guardado algún texto para este documento.
+
+2. Comandos
+
+
+2.1. Teclado
+
+- control+shiftNVDA+s: Abre un diálogo para guardar un texto de búsqueda asociado al documento actual. Por defecto muestra el texto guardado para este documento. Si se borra el texto que aparece en el diálogo, se eliminará el correspondiente fichero de búsqueda.
+
+- control+shift+NVDA+f: Si existe un fichero de búsqueda para el documento actual, abre un diálogo que mostrará el texto guardado. Al aceptar, NVDA buscará el texto que se indica en el cuadro de edición. Si no se encuentra un fichero para el documento, NVDA avisa con un mensaje sin abrir el diálogo de búsqueda específica.
+
+
+- control+shift+NVDA+k: Guarda como una marca la posición actual. Si se pulsa dos veces, borra la marca correspondiente a esta posición.
+
+- control+shift+k: Se mueve a la marca siguiente.
+
+- shift+NVDA+k: Se mueve a la marca anterior.
+
+2.2. Submenú Búsqueda específica (NVDA+N
+
+Es posible abrir las correspondientes carpetas mediante estos comandos:
+
+- Carpeta de búsqueda específica.
+
+- Carpeta de marcas.
+
+- Abrir carpeta de información.

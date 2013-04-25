@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Specific Search 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-18 20:20+0100\n"
+"PO-Revision-Date: 2012-07-19 12:33-0000\n"
+"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"Language-Team: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: C:\\Users\\User\\AppData\\Roaming\\nvda\\addons\\Bookmark&Search\\globalPlugins\n"
+"X-Poedit-SearchPath-1: C:\\Users\\User\\AppData\\Roaming\\nvda\\addons\\SpecificSearch\\globalPlugins\n"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:36
+msgid "Speci&fic search"
+msgstr "Busca especí&fica"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:36
+msgid "Bookmarks and Search menu"
+msgstr "´Menu Busca e Marcadores"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:37
+msgid "&Specific search folder"
+msgstr "Pasta de bu&sca específica"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:37
+msgid "Open specific search folder"
+msgstr "Abrir pasta de busca específica "
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:39
+msgid "&Bookmarks folder"
+msgstr "Pasta de &marcadores"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:39
+msgid "Open bookmarks folder"
+msgstr "Abrir pasta de marcadores"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:41
+msgid "Open &documentation folder"
+msgstr "Abrir pasta de &informação"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:41
+msgid "Open documentation for current language"
+msgstr "Abrir pasta de informação para o idioma atual."
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:82
+msgid "Documentation folder not found for your language"
+msgstr "Pasta de informação não encontrada, para o teu idioma."
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:114
+msgid "Type the text you wish to save, or delete text if you want to remove the previous saved search"
+msgstr "Digita o texto que queres guardar ou apaga a busca anteriormente feita."
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:114
+msgid "Save text for specific search"
+msgstr "Guardar texto de busca específica"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:138
+msgid "Save a text string for a specific search"
+msgstr "Guarda um fragmento de texto para uma busca específica."
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:158
+#, python-format
+msgid "text \"%s\" not found"
+msgstr "Texto %s não encontrado"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:158
+msgid "Find Error"
+msgstr "Erro de busca"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:165
+msgid "File for specific search not found"
+msgstr "Ficheiro para busca específica não encontrado"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:167
+msgid "Type the text you wish to find"
+msgstr "Digita o texto que desejas encontrar: "
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:167
+msgid "Specific search"
+msgstr "Busca específica"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:180
+msgid "find a text string from the current cursor position for a specific page"
+msgstr "Busca um fragmento de texto, a partir da posição actual do cursor, para uma página específica"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:210
+msgid "Bookmark can not be saved"
+msgstr "O marcador não se pode guardar"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:215
+msgid "This position was already saved"
+msgstr "Esta posição já estava guardada."
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:218
+msgid "Bookmark deleted"
+msgstr "Marcador apagado"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:221
+msgid "No bookmarks"
+msgstr "Não há marcadores"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:228
+#, python-format
+msgid "Saved position: character %d"
+msgstr "Posição guardada: caracter %d"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:231
+msgid "Saves the current position as a bookmark. Pressed two times, deletes the bookmark corresponding to the current position"
+msgstr "Guarda a posição actual como um marcador. Se se pressiona duas vezes, apaga-o."
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:243
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:274
+msgid "No bookmarks found"
+msgstr "Marcadores não encontrados"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:249
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:280
+msgid "Can not find bookmark"
+msgstr "Não é possível encontrar o marcador"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:259
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:292
+#, python-format
+msgid "Position: character %d"
+msgstr "Posição: caracter %d"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:261
+msgid "Next bookmark not found"
+msgstr "Marcador seguinte não encontrado"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:263
+msgid "Moves to the next bookmark"
+msgstr "Move-se para o marcador seguinte"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:294
+msgid "Previous bookmark not found"
+msgstr "Marcador anterior não encontrado"
+
+#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:296
+msgid "Moves to the previousbookmark"
+msgstr "Move-se para o marcador anterior"
+
+#~ msgid "Saved %d"
+#~ msgstr "Guardado %d"
+
