@@ -1,3 +1,4 @@
+﻿# -*- Encoding: UTF-8 -*-
 # Build customizations
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
@@ -15,7 +16,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on installation and add-on information
 	"addon-description" : _("Add-on for setting place markers on specific virtual documents"),
 	# version
-	"addon-version" : "2.0",
+	"addon-version" : "2.0-dev",
 	# Author(s)
 	"addon-author" : "Noelia Ruiz Martinez <nrm1977@gmail.com>",
 	# URL for the add-on documentation support
