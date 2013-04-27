@@ -15,6 +15,9 @@ import globalPluginHandler
 import api
 import re
 import os
+import shutil
+import config
+import globalVars
 import languageHandler
 import textInfos
 import controlTypes
@@ -31,6 +34,7 @@ addonHandler.initTranslation()
 _basePath = os.path.join(os.path.dirname(__file__), "placeMarkers")
 _searchFolder = os.path.join(_basePath, "search")
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
+_configPath = globalVars.appArgs.configPath
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -44,6 +48,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSpecificSearch, self.searchItem)
 		self.bookmarksItem = self.BSMenu.Append(wx.ID_ANY, _("&Bookmarks folder"), _("Open bookmarks folder"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onBookmarks, self.bookmarksItem)
+		self.copyItem = self.BSMenu.Append(wx.ID_ANY, _("&Copy placeMarkers folder..."), _("Backup of place markers"))
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onCopy, self.copyItem)
+		self.restoreItem = self.BSMenu.Append(wx.ID_ANY, _("R&estore place markers..."), _("Restore previously saved place markers"))
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onRestore, self.restoreItem)
 		self.aboutItem = self.BSMenu.Append(wx.ID_ANY, _("Open &documentation"), _("Open documentation for current language"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onAbout, self.aboutItem)
 
@@ -88,6 +96,38 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			os.startfile(_bookmarksFolder)
 		except WindowsError:
 			pass
+
+	def onCopy(self, evt):
+		if not os.path.isdir(_basePath):
+			return
+		config.initConfigPath()
+		dlg = wx.DirDialog(gui.mainFrame, _("Select a folder for copying your saved place markers"), _configPath, wx.DD_DEFAULT_STYLE)
+		gui.mainFrame.prePopup()
+		result = dlg.ShowModal()
+		gui.mainFrame.postPopup()
+		if result == wx.ID_OK:
+			copyPath = os.path.join(dlg.GetPath(), "placeMarkersBackup")
+			try:
+				shutil.rmtree(copyPath, ignore_errors=True)
+				shutil.copytree(_basePath, copyPath)
+			except Exception, e:
+				wx.CallAfter(gui.messageBox,_("Folder not copied"), _("Copy Error"), wx.OK|wx.ICON_ERROR)
+				raise e
+
+	def onRestore(self, evt):
+		placeMarkersPath = os.path.join(_configPath, "placeMarkersBackup")
+		dlg = wx.DirDialog(gui.mainFrame, _("Select the place markers folder you wish to restore"), placeMarkersPath, wx.DD_DIR_MUST_EXIST | wx.DD_DEFAULT_STYLE)
+		gui.mainFrame.prePopup()
+		result = dlg.ShowModal()
+		gui.mainFrame.postPopup()
+		if result == wx.ID_OK:
+			placeMarkersPath = dlg.GetPath()
+			try:
+				shutil.rmtree(_basePath, ignore_errors=True)
+				shutil.copytree(placeMarkersPath, _basePath)
+			except Exception, e:
+				wx.CallAfter(gui.messageBox,_("Folder not copied"), _("Copy Error"), wx.OK|wx.ICON_ERROR)
+				raise e
 
 	def getDocFolder(self):
 		langs = [languageHandler.getLanguage(), "en"]
