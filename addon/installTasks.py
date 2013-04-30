@@ -16,7 +16,10 @@ def onInstall():
 		return
 	basePath = os.path.dirname(__file__)
 	savePath = os.path.join(basePath, "globalPlugins", "placeMarkers")
-	if gui.messageBox(_("Your configuration folder for NVDA contains files that seem to be derivated from a previous version of this add-on. Do you want to update it?"),
+	if gui.messageBox(
+	# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+	_("Your configuration folder for NVDA contains files that seem to be derivated from a previous version of this add-on. Do you want to update it?"),
+	# Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 	_("Install or update add-on"),
 	wx.YES|wx.NO|wx.ICON_WARNING)==wx.YES:
 		try:
