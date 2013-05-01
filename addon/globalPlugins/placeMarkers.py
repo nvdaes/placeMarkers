@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
 # PlaceMarkers
+# Added support for cyrillic characters
+# Date: 1/05/2013
 # Create placeMarkers folders if don't exist
 # Date: 25/04/2013
 # Added a different keystroke to delete bookmarks
@@ -31,7 +33,7 @@ from logHandler import log
 
 addonHandler.initTranslation()
 
-_basePath = os.path.join(os.path.dirname(__file__), "placeMarkers")
+_basePath = unicode(os.path.join(os.path.dirname(__file__), "placeMarkers"))
 _searchFolder = os.path.join(_basePath, "search")
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
@@ -201,6 +203,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 
 	def standarFileName(self, fileName):
+		fileName.encode("mbcs")
 		notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
 		allowed = re.sub(notAllowed, "", unicode(fileName))
 		return allowed
