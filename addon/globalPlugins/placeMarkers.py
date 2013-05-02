@@ -47,7 +47,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.BSMenu = wx.Menu()
 		self.mainItem = self.menu.AppendSubMenu(self.BSMenu,
 		# Translators: the name of addon submenu.
-		_("Place &markers"),
+		_("P&lace markers"),
 		# Translators: the tooltip text for addon submenu.
 		_("Bookmarks and Search menu"))
 		self.searchItem = self.BSMenu.Append(wx.ID_ANY,
