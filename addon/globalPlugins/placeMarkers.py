@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
 # PlaceMarkers
+# Limited length of file names
+# Date: 04/05/2013
 # Added support for cyrillic characters
 # Date: 1/05/2013
 # Create placeMarkers folders if don't exist
@@ -211,7 +213,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def getFile(self, folder, ext=""):
 		obj=api.getForegroundObject()
 		file = obj.name
-		nameToAdd = ""
 		obj = api.getFocusObject()
 		obj = obj.treeInterceptor.rootNVDAObject
 		childID = obj.IAccessibleChildID
@@ -222,8 +223,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		file = file.split("\\")[-1]
 		file += nameToAdd
 		file = self.standarFileName(file)
+		folderPath = os.path.join(_basePath, folder)
+		maxLenFileName = 251-len(folderPath)
+		if maxLenFileName <= 0:
+			return ""
+		file = file[:maxLenFileName]
 		file = file+ext
-		path = os.path.join(_basePath, folder, file)
+		path = os.path.join(folderPath, file)
 		return path
 
 	def getFileSearch(self):
