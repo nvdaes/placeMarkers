@@ -387,7 +387,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Cannot save bookmark"))
 			raise e
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_saveBookmark.__doc__ = _("Saves the current position as a bookmark. Pressed two times, deletes the bookmark corresponding to the current position.")
+	script_saveBookmark.__doc__ = _("Saves the current position as a bookmark.")
 
 	def script_deleteBookmark(self, gesture):
 		obj = api.getFocusObject()
