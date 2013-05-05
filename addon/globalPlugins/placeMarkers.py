@@ -224,7 +224,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		file += nameToAdd
 		file = self.standarFileName(file)
 		folderPath = os.path.join(_basePath, folder)
-		maxLenFileName = 251-len(folderPath)
+		maxLenFileName = 232-len(folderPath)
 		if maxLenFileName <= 0:
 			return ""
 		file = file[:maxLenFileName]
