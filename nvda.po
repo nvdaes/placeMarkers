@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'placeMarkers' '2.0-dev'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-05-15 20:02+0200\n"
+"PO-Revision-Date: 2013-05-15 20:07+0100\n"
+"Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: the name of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:52
+msgid "P&lace markers"
+msgstr ""
+
+#. Translators: the tooltip text for addon submenu.
+#: addon\globalPlugins\placeMarkers.py:54
+msgid "Bookmarks and Search menu"
+msgstr ""
+
+#. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:57
+msgid "&Specific search folder"
+msgstr ""
+
+#. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:59
+msgid "Open specific search folder"
+msgstr ""
+
+#. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:63
+msgid "&Bookmarks folder"
+msgstr ""
+
+#. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:65
+msgid "Open bookmarks folder"
+msgstr ""
+
+#. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:69
+msgid "&Copy placeMarkers folder..."
+msgstr ""
+
+#. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:71
+msgid "Backup of place markers"
+msgstr ""
+
+#. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:75
+msgid "R&estore place markers..."
+msgstr ""
+
+#. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:77
+msgid "Restore previously saved place markers"
+msgstr ""
+
+#. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:81
+msgid "Open &documentation"
+msgstr ""
+
+#. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers.py:83
+msgid "Open documentation for current language"
+msgstr ""
+
+#. Translators: label of a dialog presented for copying place markers.
+#: addon\globalPlugins\placeMarkers.py:134
+msgid "Select a folder for copying your saved place markers"
+msgstr ""
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+#: addon\globalPlugins\placeMarkers.py:147
+#: addon\globalPlugins\placeMarkers.py:170
+msgid "Folder not copied"
+msgstr ""
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+#: addon\globalPlugins\placeMarkers.py:149
+#: addon\globalPlugins\placeMarkers.py:172
+msgid "Copy Error"
+msgstr ""
+
+#. Translators: label of a dialog presented for restoring place markers.
+#: addon\globalPlugins\placeMarkers.py:157
+msgid "Select the place markers folder you wish to restore"
+msgstr ""
+
+#. Translators: label of a dialog presented to save or delete a string for specific search.
+#: addon\globalPlugins\placeMarkers.py:250
+msgid "Type the text you wish to save, or delete text if you want to remove the previous saved search"
+msgstr ""
+
+#. Translators: title of a dialog presented to save a string for specific search.
+#: addon\globalPlugins\placeMarkers.py:252
+msgid "Save text for specific search"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:283
+msgid "Saves a text string for a specific search."
+msgstr ""
+
+#. Translators: label of error dialog.
+#: addon\globalPlugins\placeMarkers.py:305
+#, python-format
+msgid "text \"%s\" not found"
+msgstr ""
+
+#. Translators: title of error dialog.
+#: addon\globalPlugins\placeMarkers.py:307
+msgid "Find Error"
+msgstr ""
+
+#. Translators: message presented when there is not file for specific search.
+#: addon\globalPlugins\placeMarkers.py:317
+msgid "File for specific search not found"
+msgstr ""
+
+#. Translators: label of a dialog presented when searching a saved string of text for the current document.
+#: addon\globalPlugins\placeMarkers.py:321
+msgid "Type the text you wish to find"
+msgstr ""
+
+#. Translators: title of a dialog presented when searching a saved string of text for the current document.
+#: addon\globalPlugins\placeMarkers.py:323
+msgid "Specific search"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:338
+msgid "finds a text string from the current cursor position for a specific document."
+msgstr ""
+
+#. Translators: message presented when a bookmark cannot be saved.
+#: addon\globalPlugins\placeMarkers.py:367
+msgid "Bookmark can not be saved"
+msgstr ""
+
+#. Translators: message presented when the current position was previously saved as a bookmark.
+#: addon\globalPlugins\placeMarkers.py:374
+msgid "This position was already saved"
+msgstr ""
+
+#. Translators: message presented when a position is saved as a bookmark.
+#: addon\globalPlugins\placeMarkers.py:382
+#, python-format
+msgid "Saved position: character %d"
+msgstr ""
+
+#. Translators: message presented when a bookmark cannot be saved.
+#: addon\globalPlugins\placeMarkers.py:387
+msgid "Cannot save bookmark"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:390
+msgid "Saves the current position as a bookmark."
+msgstr ""
+
+#. Translators: message presented when the current document doesn't contain bookmarks.
+#: addon\globalPlugins\placeMarkers.py:403
+#: addon\globalPlugins\placeMarkers.py:435
+msgid "No bookmarks"
+msgstr ""
+
+#: addon\globalPlugins\placeMarkers.py:410
+msgid "Bookmark can not be deleted"
+msgstr ""
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+#: addon\globalPlugins\placeMarkers.py:417
+msgid "No bookmark selected"
+msgstr ""
+
+#. Translators: message presented when a bookmark is deleted.
+#: addon\globalPlugins\placeMarkers.py:426
+msgid "Bookmark deleted"
+msgstr ""
+
+#. Translators: message presented when cannot delete a bookmark.
+#: addon\globalPlugins\placeMarkers.py:442
+msgid "Cannot delete bookmark"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:444
+msgid "Deletes the current bookmark."
+msgstr ""
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+#: addon\globalPlugins\placeMarkers.py:457
+#: addon\globalPlugins\placeMarkers.py:496
+msgid "No bookmarks found"
+msgstr ""
+
+#. Translators: message presented when cannot find any bookmark.
+#: addon\globalPlugins\placeMarkers.py:465
+#: addon\globalPlugins\placeMarkers.py:503
+msgid "Can not find bookmark"
+msgstr ""
+
+#. Translators: message presented when a bookmark is selected.
+#: addon\globalPlugins\placeMarkers.py:477
+#: addon\globalPlugins\placeMarkers.py:517
+#, python-format
+msgid "Position: character %d"
+msgstr ""
+
+#. Translators: message presented when the next bookmark is not found.
+#: addon\globalPlugins\placeMarkers.py:481
+msgid "Next bookmark not found"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:483
+msgid "Moves to the next bookmark."
+msgstr ""
+
+#. Translators: message presented when the previous bookmark is not found.
+#: addon\globalPlugins\placeMarkers.py:521
+msgid "Previous bookmark not found"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:523
+msgid "Moves to the previousbookmark."
+msgstr ""
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+#: addon\globalPlugins\placeMarkers.py:533
+msgid "Cannot copy file name for place markers"
+msgstr ""
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+#: addon\globalPlugins\placeMarkers.py:537
+msgid "Place markers file name copied to clipboard"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers.py:539
+msgid "Copies to the clipboard the name of current file for place markers."
+msgstr ""
+
+#. Add-on description
+#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:14
+msgid "Place markers"
+msgstr ""
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on installation and add-on information
+#: buildVars.py:17
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr ""
+
