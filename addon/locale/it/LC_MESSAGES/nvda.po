@@ -1,20 +1,29 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers-2.0-dev\n"
+"Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-05-06 20:08+0200\n"
-"PO-Revision-Date: 2013-05-06 23:46+0100\n"
+"POT-Creation-Date: 2013-06-01 21:10+0200\n"
+"PO-Revision-Date: 2013-06-01 21:17+0100\n"
 "Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
-"Language-Team: Translators\n"
+"Language-Team: Chris <llajta2012@hotmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: it_IT\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+#: addon\installTasks.py:21
+msgid "Your configuration folder for NVDA contains files that seem to be derivated from a previous version of this add-on. Do you want to update it?"
+msgstr "Nella cartella di configurazione di NVDA sono presenti alcuni file provenienti da una precedente versione di questo componente aggiuntivo. Vuoi aggiornare?"
+
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+#: addon\installTasks.py:23
+msgid "Install or update add-on"
+msgstr "Installa o Aggiorna"
 
 #. Translators: the name of addon submenu.
 #: addon\globalPlugins\placeMarkers.py:52
@@ -24,12 +33,12 @@ msgstr "P&lace markers"
 #. Translators: the tooltip text for addon submenu.
 #: addon\globalPlugins\placeMarkers.py:54
 msgid "Bookmarks and Search menu"
-msgstr "Bookmarks and Search menu"
+msgstr "Menu Ricerca e Segnaposti"
 
 #. Translators: the name for an item of addon submenu.
 #: addon\globalPlugins\placeMarkers.py:57
 msgid "&Specific search folder"
-msgstr "Cartella ricerca specifica"
+msgstr "Cartella ricerca &specifica"
 
 #. Translators: the tooltip text for an item of addon submenu.
 #: addon\globalPlugins\placeMarkers.py:59
@@ -237,7 +246,7 @@ msgstr "Nessun Segnaposto precedente;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #: addon\globalPlugins\placeMarkers.py:523
-msgid "Moves to the previousbookmark."
+msgid "Moves to the previous bookmark."
 msgstr "Vai al Segnaposto precedente;"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
@@ -267,7 +276,22 @@ msgstr "PlaceMarkers"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Componente aggiuntivo per impostare Segnaposti in pagine Web e documenti virtuali."
 
+#~ msgid "Open documentation for %s"
+#~ msgstr "Guida all'uso per %s"
+
+#, fuzzy
+#~ msgid "Speci&fic search"
+#~ msgstr "Ricerca Specifica;"
+
+#, fuzzy
+#~ msgid "Documentation folder not found for your language"
+#~ msgstr "Apre la documentazione"
+
+#, fuzzy
 #~ msgid ""
 #~ "Saves the current position as a bookmark. Pressed two times, deletes the "
-#~ "bookmark corresponding to the current position."
+#~ "bookmark corresponding to the current position"
 #~ msgstr "Salva la posizione corrente come Segnaposto."
+
+#~ msgid "Saved %d"
+#~ msgstr "Guardado %d"

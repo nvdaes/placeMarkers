@@ -520,7 +520,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented when the previous bookmark is not found.
 		_("Previous bookmark not found"))
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_selectPreviousBookmark.__doc__ = _("Moves to the previousbookmark.")
+	script_selectPreviousBookmark.__doc__ = _("Moves to the previous bookmark.")
 
 	def script_copyCurrentBookmarksFile(self, gesture):
 		try:

@@ -26,6 +26,6 @@ Using Place markers submenu, under Preferences menu, you can access to
 *	Copy placeMarkers folder; you can save a copy of the bookmarks folder.
 *	Restore placeMarkers; you can restore your bookmarks from a placeMarkers folder previously saved.
 *	Documentation file, in your selected language if available, or English by default.
-### Note: ###
-The bookmark position is based on the number of characters; in pages with a dynamic content is better to use the specific search and not the bookmarks to save a more precise position.
+
+Note: The bookmark position is based on the number of characters; in pages with a dynamic content is better to use the specific search, and not the bookmarks to save a precise position.
 
