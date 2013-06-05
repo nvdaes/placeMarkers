@@ -56,13 +56,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: the name for an item of addon submenu.
 		_("&Specific search folder"),
 		# Translators: the tooltip text for an item of addon submenu.
-		_("Open specific search folder"))
+		_("Opens the specific search folder"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSpecificSearch, self.searchItem)
 		self.bookmarksItem = self.BSMenu.Append(wx.ID_ANY,
 		# Translators: the name for an item of addon submenu.
 		_("&Bookmarks folder"),
 		# Translators: the tooltip text for an item of addon submenu.
-		_("Open bookmarks folder"))
+		_("Opens the bookmarks folder"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onBookmarks, self.bookmarksItem)
 		self.copyItem = self.BSMenu.Append(wx.ID_ANY,
 		# Translators: the name for an item of addon submenu.
@@ -247,7 +247,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._lastSpecificFindText = ""
 		d = wx.TextEntryDialog(gui.mainFrame,
 		# Translators: label of a dialog presented to save or delete a string for specific search.
-		_("Type the text you wish to save, or delete text if you want to remove the previous saved search"),
+		_("Type the text you wish to save, or delete any text if you want to remove it from the previous saved search"),
 		# Translators: title of a dialog presented to save a string for specific search.
 		_("Save text for specific search"),
 		defaultValue=self._lastSpecificFindText)
@@ -364,7 +364,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except (NotImplementedError, RuntimeError):
 			ui.message(
 			# Translators: message presented when a bookmark cannot be saved.
-			_("Bookmark can not be saved"))
+			_("Bookmark cannot be saved"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
@@ -379,7 +379,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			cPickle.dump(self._states, file(fileName, "wb"))
 			ui.message(
 			# Translators: message presented when a position is saved as a bookmark.
-			_("Saved position: character %d") %count)
+			_("Saved position at character %d") %count)
 		except Exception, e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
 			ui.message(
@@ -407,7 +407,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			end = obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
-			ui.message(_("Bookmark can not be deleted"))
+			ui.message(_("Bookmark cannot be deleted"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
@@ -462,7 +462,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except (NotImplementedError, RuntimeError):
 			ui.message(
 			# Translators: message presented when cannot find any bookmark.
-			_("Can not find bookmark"))
+			_("Cannot find any bookmark"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
@@ -500,7 +500,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			end = obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
 		# Translators: message presented when cannot find any bookmark.
-			ui.message(_("Can not find bookmark"))
+			ui.message(_("Cannot find any bookmark"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
@@ -536,7 +536,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented when file name for place markers is copied to clipboard.
 		_("Place markers file name copied to clipboard"))
 			# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_copyCurrentBookmarksFile.__doc__ = _("Copies to the clipboard the name of current file for place markers.")
+	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
 
 	__gestures = {
 		"kb:control+shift+NVDA+s": "specificSave",
