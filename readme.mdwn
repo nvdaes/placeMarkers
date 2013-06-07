@@ -1,8 +1,9 @@
-﻿[[!meta title="placeMarkers 1.0"]]
+﻿[[!meta title="placeMarkers"]]
 
-# placeMarkers 1.0 #
+* Authors: Noelia, Chris.
+* download [version 1.0 Beta][1]
 
-It is to be used for saving and searching specific text strings or bookmarks, on web pages or documents in NVDA's brouse mode. 
+This addon is used for saving and searching specific text strings or bookmarks, on web pages or documents in NVDA's browse mode. 
 The plugin saves the specified strings and bookmarks to text and pickle files. The name of these files is based on the title and URL of the current document.
 
 This addon is based on SpecificSearch and Bookmark&Search, developed by the same author. You should uninstall them to use this one, since they have common keystrokes and features.
@@ -29,3 +30,7 @@ Using Place markers submenu, under Preferences menu, you can access to
 
 Note: The bookmark position is based on the number of characters; in pages with a dynamic content is better to use the specific search, and not the bookmarks to save a precise position.
 
+## Changes for 1.0 ##
+* Initial version.
+
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
