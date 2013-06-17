@@ -8,220 +8,215 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-06 20:16+0100\n"
-"Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: gl\n"
+"PO-Revision-Date: 2013-06-09 10:30+0900\n"
+"Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
+"Language-Team: Japanese <nvdajp@nvda.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"O cartafol de configuración para NVDA contén ficheiros que semellan "
-"derivarse dende unha versión anterior deste complemento. ¿queres actualizalo?"
+"NVDA設定フォルダに、このアドオンの古いバージョンで保存された情報が見つかりま"
+"した。更新しますか？"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Instalar ou actualizar complemento"
+msgstr "アドオンのインストールまたは更新"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "P&lace markers"
+msgstr "プレイスマーカー"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Menú Marcas e Buscar"
+msgstr "ブックマークと検索のメニュー"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "Cartafol Busca &Específica"
+msgstr "検索保存フォルダー"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Abre o cartafol busca específica"
+msgstr "検索保存フォルダーを開く"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "Cartafol &Marcas"
+msgstr "ブックマークフォルダー"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Abre o cartafol marcas"
+msgstr "ブックマークフォルダーを開く"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Copiar cartafol marcas..."
+msgstr "マーカー情報のバックアップ..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Copia de seguridade de marcas"
+msgstr "マーカー情報をバックアップします"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "R&estaurar marcas..."
+msgstr "マーカー情報の復元..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Restaurar marcas gardadas anteriormente"
+msgstr "マーカー情報をバックアップから復元します"
 
 #. Translators: the name for an item of addon submenu.
 msgid "Open &documentation"
-msgstr "Abrir &documentación"
+msgstr "説明を開く"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Open documentation for current language"
-msgstr "Abrir documentación para a lingua actual"
+msgstr "現在の言語で説明を開きます"
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "Seleccionar un cartafol para copiar as marcas gardadas"
+msgstr "マーカー情報のバックアップを作るフォルダーを選択"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "Cartafol non copiado"
+msgstr "フォルダーのコピー失敗"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "Erro da Copia"
+msgstr "コピーの失敗"
 
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
-msgstr "Selecciona o cartafol de marcas que desexas restaurar"
+msgstr "マーカー情報の復元に使うバックアップのフォルダーを指定"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
 "from the previous saved search"
-msgstr ""
-"Escribe o texto que desexes gardar, ou borra o texto se queres eliminar a "
-"busca anterior gardada"
+msgstr "保存するテキストを入力、または検索保存を消去したいときはテキストを削除"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
-msgstr "Gardar texto para a busca específica"
+msgstr "テキスト検索の保存"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
-msgstr "Garda unha secuencia de texto para unha busca específica."
+msgstr "テキストの検索を保存します"
 
 #. Translators: label of error dialog.
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "texto \"%s\" non atopado"
+msgstr "テキスト %s が見つかりません"
 
 #. Translators: title of error dialog.
 msgid "Find Error"
-msgstr "Erro Atopado"
+msgstr "検索の失敗"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "Non se atopou o ficheiro para a busca específica"
+msgstr "検索保存の情報が見つかりません"
 
 #. Translators: label of a dialog presented when searching a saved string of text for the current document.
 msgid "Type the text you wish to find"
-msgstr "Escribe o texto que desexes buscar"
+msgstr "検索したいテキストを入力"
 
 #. Translators: title of a dialog presented when searching a saved string of text for the current document.
 msgid "Specific search"
-msgstr "Busca específica"
+msgstr "検索保存"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr ""
-"atopa unha secuencia de texto dende a posición actual do cursor dun "
-"documento específico."
+msgstr "ドキュメントの現在のカーソル位置からテキストを検索"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "A marca non poido ser gardada"
+msgstr "ブックマークを保存できません"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "Esta posición xa foi gardada"
+msgstr "この位置は保存済みです"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "Posición gardada: carácter %d"
+msgstr "文字数 %s の位置を保存しました"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Non se poido gardar a marca"
+msgstr "ブックマークを保存できません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Garda a posición actual como unha marca."
+msgstr "現在位置をブックマークとして保存します"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "Non hai marcas"
+msgstr "ブックマークなし"
 
 msgid "Bookmark cannot be deleted"
-msgstr "A marca non pode ser eliminada"
+msgstr "ブックマークを削除できません"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "Non hai marca seleccionada"
+msgstr "ブックマークが選択されていません"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Marca eliminada"
+msgstr "ブックマークを削除しました"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Non se pode eliminar a marca"
+msgstr "ブックマークが削除できません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Elimina a marca actual."
+msgstr "現在のブックマークを削除"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Non se atoparon marcas"
+msgstr "ブックマークが見つかりません"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "Non se pode atopar a marca"
+msgstr "ブックマークが見つかりません"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "Posición: carácter %d"
+msgstr "文字数 % の位置"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Non se atopou a seguinte marca"
+msgstr "次のブックマークがありません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Móvese á seguinte marca."
+msgstr "次のブックマークに移動"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "Non se atopou a marca anterior"
+msgstr "前のブックマークがありません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Móvese á  marca anterior."
+msgstr "前のブックマークに移動"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Non se puido copiar o nome de ficheiro para marcas"
+msgstr "プレイスマーカーの名前をコピーできません"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Nome do ficheiro de marcas copiado ó portapapeis"
+msgstr "プレイスマーカーの名前をクリップボードにコピー"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Copia ó portapapeis o nome do ficheiro actual para marcas."
+msgstr "現在のプレイスマーカーを保存するファイル名をクリップボードにコピー"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
@@ -231,7 +226,4 @@ msgstr "Place markers"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Complemento para fixar marcas en documentos virtuais específicos"
-
-#~ msgid "Open documentation for %s"
-#~ msgstr "Abrir documentación para %s"
+msgstr "ドキュメントにプレイスマーカーを設定できます"

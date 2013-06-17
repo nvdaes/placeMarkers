@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-06 20:16+0100\n"
-"Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
+"PO-Revision-Date: 2013-06-12 03:38-0800\n"
+"Last-Translator: Joseph Lee <joseph.lee22590@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: gl\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,216 +22,211 @@ msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"O cartafol de configuración para NVDA contén ficheiros que semellan "
-"derivarse dende unha versión anterior deste complemento. ¿queres actualizalo?"
+"사용자 폴더에 이전 추가 기능 버전에서 사용하던 파일들이 존재합니다. 업데이트"
+"하시겠습니까?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Instalar ou actualizar complemento"
+msgstr "추가 기능 설치 및 업데이트"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "P&lace markers"
+msgstr "북마크 (&L)"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Menú Marcas e Buscar"
+msgstr "북마크 검색 메뉴입니다"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "Cartafol Busca &Específica"
+msgstr "검색 항목 폴더 열기 (&S)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Abre o cartafol busca específica"
+msgstr "검색 항목이 저장된 폴더를 엽니다"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "Cartafol &Marcas"
+msgstr "북마크 폴더 열기 (&B)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Abre o cartafol marcas"
+msgstr "북마크 폴더를 엽니다"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Copiar cartafol marcas..."
+msgstr "북마크 폴더 복사... (&C)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Copia de seguridade de marcas"
+msgstr "북마크 백업을 저장합니다"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "R&estaurar marcas..."
+msgstr "북마크 복원... (&E)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Restaurar marcas gardadas anteriormente"
+msgstr "이전에 저장된 북마크를 불러옵니다"
 
 #. Translators: the name for an item of addon submenu.
 msgid "Open &documentation"
-msgstr "Abrir &documentación"
+msgstr "도움말 보기 (&D)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Open documentation for current language"
-msgstr "Abrir documentación para a lingua actual"
+msgstr "도움말을 엽니다"
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "Seleccionar un cartafol para copiar as marcas gardadas"
+msgstr "북마크를 저장할 폴더를 지정하십시오"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "Cartafol non copiado"
+msgstr "폴더 복사에 실패하였습니다"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "Erro da Copia"
+msgstr "복사 오류"
 
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
-msgstr "Selecciona o cartafol de marcas que desexas restaurar"
+msgstr "복원하고자 하는 북마크 폴더를 지정해 주십시오"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
 "from the previous saved search"
 msgstr ""
-"Escribe o texto que desexes gardar, ou borra o texto se queres eliminar a "
-"busca anterior gardada"
+"저장하고자 하는 텍스트를 입력하시거나 북마크에서 삭제하고자 하는 텍스트를 선"
+"택하십시오"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
-msgstr "Gardar texto para a busca específica"
+msgstr "특정 문자 검색 저장"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
-msgstr "Garda unha secuencia de texto para unha busca específica."
+msgstr "검색 텍스트를 저장합니다"
 
 #. Translators: label of error dialog.
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "texto \"%s\" non atopado"
+msgstr "\"%s\" 문자열을 찾을 수 없습니다"
 
 #. Translators: title of error dialog.
 msgid "Find Error"
-msgstr "Erro Atopado"
+msgstr "검색 오류"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "Non se atopou o ficheiro para a busca específica"
+msgstr "특정 검색 파일을 찾을 수 없습니다"
 
 #. Translators: label of a dialog presented when searching a saved string of text for the current document.
 msgid "Type the text you wish to find"
-msgstr "Escribe o texto que desexes buscar"
+msgstr "텍스트 검색"
 
 #. Translators: title of a dialog presented when searching a saved string of text for the current document.
 msgid "Specific search"
-msgstr "Busca específica"
+msgstr "특정 텍스트 검색"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr ""
-"atopa unha secuencia de texto dende a posición actual do cursor dun "
-"documento específico."
+msgstr "현재 커서 위치에서 검색하고자 하는 텍스트를 찾습니다"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "A marca non poido ser gardada"
+msgstr "북마크를 저장할 수 없습니다"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "Esta posición xa foi gardada"
+msgstr "이미 저장된 위치입니다"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "Posición gardada: carácter %d"
+msgstr "%d 문자 ㅜ이치가 북마크로 등록되었습니다"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Non se poido gardar a marca"
+msgstr "북마크를 저장할 수 없습니다"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Garda a posición actual como unha marca."
+msgstr "현재 위치를 북마크로 저장합니다"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "Non hai marcas"
+msgstr "북마크가 없습니다"
 
 msgid "Bookmark cannot be deleted"
-msgstr "A marca non pode ser eliminada"
+msgstr "북마크를 삭제할 수 없습니다"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "Non hai marca seleccionada"
+msgstr "선택된 북마크가 없습니다"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Marca eliminada"
+msgstr "북마크가 삭제되었습니다"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Non se pode eliminar a marca"
+msgstr "북마크를 삭제할 수 없습니다"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Elimina a marca actual."
+msgstr "선택된 북마크를 삭제합니다"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Non se atoparon marcas"
+msgstr "북마크를 찾을 수 없습니다"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "Non se pode atopar a marca"
+msgstr "북마크가 없습니다"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "Posición: carácter %d"
+msgstr "문자 ㅜ이치: %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Non se atopou a seguinte marca"
+msgstr "다음 북마크가 없습니다"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Móvese á seguinte marca."
+msgstr "다음 북마크로 이동합니다"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "Non se atopou a marca anterior"
+msgstr "이전 북마크가 없습니다"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Móvese á  marca anterior."
+msgstr "이전 북마크로 이동합니다"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Non se puido copiar o nome de ficheiro para marcas"
+msgstr "북마크에 할당된 파일을 복사할 수 없습니다"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Nome do ficheiro de marcas copiado ó portapapeis"
+msgstr "북마크 파일명이 클립보드에 복사되었습니다"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Copia ó portapapeis o nome do ficheiro actual para marcas."
+msgstr "북마크 파일 이름을 클립보드에 복사합니다"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Place markers"
+msgstr "북마크"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Complemento para fixar marcas en documentos virtuais específicos"
-
-#~ msgid "Open documentation for %s"
-#~ msgstr "Abrir documentación para %s"
+msgstr "가상 문서에 북마크를 지정하는 추가 기능"

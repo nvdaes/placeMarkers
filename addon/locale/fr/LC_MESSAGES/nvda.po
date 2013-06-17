@@ -1,163 +1,273 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Specific Search 2.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-18 20:20+0100\n"
-"PO-Revision-Date: 2013-04-26 09:17+0100\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2013-06-05 15:36+0100\n"
 "Last-Translator: Michel Such <michel.such@free.fr>\n"
 "Language-Team: Michel Such <Michel.such@free.fr>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Language: fr_FR\n"
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: C:\\Users\\User\\AppData\\Roaming\\nvda\\addons"
 "\\Bookmark&Search\\globalPlugins\n"
 "X-Poedit-SearchPath-1: C:\\Users\\User\\AppData\\Roaming\\nvda\\addons"
 "\\SpecificSearch\\globalPlugins\n"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:36
-msgid "Speci&fic search"
-msgstr "Recherche spéci&fique"
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+#, fuzzy
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Votre dossier de configuration pour NVDA contient des fichiers qui semblent "
+"provenir d'une version précédente de ce module. Voulez-vous le mettre à "
+"jour ?"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:36
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Installer ou mettre à jour le module"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "Marqueurs de p&osition"
+
+#. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
 msgstr "Menu de Recherche et de Marqueurs"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:37
+#. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
 msgstr "Dossier de Recherche &Spécifique"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:37
-msgid "Open specific search folder"
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Opens the specific search folder"
 msgstr "Ouvrir le dossier de recherche spécifique"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:39
+#. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
 msgstr "Dossier des &marqueurs"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:39
-msgid "Open bookmarks folder"
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Opens the bookmarks folder"
 msgstr "Ouvrir le dossier des marqueurs"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:41
-msgid "Open &documentation folder"
-msgstr "Ouvrir le dossier de documentation"
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "&Copier le dossier des marqueurs de position..."
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:41
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Sauvegarde des marqueurs de position"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "R&estoration des marqueurs de position..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Restorer les marqueurs de position précédemment sauvegardés"
+
+#. Translators: the name for an item of addon submenu.
+msgid "Open &documentation"
+msgstr "Ouvrir la &documentation"
+
+#. Translators: the tooltip text for an item of addon submenu.
 msgid "Open documentation for current language"
 msgstr "Ouvrir la documentation pour la langue en cours"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:82
-msgid "Documentation folder not found for your language"
-msgstr "Doncumentation pour votre langue non trouvée"
+#. Translators: label of a dialog presented for copying place markers.
+msgid "Select a folder for copying your saved place markers"
+msgstr ""
+"Choisissez un dossier pour copier vos marqueurs de position sauvegardés"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:114
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Dossier non copié"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Erreur de copie"
+
+#. Translators: label of a dialog presented for restoring place markers.
+msgid "Select the place markers folder you wish to restore"
+msgstr ""
+"Choisissez le dossier de marqueurs de position que vous voulez restorer"
+
+#. Translators: label of a dialog presented to save or delete a string for specific search.
+#, fuzzy
 msgid ""
-"Type the text you wish to save, or delete text if you want to remove the "
-"previous saved search"
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved search"
 msgstr ""
 "Tapez le texte que vous voulez sauvegarder, ou effacez le texte si vous "
 "voulez supprimer la recherche précédemment sauvegardée"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:114
+#. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
 msgstr "Sauvegarder le texte pour une recherche spécifique"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:138
-msgid "Save a text string for a specific search"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves a text string for a specific search."
 msgstr "Sauvegarder un fragment de texte pour une recherche spécifique"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:158
+#. Translators: label of error dialog.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "Texte \"%s\" non trouvé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:158
+#. Translators: title of error dialog.
 msgid "Find Error"
 msgstr "Erreur de recherche"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:165
+#. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
 msgstr "Fichier de recherche spécifique non trouvé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:167
+#. Translators: label of a dialog presented when searching a saved string of text for the current document.
 msgid "Type the text you wish to find"
 msgstr "Tapez le texte que vous voulez rechercher"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:167
+#. Translators: title of a dialog presented when searching a saved string of text for the current document.
 msgid "Specific search"
 msgstr "Recherche spécifique"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:180
-msgid "find a text string from the current cursor position for a specific page"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds a text string from the current cursor position for a specific document."
 msgstr ""
 "Rechercher un fragment de texte à partir de la position actuelle du curseur "
-"dans une page particulière"
+"dans un document particulier."
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:210
-msgid "Bookmark can not be saved"
+#. Translators: message presented when a bookmark cannot be saved.
+#, fuzzy
+msgid "Bookmark cannot be saved"
 msgstr "Le marqueur ne peut pas être sauvegardé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:215
+#. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
 msgstr "Cette position a déjà été sauvegardée"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:218
-msgid "Bookmark deleted"
-msgstr "Marqueur effacé"
+#. Translators: message presented when a position is saved as a bookmark.
+#, fuzzy, python-format
+msgid "Saved position at character %d"
+msgstr "Position sauvegardée : caractère %d"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:221
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Impossible de sauvegarder le marqueur"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Sauvegarder la position courante comme marqueur."
+
+#. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
 msgstr "Pas de marqueur"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:228
-#, python-format
-msgid "Saved position: character %d"
-msgstr "Position sauvegardée : caractère %d"
+#, fuzzy
+msgid "Bookmark cannot be deleted"
+msgstr "Le marqueur ne peut pas être supprimé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:231
-msgid ""
-"Saves the current position as a bookmark. Pressed two times, deletes the "
-"bookmark corresponding to the current position"
-msgstr ""
-"Sauvegarde la position courante comme marqueur, deux appuis effacent le "
-"marqueur correspondant à la position courante"
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "aucun Marqueur sélectionné"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:243
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:274
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Marqueur supprimé"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Impossible de supprimer le marqueur"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Supprimer le marqueur courant"
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Aucun marqueur trouvé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:249
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:280
-msgid "Can not find bookmark"
-msgstr "Impossible de trouver le marqueur"
+#. Translators: message presented when cannot find any bookmark.
+#, fuzzy
+msgid "Cannot find any bookmark"
+msgstr "Impossible de trouver un marqueur"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:259
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:292
+#. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
 msgstr "Position : caractère %d"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:261
+#. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
 msgstr "Marqueur suivant non trouvé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:263
-msgid "Moves to the next bookmark"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Moves to the next bookmark."
 msgstr "Aller au marqueur suivant"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:294
+#. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Marqueur précédent non trouvé"
 
-#: C:\Users\User\AppData\Roaming\nvda\addons\Bookmark&Search\globalPlugins/specificSearch.py:296
-msgid "Moves to the previousbookmark"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Moves to the previous bookmark."
 msgstr "Aller au marqueur précédent"
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "Impossible de copier le nom de fichier pour les marqueurs de position"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "Nom du fichier de marqueurs de position copié dans le presse-papier"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr ""
+"Copie dans le presse-papier le nom du fichier courant contenant les "
+"marqueurs de position."
+
+#. Add-on description
+#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+msgid "Place markers"
+msgstr "Marqueurs de position"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on installation and add-on information
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr ""
+"Module complémentaire permettant de placer des marqueurs de position dans "
+"des documents spécifiques"
+
+#~ msgid "Open documentation for %s"
+#~ msgstr "Ouvrir la documentation pour %s"
+
+#~ msgid "Speci&fic search"
+#~ msgstr "Recherche spéci&fique"
+
+#~ msgid "Documentation folder not found for your language"
+#~ msgstr "Doncumentation pour votre langue non trouvée"
+
+#~ msgid ""
+#~ "Saves the current position as a bookmark. Pressed two times, deletes the "
+#~ "bookmark corresponding to the current position"
+#~ msgstr ""
+#~ "Sauvegarde la position courante comme marqueur, deux appuis effacent le "
+#~ "marqueur correspondant à la position courante"
 
 #~ msgid "Saved %d"
 #~ msgstr "Guardado %d"
