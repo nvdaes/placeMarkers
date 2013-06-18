@@ -9,12 +9,37 @@ import shutil
 import os
 import os.path
 import zipfile
+import markdown
 import configobj
 
 import buildVars
 
 
-env = Environment(ENV=os.environ)
+def md2html(source, dest):
+    with codecs.open(source, "r", "utf-8") as f:
+        mdText = f.read()
+    htmlText = markdown.markdown(mdText)
+    with codecs.open(dest, "w", "utf-8") as f:
+        f.write("<HTML><HEAD>\n" +
+                "<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=UTF-8'>\n" +
+                "</HEAD><BODY>\n"
+        )
+        f.write(htmlText)
+        f.write("\n</BODY></HTML>")
+
+def mdownTool(env):
+    mdAction=env.Action(
+        lambda target,source,env: md2html(source[0].path, target[0].path),
+        lambda target,source,env: 'Generating %s'%target[0],
+    )
+    mdBuilder=env.Builder(
+        action=mdAction,
+        suffix='.html',
+        src_suffix='.mdown',
+    )
+    env['BUILDERS']['markdown']=mdBuilder
+
+env = Environment(ENV=os.environ, tools=[mdownTool])
 
 
 addonFile = env.File("{addon-name}-{addon-version}.nvda-addon".format(**buildVars.addon_info))
@@ -125,6 +150,11 @@ for dir in langDirs:
 pythonFiles = expandGlobs(buildVars.pythonSources)
 for file in pythonFiles:
 	env.Depends(addon, file)
+
+#Convert markdown files to html
+for mdownFile in env.Glob(os.path.join('addon', 'doc', '*', '*.mdown')):
+    htmlFile = env.markdown(mdownFile)
+    env.Depends(addon, htmlFile)
 
 # Pot target
 i18nFiles = expandGlobs(buildVars.i18nSources)
