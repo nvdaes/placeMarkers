@@ -16,7 +16,7 @@ import buildVars
 
 
 def md2html(source, dest):
-	lang = os.path.basename(os.path.dirname(source))
+	lang = os.path.basename(os.path.dirname(source)).replace('_', '-')
 	title="{addonSummary} {addonVersion}".format(addonSummary=buildVars.addon_info["addon-summary"], addonVersion=buildVars.addon_info["addon-version"])
 	with codecs.open(source, "r", "utf-8") as f:
 		mdText = f.read()
