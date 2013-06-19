@@ -1,4 +1,4 @@
-﻿# placeMarkers 1.0 #
+﻿# placeMarkers #
 
 Consente di cercare e salvare testo specifico o Segnaposti in pagine web o in documenti in Modalità Navigazione di NVDA. Il componente aggiuntivo salva la ricerca in file di testo e con estenzione pickle.
 
