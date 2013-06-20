@@ -18,8 +18,14 @@ import buildVars
 def md2html(source, dest):
 	lang = os.path.basename(os.path.dirname(source)).replace('_', '-')
 	title="{addonSummary} {addonVersion}".format(addonSummary=buildVars.addon_info["addon-summary"], addonVersion=buildVars.addon_info["addon-version"])
+	headerDic = {
+		"[[!meta title=\"": "# ",
+		"\"]]": " #",
+	}
 	with codecs.open(source, "r", "utf-8") as f:
 		mdText = f.read()
+		for k, v in headerDic.iteritems():
+			mdText = mdText.replace(k, v)
 		htmlText = markdown.markdown(mdText)
 	with codecs.open(dest, "w", "utf-8") as f:
 		f.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
@@ -94,9 +100,10 @@ env['BUILDERS']['gettextMergePotFile']=env.Builder(
 def createAddonHelp(dir):
 	docdir = os.path.join(dir, "doc", "en")
 	if not os.path.isdir(docdir):
-		return
-	docFilename = "{addonName}_docHandler.py".format(addonName=buildVars.addon_info["addon-name"])
+		os.makedirs(docdir)
+	shutil.copy("readme.mdown", docdir)
 	plugindir = os.path.join(dir, "globalPlugins")
+	docFilename = "{addonName}_docHandler.py".format(addonName=buildVars.addon_info["addon-name"])
 	docPath = os.path.join(plugindir, docFilename)
 	if not os.path.isdir(plugindir):
 		os.makedirs(plugindir)
@@ -111,7 +118,6 @@ def createAddonHelp(dir):
 def createAddonBundleFromPath(path, dest):
 	""" Creates a bundle from a directory that contains an addon manifest file."""
 	basedir = os.path.abspath(path)
-	createAddonHelp(basedir)
 	with zipfile.ZipFile(dest, 'w', zipfile.ZIP_DEFLATED) as z:
 		# FIXME: the include/exclude feature may or may not be useful. Also python files can be pre-compiled.
 		for dir, dirnames, filenames in os.walk(basedir):
@@ -160,6 +166,7 @@ for file in pythonFiles:
 	env.Depends(addon, file)
 
 #Convert markdown files to html
+createAddonHelp("addon") # We need at least doc in English and should append an item to Help menu
 for mdownFile in env.Glob(os.path.join('addon', 'doc', '*', '*.mdown')):
 	htmlFile = env.markdown(mdownFile)
 	env.Depends(addon, htmlFile)
