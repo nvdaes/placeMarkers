@@ -25,7 +25,7 @@ def md2html(source, dest):
 	with codecs.open(source, "r", "utf-8") as f:
 		mdText = f.read()
 		for k, v in headerDic.iteritems():
-			mdText = mdText.replace(k, v)
+			mdText = mdText.replace(k, v, 1)
 		htmlText = markdown.markdown(mdText)
 	with codecs.open(dest, "w", "utf-8") as f:
 		f.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
@@ -98,22 +98,21 @@ env['BUILDERS']['gettextMergePotFile']=env.Builder(
 	suffix=".pot")
 
 def createAddonHelp(dir):
-	docdir = os.path.join(dir, "doc", "en")
-	if not os.path.isdir(docdir):
-		os.makedirs(docdir)
-	shutil.copy("readme.mdown", docdir)
+	if not os.path.isfile("readme.md") or not os.path.isfile("docHandler.py"):
+		return
+	docdirs = [os.path.join(dir, "doc"), os.path.join(dir, "doc", "en")]
+	for docdir in docdirs:
+		if not os.path.isdir(docdir):
+			os.makedirs(docdir)
+	if os.path.isfile("style.css"):
+		shutil.copy("style.css", docdirs[0])
+	shutil.copyfile("readme.md", os.path.join(docdir, "readme.mdown"))
 	plugindir = os.path.join(dir, "globalPlugins")
 	docFilename = "{addonName}_docHandler.py".format(addonName=buildVars.addon_info["addon-name"])
 	docPath = os.path.join(plugindir, docFilename)
 	if not os.path.isdir(plugindir):
 		os.makedirs(plugindir)
-	shutil.copy("docHandler.py", plugindir)
-	curdir = os.getcwd()
-	if os.path.isfile(docPath):
-		os.unlink(docPath)
-	os.chdir(plugindir)
-	os.rename("docHandler.py", docFilename)
-	os.chdir(curdir)
+	shutil.copyfile("docHandler.py", docPath)
 
 def createAddonBundleFromPath(path, dest):
 	""" Creates a bundle from a directory that contains an addon manifest file."""
