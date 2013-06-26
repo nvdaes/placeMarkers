@@ -218,7 +218,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		childID = obj.IAccessibleChildID
 		IAObj = obj.IAccessibleObject
 		accValue = IAObj.accValue(childID)
-		nameToAdd = " - %s" % accValue.split("/")[-1]
+		nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1]
 		file = file.rsplit(" - ", 1)[0]
 		file = file.split("\\")[-1]
 		file += nameToAdd
