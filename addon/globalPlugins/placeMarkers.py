@@ -30,6 +30,7 @@ import wx
 import ui
 import speech
 import cPickle
+import codecs
 from cursorManager import CursorManager
 from logHandler import log
 
@@ -236,9 +237,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		return self.getFile("search", ".txt")
 
 	def getLastSpecificFindText(self):
-		f = open(self.getFileSearch(), "r")
-		self._lastSpecificFindText = f.read()
-		f.close()
+		with codecs.open(self.getFileSearch(), "r", "utf-8") as f:
+			self._lastSpecificFindText = f.read()
 
 	def saveSpecificFindTextDialog(self):
 		try:
@@ -266,9 +266,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				log.debugWarning("Error deleting specific search file", exc_info=True)
 			return
 		try:
-			f = open (self.getFileSearch(), "w")
-			f.write(text.encode("mbcs"))
-			f.close
+			with codecs.open(self.getFileSearch(), "w", "utf-8") as f:
+				f.write(text)
 		except Exception, e:
 			log.debugWarning("Error saving specific search", exc_info=True)
 			raise e

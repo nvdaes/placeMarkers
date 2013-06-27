@@ -28,14 +28,3 @@ text-decoration : none;
 a:focus, a:hover {outline: solid}
 :link {color: #0000FF;
 background-color: #FFFFFF}
-#index {float: right;
-width: 10%;
-}
-#main {float: left;
-width: 85%;
-}
-#footer {clear: both;
-text-align: center; /* IE5.x */
-background-color: #000089;
-
-}
