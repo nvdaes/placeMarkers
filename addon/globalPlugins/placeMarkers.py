@@ -575,7 +575,7 @@ class SpecificSearchDialog(SettingsDialog):
 	def makeSettings(self, settingsSizer):
 		# Translators: This is the label for a textfield in the
 		# specific search settings dialog.
-		textToSearchLabel=wx.StaticText(self,-1,label=_("Text to search:"))
+		textToSearchLabel=wx.StaticText(self,-1,label=_("&Text to search:"))
 		settingsSizer.Add(textToSearchLabel)
 		self.textToSearchEdit=wx.TextCtrl(self,wx.NewId())
 		self.textToSearchEdit.SetValue(lastSpecificFindText)
