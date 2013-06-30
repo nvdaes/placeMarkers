@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
 # PlaceMarkers
+# Added searched strings history
+# Date: 01/07/2013
 # Limited length of file names
 # Date: 04/05/2013
 # Added support for cyrillic characters
@@ -33,13 +35,18 @@ import cPickle
 import codecs
 from cursorManager import CursorManager
 from logHandler import log
+from gui.settingsDialogs import SettingsDialog
 
 addonHandler.initTranslation()
 
 _basePath = unicode(os.path.join(os.path.dirname(__file__), "placeMarkers"))
 _searchFolder = os.path.join(_basePath, "search")
+searchFile = ""
+lastSpecificFindText = ""
+savedStrings = []
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
+
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -84,7 +91,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		_("Open documentation for current language"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onAbout, self.aboutItem)
 
-		self._lastSpecificFindText = ""
 		self._pickle = ""
 		self._states = []
 
@@ -234,23 +240,38 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		return path
 
 	def getFileSearch(self):
-		return self.getFile("search", ".txt")
+		global searchFile
+		searchFile = self.getFile("search", ".txt")
+
+	def getSavedTexts(self):
+		self.getFileSearch()
+		global savedStrings
+		try:
+			with codecs.open(searchFile, "r", "utf-8") as f:
+				savedStrings = f.read().split("\n")
+		except Exception, e:
+			savedStrings = []
+			raise e
 
 	def getLastSpecificFindText(self):
-		with codecs.open(self.getFileSearch(), "r", "utf-8") as f:
-			self._lastSpecificFindText = f.read()
+		self.getSavedTexts()
+		global lastSpecificFindText
+		try:
+			lastSpecificFindText = savedStrings[0]
+		except:
+			lastSpecificFindText = ""
 
 	def saveSpecificFindTextDialog(self):
 		try:
 			self.getLastSpecificFindText()
-		except IOError:
-			self._lastSpecificFindText = ""
+		except:
+			pass
 		d = wx.TextEntryDialog(gui.mainFrame,
 		# Translators: label of a dialog presented to save or delete a string for specific search.
-		_("Type the text you wish to save, or delete any text if you want to remove it from the previous saved search"),
+		_("Type the text you wish to save, or delete any text if you want to remove it from the previous saved searches"),
 		# Translators: title of a dialog presented to save a string for specific search.
 		_("Save text for specific search"),
-		defaultValue=self._lastSpecificFindText)
+		defaultValue=lastSpecificFindText)
 		def callback(result):
 			if result == wx.ID_OK:
 				# Make sure this happens after focus returns to the document.
@@ -261,13 +282,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.createSearchFolder()
 		if not text:
 			try:
-				os.remove(self.getFileSearch())
+				os.remove(searchFile)
 			except WindowsError:
 				log.debugWarning("Error deleting specific search file", exc_info=True)
 			return
+		if "\n" in text:
+			return
+		if text in savedStrings:
+			return
+		savedStrings.insert(0, text)
+		textToSave = "\n".join(savedStrings)
 		try:
-			with codecs.open(self.getFileSearch(), "w", "utf-8") as f:
-				f.write(text)
+			with codecs.open(searchFile, "w", "utf-8") as f:
+				f.write(textToSave)
 		except Exception, e:
 			log.debugWarning("Error saving specific search", exc_info=True)
 			raise e
@@ -277,8 +304,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		treeInterceptor=obj.treeInterceptor
 		if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 			return
-		self.saveSpecificFindTextDialog()		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		self.saveSpecificFindTextDialog()
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
 
 	def doFindText(self,text,reverse=False):
@@ -307,32 +334,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			wx.OK|wx.ICON_ERROR)
 		CursorManager._lastFindText=text
 
-	def doSpecificFindTextDialog(self):
-		try:
-			self.getLastSpecificFindText()
-		except IOError:
-			ui.message(
-			# Translators: message presented when there is not file for specific search.
-			_("File for specific search not found"))
-			return
-		d = wx.TextEntryDialog(gui.mainFrame,
-		# Translators: label of a dialog presented when searching a saved string of text for the current document.
-		_("Type the text you wish to find"),
-		# Translators: title of a dialog presented when searching a saved string of text for the current document.
-		_("Specific search"),
-		defaultValue=self._lastSpecificFindText)
-		def callback(result):
-			if result == wx.ID_OK:
-				# Make sure this happens after focus returns to the document.
-				wx.CallLater(100, self.doFindText, d.GetValue())
-		gui.runScriptModalDialog(d, callback)
-
 	def script_specificFind(self,gesture):
 		obj=api.getFocusObject()
 		treeInterceptor=obj.treeInterceptor
 		if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 			return
-		self.doSpecificFindTextDialog()
+		try:
+			self.getLastSpecificFindText()
+		except:
+			ui.message(
+			# Translators: message presented when there is not file for specific search.
+			_("File for specific search not found"))
+			return
+		GMF = gui.MainFrame()
+		GMF._popupSettingsDialog(SpecificSearchDialog)
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
 
@@ -537,6 +552,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
 
+	def script_test(self, gesture):
+		dlg = SpecificSearchDialog(gui.mainFrame)
+		dlg.Show()
+
 	__gestures = {
 		"kb:control+shift+NVDA+s": "specificSave",
 		"kb:control+shift+NVDA+f": "specificFind",
@@ -545,5 +564,83 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:control+shift+k": "selectNextBookmark",
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
 		"kb:NVDA+k": "copyCurrentBookmarksFile",
+		"kb:control+shift+f": "test",
 	}
+
+class SpecificSearchDialog(SettingsDialog):
+	# Translators: This is the label for the specific search settings dialog.
+	#title = _("Specific Search")
+	GP = GlobalPlugin()
+
+	def makeSettings(self, settingsSizer):
+		# Translators: This is the label for a textfield in the
+		# specific search settings dialog.
+		textToSearchLabel=wx.StaticText(self,-1,label=_("Text to search:"))
+		settingsSizer.Add(textToSearchLabel)
+		self.textToSearchEdit=wx.TextCtrl(self,wx.NewId())
+		self.textToSearchEdit.SetValue(lastSpecificFindText)
+		settingsSizer.Add(self.textToSearchEdit,border=10,flag=wx.BOTTOM)
+
+		textsListSizer=wx.BoxSizer(wx.HORIZONTAL)
+		# Translators: The label for a setting in specific search to select a saved text.
+		textsListLabel=wx.StaticText(self,-1,label=_("&Saved texts:"))
+		textsListSizer.Add(textsListLabel)
+		textsListID=wx.NewId()
+		# Translators: A combo box to choose a saved text.
+		self.textsList=wx.Choice(self,textsListID, name=_("Saved texts to search:"), choices=[name for name in savedStrings])
+		self.textsList.SetSelection(0)
+		textsListSizer.Add(self.textsList)
+		settingsSizer.Add(textsListSizer,border=10,flag=wx.BOTTOM)
+
+		actionsListSizer=wx.BoxSizer(wx.HORIZONTAL)
+		# Translators: the name of an action presented in specific search dialog.
+		searchAction = _("Search")
+		# Translators: the name of an action presented in specific search dialog.
+		deleteAction = _("Delete")
+		actions = [searchAction, deleteAction]
+		# Translators: The label for a setting in specific search to select an action.
+		actionsListLabel=wx.StaticText(self,-1,label=_("&Actions to choose:"))
+		actionsListSizer.Add(actionsListLabel)
+		actionsListID=wx.NewId()
+		# Translators: A combo box to choose an action.
+		self.actionsList=wx.Choice(self,actionsListID, name=_("Select an action to perform:"), choices=[name for name in actions])
+		self.actionsList.SetSelection(0)
+		actionsListSizer.Add(self.actionsList)
+		settingsSizer.Add(actionsListSizer,border=10,flag=wx.BOTTOM)
+
+		self.textsList.Bind(wx.EVT_CHOICE, self.onChoice)
+
+	def postInit(self):
+		self.textToSearchEdit.SetFocus()
+
+	def onChoice(self, evt):
+		self.textToSearchEdit.SetValue(self.textsList.GetStringSelection())
+
+	def onOk(self,evt):
+		textToSearch = self.textToSearchEdit.GetValue()
+		actionToPerform = self.actionsList.GetSelection()
+		if actionToPerform == 0:
+			wx.CallLater(100, self.GP.doFindText, textToSearch)
+		else:
+			global savedStrings
+			try:
+				savedStrings.pop(self.textsList.GetSelection())
+			except Exception, e:
+				log.debugWarning("Error removing item from savedStrings", exc_info=True)
+				raise e
+			if len(savedStrings) < 1:
+				try:
+					os.unlink(searchFile)
+				except Exception, e:
+					log.debugWarning("Error removing specific search file", exc_info=True)
+					raise e
+			else:
+				textToSave = "\n".join(savedStrings)
+				try:
+					with codecs.open(searchFile, "w", "utf-8") as f:
+						f.write(textToSave)
+				except Exception, e:
+					log.debugWarning("Error saving strings of text for specific search", exc_info=True)
+					raise e
+		super(SpecificSearchDialog, self).onOk(evt)
 
