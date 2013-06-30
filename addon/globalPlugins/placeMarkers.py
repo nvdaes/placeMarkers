@@ -552,6 +552,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
 
+	def script_test(self, gesture):
+		dlg = SpecificSearchDialog(gui.mainFrame)
+		dlg.Show()
+
 	__gestures = {
 		"kb:control+shift+NVDA+s": "specificSave",
 		"kb:control+shift+NVDA+f": "specificFind",
@@ -560,11 +564,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:control+shift+k": "selectNextBookmark",
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
 		"kb:NVDA+k": "copyCurrentBookmarksFile",
+		"kb:control+shift+f": "test",
 	}
 
 class SpecificSearchDialog(SettingsDialog):
 	# Translators: This is the label for the specific search settings dialog.
-	#title = _("Specific Search")
+	title = _("Specific Search")
 	GP = GlobalPlugin()
 
 	def makeSettings(self, settingsSizer):
