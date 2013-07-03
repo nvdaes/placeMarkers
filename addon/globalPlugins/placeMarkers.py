@@ -221,11 +221,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		obj=api.getForegroundObject()
 		file = obj.name
 		obj = api.getFocusObject()
-		obj = obj.treeInterceptor.rootNVDAObject
-		childID = obj.IAccessibleChildID
-		IAObj = obj.IAccessibleObject
-		accValue = IAObj.accValue(childID)
-		nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1]
+		try:
+			obj = obj.treeInterceptor.rootNVDAObject
+			childID = obj.IAccessibleChildID
+			IAObj = obj.IAccessibleObject
+			accValue = IAObj.accValue(childID)
+			nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1]
+		except:
+			nameToAdd = ""
 		file = file.rsplit(" - ", 1)[0]
 		file = file.split("\\")[-1]
 		file += nameToAdd
@@ -301,9 +304,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_specificSave(self,gesture):
 		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
-			return
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+				return
 		self.saveSpecificFindTextDialog()
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
@@ -312,16 +316,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not text:
 			return
 		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
-			obj=treeInterceptor
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+				obj=treeInterceptor
 		try:
 			info=obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
 			info=obj.makeTextInfo(textInfos.POSITION_FIRST)
-		res=info.find(text,reverse=reverse)
+		try:
+			res=info.find(text,reverse=reverse)
+		except:
+			if api.copyToClip(text):
+				ui.message(_("%s copied to clipboard") % text)
+			return
 		if res:
-			obj.selection=info
+			if hasattr(obj,'selection'):
+				obj.selection=info
+			else:
+				info.updateCaret()
 			speech.cancelSpeech()
 			info.move(textInfos.UNIT_LINE,1,endPoint="end")
 			speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
@@ -334,11 +347,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			wx.OK|wx.ICON_ERROR)
 		CursorManager._lastFindText=text
 
+
 	def script_specificFind(self,gesture):
 		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
-			return
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+				return
 		try:
 			self.getLastSpecificFindText()
 		except:
@@ -537,10 +552,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_selectPreviousBookmark.__doc__ = _("Moves to the previous bookmark.")
 
 	def script_copyCurrentBookmarksFile(self, gesture):
-		try:
-			fileName = self.getFile("bookmarks")
-		except AttributeError:
-			return
+		obj=api.getFocusObject()
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough) and controlTypes.STATE_MULTILINE not in obj.states:
+				return
+		fileName = self.getFile("bookmarks")
 		if not api.copyToClip(os.path.basename(fileName)):
 			ui.message(
 			# Translators: message presented when cannot copy the file name corresponding to place markers.
