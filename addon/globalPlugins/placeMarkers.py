@@ -262,13 +262,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			lastSpecificFindText = savedStrings[0]
 		except:
-			lastSpecificFindText = ""
+			pass
 
 	def saveSpecificFindTextDialog(self):
 		try:
 			self.getLastSpecificFindText()
 		except:
-			pass
+			global lastSpecificFindText
+			lastSpecificFindText = ""
 		d = wx.TextEntryDialog(gui.mainFrame,
 		# Translators: label of a dialog presented to save or delete a string for specific search.
 		_("Type the text you wish to save, or delete any text if you want to remove it from the previous saved searches"),
@@ -316,16 +317,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not text:
 			return
 		obj=api.getFocusObject()
-		if not controlTypes.STATE_MULTILINE in obj.states:
-			treeInterceptor=obj.treeInterceptor
-			if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
-				obj=treeInterceptor
+		treeInterceptor=obj.treeInterceptor
+		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+			obj=treeInterceptor
+			CursorManager._lastFindText=text
+		elif not controlTypes.STATE_MULTILINE in obj.states:
+			return
 		try:
 			info=obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
 			info=obj.makeTextInfo(textInfos.POSITION_FIRST)
 		try:
 			res=info.find(text,reverse=reverse)
+		except WindowsError:
+			wx.CallAfter(gui.messageBox,
+			# Translators: label of error dialog.
+			_('text "%s" not found')%text,
+			# Translators: title of error dialog.
+			_("Find Error"),
+			wx.OK|wx.ICON_ERROR)
 		except:
 			if api.copyToClip(text):
 				ui.message(_("%s copied to clipboard") % text)
@@ -345,8 +355,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: title of error dialog.
 			_("Find Error"),
 			wx.OK|wx.ICON_ERROR)
-		CursorManager._lastFindText=text
 
+	def doFindTextUp(self, text):
+		self.doFindText(text, reverse=True)
 
 	def script_specificFind(self,gesture):
 		obj=api.getFocusObject()
@@ -606,10 +617,12 @@ class SpecificSearchDialog(SettingsDialog):
 
 		actionsListSizer=wx.BoxSizer(wx.HORIZONTAL)
 		# Translators: the name of an action presented in specific search dialog.
-		searchAction = _("Search")
+		searchDownAction = _("Search down")
+		# Translators: the name of an action presented in specific search dialog.
+		searchUpAction = _("Search up")
 		# Translators: the name of an action presented in specific search dialog.
 		deleteAction = _("Delete")
-		actions = [searchAction, deleteAction]
+		actions = [searchDownAction, searchUpAction, deleteAction]
 		# Translators: The label for a setting in specific search to select an action.
 		actionsListLabel=wx.StaticText(self,-1,label=_("&Actions to choose:"))
 		actionsListSizer.Add(actionsListLabel)
@@ -633,6 +646,8 @@ class SpecificSearchDialog(SettingsDialog):
 		actionToPerform = self.actionsList.GetSelection()
 		if actionToPerform == 0:
 			wx.CallLater(100, self.GP.doFindText, textToSearch)
+		elif actionToPerform == 1:
+			wx.CallLater(100, self.GP.doFindTextUp, textToSearch)
 		else:
 			global savedStrings
 			try:
