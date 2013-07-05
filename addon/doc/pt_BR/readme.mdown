@@ -1,7 +1,7 @@
-# placeMarkers #
+[[!meta title="marcadores"]]
 
 * Autores: Noelia, Chris.
-* baixe [versão 1.0 Beta][1]
+* baixe [versão 1.0][1]
 
 Este complemento é usado para salvar e procurar cadeias de texto ou
 marcadores específicos, em páginas de Internet ou documentos no modo de
@@ -53,7 +53,8 @@ salvar uma posição precisa.
 
 ## Mudanças na 1.0 ##
 * Versão inicial.
-* Translated into: Brazilian Portuguese, Finnish, French, Galician, German,
-  Italian, Japanese, Korean, Portuguese, Spanish, Slovak, Slovenian, Tamil.
+* Traduzido para: Alemão, Coreano, Eslovaco, Esloveno, Espanhol, Finlandês,
+  Francês, Galego, Italiano, Japonês, Persa, Português, Português do Brasil,
+  Tâmil.
 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm

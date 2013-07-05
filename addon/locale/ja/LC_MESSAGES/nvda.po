@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-09 10:30+0900\n"
+"PO-Revision-Date: 2013-06-30 15:14+0900\n"
 "Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
 "Language-Team: Japanese <nvdajp@nvda.jp>\n"
 "Language: ja\n"
@@ -144,7 +144,7 @@ msgstr "この位置は保存済みです"
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "文字数 %s の位置を保存しました"
+msgstr "文字数 %d の位置を保存しました"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
@@ -188,7 +188,7 @@ msgstr "ブックマークが見つかりません"
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "文字数 % の位置"
+msgstr "文字数 %d の位置"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
@@ -217,6 +217,11 @@ msgstr "プレイスマーカーの名前をクリップボードにコピー"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "現在のプレイスマーカーを保存するファイル名をクリップボードにコピー"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "%s の説明を開く"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.

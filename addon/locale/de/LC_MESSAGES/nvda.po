@@ -224,6 +224,11 @@ msgstr ""
 "Kopiert den Dateinamen der aktuellen Datei für die Lesezeichen in die "
 "zwischenablage."
 
+#. Translators: Tooltip for an addon menu item.
+#, fuzzy, python-format
+msgid "Opens documentation for %s"
+msgstr "&Dokumentation öffnen"
+
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"

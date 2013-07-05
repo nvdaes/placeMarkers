@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-06 20:14+0100\n"
+"PO-Revision-Date: 2013-06-26 21:11+0100\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: es_ES\n"
@@ -223,6 +223,11 @@ msgstr "Nombre del archivo de las  marcas copiado en el portapapeles;"
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Copia el nombre del archivo de las marcas actual;"
 
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Abre la documentación para %s"
+
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -234,9 +239,6 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para establecer las marcas en páginas Web y documentos virtuales "
 "específicos."
-
-#~ msgid "Open documentation for %s"
-#~ msgstr "Guía del usuario para %s"
 
 #~ msgid "Speci&fic search"
 #~ msgstr "Búsqueda especí&fica"

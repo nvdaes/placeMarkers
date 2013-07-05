@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-06 15:10+0100\n"
+"PO-Revision-Date: 2013-06-29 11:16+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sk\n"
@@ -17,12 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
-msgstr ""
-"priečinok s nastaveniami obsahuje súbory zo staršej verzie tohto doplnku. "
-"Chcete ho aktualizovať?"
+msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
+msgstr "priečinok s nastaveniami obsahuje súbory zo staršej verzie tohto doplnku. Chcete ho aktualizovať?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -93,9 +89,7 @@ msgid "Select the place markers folder you wish to restore"
 msgstr "Vyberte priečinok, z ktorého chcete obnoviť záložky"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved search"
+msgid "Type the text you wish to save, or delete any text if you want to remove it from the previous saved search"
 msgstr "Zadajte text, ktorý chcete uložiť, alebo vymažte existujúci text"
 
 #. Translators: title of a dialog presented to save a string for specific search.
@@ -129,8 +123,7 @@ msgid "Specific search"
 msgstr "Špecifické hľadanie"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds a text string from the current cursor position for a specific document."
+msgid "finds a text string from the current cursor position for a specific document."
 msgstr "Vyhľadá zadaný reťazec v aktuálnom dokumente od kurzora."
 
 #. Translators: message presented when a bookmark cannot be saved.
@@ -218,6 +211,11 @@ msgstr "Názov súboru so zálložkami skopírovaný do schránky"
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Skopíruje názov súboru so záložkami do schránky."
 
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "Otvorí návod pre %s"
+
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -227,3 +225,4 @@ msgstr "Záložky"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Doplnok na ukladanie záložiek vo virtuálnych dokumentoch"
+

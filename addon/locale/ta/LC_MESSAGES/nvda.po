@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-09 12:10+0530\n"
+"PO-Revision-Date: 2013-06-30 19:41+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -19,12 +19,8 @@ msgstr ""
 "X-Poedit-Country: india\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
-msgstr ""
-"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் "
-"கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
+msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
+msgstr "தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -80,8 +76,7 @@ msgstr "தற்போதைய மொழிக்கான ஆவணத்த�
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr ""
-"சேமிக்கப்பட்டுள்ள தங்களின்  இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறையை தெரிவு செய்க"
+msgstr "சேமிக்கப்பட்டுள்ள தங்களின்  இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறையை தெரிவு செய்க"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
@@ -96,12 +91,8 @@ msgid "Select the place markers folder you wish to restore"
 msgstr "மீட்டெடுக்கப்பட வேண்டிய கோப்புறையைத் தெரிவு செய்க"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved search"
-msgstr ""
-"சேமிக்கப்பட வேண்டிய உரையைத் தட்டச்சிடவும், அல்லது முன்னதாக சேமிக்கப்பட்டுள்ள உரையை நீக்க "
-"வேண்டுமானால், அவ்வுரையை அழிக்கவும்"
+msgid "Type the text you wish to save, or delete any text if you want to remove it from the previous saved search"
+msgstr "சேமிக்கப்பட வேண்டிய உரையைத் தட்டச்சிடவும், அல்லது முன்னதாக சேமிக்கப்பட்டுள்ள உரையை நீக்க வேண்டுமானால், அவ்வுரையை அழிக்கவும்"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
@@ -123,7 +114,7 @@ msgstr "கண்டுபிடித்தலில் பிழை"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "குறிப்பாக தேடப்பட வேண்டிய கோப்பு காணப்படவில்லை"
+msgstr "குறிப்பாக தேடப்பட வேண்டிய உரை ஏதும் காணப்படவில்லை"
 
 #. Translators: label of a dialog presented when searching a saved string of text for the current document.
 msgid "Type the text you wish to find"
@@ -134,23 +125,21 @@ msgid "Specific search"
 msgstr "குறிப்பான தேடுதல்"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds a text string from the current cursor position for a specific document."
-msgstr ""
-"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
+msgid "finds a text string from the current cursor position for a specific document."
+msgstr "ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "நூற்குறி சேமிக்கப்பட இயலாது"
+msgstr "நூற்குறியை சேமிக்க இயலவில்லை"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "இந்த நிலை ஏற்கனவே சேமிக்கப்பட்டு விட்டது"
+msgstr "நூற்குறி  ஒன்று இந்த நிலையில் ஏற்கனவே சேமிக்கப்பட்டுள்ளது "
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "%d வரியுருவில் நிலை சேமிக்கப்பட்டது"
+msgstr "%d வரியுரு நிலையில் நூற்குறி சேமிக்கப்பட்டது"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
@@ -165,7 +154,7 @@ msgid "No bookmarks"
 msgstr "நூற்குறிகள் ஏதுமில்லை"
 
 msgid "Bookmark cannot be deleted"
-msgstr "நூற்குறி அழிக்கப்பட இயலாது"
+msgstr "நூற்குறியை அழிக்க இயலவில்லை"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -214,7 +203,7 @@ msgstr "முந்தைய நூற்குறிக்கு நகர்�
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "இடக் குறிப்பிகளுக்கு கோப்பின் பெயரை படியெடுக்க இயலாது"
+msgstr "இடக் குறிப்பிகளுக்கு கோப்பின் பெயரை படியெடுக்க இயலவில்லை"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
@@ -223,6 +212,11 @@ msgstr "இடக் குறிப்பிகளின் கோப்பு�
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "இடக் குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
+
+#. Translators: Tooltip for an addon menu item.
+#, python-format
+msgid "Opens documentation for %s"
+msgstr "%s-ற்கான ஆவணத்தை திறக்கிறது"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
@@ -233,3 +227,4 @@ msgstr "இடக் குறிப்பிகள்"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
+

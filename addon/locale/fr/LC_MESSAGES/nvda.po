@@ -241,6 +241,11 @@ msgstr ""
 "Copie dans le presse-papier le nom du fichier courant contenant les "
 "marqueurs de position."
 
+#. Translators: Tooltip for an addon menu item.
+#, fuzzy, python-format
+msgid "Opens documentation for %s"
+msgstr "Ouvrir la documentation pour %s"
+
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -252,9 +257,6 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Module complémentaire permettant de placer des marqueurs de position dans "
 "des documents spécifiques"
-
-#~ msgid "Open documentation for %s"
-#~ msgstr "Ouvrir la documentation pour %s"
 
 #~ msgid "Speci&fic search"
 #~ msgstr "Recherche spéci&fique"

@@ -1,13 +1,13 @@
-# placeMarkers #
+[[!meta title="placeMarkers"]]
 
 * Tekijä: Noelia Ruiz Martinez
-* Lataa [versio 1.0 beeta][1]
+* Lataa [versio 1.0][1]
 
-Käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai kirjanmerkkien
-tallentamiseen ja etsimiseen verkkosivuilta tai dokumenteista.  Lisäosa
-tallentaa merkkijonot ja kirjanmerkit teksti- ja pickle-tiedostoihin. Näiden
-tiedostojen nimet perustuvat nykyisen dokumentin otsikkoon ja
-URL-osoitteeseen.
+Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
+kirjanmerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
+dokumenteista.  Merkkijonot ja kirjanmerkit tallennetaan teksti- ja
+pickle-tiedostoihin. Näiden tiedostojen nimet perustuvat nykyisen dokumentin
+otsikkoon ja URL-osoitteeseen.
 
 Tämä lisäosa perustuu saman tekijän kehittämiin SpecificSearch- ja
 Bookmark&Search-lisäosiin. Ne tulisi poistaa tämän version käyttämiseksi,
@@ -51,7 +51,8 @@ käyttää kirjanmerkkien sijaan sivukohtaista hakua.
 
 ## Muutokset versiossa 1.0 ##
 * Ensimmäinen versio.
-* Käännetty kielille: brasilianportugali, espanja, galego, italia, japani,
-  korea, portugali, ranska, saksa, slovakki, slovenia, suomi, tamili.
+* Käännetty kielille: brasilianportugali, espanja, farsi, galego, italia,
+  japani, korea, nepali, portugali, ranska, saksa, slovakki, slovenia, suomi
+  ja tamili.
 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
