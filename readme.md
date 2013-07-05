@@ -1,7 +1,7 @@
 [[!meta title="placeMarkers"]]
 
 * Authors: Noelia, Chris.
-* download [version 1.0 Beta][1]
+* download [version 1.0][1]
 
 This addon is used for saving and searching specific text strings or bookmarks, on web pages or documents in NVDA's browse mode. 
 The plugin saves the specified strings and bookmarks to text and pickle files. The name of these files is based on the title and URL of the current document.
@@ -32,6 +32,6 @@ Note: The bookmark position is based on the number of characters; in pages with 
 
 ## Changes for 1.0 ##
 * Initial version.
-* Translated into: Brazilian Portuguese, Finnish, French, Galician, German, Italian, Japanese, Korean, Portuguese, Spanish, Slovak, Slovenian, Tamil.
+* Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
