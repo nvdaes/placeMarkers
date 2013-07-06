@@ -20,7 +20,7 @@ addon_info = {
 	# Author(s)
 	"addon-author" : "Noelia <nrm1977@gmail.com>, Chris <llajta2012@hotmail.com>",
 	# URL for the add-on documentation support
-	"addon-url" : "http://www.wuala.com/programas%20para%20ciegos/Complementos%20para%20NVDA/add-ons/"
+	"addon-url" : "http://addons.nvda-project.org"
 }
 
 
