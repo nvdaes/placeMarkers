@@ -48,6 +48,52 @@ _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
 
 
+def doFindText(text, reverse=False):
+	if not text:
+		return
+	obj=api.getFocusObject()
+	treeInterceptor=obj.treeInterceptor
+	if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		obj=treeInterceptor
+		CursorManager._lastFindText=text
+	elif not controlTypes.STATE_MULTILINE in obj.states:
+		return
+	try:
+		info=obj.makeTextInfo(textInfos.POSITION_CARET)
+	except (NotImplementedError, RuntimeError):
+		info=obj.makeTextInfo(textInfos.POSITION_FIRST)
+	try:
+		res=info.find(text,reverse=reverse)
+	except WindowsError:
+		wx.CallAfter(gui.messageBox,
+	# Translators: label of error dialog.
+		_('text "%s" not found')%text,
+		# Translators: title of error dialog.
+		_("Find Error"),
+		wx.OK|wx.ICON_ERROR)
+	except:
+		if api.copyToClip(text):
+			ui.message(_("%s copied to clipboard") % text)
+		return
+	if res:
+		if hasattr(obj,'selection'):
+			obj.selection=info
+		else:
+			info.updateCaret()
+		speech.cancelSpeech()
+		info.move(textInfos.UNIT_LINE,1,endPoint="end")
+		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+	else:
+		wx.CallAfter(gui.messageBox,
+		# Translators: label of error dialog.
+		_('text "%s" not found')%text,
+		# Translators: title of error dialog.
+		_("Find Error"),
+		wx.OK|wx.ICON_ERROR)
+
+def doFindTextUp(text):
+	doFindText(text, reverse=True)
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def __init__(self):
@@ -313,52 +359,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
 
-	def doFindText(self,text,reverse=False):
-		if not text:
-			return
-		obj=api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
-			obj=treeInterceptor
-			CursorManager._lastFindText=text
-		elif not controlTypes.STATE_MULTILINE in obj.states:
-			return
-		try:
-			info=obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			info=obj.makeTextInfo(textInfos.POSITION_FIRST)
-		try:
-			res=info.find(text,reverse=reverse)
-		except WindowsError:
-			wx.CallAfter(gui.messageBox,
-			# Translators: label of error dialog.
-			_('text "%s" not found')%text,
-			# Translators: title of error dialog.
-			_("Find Error"),
-			wx.OK|wx.ICON_ERROR)
-		except:
-			if api.copyToClip(text):
-				ui.message(_("%s copied to clipboard") % text)
-			return
-		if res:
-			if hasattr(obj,'selection'):
-				obj.selection=info
-			else:
-				info.updateCaret()
-			speech.cancelSpeech()
-			info.move(textInfos.UNIT_LINE,1,endPoint="end")
-			speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
-		else:
-			wx.CallAfter(gui.messageBox,
-			# Translators: label of error dialog.
-			_('text "%s" not found')%text,
-			# Translators: title of error dialog.
-			_("Find Error"),
-			wx.OK|wx.ICON_ERROR)
-
-	def doFindTextUp(self, text):
-		self.doFindText(text, reverse=True)
-
 	def script_specificFind(self,gesture):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
@@ -593,7 +593,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 class SpecificSearchDialog(SettingsDialog):
 	# Translators: This is the label for the specific search settings dialog.
 	title = _("Specific Search")
-	GP = GlobalPlugin()
 
 	def makeSettings(self, settingsSizer):
 		# Translators: This is the label for a textfield in the
@@ -645,9 +644,9 @@ class SpecificSearchDialog(SettingsDialog):
 		textToSearch = self.textToSearchEdit.GetValue()
 		actionToPerform = self.actionsList.GetSelection()
 		if actionToPerform == 0:
-			wx.CallLater(100, self.GP.doFindText, textToSearch)
+			wx.CallLater(100, doFindText, textToSearch)
 		elif actionToPerform == 1:
-			wx.CallLater(100, self.GP.doFindTextUp, textToSearch)
+			wx.CallLater(100, doFindTextUp, textToSearch)
 		else:
 			global savedStrings
 			try:
