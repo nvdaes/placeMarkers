@@ -30,6 +30,9 @@ Using Place markers submenu, under Preferences menu, you can access to
 
 Note: The bookmark position is based on the number of characters; in pages with a dynamic content is better to use the specific search, and not the bookmarks to save a precise position.
 
+## Changes for 2.0 ##
+* Added options to save and delete different searches for each file.
+
 ## Changes for 1.0 ##
 * Initial version.
 * Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
