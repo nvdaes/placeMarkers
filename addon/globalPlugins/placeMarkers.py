@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
 # PlaceMarkers
+# Used decode("mbcs") instead of unicode in _basePath variable
+# Date: 21/09/2013
 # Added searched strings history
 # Date: 01/07/2013
 # Limited length of file names
@@ -39,7 +41,7 @@ from gui.settingsDialogs import SettingsDialog
 
 addonHandler.initTranslation()
 
-_basePath = unicode(os.path.join(os.path.dirname(__file__), "placeMarkers"))
+_basePath = os.path.join(os.path.dirname(__file__), "placeMarkers").decode("mbcs")
 _searchFolder = os.path.join(_basePath, "search")
 searchFile = ""
 lastSpecificFindText = ""
