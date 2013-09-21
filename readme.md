@@ -32,6 +32,7 @@ Note: The bookmark position is based on the number of characters; in pages with 
 
 ## Changes for 2.0 ##
 * Added options to save and delete different searches for each file.
+* Fixed reported bug: now mbcs is used to decode the path for place markers.
 
 ## Changes for 1.0 ##
 * Initial version.
