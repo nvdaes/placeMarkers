@@ -68,13 +68,14 @@ def doFindText(text, reverse=False):
 		res=info.find(text,reverse=reverse)
 	except WindowsError:
 		wx.CallAfter(gui.messageBox,
-	# Translators: label of error dialog.
+	# Translators: label of error dialog, translated in NVDA core.
 		_('text "%s" not found')%text,
-		# Translators: title of error dialog.
+		# Translators: title of error dialog, translated in NVDA core.
 		_("Find Error"),
 		wx.OK|wx.ICON_ERROR)
 	except:
 		if api.copyToClip(text):
+			# Translators: message presented when a string of text has been copied to the clipboard.
 			ui.message(_("%s copied to clipboard") % text)
 		return
 	if res:
@@ -87,9 +88,9 @@ def doFindText(text, reverse=False):
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 	else:
 		wx.CallAfter(gui.messageBox,
-		# Translators: label of error dialog.
+		# Translators: label of error dialog, translated in NVDA core.
 		_('text "%s" not found')%text,
-		# Translators: title of error dialog.
+		# Translators: title of error dialog, translated in NVDA core.
 		_("Find Error"),
 		wx.OK|wx.ICON_ERROR)
 
