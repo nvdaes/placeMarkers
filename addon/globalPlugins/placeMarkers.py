@@ -1,5 +1,7 @@
 # -*- coding: UTF-8 -*-
 
+# Assigned script categories for input gestures
+# Date: 12/10/2013
 # PlaceMarkers
 # Used decode("mbcs") instead of unicode in _basePath variable
 # Date: 21/09/2013
@@ -41,6 +43,9 @@ from gui.settingsDialogs import SettingsDialog
 
 addonHandler.initTranslation()
 
+_addonDir = os.path.join(os.path.dirname(__file__), "..") # The root of an addon folder
+_curAddon = addonHandler.Addon(_addonDir) # Addon instance
+_addonSummary = _curAddon.manifest['summary']
 _basePath = os.path.join(os.path.dirname(__file__), "placeMarkers").decode("mbcs")
 _searchFolder = os.path.join(_basePath, "search")
 searchFile = ""
@@ -48,7 +53,6 @@ lastSpecificFindText = ""
 savedStrings = []
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
-
 
 def doFindText(text, reverse=False):
 	if not text:
@@ -98,6 +102,8 @@ def doFindTextUp(text):
 	doFindText(text, reverse=True)
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
+
+	scriptCategory = unicode(_addonSummary)
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
