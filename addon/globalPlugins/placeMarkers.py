@@ -37,6 +37,7 @@ import ui
 import speech
 import cPickle
 import codecs
+import sayAllHandler
 from cursorManager import CursorManager
 from logHandler import log
 from gui.settingsDialogs import SettingsDialog
@@ -528,6 +529,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		ui.message(
 		# Translators: message presented when the next bookmark is not found.
 		_("Next bookmark not found"))
+	script_selectNextBookmark.resumeSayAllMode=sayAllHandler.CURSOR_CARET
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_selectNextBookmark.__doc__ = _("Moves to the next bookmark.")
 
@@ -568,6 +570,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		ui.message(
 		# Translators: message presented when the previous bookmark is not found.
 		_("Previous bookmark not found"))
+	script_selectPreviousBookmark.resumeSayAllMode=sayAllHandler.CURSOR_CARET
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_selectPreviousBookmark.__doc__ = _("Moves to the previous bookmark.")
 
