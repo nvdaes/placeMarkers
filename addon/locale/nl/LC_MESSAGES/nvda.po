@@ -5,266 +5,291 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-08-29 23:09+0900\n"
-"Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
-"Language-Team: Japanese <nvdajp@nvda.jp>\n"
-"Language: ja\n"
+"Project-Id-Version: placeMarkers 1.0-beta\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2013-06-26 14:59+0200\n"
+"PO-Revision-Date: 2013-07-07 10:57+0100\n"
+"Last-Translator: Bram Duvigneau <bram@bramd.nl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+#: addon/installTasks.py:21
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"NVDA設定フォルダに、このアドオンの古いバージョンで保存された情報が見つかりま"
-"した。更新しますか？"
+"Uw configuratiemap van NVDA bevat bestanden die van een oudere versie van "
+"deze add-on lijken te zijn. Wilt u deze bijwerken?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+#: addon/installTasks.py:23
 msgid "Install or update add-on"
-msgstr "アドオンのインストールまたは更新"
-
-#. Translators: label of error dialog.
-#, python-format
-msgid "text \"%s\" not found"
-msgstr "テキスト %s が見つかりません"
-
-#. Translators: title of error dialog.
-msgid "Find Error"
-msgstr "検索の失敗"
-
-#, python-format
-msgid "%s copied to clipboard"
-msgstr "%s をクリップボードにコピー"
+msgstr "Add-on installeren of bijwerken"
 
 #. Translators: the name of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:52
 msgid "P&lace markers"
-msgstr "プレイスマーカー"
+msgstr "P&lace markers"
 
 #. Translators: the tooltip text for addon submenu.
+#: addon/globalPlugins/placeMarkers.py:54
 msgid "Bookmarks and Search menu"
-msgstr "ブックマークと検索のメニュー"
+msgstr "Bladwijzers en zoeken menu"
 
 #. Translators: the name for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:57
 msgid "&Specific search folder"
-msgstr "検索保存フォルダー"
+msgstr "&Specifieke zoekmap"
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:59
 msgid "Opens the specific search folder"
-msgstr "検索保存フォルダーを開く"
+msgstr "Opent de specifieke zoekmap"
 
 #. Translators: the name for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:63
 msgid "&Bookmarks folder"
-msgstr "ブックマークフォルダー"
+msgstr "Map voor &bladwijzers"
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:65
 msgid "Opens the bookmarks folder"
-msgstr "ブックマークフォルダーを開く"
+msgstr "Opent de map voor bladwijzers"
 
 #. Translators: the name for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:69
 msgid "&Copy placeMarkers folder..."
-msgstr "マーカー情報のバックアップ..."
+msgstr "PlaceMarkers map &kopieren..."
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:71
 msgid "Backup of place markers"
-msgstr "マーカー情報をバックアップします"
+msgstr "Backup van place markers"
 
 #. Translators: the name for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:75
 msgid "R&estore place markers..."
-msgstr "マーカー情報の復元..."
+msgstr "Place markers t&erugzetten..."
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:77
 msgid "Restore previously saved place markers"
-msgstr "マーカー情報をバックアップから復元します"
+msgstr "Terugzetten van eerder opgeslagen place markers"
 
 #. Translators: the name for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:81
 msgid "Open &documentation"
-msgstr "説明を開く"
+msgstr "&Documentatie openen"
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon/globalPlugins/placeMarkers.py:83
 msgid "Open documentation for current language"
-msgstr "現在の言語で説明を開きます"
+msgstr "Opent de documentatie in de huidige taal"
 
 #. Translators: label of a dialog presented for copying place markers.
+#: addon/globalPlugins/placeMarkers.py:134
 msgid "Select a folder for copying your saved place markers"
-msgstr "マーカー情報のバックアップを作るフォルダーを選択"
+msgstr "Selecteer een map voor het kopieren van de opgeslagen place markers"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+#: addon/globalPlugins/placeMarkers.py:147
+#: addon/globalPlugins/placeMarkers.py:170
 msgid "Folder not copied"
-msgstr "フォルダーのコピー失敗"
+msgstr "Map niet gekopieerd"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+#: addon/globalPlugins/placeMarkers.py:149
+#: addon/globalPlugins/placeMarkers.py:172
 msgid "Copy Error"
-msgstr "コピーの失敗"
+msgstr "Fout tijdens kopieren"
 
 #. Translators: label of a dialog presented for restoring place markers.
+#: addon/globalPlugins/placeMarkers.py:157
 msgid "Select the place markers folder you wish to restore"
-msgstr "マーカー情報の復元に使うバックアップのフォルダーを指定"
+msgstr "Selecteer de map met place markers die u wilt terugzetten"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
+#: addon/globalPlugins/placeMarkers.py:250
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved searches"
-msgstr "保存するテキストを入力、または検索保存を消去したいときはテキストを削除"
+"from the previous saved search"
+msgstr ""
+"Type de tekst die u wilt opslaan, of verwijder tekst om deze van een eerder "
+"opgeslagen zoekopdracht te wissen"
 
 #. Translators: title of a dialog presented to save a string for specific search.
+#: addon/globalPlugins/placeMarkers.py:252
 msgid "Save text for specific search"
-msgstr "テキスト検索の保存"
+msgstr "Tekst opslaan voor specifieke zoekopdracht"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:283
 msgid "Saves a text string for a specific search."
-msgstr "テキストの検索を保存します"
+msgstr "Slaat tekst op voor een specifieke zoekopdracht"
+
+#. Translators: label of error dialog.
+#: addon/globalPlugins/placeMarkers.py:305
+#, python-format
+msgid "text \"%s\" not found"
+msgstr "Tekst \"%s\" niet gevonden"
+
+#. Translators: title of error dialog.
+#: addon/globalPlugins/placeMarkers.py:307
+msgid "Find Error"
+msgstr "Zoekfout"
 
 #. Translators: message presented when there is not file for specific search.
+#: addon/globalPlugins/placeMarkers.py:317
 msgid "File for specific search not found"
-msgstr "検索保存の情報が見つかりません"
+msgstr "Bestand voor specifieke zoekopdracht niet gevonden"
+
+#. Translators: label of a dialog presented when searching a saved string of text for the current document.
+#: addon/globalPlugins/placeMarkers.py:321
+msgid "Type the text you wish to find"
+msgstr "Type de tekst die u wilt zoeken"
+
+#. Translators: title of a dialog presented when searching a saved string of text for the current document.
+#: addon/globalPlugins/placeMarkers.py:323
+msgid "Specific search"
+msgstr "Specifieke zoekopdracht"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:338
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr "ドキュメントの現在のカーソル位置からテキストを検索"
+msgstr "Zoekt naar tekst vanaf de cursorpositie in een specifiek document"
 
 #. Translators: message presented when a bookmark cannot be saved.
+#: addon/globalPlugins/placeMarkers.py:367
 msgid "Bookmark cannot be saved"
-msgstr "ブックマークを保存できません"
+msgstr "Bladwijzer kan niet worden opgeslagen"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
+#: addon/globalPlugins/placeMarkers.py:374
 msgid "This position was already saved"
-msgstr "この位置は保存済みです"
+msgstr "Deze positie is al opgeslagen"
 
 #. Translators: message presented when a position is saved as a bookmark.
+#: addon/globalPlugins/placeMarkers.py:382
 #, python-format
 msgid "Saved position at character %d"
-msgstr "文字数 %d の位置を保存しました"
+msgstr "Positie opgeslagen op teken %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
+#: addon/globalPlugins/placeMarkers.py:387
 msgid "Cannot save bookmark"
-msgstr "ブックマークを保存できません"
+msgstr "Kan bladwijzer niet opslaan"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:390
 msgid "Saves the current position as a bookmark."
-msgstr "現在位置をブックマークとして保存します"
+msgstr "Slaat de huidige positie op als een bladwijzer"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
+#: addon/globalPlugins/placeMarkers.py:403
+#: addon/globalPlugins/placeMarkers.py:435
 msgid "No bookmarks"
-msgstr "ブックマークなし"
+msgstr "Geen bladwijzers"
 
+#: addon/globalPlugins/placeMarkers.py:410
 msgid "Bookmark cannot be deleted"
-msgstr "ブックマークを削除できません"
+msgstr "Bladwijzer kan niet worden verwijderd"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
+#: addon/globalPlugins/placeMarkers.py:417
 msgid "No bookmark selected"
-msgstr "ブックマークが選択されていません"
+msgstr "Geen bladwijzer geselecteerd"
 
 #. Translators: message presented when a bookmark is deleted.
+#: addon/globalPlugins/placeMarkers.py:426
 msgid "Bookmark deleted"
-msgstr "ブックマークを削除しました"
+msgstr "Bladwijzer verwijderd"
 
 #. Translators: message presented when cannot delete a bookmark.
+#: addon/globalPlugins/placeMarkers.py:442
 msgid "Cannot delete bookmark"
-msgstr "ブックマークが削除できません"
+msgstr "Kan bladwijzer niet verwijderen"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:444
 msgid "Deletes the current bookmark."
-msgstr "現在のブックマークを削除"
+msgstr "Verwijdert de huidige bladwijzer"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
+#: addon/globalPlugins/placeMarkers.py:457
+#: addon/globalPlugins/placeMarkers.py:496
 msgid "No bookmarks found"
-msgstr "ブックマークが見つかりません"
+msgstr "Geen bladwijzers gevonden"
 
 #. Translators: message presented when cannot find any bookmark.
+#: addon/globalPlugins/placeMarkers.py:465
+#: addon/globalPlugins/placeMarkers.py:503
 msgid "Cannot find any bookmark"
-msgstr "ブックマークが見つかりません"
+msgstr "Kan geen bladwijzers vinden"
 
 #. Translators: message presented when a bookmark is selected.
+#: addon/globalPlugins/placeMarkers.py:477
+#: addon/globalPlugins/placeMarkers.py:517
 #, python-format
 msgid "Position: character %d"
-msgstr "文字数 %d の位置"
+msgstr "Positie: teken %d"
 
 #. Translators: message presented when the next bookmark is not found.
+#: addon/globalPlugins/placeMarkers.py:481
 msgid "Next bookmark not found"
-msgstr "次のブックマークがありません"
+msgstr "Volgende bladwijzer niet gevonden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:483
 msgid "Moves to the next bookmark."
-msgstr "次のブックマークに移動"
+msgstr "Verplaatst nar de volgende bladwijzer."
 
 #. Translators: message presented when the previous bookmark is not found.
+#: addon/globalPlugins/placeMarkers.py:521
 msgid "Previous bookmark not found"
-msgstr "前のブックマークがありません"
+msgstr "Vorige bladwijzer niet gevonden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:523
 msgid "Moves to the previous bookmark."
-msgstr "前のブックマークに移動"
+msgstr "Gaat naar de vorige bladwijzer."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
+#: addon/globalPlugins/placeMarkers.py:533
 msgid "Cannot copy file name for place markers"
-msgstr "プレイスマーカーの名前をコピーできません"
+msgstr "Kan bestandsnaam voor bladwijzers niet kopieren"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
+#: addon/globalPlugins/placeMarkers.py:537
 msgid "Place markers file name copied to clipboard"
-msgstr "プレイスマーカーの名前をクリップボードにコピー"
+msgstr "Bestandsnaam van bladwijzers naar klembord gekopieerd"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon/globalPlugins/placeMarkers.py:539
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "現在のプレイスマーカーを保存するファイル名をクリップボードにコピー"
-
-#. Translators: This is the label for the specific search settings dialog.
-msgid "Specific Search"
-msgstr "検索保存"
-
-#. Translators: This is the label for a textfield in the
-#. specific search settings dialog.
-msgid "&Text to search:"
-msgstr "テキストを検索(&T):"
-
-#. Translators: The label for a setting in specific search to select a saved text.
-msgid "&Saved texts:"
-msgstr "保存したテキスト(&S):"
-
-#. Translators: A combo box to choose a saved text.
-msgid "Saved texts to search:"
-msgstr "保存した検索テキスト:"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search down"
-msgstr "下に検索"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search up"
-msgstr "上に検索"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Delete"
-msgstr "削除"
-
-#. Translators: The label for a setting in specific search to select an action.
-msgid "&Actions to choose:"
-msgstr "アクションを選択(&A):"
-
-#. Translators: A combo box to choose an action.
-msgid "Select an action to perform:"
-msgstr "実行するアクションを選択:"
+msgstr "Kopieert de bestandsnaam van de huidige bladwijzers naar het klembord."
 
 #. Translators: Tooltip for an addon menu item.
+#: addon/globalPlugins/placeMarkers_docHandler.py:60 docHandler.py:60
 #, python-format
 msgid "Opens documentation for %s"
-msgstr "%s の説明を開く"
+msgstr "Opent documentatie voor %s"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#: buildVars.py:14
 msgid "Place markers"
 msgstr "Place markers"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
+#: buildVars.py:17
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "ドキュメントにプレイスマーカーを設定できます"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "検索したいテキストを入力"
+msgstr ""
+"Add-on om place markers in specifieke virtuele documenten aan te brengen"

@@ -1,12 +1,14 @@
-[[!meta title="placeMarkers"]]
+# placeMarkers #
 
 * Auteurs : Noelia, Chris.
-* Télécharger : [Version 1.0][1]
+* Télécharger [Version stable : 1.0][1]
+* télécharger [la version de développement v 2.0-dev][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks, on web pages or documents in NVDA's browse mode.  The plugin
-saves the specified strings and bookmarks to text and pickle files. The name
-of these files is based on the title and URL of the current document.
+Ce module sert à sauvegarder et rechercher des chaînes de caractères ou des
+marqueurs spécifiques sur des pages web ou des documents en mode
+navigation. Le module sauvegarde les textes et les marqueurs spécifiés dans
+des fichiers. Le nom des fichiers est basé sur le titre et l'url du document
+en cours.
 
 Ce module est basé sur les modules SpecificSearch et Bookmark&Search,
 développés par le même auteur. Vous devrez les désinstaller avant
@@ -15,24 +17,16 @@ fonctionnalités communs.
 
 ## Touches de commandes : ##
 
-*	control+maj+NVDA+s; Ouvre un dialogue pour sauvegarder a une chaîne de
-  texte que vous désirez rechercher dans le document en cours. Par défaut,
-  le texte précédemment sauvegardé pour ce document est proposé. Si ce texte
-  est effacé, le fichier le contenant sera également effacé. 
-*	control+maj+NVDA+f; Si le document en cours a un fichier texte pour une
-  recherche spécifique, un dialogue s'ouvre affichant le texte
-  sauvegardé. Quand vous pressez "OK", NVDA lance la recherche. Si ce
-  document ne possède pas de fichier de recherche, NVDA l'annonce sans
-  ouvrir de dialogue.
-*	control+maj+NVDA+k; Sauvegarde la position courante comme marqueur
-*	control+maj+NVDA+effac; efface le marqueur correspondant à cette position.
-*	control+maj+k; Va au marqueur suivant.
-*	maj+NVDA+k; Va au marqueur précédent.
-*	NVDA+k; Copie dans le presse-papier le nom du fichier sans extension dans
-  lequel pourraient être sauvegardés les marqueurs (mosition ou chaîne à
-  rechercher).
+*	control+maj+NVDA+s ;. Ouvre une boîte de dialogue qui vous permet d'enregistrer une chaîne de texte que vous voulez trouver dans le document actuel. Par défaut, le texte précédemment enregistré pour ce fichier est affiché. Supprimer ce texte et appuyez sur le bouton OK si vous souhaitez supprimer le fichier texte correspondant à la recherche enregistrée, ou tapez un nouveau texte pour ajouter une autre recherche.
+*	Control+maj+NVDA + f ; ouvre une boîte de dialogue avec un champ d'édition qui indique la dernière recherche enregistrée, dans ce dialogue, vous pouvez également sélectionner les recherches précédemment sauvegardées à partir d'une zone de liste déroulante et choisir une action dans la liste déroulante suivante. S'il n'y a pas de fichiers disponibles pour la recherche spécifiée dans le document actuel, NVDA vous préviendra qu'il ne trouve pas un fichier pour la recherche spécifiée.
+*	Control+maj+NVDA + k ; Enregistre la position actuelle comme signet
+*	Control+maj+NVDA+Suppr ;. Supprime le signet correspondant à cette position
+*	Control+maj+k ;. Passe au signet suivant
+*	Maj+NVDA+k ;. Passe au signet précédent
+*	NVDA+k ;. Copies au presse-papiers le nom du fichier, sans extension, où la place des données de marqueurs seront sauvés
 
 ## Sous-menu des marqueurs (NVDA+N) ##
+
 
 En utilisant le sous-menu des marqueurs, dans le menu préférences, vous
 pouvez accéder à :
@@ -51,10 +45,22 @@ Note: la position du marqueur est basé sur le nombre de caractères. Dans les
 pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière.
 
+## Changements pour la version 2.0 ##
+* Ajout de la possibilité de sauvegarder et supprimer des recherches
+  différentes pour chaque fichier ajouté.
+* Correction d'un bug avec des chemins contenant des caractères non latins.
+* Les raccourcis peuvent désormais être réaffectés en utilisant la boîte de
+  dialogue des raccourcis de NVDA.
+
+
 ## Changements pour la version 1.0 ##
 * Première version
-* Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician,
-  German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak,
-  Slovenian, Tamil.
+* Traduit en : Portugais Brésilien , Farsi, Finnois, Français, Galicien,
+  Allemand, Italien, Japonais, Coréen, Nepali, Portugais, Espagnol,
+  Slovaque, Slovène, Tamil.
+
+[[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
+
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

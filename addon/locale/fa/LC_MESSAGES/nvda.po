@@ -18,7 +18,6 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-#: addon/installTasks.py:21
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
@@ -27,268 +26,250 @@ msgstr ""
 "افزونه بدست آمده است. آیا میخواهید که بروز رسانی بکنید؟"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-#: addon/installTasks.py:23
 msgid "Install or update add-on"
 msgstr "نصب یا بروز رسانی افزونه"
 
-#. Translators: the name of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:52
-msgid "P&lace markers"
-msgstr "ن&شانه گذاری ها"
-
-#. Translators: the tooltip text for addon submenu.
-#: addon/globalPlugins/placeMarkers.py:54
-msgid "Bookmarks and Search menu"
-msgstr "نشانک ها و فهرست جستجو"
-
-#. Translators: the name for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:57
-msgid "&Specific search folder"
-msgstr "پوشه مخصوص &جستجو"
-
-#. Translators: the tooltip text for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:59
-msgid "Opens the specific search folder"
-msgstr "پوشه مخصوص جستجو را باز میکند"
-
-#. Translators: the name for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:63
-msgid "&Bookmarks folder"
-msgstr "پوشه &نشانک"
-
-#. Translators: the tooltip text for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:65
-msgid "Opens the bookmarks folder"
-msgstr "پوشه نشانک را باز میکند"
-
-#. Translators: the name for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:69
-msgid "&Copy placeMarkers folder..."
-msgstr "پوشه نشانه گذاری ها را کپی بکن..."
-
-#. Translators: the tooltip text for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:71
-msgid "Backup of place markers"
-msgstr "کپی پشتیبان نشانه گذاری ها"
-
-#. Translators: the name for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:75
-msgid "R&estore place markers..."
-msgstr "نشانه گذاری ها را ب&رگردان"
-
-#. Translators: the tooltip text for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:77
-msgid "Restore previously saved place markers"
-msgstr "نشانه گذاری هایی ذخیره شده قبلی را برگردان"
-
-#. Translators: the name for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:81
-msgid "Open &documentation"
-msgstr "&سند را باز بکن"
-
-#. Translators: the tooltip text for an item of addon submenu.
-#: addon/globalPlugins/placeMarkers.py:83
-msgid "Open documentation for current language"
-msgstr "سند را برای زبان جاری باز بکن"
-
-#. Translators: label of a dialog presented for copying place markers.
-#: addon/globalPlugins/placeMarkers.py:134
-msgid "Select a folder for copying your saved place markers"
-msgstr "پوشه ای را برای نشانه گذاری های خود انتخاب کنید"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-#: addon/globalPlugins/placeMarkers.py:147
-#: addon/globalPlugins/placeMarkers.py:170
-msgid "Folder not copied"
-msgstr "پوشه کپی نشد"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-#: addon/globalPlugins/placeMarkers.py:149
-#: addon/globalPlugins/placeMarkers.py:172
-msgid "Copy Error"
-msgstr "خطا در کپی"
-
-#. Translators: label of a dialog presented for restoring place markers.
-#: addon/globalPlugins/placeMarkers.py:157
-msgid "Select the place markers folder you wish to restore"
-msgstr "پوشه نشانه گذاری هایی را که میخواهید برگردانید انتخاب بکنید"
-
-#. Translators: label of a dialog presented to save or delete a string for specific search.
-#: addon/globalPlugins/placeMarkers.py:250
-msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved search"
-msgstr ""
-"متنی را که میخواهید ذخیره بکنید بنویسید, یا متن را پاک بکنید اگر میخواهید از "
-"جستجوی ذخیره شده قبلی حذف بکنید"
-
-#. Translators: title of a dialog presented to save a string for specific search.
-#: addon/globalPlugins/placeMarkers.py:252
-msgid "Save text for specific search"
-msgstr "متن را برای جستجوی ویژه ذخیره بکن"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:283
-msgid "Saves a text string for a specific search."
-msgstr "رشته ای از متن را برای جستجوی ویژه ذخیره میکند"
-
 #. Translators: label of error dialog.
-#: addon/globalPlugins/placeMarkers.py:305
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "متنی \"%s\" پیدا نشد"
 
 #. Translators: title of error dialog.
-#: addon/globalPlugins/placeMarkers.py:307
 msgid "Find Error"
 msgstr "پیدایش خطا"
 
+#, fuzzy, python-format
+msgid "%s copied to clipboard"
+msgstr "نام پرونده نشانه گذاری ها به کلیپ برد کپی شد"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "ن&شانه گذاری ها"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "نشانک ها و فهرست جستجو"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "پوشه مخصوص &جستجو"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "پوشه مخصوص جستجو را باز میکند"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "پوشه &نشانک"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "پوشه نشانک را باز میکند"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "پوشه نشانه گذاری ها را کپی بکن..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "کپی پشتیبان نشانه گذاری ها"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "نشانه گذاری ها را ب&رگردان"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "نشانه گذاری هایی ذخیره شده قبلی را برگردان"
+
+#. Translators: the name for an item of addon submenu.
+msgid "Open &documentation"
+msgstr "&سند را باز بکن"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Open documentation for current language"
+msgstr "سند را برای زبان جاری باز بکن"
+
+#. Translators: label of a dialog presented for copying place markers.
+msgid "Select a folder for copying your saved place markers"
+msgstr "پوشه ای را برای نشانه گذاری های خود انتخاب کنید"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "پوشه کپی نشد"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "خطا در کپی"
+
+#. Translators: label of a dialog presented for restoring place markers.
+msgid "Select the place markers folder you wish to restore"
+msgstr "پوشه نشانه گذاری هایی را که میخواهید برگردانید انتخاب بکنید"
+
+#. Translators: label of a dialog presented to save or delete a string for specific search.
+#, fuzzy
+msgid ""
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
+msgstr ""
+"متنی را که میخواهید ذخیره بکنید بنویسید, یا متن را پاک بکنید اگر میخواهید از "
+"جستجوی ذخیره شده قبلی حذف بکنید"
+
+#. Translators: title of a dialog presented to save a string for specific search.
+msgid "Save text for specific search"
+msgstr "متن را برای جستجوی ویژه ذخیره بکن"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves a text string for a specific search."
+msgstr "رشته ای از متن را برای جستجوی ویژه ذخیره میکند"
+
 #. Translators: message presented when there is not file for specific search.
-#: addon/globalPlugins/placeMarkers.py:317
 msgid "File for specific search not found"
 msgstr "پرونده ای برای جستجوی ویژه یافت نشد"
 
-#. Translators: label of a dialog presented when searching a saved string of text for the current document.
-#: addon/globalPlugins/placeMarkers.py:321
-msgid "Type the text you wish to find"
-msgstr "متنی را که میخواهید پیدا بکنید بنویسید"
-
-#. Translators: title of a dialog presented when searching a saved string of text for the current document.
-#: addon/globalPlugins/placeMarkers.py:323
-msgid "Specific search"
-msgstr "جستجوی ویژه"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:338
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "رشته متنی را از موقعیت کنونی نشانگر برای اسناد خاص پیدا میکند."
 
 #. Translators: message presented when a bookmark cannot be saved.
-#: addon/globalPlugins/placeMarkers.py:367
 msgid "Bookmark cannot be saved"
 msgstr "نشانک نمیتواند ذخیره بشود"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
-#: addon/globalPlugins/placeMarkers.py:374
 msgid "This position was already saved"
 msgstr "این قسمت قبلا\" ذخیره شده است"
 
 #. Translators: message presented when a position is saved as a bookmark.
-#: addon/globalPlugins/placeMarkers.py:382
 #, python-format
 msgid "Saved position at character %d"
 msgstr "محل ذخیره شده در کاراکتر %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
-#: addon/globalPlugins/placeMarkers.py:387
 msgid "Cannot save bookmark"
 msgstr "نشانک را نمیتواند ذخیره بکند"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:390
 msgid "Saves the current position as a bookmark."
 msgstr "محل جاری را بعنوان نشانک ذخیره میکند."
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
-#: addon/globalPlugins/placeMarkers.py:403
-#: addon/globalPlugins/placeMarkers.py:435
 msgid "No bookmarks"
 msgstr "بدون نشانک"
 
-#: addon/globalPlugins/placeMarkers.py:410
 msgid "Bookmark cannot be deleted"
 msgstr "نشانک نمیتواند پاک بشود"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
-#: addon/globalPlugins/placeMarkers.py:417
 msgid "No bookmark selected"
 msgstr "نشانکی انتخاب نشده است"
 
 #. Translators: message presented when a bookmark is deleted.
-#: addon/globalPlugins/placeMarkers.py:426
 msgid "Bookmark deleted"
 msgstr "نشانک پاک شده است"
 
 #. Translators: message presented when cannot delete a bookmark.
-#: addon/globalPlugins/placeMarkers.py:442
 msgid "Cannot delete bookmark"
 msgstr "نمیتوانید نشانک را پاک بکنید"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:444
 msgid "Deletes the current bookmark."
 msgstr "نشانک جاری را پاک میکند."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
-#: addon/globalPlugins/placeMarkers.py:457
-#: addon/globalPlugins/placeMarkers.py:496
 msgid "No bookmarks found"
 msgstr "نشانکی پیدا نشد"
 
 #. Translators: message presented when cannot find any bookmark.
-#: addon/globalPlugins/placeMarkers.py:465
-#: addon/globalPlugins/placeMarkers.py:503
 msgid "Cannot find any bookmark"
 msgstr "هیچ نشانکی نمیتواند پیدا بکند"
 
 #. Translators: message presented when a bookmark is selected.
-#: addon/globalPlugins/placeMarkers.py:477
-#: addon/globalPlugins/placeMarkers.py:517
 #, python-format
 msgid "Position: character %d"
 msgstr "محل: کاراکتر %d"
 
 #. Translators: message presented when the next bookmark is not found.
-#: addon/globalPlugins/placeMarkers.py:481
 msgid "Next bookmark not found"
 msgstr "نشانک بعدی پیدا نشد"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:483
 msgid "Moves to the next bookmark."
 msgstr "به نشانک بعدی میرود."
 
 #. Translators: message presented when the previous bookmark is not found.
-#: addon/globalPlugins/placeMarkers.py:521
 msgid "Previous bookmark not found"
 msgstr "نشانک قبلی پیدا نشد"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:523
 msgid "Moves to the previous bookmark."
 msgstr "به نشانک قبلی میرود."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
-#: addon/globalPlugins/placeMarkers.py:533
 msgid "Cannot copy file name for place markers"
 msgstr "نام پرونده را برای نشانه گذاری ها نمیتواند کپی بکند"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
-#: addon/globalPlugins/placeMarkers.py:537
 msgid "Place markers file name copied to clipboard"
 msgstr "نام پرونده نشانه گذاری ها به کلیپ برد کپی شد"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon/globalPlugins/placeMarkers.py:539
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "نام پرونده جاری را برای نشانه گذاری ها در کلیپ برد کپی میکند."
 
+#. Translators: This is the label for the specific search settings dialog.
+#, fuzzy
+msgid "Specific Search"
+msgstr "جستجوی ویژه"
+
+#. Translators: This is the label for a textfield in the
+#. specific search settings dialog.
+msgid "&Text to search:"
+msgstr ""
+
+#. Translators: The label for a setting in specific search to select a saved text.
+msgid "&Saved texts:"
+msgstr ""
+
+#. Translators: A combo box to choose a saved text.
+#, fuzzy
+msgid "Saved texts to search:"
+msgstr "متن را برای جستجوی ویژه ذخیره بکن"
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Search down"
+msgstr ""
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Search up"
+msgstr ""
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Delete"
+msgstr ""
+
+#. Translators: The label for a setting in specific search to select an action.
+msgid "&Actions to choose:"
+msgstr ""
+
+#. Translators: A combo box to choose an action.
+msgid "Select an action to perform:"
+msgstr ""
+
 #. Translators: Tooltip for an addon menu item.
-#: addon/globalPlugins/placeMarkers_docHandler.py:60 docHandler.py:60
 #, python-format
 msgid "Opens documentation for %s"
 msgstr "سند را برای %s باز میکند"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
-#: buildVars.py:14
 msgid "Place markers"
 msgstr "نشانه گذاری ها"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
-#: buildVars.py:17
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه برای تنظیم نشانه گذاری ها در اسناد مجازی"
+
+#~ msgid "Type the text you wish to find"
+#~ msgstr "متنی را که میخواهید پیدا بکنید بنویسید"
