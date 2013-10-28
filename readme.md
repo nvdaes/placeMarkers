@@ -42,8 +42,6 @@ Note: The bookmark position is based on the number of characters; and therefore 
 * Initial version.
 * Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
 
-[[!tag dev stable]]
-
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
 
 [2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
