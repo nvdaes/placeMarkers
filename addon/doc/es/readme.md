@@ -1,7 +1,8 @@
-[[!meta title="placeMarkers"]]
+# placeMarkers #
 
 * Autores: Noelia, Chris.
-* descarga [versión 1.0][1]
+* descarga [versión estable: 1.0][1]
+* descarga [versión de desarrollo: 2.0-dev][2]
 
 Este complemento se utiliza para guardar y buscar cadenas de texto
 específicas o marcas, en páginas web o en documentos en el modo navegación
@@ -15,25 +16,16 @@ las pulsaciones de teclado y las características en común.
 
 ## Órdenes de teclado: ##
 
-*	control+shift+NVDA+s; abre un diálogo para guardar una cadena de texto que
-  es posible que desees encontrar en el documento actual. Por defecto se
-  muestra el texto previamente guardado para este archivo. ;Si se elimina
-  este texto, también se eliminará el archivo de texto que contenga la
-  cadena correspondiente.
-*	control+shift+NVDA+f; Si el documento actual tiene un fichero de texto
-  para la búsqueda especificada, abre un diálogo que muestra la cadena de
-  texto guardada. Cuando pulses Aceptar, NVDA busca. Si no se ha encontrado
-  un fichero de texto para este documento, NVDA lo anuncia sin abrir el
-  diálogo Búsqueda Específica.
+*	control+shift+NVDA+s; Abre un diálogo que  te permite guardar una cadena de texto   que quieras encontrar en el documento actual. De forma predeterminada, se muestra el  texto guardado anteriormente para este fichero. Elimina este texto y pulsa el botón Aceptar si deseas borrar el fichero de texto correspondiente a la búsqueda guardada, o escribe texto nuevo para añadir otra búsqueda.
+*	control+shift+NVDA+f; Abre un diálogo con un cuadro de edición que muestra la última búsqeuda guardada; en este diálogo también puedes seleccionar las búsquedas guardadas anteriormente desde un cuadro combinado y elegir una acción desde el siguiente cuadro combinado. Si no hay archivos disponibles para la búsqueda específica en el documento actual, NVDA te advertirá de que no se encuentra ningún archivo para la búsqueda específica.
 *	control+shift+NVDA+k; Guarda la posición actual como una marca
-*	control+shift+NVDA+Suprimir; Elimina la marca correspondiente a esta
-  posición.
-*	control+shift+k; Se mueve a la siguiente marca.
-*	shift+NVDA+k; Se mueve a la marca anterior.
-*	NVDA+k; Copia el nombre del fichero al portapapeles, sin extensión, donde
-  se podrían guardar marcas de lugar(posiciones o una cadena para buscar).
+*	control+shift+NVDA+suprimir; Elimina la marca correspondiente a esta posición.
+*	control+shift+k; Se desplaza a la siguiente marca.
+*	shift+NVDA+k; Se desplaza a la marca anterior.
+*	NVDA+k; Copia al portapaqpeles el nombre del fichero, sin extensión, donde guardará sus datos el place marker.
 
 ## Submmenú Place markers (NVDA+N) ##
+
 
 Utilizando el submenú Place markers, en el menú Preferencias, puedes acceder
 a 
@@ -51,10 +43,23 @@ Nota: La posición de la marca se basa en el número de caracteres; en páginas
 con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
 para guardar una posición precisa.
 
+## Cambios para 2.0 ##
+* Añadidas opciones para guardar y eliminar diferentes búsquedas para cada
+  archivo.
+* Solucionado un problema que rompía cuando las rutas contenían caracteres
+  no latinos.
+* Los atajos de teclado ahora pueden reasignarse utilizando el diálogo de
+  Entrada de gestos de NVDA.
+
+
 ## Cambios para 1.0 ##
 * Versión inicial.
-* Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician,
-  German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak,
-  Slovenian, Tamil.
+* Traducido a: Alemán, Coreano, Eslovaco, Esloveno, Español, Farsi,
+  Finlandés, Francés, Gallego, Italiano, Japonés, Nepalí, Portugués,
+  Portugués del Brasil, Tamil.
+
+[[!tag dev stable]]
 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
+
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
