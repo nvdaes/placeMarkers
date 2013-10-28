@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
-
+# Support for skim reading.
+# Date: 28/10/2013
 # Assigned script categories for input gestures
 # Date: 12/10/2013
 # PlaceMarkers
