@@ -1,7 +1,7 @@
 # Könyvjelzők #
 * Készítők: Noelia, Chris.
-* [1.0 stabil verzió][1]  letöltése
-* [2.0 Fejlesztői változat][2]  letöltése
+* download [stable version][1]
+* download [development version][2]
 
 Ez a kiegészítő különböző karakterláncok, vagy könyvjelzők mentésére, és
 keresésére használható dokumentumokban és internetes oldalakon, az nvda
@@ -40,6 +40,10 @@ fér hozzá:
 
 Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
+
+
+## Changes for 3.0 ##
+* Added support for skim reading.
 
 ## A 2.0 verzió változásai ##
 * Added options to save and delete different searches for each file.

@@ -1,8 +1,8 @@
 # placeMarkers #
 
 * Auteurs : Noelia, Chris.
-* Télécharger [Version stable : 1.0][1]
-* télécharger [la version de développement v 2.0-dev][2]
+* Télécharger [version stable][1]
+* Télécharger [version de développement][2]
 
 Ce module sert à sauvegarder et rechercher des chaînes de caractères ou des
 marqueurs spécifiques sur des pages web ou des documents en mode
@@ -44,6 +44,10 @@ pouvez accéder à :
 Note: la position du marqueur est basé sur le nombre de caractères. Dans les
 pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière.
+
+
+## Changements pour la version 3.0 ##
+* Ajout du support de la lecture rapide.
 
 ## Changements pour la version 2.0 ##
 * Ajout de la possibilité de sauvegarder et supprimer des recherches

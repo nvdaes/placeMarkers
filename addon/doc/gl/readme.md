@@ -1,8 +1,8 @@
 # placeMarkers #
 
 * Autores: Noelia, Chris.
-* descarga [versión estable: 1.0][1]
-* descarga [versión de desenrolo: 2.0-dev][2]
+* descarga [versión estable][1]
+* descarga [versión de desenvolvemento][2]
 
 Este complemento úsase para gardar e buscar cadeas de texto específicas ou
 marcas, en páxinas web ou en documentos no modo navegación do NVDA.  O
@@ -41,6 +41,10 @@ Usando o submenú Place markers, no Menú Preferencias, podes acceder a
 Nota: A posición da marca baséase no número de caracteres; en páxinas con
 contido dinámico é mellor usar a busca específica,e non as marcas para
 gardar unha posición precisa.
+
+
+## Cambios para 3.0 ##
+* Engadido o soporte para lectura superficial.
 
 ## Cambios para 2.0 ##
 * Engadidas opcións para gardar e borrar diferentes buscas para cada

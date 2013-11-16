@@ -2,274 +2,272 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Zahari Yurukov <zahari.yurukov@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-07-07 20:30+0200\n"
-"Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
-"Language-Team: tr <cagrid@hotmail.com>\n"
-"Language: tr\n"
+"Project-Id-Version: placeMarkers 1.0-beta\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2013-06-27 21:32+0200\n"
+"PO-Revision-Date: 2013-11-16 14:00+0200\n"
+"Last-Translator: Zahari Yurukov <zahari.yurukov@gmail.com>\n"
+"Language-Team: Български <>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"NVDA konfigürasyon dizininizde eklentinin önceki versiyonuyla ilgili "
-"dosyalar bulunuyor. Güncellemek ister misiniz?"
+"Вашата папка с потребителските настройки за NVDA съдържа файлове, които "
+"изглежда са създадени от предишна версия на тази добавка. Желаете ли да "
+"бъдат обновени?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Eklenti kur ya da güncelle"
+msgstr "Инсталиране или обновяване на добавката"
 
 #. Translators: label of error dialog.
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "metin \"%s\" bulunamadı"
+msgstr "Текстът \"%s\" не е намерен"
 
 #. Translators: title of error dialog.
 msgid "Find Error"
-msgstr "arama hatası"
+msgstr "Грешка при търсене"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s copied to clipboard"
-msgstr "Yerimi dosya adı panoya kopyalandı"
+msgstr "%s е копиран в клипборда"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "Yerim&leri"
+msgstr "Позиционни &маркери"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Yerimi ve arama menüsü"
+msgstr "Отметки и меню за търсене"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "özel arama kla&sörü"
+msgstr "Папка за &конкретно търсене"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Özel arama klasörünü açar"
+msgstr "Отваря папката за конкретно търсене"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "Yerimi &Klasörü"
+msgstr "Папка с &отметки"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Yerimi klasörünü açar"
+msgstr "Отваря папката с отметки"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Yerimi klasörünü kopyala"
+msgstr "&Копиране на папката с позиционни маркери..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Yerimleri yedeği"
+msgstr "Резервно копие на позиционните маркери"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "Y&erimlerini geri al"
+msgstr "&Възстановяване на позиционните маркери..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Önceden kaydedilen yerimlerini geri al"
+msgstr "Възстановява предишно запазени позиционни маркери"
 
 #. Translators: the name for an item of addon submenu.
 msgid "Open &documentation"
-msgstr "&Dokümantasyonu aç"
+msgstr "Отваряне на &документацията"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Open documentation for current language"
-msgstr "Mevcut dil için dokümantasyonu aç"
+msgstr "Отваряне на документацията за текущия език"
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "Yerimlerinizi yedeklemek için klasör seçin"
+msgstr "Изберете папка за копиране на вашите запазени позиционни маркери"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "Klasör kopyalanmadı"
+msgstr "Папката не е копирана"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "Kopyalama hatası"
+msgstr "Грешка при копиране"
 
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
-msgstr "Yerimlerinizi geri almak için klasör seçin"
+msgstr "Изберете папката с позиционни маркери, която искате да възстановите"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-#, fuzzy
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
 "from the previous saved searches"
-msgstr "Kaydetmek için metin yazın ya da önceden kaydedileni silin"
+msgstr ""
+"Въведете текста, който искате да запазите, или изтрийте текста, който искате "
+"да премахнете от предишни запазени търсения"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
-msgstr "Özel arama için metin kaydı"
+msgstr "Запазете текст за конкретно търсене"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
-msgstr "Özel arama için metin kaydeder"
+msgstr "Запазва текстов низ за конкретно търсене."
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "Özel arama dosyası bulunamadı"
+msgstr "Файла за конкретно търсене не е намерен"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Özel bir belge içinde imlecin mevcut konumundan itibaren özel bir metin arar"
+"Търси за текстов низ от текущата позиция на курсора за конкретен документ."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "Yerimi kaydedilemedi"
+msgstr "Отметката не може да бъде запазена"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "Bu konum zaten kaydedilmiş"
+msgstr "Тази позиция вече е била запазена"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "Kaydedilen konum %d karakter"
+msgstr "Запазена позиция на знак %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Yerimi kaydedilemedi"
+msgstr "Отметката не може да бъде запазена"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Mevcut konumu yerimi olarak kaydeder"
+msgstr "Запазва текущата позиция като отметка."
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "Yerimi bulunmuyor"
+msgstr "Няма отметки"
 
 msgid "Bookmark cannot be deleted"
-msgstr "Yerimi silinemedi"
+msgstr "Отметката не може да бъде изтрита"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "Seçili yerimi yok"
+msgstr "Няма избрана отметка"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Yerimi silindi"
+msgstr "Отметката е изтрита"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Yerimi silinemiyor"
+msgstr "Отметката не може да бъде изтрита"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Mevcut yerimini siler"
+msgstr "Изтрива текущата отметка"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Yerimi bulunamadı"
+msgstr "Няма намерени отметки"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "Yerimi bulunamadı"
+msgstr "Не мога да намеря нито една отметка"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "konum: karakter %d"
+msgstr "Позиция: знак %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Sonraki yerimi bulunamadı"
+msgstr "Няма следваща отметка"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Sonraki yerimine gider"
+msgstr "Премества курсора до следваща отметка"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "Önceki yerimi bulunamadı"
+msgstr "Няма предишна отметка"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Önceki yerimine gider"
+msgstr "Премества курсора до предишна отметка"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Yerimleri için dosya adı kopyalanamadı"
+msgstr "Името на файла с позиционните маркери не може да бъде копирано"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Yerimi dosya adı panoya kopyalandı"
+msgstr "Името на файла с позиционните маркери е копирано в клипборда"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Yerimleri için kullanılan dosya adını panoya kopyalar"
+msgstr "Копира името на файла с текущите позиционни маркери в клипборда."
 
 #. Translators: This is the label for the specific search settings dialog.
-#, fuzzy
 msgid "Specific Search"
-msgstr "Özel arama"
+msgstr "Конкретно търсене"
 
 #. Translators: This is the label for a textfield in the
 #. specific search settings dialog.
 msgid "&Text to search:"
-msgstr ""
+msgstr "&Текст за търсене:"
 
 #. Translators: The label for a setting in specific search to select a saved text.
 msgid "&Saved texts:"
-msgstr ""
+msgstr "&Запазени текстове:"
 
 #. Translators: A combo box to choose a saved text.
-#, fuzzy
 msgid "Saved texts to search:"
-msgstr "Özel arama için metin kaydı"
+msgstr "Запазен текст за търсене:"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search down"
-msgstr ""
+msgstr "Търсене напред"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search up"
-msgstr ""
+msgstr "Търсене назад"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Delete"
-msgstr ""
+msgstr "Изтрий"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr ""
+msgstr "Възможни &действия:"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
-msgstr ""
+msgstr "Изберете действие, което да се извърши:"
 
 #. Translators: Tooltip for an addon menu item.
 #, python-format
 msgid "Opens documentation for %s"
-msgstr "%s için dokümantasyonu açar"
+msgstr "Отваря помощната документация за %s"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Yerimleri"
+msgstr "Позиционни маркери"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Sanal dokümanlar için yerimi eklentisi"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "Aramak için metin girin"
+msgstr ""
+"Добавка за задаване на позиционни маркери за определени виртуални документи"

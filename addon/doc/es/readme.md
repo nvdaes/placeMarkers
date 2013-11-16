@@ -1,8 +1,8 @@
 # placeMarkers #
 
 * Autores: Noelia, Chris.
-* descarga [versión estable: 1.0][1]
-* descarga [versión de desarrollo: 2.0-dev][2]
+* descargar [versión estable][1]
+* descarga [versión de desarrollo][2]
 
 Este complemento se utiliza para guardar y buscar cadenas de texto
 específicas o marcas, en páginas web o en documentos en el modo navegación
@@ -42,6 +42,10 @@ a
 Nota: La posición de la marca se basa en el número de caracteres; en páginas
 con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
 para guardar una posición precisa.
+
+
+## Cambios para 3.0 ##
+* Añadido el soporte para lectura superficial.
 
 ## Cambios para 2.0 ##
 * Añadidas opciones para guardar y eliminar diferentes búsquedas para cada

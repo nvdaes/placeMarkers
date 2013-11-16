@@ -1,8 +1,8 @@
-# placeMarkers #
+# Paikkamerkit #
 
 * Tekijät: Noelia, Chris
-* Lataa [vakaa versio: 1.0][1]
-* Lataa [kehitysversio: 2.0-dev][2]
+* Lataa [vakaa versio][1]
+* Lataa [kehitysversio][2]
 
 Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
 paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
@@ -45,6 +45,10 @@ seuraavia toimintoja:
 Huomautus: Paikkamerkin sijainti perustuu merkkien lukumäärään. Muuttuvaa
 sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien sijasta sivukohtaista hakua.
+
+
+## Muutokset versiossa 3.0 ##
+* Lisätty tuki pikaluvulle.
 
 ## Muutokset versiossa 2.0 ##
 * Lisätty vaihtoehdot eri hakujen tallentamiseksi ja poistamiseksi kullekin

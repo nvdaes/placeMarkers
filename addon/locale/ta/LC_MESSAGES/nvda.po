@@ -8,23 +8,39 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-06-30 19:41+0530\n"
+"PO-Revision-Date: 2013-11-04 20:18+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Tamil\n"
-"X-Poedit-Country: india\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
-msgstr "தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் "
+"கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
 msgstr "கூட்டுறுப்பை நிறுவுக, அல்லது இற்றைப்படுத்துக"
+
+#. Translators: label of error dialog.
+#, python-format
+msgid "text \"%s\" not found"
+msgstr "உரை \"%s\" காணப்படவில்லை"
+
+#. Translators: title of error dialog.
+msgid "Find Error"
+msgstr "கண்டுபிடித்தலில் பிழை"
+
+#, python-format
+msgid "%s copied to clipboard"
+msgstr "%s பிடிப்புப் பலகைக்கு படியெடுக்கப்பட்டது"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
@@ -76,7 +92,8 @@ msgstr "தற்போதைய மொழிக்கான ஆவணத்த�
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "சேமிக்கப்பட்டுள்ள தங்களின்  இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறையை தெரிவு செய்க"
+msgstr ""
+"சேமிக்கப்பட்டுள்ள தங்களின்  இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறையை தெரிவு செய்க"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
@@ -91,42 +108,30 @@ msgid "Select the place markers folder you wish to restore"
 msgstr "மீட்டெடுக்கப்பட வேண்டிய கோப்புறையைத் தெரிவு செய்க"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid "Type the text you wish to save, or delete any text if you want to remove it from the previous saved search"
-msgstr "சேமிக்கப்பட வேண்டிய உரையைத் தட்டச்சிடவும், அல்லது முன்னதாக சேமிக்கப்பட்டுள்ள உரையை நீக்க வேண்டுமானால், அவ்வுரையை அழிக்கவும்"
+msgid ""
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
+msgstr ""
+"சேமிக்கப்பட வேண்டிய உரையைத் தட்டச்சிடவும், அல்லது முன்னதாக சேமிக்கப்பட்டுள்ள உரையை நீக்க "
+"வேண்டுமானால், அவ்வுரையை அழிக்கவும்"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
 msgstr "குறிப்பான தேடுதலுக்கு உரையை சேமிக்கவும்"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
 msgstr "குறிப்பான தேடுதலுக்கு ஒரு உரைச் சரத்தை சேமிக்கிறது"
-
-#. Translators: label of error dialog.
-#, python-format
-msgid "text \"%s\" not found"
-msgstr "உரை \"%s\" காணப்படவில்லை"
-
-#. Translators: title of error dialog.
-msgid "Find Error"
-msgstr "கண்டுபிடித்தலில் பிழை"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
 msgstr "குறிப்பாக தேடப்பட வேண்டிய உரை ஏதும் காணப்படவில்லை"
 
-#. Translators: label of a dialog presented when searching a saved string of text for the current document.
-msgid "Type the text you wish to find"
-msgstr "தாங்கள் கண்டுபிடிக்க விரும்பும் உரையைத் தட்டச்சிடவும்"
-
-#. Translators: title of a dialog presented when searching a saved string of text for the current document.
-msgid "Specific search"
-msgstr "குறிப்பான தேடுதல்"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "finds a text string from the current cursor position for a specific document."
-msgstr "ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
+msgid ""
+"finds a text string from the current cursor position for a specific document."
+msgstr ""
+"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
@@ -213,6 +218,43 @@ msgstr "இடக் குறிப்பிகளின் கோப்பு�
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "இடக் குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
 
+#. Translators: This is the label for the specific search settings dialog.
+msgid "Specific Search"
+msgstr "குறிப்பான தேடுதல்"
+
+#. Translators: This is the label for a textfield in the
+#. specific search settings dialog.
+msgid "&Text to search:"
+msgstr "தேடப்பட வேண்டிய உரை: "
+
+#. Translators: The label for a setting in specific search to select a saved text.
+msgid "&Saved texts:"
+msgstr "சேமிக்கப்பட்ட உரைகள்: "
+
+#. Translators: A combo box to choose a saved text.
+msgid "Saved texts to search:"
+msgstr "தேடுதலுக்கான சேமிக்கப்பட்ட உரைகள்: "
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Search down"
+msgstr "கீழ் நோக்கித் தேடுக"
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Search up"
+msgstr "மேல் நோக்கித் தேடுக"
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Delete"
+msgstr "அழிக்கவும்"
+
+#. Translators: The label for a setting in specific search to select an action.
+msgid "&Actions to choose:"
+msgstr "தேர்ந்தெடுக்கப்பட வேண்டிய செயல்: "
+
+#. Translators: A combo box to choose an action.
+msgid "Select an action to perform:"
+msgstr "நிகழ்த்த வேண்டிய செயலைத் தெரிவு செய்க"
+
 #. Translators: Tooltip for an addon menu item.
 #, python-format
 msgid "Opens documentation for %s"
@@ -228,3 +270,5 @@ msgstr "இடக் குறிப்பிகள்"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
 
+#~ msgid "Type the text you wish to find"
+#~ msgstr "தாங்கள் கண்டுபிடிக்க விரும்பும் உரையைத் தட்டச்சிடவும்"

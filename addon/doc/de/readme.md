@@ -1,8 +1,8 @@
 # Lesezeichen #
 
 * Autoren: Noelia, Chris.
-* [stabile version: 1.0][1] herunterladen
-* [Testversion: 2.0-dev][2] herunterladen
+* download [stable version][1]
+* download [development version][2]
 
 Mit dieser Erweiterung können Sie innerhalb des Lesemodus von NVDA
 Suchanfragen oder Lesezeichen speichern Bzw. Suchläufe durchführen. Die
@@ -38,6 +38,10 @@ folgende Elemente zugreifen:
 Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (gezählt in
 Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
+
+
+## Changes for 3.0 ##
+* Added support for skim reading.
 
 ## Änderungen für 2.0 ##
 * Option hinzugefügt, verschiedene Suchbegriffe für jede Datei zu speichern
