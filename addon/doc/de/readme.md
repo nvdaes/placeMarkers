@@ -1,8 +1,8 @@
 # Lesezeichen #
 
 * Autoren: Noelia, Chris.
-* download [stable version][1]
-* download [development version][2]
+* [stabile version:][1] herunterladen
+* [Testversion][2] herunterladen
 
 Mit dieser Erweiterung können Sie innerhalb des Lesemodus von NVDA
 Suchanfragen oder Lesezeichen speichern Bzw. Suchläufe durchführen. Die
@@ -21,6 +21,7 @@ beiden Erweiterungen deinstallieren
 ## Tastenkombinationen: ##
 
 *	Steuerung+Umschalt+NVDA+s; öffnet einen Dialog, welcher es ermöglicht, einen Text zu speichern, den Sie im aktuellen Dokument suchen möchten. Standardmäßig wird der Text, der zuvor für diese Datei gespeichert wurde, angezeigt. Sie können diesen Text auch löschen und mit ok bestätigen, fals Sie das möchten.
+
 ## Untermenü Sprungmarken (nvda+n) ##
 
 
@@ -40,8 +41,8 @@ Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
 
 
-## Changes for 3.0 ##
-* Added support for skim reading.
+## Änderungen für 3.0 ##
+* Unterstützung für "Navigation während alles lesen" hinzugefügt.
 
 ## Änderungen für 2.0 ##
 * Option hinzugefügt, verschiedene Suchbegriffe für jede Datei zu speichern

@@ -1,7 +1,7 @@
 # Könyvjelzők #
 * Készítők: Noelia, Chris.
-* download [stable version][1]
-* download [development version][2]
+* letöltés [stabil verzió][1]  letöltése
+* letöltés [fejlesztői verzió][2]  letöltése
 
 Ez a kiegészítő különböző karakterláncok, vagy könyvjelzők mentésére, és
 keresésére használható dokumentumokban és internetes oldalakon, az nvda
@@ -42,13 +42,15 @@ Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
 
 
-## Changes for 3.0 ##
-* Added support for skim reading.
+## A 3.0 verzió változásai ##
+* Az átfutó olvasás támogatásának hozzáadása
 
 ## A 2.0 verzió változásai ##
-* Added options to save and delete different searches for each file.
-* Fixed bug which broke when paths contained non latin characters.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog.
+* A különböző keresések elmenthetők és törölhetők minden fájlnál.
+* A program már jól működik hogyha az elérésiút tartalmaz nem latin
+  karaktereket.
+* A billentyűparancsok megváltoztathatóak az NVDA Beviteli parancsok
+  beállítás ablakában.
 
 
 ## Az 1.0 verzió változásai ##

@@ -19,13 +19,13 @@ gebruiken omdat ze gemeenschappelijke sneltoetsen en features hebben.
 
 ## Belangrijke commando's: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	control+shift+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+NVDA+s; Opent een dialoogvenster dat u toelaat een tekststring op te slaan die u in het huidige document wilt vinden. Standaard wordt de voor dit bestand eerder opgeslagen tekst getoond. Verwijder deze tekst en druk op de Ok-knop als u het tekstbestand wilt verwijderen dat overeenkomt met de opgeslagen zoekopdracht, of type nieuwe tekst om een andere zoekopdracht toe te voegen.
+*	control+shift+NVDA+f; opent een dialoogvenster met een invoerveld dat de laatst opgeslagen zoekopdracht toont; in dit dialoogvenster kunt u ook de eerder opgeslagen zoekopdrachten selecteren uit een keuzelijst en een actie kiezen uit de volgende keuzelijst. Als er geen beschikbare bestanden zijn voor specifieke zoekopdrachten in het huidige document, zal NVDA u waarschuwen dat geen bestand is gevonden voor specifieke zoekopdrachten.
+*	control+shift+NVDA+k; Slaat de huidige positie op als een bookmark
+*	control+shift+NVDA+delete; Verwijdert de bookmark die overeenkomt met deze positie.
+*	control+shift+k; Gaat naar de volgende bookmark.
+*	shift+NVDA+k; Gaat naar de vorige bookmark.
+*	NVDA+k; Kopieert de bestandsnaam, zonder extensie, waar degegevens van de place markers zullen worden opgeslagen naar het klembord.
 
 ## Place markers Submenu (NVDA+N) ##
 
