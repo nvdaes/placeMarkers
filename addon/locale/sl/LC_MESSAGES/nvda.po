@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Namesti ali posodobi dodatek"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr " \"%s\" besedilo se ni našlo"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Napaka Najdi"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s preslikano v odložišče"
@@ -254,11 +255,6 @@ msgstr "Dejanja na voljo:"
 msgid "Select an action to perform:"
 msgstr "Izberite dejanje, ki se bo izvedlo:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Odpre %s dokumentacijo"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -269,6 +265,9 @@ msgstr "Prostorske označbe"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek za postavitev prostorskih označb v izbranih navideznih dokumentih"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Odpre %s dokumentacijo"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Natipkajte besedilo, ki ga želite najti"

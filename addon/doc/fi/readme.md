@@ -14,8 +14,8 @@ paikkamerkit tallennetaan teksti- ja pickle-tiedostoihin. Tiedostojen nimet
 perustuvat nykyisen asiakirjan nimeen ja URL-osoitteeseen.
 
 Tämä lisäosa perustuu saman tekijän kehittämiin SpecificSearch- ja
-Bookmark&Search-lisäosiin. Ne tulisi poistaa tämän version käyttämiseksi,
-koska niissä on samoja näppäinkomentoja ja ominaisuuksia.
+Bookmark&Search-lisäosiin. Sinun tulisi poistaa ne tämän version
+käyttämiseksi, sillä niissä on samoja näppäinkomentoja ja ominaisuuksia.
 
 ## Näppäinkomennot: ##
 

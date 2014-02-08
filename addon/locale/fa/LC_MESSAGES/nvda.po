@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "نصب یا بروز رسانی افزونه"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "متنی \"%s\" پیدا نشد"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "پیدایش خطا"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, fuzzy, python-format
 msgid "%s copied to clipboard"
 msgstr "نام پرونده نشانه گذاری ها به کلیپ برد کپی شد"
@@ -256,11 +257,6 @@ msgstr ""
 msgid "Select an action to perform:"
 msgstr ""
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "سند را برای %s باز میکند"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -270,6 +266,9 @@ msgstr "نشانه گذاری ها"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه برای تنظیم نشانه گذاری ها در اسناد مجازی"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "سند را برای %s باز میکند"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "متنی را که میخواهید پیدا بکنید بنویسید"

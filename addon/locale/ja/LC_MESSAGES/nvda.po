@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "アドオンのインストールまたは更新"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "テキスト %s が見つかりません"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "検索の失敗"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s をクリップボードにコピー"
@@ -251,11 +252,6 @@ msgstr "アクションを選択(&A):"
 msgid "Select an action to perform:"
 msgstr "実行するアクションを選択:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "%s の説明を開く"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -265,6 +261,9 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "ドキュメントにプレイスマーカーを設定できます"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "%s の説明を開く"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "検索したいテキストを入力"

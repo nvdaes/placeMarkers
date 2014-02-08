@@ -24,22 +24,23 @@ msgid ""
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
 "Вашата папка с потребителските настройки за NVDA съдържа файлове, които "
-"изглежда са създадени от предишна версия на тази добавка. Желаете ли да "
+"изглежда са създадени от предишна версия на тази добавка. Желаете ли те да "
 "бъдат обновени?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
 msgstr "Инсталиране или обновяване на добавката"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "Текстът \"%s\" не е намерен"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Грешка при търсене"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s е копиран в клипборда"
@@ -126,13 +127,13 @@ msgstr "Запазва текстов низ за конкретно търсе�
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "Файла за конкретно търсене не е намерен"
+msgstr "Файлът за конкретно търсене не е намерен"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Търси за текстов низ от текущата позиция на курсора за конкретен документ."
+"Търси текстов низ от текущата позиция на курсора за конкретен документ."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
@@ -256,11 +257,6 @@ msgstr "Възможни &действия:"
 msgid "Select an action to perform:"
 msgstr "Изберете действие, което да се извърши:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Отваря помощната документация за %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -271,3 +267,6 @@ msgstr "Позиционни маркери"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Добавка за задаване на позиционни маркери за определени виртуални документи"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Отваря помощната документация за %s"

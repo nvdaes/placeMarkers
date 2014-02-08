@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "تنصيب أو تحديث الإضافة"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "النص \"%s\" غير موجود"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "وقع خطأ"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s نقل إلى الحافظة"
@@ -253,11 +254,6 @@ msgstr "اختيار الإجراء المناسب"
 msgid "Select an action to perform:"
 msgstr "حدد أحد الخيارات لتنفيذها"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "فتح ملف المساعدة الخاص بي   %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -267,3 +263,6 @@ msgstr "علامات مرجعية"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "إضافة لوضع علامات مرجعية داخل مستندات نمط التصفح"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "فتح ملف المساعدة الخاص بي   %s"

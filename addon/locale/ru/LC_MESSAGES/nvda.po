@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Установка или обновление дополнения"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "текст \"%s\" не найден"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Ошибка Поиска"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s скопирован в буфер обмена"
@@ -254,11 +255,6 @@ msgstr "&Выбор опций:"
 msgid "Select an action to perform:"
 msgstr "Выберите действие:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Открывает документацию для %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -268,3 +264,6 @@ msgstr "Пометки"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Дополнение для добавления пометок в документы в виртуальном буфере"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Открывает документацию для %s"

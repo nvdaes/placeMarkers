@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Installa o Aggiorna"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "testo \"%s\" non trovato..."
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Errore nella ricerca"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s copiato negli appunti;"
@@ -254,11 +255,6 @@ msgstr "Azione da scegliere:"
 msgid "Select an action to perform:"
 msgstr "Selezionare l'operazione da eseguire:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Apre la documentazione di %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -270,6 +266,9 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Componente aggiuntivo per impostare Segnaposti in pagine Web e documenti "
 "virtuali."
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Apre la documentazione di %s"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Digitare il testo da cercare;"

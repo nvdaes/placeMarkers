@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "A kiegészítő telepítése vagy eltávolítása"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "A szöveg \"%s\" nem található"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Találati hiba"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s a vágólapra másolva"
@@ -257,11 +258,6 @@ msgstr "&Művelet választás:"
 msgid "Select an action to perform:"
 msgstr "Válassza ki a végrahajtani kívánt műveletet:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "%s súgójának megnyitása"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -271,6 +267,9 @@ msgstr "Helyjelzők"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Kiegészítő a helyjelzők elhelyezésére virtuális dokumentumokban"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "%s súgójának megnyitása"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Gépelje be azt a szöveget, amit meg szeretne találni"

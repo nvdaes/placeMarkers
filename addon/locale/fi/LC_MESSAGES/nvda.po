@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-10-10 20:19+0200\n"
+"PO-Revision-Date: 2014-02-06 11:29+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.3\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -27,17 +27,18 @@ msgstr ""
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Asenna tai päivitä lisäosa"
+msgstr "Lisäosan asennus tai päivitys"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "Tekstiä \"%s\" ei löydy"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Hakuvirhe"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s kopioitu leikepöydälle"
@@ -248,16 +249,11 @@ msgstr "Poista"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "&Valittavat toiminnot:"
+msgstr "&Toiminnot:"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
 msgstr "Valitse suoritettava toiminto:"
-
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Avaa %s-lisäosan ohjeen"
 
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
@@ -268,6 +264,9 @@ msgstr "Paikkamerkit"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Lisäosa sivukohtaisten paikkamerkkien määrittämiseen"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Avaa %s-lisäosan ohjeen"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Kirjoita etsittävä teksti"

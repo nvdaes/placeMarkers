@@ -10,7 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
 "PO-Revision-Date: 2013-08-15 22:14-0300\n"
 "Last-Translator: Cleverson Casarin Uliana <clever92000@yahoo.com.br>\n"
-"Language-Team: Equipe de tradução do NVDA para Português do Brasil <clever92000@yahoo.com.br>\n"
+"Language-Team: Equipe de tradução do NVDA para Português do Brasil "
+"<clever92000@yahoo.com.br>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,22 +21,27 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
-msgstr "Sua pasta de opções do NVDA contém arquivos que parecem derivar duma versão antiga deste complemento. Deseja atualizá-la?"
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Sua pasta de opções do NVDA contém arquivos que parecem derivar duma versão "
+"antiga deste complemento. Deseja atualizá-la?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
 msgstr "Instalar ou atualizar complemento"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "texto \"%s\" não encontrado"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Erro de procura"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s copiado para a área de transferência"
@@ -105,8 +111,12 @@ msgid "Select the place markers folder you wish to restore"
 msgstr "Selecione a pasta de marcadores que deseja restaurar"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid "Type the text you wish to save, or delete any text if you want to remove it from the previous saved searches"
-msgstr "Digite o texto que deseja salvar, ou apague o texto se quiser removê-lo das buscas anteriormente salvas"
+msgid ""
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
+msgstr ""
+"Digite o texto que deseja salvar, ou apague o texto se quiser removê-lo das "
+"buscas anteriormente salvas"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
@@ -121,8 +131,10 @@ msgid "File for specific search not found"
 msgstr "Arquivo de busca específica não achado"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "finds a text string from the current cursor position for a specific document."
-msgstr "Procura num documento específico a cadeia de texto na posição do cursor."
+msgid ""
+"finds a text string from the current cursor position for a specific document."
+msgstr ""
+"Procura num documento específico a cadeia de texto na posição do cursor."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
@@ -207,7 +219,8 @@ msgstr "Nome do arquivo de marcadores copiado para a área de transferência"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Copia o nome do arquivo atual de marcadores para a área de transferência."
+msgstr ""
+"Copia o nome do arquivo atual de marcadores para a área de transferência."
 
 #. Translators: This is the label for the specific search settings dialog.
 msgid "Specific Search"
@@ -246,11 +259,6 @@ msgstr "&Ações a escolher:"
 msgid "Select an action to perform:"
 msgstr "Selecione uma ação a executar:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Abre documentação para %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -260,6 +268,9 @@ msgstr "Marcadores"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Complemento para criar marcadores em documentos virtuais específicos"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Abre documentação para %s"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Digite o texto que deseja encontrar"

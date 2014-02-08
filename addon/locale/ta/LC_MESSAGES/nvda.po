@@ -29,15 +29,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "கூட்டுறுப்பை நிறுவுக, அல்லது இற்றைப்படுத்துக"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "உரை \"%s\" காணப்படவில்லை"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "கண்டுபிடித்தலில் பிழை"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s பிடிப்புப் பலகைக்கு படியெடுக்கப்பட்டது"
@@ -255,11 +256,6 @@ msgstr "தேர்ந்தெடுக்கப்பட வேண்டி�
 msgid "Select an action to perform:"
 msgstr "நிகழ்த்த வேண்டிய செயலைத் தெரிவு செய்க"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "%s-ற்கான ஆவணத்தை திறக்கிறது"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -269,6 +265,9 @@ msgstr "இடக் குறிப்பிகள்"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "%s-ற்கான ஆவணத்தை திறக்கிறது"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "தாங்கள் கண்டுபிடிக்க விரும்பும் உரையைத் தட்டச்சிடவும்"

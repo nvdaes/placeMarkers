@@ -30,15 +30,16 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Eklenti kur ya da güncelle"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "metin \"%s\" bulunamadı"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "arama hatası"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s panoya kopyalandı"
@@ -253,11 +254,6 @@ msgstr "&Eylem seçimi:"
 msgid "Select an action to perform:"
 msgstr "Gerçekleştirilecek eylemi seçin:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "%s için dokümantasyonu açar"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -267,6 +263,9 @@ msgstr "Yerimleri"
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Sanal dokümanlar için yerimi eklentisi"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "%s için dokümantasyonu açar"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Aramak için metin girin"

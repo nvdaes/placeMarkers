@@ -18,22 +18,27 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
-msgstr "Uw configuratiemap van NVDA bevat bestanden die van een oudere versie van deze add-on lijken te zijn. Wilt u deze bijwerken?"
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Uw configuratiemap van NVDA bevat bestanden die van een oudere versie van "
+"deze add-on lijken te zijn. Wilt u deze bijwerken?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
 msgstr "Add-on installeren of bijwerken"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "Tekst \"%s\" niet gevonden"
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Zoekfout"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s naar klembord gekopieerd"
@@ -103,8 +108,12 @@ msgid "Select the place markers folder you wish to restore"
 msgstr "Selecteer de map met place markers die u wilt terugzetten"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid "Type the text you wish to save, or delete any text if you want to remove it from the previous saved searches"
-msgstr "Type de tekst die u wilt opslaan, of verwijder alle tekst om deze te verwijderen van de eerder opgeslagen zoekopdrachten"
+msgid ""
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
+msgstr ""
+"Type de tekst die u wilt opslaan, of verwijder alle tekst om deze te "
+"verwijderen van de eerder opgeslagen zoekopdrachten"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
@@ -119,7 +128,8 @@ msgid "File for specific search not found"
 msgstr "Bestand voor specifieke zoekopdracht niet gevonden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "finds a text string from the current cursor position for a specific document."
+msgid ""
+"finds a text string from the current cursor position for a specific document."
 msgstr "Zoekt naar tekst vanaf de cursorpositie in een specifiek document"
 
 #. Translators: message presented when a bookmark cannot be saved.
@@ -244,11 +254,6 @@ msgstr "Mogelijke &acties:"
 msgid "Select an action to perform:"
 msgstr "Kies een uit te voeren actie:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Opent documentatie voor %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -257,7 +262,11 @@ msgstr "Place markers"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Add-on om place markers in specifieke virtuele documenten aan te brengen"
+msgstr ""
+"Add-on om place markers in specifieke virtuele documenten aan te brengen"
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Opent documentatie voor %s"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Type de tekst die u wilt zoeken"

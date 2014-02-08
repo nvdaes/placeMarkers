@@ -17,22 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
-msgstr "priečinok s nastaveniami obsahuje súbory zo staršej verzie tohto doplnku. Chcete ho aktualizovať?"
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"priečinok s nastaveniami obsahuje súbory zo staršej verzie tohto doplnku. "
+"Chcete ho aktualizovať?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
 msgstr "Inštalovať alebo aktualizovať doplnok"
 
-#. Translators: label of error dialog.
+#. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
 msgstr "text \"%s\" nebol nájdený."
 
-#. Translators: title of error dialog.
+#. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
 msgstr "Chyba vyhľadávania"
 
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s skopírované do schránky"
@@ -102,8 +107,12 @@ msgid "Select the place markers folder you wish to restore"
 msgstr "Vyberte priečinok, z ktorého chcete obnoviť záložky"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid "Type the text you wish to save, or delete any text if you want to remove it from the previous saved searches"
-msgstr "Zadajte text, ktorý chcete uložiť, alebo vymažte text zo zoznamu hľadaných reťazcov"
+msgid ""
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
+msgstr ""
+"Zadajte text, ktorý chcete uložiť, alebo vymažte text zo zoznamu hľadaných "
+"reťazcov"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
@@ -118,7 +127,8 @@ msgid "File for specific search not found"
 msgstr "Súbor s reťazcami hľadania neexistuje"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "finds a text string from the current cursor position for a specific document."
+msgid ""
+"finds a text string from the current cursor position for a specific document."
 msgstr "Vyhľadá zadaný reťazec v aktuálnom dokumente od kurzora."
 
 #. Translators: message presented when a bookmark cannot be saved.
@@ -243,11 +253,6 @@ msgstr "Dostupné možnosti:"
 msgid "Select an action to perform:"
 msgstr "Vyberte si jednu z možností:"
 
-#. Translators: Tooltip for an addon menu item.
-#, python-format
-msgid "Opens documentation for %s"
-msgstr "Otvorí návod pre %s"
-
 #. Add-on description
 #. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -256,7 +261,12 @@ msgstr "Záložky"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on installation and add-on information
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Doplnok, ktorý umožňuje pridávať záložky do dokumentov zobrazených v režime prehliadania "
+msgstr ""
+"Doplnok, ktorý umožňuje pridávať záložky do dokumentov zobrazených v režime "
+"prehliadania "
+
+#~ msgid "Opens documentation for %s"
+#~ msgstr "Otvorí návod pre %s"
 
 #~ msgid "Type the text you wish to find"
 #~ msgstr "Napíšte text, ktorý chcete vyhľadať."
