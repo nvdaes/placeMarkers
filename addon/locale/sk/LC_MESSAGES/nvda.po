@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-08-16 09:41+0100\n"
+"PO-Revision-Date: 2014-02-16 20:21+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -146,7 +147,7 @@ msgstr "Záložka uložená na pozícii %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Nemôžem uložiť záložku"
+msgstr "Nie je možné uložiť záložku"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
@@ -181,7 +182,7 @@ msgstr "Žiadne záložky"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "Nemôžem nájsť žiadne záložky"
+msgstr "Nie je možné nájsť žiadne záložky"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -206,7 +207,7 @@ msgstr "prejde na predchádzajúcu záložku."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Nemôžem skopírovať názov súboru so záložkami"
+msgstr "Nie je možné skopírovať názov súboru so záložkami"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
