@@ -32,6 +32,8 @@ Using Place markers submenu, under Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in pages with a dynamic content is better to use the specific search, and not the bookmarks which save a precise position.
 
+## Changes for 3.1 ##
+* Translation updates and new language.
 
 ## Changes for 3.0 ##
 * Added support for skim reading.
