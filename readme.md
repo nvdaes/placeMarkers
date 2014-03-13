@@ -34,6 +34,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 3.1 ##
 * Translation updates and new language.
+* Bookmark position is not announced in skim reading.
 
 ## Changes for 3.0 ##
 * Added support for skim reading.
