@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Support for enhanced skim reading in version 2014.1.
+# Date: 13/03/2014
 # Support for skim reading.
 # Date: 28/10/2013
 # Assigned script categories for input gestures
@@ -39,6 +41,7 @@ import speech
 import cPickle
 import codecs
 import sayAllHandler
+from scriptHandler import willSayAllResume
 from cursorManager import CursorManager
 from logHandler import log
 from gui.settingsDialogs import SettingsDialog
@@ -521,11 +524,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if bookmark > count:
 				end.move(textInfos.UNIT_CHARACTER, bookmark-count)
 				obj.selection = end
-				end.move(textInfos.UNIT_LINE,1,endPoint="end")
-				speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
-				ui.message(
-				# Translators: message presented when a bookmark is selected.
-				_("Position: character %d") % bookmark)
+				if not willSayAllResume(gesture):
+					end.move(textInfos.UNIT_LINE,1,endPoint="end")
+					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
+					ui.message(
+					# Translators: message presented when a bookmark is selected.
+					_("Position: character %d") % bookmark)
 				return
 		ui.message(
 		# Translators: message presented when the next bookmark is not found.
@@ -562,11 +566,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if bookmark < count:
 				end.move(textInfos.UNIT_CHARACTER, bookmark-count)
 				obj.selection = end
-				end.move(textInfos.UNIT_LINE,1,endPoint="end")
-				speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
-				ui.message(
-				# Translators: message presented when a bookmark is selected.
-				_("Position: character %d") % bookmark)
+				if not willSayAllResume(gesture):
+					end.move(textInfos.UNIT_LINE,1,endPoint="end")
+					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
+					ui.message(
+					# Translators: message presented when a bookmark is selected.
+					_("Position: character %d") % bookmark)
 				return
 		ui.message(
 		# Translators: message presented when the previous bookmark is not found.
