@@ -35,6 +35,8 @@ fér hozzá:
 Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
 
+## A 3.1 verzió változásai ##
+* Fordítások frissítése, és egy új nyelv hozzáadása
 
 ## A 3.0 verzió változásai ##
 * Az átfutó olvasás támogatásának hozzáadása

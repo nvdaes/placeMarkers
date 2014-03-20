@@ -45,6 +45,8 @@ Not: Yer imi konumu karakter sayısına dayanmaktadır; dinamik bir içeriğe
 sahip sayfalarda kesin bir konuma kaydetmek için özel arama değil, yer
 imleri kullanmak daha iyidir.
 
+## Changes for 3.1 ##
+* Translation updates and new language.
 
 ## 3.0 için Değişiklikler ##
 * Tarayarak okuma desteği eklendi.

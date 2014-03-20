@@ -1,8 +1,8 @@
-# स्थान चिनो #
+# placeMarkers #
 
-* लेखक: Noelia, Chris.
-* डाउनलोड[version 1.0][1]
-* download [development version][2]
+* Авторы: Noelia, Chris.
+* загрузить [стабильную версию][1]
+* загрузить [разрабатываемую версию][2]
 
 This addon is used for saving and searching specific text strings or
 bookmarks, on web pages or documents in NVDA's browse mode. It can also be
@@ -17,7 +17,7 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the
 same author. You should uninstall them to use this one, since they have
 common keystrokes and features.
 
-## कुञ्जी आदेस: ##
+## Клавиатурные Команды: ##
 
 *	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
 *	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
@@ -27,7 +27,7 @@ common keystrokes and features.
 *	shift+NVDA+k; Moves to the previous bookmark.
 *	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
-## स्थान आदेस उप मेनु(नेत्रवानी+N) ##
+## Place markers Submenu (NVDA+N) ##
 
 
 Using Place markers submenu, under Preferences menu, you can access:
@@ -38,30 +38,33 @@ Using Place markers submenu, under Preferences menu, you can access:
 *	Copy placeMarkers folder; you can save a copy of the bookmarks folder.
 *	Restore placeMarkers; you can restore your bookmarks from a previously
   saved placeMarkers folder .
-*	Documentation file, in your selected language if available, or English by
-  default.
+*	Файл документации, на выбранном языке, если есть, или английском - по
+  умолчанию.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in pages with a dynamic content is better to use the specific
-search, and not the bookmarks which save a precise position.
+Примечание: Положение закладки основано на количестве символов, и поэтому на
+страницах с динамическим содержимым лучше использовать конкретный поиск, а
+не закладки которые сохраняют чёткую позицию.
 
-## Changes for 3.1 ##
-* Translation updates and new language.
+## Изменения для 3.1 ##
+* Обновлены переводы и новые языки.
 
-## ३.० मा गरिएका परिवर्तनहरू ##
-* Added support for skim reading.
+## Изменения для 3.0 ##
+* Добавлена поддержка беглого чтения.
 
-## २.0 मा गरिएका परिवर्तनहरू ##
-* Added options to save and delete different searches for each file.
-* Fixed bug which broke when paths contained non latin characters.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog.
+## Изменения для 2.0 ##
+* Добавлены опции для сохранения и удаления различных поисков для каждого
+  файла.
+* Исправлена ошибка, вызывающая крах, когда пути содержат не латинские
+  буквы.
+* Горячие клавиши теперь могут быть переназначены в диалоге жестов ввода
+  NVDA.
 
 
-## १.० मा गरिएका परिवर्तनहरू ##
-* सुरुको संस्करण
-* अनुवादीत भाषाहरू: ब्राजेलियन पुर्तगाली, फारसी, फिनिस, फ्रांन्सेली,
-  ग्यालेसियन, जर्मनि, इटालि, जापानी, कोरियाली, नेपालि, पुर्तगाली, स्पेनि,
-  स्लोभाक, स्लोबिनियन, तामिल ।
+## Изменения для 1.0 ##
+* Первый Публичный Релиз
+* Переведено на: бразильский португальский, фарси, финский, французский,
+  галисийский, немецкий, итальянский, японский, корейский, непальский,
+  португальский, испанский, словацкий, словенский, тамильский.
 
 [[!tag dev stable]]
 

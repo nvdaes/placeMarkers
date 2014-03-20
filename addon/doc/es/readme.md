@@ -43,6 +43,8 @@ Nota: La posición de la marca se basa en el número de caracteres; en páginas
 con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
 para guardar una posición precisa.
 
+## Cambios para 3.1 ##
+* Actualización de traducciones y nuevos idiomas.
 
 ## Cambios para 3.0 ##
 * Añadido el soporte para lectura superficial.

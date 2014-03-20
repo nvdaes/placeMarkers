@@ -46,6 +46,8 @@ Huomautus: Paikkamerkin sijainti perustuu merkkien lukumäärään. Muuttuvaa
 sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien sijasta sivukohtaista hakua.
 
+## Muutokset versiossa 3.1 ##
+* Käännöksiä päivitetty ja lisätty uusi kieli.
 
 ## Muutokset versiossa 3.0 ##
 * Lisätty tuki pikaluvulle.

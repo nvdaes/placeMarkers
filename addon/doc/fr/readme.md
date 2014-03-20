@@ -45,6 +45,8 @@ Note: la position du marqueur est basé sur le nombre de caractères. Dans les
 pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière.
 
+## Changements pour la version 3.1 ##
+* Mises à jour des traduction et nouvelle langue.
 
 ## Changements pour la version 3.0 ##
 * Ajout du support de la lecture rapide.

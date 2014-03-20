@@ -41,6 +41,8 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránka je
 lepšie použiť reťazce hľadania.
 
+## Zmeny vo verzii 3.3 ##
+* aktualizované a doplnené preklady.
 
 ## Zmeny vo verzii 3.0 ##
 * pridaná podpora pre rýchle čítanie

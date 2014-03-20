@@ -48,6 +48,8 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Zmiany dla wersji 3.1 ##
+* Aktualizacje tłumaczenia i nowy język.
 
 ## Zmiany dla wersji 3.0 ##
 * Dodano wsparcie czytania przeglądowego.

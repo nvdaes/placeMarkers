@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Specific Search 2.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-09-02 18:12+0100\n"
-"Last-Translator: patrick ZAJDA <patrick@zajda.fr>\n"
+"PO-Revision-Date: 2014-03-09 15:40+0100\n"
+"Last-Translator: Bachir Benanou <ben_bach@yahoo.fr>\n"
 "Language-Team: Michel Such <Michel.such@free.fr>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SearchPath-0: C:\\Users\\User\\AppData\\Roaming\\nvda\\addons"
 "\\Bookmark&Search\\globalPlugins\n"
 "X-Poedit-SearchPath-1: C:\\Users\\User\\AppData\\Roaming\\nvda\\addons"
@@ -110,7 +110,7 @@ msgstr "Erreur de copie"
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
 msgstr ""
-"Choisissez le dossier de marqueurs de position que vous voulez restorer"
+"Choisissez le dossier de marqueurs de position que vous souhaitez restaurer"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
@@ -218,12 +218,12 @@ msgstr "Impossible de copier le nom de fichier pour les marqueurs de position"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Nom du fichier de marqueurs de position copié dans le presse-papier"
+msgstr "Nom du fichier de marqueurs de position copié dans le presse-papiers"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr ""
-"Copie dans le presse-papier le nom du fichier courant contenant les "
+"Copie dans le presse-papiers le nom du fichier courant contenant les "
 "marqueurs de position."
 
 #. Translators: This is the label for the specific search settings dialog.
