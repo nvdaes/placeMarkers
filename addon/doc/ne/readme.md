@@ -2,7 +2,7 @@
 
 * लेखक: Noelia, Chris.
 * डाउनलोड[version 1.0][1]
-* download [development version][2]
+* डाउनलोट [development version][2]
 
 This addon is used for saving and searching specific text strings or
 bookmarks, on web pages or documents in NVDA's browse mode. It can also be
@@ -19,42 +19,42 @@ common keystrokes and features.
 
 ## कुञ्जी आदेस: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
+*	control+shift+नेत्रवाणी+s; तपाइले चालू कागजातमा कुनै पाठ पदावली खोज्नका लागि सञ्चय गर्ने पातो देखाउने छ ।  पहिले बचत गरिएको पाठलाई स्वतः निर्धारण गरिएको हुन्छ । यो पाठलाई मेटाएर 'ठिक' भन्ने टाँकलाई दबाउनु होला ।यदि तपाइ सञ्चित खोजी पाठ फाइललाइ हटाउन चाहनु हुन्छ अथवा अर्को खोजिएको नयाँ  पाठ बचत गर्न  चाहनु हुन्छ भने पनि । 
+*	control+shift+नेत्रवाणी +f; सबै भन्दा पछि बचत भएको खोजी पाठ युक्त सम्पादन कोठा सहितको पातो पल्टाउने छ ।; यो पातोमा पहिले खोजिएका पाठहरू कम्बो कोठा बाट चयन गरी अर्को कम्बो बाकसबाट कार्य रोज्न सकिने छ । यदि हालको कागजातमा कुनै विशेष खोजीका लागी फाइल रहेन छ भने, नेत्रवाणीले तपाइलाई कुनै विशेष खोजिको फाइल नभएको कुरा जनाउ दिनेछ ।n*	control+shift+नेत्रवाणी+k; हालको स्थानलाई पुस्तक चिनो रूपमा बचत गर्ने छ ।
 *	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
 *	control+shift+k; Moves to the next bookmark.
 *	shift+NVDA+k; Moves to the previous bookmark.
-*	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	नेत्रवाणी+k; स्थान चिनो तथ्याङ्कलाई राखिएको फाइलको नाम विस्तारित रुप विना  क्लिपपाटीमा उतार्ने छ ।
 
 ## स्थान आदेस उप मेनु(नेत्रवानी+N) ##
 
 
-Using Place markers submenu, under Preferences menu, you can access:
+प्राथमिकता मेनु भित्र रहेको  स्थानचिनो उपमेनुलाई प्रयोग गरेर तपाइले पहुंच
+पुर्‍याउन सक्नु हुन्छ ।
 
 *	Specific search folder: opens a folder of specific searches previously
   saved.
-*	Bookmarks folder; opens a folder of the saved bookmarks.
+*	पुस्तकचिनो थैली; पुस्तकचिनो बचत गरिएको थैलि पल्टाउने छ ।
 *	Copy placeMarkers folder; you can save a copy of the bookmarks folder.
-*	Restore placeMarkers; you can restore your bookmarks from a previously
-  saved placeMarkers folder .
+*	स्थानचिनोको पुनर्स्थापन; तपाइले पहिले बचत गरिएको पुस्तकचिनोबाट स्थानचिनलाई
+  पुनर्स्थापन गर्न सक्नु हुन्छ ।
 *	Documentation file, in your selected language if available, or English by
   default.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in pages with a dynamic content is better to use the specific
-search, and not the bookmarks which save a precise position.
+टिप्पणी: पुस्तकचिनोको स्थान वर्णहरुको सङ्ख्या; गतिसील सामाग्री युक्त पृष्ठमा
+हुने भएकोले विसेष खोजी गर्नु राम्रो हुन्छ  तर निदिर्ट पुस्तकचिनो मा होइन ।
 
-## Changes for 3.1 ##
-* Translation updates and new language.
+## ३.१ मा गरिएका परिवर्तनहरू ##
+* अनुवादको अध्यावधिकरण र अनुदित भाषाहरू
 
 ## ३.० मा गरिएका परिवर्तनहरू ##
-* Added support for skim reading.
+* योजना वाचनलाई थप गरियो ।
 
 ## २.0 मा गरिएका परिवर्तनहरू ##
-* Added options to save and delete different searches for each file.
-* Fixed bug which broke when paths contained non latin characters.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog.
+* हरेक फाइलमा भएका विभिन्न खोजीलाइ मेटाउन र बचत गर्ने विकल्पहरू थप गरियो । 
+* गैर ल्याटीन वर्णहरू भएका मार्ग हुदाँ काटिने समस्या हल गरियो ।
+* अब नेत्रवाणीको लगानीसङ्केत पातो प्रयोग गरेर द्रुतमार्ग कायम गर्न सक्ने
+  बनाइयो ।
 
 
 ## १.० मा गरिएका परिवर्तनहरू ##
