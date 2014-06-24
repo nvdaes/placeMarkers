@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Removed fragment identifiers in bookmark filenames
+# Date: 24/06/2014
 # Support for enhanced skim reading in version 2014.1.
 # Date: 13/03/2014
 # Support for skim reading.
@@ -286,7 +288,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			childID = obj.IAccessibleChildID
 			IAObj = obj.IAccessibleObject
 			accValue = IAObj.accValue(childID)
-			nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1]
+			nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1].split("#")[0]
 		except:
 			nameToAdd = ""
 		file = file.rsplit(" - ", 1)[0]
