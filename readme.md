@@ -34,6 +34,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
 
 ## Changes for 3.1 ##
 * Translation updates and new language.
