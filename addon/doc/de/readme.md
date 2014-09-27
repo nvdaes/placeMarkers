@@ -40,8 +40,8 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (gezählt in
 Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
 
-## Changes for 3.1 ##
-* Translation updates and new language.
+## Änderungen für 3.1 ##
+* aktualisierte Übersetzungen und neue Sprache.
 
 ## Änderungen für 3.0 ##
 * Unterstützung für "Navigation während alles lesen" hinzugefügt.
