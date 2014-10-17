@@ -44,8 +44,14 @@ common keystrokes and features.
 टिप्पणी: पुस्तकचिनोको स्थान वर्णहरुको सङ्ख्या; गतिसील सामाग्री युक्त पृष्ठमा
 हुने भएकोले विसेष खोजी गर्नु राम्रो हुन्छ  तर निदिर्ट पुस्तकचिनो मा होइन ।
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## ३.१ मा गरिएका परिवर्तनहरू ##
 * अनुवादको अध्यावधिकरण र अनुदित भाषाहरू
+* Bookmark position is not announced in skim reading.
 
 ## ३.० मा गरिएका परिवर्तनहरू ##
 * योजना वाचनलाई थप गरियो ।

@@ -47,8 +47,14 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico é melhor usar a busca específica e não
 marcadores, que salvam uma posição precisa.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## Mudanças na 3.1 ##
 * Atualização de traduções e novos idiomas.
+* Bookmark position is not announced in skim reading.
 
 ## Mudanças na 3.0 ##
 * Adicionado suporte a leitura dinâmica.

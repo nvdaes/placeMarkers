@@ -22,12 +22,12 @@ msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"तपाइको नेत्रवाणी अभियोजन थैलीमा यो थप-साधनका पुराना फाइलहरू रहेछन् । के तपाइ यसलाई "
+"तपाइको नेत्रवाणी अभियोजन थैलीमा यो उपकर्मीका पुराना फाइलहरू रहेछन् । के तपाइ यसलाई "
 "अद्यावधिक गर्न चाहनु हुन्छ ?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "थप-साधनलाई भित्र्याउ अथवा अद्यावधिक गर ।"
+msgstr "उपकर्मीलाई भित्र्याउ अथवा अद्यावधिक गर ।"
 
 #. Translators: label of error dialog, translated in NVDA core.
 #, python-format
@@ -255,15 +255,15 @@ msgstr "&कार्यको रोजाई"
 msgid "Select an action to perform:"
 msgstr "सम्पादन गरीने कार्यको चयन गर्नु होस् ।"
 
-#. Add-on description
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
 msgstr "स्थान चिनो "
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "विशेष अवास्तविक कागजातहरूमा स्थान चिनो अनुकूलन गर्ने थप-साधन ।"
+msgstr "विशेष अवास्तविक कागजातहरूमा स्थान चिनो अनुकूलन गर्ने उपकर्मी ।"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "%s का लागि कागजातहरू पल्टाउने छ ।"

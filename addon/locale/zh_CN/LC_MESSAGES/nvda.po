@@ -252,14 +252,14 @@ msgstr "选择的动作(&A):"
 msgid "Select an action to perform:"
 msgstr "选择一个希望执行的动作："
 
-#. Add-on description
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
 msgstr ""
 "Place markers\n"
 "翻译者：雪岭冰龙"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "一个在指定的虚拟文档中设置位置标记的插件。"

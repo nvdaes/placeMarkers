@@ -45,8 +45,16 @@ Note: la position du marqueur est basé sur le nombre de caractères. Dans les
 pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière.
 
+## Changements pour la version 4.0 ##
+* Identificateurs de fragment Supprimé pour les noms de fichiers  des
+  marqueurs , qui peut éviter des problèmes dans le module ePUBREADER de
+  Firefox.
+* L'aide du module complémentaire est disponible à partir du Gestionnaire de
+  modules complémentaires.
+
 ## Changements pour la version 3.1 ##
 * Mises à jour des traduction et nouvelle langue.
+* La position du marqueur n'est pas annoncé dans la lecture rapide.
 
 ## Changements pour la version 3.0 ##
 * Ajout du support de la lecture rapide.

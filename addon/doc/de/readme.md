@@ -40,8 +40,14 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (gezählt in
 Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## Änderungen für 3.1 ##
 * aktualisierte Übersetzungen und neue Sprache.
+* Bookmark position is not announced in skim reading.
 
 ## Änderungen für 3.0 ##
 * Unterstützung für "Navigation während alles lesen" hinzugefügt.

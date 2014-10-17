@@ -45,8 +45,14 @@ Not: Yer imi konumu karakter sayısına dayanmaktadır; dinamik bir içeriğe
 sahip sayfalarda kesin bir konuma kaydetmek için özel arama değil, yer
 imleri kullanmak daha iyidir.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## Changes for 3.1 ##
 * Translation updates and new language.
+* Bookmark position is not announced in skim reading.
 
 ## 3.0 için Değişiklikler ##
 * Tarayarak okuma desteği eklendi.

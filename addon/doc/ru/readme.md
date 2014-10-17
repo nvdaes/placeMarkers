@@ -45,8 +45,14 @@ Using Place markers submenu, under Preferences menu, you can access:
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## Изменения для 3.1 ##
 * Обновлены переводы и новые языки.
+* Bookmark position is not announced in skim reading.
 
 ## Изменения для 3.0 ##
 * Добавлена поддержка беглого чтения.

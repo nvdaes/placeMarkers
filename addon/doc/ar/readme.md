@@ -48,8 +48,14 @@ Bookmark إذا كان قد تم تنصيبهما, واللتان تم تطوي�
 المحتوى المتغير يستحسن استخدام البحث, وليست العلامات المرجعية لحفظ مكان
 دقيق.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## مستجدات الإصدار 3.1 ##
 * تحديث ترجمة الإضافة وترجمتها لمزيد من اللغات
+* Bookmark position is not announced in skim reading.
 
 ## مستجدات الإصدار 3.0 ##
 * إضافة دعم للقراءة التصفحية السريعة

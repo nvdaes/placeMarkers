@@ -263,13 +263,13 @@ msgstr "&Actions possibles :"
 msgid "Select an action to perform:"
 msgstr "Choisir une action à exécuter :"
 
-#. Add-on description
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
 msgstr "Marqueurs de position"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Module complémentaire permettant de placer des marqueurs de position dans "

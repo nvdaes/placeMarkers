@@ -35,8 +35,14 @@ fér hozzá:
 Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## A 3.1 verzió változásai ##
 * Fordítások frissítése, és egy új nyelv hozzáadása
+* Bookmark position is not announced in skim reading.
 
 ## A 3.0 verzió változásai ##
 * Az átfutó olvasás támogatásának hozzáadása
