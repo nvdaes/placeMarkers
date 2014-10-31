@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-11-04 20:18+0530\n"
+"PO-Revision-Date: 2014-10-18 16:54+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -45,7 +45,7 @@ msgstr "%s பிடிப்புப் பலகைக்கு படிய�
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "இடக் குறிப்பிகள்"
+msgstr "இடக் குறிப்பிகள் (&L)"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
@@ -53,7 +53,7 @@ msgstr "நூற்குறிகள் மற்றும் தேடுத�
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "குறிப்பான தேடுதல்களின் கோப்புறை"
+msgstr "குறிப்பான தேடுதல்களின் கோப்புறை (&S)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
@@ -61,7 +61,7 @@ msgstr "குறிப்பான தேடுதல்களின் கோ�
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "நூற்குறிகளின் கோப்புறை"
+msgstr "நூற்குறிகளின் கோப்புறை (&B)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
@@ -69,7 +69,7 @@ msgstr "நூற்குறிகளின் கோப்புறையை�
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறை"
+msgstr "இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறை (&C)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -77,7 +77,7 @@ msgstr "இடக் குறிப்பிகளின் காப்பம�
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "இடக் குறிப்பிகளை மீட்டேடுக்கவும்"
+msgstr "இடக் குறிப்பிகளை மீட்டேடுக்கவும் (&E)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
@@ -85,7 +85,7 @@ msgstr "முன்னதாக சேமிக்கப்பட்டுள�
 
 #. Translators: the name for an item of addon submenu.
 msgid "Open &documentation"
-msgstr "ஆவணத்தை திறவுக"
+msgstr "ஆவணத்தை திறவுக (&D)"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Open documentation for current language"
@@ -226,11 +226,11 @@ msgstr "குறிப்பான தேடுதல்"
 #. Translators: This is the label for a textfield in the
 #. specific search settings dialog.
 msgid "&Text to search:"
-msgstr "தேடப்பட வேண்டிய உரை: "
+msgstr "தேடப்பட வேண்டிய உரை (&T): "
 
 #. Translators: The label for a setting in specific search to select a saved text.
 msgid "&Saved texts:"
-msgstr "சேமிக்கப்பட்ட உரைகள்: "
+msgstr "சேமிக்கப்பட்ட உரைகள் (&S): "
 
 #. Translators: A combo box to choose a saved text.
 msgid "Saved texts to search:"
@@ -250,7 +250,7 @@ msgstr "அழிக்கவும்"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "தேர்ந்தெடுக்கப்பட வேண்டிய செயல்: "
+msgstr "தேர்ந்தெடுக்கப்பட வேண்டிய செயல் (&A): "
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"

@@ -41,14 +41,14 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránka je
 lepšie použiť reťazce hľadania.
 
-## Changes for 4.0 ##
-* Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in ePUBREADER Firefox add-on.
-* Add-on help is available from the Add-ons Manager.
+## Zmeny vo verzii 4.0 ##
+* odstránená identifikácia fragmentov z názvov súborov pre záložky, keďže
+  toto spôsobovalo problémy v doplnku ePUBREADER pre Firefox.
+* Návod k doplnku nájdete v správcovi doplnkov.
 
 ## Zmeny vo verzii 3.3 ##
 * aktualizované a doplnené preklady.
-* Bookmark position is not announced in skim reading.
+* Pozícia záložky nie je oznamovaná počas rýchleho čítania.
 
 ## Zmeny vo verzii 3.0 ##
 * pridaná podpora pre rýchle čítanie
