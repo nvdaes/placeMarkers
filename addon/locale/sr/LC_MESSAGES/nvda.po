@@ -5,269 +5,259 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2014-12-28 09:18+0200\n"
-"Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
-"Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
-"Language: fi\n"
+"Project-Id-Version: placeMarkers 4.1\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-12-19 16:00+1000\n"
+"PO-Revision-Date: 2014-12-28 12:16-0800\n"
+"Last-Translator: nikola jovic <wwenikola123@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"NVDA:n asetushakemistossa on tiedostoja, jotka ovat lähtöisin tämän lisäosan "
-"aiemmasta versiosta. Haluatko päivittää ne?"
+"vaš konfiguraciski folder za nvda sadrži datoke iz starije verzije ažurirati "
+"ih"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Lisäosan asennus tai päivitys"
+msgstr "instaliraj ili ašuriraj dodatak"
 
 #. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "Tekstiä \"%s\" ei löydy"
+msgstr "tekst \"%s\" nije pronađen"
 
 #. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
-msgstr "Hakuvirhe"
+msgstr "greška pretrage"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s kopioitu leikepöydälle"
+msgstr "%s kopirano u privremenu memoriju"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "Paikka&merkit"
+msgstr "P&lace markers"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Paikkamerkkien ja hakujen valikko"
+msgstr "markeri i pretraga meni"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "&Sivukohtaisen haun kansio"
+msgstr "& specifičan folderr pretrage"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Avaa sivukohtaisen haun kansion"
+msgstr "otvara specifičan folder pretrage"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "&Paikkamerkkien kansio"
+msgstr "& folder markera"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Avaa paikkamerkkien kansion"
+msgstr "otvara folder markera"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Kopioi paikkamerkkien kansio..."
+msgstr "& kopiraj folder markera"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Paikkamerkkien varmuuskopio"
+msgstr "rezerna kopija markera"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "&Palauta paikkamerkit..."
+msgstr "& vrati markere"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Palauta aiemmin tallennetut paikkamerkit"
+msgstr "vrati prethodno sačuvane markere"
 
 #. Translators: the name for an item of addon submenu.
 msgid "Open &documentation"
-msgstr "Avaa &ohje"
+msgstr "otvori & dokumentaciju"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Open documentation for current language"
-msgstr "Avaa ohjeen nykyisellä kielellä"
+msgstr "otvori dokumentaciju za trenutni jezik"
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "Valitse kansio, johon tallennetut paikkamerkit kopioidaan"
+msgstr "izaberite folder za kopiranje vaših trenutnih markera"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "Kansiota ei kopioitu"
+msgstr "folder nije kopiran"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "Kopiointivirhe"
+msgstr "greška pri kopiranju"
 
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
-msgstr "Valitse palautettava paikkamerkkien kansio"
+msgstr "izaberite folder sa markerima za vraćanje"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
 "from the previous saved searches"
-msgstr ""
-"Kirjoita tallennettava teksti tai valitse aiemmin tallennetuista hauista "
-"poistettava merkkijono"
+msgstr "upišite tekst koji želite da sačuvate ili obrišite sačuvani tekst"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
-msgstr "Tallenna tekstiä sivukohtaiseen hakuun"
+msgstr "sačuvaj tekst za specifičnu pretragu"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
-msgstr "Tallentaa merkkijonon sivukohtaiseen hakuun."
+msgstr "čuva tekst za specifičnu pretragu"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "Sivukohtaisen haun tiedostoa ei löydy"
+msgstr "datoteka za specifičnu pretragu nije pronađena"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr ""
-"Etsii sivukohtaista merkkijonoa kohdistimen nykyisestä sijainnista lähtien."
+msgstr "traži tekst od kursora za dokument"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "Paikkamerkkiä ei voi tallentaa"
+msgstr "marker nemože biti sačuvan"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "Tämä sijainti on jo tallennettu"
+msgstr "ova pozicija je već sačuvana"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "Sijainti tallennettu merkin %d kohdalle"
+msgstr "sačuvana pozicija kod slova%d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Paikkamerkkiä ei voi tallentaa"
+msgstr "nemogu sačuvati marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Tallentaa nykyisen sijainnin paikkamerkiksi."
+msgstr "čuva trenutnu poziciju kao marker"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "Ei paikkamerkkejä"
+msgstr "nema markera"
 
 msgid "Bookmark cannot be deleted"
-msgstr "Paikkamerkkiä ei voi poistaa"
+msgstr "marker nemože biti obrisan"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "Paikkamerkkiä ei ole valittu"
+msgstr "nema izabranog markera"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Paikkamerkki poistettu"
+msgstr "marker obrisan"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Paikkamerkkiä ei voi poistaa"
+msgstr "nemogu obrisati marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Poistaa nykyisen paikkamerkin."
+msgstr "briše trenutni marker"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Paikkamerkkejä ei löydy"
+msgstr "nema pronađenih markera"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "Yhtään kirjanmerkkiä ei löydy"
+msgstr "nemogu pronaći nijedan marker"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "Sijainti: merkki %d"
+msgstr "pozicija slovo%d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Seuraavaa paikkamerkkiä ei löydy"
+msgstr "sledeći marker nije pronađen"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Siirtää seuraavaan paikkamerkkiin."
+msgstr "premešta se na sledeći marker"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "Edellistä paikkamerkkiä ei löydy"
+msgstr "prethodni marker nije pronađen"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Siirtää edelliseen paikkamerkkiin."
+msgstr "premešta se na prethodni marker"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Paikkamerkkitiedoston nimeä ei voi kopioida"
+msgstr "nemogu kopirati ime datoteke za markere"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Paikkamerkkkitiedoston nimi kopioitu leikepöydälle"
+msgstr "ime markera kopirano u privremenu memoriju"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Kopioi nykyisen paikkamerkkitiedoston nimen leikepöydälle."
+msgstr "kopira ime datoteke u privremenu memoriju"
 
 #. Translators: This is the label for the specific search settings dialog.
 msgid "Specific Search"
-msgstr "Sivukohtainen haku"
+msgstr "specifična pretraga"
 
 #. Translators: This is the label for a textfield in the
 #. specific search settings dialog.
 msgid "&Text to search:"
-msgstr "&Haettava teksti:"
+msgstr "& tekst za pretragu"
 
 #. Translators: The label for a setting in specific search to select a saved text.
 msgid "&Saved texts:"
-msgstr "Ta&llennetut tekstit:"
+msgstr "& sačuvani tekstovi"
 
 #. Translators: A combo box to choose a saved text.
 msgid "Saved texts to search:"
-msgstr "Hakuun tallennetut tekstit:"
+msgstr "sačuvani tekstovi za pretragu"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search down"
-msgstr "Hae alhaalta"
+msgstr "traži dole"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search up"
-msgstr "Hae ylhäältä"
+msgstr "traži gore"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Delete"
-msgstr "Poista"
+msgstr "obriši"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "&Toiminnot:"
+msgstr "& akcije za izbor"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
-msgstr "Valitse suoritettava toiminto:"
+msgstr "izaberite neku akciju"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Paikkamerkit"
+msgstr "Place markers"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Lisäosa sivukohtaisten paikkamerkkien määrittämiseen"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "Avaa %s-lisäosan ohjeen"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "Kirjoita etsittävä teksti"
+msgstr "dodatak za postavljanje markera na virtuelnim dokumentima"
