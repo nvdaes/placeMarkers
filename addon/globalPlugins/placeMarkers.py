@@ -61,7 +61,7 @@ savedStrings = []
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
 
-def doFindText(text, reverse=False):
+def doFindText(text, reverse=False, caseSensitive=False):
 	if not text:
 		return
 	obj=api.getFocusObject()
@@ -76,7 +76,7 @@ def doFindText(text, reverse=False):
 	except (NotImplementedError, RuntimeError):
 		info=obj.makeTextInfo(textInfos.POSITION_FIRST)
 	try:
-		res=info.find(text,reverse=reverse)
+		res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
 	except WindowsError:
 		wx.CallAfter(gui.messageBox,
 	# Translators: label of error dialog, translated in NVDA core.
@@ -105,8 +105,8 @@ def doFindText(text, reverse=False):
 		_("Find Error"),
 		wx.OK|wx.ICON_ERROR)
 
-def doFindTextUp(text):
-	doFindText(text, reverse=True)
+def doFindTextUp(text, caseSensitive=False):
+	doFindText(text, reverse=True, caseSensitive=caseSensitive)
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -652,7 +652,13 @@ class SpecificSearchDialog(SettingsDialog):
 		actionsListSizer.Add(self.actionsList)
 		settingsSizer.Add(actionsListSizer,border=10,flag=wx.BOTTOM)
 
+		# Translators: An option in specific search to perform case-sensitive search, copied from core.
+		self.caseSensitiveCheckBox=wx.CheckBox(self,wx.NewId(),label=_("Case &sensitive"))
+		self.caseSensitiveCheckBox.SetValue(False)
+		settingsSizer.Add(self.caseSensitiveCheckBox,border=10,flag=wx.BOTTOM)
+
 		self.textsList.Bind(wx.EVT_CHOICE, self.onChoice)
+		self.actionsList.Bind(wx.EVT_CHOICE, self.onAction)
 
 	def postInit(self):
 		self.textToSearchEdit.SetFocus()
@@ -660,13 +666,21 @@ class SpecificSearchDialog(SettingsDialog):
 	def onChoice(self, evt):
 		self.textToSearchEdit.SetValue(self.textsList.GetStringSelection())
 
+	def onAction(self, evt):
+		if self.actionsList.Selection == 2:
+			self.caseSensitiveCheckBox.Disable()
+		else:
+			self.caseSensitiveCheckBox.Enable()
+
 	def onOk(self,evt):
 		textToSearch = self.textToSearchEdit.GetValue()
 		actionToPerform = self.actionsList.GetSelection()
+		if actionToPerform < 2:
+			caseSensitive = self.caseSensitiveCheckBox.GetValue()
 		if actionToPerform == 0:
-			wx.CallLater(100, doFindText, textToSearch)
+			wx.CallLater(100, doFindText, textToSearch, caseSensitive=caseSensitive)
 		elif actionToPerform == 1:
-			wx.CallLater(100, doFindTextUp, textToSearch)
+			wx.CallLater(100, doFindTextUp, textToSearch, caseSensitive)
 		else:
 			global savedStrings
 			try:
