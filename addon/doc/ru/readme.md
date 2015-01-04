@@ -13,9 +13,9 @@ tools.  The plugin saves the specified strings and bookmarks to text and
 pickle files. The name of these files is based on the title and URL of the
 current document.
 
-This addon is based on SpecificSearch and Bookmark&Search, developed by the
-same author. You should uninstall them to use this one, since they have
-common keystrokes and features.
+Это дополнение основано на SpecificSearch и Bookmark&Search, разработаными
+тем же автором. Вы должны удалить их, чтобы использовать placeMarkers, так
+как они имеют общие горячие клавиши и возможности.
 
 ## Клавиатурные Команды: ##
 
@@ -27,17 +27,18 @@ common keystrokes and features.
 *	shift+NVDA+k; Moves to the previous bookmark.
 *	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
-## Place markers Submenu (NVDA+N) ##
+## Подменю Закладки (NVDA+N) ##
 
 
-Using Place markers submenu, under Preferences menu, you can access:
+Используя подменю Закладки в меню Параметры, вы можете получить доступ к
+следующим элементам:
 
-*	Specific search folder: opens a folder of specific searches previously
-  saved.
-*	Bookmarks folder; opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder; you can save a copy of the bookmarks folder.
-*	Restore placeMarkers; you can restore your bookmarks from a previously
-  saved placeMarkers folder .
+*	Папка поисковых запросов; открывает папку сохранённых ранее поисковых
+  запросов.
+*	Папка закладок; открывает папку сохранённых закладок.
+*	Копировать папку закладок; вы можете сохранить копию папки закладок.
+*	Востановить папку закладок; вы можете востановить ваши закладки из ранее
+  сохранённой копии закладок.
 *	Файл документации, на выбранном языке, если есть, или английском - по
   умолчанию.
 
@@ -45,8 +46,14 @@ Using Place markers submenu, under Preferences menu, you can access:
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
 
+## Изменения для 4.0 ##
+* Удалены идентификаторы фрагментов из имён файлов закладок, что позволяет
+  избежать проблем в EPUBReader - дополнении для FireFox.
+* Справка по дополнению теперь доступна из менеджера дополнений.
+
 ## Изменения для 3.1 ##
 * Обновлены переводы и новые языки.
+* Позиция закладки теперь не сообщается при беглом чтении.
 
 ## Изменения для 3.0 ##
 * Добавлена поддержка беглого чтения.
@@ -61,7 +68,7 @@ Using Place markers submenu, under Preferences menu, you can access:
 
 
 ## Изменения для 1.0 ##
-* Первый Публичный Релиз
+* Первый публичный релиз.
 * Переведено на: бразильский португальский, фарси, финский, французский,
   галисийский, немецкий, итальянский, японский, корейский, непальский,
   португальский, испанский, словацкий, словенский, тамильский.

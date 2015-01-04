@@ -46,8 +46,14 @@ Noot: de bookmark positie is gebaseerd op het aantal tekens; in pagina's met
 dynamische inhoud kunt u beter de specific search gebruiken in plaats van de
 bookmarks die een specifieke positie opslaan.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## Veranderingen voor 3.1 ##
 * Vertalingen bijgewerkt en een nieuwe taal toegevoegd.
+* Bookmark position is not announced in skim reading.
 
 ## Veranderingen voor 3.0 ##
 * Ondersteuning toegevoegd voor doorbladeren.

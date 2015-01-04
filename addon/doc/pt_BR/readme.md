@@ -47,8 +47,15 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico é melhor usar a busca específica e não
 marcadores, que salvam uma posição precisa.
 
+## Mudanças na 4.0 ##
+* Removidos identificadores de fragmentos dos nomes dos arquivos de
+  marcadores, o que pode evitar problemas no complemento ePUBREADER, do
+  Firefox.
+* A ajuda do complemento está disponível no gestor de complementos.
+
 ## Mudanças na 3.1 ##
 * Atualização de traduções e novos idiomas.
+* A posição do marcador não é anunciada na leitura dinâmica.
 
 ## Mudanças na 3.0 ##
 * Adicionado suporte a leitura dinâmica.

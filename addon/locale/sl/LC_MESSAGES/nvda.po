@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2013-10-04 08:34+0100\n"
-"Last-Translator: Jožef Gregorc <jozko.gregorc[@]guest.arnes.si\n"
+"PO-Revision-Date: 2014-10-17 09:21+0100\n"
+"Last-Translator: jožef gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -249,19 +249,19 @@ msgstr "Izbriši"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "Dejanja na voljo:"
+msgstr "&Dejanja na voljo:"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
 msgstr "Izberite dejanje, ki se bo izvedlo:"
 
-#. Add-on description
-#. TRANSLATORS: Summary for this add-on to be shown on installation and add-on information.
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
 msgstr "Prostorske označbe"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on installation and add-on information
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek za postavitev prostorskih označb v izbranih navideznih dokumentih"

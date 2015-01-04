@@ -43,8 +43,16 @@ Nota: La posición de la marca se basa en el número de caracteres; en páginas
 con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
 para guardar una posición precisa.
 
+## Cambios para  4.0 ##
+* Eliminados fragmentos de identificadores de nombres de ficheros de
+  marcador,  los cuales pueden evitar problemas en el complemento de Firefox
+  ePUBREADER.
+* La ayuda del complemento está disponible desde el Administrador de
+  Complementos.
+
 ## Cambios para 3.1 ##
 * Actualización de traducciones y nuevos idiomas.
+* Ahora no se anuncia la posición del marcador en la lectura superficial.
 
 ## Cambios para 3.0 ##
 * Añadido el soporte para lectura superficial.

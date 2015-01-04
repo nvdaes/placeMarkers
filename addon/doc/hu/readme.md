@@ -1,4 +1,5 @@
 # Könyvjelzők #
+
 * Készítők: Noelia, Chris.
 * letöltés [stabil verzió][1]  letöltése
 * letöltés [fejlesztői verzió][2]  letöltése
@@ -16,8 +17,14 @@ szolgáltatásokkal, és billentyűparancsokkal rendelkezik.
 
 ## Billentyűparancsok: ##
 
-*	control+shift+NVDA+s; Megnyit egy párbeszédablakot, amely lehetővé teszi egy szövegrészlet elmentését, amit szeretne megtalálni a későbbiekben ebben a dokumentumban. Alapértelmezetten a mező az előzőleg elmentett szöveget tartalmazza. Törölje ki és nyomja meg az ok gombot ha el szeretné távolítani az elmentett keresések közül ezt a fájlt, vagy gépeljen be egy másik szöveget új keresés hozzáadásához.
-*	control+shift+NVDA+f; 
+	control+shift+NVDA+s: Megnyit egy párbeszédablakot, amely lehetővé teszi egy szövegrészlet elmentését, amit szeretne megtalálni a későbbiekben ebben a dokumentumban. Alapértelmezetten a mező az előzőleg elmentett szöveget tartalmazza. Törölje ki és nyomja meg az ok gombot ha el szeretné távolítani az elmentett keresések közül ezt a fájlt, vagy gépeljen be egy másik szöveget új keresés hozzáadásához.
+	control+shift+NVDA+f: Megnyit egy párbeszédablakot egy szerkesztőmezővel, ami a legutóbb elmentett keresést mutatja. Ezen a párbeszédablakon egy kombinált listamezőben kiválaszthatja a legutóbb elmentett kereséseket, a következő kombinált listamezőben kiválaszthatja mit szeretne velük tenni. Ha nincs elérhető fájl az aktuális dokumentumban a speciális kereséshez, akkor az NVDA figyelmeztet, hogy nem található fájl a speciális kereséshez.
+	control+shift+NVDA+k: Az aktuális pozíciót elmenti könyvjelzőként.
+	control+shift+NVDA+delete: Törli az aktuális pozícióhoz tartozó könyvjelzőt.
+	control+shift+k: A következő könyvjelzőhöz lép.
+	shift+NVDA+k: Az előző könyvjelzőhöz lép.
+	NVDA+k: A vágólapra másolja annak a fájlnak a nevét, kiterjesztés nélkül, ahová a helyjelző adatok rögzítésre kerülnek.
+
 ## Helyjelzők almenü (az NVDA menüben) ##
 
 
@@ -35,8 +42,14 @@ fér hozzá:
 Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
 
+## A 4.0 verzió változásai ##
+* Eltávolításra került a fragment azonosító a könyvjelzők fájlneveiből, így
+  elkerülhető az ePUBREADER Firefox bővítmény használatakor jelentkező hiba.
+* A kiegészítő súgója elérhető a bővítmények kezelése párbeszédablakról is.
+
 ## A 3.1 verzió változásai ##
 * Fordítások frissítése, és egy új nyelv hozzáadása
+* Átfutó olvasás közben nem hangzik el a könyvjelző aktuális pozíciója
 
 ## A 3.0 verzió változásai ##
 * Az átfutó olvasás támogatásának hozzáadása

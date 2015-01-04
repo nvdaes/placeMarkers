@@ -46,8 +46,14 @@ Huomautus: Paikkamerkin sijainti perustuu merkkien lukumäärään. Muuttuvaa
 sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien sijasta sivukohtaista hakua.
 
+## Muutokset versiossa 4.0 ##
+* Poistettu osatunnisteet kirjanmerkkitiedostojen nimistä, mikä saattaa
+  välttää ongelmia Firefoxin ePUBREADER-lisäosan kanssa.
+* Ohje on käytettävissä Lisäosien hallinnasta.
+
 ## Muutokset versiossa 3.1 ##
 * Käännöksiä päivitetty ja lisätty uusi kieli.
+* Kirjanmerkin sijaintia ei ilmoiteta pikaluvun aikana.
 
 ## Muutokset versiossa 3.0 ##
 * Lisätty tuki pikaluvulle.

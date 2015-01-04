@@ -48,8 +48,14 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
 ## Zmiany dla wersji 3.1 ##
 * Aktualizacje tłumaczenia i nowy język.
+* Bookmark position is not announced in skim reading.
 
 ## Zmiany dla wersji 3.0 ##
 * Dodano wsparcie czytania przeglądowego.

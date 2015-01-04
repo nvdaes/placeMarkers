@@ -42,8 +42,15 @@ Nota: A posición da marca baséase no número de caracteres; en páxinas con
 contido dinámico é mellor usar a busca específica,e non as marcas para
 gardar unha posición precisa.
 
+## Cambios para 4.0 ##
+* Elimináronse os identificadores de fragmentos dos nomes de ficheiro de
+  marcadores , que poden evitar problemas no complemento de Firefox
+  EPUBReader.
+* A axuda do complemento está dispoñible no Administrador de Complementos.
+
 ## Cambios para 3.1 ##
 * Actualizacións das traduccións e novas linguas.
+* A posición do marcador non se anuncia na lectura superficial.
 
 ## Cambios para 3.0 ##
 * Engadido o soporte para lectura superficial.
