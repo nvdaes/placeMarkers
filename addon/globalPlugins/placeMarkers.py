@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Added case sensitive search
+# Date: 2/02/2015
 # Removed fragment identifiers in bookmark filenames
 # Date: 24/06/2014
 # Support for enhanced skim reading in version 2014.1.
@@ -69,7 +71,7 @@ def doFindText(text, reverse=False, caseSensitive=False):
 	if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 		obj=treeInterceptor
 		CursorManager._lastFindText=text
-	elif not controlTypes.STATE_MULTILINE in obj.states:
+	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	try:
 		info=obj.makeTextInfo(textInfos.POSITION_CARET)

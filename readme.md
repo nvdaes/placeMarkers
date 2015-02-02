@@ -32,6 +32,10 @@ Using Place markers submenu, under Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in pages with a dynamic content is better to use the specific search, and not the bookmarks which save a precise position.
 
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+
 ## Changes for 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid issues in ePUBREADER Firefox add-on.
 * Add-on help is available from the Add-ons Manager.
