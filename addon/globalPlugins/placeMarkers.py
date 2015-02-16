@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Removed Open documentation option from add-on menu, as suggested by Bernd Dorer
+# Date: 16/02/2015
 # Added case sensitive search
 # Date: 2/02/2015
 # Removed fragment identifiers in bookmark filenames
@@ -148,13 +150,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: the tooltip text for an item of addon submenu.
 		_("Restore previously saved place markers"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onRestore, self.restoreItem)
-		self.aboutItem = self.BSMenu.Append(wx.ID_ANY,
-		# Translators: the name for an item of addon submenu.
-		_("Open &documentation"),
-		# Translators: the tooltip text for an item of addon submenu.
-		_("Open documentation for current language"))
-		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onAbout, self.aboutItem)
-
 		self._pickle = ""
 		self._states = []
 
@@ -243,37 +238,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("Copy Error"),
 				wx.OK|wx.ICON_ERROR)
 				raise e
-
-	def getDocFolder(self):
-		langs = [languageHandler.getLanguage(), "en"]
-		for lang in langs:
-			docFolder = os.path.join(os.path.dirname(__file__), "..", "doc", lang)
-			if os.path.isdir(docFolder):
-				return docFolder
-			if "_" in lang:
-				tryLang = lang.split("_")[0]
-				docFolder = os.path.join(os.path.dirname(__file__), "..", "doc", tryLang)
-				if os.path.isdir(docFolder):
-					return docFolder
-				if tryLang == "en":
-					break
-			if lang == "en":
-				break
-		return None
-
-	def getDocPath(self, docFileName):
-		docPath = self.getDocFolder()
-		if docPath is not None:
-			docFile = os.path.join(docPath, docFileName)
-			if os.path.isfile(docFile):
-				docPath = docFile
-		return docPath
-
-	def onAbout(self, evt):
-		try:
-			os.startfile(self.getDocPath("readme.html"))
-		except WindowsError:
-			pass
 
 	def standarFileName(self, fileName):
 		fileName.encode("mbcs")

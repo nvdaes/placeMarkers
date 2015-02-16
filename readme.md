@@ -35,6 +35,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 5.0 ##
 * Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
 
 ## Changes for 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid issues in ePUBREADER Firefox add-on.
