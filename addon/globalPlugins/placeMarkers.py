@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Changed key commands
+# Date: 27/02/2015
 # Removed Open documentation option from add-on menu, as suggested by Bernd Dorer
 # Date: 16/02/2015
 # Added case sensitive search
