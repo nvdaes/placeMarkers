@@ -571,9 +571,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:control+shift+NVDA+f": "specificFind",
 		"kb:control+shift+NVDA+k": "saveBookmark",
 		"kb:control+shift+NVDA+delete": "deleteBookmark",
-		"kb:control+shift+k": "selectNextBookmark",
+		"kb:NVDA+k": "selectNextBookmark",
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
-		"kb:NVDA+k": "copyCurrentBookmarksFile",
+		"kb:control+shift+k": "copyCurrentBookmarksFile",
 	}
 
 class SpecificSearchDialog(SettingsDialog):
