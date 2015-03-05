@@ -1,4 +1,10 @@
 # -*- coding: UTF-8 -*-
+# Changed key commands
+# Date: 27/02/2015
+# Removed Open documentation option from add-on menu, as suggested by Bernd Dorer
+# Date: 16/02/2015
+# Added case sensitive search
+# Date: 2/02/2015
 # Removed fragment identifiers in bookmark filenames
 # Date: 24/06/2014
 # Support for enhanced skim reading in version 2014.1.
@@ -61,7 +67,7 @@ savedStrings = []
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
 
-def doFindText(text, reverse=False):
+def doFindText(text, reverse=False, caseSensitive=False):
 	if not text:
 		return
 	obj=api.getFocusObject()
@@ -69,14 +75,14 @@ def doFindText(text, reverse=False):
 	if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 		obj=treeInterceptor
 		CursorManager._lastFindText=text
-	elif not controlTypes.STATE_MULTILINE in obj.states:
+	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	try:
 		info=obj.makeTextInfo(textInfos.POSITION_CARET)
 	except (NotImplementedError, RuntimeError):
 		info=obj.makeTextInfo(textInfos.POSITION_FIRST)
 	try:
-		res=info.find(text,reverse=reverse)
+		res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
 	except WindowsError:
 		wx.CallAfter(gui.messageBox,
 	# Translators: label of error dialog, translated in NVDA core.
@@ -105,8 +111,8 @@ def doFindText(text, reverse=False):
 		_("Find Error"),
 		wx.OK|wx.ICON_ERROR)
 
-def doFindTextUp(text):
-	doFindText(text, reverse=True)
+def doFindTextUp(text, caseSensitive=False):
+	doFindText(text, reverse=True, caseSensitive=caseSensitive)
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -146,13 +152,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: the tooltip text for an item of addon submenu.
 		_("Restore previously saved place markers"))
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onRestore, self.restoreItem)
-		self.aboutItem = self.BSMenu.Append(wx.ID_ANY,
-		# Translators: the name for an item of addon submenu.
-		_("Open &documentation"),
-		# Translators: the tooltip text for an item of addon submenu.
-		_("Open documentation for current language"))
-		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onAbout, self.aboutItem)
-
 		self._pickle = ""
 		self._states = []
 
@@ -241,37 +240,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("Copy Error"),
 				wx.OK|wx.ICON_ERROR)
 				raise e
-
-	def getDocFolder(self):
-		langs = [languageHandler.getLanguage(), "en"]
-		for lang in langs:
-			docFolder = os.path.join(os.path.dirname(__file__), "..", "doc", lang)
-			if os.path.isdir(docFolder):
-				return docFolder
-			if "_" in lang:
-				tryLang = lang.split("_")[0]
-				docFolder = os.path.join(os.path.dirname(__file__), "..", "doc", tryLang)
-				if os.path.isdir(docFolder):
-					return docFolder
-				if tryLang == "en":
-					break
-			if lang == "en":
-				break
-		return None
-
-	def getDocPath(self, docFileName):
-		docPath = self.getDocFolder()
-		if docPath is not None:
-			docFile = os.path.join(docPath, docFileName)
-			if os.path.isfile(docFile):
-				docPath = docFile
-		return docPath
-
-	def onAbout(self, evt):
-		try:
-			os.startfile(self.getDocPath("readme.html"))
-		except WindowsError:
-			pass
 
 	def standarFileName(self, fileName):
 		fileName.encode("mbcs")
@@ -605,9 +573,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:control+shift+NVDA+f": "specificFind",
 		"kb:control+shift+NVDA+k": "saveBookmark",
 		"kb:control+shift+NVDA+delete": "deleteBookmark",
-		"kb:control+shift+k": "selectNextBookmark",
+		"kb:NVDA+k": "selectNextBookmark",
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
-		"kb:NVDA+k": "copyCurrentBookmarksFile",
+		"kb:control+shift+k": "copyCurrentBookmarksFile",
 	}
 
 class SpecificSearchDialog(SettingsDialog):
@@ -652,7 +620,13 @@ class SpecificSearchDialog(SettingsDialog):
 		actionsListSizer.Add(self.actionsList)
 		settingsSizer.Add(actionsListSizer,border=10,flag=wx.BOTTOM)
 
+		# Translators: An option in specific search to perform case-sensitive search, copied from core.
+		self.caseSensitiveCheckBox=wx.CheckBox(self,wx.NewId(),label=_("Case &sensitive"))
+		self.caseSensitiveCheckBox.SetValue(False)
+		settingsSizer.Add(self.caseSensitiveCheckBox,border=10,flag=wx.BOTTOM)
+
 		self.textsList.Bind(wx.EVT_CHOICE, self.onChoice)
+		self.actionsList.Bind(wx.EVT_CHOICE, self.onAction)
 
 	def postInit(self):
 		self.textToSearchEdit.SetFocus()
@@ -660,13 +634,21 @@ class SpecificSearchDialog(SettingsDialog):
 	def onChoice(self, evt):
 		self.textToSearchEdit.SetValue(self.textsList.GetStringSelection())
 
+	def onAction(self, evt):
+		if self.actionsList.Selection == 2:
+			self.caseSensitiveCheckBox.Disable()
+		else:
+			self.caseSensitiveCheckBox.Enable()
+
 	def onOk(self,evt):
 		textToSearch = self.textToSearchEdit.GetValue()
 		actionToPerform = self.actionsList.GetSelection()
+		if actionToPerform < 2:
+			caseSensitive = self.caseSensitiveCheckBox.GetValue()
 		if actionToPerform == 0:
-			wx.CallLater(100, doFindText, textToSearch)
+			wx.CallLater(100, doFindText, textToSearch, caseSensitive=caseSensitive)
 		elif actionToPerform == 1:
-			wx.CallLater(100, doFindTextUp, textToSearch)
+			wx.CallLater(100, doFindTextUp, textToSearch, caseSensitive)
 		else:
 			global savedStrings
 			try:

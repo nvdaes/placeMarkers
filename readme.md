@@ -15,9 +15,9 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 *	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
 *	control+shift+NVDA+k; Saves the current position as a bookmark
 *	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	control+shift+k; Moves to the next bookmark.
+*	NVDA+k; Moves to the next bookmark.
 *	shift+NVDA+k; Moves to the previous bookmark.
-*	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## Place markers Submenu (NVDA+N) ##
 
@@ -31,6 +31,12 @@ Using Place markers submenu, under Preferences menu, you can access:
 *	Documentation file, in your selected language if available, or English by default.
 
 Note: The bookmark position is based on the number of characters; and therefore in pages with a dynamic content is better to use the specific search, and not the bookmarks which save a precise position.
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Changes for 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid issues in ePUBREADER Firefox add-on.
