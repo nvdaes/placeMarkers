@@ -84,14 +84,6 @@ msgstr "Y&erimlerini geri al"
 msgid "Restore previously saved place markers"
 msgstr "Önceden kaydedilen yerimlerini geri al"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "&Dokümantasyonu aç"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "Mevcut dil için dokümantasyonu aç"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "Yerimlerinizi yedeklemek için klasör seçin"
@@ -254,6 +246,10 @@ msgstr "&Eylem seçimi:"
 msgid "Select an action to perform:"
 msgstr "Gerçekleştirilecek eylemi seçin:"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -263,6 +259,12 @@ msgstr "Yerimleri"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Sanal dokümanlar için yerimi eklentisi"
+
+#~ msgid "Open &documentation"
+#~ msgstr "&Dokümantasyonu aç"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Mevcut dil için dokümantasyonu aç"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "%s için dokümantasyonu açar"

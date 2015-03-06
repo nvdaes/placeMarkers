@@ -20,13 +20,13 @@ comum.
 
 ## Teclas de comando: ##
 
-*	control+shift+NVDA+s; Abre um diálogo que possibilita salvar uma cadeia textual que se queira achar no documento atual. Por padrão, é mostrado o texto anteriormente salvo para este arquivo. Apague esse texto e pressione o botão OK se quiser remover o arquivo de texto correspondente à busca salva, ou digite um novo texto para adicionar outra busca.
-*	control+shift+NVDA+f; Abre um diálogo com um campo de edição que mostra a última busca salva; nesse diálogo pode-se também selecionar buscas anteriormente salvas numa caixa de combinação e escolher uma ação noutra caixa de combinação. Caso não haja arquivos de buscas específicas para o documento atual, o NVDA vai alertá-lo que não foi encontrado qualquer arquivo de busca específica.
-*	control+shift+NVDA+k; salva a posição atual como um marcador
-*	control+shift+NVDA+delete; apaga o marcador que corresponde a esta posição.
-*	control+shift+k; vai ao próximo marcador.
-*	shift+NVDA+k; vai ao marcador anterior.
-*	NVDA+k; Copia para a área de transferência o nome do arquivo, sem extensão, onde serão salvos os dados dos marcadores.
+*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
+*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
+*	control+shift+NVDA+k; Saves the current position as a bookmark
+*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
+*	NVDA+k; Moves to the next bookmark.
+*	shift+NVDA+k; Moves to the previous bookmark.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## Submenu Marcadores (NVDA+N) ##
 
@@ -46,6 +46,12 @@ Ao usar o submenu Marcadores, no menu Preferências, pode acessar:
 Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico é melhor usar a busca específica e não
 marcadores, que salvam uma posição precisa.
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Mudanças na 4.0 ##
 * Removidos identificadores de fragmentos dos nomes dos arquivos de

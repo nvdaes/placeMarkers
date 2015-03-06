@@ -83,14 +83,6 @@ msgstr "&obnoviť záložky..."
 msgid "Restore previously saved place markers"
 msgstr "obnoví uložené záložky"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "p&ríručka"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "Otvorí dokument s návodom"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "Vyberte priečinok, do ktorého chcete zálohovať záložky"
@@ -254,6 +246,10 @@ msgstr "Dostupné možnosti:"
 msgid "Select an action to perform:"
 msgstr "Vyberte si jednu z možností:"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -265,6 +261,12 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Doplnok, ktorý umožňuje pridávať záložky do dokumentov zobrazených v režime "
 "prehliadania "
+
+#~ msgid "Open &documentation"
+#~ msgstr "p&ríručka"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Otvorí dokument s návodom"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "Otvorí návod pre %s"

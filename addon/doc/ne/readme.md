@@ -19,12 +19,13 @@ common keystrokes and features.
 
 ## कुञ्जी आदेस: ##
 
-*	control+shift+नेत्रवाणी+s; तपाइले चालू कागजातमा कुनै पाठ पदावली खोज्नका लागि सञ्चय गर्ने पातो देखाउने छ ।  पहिले बचत गरिएको पाठलाई स्वतः निर्धारण गरिएको हुन्छ । यो पाठलाई मेटाएर 'ठिक' भन्ने टाँकलाई दबाउनु होला ।यदि तपाइ सञ्चित खोजी पाठ फाइललाइ हटाउन चाहनु हुन्छ अथवा अर्को खोजिएको नयाँ  पाठ बचत गर्न  चाहनु हुन्छ भने पनि । 
-*	control+shift+नेत्रवाणी +f; सबै भन्दा पछि बचत भएको खोजी पाठ युक्त सम्पादन कोठा सहितको पातो पल्टाउने छ ।; यो पातोमा पहिले खोजिएका पाठहरू कम्बो कोठा बाट चयन गरी अर्को कम्बो बाकसबाट कार्य रोज्न सकिने छ । यदि हालको कागजातमा कुनै विशेष खोजीका लागी फाइल रहेन छ भने, नेत्रवाणीले तपाइलाई कुनै विशेष खोजिको फाइल नभएको कुरा जनाउ दिनेछ ।n*	control+shift+नेत्रवाणी+k; हालको स्थानलाई पुस्तक चिनो रूपमा बचत गर्ने छ ।
+*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
+*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
+*	control+shift+NVDA+k; Saves the current position as a bookmark
 *	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	control+shift+k; Moves to the next bookmark.
+*	NVDA+k; Moves to the next bookmark.
 *	shift+NVDA+k; Moves to the previous bookmark.
-*	नेत्रवाणी+k; स्थान चिनो तथ्याङ्कलाई राखिएको फाइलको नाम विस्तारित रुप विना  क्लिपपाटीमा उतार्ने छ ।
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## स्थान आदेस उप मेनु(नेत्रवानी+N) ##
 
@@ -43,6 +44,12 @@ common keystrokes and features.
 
 टिप्पणी: पुस्तकचिनोको स्थान वर्णहरुको सङ्ख्या; गतिसील सामाग्री युक्त पृष्ठमा
 हुने भएकोले विसेष खोजी गर्नु राम्रो हुन्छ  तर निदिर्ट पुस्तकचिनो मा होइन ।
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Changes for 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid

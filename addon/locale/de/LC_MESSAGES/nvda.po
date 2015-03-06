@@ -83,14 +83,6 @@ msgstr "Lesezeichen wi&ederherstellen"
 msgid "Restore previously saved place markers"
 msgstr "Zuvor gespeicherte Lesezeichen wiederherstellen"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "&Dokumentation öffnen"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "Dokumentation für die aktuelle Sprache öffnen"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "Einen Ordner für Ihre gespeicherten Lesezeichen zum Kopieren auswählen"
@@ -257,6 +249,10 @@ msgstr "&Aktion wählen:"
 msgid "Select an action to perform:"
 msgstr "Wählen Sie eine Aktion, um diese auszuführen."
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -266,6 +262,12 @@ msgstr "Lesezeichen"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Erweiterung zum Einstellen der Lesezeichen in virtuellen Ansichten."
+
+#~ msgid "Open &documentation"
+#~ msgstr "&Dokumentation öffnen"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Dokumentation für die aktuelle Sprache öffnen"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "Dokumentation für %s öffnen"

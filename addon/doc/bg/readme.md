@@ -20,13 +20,13 @@ NVDA. Може също да бъде използвана за запазван
 
 ## Клавишни команди: ##
 
-*	control+shift+NVDA+s; Отваря диалогов прозорец, който ви позволява да запазите текстов низ за търсене в текущия документ. По подразбиране се показва предишно запазеният текст за този файл. Изтрийте този текст и натиснете бутона Ok, ако искате да премахнете текстовия файл, отговарящ на запазеното търсене, или въведете нов текст, за да добавите друго търсене.
-*	control+shift+NVDA+f; Отваря диалогов прозорец с поле за писане, който съдържа последно запазеното търсене; в този диалог можете също и да изберете някое от предишните търсения (от първия падащ списък) и да изберете действие (от следващия падащ списък). Ако няма налични файлове за конкретно търсене в текущия документ, NVDA ще ви предупреди, че няма намерен файл за конкретно търсене.
-*	control+shift+NVDA+k; Запазва текущата позиция като отметка
-*	control+shift+NVDA+delete; изтрива отметката, отговаряща на тази позиция.
-*	control+shift+k; Премества курсора до следваща отметка.
-*	shift+NVDA+k; Премества курсора до предишна отметка.
-*	NVDA+k; Копира в клипборда името на файла (без разширението), където ще бъдат съхранени данните за позиционните маркери.
+*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
+*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
+*	control+shift+NVDA+k; Saves the current position as a bookmark
+*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
+*	NVDA+k; Moves to the next bookmark.
+*	shift+NVDA+k; Moves to the previous bookmark.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## Подменю Позиционни маркери (NVDA+N) ##
 
@@ -48,6 +48,12 @@ NVDA. Може също да бъде използвана за запазван
 Забележка: позицията на отметките се базира на броя на знаците; поради това
 в страници с динамично съдържание е по-добре да използвате конкретното
 търсене вместо отметките, които запазват точно определена позиция.
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Промени във версия 4.0 ##
 * Премахнати са идентификатори на фрагменти от имената на отметките, с което

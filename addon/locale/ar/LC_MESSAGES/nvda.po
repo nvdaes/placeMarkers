@@ -83,14 +83,6 @@ msgstr "ا&ستعادة العلامات المرجعية"
 msgid "Restore previously saved place markers"
 msgstr "استعادة العلامات المرجعية المحفوظة مسبقا"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "فتح ملف المساعدة"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "فتح ملف المساعدة للغة الحالية"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "اختيار مجلد لنسخ علاماتك المرجعية المحفوظة"
@@ -254,6 +246,10 @@ msgstr "اختيار الإجراء المناسب"
 msgid "Select an action to perform:"
 msgstr "حدد أحد الخيارات لتنفيذها"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -263,6 +259,12 @@ msgstr "علامات مرجعية"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "إضافة لوضع علامات مرجعية داخل مستندات نمط التصفح"
+
+#~ msgid "Open &documentation"
+#~ msgstr "فتح ملف المساعدة"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "فتح ملف المساعدة للغة الحالية"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "فتح ملف المساعدة الخاص بي   %s"

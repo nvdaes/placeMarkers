@@ -85,14 +85,6 @@ msgstr "&Възстановяване на позиционните маркер
 msgid "Restore previously saved place markers"
 msgstr "Възстановява предишно запазени позиционни маркери"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "Отваряне на &документацията"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "Отваряне на документацията за текущия език"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "Изберете папка за копиране на вашите запазени позиционни маркери"
@@ -257,6 +249,10 @@ msgstr "Възможни &действия:"
 msgid "Select an action to perform:"
 msgstr "Изберете действие, което да се извърши:"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -267,6 +263,12 @@ msgstr "Позиционни маркери"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Добавка за задаване на позиционни маркери за определени виртуални документи"
+
+#~ msgid "Open &documentation"
+#~ msgstr "Отваряне на &документацията"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Отваряне на документацията за текущия език"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "Отваря помощната документация за %s"

@@ -19,13 +19,13 @@ Bookmark إذا كان قد تم تنصيبهما, واللتان تم تطوي�
 
 ## مفاتيح الاختصار: ##
 
-*	control+shift+NVDA+s;  يفتح محاورة تتيح لك حفظ كلمة تريد البحث عنها داخل المستند الحالي. وبشكل افتراضي, سيتم إظهار النص الذي تم حفظه من قبل لهذا الملف. قم بحذف هذا النص واضغط زر الموافقة إذا كنت تريد إزالة الملف النصي المتطابق مع كلمة البحث التي قمت بحفظها, أو ادخل نص جديد لإضافة ملف بحث آخر.
-*	control+shift+NVDA+f; يفتح محاورة بمربع تحرير تظهر آخر كلمة بحث قمت بإدخالها, كما يمكنك اختيار ملفات البحث التي قمت بحفظها من قبل من صندوق الخيارات واختيار الفعل المناسب الذي تريده من صندوق الخيارات التالي. إذا لم يتم العثور على ملفات لكلمات بحث للمستند الحالي, سيخبرك NVDA بذلك.
-*	control+shift+NVDA+k; يقوم بحفظ الموضع الحالي للمؤشر كعلامة مرجعية.
-*	control+shift+NVDA+delete; يحذف العلامة المرجعية المتطابقة مع الموضع الحالي للمؤشر.
-*	control+shift+k; ينتقل إلى العلامة المرجعية التالية.
-*	shift+NVDA+k; ينتقل إلى العلامة المرجعية السابقة.
-*	NVDA+k; ينسخ اسم الملف, دون الامتداد, الذي سيتم فيه حفظ بيانات العلامات المرجعية.
+*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
+*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
+*	control+shift+NVDA+k; Saves the current position as a bookmark
+*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
+*	NVDA+k; Moves to the next bookmark.
+*	shift+NVDA+k; Moves to the previous bookmark.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## العلامات المرجعية قائمة فرعية (NVDA+N) ##
 
@@ -47,6 +47,12 @@ Bookmark إذا كان قد تم تنصيبهما, واللتان تم تطوي�
 ملحوظة: يعتمد مكان العلامة المرجعية على عدد الأحرف; لذا فإن الصفحات ذات
 المحتوى المتغير يستحسن استخدام البحث, وليست العلامات المرجعية لحفظ مكان
 دقيق.
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## مستجدات الإصدار 4.0 ##
 * إزالة معرف الجزيآت باسم ملف العلامة المرجعية, والتي كانت تتسبب في حدوث بعض

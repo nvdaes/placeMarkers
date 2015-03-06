@@ -23,9 +23,9 @@ current document.
 *	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
 *	control+shift+NVDA+k; Saves the current position as a bookmark
 *	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	control+shift+k; Moves to the next bookmark.
+*	NVDA+k; Moves to the next bookmark.
 *	shift+NVDA+k; Moves to the previous bookmark.
-*	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## Подменю Закладки (NVDA+N) ##
 
@@ -45,6 +45,12 @@ current document.
 Примечание: Положение закладки основано на количестве символов, и поэтому на
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Изменения для 4.0 ##
 * Удалены идентификаторы фрагментов из имён файлов закладок, что позволяет

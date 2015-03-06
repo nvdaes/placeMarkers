@@ -83,14 +83,6 @@ msgstr "இடக் குறிப்பிகளை மீட்டேடு�
 msgid "Restore previously saved place markers"
 msgstr "முன்னதாக சேமிக்கப்பட்டுள்ள இடக் குறிப்பிகளை மீட்டெடுக்கவும்"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "ஆவணத்தை திறவுக (&D)"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "தற்போதைய மொழிக்கான ஆவணத்தை திறவுக"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr ""
@@ -256,6 +248,10 @@ msgstr "தேர்ந்தெடுக்கப்பட வேண்டி�
 msgid "Select an action to perform:"
 msgstr "நிகழ்த்த வேண்டிய செயலைத் தெரிவு செய்க"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -265,6 +261,12 @@ msgstr "இடக் குறிப்பிகள்"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
+
+#~ msgid "Open &documentation"
+#~ msgstr "ஆவணத்தை திறவுக (&D)"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "தற்போதைய மொழிக்கான ஆவணத்தை திறவுக"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "%s-ற்கான ஆவணத்தை திறக்கிறது"

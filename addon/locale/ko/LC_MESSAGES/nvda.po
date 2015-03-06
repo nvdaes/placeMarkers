@@ -83,14 +83,6 @@ msgstr "북마크 복원... (&E)"
 msgid "Restore previously saved place markers"
 msgstr "이전에 저장된 북마크를 불러옵니다"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "도움말 보기 (&D)"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "도움말을 엽니다"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "북마크를 저장할 폴더를 지정하십시오"
@@ -257,6 +249,10 @@ msgstr ""
 msgid "Select an action to perform:"
 msgstr ""
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -266,6 +262,12 @@ msgstr "북마크"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "가상 문서에 북마크를 지정하는 추가 기능"
+
+#~ msgid "Open &documentation"
+#~ msgstr "도움말 보기 (&D)"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "도움말을 엽니다"
 
 #, fuzzy
 #~ msgid "Opens documentation for %s"

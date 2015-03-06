@@ -83,14 +83,6 @@ msgstr "&Obnovi prostorske označbe..."
 msgid "Restore previously saved place markers"
 msgstr "Obnovitev prej shranjenih prostorskih označb"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "Odpri &dokumentacijo"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "Odprtje dokumentacije trenutnega jezika"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "Izberite mapo za preslikavo vaših shranjenih prostorskih označb"
@@ -255,6 +247,10 @@ msgstr "&Dejanja na voljo:"
 msgid "Select an action to perform:"
 msgstr "Izberite dejanje, ki se bo izvedlo:"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -265,6 +261,12 @@ msgstr "Prostorske označbe"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek za postavitev prostorskih označb v izbranih navideznih dokumentih"
+
+#~ msgid "Open &documentation"
+#~ msgstr "Odpri &dokumentacijo"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Odprtje dokumentacije trenutnega jezika"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "Odpre %s dokumentacijo"

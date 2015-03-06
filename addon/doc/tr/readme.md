@@ -19,13 +19,13 @@ sahip oldukları için eskisini kaldırmanız gerekmektedir.
 
 ## Tuş Komutları: ##
 
-*	control+shift+NVDA+s; Geçerli belgede bulmak istediğiniz bir metin dizesi kaydetmenizi sağlayan bir iletişim kutusu açar. Varsayılan olarak, Daha önce bu dosya için kaydettiğiniz metin gösterilir. Bu metni silmek ve kayıtlı aramaya karşılık gelen metin dosyasını kaldırmak istiyorsanız Tamam düğmesine basın, veya başka bir arama eklemek için yeni metni yazın.
-*	control+shift+NVDA+f; En son kaydedilen aramayı gösteren bir yazı alanı içiren bir iletişim kutusu açılır; Bu iletişim kutusunda Ayrıca açılan kutudan daha önce kaydedilen aramaları seçebilir ve bir sonraki seçim kutusundan bir eylem seçebilirsiniz. Geçerli belgede spesifik bir arama için herhangi bir uygun dosya yoksa, NVDA spesifik bir arama için herhangi bir dosya bulunamadığı konusunda sizi uyarır.
-*	control+shift+NVDA+k; Yerimi olarak geçerli konumu kaydeder
-*	control+shift+NVDA+delete; Bu konumdaki yerimini siler.
-*	control+shift+k; Bir sonraki yer işaretine gider.
-*	shift+NVDA+k; Önceki yer işaretine gider.
-*	NVDA+k; Panoya uzantısı olmadan dosya adını kopyalar.
+*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
+*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
+*	control+shift+NVDA+k; Saves the current position as a bookmark
+*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
+*	NVDA+k; Moves to the next bookmark.
+*	shift+NVDA+k; Moves to the previous bookmark.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
 ## Yer imi Alt menüsü (NVDA + N) ##
 
@@ -44,6 +44,12 @@ Tercihler menüsünde yer işaretleri alt menüsünü kullanarak:
 Not: Yer imi konumu karakter sayısına dayanmaktadır; dinamik bir içeriğe
 sahip sayfalarda kesin bir konuma kaydetmek için özel arama değil, yer
 imleri kullanmak daha iyidir.
+
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Changes for 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid

@@ -83,14 +83,6 @@ msgstr "恢复位置标记(&R)..."
 msgid "Restore previously saved place markers"
 msgstr "恢复上次保存的位置标记"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "打开文档(&D)"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "打开当前语言的帮助文档。"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "选择一个用来保存您的位置标记的文件夹"
@@ -252,6 +244,10 @@ msgstr "选择的动作(&A):"
 msgid "Select an action to perform:"
 msgstr "选择一个希望执行的动作："
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -263,3 +259,9 @@ msgstr ""
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "一个在指定的虚拟文档中设置位置标记的插件。"
+
+#~ msgid "Open &documentation"
+#~ msgstr "打开文档(&D)"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "打开当前语言的帮助文档。"

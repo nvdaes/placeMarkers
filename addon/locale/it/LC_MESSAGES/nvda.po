@@ -83,14 +83,6 @@ msgstr "&Ripristina Segnaposti..."
 msgid "Restore previously saved place markers"
 msgstr "Ripristina da una cartella Segnaposti salvata in precedenza"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "&Guida all'uso"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "Apre la documentazione"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "Seleziona la cartella nella quale copiare i Segnaposti"
@@ -255,6 +247,10 @@ msgstr "Azione da scegliere:"
 msgid "Select an action to perform:"
 msgstr "Selezionare l'operazione da eseguire:"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -266,6 +262,12 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Componente aggiuntivo per impostare Segnaposti in pagine Web e documenti "
 "virtuali."
+
+#~ msgid "Open &documentation"
+#~ msgstr "&Guida all'uso"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "Apre la documentazione"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "Apre la documentazione di %s"

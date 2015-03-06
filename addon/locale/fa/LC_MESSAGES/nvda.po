@@ -83,14 +83,6 @@ msgstr "نشانه گذاری ها را ب&رگردان"
 msgid "Restore previously saved place markers"
 msgstr "نشانه گذاری هایی ذخیره شده قبلی را برگردان"
 
-#. Translators: the name for an item of addon submenu.
-msgid "Open &documentation"
-msgstr "&سند را باز بکن"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Open documentation for current language"
-msgstr "سند را برای زبان جاری باز بکن"
-
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
 msgstr "پوشه ای را برای نشانه گذاری های خود انتخاب کنید"
@@ -257,6 +249,10 @@ msgstr "&کارها برای گزیده شدن:"
 msgid "Select an action to perform:"
 msgstr "کاری را برای انجام شدن٬ برگزینید:"
 
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -266,6 +262,12 @@ msgstr "نشانه گذاری ها"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه برای تنظیم نشانه گذاری ها در اسناد مجازی"
+
+#~ msgid "Open &documentation"
+#~ msgstr "&سند را باز بکن"
+
+#~ msgid "Open documentation for current language"
+#~ msgstr "سند را برای زبان جاری باز بکن"
 
 #~ msgid "Opens documentation for %s"
 #~ msgstr "سند را برای %s باز میکند"
