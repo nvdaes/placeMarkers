@@ -20,13 +20,7 @@ beiden Erweiterungen deinstallieren
 
 ## Tastenkombinationen: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	Steuerung+Umschalt+NVDA+s; öffnet einen Dialog, welcher es ermöglicht, einen Text zu speichern, den Sie im aktuellen Dokument suchen möchten. Standardmäßig wird der Text, der zuvor für diese Datei gespeichert wurde, angezeigt. Sie können diesen Text auch löschen und mit ok bestätigen, fals Sie das möchten.
 
 ## Untermenü Sprungmarken (nvda+n) ##
 
@@ -47,10 +41,11 @@ Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
 
 
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+## Änderungen für 5.0 ##
+* Die Groß- und Kleinschreibung kann nun bei der Suche berücksichtigt
+  werden.
+* Der Menüpunkt Hilfe wurde aus dem Menü entfernt.
+* Tastenkürzel sind nun intuitiver
 
 ## Änderungen für 4.0 ##
 * Removed fragment identifiers from bookmark filenames, which can avoid

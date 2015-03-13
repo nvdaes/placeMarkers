@@ -4,14 +4,14 @@
 * загрузить [стабильную версию][1]
 * загрузить [разрабатываемую версию][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks, on web pages or documents in NVDA's browse mode. It can also be
-used for saving or searching strings of text in multi-line controls; in this
-case, if it's not possible to update the caret, the corresponding string
-will be copied to the clipboard, so that it can be searched using other
-tools.  The plugin saves the specified strings and bookmarks to text and
-pickle files. The name of these files is based on the title and URL of the
-current document.
+Это дополнение используется для сохранения и поиска определённых строк
+текста или закладок на web страницах и документах в режиме обзора NVDA. Оно
+может также использоваться для сохранения или поиска строк текста в
+многострочных элементах управления; в этом случае, если не возможно
+обновление каретки, то соответствующая строка будет скопирована в буфер
+обмена, так что она может быть найдена с помощью других инструментов. Плагин
+сохраняет указанные строки и закладки в *.txt и *.pickle файлы. Имена этих
+файлов основаны на заголовке и URL текущего документа.
 
 Это дополнение основано на SpecificSearch и Bookmark&Search, разработаными
 тем же автором. Вы должны удалить их, чтобы использовать placeMarkers, так
@@ -19,13 +19,13 @@ current document.
 
 ## Клавиатурные Команды: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+NVDA+s; Открывает диалог, позволяющий сохранить вашу текстовую строку поиска в текущем документе. По умолчанию, отображается ранее сохранённый текст для этого файла. Удалите этот текст и нажмите кнопку ОК, Если вы хотите удалить текстовый файл, соответствующий сохранённому поиску, или введите новый текст для ещё одного поиска.
+*	control+shift+NVDA+f; Открывает диалог с полем редактирования, которое отображает последний сохранённый поиск; В этом диалоге вы также можете выбрать ранее сохранённые поиски в поле со списком и действие из следующего выпадающего списка. Если нет никаких доступных файлов с указаниями поиска в текущем документе, NVDA предупредит вас о невозможности найти какой-либо файл для указанного поиска.
+*	control+shift+NVDA+k; Сохраняет текущую позицию как закладку
+*	control+shift+NVDA+delete; Удаляет закладку, соответствующую этой позиции.
+*	NVDA+k; Переход к следующей закладке.
+*	shift+NVDA+k; Переход к предыдущей закладке.
+*	control+shift+k; Копирует в буфер обмена имя файла, без расширения, в котором будут храниться данные закладок.
 
 ## Подменю Закладки (NVDA+N) ##
 
@@ -47,10 +47,10 @@ current document.
 не закладки которые сохраняют чёткую позицию.
 
 
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+## Изменения для 5.0 ##
+* Добавлен поиск с учётом регистра.
+* Удалена возможность открыть документацию из меню Закладки.
+* Более интуитивные комбинации клавиш.
 
 ## Изменения для 4.0 ##
 * Удалены идентификаторы фрагментов из имён файлов закладок, что позволяет

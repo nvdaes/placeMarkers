@@ -19,13 +19,13 @@ käyttämiseksi, sillä niissä on samoja näppäinkomentoja ja ominaisuuksia.
 
 ## Näppäinkomennot: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	Control+Shift+NVDA+S: Avaa valintaikkunan, joka mahdollistaa nykyisestä asiakirjasta etsittävän merkkijonon tallentamisen. Oletusarvoisesti näytetään kyseiselle tiedostolle tallennettu teksti. Poista teksti ja paina OK-painiketta, mikäli haluat poistaa tallennettua hakua vastaavan tekstitiedoston, tai kirjoita uutta tekstiä lisätäksesi toisen haun.
+*	Control+Shift+NVDA+F: Avaa valintaikkunan, joka näyttää muokkausruudussa viimeksi tallennetun haun. Tässä valintaikkunassa voit myös valita yhdistelmäruudusta aiemmin tallennettuja hakuja sekä valita seuraavasta yhdistelmäruudusta suoritettavan toimenpiteen. Mikäli nykyiselle asiakirjalle ei ole sivukohtaisen haun tiedostoja, NVDA ilmoittaa, että sivukohtaisen haun tiedostoa ei löydy.
+*	Control+Shift+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi.
+*	Control+Shift+NVDA+delete: Poistaa paikkamerkin nykyisestä sijainnista.
+*	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
+*	Shift+NVDA+K: Siirtää edelliseen paikkamerkkiin.
+*	Control+Shift+K: Kopioi leikepöydälle paikkamerkkien tiedot sisältävän tiedoston nimen ilman päätettä.
 
 ## Paikkamerkit-alavalikko (NVDA+N) ##
 
@@ -47,10 +47,10 @@ sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien sijasta sivukohtaista hakua.
 
 
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+## Muutokset versiossa 5.0 ##
+* Lisätty kirjainkoon huomioiva haku.
+* Poistettu vaihtoehto ohjeen avaamiseen Paikkamerkit-valikosta.
+* Intuitiivisemmat näppäinkomennot.
 
 ## Muutokset versiossa 4.0 ##
 * Poistettu osatunnisteet kirjanmerkkitiedostojen nimistä, mikä saattaa
