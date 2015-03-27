@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2014-10-17 09:21+0100\n"
+"PO-Revision-Date: 2015-03-26 09:48+0100\n"
 "Last-Translator: jožef gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -249,7 +249,7 @@ msgstr "Izberite dejanje, ki se bo izvedlo:"
 
 #. Translators: An option in specific search to perform case-sensitive search, copied from core.
 msgid "Case &sensitive"
-msgstr ""
+msgstr "&Razlikovanje malih in velikih črk"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
