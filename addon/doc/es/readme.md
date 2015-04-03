@@ -16,13 +16,13 @@ las pulsaciones de teclado y las características en común.
 
 ## Órdenes de teclado: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+NVDA+s; Abre un diálogo que  te permite guardar una cadena de texto   que quieras encontrar en el documento actual. De forma predeterminada, se muestra el  texto guardado anteriormente para este fichero. Elimina este texto y pulsa el botón Aceptar si deseas borrar el fichero de texto correspondiente a la búsqueda guardada, o escribe texto nuevo para añadir otra búsqueda.
+*	control+shift+NVDA+f; Abre un diálogo con un cuadro de edición que muestra la última búsqeuda guardada; en este diálogo también puedes seleccionar las búsquedas guardadas anteriormente desde un cuadro combinado y elegir una acción desde el siguiente cuadro combinado. Si no hay archivos disponibles para la búsqueda específica en el documento actual, NVDA te advertirá de que no se encuentra ningún archivo para la búsqueda específica.
+*	control+shift+NVDA+k; Guarda la posición actual como una marca
+*	control+shift+NVDA+suprimir; Elimina la marca correspondiente a esta posición.
+*	NVDA+k; Se desplaza a la siguiente marca.
+*	shift+NVDA+k; Se desplaza a la marca anterior.
+*	control+shift+k; Copia al portapaqpeles el nombre del fichero, sin extensión, donde guardará sus datos el place marker.
 
 ## Submmenú Place markers (NVDA+N) ##
 
@@ -44,10 +44,10 @@ con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
 para guardar una posición precisa.
 
 
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+## Cambios para 5.0 ##
+* Añadida búsqueda sensible a las mayúsculas.
+* Eliminada la opción para abrir documentación desde el menú Place markers.
+* Órdenes de teclado más intuitivas.
 
 ## Cambios para  4.0 ##
 * Eliminados fragmentos de identificadores de nombres de ficheros de
