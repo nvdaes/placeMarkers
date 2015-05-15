@@ -20,13 +20,13 @@ dodatku, ponieważ mają wspólne skróty klawiszowe i funkcje.
 
 ## Skróty klawiszowe: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+NVDA+s; otwiera okno dialogowe, pozwalające zapisać ciąg znaków, który chcesz znaleźć w bieżącym dokumencie. Domyślnie pokazywany jest tekst zapisany poprzednio dla tego pliku. Usuń ten tekst i naciśnij przycisk OK, jeśli chcesz usunąć plik tekstowy odpowiadający zapisanemu wyszukiwaniu lub wpisz nowy tekst aby dodać inne wyszukiwanie.
+*	control+shift+NVDA+f; otwiera okno dialogowe z polem edycji zawierającym ostatnio zapisane wyszukiwanie; w oknie tym możesz również wybrać z listy rozwijanej, poprzednio zapisane wyszukiwania a następnie wybrać akcję z następnej listy rozwijanej. Jeśli nie ma dostępnych plików dla aktualnego dokumentu NVDA  poinformuje, że nie znalazł żadnego pliku dla określonego wyszukiwania.
+*	control+shift+NVDA+k; zapisuje aktualną pozycję jako zakładkę
+*	control+shift+NVDA+delete; usuwa zakładkę powiązaną z tym miejscem.
+*	NVDA+k; przechodzi do następnej zakładki.
+*	shift+NVDA+k; przechodzi do poprzedniej zakładki.
+*	control+shift+k; kopiuje do schowka nazwę pliku bez rozszerzenia, w którym zapisane zostaną dane dodatku.
 
 ## Podmenu Znaczniki miejsc (NVDA+N) ##
 
@@ -49,10 +49,10 @@ dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
 
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+## Zmiany dla wersji 5.0 ##
+* Dodane wyszukiwanie z uwzględnieniem wielkości liter.
+* Usunięta opcja otwierania dokumentacji z menu dodatku.
+* Bardziej intuicyjne skróty klawiszowe.
 
 ## Zmiany dla wersji 4.0 ##
 * Usunięto identyfikatory fragmentów z nazw plików zakładek, co może
