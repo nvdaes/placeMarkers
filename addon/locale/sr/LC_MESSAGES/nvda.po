@@ -8,35 +8,35 @@ msgstr ""
 "Project-Id-Version: placeMarkers 4.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-19 16:00+1000\n"
-"PO-Revision-Date: 2014-12-28 12:16-0800\n"
-"Last-Translator: nikola jovic <wwenikola123@gmail.com>\n"
+"PO-Revision-Date: 2015-05-23 04:09+0100\n"
+"Last-Translator: Danijela Popovic <vlajna95@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.6.3\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"vaš konfiguraciski folder za nvda sadrži datoke iz starije verzije ažurirati "
-"ih"
+"Vaša konfiguracija NVDA sadrži datoteke iz starije verzije ovog dodatka. "
+"Želite li da ih ažurirate?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "instaliraj ili ašuriraj dodatak"
+msgstr "Instaliraj ili ažuriraj dodatak"
 
 #. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "tekst \"%s\" nije pronađen"
+msgstr "Tekst \"%s\" nije pronađen"
 
 #. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
-msgstr "greška pretrage"
+msgstr "Greška pretrage"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
@@ -49,204 +49,204 @@ msgstr "P&lace markers"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "markeri i pretraga meni"
+msgstr "Meni markera i pretrage"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "& specifičan folderr pretrage"
+msgstr "&Specifičan folder pretrage"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "otvara specifičan folder pretrage"
+msgstr "Otvara specifični folder pretrage"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "& folder markera"
+msgstr "Folder &markera"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "otvara folder markera"
+msgstr "Otvara folder markera"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "& kopiraj folder markera"
+msgstr "&Kopiraj folder markera"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "rezerna kopija markera"
+msgstr "Rezervna kopija markera"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "& vrati markere"
+msgstr "&Vrati markere"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "vrati prethodno sačuvane markere"
+msgstr "Vrati prethodno sačuvane markere"
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "izaberite folder za kopiranje vaših trenutnih markera"
+msgstr "Izaberi folder za kopiranje trenutno sačuvanih markera"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "folder nije kopiran"
+msgstr "Folder nije kopiran"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "greška pri kopiranju"
+msgstr "Greška pri kopiranju"
 
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
-msgstr "izaberite folder sa markerima za vraćanje"
+msgstr "Izaberite folder sa markerima za vraćanje"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
 "from the previous saved searches"
-msgstr "upišite tekst koji želite da sačuvate ili obrišite sačuvani tekst"
+msgstr "Upišite tekst koji želite da sačuvate ili obrišite sačuvani tekst"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
-msgstr "sačuvaj tekst za specifičnu pretragu"
+msgstr "Sačuvaj tekst za specifičnu pretragu"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
-msgstr "čuva tekst za specifičnu pretragu"
+msgstr "Čuva tekst za specifičnu pretragu"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "datoteka za specifičnu pretragu nije pronađena"
+msgstr "Datoteka za specifičnu pretragu nije pronađena"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr "traži tekst od kursora za dokument"
+msgstr "Traži tekst za specifični dokument od trenutne pozicije kursora."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "marker nemože biti sačuvan"
+msgstr "Marker ne može biti sačuvan"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "ova pozicija je već sačuvana"
+msgstr "Ova pozicija je već sačuvana"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "sačuvana pozicija kod slova%d"
+msgstr "Sačuvana pozicija kod slova %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "nemogu sačuvati marker"
+msgstr "Nije moguće sačuvati marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "čuva trenutnu poziciju kao marker"
+msgstr "Čuva trenutnu poziciju kao marker"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "nema markera"
+msgstr "Nema markera"
 
 msgid "Bookmark cannot be deleted"
-msgstr "marker nemože biti obrisan"
+msgstr "Marker ne može biti obrisan"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "nema izabranog markera"
+msgstr "Nema izabranog markera"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "marker obrisan"
+msgstr "Marker je obrisan"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "nemogu obrisati marker"
+msgstr "Nije moguće obrisati marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "briše trenutni marker"
+msgstr "Briše trenutni marker"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "nema pronađenih markera"
+msgstr "Nije pronađen nijedan marker"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "nemogu pronaći nijedan marker"
+msgstr "Nije moguće pronaći nijedan marker"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "pozicija slovo%d"
+msgstr "Pozicija: slovo %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "sledeći marker nije pronađen"
+msgstr "Nije pronađen sledeći marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "premešta se na sledeći marker"
+msgstr "Premešta se na sledeći marker"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "prethodni marker nije pronađen"
+msgstr "Nije pronađen prethodni marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "premešta se na prethodni marker"
+msgstr "Premešta se na prethodni marker"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "nemogu kopirati ime datoteke za markere"
+msgstr "Nije moguće kopirati ime datoteke za markere"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "ime markera kopirano u privremenu memoriju"
+msgstr "Ime datoteke markera kopirano u privremenu memoriju"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "kopira ime datoteke u privremenu memoriju"
+msgstr "Kopira ime datoteke markera u privremenu memoriju"
 
 #. Translators: This is the label for the specific search settings dialog.
 msgid "Specific Search"
-msgstr "specifična pretraga"
+msgstr "Specifična pretraga"
 
 #. Translators: This is the label for a textfield in the
 #. specific search settings dialog.
 msgid "&Text to search:"
-msgstr "& tekst za pretragu"
+msgstr "&Tekst za pretragu:"
 
 #. Translators: The label for a setting in specific search to select a saved text.
 msgid "&Saved texts:"
-msgstr "& sačuvani tekstovi"
+msgstr "&Sačuvani tekstovi"
 
 #. Translators: A combo box to choose a saved text.
 msgid "Saved texts to search:"
-msgstr "sačuvani tekstovi za pretragu"
+msgstr "Sačuvani tekstovi za pretragu"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search down"
-msgstr "traži dole"
+msgstr "Traži &dole"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search up"
-msgstr "traži gore"
+msgstr "Traži &gore"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Delete"
-msgstr "obriši"
+msgstr "&Obriši"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "& akcije za izbor"
+msgstr "&Moguće akcije:"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
-msgstr "izaberite neku akciju"
+msgstr "Izaberite akciju:"
 
 #. Translators: An option in specific search to perform case-sensitive search, copied from core.
 msgid "Case &sensitive"
-msgstr ""
+msgstr "Osetljivo na veličinu teksta"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -256,7 +256,7 @@ msgstr "Place markers"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "dodatak za postavljanje markera na virtuelnim dokumentima"
+msgstr "Dodatak za postavljanje markera na virtuelnim dokumentima"
 
 #~ msgid "Open &documentation"
 #~ msgstr "otvori & dokumentaciju"
