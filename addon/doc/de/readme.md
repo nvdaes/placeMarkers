@@ -54,7 +54,8 @@ stattdessen Suchanfragen zu verwenden.
 
 ## Änderungen für 3.1 ##
 * aktualisierte Übersetzungen und neue Sprache.
-* Bookmark position is not announced in skim reading.
+* Die Position von Lesezeichen wird nicht während der Navigation während
+  alles  lesen ausgegeben..
 
 ## Änderungen für 3.0 ##
 * Unterstützung für "Navigation während alles lesen" hinzugefügt.
