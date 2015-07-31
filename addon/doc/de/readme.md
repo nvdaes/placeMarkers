@@ -48,8 +48,9 @@ stattdessen Suchanfragen zu verwenden.
 * Tastenkürzel sind nun intuitiver
 
 ## Änderungen für 4.0 ##
-* Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in ePUBREADER Firefox add-on.
+* Fragment-Identifikatoren aus den Dateinamen der Lesezeichen
+  entfernt. Dadurch werden Fehler in der Erweiterung ePUBREADER für Firefox
+  vermieden.
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager verfügbar.
 
 ## Änderungen für 3.1 ##
