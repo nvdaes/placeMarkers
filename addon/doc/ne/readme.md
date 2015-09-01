@@ -1,8 +1,8 @@
 # स्थान चिनो #
 
 * लेखक: Noelia, Chris.
-* डाउनलोड[version 1.0][1]
-* डाउनलोट [development version][2]
+* अनुबहन[version 1.0][1]
+* अनुबहन [development version][2]
 
 This addon is used for saving and searching specific text strings or
 bookmarks, on web pages or documents in NVDA's browse mode. It can also be
@@ -46,15 +46,15 @@ common keystrokes and features.
 हुने भएकोले विसेष खोजी गर्नु राम्रो हुन्छ  तर निदिर्ट पुस्तकचिनो मा होइन ।
 
 
-## Changes for 5.0 ##
+## ३.० मा गरिएका परिवर्तनहरू ##
 * Added case sensitive search.
 * Removed option to open documentation from Place markers menu.
 * More intuitive key commands.
 
-## Changes for 4.0 ##
+## ४.० मा गरिएका परिवर्तनहरू ##
 * Removed fragment identifiers from bookmark filenames, which can avoid
   issues in ePUBREADER Firefox add-on.
-* Add-on help is available from the Add-ons Manager.
+* थप-साधन सहयोग थप-साधन व्यबस्थापकमा उपलब्ध छ ।.
 
 ## ३.१ मा गरिएका परिवर्तनहरू ##
 * अनुवादको अध्यावधिकरण र अनुदित भाषाहरू

@@ -21,7 +21,7 @@ addon_info = {
 	# version
 	"addon_version" : "6.0-dev",
 	# Author(s)
-	"addon_author" : u"Noelia <nrm1977@gmail.com>, Chris <llajta2012@hotmail.com>",
+	"addon_author" : u"Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url" : "http://addons.nvda-project.org",
 	# Documentation file name

@@ -32,6 +32,8 @@ Using Place markers submenu, under Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in pages with a dynamic content is better to use the specific search, and not the bookmarks which save a precise position.
 
+## Changes for 6.0 ##
+* When the add-on is not usable in the current document, gestures are sent to the corresponding application.
 
 ## Changes for 5.0 ##
 * Added case sensitive search.
@@ -53,7 +55,6 @@ Note: The bookmark position is based on the number of characters; and therefore 
 * Added options to save and delete different searches for each file.
 * Fixed bug which broke when paths contained non latin characters.
 * Shortcuts can now be reassigned using the NVDA gesture input dialog.
-
 
 ## Changes for 1.0 ##
 * Initial version.

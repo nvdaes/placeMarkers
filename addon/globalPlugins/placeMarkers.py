@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+# Gestures sent to applications when add-on features are not applicable
+# Date: 1/09/2015
 # Changed key commands
 # Date: 27/02/2015
 # Removed Open documentation option from add-on menu, as suggested by Bernd Dorer
@@ -338,7 +340,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
-				return
+				gesture.send()
 		self.saveSpecificFindTextDialog()
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
@@ -348,7 +350,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
-				return
+				gesture.send()
 		try:
 			self.getLastSpecificFindText()
 		except:
@@ -379,7 +381,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
-			return
+			gesture.send()
 		self.getStates()
 		fileName = self._pickle
 		start = obj.makeTextInfo(textInfos.POSITION_ALL)
@@ -419,7 +421,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
-			return
+			gesture.send()
 		self.getStates()
 		if len(self._states) == 0:
 			ui.message(
@@ -473,7 +475,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
-			return
+			gesture.send()
 		self.getStates()
 		if len(self._states) == 0:
 			ui.message(
@@ -514,7 +516,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
-			return
+			gesture.send()
 		self.getStates()
 		if len(self._states) == 0:
 			ui.message(
@@ -555,7 +557,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough) and controlTypes.STATE_MULTILINE not in obj.states:
-				return
+				gesture.send()
 		fileName = self.getFile("bookmarks")
 		if not api.copyToClip(os.path.basename(fileName)):
 			ui.message(

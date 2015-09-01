@@ -48,13 +48,15 @@ stattdessen Suchanfragen zu verwenden.
 * Tastenkürzel sind nun intuitiver
 
 ## Änderungen für 4.0 ##
-* Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in ePUBREADER Firefox add-on.
+* Fragment-Identifikatoren aus den Dateinamen der Lesezeichen
+  entfernt. Dadurch werden Fehler in der Erweiterung ePUBREADER für Firefox
+  vermieden.
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager verfügbar.
 
 ## Änderungen für 3.1 ##
 * aktualisierte Übersetzungen und neue Sprache.
-* Bookmark position is not announced in skim reading.
+* Die Position von Lesezeichen wird nicht während der Navigation während
+  alles  lesen ausgegeben..
 
 ## Änderungen für 3.0 ##
 * Unterstützung für "Navigation während alles lesen" hinzugefügt.
