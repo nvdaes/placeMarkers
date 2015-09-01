@@ -33,7 +33,7 @@ Using Place markers submenu, under Preferences menu, you can access:
 Note: The bookmark position is based on the number of characters; and therefore in pages with a dynamic content is better to use the specific search, and not the bookmarks which save a precise position.
 
 ## Changes for 6.0 ##
-* When the add-on is not usable in the current document, gestures are sent to the corresponding application.
+* When the add-on features are not usable, gestures are sent to the corresponding application.
 
 ## Changes for 5.0 ##
 * Added case sensitive search.
