@@ -341,6 +341,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			treeInterceptor=obj.treeInterceptor
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 				gesture.send()
+				return
 		self.saveSpecificFindTextDialog()
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
@@ -351,6 +352,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			treeInterceptor=obj.treeInterceptor
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 				gesture.send()
+				return
 		try:
 			self.getLastSpecificFindText()
 		except:
@@ -382,6 +384,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			obj=treeInterceptor
 		else:
 			gesture.send()
+			return
 		self.getStates()
 		fileName = self._pickle
 		start = obj.makeTextInfo(textInfos.POSITION_ALL)
@@ -422,6 +425,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			obj=treeInterceptor
 		else:
 			gesture.send()
+			return
 		self.getStates()
 		if len(self._states) == 0:
 			ui.message(
@@ -476,6 +480,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			obj=treeInterceptor
 		else:
 			gesture.send()
+			return
 		self.getStates()
 		if len(self._states) == 0:
 			ui.message(
@@ -517,6 +522,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			obj=treeInterceptor
 		else:
 			gesture.send()
+			return
 		self.getStates()
 		if len(self._states) == 0:
 			ui.message(
@@ -558,6 +564,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			treeInterceptor=obj.treeInterceptor
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough) and controlTypes.STATE_MULTILINE not in obj.states:
 				gesture.send()
+				return
 		fileName = self.getFile("bookmarks")
 		if not api.copyToClip(os.path.basename(fileName)):
 			ui.message(
