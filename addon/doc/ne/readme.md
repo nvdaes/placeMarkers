@@ -45,6 +45,9 @@ common keystrokes and features.
 टिप्पणी: पुस्तकचिनोको स्थान वर्णहरुको सङ्ख्या; गतिसील सामाग्री युक्त पृष्ठमा
 हुने भएकोले विसेष खोजी गर्नु राम्रो हुन्छ  तर निदिर्ट पुस्तकचिनो मा होइन ।
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## ३.० मा गरिएका परिवर्तनहरू ##
 * Added case sensitive search.
@@ -68,7 +71,6 @@ common keystrokes and features.
 * गैर ल्याटीन वर्णहरू भएका मार्ग हुदाँ काटिने समस्या हल गरियो ।
 * अब नेत्रवाणीको लगानीसङ्केत पातो प्रयोग गरेर द्रुतमार्ग कायम गर्न सक्ने
   बनाइयो ।
-
 
 ## १.० मा गरिएका परिवर्तनहरू ##
 * सुरुको संस्करण

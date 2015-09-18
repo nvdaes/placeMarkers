@@ -41,6 +41,9 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránka je
 lepšie použiť reťazce hľadania.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Zmeny vo verzii 5.0 ##
 * pridané hľadanie s rozlišovaním malých a veľkých písmen.
@@ -64,7 +67,6 @@ lepšie použiť reťazce hľadania.
 * opravená chyba, ktorá sa vyskytovala, ak cesta neobsahovala len ascii
   znaky.
 * Skratky môžete zmeniť v nastaveniach klávesových skratiek NVDA.
-
 
 ## Zmeny vo verzii 1.0 ##
 * prvé vydanie

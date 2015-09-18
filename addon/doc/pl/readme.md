@@ -48,6 +48,9 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Zmiany dla wersji 5.0 ##
 * Dodane wyszukiwanie z uwzględnieniem wielkości liter.
@@ -72,7 +75,6 @@ określone miejsce.
   alfabetu łacińskiego.
 * Skróty klawiszowe mogą być modyfikowane przy użyciu polecenia NVDA
   Zdarzenia wejścia.
-
 
 ## Zmiany dla wersji 1.0 ##
 * Wstępne wydanie.

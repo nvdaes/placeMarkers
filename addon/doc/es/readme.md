@@ -43,6 +43,9 @@ Nota: La posición de la marca se basa en el número de caracteres; en páginas
 con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
 para guardar una posición precisa.
 
+## Cambios para 6.0 ##
+* Cuando las características del complemento no son usables, los gestos se
+  envían a la aplicación correspondiente.
 
 ## Cambios para 5.0 ##
 * Añadida búsqueda sensible a las mayúsculas.
@@ -70,7 +73,6 @@ para guardar una posición precisa.
   no latinos.
 * Los atajos de teclado ahora pueden reasignarse utilizando el diálogo de
   Entrada de gestos de NVDA.
-
 
 ## Cambios para 1.0 ##
 * Versión inicial.

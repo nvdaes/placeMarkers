@@ -41,6 +41,9 @@ NVDA meni > Podešavanja > Postavljanje obeleživača donosi sledeće opcije:
 Napomena: Obeleživač se postavlja po broju karaktera, pa je za dinamične
 stranice gde se sadržaj često menja bolje koristiti pretragu
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Promene u 5.0 ##
 * Dodata pretraga osetljiva na veličinu slova.
@@ -63,7 +66,6 @@ stranice gde se sadržaj često menja bolje koristiti pretragu
 * Dodata mogućnost za čuvanje i brisanje pretraga za određeni fajl.
 * Omogućen rad sa nelatiničnim karakterima.
 * Omogućena izmena prečica kroz NVDA dijalog za ulazne komande.
-
 
 ## Promene u 1.0 ##
 * Prva verzija

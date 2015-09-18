@@ -40,6 +40,9 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (gezählt in
 Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Änderungen für 5.0 ##
 * Die Groß- und Kleinschreibung kann nun bei der Suche berücksichtigt
@@ -67,7 +70,6 @@ stattdessen Suchanfragen zu verwenden.
 * Fehler behoben, wenn Pfad-Angaben nichtlateinische Zeichen enthalten.
 * Tastenkombinationen können nun mittels des Eingaben-Dialogs von NVDA
   geändert werden.
-
 
 ## Änderungen für 1.0 ##
 * Erstveröffentlichung.

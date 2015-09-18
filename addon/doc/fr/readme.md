@@ -45,6 +45,9 @@ Note: la position du marqueur est basé sur le nombre de caractères. Dans les
 pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Changements pour la version 5.0 ##
 * Ajout de la recherche sensible à la casse.
@@ -72,7 +75,6 @@ spécifique pour marquer une position particulière.
 * Correction d'un bug avec des chemins contenant des caractères non latins.
 * Les raccourcis peuvent désormais être réaffectés en utilisant la boîte de
   dialogue des raccourcis de NVDA.
-
 
 ## Changements pour la version 1.0 ##
 * Première version

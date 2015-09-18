@@ -46,6 +46,9 @@ Noot: de bookmark positie is gebaseerd op het aantal tekens; in pagina's met
 dynamische inhoud kunt u beter de specific search gebruiken in plaats van de
 bookmarks die een specifieke positie opslaan.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Changes for 5.0 ##
 * Added case sensitive search.
@@ -71,7 +74,6 @@ bookmarks die een specifieke positie opslaan.
 * Een probleem opgelost met paden die vreemde tekens bevatten
 * Sneltoetsen kunnen nu opnieuw toegewezen worden met behulp van het NVDA
   dialoogvenster voor invoergebaren.
-
 
 ## Veranderingen in 1.0 ##
 * Eerste versie.

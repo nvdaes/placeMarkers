@@ -46,6 +46,9 @@ Huomautus: Paikkamerkin sijainti perustuu merkkien lukumäärään. Muuttuvaa
 sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien sijasta sivukohtaista hakua.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Muutokset versiossa 5.0 ##
 * Lisätty kirjainkoon huomioiva haku.
@@ -71,7 +74,6 @@ tallentavien paikkamerkkien sijasta sivukohtaista hakua.
   sisälsivät muita kuin latinalaisia merkkejä.
 * Näppäinyhdistelmien uudelleenmäärittely on nyt mahdollista NVDA:n
   syöte-eleet-valintaikkunaa käyttäen.
-
 
 ## Muutokset versiossa 1.0 ##
 * Ensimmäinen versio.

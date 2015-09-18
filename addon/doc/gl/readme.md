@@ -42,6 +42,9 @@ Nota: A posición da marca baséase no número de caracteres; en páxinas con
 contido dinámico é mellor usar a busca específica,e non as marcas para
 gardar unha posición precisa.
 
+## Cambios para 6.0 ##
+* Cando as características do complemento non son usables, os xestos
+  envíanse á aplicación correspondente.
 
 ## Cambios para 5.0 ##
 * Engadida busca sensible ás maiúsculas.
@@ -68,7 +71,6 @@ gardar unha posición precisa.
   latinos.
 * Os atallos de teclado agora pódense reasignar utilizando o diálogo xestos
   de entrada do NVDA.
-
 
 ## Cambios para 1.0 ##
 * Versión inicial.

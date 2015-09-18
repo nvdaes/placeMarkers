@@ -47,6 +47,9 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico é melhor usar a busca específica e não
 marcadores, que salvam uma posição precisa.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Mudanças na 5.0 ##
 * Adicionada busca com diferenciação de maiúsculas.
@@ -73,7 +76,6 @@ marcadores, que salvam uma posição precisa.
   não-latinos.
 * Agora é possível atribuir outras teclas de atalho usando o diálogo de
   gestos de entrada do NVDA.
-
 
 ## Mudanças na 1.0 ##
 * Versão inicial.

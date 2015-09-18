@@ -45,6 +45,9 @@ Not: Yer imi konumu karakter sayısına dayanmaktadır; dinamik bir içeriğe
 sahip sayfalarda kesin bir konuma kaydetmek için özel arama değil, yer
 imleri kullanmak daha iyidir.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Changes for 5.0 ##
 * Added case sensitive search.
@@ -69,7 +72,6 @@ imleri kullanmak daha iyidir.
 * Fixed bug which broke when paths contained non latin characters.
 * Kısayollar şimdi NVDA girdi hareketleri iletişim kutusu kullanılarak
   yeniden atanabilir.
-
 
 ## 1.0 Değişiklikler ##
 * İlk sürümü.

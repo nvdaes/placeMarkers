@@ -42,6 +42,9 @@ fér hozzá:
 Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
 
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
 
 ## Az 5.0 verzió változásai ##
 * Kis- és nagybetűket megkülönböztető keresési lehetőség hozzáadva.
@@ -67,7 +70,6 @@ esetén eredményesebb a Speciális Keresés funkció használata.
   karaktereket.
 * A billentyűparancsok megváltoztathatóak az NVDA Beviteli parancsok
   beállítás ablakában.
-
 
 ## Az 1.0 verzió változásai ##
 * Első kiadás
