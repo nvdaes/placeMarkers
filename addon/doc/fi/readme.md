@@ -46,9 +46,9 @@ Huomautus: Paikkamerkin sijainti perustuu merkkien lukumäärään. Muuttuvaa
 sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien sijasta sivukohtaista hakua.
 
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+## Muutokset versiossa 6.0 ##
+* Kun lisäosan toiminnot eivät ole käytettävissä, komennot lähetetään
+  suoraan aktiiviselle sovellukselle.
 
 ## Muutokset versiossa 5.0 ##
 * Lisätty kirjainkoon huomioiva haku.
