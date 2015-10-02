@@ -47,9 +47,9 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico é melhor usar a busca específica e não
 marcadores, que salvam uma posição precisa.
 
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+## Mudanças na 6.0 ##
+* Quando não é possível usar os recursos do complemento, os gestos são
+  enviados para o aplicativo correspondente.
 
 ## Mudanças na 5.0 ##
 * Adicionada busca com diferenciação de maiúsculas.
