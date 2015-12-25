@@ -40,9 +40,9 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (gezählt in
 Zeichen vom Dokumentanfang). Bei dynamischen Webseiten empfielt sich daher,
 stattdessen Suchanfragen zu verwenden.
 
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+## Änderungen für 6.0 ##
+* Wenn die Funktionen der Erweiterung nicht verfügbar sind, werden Sie an
+  die aktuelle Anwendung weitergereicht.
 
 ## Änderungen für 5.0 ##
 * Die Groß- und Kleinschreibung kann nun bei der Suche berücksichtigt
