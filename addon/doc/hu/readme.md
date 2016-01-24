@@ -42,9 +42,9 @@ fér hozzá:
 Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
 esetén eredményesebb a Speciális Keresés funkció használata.
 
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+## A 6.0 verzió változásai ##
+* Amikor a kiegészítő szolgáltatásai nem használhatók, akkor a program
+  átadja a billentyűparancsait az aktuális alkalmazásnak.
 
 ## Az 5.0 verzió változásai ##
 * Kis- és nagybetűket megkülönböztető keresési lehetőség hozzáadva.
