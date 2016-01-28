@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2015-03-26 09:48+0100\n"
-"Last-Translator: jožef gregorc <jozko.gregorc@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-01-26 18:19+0100\n"
+"Last-Translator: Jožef Gregorc <jozko.gregorc[@]guest.arnes.si\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.6\n"
+"Language-Team: \n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -184,11 +184,11 @@ msgstr "Položaj: znak %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Naslednji zaznamek se je našel"
+msgstr "Naslednji zaznamek se ni našel"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "se premakne na naslednji zaznamek"
+msgstr "se premakne na naslednji zaznamek."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
@@ -196,7 +196,7 @@ msgstr "Prejšnji zaznamek se ni našel"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Se premakne na prejšnji zaznamek"
+msgstr "Se premakne na prejšnji zaznamek."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -221,7 +221,7 @@ msgstr "&Besedilo za iskanje"
 
 #. Translators: The label for a setting in specific search to select a saved text.
 msgid "&Saved texts:"
-msgstr "&Snranjena besedila"
+msgstr "&Shranjena besedila:"
 
 #. Translators: A combo box to choose a saved text.
 msgid "Saved texts to search:"
