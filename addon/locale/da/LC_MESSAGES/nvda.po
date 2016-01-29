@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 2.0-dev\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-07-07 08:47+0200\n"
-"PO-Revision-Date: 2015-03-22 20:15+0100\n"
+"PO-Revision-Date: 2016-01-28 20:08+0100\n"
 "Last-Translator: Bue Vester-Andersen <bue@vester-andersen.dk>\n"
 "Language-Team: Dansk <bue@vester-andersen.dk>\n"
 "Language: da\n"
@@ -53,11 +53,11 @@ msgstr "Menu til bogmærker og søgning."
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "&Speciel søgemappe"
+msgstr "Mappe med specifikke søgninger"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Åbner søgemappen"
+msgstr "Åbner mappen med specifikke søgninger"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
@@ -238,11 +238,11 @@ msgstr "Søg bagud"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Delete"
-msgstr "Slete"
+msgstr "Slet"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "Vælg &handling"
+msgstr "Vælg h&andling"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
