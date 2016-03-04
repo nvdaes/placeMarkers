@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2015-07-27 11:21+0100\n"
+"PO-Revision-Date: 2016-02-26 02:11-0800\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.6\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -262,32 +262,3 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Componente aggiuntivo per impostare Segnaposti in pagine Web e documenti "
 "virtuali."
-
-#~ msgid "Open &documentation"
-#~ msgstr "&Guida all'uso"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "Apre la documentazione"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "Apre la documentazione di %s"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "Digitare il testo da cercare;"
-
-#, fuzzy
-#~ msgid "Speci&fic search"
-#~ msgstr "Ricerca Specifica;"
-
-#, fuzzy
-#~ msgid "Documentation folder not found for your language"
-#~ msgstr "Apre la documentazione"
-
-#, fuzzy
-#~ msgid ""
-#~ "Saves the current position as a bookmark. Pressed two times, deletes the "
-#~ "bookmark corresponding to the current position"
-#~ msgstr "Salva la posizione corrente come Segnaposto."
-
-#~ msgid "Saved %d"
-#~ msgstr "Guardado %d"

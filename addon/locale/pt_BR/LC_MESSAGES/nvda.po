@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2015-03-16 14:48-0300\n"
+"PO-Revision-Date: 2016-02-26 02:30-0800\n"
 "Last-Translator: Cleverson Casarin Uliana <clcaul@live.com>\n"
 "Language-Team: Equipe de tradução do NVDA para Português do Brasil "
 "<clcaul@live.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -263,15 +263,3 @@ msgstr "Marcadores"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Complemento para criar marcadores em documentos virtuais específicos"
-
-#~ msgid "Open &documentation"
-#~ msgstr "Abrir &documentação"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "Abre a documentação no idioma atual"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "Abre documentação para %s"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "Digite o texto que deseja encontrar"

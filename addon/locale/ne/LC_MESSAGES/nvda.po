@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2015-03-06 19:24+0545\n"
+"PO-Revision-Date: 2016-02-26 02:18-0800\n"
 "Last-Translator: drishtibachak@gmail.com\n"
 "Language-Team: Nepali <drishtibachak@gmail.com>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived from a "
-"previous version of this add-on. Do you want to update it?"
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"तपाइको नेत्रवाणी अभियोजन थैलीमा यो उपकर्मीका पुराना फाइलहरू रहेछन् । के तपाइ यसलाई अद्यावधिक "
-"गर्न चाहनु हुन्छ ?"
+"तपाइको नेत्रवाणी अभियोजन थैलीमा यो उपकर्मीका पुराना फाइलहरू रहेछन् । के तपाइ यसलाई "
+"अद्यावधिक गर्न चाहनु हुन्छ ?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -101,11 +101,11 @@ msgstr "तपाइले पुनर्स्थापन गर्न चा
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it from "
-"the previous saved searches"
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
 msgstr ""
-"बचत गर्न इच्छा लागेको पाठ टङ्कण गर्नु होस्, अथवा यदि तपाई विगतमा बचत गरिएको खोजीलाई हटाउन "
-"चाहनु हुन्छ भने त्यो पाठलाई मेट्नु होस् ।"
+"बचत गर्न इच्छा लागेको पाठ टङ्कण गर्नु होस्, अथवा यदि तपाई विगतमा बचत गरिएको खोजीलाई "
+"हटाउन चाहनु हुन्छ भने त्यो पाठलाई मेट्नु होस् ।"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
@@ -120,8 +120,10 @@ msgid "File for specific search not found"
 msgstr "विशेष खोजीका लागि फाइल पाइएन ।"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "finds a text string from the current cursor position for a specific document."
-msgstr "विशेष कागजातहरूमा चालू क्रसर रहेको स्थान देखि अगाडी रहेको पाठ पदावलीलाई फेला पार ।"
+msgid ""
+"finds a text string from the current cursor position for a specific document."
+msgstr ""
+"विशेष कागजातहरूमा चालू क्रसर रहेको स्थान देखि अगाडी रहेको पाठ पदावलीलाई फेला पार ।"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
@@ -258,15 +260,3 @@ msgstr "स्थान चिनो "
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "विशेष अवास्तविक कागजातहरूमा स्थान चिनो अनुकूलन गर्ने उपकर्मी ।"
-
-#~ msgid "Open &documentation"
-#~ msgstr "&कागजातलाई पल्टाउ ।"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "चालू भाषाका कागजातहरू पल्टाउ ।"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "%s का लागि कागजातहरू पल्टाउने छ ।"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "फेला पार्न चाहेको पाठ टङ्कण गर्नु होस् ।"

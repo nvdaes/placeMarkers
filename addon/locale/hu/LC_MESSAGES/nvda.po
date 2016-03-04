@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2015-05-07 10:05+0100\n"
+"PO-Revision-Date: 2016-02-26 02:01-0800\n"
 "Last-Translator:  <oaron@nvda.hu>\n"
 "Language-Team: HU <LL@li.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -263,15 +263,3 @@ msgstr "Helyjelzők"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Kiegészítő a helyjelzők elhelyezésére virtuális dokumentumokban"
-
-#~ msgid "Open &documentation"
-#~ msgstr "A s&úgó megnyitása"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "Súgó megnyítása a jelenlegi nyelven"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "%s súgójának megnyitása"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "Gépelje be azt a szöveget, amit meg szeretne találni"

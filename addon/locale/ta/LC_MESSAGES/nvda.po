@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2015-03-12 19:41+0530\n"
+"PO-Revision-Date: 2016-02-26 02:47-0800\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -261,15 +261,3 @@ msgstr "இடக் குறிப்பிகள்"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
-
-#~ msgid "Open &documentation"
-#~ msgstr "ஆவணத்தை திறவுக (&D)"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "தற்போதைய மொழிக்கான ஆவணத்தை திறவுக"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "%s-ற்கான ஆவணத்தை திறக்கிறது"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "தாங்கள் கண்டுபிடிக்க விரும்பும் உரையைத் தட்டச்சிடவும்"
