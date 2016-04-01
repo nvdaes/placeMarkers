@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2016-02-26 02:40-0800\n"
+"PO-Revision-Date: 2016-03-27 22:25+0800\n"
 "Last-Translator: 雪岭冰龙 <vgjh2005@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.7.4\n"
+"Language-Team: \n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -246,7 +246,7 @@ msgstr "选择一个希望执行的动作："
 
 #. Translators: An option in specific search to perform case-sensitive search, copied from core.
 msgid "Case &sensitive"
-msgstr ""
+msgstr "区分大小写(&S)"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
