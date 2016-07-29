@@ -1,4 +1,8 @@
 # -*- coding: UTF-8 -*-
+# placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
+#Copyright (C) 2012-2016 Noelia Ruiz Martínez
+# Released under GPL 2
+
 # Gestures sent to applications when add-on features are not applicable
 # Date: 1/09/2015
 # Changed key commands
