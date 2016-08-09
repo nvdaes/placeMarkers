@@ -610,7 +610,7 @@ class SpecificSearchDialog(SettingsDialog):
 		textsListSizer.Add(textsListLabel)
 		textsListID=wx.NewId()
 		# Translators: A combo box to choose a saved text.
-		self.textsList=wx.Choice(self,textsListID, name=_("Saved texts to search:"), choices=[name for name in savedStrings])
+		self.textsList=wx.Choice(self,textsListID, name=_("Saved texts to search:"), choices=savedStrings)
 		self.textsList.SetSelection(0)
 		textsListSizer.Add(self.textsList)
 		settingsSizer.Add(textsListSizer,border=10,flag=wx.BOTTOM)
