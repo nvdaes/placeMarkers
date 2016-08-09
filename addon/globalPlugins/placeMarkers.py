@@ -622,13 +622,13 @@ class SpecificSearchDialog(SettingsDialog):
 		searchUpAction = _("Search up")
 		# Translators: the name of an action presented in specific search dialog.
 		deleteAction = _("Delete")
-		actions = [searchDownAction, searchUpAction, deleteAction]
+		actions = (searchDownAction, searchUpAction, deleteAction)
 		# Translators: The label for a setting in specific search to select an action.
 		actionsListLabel=wx.StaticText(self,-1,label=_("&Actions to choose:"))
 		actionsListSizer.Add(actionsListLabel)
 		actionsListID=wx.NewId()
 		# Translators: A combo box to choose an action.
-		self.actionsList=wx.Choice(self,actionsListID, name=_("Select an action to perform:"), choices=[name for name in actions])
+		self.actionsList=wx.Choice(self,actionsListID, name=_("Select an action to perform:"), choices=actions)
 		self.actionsList.SetSelection(0)
 		actionsListSizer.Add(self.actionsList)
 		settingsSizer.Add(actionsListSizer,border=10,flag=wx.BOTTOM)
