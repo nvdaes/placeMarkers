@@ -350,7 +350,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
 
-	def popupSaveSpecificFindTextDialog(self):
+	def popupSpecificSearchDialog(self):
 		gui.mainFrame._popupSettingsDialog(SpecificSearchDialog)
 
 	def script_specificFind(self,gesture):
@@ -367,7 +367,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message presented when there is not file for specific search.
 			_("File for specific search not found"))
 			return
-		wx.CallAfter(self.popupSaveSpecificFindTextDialog)
+		wx.CallAfter(self.popupSpecificSearchDialog)
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
 
