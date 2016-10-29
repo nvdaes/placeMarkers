@@ -49,6 +49,7 @@ import languageHandler
 import textInfos
 import controlTypes
 import gui
+from gui import guiHelper
 import wx
 import ui
 import speech
@@ -58,7 +59,6 @@ import sayAllHandler
 from scriptHandler import willSayAllResume
 from cursorManager import CursorManager
 from logHandler import log
-from gui.settingsDialogs import SettingsDialog
 
 addonHandler.initTranslation()
 
@@ -119,6 +119,139 @@ def doFindText(text, reverse=False, caseSensitive=False):
 
 def doFindTextUp(text, caseSensitive=False):
 	doFindText(text, reverse=True, caseSensitive=caseSensitive)
+
+def standarFileName(fileName):
+	fileName.encode("mbcs")
+	notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
+	allowed = re.sub(notAllowed, "", unicode(fileName))
+	return allowed
+
+def getFile(folder, ext=""):
+	obj=api.getForegroundObject()
+	file = obj.name
+	obj = api.getFocusObject()
+	try:
+		obj = obj.treeInterceptor.rootNVDAObject
+		childID = obj.IAccessibleChildID
+		iAObj = obj.IAccessibleObject
+		accValue = iAObj.accValue(childID)
+		nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1].split("#")[0]
+	except:
+		nameToAdd = ""
+	file = file.rsplit(" - ", 1)[0]
+	file = file.split("\\")[-1]
+	file += nameToAdd
+	file = standarFileName(file)
+	folderPath = os.path.join(_basePath, folder)
+	maxLenFileName = 232-len(folderPath)
+	if maxLenFileName <= 0:
+		return ""
+	file = file[:maxLenFileName]
+	file = file+ext
+	path = os.path.join(folderPath, file)
+	return path
+
+def getFileSearch():
+	return getFile("search", ".txt")
+
+def getSavedTexts():
+	searchFile = getFileSearch()
+	try:
+		with codecs.open(searchFile, "r", "utf-8") as f:
+			savedStrings = f.read().split("\n")
+	except:
+		savedStrings = []
+	return savedStrings
+
+def getLastSpecificFindText():
+	try:
+		return getSavedTexts()[0]
+	except:
+		return ""
+
+class SpecificSearchDialog(wx.Dialog):
+
+	def __init__(self, parent):
+		# Translators: The title of the Specific Search dialog.
+		super(SpecificSearchDialog, self).__init__(parent, title=_("Specific search"))
+		self.searchFile = getFileSearch()
+		self.savedTexts = getSavedTexts()
+		mainSizer = wx.BoxSizer(wx.VERTICAL)
+		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
+		# Translators: The label of an edit box in the Specific Search dialog.
+		searchTextLabel = _("&Text to search:")
+		searchLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, searchTextLabel, wx.TextCtrl)
+		self.searchTextEdit = searchLabeledCtrl.control
+		self.searchTextEdit.Value = getLastSpecificFindText()
+		self.searchTextEdit.Bind(wx.EVT_TEXT, self.onSearchEditTextChange)
+		# Translators: The label of a combo box in the Specific Search dialog.
+		savedTextsLabel = _("&Saved texts")
+		self.savedTextsComboBox = sHelper.addLabeledControl(savedTextsLabel, wx.Choice, choices=self.savedTexts)
+		self.savedTextsComboBox.Bind(wx.EVT_CHOICE, self.onSavedTextsChange)
+		# Translators: A label for a chekbox in the Specific search dialog.
+		self.addCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add to history")))
+				# Translators: Label for a set of radio buttons in the Specific search dialog.
+		searchActionsLabel = _("Action on s&earch")
+		searchChoices = (
+			# Translators: An action in the Search group of the Specific search dialog.
+			_("Search &next"),
+			# Translators: An action in the Search group of the Specific search dialog.
+			_("Search &previous"),
+			# Translators: An action in the Search group of the Specific search dialog.
+			_("&Don't search"),
+		)
+		self.searchRadioBox=sHelper.addItem(wx.RadioBox(self,label=searchActionsLabel, choices=searchChoices))
+		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
+		# Translators: A label for a chekbox in the Specific search dialog.
+		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Case-sensitive search")))
+		sHelper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK|wx.CANCEL))
+		self.Bind(wx.EVT_BUTTON, self.onOk, id=wx.ID_OK)
+		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
+		self.Sizer = mainSizer
+		mainSizer.Fit(self)
+		self.searchTextEdit.SetFocus()
+		if not self.searchTextEdit.Value:
+			self.addCheckBox.Disable()
+			self.searchRadioBox.Disable()
+			self.caseSensitiveCheckBox.Disable()
+		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+
+	def onSearchEditTextChange(self, evt):
+		if self.searchTextEdit.Value:
+			self.addCheckBox.Enable()
+			self.searchRadioBox.Enable()
+			self.caseSensitiveCheckBox.Enable()
+		else:
+			self.addCheckBox.Disable()
+			self.searchRadioBox.Disable()
+			self.caseSensitiveCheckBox.Disable()
+
+	def onSavedTextsChange(self, evt):
+		self.searchTextEdit.Value = self.savedTextsComboBox.GetStringSelection()
+
+	def onSearchRadioBox(self, evt):
+		if self.searchRadioBox.Selection == 2: # Don't search
+			self.caseSensitiveCheckBox.Disable()
+
+	def onOk(self, evt):
+		self.Destroy()
+		text = self.searchTextEdit.Value
+		if self.addCheckBox.Value:
+			savedStrings = self.savedTexts
+			savedStrings.insert(0, text)
+			try:
+				with codecs.open(self.searchFile, "w", "utf-8") as f:
+					f.write("\n".join(savedStrings))
+			except Exception, e:
+				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
+				raise e
+		actionToPerform = self.searchRadioBox.Selection
+		if actionToPerform < 2: # Search
+			caseSensitive = self.caseSensitiveCheckBox.Value
+			if actionToPerform == 0:
+				wx.CallLater(100, doFindText, text, caseSensitive=caseSensitive)
+			else:
+				wx.CallLater(100, doFindTextUp, text, caseSensitive=caseSensitive)
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -247,58 +380,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				wx.OK|wx.ICON_ERROR)
 				raise e
 
-	def standarFileName(self, fileName):
-		fileName.encode("mbcs")
-		notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
-		allowed = re.sub(notAllowed, "", unicode(fileName))
-		return allowed
 
-	def getFile(self, folder, ext=""):
-		obj=api.getForegroundObject()
-		file = obj.name
-		obj = api.getFocusObject()
-		try:
-			obj = obj.treeInterceptor.rootNVDAObject
-			childID = obj.IAccessibleChildID
-			IAObj = obj.IAccessibleObject
-			accValue = IAObj.accValue(childID)
-			nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1].split("#")[0]
-		except:
-			nameToAdd = ""
-		file = file.rsplit(" - ", 1)[0]
-		file = file.split("\\")[-1]
-		file += nameToAdd
-		file = self.standarFileName(file)
-		folderPath = os.path.join(_basePath, folder)
-		maxLenFileName = 232-len(folderPath)
-		if maxLenFileName <= 0:
-			return ""
-		file = file[:maxLenFileName]
-		file = file+ext
-		path = os.path.join(folderPath, file)
-		return path
-
-	def getFileSearch(self):
-		global searchFile
-		searchFile = self.getFile("search", ".txt")
-
-	def getSavedTexts(self):
-		self.getFileSearch()
-		global savedStrings
-		try:
-			with codecs.open(searchFile, "r", "utf-8") as f:
-				savedStrings = f.read().split("\n")
-		except Exception, e:
-			savedStrings = []
-			raise e
-
-	def getLastSpecificFindText(self):
-		self.getSavedTexts()
-		global lastSpecificFindText
-		try:
-			lastSpecificFindText = savedStrings[0]
-		except:
-			pass
+	
 
 	def saveSpecificFindTextDialog(self):
 		try:
@@ -346,12 +429,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 				gesture.send()
 				return
-		self.saveSpecificFindTextDialog()
+		wx.callAfter(self.saveSpecificFindTextDialog)
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
 
 	def popupSpecificSearchDialog(self):
-		gui.mainFrame._popupSettingsDialog(SpecificSearchDialog)
+		if gui.isInMessageBox:
+			return
+		gui.mainFrame.prePopup()
+		d = SpecificSearchDialog(gui.mainFrame)
+		d.Show()
+		gui.mainFrame.postPopup()
 
 	def script_specificFind(self,gesture):
 		obj=api.getFocusObject()
@@ -360,13 +448,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 				gesture.send()
 				return
-		try:
-			self.getLastSpecificFindText()
-		except:
-			ui.message(
+		#try:
+			#self.getLastSpecificFindText()
+		#except:
+			#ui.message(
 			# Translators: message presented when there is not file for specific search.
-			_("File for specific search not found"))
-			return
+			#_("File for specific search not found"))
+			#return
 		wx.CallAfter(self.popupSpecificSearchDialog)
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
@@ -592,98 +680,3 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
 		"kb:control+shift+k": "copyCurrentBookmarksFile",
 	}
-
-class SpecificSearchDialog(SettingsDialog):
-	# Translators: This is the label for the specific search settings dialog.
-	title = _("Specific Search")
-
-	def makeSettings(self, settingsSizer):
-		# Translators: This is the label for a textfield in the
-		# specific search settings dialog.
-		textToSearchLabel=wx.StaticText(self,-1,label=_("&Text to search:"))
-		settingsSizer.Add(textToSearchLabel)
-		self.textToSearchEdit=wx.TextCtrl(self,wx.NewId())
-		self.textToSearchEdit.SetValue(lastSpecificFindText)
-		settingsSizer.Add(self.textToSearchEdit,border=10,flag=wx.BOTTOM)
-
-		textsListSizer=wx.BoxSizer(wx.HORIZONTAL)
-		# Translators: The label for a setting in specific search to select a saved text.
-		textsListLabel=wx.StaticText(self,-1,label=_("&Saved texts:"))
-		textsListSizer.Add(textsListLabel)
-		textsListID=wx.NewId()
-		# Translators: A combo box to choose a saved text.
-		self.textsList=wx.Choice(self,textsListID, name=_("Saved texts to search:"), choices=savedStrings)
-		self.textsList.SetSelection(0)
-		textsListSizer.Add(self.textsList)
-		settingsSizer.Add(textsListSizer,border=10,flag=wx.BOTTOM)
-
-		actionsListSizer=wx.BoxSizer(wx.HORIZONTAL)
-		# Translators: the name of an action presented in specific search dialog.
-		searchDownAction = _("Search down")
-		# Translators: the name of an action presented in specific search dialog.
-		searchUpAction = _("Search up")
-		# Translators: the name of an action presented in specific search dialog.
-		deleteAction = _("Delete")
-		actions = (searchDownAction, searchUpAction, deleteAction)
-		# Translators: The label for a setting in specific search to select an action.
-		actionsListLabel=wx.StaticText(self,-1,label=_("&Actions to choose:"))
-		actionsListSizer.Add(actionsListLabel)
-		actionsListID=wx.NewId()
-		# Translators: A combo box to choose an action.
-		self.actionsList=wx.Choice(self,actionsListID, name=_("Select an action to perform:"), choices=actions)
-		self.actionsList.SetSelection(0)
-		actionsListSizer.Add(self.actionsList)
-		settingsSizer.Add(actionsListSizer,border=10,flag=wx.BOTTOM)
-
-		# Translators: An option in specific search to perform case-sensitive search, copied from core.
-		self.caseSensitiveCheckBox=wx.CheckBox(self,wx.NewId(),label=_("Case &sensitive"))
-		self.caseSensitiveCheckBox.SetValue(False)
-		settingsSizer.Add(self.caseSensitiveCheckBox,border=10,flag=wx.BOTTOM)
-
-		self.textsList.Bind(wx.EVT_CHOICE, self.onChoice)
-		self.actionsList.Bind(wx.EVT_CHOICE, self.onAction)
-
-	def postInit(self):
-		self.textToSearchEdit.SetFocus()
-
-	def onChoice(self, evt):
-		self.textToSearchEdit.SetValue(self.textsList.GetStringSelection())
-
-	def onAction(self, evt):
-		if self.actionsList.Selection == 2:
-			self.caseSensitiveCheckBox.Disable()
-		else:
-			self.caseSensitiveCheckBox.Enable()
-
-	def onOk(self,evt):
-		textToSearch = self.textToSearchEdit.GetValue()
-		actionToPerform = self.actionsList.GetSelection()
-		if actionToPerform < 2:
-			caseSensitive = self.caseSensitiveCheckBox.GetValue()
-		if actionToPerform == 0:
-			wx.CallLater(100, doFindText, textToSearch, caseSensitive=caseSensitive)
-		elif actionToPerform == 1:
-			wx.CallLater(100, doFindTextUp, textToSearch, caseSensitive)
-		else:
-			global savedStrings
-			try:
-				savedStrings.pop(self.textsList.GetSelection())
-			except Exception, e:
-				log.debugWarning("Error removing item from savedStrings", exc_info=True)
-				raise e
-			if len(savedStrings) < 1:
-				try:
-					os.unlink(searchFile)
-				except Exception, e:
-					log.debugWarning("Error removing specific search file", exc_info=True)
-					raise e
-			else:
-				textToSave = "\n".join(savedStrings)
-				try:
-					with codecs.open(searchFile, "w", "utf-8") as f:
-						f.write(textToSave)
-				except Exception, e:
-					log.debugWarning("Error saving strings of text for specific search", exc_info=True)
-					raise e
-		super(SpecificSearchDialog, self).onOk(evt)
-
