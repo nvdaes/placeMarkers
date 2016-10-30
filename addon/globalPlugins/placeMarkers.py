@@ -198,16 +198,19 @@ class SpecificSearchDialog(wx.Dialog):
 		self.savedTexts = getSavedTexts()
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
+		# Translators: The label of a combo box in the Specific Search dialog.
+		savedTextsLabel = _("&Saved texts")
+		self.savedTextsComboBox = sHelper.addLabeledControl(savedTextsLabel, wx.Choice, choices=self.savedTexts)
+		self.savedTextsComboBox.Bind(wx.EVT_CHOICE, self.onSavedTextsChange)
+		# Translators: A label for a chekbox in the Specific search dialog.
+		self.removeCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Remove from history")))
+		self.removeCheckBox.Disable()
 		# Translators: The label of an edit box in the Specific Search dialog.
 		searchTextLabel = _("&Text to search:")
 		searchLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, searchTextLabel, wx.TextCtrl)
 		self.searchTextEdit = searchLabeledCtrl.control
 		self.searchTextEdit.Value = getLastSpecificFindText()
 		self.searchTextEdit.Bind(wx.EVT_TEXT, self.onSearchEditTextChange)
-		# Translators: The label of a combo box in the Specific Search dialog.
-		savedTextsLabel = _("&Saved texts")
-		self.savedTextsComboBox = sHelper.addLabeledControl(savedTextsLabel, wx.Choice, choices=self.savedTexts)
-		self.savedTextsComboBox.Bind(wx.EVT_CHOICE, self.onSavedTextsChange)
 		# Translators: A label for a chekbox in the Specific search dialog.
 		self.addCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add to history")))
 				# Translators: Label for a set of radio buttons in the Specific search dialog.
@@ -248,6 +251,7 @@ class SpecificSearchDialog(wx.Dialog):
 
 	def onSavedTextsChange(self, evt):
 		self.searchTextEdit.Value = self.savedTextsComboBox.GetStringSelection()
+		self.removeCheckBox.Enable()
 
 	def onSearchRadioBox(self, evt):
 		if self.searchRadioBox.Selection == 2: # Don't search
@@ -255,10 +259,14 @@ class SpecificSearchDialog(wx.Dialog):
 
 	def onOk(self, evt):
 		self.Destroy()
-		text = self.searchTextEdit.Value
-		if self.addCheckBox.Value:
+		if self.addCheckBox.Value or self.searchRadioBox.Selection < 2:
+			text = self.searchTextEdit.Value
+		if self.addCheckBox.Value or self.removeCheckBox.Value:
 			savedStrings = self.savedTexts
-			savedStrings.insert(0, text)
+			if self.addCheckBox.Value:
+				savedStrings.insert(0, text)
+			if self.removeCheckBox.Value:
+				del savedStrings[self.savedTextsComboBox.Selection]
 			try:
 				with codecs.open(self.searchFile, "w", "utf-8") as f:
 					f.write("\n".join(savedStrings))
