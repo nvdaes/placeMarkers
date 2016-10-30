@@ -86,7 +86,7 @@ def createBookmarksFolder():
 		return
 	try:
 		os.makedirs(_bookmarksFolder)
-	except Exception, e:
+	except Exception as e:
 		log.debugWarning("Error creating bookmarks folder", exc_info=True)
 		raise e
 
@@ -262,7 +262,7 @@ class SpecificSearchDialog(wx.Dialog):
 			try:
 				with codecs.open(self.searchFile, "w", "utf-8") as f:
 					f.write("\n".join(savedStrings))
-			except Exception, e:
+			except Exception as e:
 				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
 				raise e
 		actionToPerform = self.searchRadioBox.Selection
@@ -348,7 +348,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			try:
 				shutil.rmtree(copyPath, ignore_errors=True)
 				shutil.copytree(_basePath, copyPath)
-			except Exception, e:
+			except Exception as e:
 				wx.CallAfter(gui.messageBox,
 				# Translators: label of error dialog shown when cannot copy placeMarkers folder.
 				_("Folder not copied"),
@@ -371,7 +371,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			try:
 				shutil.rmtree(_basePath, ignore_errors=True)
 				shutil.copytree(placeMarkersPath, _basePath)
-			except Exception, e:
+			except Exception as e:
 				wx.CallAfter(gui.messageBox,
 				# Translators: label of error dialog shown when cannot copy placeMarkers folder.
 				_("Folder not copied"),
@@ -417,7 +417,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			with codecs.open(searchFile, "w", "utf-8") as f:
 				f.write(textToSave)
-		except Exception, e:
+		except Exception as e:
 			log.debugWarning("Error saving specific search", exc_info=True)
 			raise e
 
@@ -501,7 +501,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			ui.message(
 			# Translators: message presented when a position is saved as a bookmark.
 			_("Saved position at character %d") %count)
-		except Exception, e:
+		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
 			ui.message(
 			# Translators: message presented when a bookmark cannot be saved.
