@@ -69,9 +69,29 @@ _basePath = os.path.join(os.path.dirname(__file__), "placeMarkers").decode("mbcs
 _searchFolder = os.path.join(_basePath, "search")
 searchFile = ""
 lastSpecificFindText = ""
-savedStrings = []
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
+
+def createSearchFolder():
+	if os.path.isdir(_searchFolder):
+		return
+	try:
+		os.makedirs(_searchFolder)
+	except Exception as e:
+		log.debugWarning("Error creating search folder", exc_info=True)
+		raise e
+
+def createBookmarksFolder():
+	if os.path.isdir(_bookmarksFolder):
+		return
+	try:
+		os.makedirs(_bookmarksFolder)
+	except Exception, e:
+		log.debugWarning("Error creating bookmarks folder", exc_info=True)
+		raise e
+
+createSearchFolder()
+createBookmarksFolder()
 
 def doFindText(text, reverse=False, caseSensitive=False):
 	if not text:
@@ -300,33 +320,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except wx.PyDeadObjectError:
 			pass
 
-	def createSearchFolder(self):
-		if os.path.isdir(_searchFolder):
-			return
-		try:
-			os.makedirs(_searchFolder)
-		except Exception, e:
-			log.debugWarning("Error creating search folder", exc_info=True)
-			raise e
-
-	def createBookmarksFolder(self):
-		if os.path.isdir(_bookmarksFolder):
-			return
-		try:
-			os.makedirs(_bookmarksFolder)
-		except Exception, e:
-			log.debugWarning("Error creating bookmarks folder", exc_info=True)
-			raise e
-
 	def onSpecificSearch(self, evt):
-		self.createSearchFolder()
 		try:
 			os.startfile(_searchFolder)
 		except WindowsError:
 			pass
 
 	def onBookmarks(self, evt):
-		self.createBookmarksFolder()
 		try:
 			os.startfile(_bookmarksFolder)
 		except WindowsError:
@@ -402,7 +402,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.runScriptModalDialog(d, callback)
 
 	def saveSpecificFindText(self, text):
-		self.createSearchFolder()
 		if not text:
 			try:
 				os.remove(searchFile)
@@ -468,7 +467,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._states = []
 
 	def getPickle(self):
-		self.createBookmarksFolder()
 		self._pickle = self.getFile("bookmarks", ".pickle")
 
 	def script_saveBookmark(self, gesture):
