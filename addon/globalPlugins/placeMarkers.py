@@ -101,6 +101,7 @@ def doFindText(text, reverse=False, caseSensitive=False):
 	if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 		obj=treeInterceptor
 		CursorManager._lastFindText=text
+		CursorManager._lastCaseSensitivity=caseSensitive
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	try:
