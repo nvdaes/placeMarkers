@@ -260,20 +260,8 @@ class SpecificSearchDialog(wx.Dialog):
 
 	def onOk(self, evt):
 		self.Destroy()
-		if self.addCheckBox.Value or self.searchRadioBox.Selection < 2:
+		if self.addCheckBox.Value or self.searchRadioBox.Selection < 2: # Add or search
 			text = self.searchTextEdit.Value
-		if self.addCheckBox.Value or self.removeCheckBox.Value:
-			savedStrings = self.savedTexts
-			if self.addCheckBox.Value:
-				savedStrings.insert(0, text)
-			if self.removeCheckBox.Value:
-				del savedStrings[self.savedTextsComboBox.Selection]
-			try:
-				with codecs.open(self.searchFile, "w", "utf-8") as f:
-					f.write("\n".join(savedStrings))
-			except Exception as e:
-				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
-				raise e
 		actionToPerform = self.searchRadioBox.Selection
 		if actionToPerform < 2: # Search
 			caseSensitive = self.caseSensitiveCheckBox.Value
@@ -281,6 +269,21 @@ class SpecificSearchDialog(wx.Dialog):
 				wx.CallLater(100, doFindText, text, caseSensitive=caseSensitive)
 			else:
 				wx.CallLater(100, doFindTextUp, text, caseSensitive=caseSensitive)
+		if self.addCheckBox.Value or self.removeCheckBox.Value:
+			savedStrings = self.savedTexts
+			if self.removeCheckBox.Value:
+				del savedStrings[self.savedTextsComboBox.Selection]
+			if self.addCheckBox.Value and not "\n" in text and not text in savedStrings:
+				savedStrings.insert(0, text)
+			if len(savedStrings) == 0:
+				os.remove(self.searchFile)
+				return
+			try:
+				with codecs.open(self.searchFile, "w", "utf-8") as f:
+					f.write("\n".join(savedStrings))
+			except Exception as e:
+				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
+				raise e
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -389,58 +392,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				wx.OK|wx.ICON_ERROR)
 				raise e
 
-
-	
-
-	def saveSpecificFindTextDialog(self):
-		try:
-			self.getLastSpecificFindText()
-		except:
-			global lastSpecificFindText
-			lastSpecificFindText = ""
-		d = wx.TextEntryDialog(gui.mainFrame,
-		# Translators: label of a dialog presented to save or delete a string for specific search.
-		_("Type the text you wish to save, or delete any text if you want to remove it from the previous saved searches"),
-		# Translators: title of a dialog presented to save a string for specific search.
-		_("Save text for specific search"),
-		defaultValue=lastSpecificFindText)
-		def callback(result):
-			if result == wx.ID_OK:
-				# Make sure this happens after focus returns to the document.
-				wx.CallLater(100, self.saveSpecificFindText, d.GetValue())
-		gui.runScriptModalDialog(d, callback)
-
-	def saveSpecificFindText(self, text):
-		if not text:
-			try:
-				os.remove(searchFile)
-			except WindowsError:
-				log.debugWarning("Error deleting specific search file", exc_info=True)
-			return
-		if "\n" in text:
-			return
-		if text in savedStrings:
-			return
-		savedStrings.insert(0, text)
-		textToSave = "\n".join(savedStrings)
-		try:
-			with codecs.open(searchFile, "w", "utf-8") as f:
-				f.write(textToSave)
-		except Exception as e:
-			log.debugWarning("Error saving specific search", exc_info=True)
-			raise e
-
-	def script_specificSave(self,gesture):
-		obj=api.getFocusObject()
-		if not controlTypes.STATE_MULTILINE in obj.states:
-			treeInterceptor=obj.treeInterceptor
-			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
-				gesture.send()
-				return
-		wx.callAfter(self.saveSpecificFindTextDialog)
-		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_specificSave.__doc__ = _("Saves a text string for a specific search.")
-
 	def popupSpecificSearchDialog(self):
 		if gui.isInMessageBox:
 			return
@@ -456,13 +407,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 				gesture.send()
 				return
-		#try:
-			#self.getLastSpecificFindText()
-		#except:
-			#ui.message(
-			# Translators: message presented when there is not file for specific search.
-			#_("File for specific search not found"))
-			#return
 		wx.CallAfter(self.popupSpecificSearchDialog)
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
@@ -679,7 +623,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
 
 	__gestures = {
-		"kb:control+shift+NVDA+s": "specificSave",
 		"kb:control+shift+NVDA+f": "specificFind",
 		"kb:control+shift+NVDA+k": "saveBookmark",
 		"kb:control+shift+NVDA+delete": "deleteBookmark",
