@@ -300,10 +300,21 @@ def doCopy(copyDirectory):
 
 class CopyDialog(wx.Dialog):
 
+	_instance = None
+	def __new__(cls, *args, **kwargs):
+		# Make this a singleton.
+		if CopyDialog._instance is None:
+			return super(CopyDialog, cls).__new__(cls, *args, **kwargs)
+		return CopyDialog._instance
+
 	def __init__(self, parent):
+		if CopyDialog._instance is not None:
+			return
+		CopyDialog._instance = self
 		# Translators: The title of the Copy dialog.
 		super(CopyDialog, self).__init__(parent, title=_("Copy place markers"))
-		mainSizer = self.mainSizer = wx.BoxSizer(wx.VERTICAL)
+
+		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 
 		# Translators: An informational message displayed in the Copy dialog.
@@ -326,9 +337,6 @@ class CopyDialog(wx.Dialog):
 		continueButton.SetDefault()
 		continueButton.Bind(wx.EVT_BUTTON, self.onCopy)
 		bHelper.addButton(self, id=wx.ID_CANCEL)
-		# If we bind this using button.Bind, it fails to trigger when the dialog is closed.
-		#self.Bind(wx.EVT_BUTTON, self.onCancel, id=wx.ID_CANCEL)
-
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
