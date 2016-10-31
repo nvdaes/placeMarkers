@@ -285,6 +285,76 @@ class SpecificSearchDialog(wx.Dialog):
 				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
 				raise e
 
+def doCopy(copyDirectory):
+	try:
+		shutil.rmtree(copyDirectory, ignore_errors=True)
+		shutil.copytree(_basePath, copyDirectory)
+	except Exception as e:
+		wx.CallAfter(gui.messageBox,
+		# Translators: label of error dialog shown when cannot copy placeMarkers folder.
+		_("Folder not copied"),
+		# Translators: title of error dialog shown when cannot copy placeMarkers folder.
+		_("Copy Error"),
+		wx.OK|wx.ICON_ERROR)
+		raise e
+
+class CopyDialog(wx.Dialog):
+
+	def __init__(self, parent):
+		# Translators: The title of the Copy dialog.
+		super(CopyDialog, self).__init__(parent, title=_("Copy place markers"))
+		mainSizer = self.mainSizer = wx.BoxSizer(wx.VERTICAL)
+		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
+
+		# Translators: An informational message displayed in the Copy dialog.
+		dialogCaption=_("""Select a folder to save a backup of your current place markers.\n
+		They will be copied from %s.""" % _basePath)
+		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
+
+		# Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+		directoryGroupText = _("&directory for backup:")
+		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)))
+		# Translators: The label of a button to browse for a directory.
+		browseText = _("Browse...")
+		# Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+		dirDialogTitle = _("Select directory to copy")
+		directoryEntryControl = groupHelper.addItem(gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle))
+		self.copyDirectoryEdit = directoryEntryControl.pathControl
+		self.copyDirectoryEdit.Value = os.path.join(_configPath, "placeMarkersBackup")
+		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
+		continueButton = bHelper.addButton(self, label=_("&Continue"), id=wx.ID_OK)
+		continueButton.SetDefault()
+		continueButton.Bind(wx.EVT_BUTTON, self.onCopy)
+		bHelper.addButton(self, id=wx.ID_CANCEL)
+		# If we bind this using button.Bind, it fails to trigger when the dialog is closed.
+		#self.Bind(wx.EVT_BUTTON, self.onCancel, id=wx.ID_CANCEL)
+
+		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
+		self.Sizer = mainSizer
+		mainSizer.Fit(self)
+		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+
+	def onCopy(self, evt):
+		if not self.copyDirectoryEdit.Value:
+			# Translators: The message displayed when the user has not specified a destination directory in the Copy dialog.
+			gui.messageBox(_("Please specify a directory."),
+				_("Error"),
+				wx.OK | wx.ICON_ERROR)
+			return
+		drv=os.path.splitdrive(self.copyDirectoryEdit.Value)[0]
+		if drv and not os.path.isdir(drv):
+			# Translators: The message displayed when the user specifies an invalid destination drive, translated in NVDA core.
+			gui.messageBox(_("Invalid drive %s")%drv,
+				_("Error"),
+				wx.OK | wx.ICON_ERROR)
+			return
+		self.Hide()
+		doCopy(self.copyDirectoryEdit.Value)
+		self.Destroy()
+
+	def onCancel(self, evt):
+		self.Destroy()
+
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = unicode(_addonSummary)
@@ -345,29 +415,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 
 	def onCopy(self, evt):
-		if not os.path.isdir(_basePath):
-			return
-		config.initConfigPath()
-		dlg = wx.DirDialog(gui.mainFrame,
-		# Translators: label of a dialog presented for copying place markers.
-		_("Select a folder for copying your saved place markers"),
-		_configPath, wx.DD_DEFAULT_STYLE)
 		gui.mainFrame.prePopup()
-		result = dlg.ShowModal()
+		d = CopyDialog(gui.mainFrame)
+		d.Show()
 		gui.mainFrame.postPopup()
-		if result == wx.ID_OK:
-			copyPath = os.path.join(dlg.GetPath(), "placeMarkersBackup")
-			try:
-				shutil.rmtree(copyPath, ignore_errors=True)
-				shutil.copytree(_basePath, copyPath)
-			except Exception as e:
-				wx.CallAfter(gui.messageBox,
-				# Translators: label of error dialog shown when cannot copy placeMarkers folder.
-				_("Folder not copied"),
-				# Translators: title of error dialog shown when cannot copy placeMarkers folder.
-				_("Copy Error"),
-				wx.OK|wx.ICON_ERROR)
-				raise e
 
 	def onRestore(self, evt):
 		placeMarkersPath = os.path.join(_configPath, "placeMarkersBackup")
