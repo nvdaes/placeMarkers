@@ -492,11 +492,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except WindowsError:
 			pass
 
+	def script_openSpecificSearchFolder(self, gesture):
+		wx.CallAfter(self.onSpecificSearch, None)
+	script_openSpecificSearchFolder.__doc__ = _("Opens the specific search folder.")
+
 	def onBookmarks(self, evt):
 		try:
 			os.startfile(_bookmarksFolder)
 		except WindowsError:
 			pass
+
+	def script_openBookmarksFolder(self, gesture):
+		wx.CallAfter(self.onBookmarks, None)
+	script_openBookmarksFolder.__doc__ = _("Opens the bookmarks folder.")
 
 	def onCopy(self, evt):
 		gui.mainFrame.prePopup()
@@ -504,11 +512,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		d.Show()
 		gui.mainFrame.postPopup()
 
+	def script_activateCopyDialog(self, gesture):
+		wx.CallAfter(self.onCopy, None)
+	script_activateCopyDialog.__doc__ = _("Activates the Copy dialog.")
+
 	def onRestore(self, evt):
 		gui.mainFrame.prePopup()
 		d = RestoreDialog(gui.mainFrame)
 		d.Show()
 		gui.mainFrame.postPopup()
+
+	def script_activateRestoreDialog(self, gesture):
+		wx.CallAfter(self.onRestore, None)
+	script_activateRestoreDialog.__doc__ = _("Activates the Restore dialog.")
 
 	def popupSpecificSearchDialog(self):
 		if gui.isInMessageBox:
