@@ -311,17 +311,7 @@ def doRestore(restoreDirectory):
 
 class CopyDialog(wx.Dialog):
 
-	_instance = None
-	def __new__(cls, *args, **kwargs):
-		# Make this a singleton.
-		if CopyDialog._instance is None:
-			return super(CopyDialog, cls).__new__(cls, *args, **kwargs)
-		return CopyDialog._instance
-
 	def __init__(self, parent):
-		if CopyDialog._instance is not None:
-			return
-		CopyDialog._instance = self
 		# Translators: The title of the Copy dialog.
 		super(CopyDialog, self).__init__(parent, title=_("Copy place markers"))
 
@@ -376,17 +366,7 @@ class CopyDialog(wx.Dialog):
 
 class RestoreDialog(wx.Dialog):
 
-	_instance = None
-	def __new__(cls, *args, **kwargs):
-		# Make this a singleton.
-		if RestoreDialog._instance is None:
-			return super(RestoreDialog, cls).__new__(cls, *args, **kwargs)
-		return RestoreDialog._instance
-
 	def __init__(self, parent):
-		if RestoreDialog._instance is not None:
-			return
-		RestoreDialog._instance = self
 		# Translators: The title of the Restore dialog.
 		super(RestoreDialog, self).__init__(parent, title=_("Restore place markers"))
 
@@ -407,7 +387,9 @@ class RestoreDialog(wx.Dialog):
 		dirDialogTitle = _("Select directory to restore")
 		directoryEntryControl = groupHelper.addItem(gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle))
 		self.restoreDirectoryEdit = directoryEntryControl.pathControl
-		self.restoreDirectoryEdit.Value = os.path.join(_configPath, "placeMarkersBackup")
+		backupDirectory = os.path.join(_configPath, "placeMarkersBackup")
+		if os.path.isdir(backupDirectory):
+			self.restoreDirectoryEdit.Value = backupDirectory
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
 		continueButton = bHelper.addButton(self, label=_("&Continue"), id=wx.ID_OK)
 		continueButton.SetDefault()
