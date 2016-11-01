@@ -479,7 +479,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._states = []
 
 	def getPickle(self):
-		self._pickle = self.getFile("bookmarks", ".pickle")
+		self._pickle = getFile("bookmarks", ".pickle")
 
 	def script_saveBookmark(self, gesture):
 		obj = api.getFocusObject()
@@ -669,7 +669,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough) and controlTypes.STATE_MULTILINE not in obj.states:
 				gesture.send()
 				return
-		fileName = self.getFile("bookmarks")
+		fileName = getFile("bookmarks")
 		if not api.copyToClip(os.path.basename(fileName)):
 			ui.message(
 			# Translators: message presented when cannot copy the file name corresponding to place markers.
