@@ -296,6 +296,19 @@ def doCopy(copyDirectory):
 		wx.OK|wx.ICON_ERROR)
 		raise e
 
+def doRestore(restoreDirectory):
+	try:
+		shutil.rmtree(_basePath, ignore_errors=True)
+		shutil.copytree(restoreDirectory, _basePath)
+	except Exception as e:
+		wx.CallAfter(gui.messageBox,
+		# Translators: label of error dialog shown when cannot copy placeMarkers folder.
+		_("Folder not copied"),
+		# Translators: title of error dialog shown when cannot copy placeMarkers folder.
+		_("Copy Error"),
+		wx.OK|wx.ICON_ERROR)
+		raise e
+
 class CopyDialog(wx.Dialog):
 
 	_instance = None
@@ -321,7 +334,7 @@ class CopyDialog(wx.Dialog):
 		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
 
 		# Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
-		directoryGroupText = _("&directory for backup:")
+		directoryGroupText = _("directory for backup:")
 		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)))
 		# Translators: The label of a button to browse for a directory.
 		browseText = _("Browse...")
@@ -356,6 +369,71 @@ class CopyDialog(wx.Dialog):
 			return
 		self.Hide()
 		doCopy(self.copyDirectoryEdit.Value)
+		self.Destroy()
+
+	def onCancel(self, evt):
+		self.Destroy()
+
+class RestoreDialog(wx.Dialog):
+
+	_instance = None
+	def __new__(cls, *args, **kwargs):
+		# Make this a singleton.
+		if RestoreDialog._instance is None:
+			return super(RestoreDialog, cls).__new__(cls, *args, **kwargs)
+		return RestoreDialog._instance
+
+	def __init__(self, parent):
+		if RestoreDialog._instance is not None:
+			return
+		RestoreDialog._instance = self
+		# Translators: The title of the Restore dialog.
+		super(RestoreDialog, self).__init__(parent, title=_("Restore place markers"))
+
+		mainSizer = wx.BoxSizer(wx.VERTICAL)
+		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
+
+		# Translators: An informational message displayed in the Restore dialog.
+		dialogCaption=_("""Select a folder to restore a backup of your previous copied place markers.\n
+		They will be copied to %s.""" % _basePath)
+		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
+
+		# Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+		directoryGroupText = _("directory containing backup:")
+		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)))
+		# Translators: The label of a button to browse for a directory.
+		browseText = _("Browse...")
+		# Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+		dirDialogTitle = _("Select directory to restore")
+		directoryEntryControl = groupHelper.addItem(gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle))
+		self.restoreDirectoryEdit = directoryEntryControl.pathControl
+		self.restoreDirectoryEdit.Value = os.path.join(_configPath, "placeMarkersBackup")
+		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
+		continueButton = bHelper.addButton(self, label=_("&Continue"), id=wx.ID_OK)
+		continueButton.SetDefault()
+		continueButton.Bind(wx.EVT_BUTTON, self.onRestore)
+		bHelper.addButton(self, id=wx.ID_CANCEL)
+		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
+		self.Sizer = mainSizer
+		mainSizer.Fit(self)
+		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+
+	def onRestore(self, evt):
+		if not self.restoreDirectoryEdit.Value:
+			# Translators: The message displayed when the user has not specified a destination directory in the Restore dialog.
+			gui.messageBox(_("Please specify a directory."),
+				_("Error"),
+				wx.OK | wx.ICON_ERROR)
+			return
+		drv=os.path.splitdrive(self.restoreDirectoryEdit.Value)[0]
+		if drv and not os.path.isdir(drv):
+			# Translators: The message displayed when the user specifies an invalid destination drive, translated in NVDA core.
+			gui.messageBox(_("Invalid drive %s")%drv,
+				_("Error"),
+				wx.OK | wx.ICON_ERROR)
+			return
+		self.Hide()
+		doRestore(self.restoreDirectoryEdit.Value)
 		self.Destroy()
 
 	def onCancel(self, evt):
@@ -427,27 +505,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gui.mainFrame.postPopup()
 
 	def onRestore(self, evt):
-		placeMarkersPath = os.path.join(_configPath, "placeMarkersBackup")
-		dlg = wx.DirDialog(gui.mainFrame,
-		# Translators: label of a dialog presented for restoring place markers.
-		_("Select the place markers folder you wish to restore"),
-		placeMarkersPath, wx.DD_DIR_MUST_EXIST | wx.DD_DEFAULT_STYLE)
 		gui.mainFrame.prePopup()
-		result = dlg.ShowModal()
+		d = RestoreDialog(gui.mainFrame)
+		d.Show()
 		gui.mainFrame.postPopup()
-		if result == wx.ID_OK:
-			placeMarkersPath = dlg.GetPath()
-			try:
-				shutil.rmtree(_basePath, ignore_errors=True)
-				shutil.copytree(placeMarkersPath, _basePath)
-			except Exception as e:
-				wx.CallAfter(gui.messageBox,
-				# Translators: label of error dialog shown when cannot copy placeMarkers folder.
-				_("Folder not copied"),
-				# Translators: title of error dialog shown when cannot copy placeMarkers folder.
-				_("Copy Error"),
-				wx.OK|wx.ICON_ERROR)
-				raise e
 
 	def popupSpecificSearchDialog(self):
 		if gui.isInMessageBox:
