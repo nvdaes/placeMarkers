@@ -67,8 +67,6 @@ _curAddon = addonHandler.Addon(_addonDir) # Addon instance
 _addonSummary = _curAddon.manifest['summary']
 _basePath = os.path.join(os.path.dirname(__file__), "placeMarkers").decode("mbcs")
 _searchFolder = os.path.join(_basePath, "search")
-searchFile = ""
-lastSpecificFindText = ""
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
 
