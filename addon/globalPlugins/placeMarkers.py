@@ -364,6 +364,17 @@ class CopyDialog(wx.Dialog):
 	def onCancel(self, evt):
 		self.Destroy()
 
+class PathSelectionWithoutNewDir(gui.guiHelper.PathSelectionHelper):
+
+	def __init__(self, parent, buttonText, browseForDirectoryTitle):
+		super(PathSelectionWithoutNewDir, self).__init__(parent, buttonText, browseForDirectoryTitle)
+
+	def onBrowseForDirectory(self, evt):
+		startPath = self.getDefaultBrowseForDirectoryPath()
+		with wx.DirDialog(self._parent, self._browseForDirectoryTitle, defaultPath=startPath, style=wx.DD_DIR_MUST_EXIST | wx.DD_DEFAULT_STYLE) as d:
+			if d.ShowModal() == wx.ID_OK:
+				self._textCtrl.Value = d.Path
+
 class RestoreDialog(wx.Dialog):
 
 	def __init__(self, parent):
@@ -385,7 +396,7 @@ class RestoreDialog(wx.Dialog):
 		browseText = _("Browse...")
 		# Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 		dirDialogTitle = _("Select directory to restore")
-		directoryEntryControl = groupHelper.addItem(gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle))
+		directoryEntryControl = groupHelper.addItem(PathSelectionWithoutNewDir(self, browseText, dirDialogTitle))
 		self.restoreDirectoryEdit = directoryEntryControl.pathControl
 		backupDirectory = os.path.join(_configPath, "placeMarkersBackup")
 		if os.path.isdir(backupDirectory):
@@ -496,7 +507,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_activateCopyDialog(self, gesture):
 		wx.CallAfter(self.onCopy, None)
-	script_activateCopyDialog.__doc__ = _("Activates the Copy dialog.")
+	script_activateCopyDialog.__doc__ = _("Activates the Copy dialog of %s." % _addonSummary)
 
 	def onRestore(self, evt):
 		gui.mainFrame.prePopup()
@@ -506,7 +517,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_activateRestoreDialog(self, gesture):
 		wx.CallAfter(self.onRestore, None)
-	script_activateRestoreDialog.__doc__ = _("Activates the Restore dialog.")
+	script_activateRestoreDialog.__doc__ = _("Activates the Restore dialog of %s." % _addonSummary)
 
 	def popupSpecificSearchDialog(self):
 		if gui.isInMessageBox:
