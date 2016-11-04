@@ -349,7 +349,8 @@ class CopyDialog(wx.Dialog):
 		if not self.copyDirectoryEdit.Value:
 			# Message translated in NVDA core.
 			gui.messageBox(translate("Please specify a directory."),
-				_("Error"),
+				# Message translated in NVDA core.
+				translate("Error"),
 				wx.OK | wx.ICON_ERROR)
 			return
 		drv=os.path.splitdrive(self.copyDirectoryEdit.Value)[0]
@@ -428,7 +429,7 @@ class RestoreDialog(wx.Dialog):
 			# Message translated in NVDA core.
 			gui.messageBox(translate("Invalid drive %s")%drv,
 				# Message translated in NVDA core.
-				_("Error"),
+				translate("Error"),
 				wx.OK | wx.ICON_ERROR)
 			return
 		self.Hide()
