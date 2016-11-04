@@ -111,10 +111,10 @@ def doFindText(text, reverse=False, caseSensitive=False):
 		res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
 	except WindowsError:
 		wx.CallAfter(gui.messageBox,
-	# Translators: label of error dialog, translated in NVDA core.
-		_('text "%s" not found')%text,
-		# Translators: title of error dialog, translated in NVDA core.
-		_("Find Error"),
+		# Message translated in NVDA core.
+		translate('text "%s" not found')%text,
+		# Message translated in NVDA core.
+		translate("Find Error"),
 		wx.OK|wx.ICON_ERROR)
 	except:
 		if api.copyToClip(text):
@@ -131,10 +131,10 @@ def doFindText(text, reverse=False, caseSensitive=False):
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 	else:
 		wx.CallAfter(gui.messageBox,
-		# Translators: label of error dialog, translated in NVDA core.
-		_('text "%s" not found')%text,
-		# Translators: title of error dialog, translated in NVDA core.
-		_("Find Error"),
+		# Message translated in NVDA core.
+		translate('text "%s" not found')%text,
+		# Message translated in NVDA core.
+		translate("Find Error"),
 		wx.OK|wx.ICON_ERROR)
 
 def doFindTextUp(text, caseSensitive=False):
@@ -199,7 +199,7 @@ class SpecificSearchDialog(wx.Dialog):
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		# Translators: The label of a combo box in the Specific Search dialog.
-		savedTextsLabel = _("&Saved texts")
+		savedTextsLabel = _("Sa&ved texts")
 		self.savedTextsComboBox = sHelper.addLabeledControl(savedTextsLabel, wx.Choice, choices=self.savedTexts)
 		self.savedTextsComboBox.Bind(wx.EVT_CHOICE, self.onSavedTextsChange)
 		# Translators: A label for a chekbox in the Specific search dialog.
@@ -225,8 +225,8 @@ class SpecificSearchDialog(wx.Dialog):
 		)
 		self.searchRadioBox=sHelper.addItem(wx.RadioBox(self,label=searchActionsLabel, choices=searchChoices))
 		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
-		# Translators: A label for a chekbox in the Specific search dialog.
-		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Case-sensitive search")))
+		# Message translated in NVDA core.
+		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=translate("Case &sensitive")))
 		sHelper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK|wx.CANCEL))
 		self.Bind(wx.EVT_BUTTON, self.onOk, id=wx.ID_OK)
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
@@ -327,14 +327,15 @@ class CopyDialog(wx.Dialog):
 		# Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 		directoryGroupText = _("directory for backup:")
 		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)))
-		# Translators: The label of a button to browse for a directory.
-		browseText = _("Browse...")
+		# Message translated in NVDA core.
+		browseText = translate("Browse...")
 		# Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
 		dirDialogTitle = _("Select directory to copy")
 		directoryEntryControl = groupHelper.addItem(gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle))
 		self.copyDirectoryEdit = directoryEntryControl.pathControl
 		self.copyDirectoryEdit.Value = os.path.join(_configPath, "placeMarkersBackup")
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
+		# Message translated in NVDA core.
 		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
 		continueButton.SetDefault()
 		continueButton.Bind(wx.EVT_BUTTON, self.onCopy)
@@ -346,16 +347,17 @@ class CopyDialog(wx.Dialog):
 
 	def onCopy(self, evt):
 		if not self.copyDirectoryEdit.Value:
-			# Translators: The message displayed when the user has not specified a destination directory in the Copy dialog.
-			gui.messageBox(_("Please specify a directory."),
+			# Message translated in NVDA core.
+			gui.messageBox(translate("Please specify a directory."),
 				_("Error"),
 				wx.OK | wx.ICON_ERROR)
 			return
 		drv=os.path.splitdrive(self.copyDirectoryEdit.Value)[0]
 		if drv and not os.path.isdir(drv):
-			# Translators: The message displayed when the user specifies an invalid destination drive, translated in NVDA core.
-			gui.messageBox(_("Invalid drive %s")%drv,
-				_("Error"),
+			# Message translated in NVDA core.
+			gui.messageBox(translate("Invalid drive %s")%drv,
+			# Message translated in NVDA core.
+				translate("Error"),
 				wx.OK | wx.ICON_ERROR)
 			return
 		self.Hide()
@@ -393,8 +395,8 @@ class RestoreDialog(wx.Dialog):
 		# Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 		directoryGroupText = _("directory containing backup:")
 		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)))
-		# Translators: The label of a button to browse for a directory.
-		browseText = _("Browse...")
+		# Message translated in NVDA core.
+		browseText = translate("Browse...")
 		# Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 		dirDialogTitle = _("Select directory to restore")
 		directoryEntryControl = groupHelper.addItem(PathSelectionWithoutNewDir(self, browseText, dirDialogTitle))
@@ -403,7 +405,8 @@ class RestoreDialog(wx.Dialog):
 		if os.path.isdir(backupDirectory):
 			self.restoreDirectoryEdit.Value = backupDirectory
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
-		continueButton = bHelper.addButton(self, label=_("&Continue"), id=wx.ID_OK)
+		# Message translated in NVDA core.
+		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
 		continueButton.SetDefault()
 		continueButton.Bind(wx.EVT_BUTTON, self.onRestore)
 		bHelper.addButton(self, id=wx.ID_CANCEL)
@@ -414,15 +417,17 @@ class RestoreDialog(wx.Dialog):
 
 	def onRestore(self, evt):
 		if not self.restoreDirectoryEdit.Value:
-			# Translators: The message displayed when the user has not specified a destination directory in the Restore dialog.
-			gui.messageBox(_("Please specify a directory."),
-				_("Error"),
+			# Message translated in NVDA core.
+			gui.messageBox(translate("Please specify a directory."),
+			# Message translated in NVDA core.
+				translate("Error"),
 				wx.OK | wx.ICON_ERROR)
 			return
 		drv=os.path.splitdrive(self.restoreDirectoryEdit.Value)[0]
 		if drv and not os.path.isdir(drv):
-			# Translators: The message displayed when the user specifies an invalid destination drive, translated in NVDA core.
-			gui.messageBox(_("Invalid drive %s")%drv,
+			# Message translated in NVDA core.
+			gui.messageBox(translate("Invalid drive %s")%drv,
+				# Message translated in NVDA core.
 				_("Error"),
 				wx.OK | wx.ICON_ERROR)
 			return
