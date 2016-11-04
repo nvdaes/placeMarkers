@@ -59,13 +59,14 @@ import sayAllHandler
 from scriptHandler import willSayAllResume
 from cursorManager import CursorManager
 from logHandler import log
+from skipTranslation import translate
 
 addonHandler.initTranslation()
 
-_addonDir = os.path.join(os.path.dirname(__file__), "..") # The root of an addon folder
+_addonDir = os.path.join(os.path.dirname(__file__), "..", "..") # The root of an addon folder
 _curAddon = addonHandler.Addon(_addonDir) # Addon instance
 _addonSummary = _curAddon.manifest['summary']
-_basePath = os.path.join(os.path.dirname(__file__), "placeMarkers").decode("mbcs")
+_basePath = os.path.join(os.path.dirname(__file__), "savedPlaceMarkers").decode("mbcs")
 _searchFolder = os.path.join(_basePath, "search")
 _bookmarksFolder = os.path.join(_basePath, "bookmarks")
 _configPath = globalVars.appArgs.configPath
@@ -334,7 +335,7 @@ class CopyDialog(wx.Dialog):
 		self.copyDirectoryEdit = directoryEntryControl.pathControl
 		self.copyDirectoryEdit.Value = os.path.join(_configPath, "placeMarkersBackup")
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
-		continueButton = bHelper.addButton(self, label=_("&Continue"), id=wx.ID_OK)
+		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
 		continueButton.SetDefault()
 		continueButton.Bind(wx.EVT_BUTTON, self.onCopy)
 		bHelper.addButton(self, id=wx.ID_CANCEL)
@@ -757,3 +758,4 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
 		"kb:control+shift+k": "copyCurrentBookmarksFile",
 	}
+
