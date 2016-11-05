@@ -466,10 +466,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 
 	def onSpecificSearch(self, evt):
-		try:
-			os.startfile(SEARCH_FOLDER)
-		except WindowsError:
-			pass
+		os.startfile(SEARCH_FOLDER)
 
 	def script_openSpecificSearchFolder(self, gesture):
 		wx.CallAfter(self.onSpecificSearch, None)
@@ -477,10 +474,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_openSpecificSearchFolder.__doc__ = _("Opens the specific search folder.")
 
 	def onBookmarks(self, evt):
-		try:
-			os.startfile(BOOKMARKS_FOLDER)
-		except WindowsError:
-			pass
+		os.startfile(BOOKMARKS_FOLDER)
 
 	def script_openBookmarksFolder(self, gesture):
 		wx.CallAfter(self.onBookmarks, None)
@@ -544,17 +538,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
-		savedBookmarks = getSavedBookmarks()
-		if count in savedBookmarks:
+		bookmarks = getSavedBookmarks()
+		if count in bookmarks:
 			ui.message(
 				# Translators: message presented when the current position was previously saved as a bookmark.
 				_("This position was already saved"))
 			return
-		savedBookmarks.append(count)
-		savedBookmarks.sort()
+		bookmarks.append(count)
+		bookmarks.sort()
 		fileName = getFileBookmarks()
 		try:
-			cPickle.dump(savedBookmarks, file(fileName, "wb"))
+			cPickle.dump(bookmarks, file(fileName, "wb"))
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
 				_("Saved position at character %d") %count)
