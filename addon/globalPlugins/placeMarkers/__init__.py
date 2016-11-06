@@ -268,6 +268,9 @@ def doCopy(copyDirectory):
 	try:
 		shutil.rmtree(copyDirectory, ignore_errors=True)
 		shutil.copytree(PLACE_MARKERS_PATH, copyDirectory)
+		wx.CallAfter(ui.message,
+			# Translators: Message presented when place markers have been copied.
+			_("Place markers copied"))
 	except Exception as e:
 		wx.CallAfter(gui.messageBox,
 			# Translators: label of error dialog shown when cannot copy placeMarkers folder.
@@ -281,6 +284,9 @@ def doRestore(restoreDirectory):
 	try:
 		shutil.rmtree(PLACE_MARKERS_PATH, ignore_errors=True)
 		shutil.copytree(restoreDirectory, PLACE_MARKERS_PATH)
+		wx.CallAfter(ui.message,
+			# Translators: Message presented when place markers have been restored.
+			_("Place markers restored"))
 	except Exception as e:
 		wx.CallAfter(gui.messageBox,
 			# Translators: label of error dialog shown when cannot copy placeMarkers folder.

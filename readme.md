@@ -11,26 +11,30 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 
 ## Key Commands: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box, choose if the text contained in the edit box will be added to the history of saved text, choose an action from the next group of radio buttons (between Search next, Search previous or Don't search), and specify if NVDA will make a case sensitive search.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies to clipboard the file name, without extension, where the place markers data will be saved.
+
 
 ## Place markers Submenu (NVDA+N) ##
-
 
 Using Place markers submenu, under Preferences menu, you can access:
 
 *	Specific search folder: opens a folder of specific searches previously saved.
-*	Bookmarks folder; opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder; you can save a copy of the bookmarks folder.
-*	Restore placeMarkers; you can restore your bookmarks from a previously saved placeMarkers folder .
-*	Documentation file, in your selected language if available, or English by default.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously saved placeMarkers folder.
 
 Note: The bookmark position is based on the number of characters; and therefore in pages with a dynamic content is better to use the specific search, and not the bookmarks which save a precise position.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been removed. This functionality is now included in the Specific search dialog, which has been redesigned to allow different actions when pressing the OK button.
+*	The visual presentation of the dialogs has been enhanced, according to the appearance of the dialogs shown in NVDA.
+*	Now you can assign gestures to open the Copy and Restore place markers dialogs.
+*	NVDA will present a message to notify when place markers have been copied or restored with the corresponding dialogs.
 
 ## Changes for 6.0 ##
 * When the add-on features are not usable, gestures are sent to the corresponding application.
