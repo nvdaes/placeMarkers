@@ -33,6 +33,8 @@ Note: The bookmark position is based on the number of characters; and therefore 
 ## Changes for 7.0 ##
 *	The dialog to save a string of text for specific search has been removed. This functionality is now included in the Specific search dialog, which has been redesigned to allow different actions when pressing the OK button.
 *	The visual presentation of the dialogs has been enhanced, according to the appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now correctly do a  case sensitive search if the original Find was case sensitive.
+*	Required NVDA 2016.4 or later.
 *	Now you can assign gestures to open the Copy and Restore place markers dialogs.
 *	NVDA will present a message to notify when place markers have been copied or restored with the corresponding dialogs.
 
