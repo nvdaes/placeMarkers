@@ -11,7 +11,7 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 
 ## Key Commands: ##
 
-*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box, choose if the text contained in the edit box will be added to the history of saved texts, choose an action from the next group of radio buttons (between Search next, Search previous or Don't search), and specify if NVDA will make a case sensitive search.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box (with the possibility of removing the selected string from the history using a checkbox), choose if the text contained in the edit box will be added to the history of saved texts, choose an action from the next group of radio buttons (between Search next, Search previous or Don't search), and specify if NVDA will make a case sensitive search.
 *	control+shift+NVDA+k: Saves the current position as a bookmark.
 *	control+shift+NVDA+delete: Deletes the bookmark corresponding to this position.
 *	NVDA+k: Moves to the next bookmark.
