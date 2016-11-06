@@ -107,7 +107,7 @@ def doFindText(text, reverse=False, caseSensitive=False):
 def doFindTextUp(text, caseSensitive=False):
 	doFindText(text, reverse=True, caseSensitive=caseSensitive)
 
-def standarFileName(fileName):
+def standardFileName(fileName):
 	fileName.encode("mbcs")
 	notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
 	allowed = re.sub(notAllowed, "", unicode(fileName))
@@ -128,7 +128,7 @@ def getFile(folder, ext=""):
 	file = file.rsplit(" - ", 1)[0]
 	file = file.split("\\")[-1]
 	file += nameToAdd
-	file = standarFileName(file)
+	file = standardFileName(file)
 	folderPath = os.path.join(PLACE_MARKERS_PATH, folder)
 	maxLenFileName = 232-len(folderPath)
 	if maxLenFileName <= 0:
