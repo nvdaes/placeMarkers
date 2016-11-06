@@ -641,8 +641,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			end = obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
 			ui.message(
-				# Translators: message presented when cannot find any bookmark.
-				_("Cannot find any bookmark"))
+				# Translators: message presented when cannot find any bookmarks.
+				_("Cannot find any bookmarks"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
@@ -682,8 +682,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			end = obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
-			# Translators: message presented when cannot find any bookmark.
-			ui.message(_("Cannot find any bookmark"))
+			# Translators: message presented when cannot find any bookmarks.
+			ui.message(_("Cannot find any bookmarks"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
