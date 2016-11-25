@@ -1,8 +1,8 @@
 # Könyvjelzők #
 
 * Készítők: Noelia, Chris.
-* letöltés [stabil verzió][1]  letöltése
-* letöltés [fejlesztői verzió][2]  letöltése
+* [stabil verzió][1] letöltése
+* [fejlesztői verzió][2] letöltése
 
 Ez a kiegészítő különböző karakterláncok, vagy könyvjelzők mentésére, és
 keresésére használható dokumentumokban és internetes oldalakon, az nvda
@@ -79,7 +79,6 @@ esetén eredményesebb a Speciális Keresés funkció használata.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm[1]:
-http://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
 [2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
