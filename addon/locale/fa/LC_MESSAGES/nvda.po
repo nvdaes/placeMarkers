@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-26 14:59+0200\n"
-"PO-Revision-Date: 2016-02-25 23:47-0800\n"
+"PO-Revision-Date: 2016-12-29 16:23-0800\n"
 "Last-Translator: ali aslani\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -38,169 +38,3 @@ msgstr "نشانه گذاری ها"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه برای تنظیم نشانه گذاری ها در اسناد مجازی"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "متنی \"%s\" پیدا نشد"
-
-#~ msgid "Find Error"
-#~ msgstr "پیدایش خطا"
-
-#~ msgid "%s copied to clipboard"
-#~ msgstr "%s در بریده‌دان٬ روگیری شد"
-
-#~ msgid "P&lace markers"
-#~ msgstr "ن&شانه گذاری ها"
-
-#~ msgid "Bookmarks and Search menu"
-#~ msgstr "نشانک ها و فهرست جستجو"
-
-#~ msgid "&Specific search folder"
-#~ msgstr "پوشه مخصوص &جستجو"
-
-#~ msgid "Opens the specific search folder"
-#~ msgstr "پوشه مخصوص جستجو را باز میکند"
-
-#~ msgid "&Bookmarks folder"
-#~ msgstr "پوشه &نشانک"
-
-#~ msgid "Opens the bookmarks folder"
-#~ msgstr "پوشه نشانک را باز میکند"
-
-#~ msgid "&Copy placeMarkers folder..."
-#~ msgstr "پوشه نشانه گذاری ها را کپی بکن..."
-
-#~ msgid "Backup of place markers"
-#~ msgstr "کپی پشتیبان نشانه گذاری ها"
-
-#~ msgid "R&estore place markers..."
-#~ msgstr "نشانه گذاری ها را ب&رگردان"
-
-#~ msgid "Restore previously saved place markers"
-#~ msgstr "نشانه گذاری هایی ذخیره شده قبلی را برگردان"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "پوشه ای را برای نشانه گذاری های خود انتخاب کنید"
-
-#~ msgid "Folder not copied"
-#~ msgstr "پوشه کپی نشد"
-
-#~ msgid "Copy Error"
-#~ msgstr "خطا در کپی"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "پوشه نشانه گذاری هایی را که میخواهید برگردانید انتخاب بکنید"
-
-#, fuzzy
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "متنی را که میخواهید ذخیره بکنید بنویسید, یا متن را پاک بکنید اگر میخواهید "
-#~ "از جستجوی ذخیره شده قبلی حذف بکنید"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "متن را برای جستجوی ویژه ذخیره بکن"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "رشته ای از متن را برای جستجوی ویژه ذخیره میکند"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "پرونده ای برای جستجوی ویژه یافت نشد"
-
-#~ msgid ""
-#~ "finds a text string from the current cursor position for a specific "
-#~ "document."
-#~ msgstr "رشته متنی را از موقعیت کنونی نشانگر برای اسناد خاص پیدا میکند."
-
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "نشانک نمیتواند ذخیره بشود"
-
-#~ msgid "This position was already saved"
-#~ msgstr "این قسمت قبلا\" ذخیره شده است"
-
-#~ msgid "Saved position at character %d"
-#~ msgstr "محل ذخیره شده در کاراکتر %d"
-
-#~ msgid "Cannot save bookmark"
-#~ msgstr "نشانک را نمیتواند ذخیره بکند"
-
-#~ msgid "Saves the current position as a bookmark."
-#~ msgstr "محل جاری را بعنوان نشانک ذخیره میکند."
-
-#~ msgid "No bookmarks"
-#~ msgstr "بدون نشانک"
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "نشانک نمیتواند پاک بشود"
-
-#~ msgid "No bookmark selected"
-#~ msgstr "نشانکی انتخاب نشده است"
-
-#~ msgid "Bookmark deleted"
-#~ msgstr "نشانک پاک شده است"
-
-#~ msgid "Cannot delete bookmark"
-#~ msgstr "نمیتوانید نشانک را پاک بکنید"
-
-#~ msgid "Deletes the current bookmark."
-#~ msgstr "نشانک جاری را پاک میکند."
-
-#~ msgid "No bookmarks found"
-#~ msgstr "نشانکی پیدا نشد"
-
-#~ msgid "Cannot find any bookmark"
-#~ msgstr "هیچ نشانکی نمیتواند پیدا بکند"
-
-#~ msgid "Position: character %d"
-#~ msgstr "محل: کاراکتر %d"
-
-#~ msgid "Next bookmark not found"
-#~ msgstr "نشانک بعدی پیدا نشد"
-
-#~ msgid "Moves to the next bookmark."
-#~ msgstr "به نشانک بعدی میرود."
-
-#~ msgid "Previous bookmark not found"
-#~ msgstr "نشانک قبلی پیدا نشد"
-
-#~ msgid "Moves to the previous bookmark."
-#~ msgstr "به نشانک قبلی میرود."
-
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "نام پرونده را برای نشانه گذاری ها نمیتواند کپی بکند"
-
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "نام پرونده نشانه گذاری ها به کلیپ برد کپی شد"
-
-#~ msgid ""
-#~ "Copies the name of the current file for place markers to the clipboard."
-#~ msgstr "نام پرونده جاری را برای نشانه گذاری ها در کلیپ برد کپی میکند."
-
-#, fuzzy
-#~ msgid "Specific Search"
-#~ msgstr "جستجوی ویژه"
-
-#~ msgid "&Text to search:"
-#~ msgstr "&نوشتار برای جستجو:"
-
-#~ msgid "&Saved texts:"
-#~ msgstr "نوشتارهای &سپارده شده:"
-
-#, fuzzy
-#~ msgid "Saved texts to search:"
-#~ msgstr "متن را برای جستجوی ویژه ذخیره بکن"
-
-#~ msgid "Search down"
-#~ msgstr "جستجو به سوی پایین"
-
-#~ msgid "Search up"
-#~ msgstr "جستجو به سوی بالا"
-
-#~ msgid "Delete"
-#~ msgstr "پاک کردن"
-
-#~ msgid "&Actions to choose:"
-#~ msgstr "&کارها برای گزیده شدن:"
-
-#~ msgid "Select an action to perform:"
-#~ msgstr "کاری را برای انجام شدن٬ برگزینید:"

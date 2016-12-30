@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2016-01-29 23:53-0800\n"
+"PO-Revision-Date: 2016-12-29 16:03-0800\n"
 "Last-Translator: Joseph Lee <joseph.lee22590@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -38,149 +38,3 @@ msgstr "북마크"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "가상 문서에 북마크를 지정하는 추가 기능"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "\"%s\" 문자열을 찾을 수 없습니다"
-
-#~ msgid "Find Error"
-#~ msgstr "검색 오류"
-
-#, fuzzy
-#~ msgid "%s copied to clipboard"
-#~ msgstr "북마크 파일명이 클립보드에 복사되었습니다"
-
-#~ msgid "P&lace markers"
-#~ msgstr "북마크 (&L)"
-
-#~ msgid "Bookmarks and Search menu"
-#~ msgstr "북마크 검색 메뉴입니다"
-
-#~ msgid "&Specific search folder"
-#~ msgstr "검색 항목 폴더 열기 (&S)"
-
-#~ msgid "Opens the specific search folder"
-#~ msgstr "검색 항목이 저장된 폴더를 엽니다"
-
-#~ msgid "&Bookmarks folder"
-#~ msgstr "북마크 폴더 열기 (&B)"
-
-#~ msgid "Opens the bookmarks folder"
-#~ msgstr "북마크 폴더를 엽니다"
-
-#~ msgid "&Copy placeMarkers folder..."
-#~ msgstr "북마크 폴더 복사... (&C)"
-
-#~ msgid "Backup of place markers"
-#~ msgstr "북마크 백업을 저장합니다"
-
-#~ msgid "R&estore place markers..."
-#~ msgstr "북마크 복원... (&E)"
-
-#~ msgid "Restore previously saved place markers"
-#~ msgstr "이전에 저장된 북마크를 불러옵니다"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "북마크를 저장할 폴더를 지정하십시오"
-
-#~ msgid "Folder not copied"
-#~ msgstr "폴더 복사에 실패하였습니다"
-
-#~ msgid "Copy Error"
-#~ msgstr "복사 오류"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "복원하고자 하는 북마크 폴더를 지정해 주십시오"
-
-#, fuzzy
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "저장하고자 하는 텍스트를 입력하시거나 북마크에서 삭제하고자 하는 텍스트를 "
-#~ "선택하십시오"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "특정 문자 검색 저장"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "검색 텍스트를 저장합니다"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "특정 검색 파일을 찾을 수 없습니다"
-
-#~ msgid ""
-#~ "finds a text string from the current cursor position for a specific "
-#~ "document."
-#~ msgstr "현재 커서 위치에서 검색하고자 하는 텍스트를 찾습니다"
-
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "북마크를 저장할 수 없습니다"
-
-#~ msgid "This position was already saved"
-#~ msgstr "이미 저장된 위치입니다"
-
-#~ msgid "Saved position at character %d"
-#~ msgstr "%d 문자 ㅜ이치가 북마크로 등록되었습니다"
-
-#~ msgid "Cannot save bookmark"
-#~ msgstr "북마크를 저장할 수 없습니다"
-
-#~ msgid "Saves the current position as a bookmark."
-#~ msgstr "현재 위치를 북마크로 저장합니다"
-
-#~ msgid "No bookmarks"
-#~ msgstr "북마크가 없습니다"
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "북마크를 삭제할 수 없습니다"
-
-#~ msgid "No bookmark selected"
-#~ msgstr "선택된 북마크가 없습니다"
-
-#~ msgid "Bookmark deleted"
-#~ msgstr "북마크가 삭제되었습니다"
-
-#~ msgid "Cannot delete bookmark"
-#~ msgstr "북마크를 삭제할 수 없습니다"
-
-#~ msgid "Deletes the current bookmark."
-#~ msgstr "선택된 북마크를 삭제합니다"
-
-#~ msgid "No bookmarks found"
-#~ msgstr "북마크를 찾을 수 없습니다"
-
-#~ msgid "Cannot find any bookmark"
-#~ msgstr "북마크가 없습니다"
-
-#~ msgid "Position: character %d"
-#~ msgstr "문자 ㅜ이치: %d"
-
-#~ msgid "Next bookmark not found"
-#~ msgstr "다음 북마크가 없습니다"
-
-#~ msgid "Moves to the next bookmark."
-#~ msgstr "다음 북마크로 이동합니다"
-
-#~ msgid "Previous bookmark not found"
-#~ msgstr "이전 북마크가 없습니다"
-
-#~ msgid "Moves to the previous bookmark."
-#~ msgstr "이전 북마크로 이동합니다"
-
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "북마크에 할당된 파일을 복사할 수 없습니다"
-
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "북마크 파일명이 클립보드에 복사되었습니다"
-
-#~ msgid ""
-#~ "Copies the name of the current file for place markers to the clipboard."
-#~ msgstr "북마크 파일 이름을 클립보드에 복사합니다"
-
-#, fuzzy
-#~ msgid "Specific Search"
-#~ msgstr "특정 텍스트 검색"
-
-#, fuzzy
-#~ msgid "Saved texts to search:"
-#~ msgstr "특정 문자 검색 저장"
