@@ -4,48 +4,67 @@
 * baixe a [versão estável][1]
 * baixe a [versão de desenvolvimento][2]
 
-Este complemento é usado para salvar e procurar cadeias de texto ou
-marcadores específicos, em páginas de Internet ou documentos no modo de
-navegação do NVDA. Pode ser usado também para salvar ou procurar cadeias de
-texto em controles multilinha; Nesse caso, se não for possível atualizar o
-cursor, a cadeia correspondente será copiada para a área de transferência,
-por forma a poder ser buscada por outras ferramentas. O plug-in salva as
-cadeias e marcadores especificados em arquivos de texto e pickle. O nome
-desses arquivos baseia-se no título e no endereço do documento atual.
-
-Este complemento é baseado nos complementos SpecificSearch e
-Bookmark&Search, desenvolvidos pelo mesmo autor. Você tem que desinstalá-los
-para usar este aqui, visto que eles possuem recursos e teclas de atalho em
-comum.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## Teclas de comando: ##
 
-*	control+shift+NVDA+s; Abre um diálogo que possibilita salvar uma cadeia textual que se queira achar no documento atual. Por padrão, é mostrado o texto anteriormente salvo para este arquivo. Apague esse texto e pressione o botão OK se quiser remover o arquivo de texto correspondente à busca salva, ou digite um novo texto para adicionar outra busca.
-*	control+shift+NVDA+f; Abre um diálogo com um campo de edição que mostra a última busca salva; nesse diálogo pode-se também selecionar buscas anteriormente salvas numa caixa de combinação e escolher uma ação noutra caixa de combinação. Caso não haja arquivos de buscas específicas para o documento atual, o NVDA vai alertá-lo que não foi encontrado qualquer arquivo de busca específica.
-*	control+shift+NVDA+k; salva a posição atual como um marcador
-*	control+shift+NVDA+delete; apaga o marcador que corresponde a esta posição.
-*	NVDA+k; vai ao próximo marcador.
-*	shift+NVDA+k; vai ao marcador anterior.
-*	control+shift+k; Copia para a área de transferência o nome do arquivo, sem extensão, onde serão salvos os dados dos marcadores.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+
 
 ## Submenu Marcadores (NVDA+N) ##
 
-
-Ao usar o submenu Marcadores, no menu Preferências, pode acessar:
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	Pasta de busca específica: abre uma pasta com buscas específicas salvas
   anteriormente.
-*	Pasta de marcadores; abre uma pasta de marcadores salvos.
-*	Copiar pasta do complemento de marcadores: pode salvar uma cópia da pasta
-  do complemento de marcadores.
-*	Restaurar marcadores; pode restaurar os marcadores a partir de uma pasta
-  anteriormente salva do complemento de marcadores.
-*	Arquivo de documentação, no idioma escolhido se disponível ou Inglês por
-  padrão.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-Nota: A posição do marcador é baseada no número de caracteres; assim, em
-páginas de conteúdo dinâmico é melhor usar a busca específica e não
-marcadores, que salvam uma posição precisa.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## Mudanças na 6.0 ##
 * Quando não é possível usar os recursos do complemento, os gestos são

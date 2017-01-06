@@ -4,43 +4,67 @@
 * descarga [versión estable][1]
 * descarga [versión de desenvolvemento][2]
 
-Este complemento úsase para gardar e buscar cadeas de texto específicas ou
-marcas, en páxinas web ou en documentos no modo navegación do NVDA.  O
-plugin garda as cadeas especificadas e marcas en ficheiros de texto ou
-pickle. O nome destes ficheiros baséase no título e no enderezo web do
-documento actual.
-
-Este complemento está baseado en SpecificSearch e Bookmark&Search,
-desenvolvido polo mesmo autor. Debes desinstalalos para usar este, xa que
-teñen os atallos de teclado e as características comúns.
+Este complemento úsase para gardar e restaurar cadeas de texto específicas
+ou marcas. Pode usarse en páxinas web ou en documentos no modo exploración
+do NVDA. Tamén pode usarse para gardar ou procurar cadeas de texto en
+controis multiliña; neste caso, se non é posible actualizar o cursor, a
+cadea correspondente copiarase ao portapapeis, tal que se poda procurar
+usando outras ferramentas.  O plugin garda as cadeas especificadas e marcas
+en ficheiros con nombres baseados no título e URL do documento actual.  Este
+complemento baséase en SpecificSearch y Bookmark&Search, desenvolvidos polo
+mesmo autor. Deberías desinstalalos para usar este, xa que teñen as mesmas
+combinacións de teclas e características.
 
 ## Ordes de teclado: ##
 
-*	control+shift+NVDA+s; Abre un diálogo que che permite gardar unha cadea de texto   que queres atopar no documento actual. De maneira predeterminada, amósase o texto gardado con anterioridade para este ficheiro. Elimina este texto e preme o botón Aceptar se desexas borrar o ficheiro de texto correspondente á busca gardada, ou teclea texto novo para engadir outra busca.
-*	control+shift+NVDA+f; abre un diálogo cun cadro de edición que amosa a última busca gardada; neste diálogo tamén podes selecionar as buscas gardadas con anterioridade dende un cadro combinado e escoller unha  acción dende o seguinte cadro combinado. Se non hai ficheiros dispoñibles para buscas específicas no documento actual, NVDA advertiráche de que non se atopa ningún ficheiro para busca específica.
-*	control+shift+NVDA+k; Garda a posición actual como unha marca
-*	control+shift+NVDA+suprimir; borra a marca correspondente a esta posición.
-*	NVDA+k; Móvese cara a seguinte marca.
-*	shift+NVDA+k; Móvese cara a marca anterior.
-*	control+shift+k; Copia ó portapapeis o nome do ficheiro, sin extensión, onde gardará os datos place marker.
+*	control+shift+NVDA+f: abre un diálogo cunha caixa de edición que amosa a
+  última procura gardada; neste diálogo tamén podes selecionar as procuras
+  anteriormente gardadas dende unha Caixa combinada ou borrar a cadea
+  selecionada dende o historial utilizando unha caixa de verificación. Podes
+  escoller se o texto contido na caixa de edición se engadirá ao histórico
+  de textos gardados. Finalmente, escoller unha acción do seguinte grupo de
+  botóns de opción (entre procurar seguinte, procurar anterior ou non
+  procurar), e especificar se NVDA fará unha procura sensible ás
+  maiúsculas. Cando premas Aceptar, NVDA procurará esta cadea.
+*	control+shift+NVDA+k: garda a posición actual coma unha marca.
+*	control+shift+NVDA+suprimir: borra a marca correspondente a esta posición.
+*	NVDA+k: Move á marca seguinte.
+*	shift+NVDA+k: move á marca anterior.
+*	control+shift+k: copia o nome do ficheiro onde se gardarán os datos dos
+  marcadores ao portapapeis, sen unha extensión.
+
 
 ## Submenú Place markers (NVDA+N) ##
 
-
-Usando o submenú Place markers, no Menú Preferencias, podes acceder a
+Usando o submenú Place markers no Menú Preferencias, podes acceder a
 
 *	Cartafol de busca específica:abre un cartafol de buscas específicas
   gardadas anteriormente.
-*	Cartafol de marcas, abre un cartafol de marcas gardadas.
-*	Copiar cartafol marcas; podes gardar unha copia do cartafol de marcas.
-*	Restaurar marcas; Podes restaurar as túas marcas dende un cartafol marcas
-  gardado anteriormente.
-*	Arquivo de documentación, no teu idioma escollido, se tes un, ou en inglés
-  por defecto.
+*	Cartafol de marcas: abre un cartafol de marcas gardadas.
+*	Copiar cartafol de marcadores: podes gardar unha copia do cartafol de
+  marcas.
+*	Restaurar marcadores: Podes restaurar as túas marcas dende un cartafol de
+  marcadores gardado anteriormente.
 
-Nota: A posición da marca baséase no número de caracteres; en páxinas con
-contido dinámico é mellor usar a busca específica,e non as marcas para
-gardar unha posición precisa.
+Nota: A posición da marca baséase no número de caracteres, polo tanto en
+páxinas con contido dinámico é mellor usar a busca específica,e non as
+marcas.
+
+## Cambios para 7.0 ##
+*	O diálogo para gardar unha cadea de texto para unha procura específica
+  eliminouse. Esta funcionalidade agora inclúese no diálogo Procura
+  Específica, o que se rediseñou para permitir accións diferentes ao se
+  premer o botón Aceptar.
+*	Mellorouse a presentación visual do diálogo, adheríndose á apariencia dos
+  diálogos amosados no NVDA.
+*	Ao se realizar unha orde procurar seguinte ou procurar anterior en Modo
+  exploración agora farase correctamente unha procura sensible ás maiúsculas
+  se a procura orixinal era sensible ás maiúsculas.
+*	Requírese do NVDA 2016.4 ou posterior.
+*	Agora podes asignar xestos para abrir os diálogos Copiar e Restaurar
+  marcadores.
+*	NVDA presentará unha mensaxe para notificar cando se copiaran ou
+  restauraran os marcadores cos diálogos correspondentes.
 
 ## Cambios para 6.0 ##
 * Cando as características do complemento non son usables, os xestos

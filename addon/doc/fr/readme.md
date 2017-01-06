@@ -4,53 +4,81 @@
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
 
-Ce module sert à sauvegarder et rechercher des chaînes de caractères ou des
-marqueurs spécifiques sur des pages web ou des documents en mode
-navigation. Le module sauvegarde les textes et les marqueurs spécifiés dans
+Ce module complémentaire sert à sauvegarder et rechercher des chaînes de
+caractères ou des marqueurs spécifiques sur des pages web ou des documents
+en Mode navigation de NVDA. Ce module complémentaire peut également être
+utilisé pour sauvegarder et rechercher des chaînes de caractères Dans des
+contrôleurs multilignes; dans ce cas, s'il n'est pas possible de mettre à
+jour le point d'insertion, la chaîne correspondante sera copiée dans le
+Presse-papiers, afin de pouvoir la rechercher à l'aide d'autres outils. Le
+module complémentaire sauvegarde les textes et les marqueurs spécifiés dans
 des fichiers. Le nom des fichiers est basé sur le titre et l'url du document
-en cours.
-
-Ce module est basé sur les modules SpecificSearch et Bookmark&Search,
-développés par le même auteur. Vous devrez les désinstaller avant
-d'installer celui-ci, car ils possèdent des raccourcis et des
-fonctionnalités communs.
+en cours.   Ce module complémentaire est basé sur les modules
+complémentaires SpecificSearch et Bookmark&Search, développé par le même
+auteur. Vous devriez les désinstaller pour utiliser celui-ci, car ils ont
+des raccourcis et des caractéristiques communes.
 
 ## Touches de commandes : ##
 
-*	control+maj+NVDA+s; Ouvre une boîte de dialogue qui vous permet d'enregistrer une chaîne de texte que vous voulez trouver dans le document actuel. Par défaut, le texte précédemment enregistré pour ce fichier est affiché. Supprimer ce texte et appuyez sur le bouton OK si vous souhaitez supprimer le fichier texte correspondant à la recherche enregistrée, ou tapez un nouveau texte pour ajouter une autre recherche.
-*	Control+maj+NVDA + f; ouvre une boîte de dialogue avec un champ d'édition qui indique la dernière recherche enregistrée, dans ce dialogue, vous pouvez également sélectionner les recherches précédemment sauvegardées à partir d'une zone de liste déroulante et choisir une action dans la liste déroulante suivante. S'il n'y a pas de fichiers disponibles pour la recherche spécifiée dans le document actuel, NVDA vous préviendra qu'il ne trouve pas un fichier pour la recherche spécifiée.
-*	Control+maj+NVDA + k; Enregistre la position actuelle comme signet
-*	Control+maj+NVDA+Suppr; Supprime le signet correspondant à cette position
-*	NVDA+k; Passe au signet suivant
-*	Maj+NVDA+k; Passe au signet précédent
-*	Control+maj+k; Copies au presse-papiers le nom du fichier, sans extension, où la place des données de marqueurs seront sauvés
+*	Contrôle+maj+NVDA+f : Ouvre un dialogue avec une zone d'édition qui
+  affiche la dernière recherche enregistrée; Dans ce dialogue, vous pouvez
+  également sélectionner les recherches précédemment enregistrées dans une
+  zone de liste déroulante ou supprimer la chaîne sélectionnée de
+  l'historique à l'aide d'une case à cocher. Vous pouvez choisir si le texte
+  contenu dans la zone d'édition sera ajouté à l'historique de vos textes
+  enregistrés. Enfin, choisissez une action du prochain groupe de boutons
+  radio (entre Recherche suivante, Recherche précédente ou Ne pas
+  rechercher), et spécifiez si NVDA effectuera une recherche Respecter la
+  casse. Lorsque vous appuyez sur OK, NVDA recherche cette chaîne.
+*	Contrôle+maj+NVDA+k : Enregistrer la position actuelle en tant que
+  marqueur.
+*	Contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
+  position.
+*	NVDA+k : Déplacer vers le marqueur suivant.
+*	Maj+NVDA+k : Déplacer vers le marqueur précédent.
+*	Control+maj+k : Copier le nom du fichier où les données des marqueurs de
+  position seront enregistrées dans le presse-papiers, sans l'extension.
+
 
 ## Sous-menu des marqueurs (NVDA+N) ##
 
-
-En utilisant le sous-menu des marqueurs, dans le menu préférences, vous
-pouvez accéder à :
+En utilisant le sous-menu des marqueurs, dans le menu préférences de NVDA,
+vous pouvez accéder à :
 
 *	Dossier des recherches spécifiques : Ouvre le dossier des recherches
   spécifiques précédemment sauvegardées.
 *	Dossier des marqueurs : Ouvre le dossier des marqueurs sauvegardés.
-*	Copier le dossier des marqueurs; Vous pouvez sauvegarder une copie du
+*	Copier le dossier des marqueurs : Vous pouvez sauvegarder une copie du
   dossier des marqueurs.
-*	Restorer le dossier des marqueurs; Vous pouvez restorer le dossier des
-  marqueurs à partir d'un dossier de marqueurs précédemment sauvegardé.
-*	Fichier de documentation, dans votre langue si elle est disponible ou en
-  Anglais par défaut.
+*	Restorer des marqueurs : Vous pouvez restorer vos marqueurs à partir d'un
+  dossier de marqueurs précédemment sauvegardé.
 
-Note: la position du marqueur est basé sur le nombre de caractères. Dans les
-pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
-spécifique pour marquer une position particulière.
+Note : la position du marqueur est basé sur le nombre de caractères. Dans
+les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
+spécifique pour marquer une position particulière, pas les marqueurs.
+
+## Changements pour la version 7.0 ##
+*	Le dialogue pour enregistrer une chaîne de caractères pour la recherche
+  spécifique a été supprimée. Cette fonctionnalité est maintenant incluse
+  dans le dialogue Recherche spécifique, qui a été redessinée pour permettre
+  différentes actions lorsque vous appuyez sur le bouton OK.
+*	La présentation visuelle des dialogues a été améliorée, en respectant
+  l'apparence des dialogues présentés dans NVDA.
+*	L'exécution d'une commande Rechercher Suivant ou Rechercher Précédent dans
+  le Mode Navigation effectuera maintenant correctement une recherche
+  Respecter la casse si la recherche d'origine était Respecter la casse.
+*	Nécessite NVDA 2016.4 ou ultérieur.
+*	Vous pouvez maintenant assigner des gestes pour ouvrir les dialogues
+  Copier et Restaurer les marqueurs de position.
+*	NVDA affichera un message pour notifier lorsque les marqueurs de position
+  auront été copiés ou restaurés avec les dialogues correspondants.
 
 ## Changements pour la version 6.0 ##
 * Lorsque les fonctionnalités du module complémentaire ne sont pas
   utilisables, les gestes sont envoyés à l'application correspondante.
 
 ## Changements pour la version 5.0 ##
-* Ajout de la recherche sensible à la casse.
+* Ajout de la recherche Respecter la casse.
 * L'option d'ouverture de la documentation a été retirée du menu des
   marqueurs.
 * Commandes de base plus intuitives.
@@ -73,8 +101,8 @@ spécifique pour marquer une position particulière.
 * Ajout de la possibilité de sauvegarder et supprimer des recherches
   différentes pour chaque fichier ajouté.
 * Correction d'un bug avec des chemins contenant des caractères non latins.
-* Les raccourcis peuvent désormais être réaffectés en utilisant la boîte de
-  dialogue des raccourcis de NVDA.
+* Les raccourcis peuvent désormais être réaffectés en utilisant le dialogue
+  des raccourcis de NVDA.
 
 ## Changements pour la version 1.0 ##
 * Première version

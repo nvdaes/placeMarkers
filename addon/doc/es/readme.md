@@ -4,44 +4,70 @@
 * descargar [versión estable][1]
 * descarga [versión de desarrollo][2]
 
-Este complemento se utiliza para guardar y buscar cadenas de texto
-específicas o marcas, en páginas web o en documentos en el modo navegación
-de NVDA.  El plugin guarda las cadenas especificadas y las marcas en
-ficheros de texto y pickle. El nombre de estos ficheros se basa en el título
-y en la dirección web del documento actual .
-
-Este complemento se basó en SpecificSearch y Bookmark&Search, desarrollados
-por el mismo autor. Deberías desinstalarlos para utilizarlo, ya que tienen
-las pulsaciones de teclado y las características en común.
+Este complemento se utiliza para guardar y restaurar cadenas de texto
+específicas o marcas. Puede utilizarse en páginas web o en documentos en el
+modo exploración de NVDA. También puede utilizarse para guardar o buscar
+cadenas de texto en controles multilínea; en este caso, si no es posible
+actualizar el cursor, la cadena correspondiente se copiará al portapapeles,
+tal que se pueda buscar utilizando otras herramientas.  El plugin guarda las
+cadenas especificadas y marcas en ficheros cuyos nombres se basan en el
+título y URL del documento actual.  Este complemento se basa en
+SpecificSearch y Bookmark&Search, desarrollados por el mismo autor. Deberías
+desinstalarlos para utilizar éste, ya que tienen las mismas combinaciones de
+teclas y características.
 
 ## Órdenes de teclado: ##
 
-*	control+shift+NVDA+s; Abre un diálogo que  te permite guardar una cadena de texto   que quieras encontrar en el documento actual. De forma predeterminada, se muestra el  texto guardado anteriormente para este fichero. Elimina este texto y pulsa el botón Aceptar si deseas borrar el fichero de texto correspondiente a la búsqueda guardada, o escribe texto nuevo para añadir otra búsqueda.
-*	control+shift+NVDA+f; Abre un diálogo con un cuadro de edición que muestra la última búsqeuda guardada; en este diálogo también puedes seleccionar las búsquedas guardadas anteriormente desde un cuadro combinado y elegir una acción desde el siguiente cuadro combinado. Si no hay archivos disponibles para la búsqueda específica en el documento actual, NVDA te advertirá de que no se encuentra ningún archivo para la búsqueda específica.
-*	control+shift+NVDA+k; Guarda la posición actual como una marca
-*	control+shift+NVDA+suprimir; Elimina la marca correspondiente a esta posición.
-*	NVDA+k; Se desplaza a la siguiente marca.
-*	shift+NVDA+k; Se desplaza a la marca anterior.
-*	control+shift+k; Copia al portapaqpeles el nombre del fichero, sin extensión, donde guardará sus datos el place marker.
+*	control+shift+NVDA+f: abre un diálogo con un cuadro de edición que muestra
+  la última búsqueda guardada; en este diálogo también puedes seleccionar
+  las búsquedas anteriormente guardadas desde un cuadro combinado o eliminar
+  la cadena seleccionada desde el historial utilizando una casilla de
+  verificación. Puedes elegir si el texto contenido en el cuadro de edición
+  se añadirá al histórico de textos guardados. Finalmente, elegir una acción
+  del siguiente grupo de botones de opción (entre buscar siguiente, buscar
+  anterior o no buscar), y especificar si NVDA hará una búsqueda sensible a
+  las mayúsculas. Cuando pulses Aceptar, NVDA buscará esta cadena.
+*	control+shift+NVDA+k: guarda la posición actual como una marca.
+*	control+shift+NVDA+suprimir: elimina la marca correspondiente a esta
+  posición.
+*	NVDA+k: mueve a la marca siguiente.
+*	shift+NVDA+k: mueve a la marca anterior.
+*	control+shift+k: copia el nombre del fichero donde se guardarán los datos
+  de marcadores al portapapeles, sin una extensión.
+
 
 ## Submmenú Place markers (NVDA+N) ##
 
-
-Utilizando el submenú Place markers, en el menú Preferencias, puedes acceder
+Utilizando el submenú Place markers en el menú Preferencias, puedes acceder
 a 
 
 *	Carpeta de búsqueda específica: abre una carpeta de búsquedas específicas
   guardadas previamente.
-*	Carpeta de marcas, se abre una carpeta con las marcas guardadas.
-*	Copiar carpeta marcas; puedes guardar una copia de la carpeta de marcas.
-*	Restaurar marcas; Puedes guardar tus marcas desde una carpeta marcas
-  guardada anteriormente.
-*	Archivo de documentación, en el idioma seleccionado, si está disponible, o
-  en Inglés por defecto.
+*	Carpeta de marcas: abre una carpeta con las marcas guardadas.
+*	Copiar carpeta de marcadores: puedes guardar una copia de la carpeta de
+  marcadores.
+*	Restaurar marcadores: Puedes guardar tus marcas desde una carpeta de
+  marcadores guardada anteriormente.
 
-Nota: La posición de la marca se basa en el número de caracteres; en páginas
-con contenido dinámico es mejor usar la búsqueda específica, y no las marcas
-para guardar una posición precisa.
+Nota: La posición de la marca se basa en el número de caracteres; y por lo
+tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
+y no las marcas.
+
+## Cambios para 7.0 ##
+*	El diálogo para guardar una cadena de texto para una búsqueda específica
+  se ha eliminado. Esta funcionalidad ahora se incluye el diálogo Búsqueda
+  Específica, el cual se ha rediseñado para permitir acciones diferentes al
+  pulsar el botón Aceptar.
+*	Se ha mejorado la presentación visual del diálogo, adhiriéndose a la
+  apariencia de los diálogos mostrados en NVDA.
+*	Al realizar una orden Buscar siguiente o buscar anterior en Modo
+  exploración ahora se hará correctamente una búsqueda sensible a las
+  mayúsculas si la búsqueda original era sensible a las mayúsculas.
+*	Se requiere de NVDA 2016.4 o posterior.
+*	Ahora puedes asignar gestos para abrir los diálogos Copiar y Restaurar
+  marcadores.
+*	NVDA presentará un mensaje para notificar cuando se haya copiado o
+  restaurado los marcadores con los diálogos correspondientes.
 
 ## Cambios para 6.0 ##
 * Cuando las características del complemento no son usables, los gestos se

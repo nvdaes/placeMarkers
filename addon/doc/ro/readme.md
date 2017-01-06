@@ -4,49 +4,68 @@
 * Descărcați [versiunea stabilă][1]
 * Descărcați [versiunea în dezvoltare][2]
 
-Acest add-on este folosit pentru salvarea și căutarea textelor specifice din
-stringuri sau semne de carte, pe paginile web sau documente în modul de
-navigare al NVDA. De asemenea, poate fi utilizat pentru salvarea și căutarea
-stringurilor din textele controalelor linii-multiple. În acest caz, dacă nu
-este posibil să actualizați caret-ul, stringul corespunzător va fi copiat pe
-planșetă, deci poate fi căutat folosind alte unelte. Suplimentul salvează
-stringurile specificate și semnele de carte la text și fișiere
-pickle. Numele acestor fișiere este bazat pe titlul și URL-ul documentului
-curent.
-
-Acest add-on este bazat pe SpecificSearch și Bookmark&Search, dezvoltate de
-același autor. Ar trebui să le dezinstalați pentru a-l uutiliza pe
-acesta. Aceste extensii au combinații de taste și caracteristici comune.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## Combinații de taste: ##
 
-*	control+shift+NVDA+s; Deschide un dialog care vă permite să salvați un text string pe care vreți să-l găsiți în documentul curent. În mod implicit, textul salvat înainte pentru această filă este arătat. Ștergeți acest text și apăsați butonul OK dacă doriți să ștergeți fila text corespunzătoare căutării salvate, sau scrieți un nou text pentru a adăuga altă căutare.
-*	control+shift+NVDA+f; Deschide un dialog cu o casetă de editare care arată ultima căutare salvată; în acest dialog puteți, de asemenea, să selectați căutările salvate înainte dintr-o casetă combinată și să alegeți o acțiune pentru caseta combinată următoare. Dacă nu există file disponibile pentru căutarea specificată în documentul curent, NVDA vă va atenționa că nu a fost găsită nicio filă pentru căutarea specificată.
-*	control+shift+NVDA+k; Salvează poziția curentă ca un semn de carte
-*	control+shift+NVDA+delete; Șterge semnul de carte corespunzător acestei poziții.
-*	NVDA+k; Mută la următorul semn de carte.
-*	shift+NVDA+k; Mută la semnul de carte anterior.
-tcontrol+shift+k; Copiază pe planșetă numele fișierului, fără extensie, unde data locului semnelor de carte va fi salvată.
+*	control+shift+NVDA+f: Deschide un dialog cu o casetă de editare care arată
+  ultima căutare salvată; în acest dialog puteți, de asemenea, să selectați
+  căutările precedente salvate dintr-o casetă combinată sau să ștergeți
+  fraza selectată din istoric folosind o casetă de bifat. Puteți alege dacă
+  textul conținut în caseta de editare va fi adăugat la istoricul textelor
+  salvate. În final, alegeți o acțiune din următorul grup al butoanelor
+  rotative (între caută următorul, caută anteriorul, sau nu căuta), și
+  specificați dacă NVDA va face un caz senzitiv de căutare. Când apăsați OK,
+  NVDA va căuta pentru această frază.
+*	control+shift+NVDA+k: Salvează poziția curentă ca un semn de carte.
+*	control+shift+NVDA+delete: Șterge semnul de carte corespunzător acestei
+  poziții.
+*	NVDA+k: Deplasează la semnul de carte următor.
+*	shift+NVDA+k: Deplasează la semnul de carte precedent.
+*	control+shift+k: Copiază pe planșetă numele fișierului unde data place
+  markers va fi salvată, fără o extensie.
+
 
 ## Submeniul Place markers (NVDA+N) ##
 
-
-Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	Dosarul Căutări specificate: Deschide un director al căutărilor
   specificate salvate înainte.
-*	Dosarul semnelor de carte; deschide un folder al semnelor de carte
-  salvate.
-*	Copiere folder placeMarkers; puteți salva o copie a a folderului cu semne
-  de carte.
-*	Restaurare placeMarkers; puteți restaura semnele dumneavoastră de carte
-  dintr-un folder placeMarkers salvat înainte.
-*	Fișierul Documentație, în limba selectată dacă este disponibilă, sau
-  engleză (limba implicită).
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
-urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
-specifică, și nu marcajele care economisesc o poziție precisă.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## Modificări în 6.0 ##
 * Când caracteristicile add-on-ului nu sunt utilizabile, gesturile sunt

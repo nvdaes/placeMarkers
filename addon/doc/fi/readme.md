@@ -4,47 +4,67 @@
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 
-Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
-paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
-asiakirjoista. Sitä voidaan käyttää myös merkkijonojen tallentamiseen tai
-etsimiseen monirivisistä säätimistä. Mikäli järjestelmäkohdistimen
-siirtäminen ei ole tällöin mahdollista, hakua vastaava merkkijono kopioidaan
-leikepöydälle, jotta sitä voidaan etsiä muilla tavoilla.  Merkkijonot ja
-paikkamerkit tallennetaan teksti- ja pickle-tiedostoihin. Tiedostojen nimet
-perustuvat nykyisen asiakirjan nimeen ja URL-osoitteeseen.
-
-Tämä lisäosa perustuu saman tekijän kehittämiin SpecificSearch- ja
-Bookmark&Search-lisäosiin. Sinun tulisi poistaa ne tämän version
-käyttämiseksi, sillä niissä on samoja näppäinkomentoja ja ominaisuuksia.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## Näppäinkomennot: ##
 
-*	Control+Shift+NVDA+S: Avaa valintaikkunan, joka mahdollistaa nykyisestä asiakirjasta etsittävän merkkijonon tallentamisen. Oletusarvoisesti näytetään kyseiselle tiedostolle tallennettu teksti. Poista teksti ja paina OK-painiketta, mikäli haluat poistaa tallennettua hakua vastaavan tekstitiedoston, tai kirjoita uutta tekstiä lisätäksesi toisen haun.
-*	Control+Shift+NVDA+F: Avaa valintaikkunan, joka näyttää muokkausruudussa viimeksi tallennetun haun. Tässä valintaikkunassa voit myös valita yhdistelmäruudusta aiemmin tallennettuja hakuja sekä valita seuraavasta yhdistelmäruudusta suoritettavan toimenpiteen. Mikäli nykyiselle asiakirjalle ei ole sivukohtaisen haun tiedostoja, NVDA ilmoittaa, että sivukohtaisen haun tiedostoa ei löydy.
-*	Control+Shift+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi.
-*	Control+Shift+NVDA+delete: Poistaa paikkamerkin nykyisestä sijainnista.
-*	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
-*	Shift+NVDA+K: Siirtää edelliseen paikkamerkkiin.
-*	Control+Shift+K: Kopioi leikepöydälle paikkamerkkien tiedot sisältävän tiedoston nimen ilman päätettä.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+
 
 ## Paikkamerkit-alavalikko (NVDA+N) ##
 
-
-Asetukset-valikosta löytyvästä Paikkamerkit-alavalikosta pääset käyttämään
-seuraavia toimintoja:
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	Sivukohtaisen haun kansio: avaa aiemmin tallennettujen sivukohtaisten
   hakujen kansion.
-*	Paikkamerkkien kansio: avaa tallennettujen paikkamerkkien kansion.
-*	Kopioi paikkamerkkien kansio: tallentaa kopion paikkamerkkien kansiosta.
-*	Palauta paikkamerkit: palauttaa paikkamerkit aiemmin tallennetusta
-  paikkamerkkien kansiosta.
-*	Avaa ohjetiedoston nykyisellä kielellä tai englanniksi, mikäli käännöstä
-  ei ole saatavilla.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-Huomautus: Paikkamerkin sijainti perustuu merkkien lukumäärään. Muuttuvaa
-sisältöä sisältävillä sivuilla on parasta käyttää tarkan sijainnin
-tallentavien paikkamerkkien sijasta sivukohtaista hakua.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## Muutokset versiossa 6.0 ##
 * Kun lisäosan toiminnot eivät ole käytettävissä, komennot lähetetään

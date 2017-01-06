@@ -4,33 +4,66 @@
 * ダウンロード [安定版][1]
 * ダウンロード [開発版][2]
 
-このアドオンは、NVDAのブラウズモードのウェブページやドキュメントで、文字列やブックマークを保存・検索できます。コントロールの複数行のテキストを保存・検索することもできます。この場合、キャレットを更新することはできず、対応するテキストがクリップボードにコピーされ、他のツールでこのテキストを検索できます。文字列やブックマークはテキストやピクル形式で保存されます。保存ファイル名にはドキュメントのタイトルやURLが使われます。
-
-このプレイスマーカー・アドオンは同じ作者によるSpecificSearchおよびBookmark&Searchと同じキー操作と機能なので、これらのアドオンはアンインストールしてください。
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## キー操作: ##
 
-*	Ctrl+Shift+NVDA+s: 現在のドキュメント内で検索したいテキストを保存するダイアログを開きます。最初は、すでに保存されたテキストが表示されています。保存された検索のテキストを削除したい場合は、このテキストを削除してOKボタンを押します。または、新しいテキストを入力して、他の検索を追加します。
-*	Ctrl+Shift+NVDA+f: エディットボックスのあるダイアログを開きます。エディットボックスには、最後に保存した検索が表示されています。このダイアログでは、すでに保存した検索をコンボボックスから選択し、次のコンボボックスから行う動作を選択することもできます。現在のドキュメントに検索に使用できるファイルがない場合、NVDAは検索に使用できるファイルが見つからないと警告します。
-*	Control+Shift+NVDA+k: 現在の位置をブックマークとして保存します。
-*	Control+Shift+NVDA+デリート: この位置のブックマークを削除します。
-*	NVDA+k: 次のブックマークに移動します。
-*	Shift+NVDA+k: 前のブックマークに移動します。
-*	Ctrl+Shift+k:ファイル名を、拡張子なしで、プレイスマーカーのデータが保存されるクリップボードにコピーします。
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+
 
 ## プレイスマーカーのサブメニュー(NVDA+N) ##
 
-
-設定メニューのサブメニュー「プレイスマーカー」には以下の項目があります
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	検索保存フォルダー: 検索保存フォルダーを開きます。
-*	ブックマークフォルダー: ブックマークのフォルダーを開きます。
-*	プレイスマーカーフォルダーのコピー: ブックマークフォルダーのコピーを保存できます。
-*	マーカー情報の復元: マーカー情報のバックアップからブックマークを復元できます。
-*	説明: 翻訳があれば日本語版、ない場合は英語版の説明を開きます
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-補足:
-ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## 6.0の変更点 ##
 * ジェスチャーに対応するアドオンの機能が使用出来ない場合、そのジェスチャーは対応するアプリケーションに送られるようになりました。

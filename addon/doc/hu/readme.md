@@ -4,43 +4,67 @@
 * [stabil verzió][1] letöltése
 * [fejlesztői verzió][2] letöltése
 
-Ez a kiegészítő különböző karakterláncok, vagy könyvjelzők mentésére, és
-keresésére használható dokumentumokban és internetes oldalakon, az nvda
-böngésző módjában. A bővítmény a meghatározott karakterláncokat és
-könyvjelzőket szöveges file-okba menti. A mentett file-ok neve mindig az
-aktuális dokumentum címe, vagy url-je lesz.
-
-Ez a kiegészítő a "SpecificSearch" és a "Bookmark&Search" bővítményekre
-épül, amiket ugyanezen bővítmény készítője fejlesztett. Ezeket ajánlott
-eltávolítani, amikor a "placemarkers"-t használjuk, hiszen ugyanolyan
-szolgáltatásokkal, és billentyűparancsokkal rendelkezik.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## Billentyűparancsok: ##
 
-*	control+shift+NVDA+s: Megnyit egy párbeszédablakot, amely lehetővé teszi egy szövegrészlet elmentését, amit szeretne megtalálni a későbbiekben ebben a dokumentumban. Alapértelmezetten a mező az előzőleg elmentett szöveget tartalmazza. Törölje ki és nyomja meg az ok gombot ha el szeretné távolítani az elmentett keresések közül ezt a fájlt, vagy gépeljen be egy másik szöveget új keresés hozzáadásához.
-*	control+shift+NVDA+f: Megnyit egy párbeszédablakot egy szerkesztőmezővel, ami a legutóbb elmentett keresést mutatja. Ezen a párbeszédablakon egy kombinált listamezőben kiválaszthatja a legutóbb elmentett kereséseket, a következő kombinált listamezőben kiválaszthatja mit szeretne velük tenni. Ha nincs elérhető fájl az aktuális dokumentumban a speciális kereséshez, akkor az NVDA figyelmeztet, hogy nem található fájl a speciális kereséshez.
-*	control+shift+NVDA+k: Az aktuális pozíciót elmenti könyvjelzőként.
-*	control+shift+NVDA+delete: Törli az aktuális pozícióhoz tartozó könyvjelzőt.
-*	NVDA+k: A következő könyvjelzőhöz lép.
-*	shift+NVDA+k: Az előző könyvjelzőhöz lép.
-*	Control+shift+k: A vágólapra másolja annak a fájlnak a nevét, kiterjesztés nélkül, ahová a helyjelző adatok rögzítésre kerülnek.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+
 
 ## Helyjelzők almenü (az NVDA menüben) ##
 
-
-A könyvjelzők almenü elérhető A Beállítások almenüből. Itt a következőkhöz
-fér hozzá:
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	Speciális keresési mappa: Megnyitja az elmentett speciális keresések
   mappáját.
-*	Könyvjelzők mappa; Megnyitja az elmentett könyvjelzők mappáját
-*	A helyjelzők mappájának másolása
-*	Könyvjelzők visszaállítása; visszaállíthatja előzőleg elmentett
-  helyjelzőit egy mappából.
-*	Dokumentáció, a jelenleg használt nyelven (ha elérhető), vagy angolul.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-Megjegyzés: A könyvjelzők karakterszámot használnak. Dinamikus oldalak
-esetén eredményesebb a Speciális Keresés funkció használata.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## A 6.0 verzió változásai ##
 * Amikor a kiegészítő szolgáltatásai nem használhatók, akkor a program

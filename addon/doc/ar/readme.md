@@ -4,49 +4,67 @@
 * تحميل [الإصدار النهائي][1]
 * تحميل [الإصدار التجريبي][2]
 
-تستخدم هذه الإضافة في حفظ أو البحث عن الكلمات أو العلامات المرجعية, على
-صفحات الإنترنت أو مستندات نمط التصفح ب NVDA. وتقوم الإضافة بحفظ الكلمات
-والعلامات المرجعية التي يتم البحث عنها في كائنات متعددة الأسطر، وفي هذه
-الحالة إذا تعذر عليك تحديث موضع مؤشر التحرير, فسيتم نسخ النص المتطابق إلى
-الحافظة, حتى يمكن البحث عنها باستخدام أدوات أخرى. تقوم الإضافة بحفظ كلمات
-البحث والعلامات المرجعية في ملفات نصية أو ملفات pickles.  وتتطابق أسماء
-الملفات المحفوظة بهذه الكلمات والعلامات مع عناوين وروابط الصفحة أو المستند
-الذي يتم البحث بداخله.
-
-يجب على من يستخدم هذه الإضافة أن يقوم بإزالة الإضافتين SpecificSearch و
-Bookmark إذا كان قد تم تنصيبهما, واللتان تم تطويرهما من قبل نفس مطور هذه
-الإضافة, نظرا لاحتوائهما على خصائص ومفاتيح اختصار مشتركة.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## مفاتيح الاختصار: ##
 
-*	control+shift+NVDA+s; يفتح محاورة تتيح لك حفظ كلمة تريد البحث عنها داخل المستند الحالي. وبشكل افتراضي, سيتم إظهار النص الذي تم حفظه من قبل لهذا الملف. قم بحذف هذا النص واضغط زر الموافقة إذا كنت تريد إزالة الملف النصي المتطابق مع كلمة البحث التي قمت بحفظها, أو ادخل نص جديد لإضافة ملف بحث آخر.
-*	control+shift+NVDA+f; يفتح محاورة بمربع تحرير تظهر آخر كلمة بحث قمت بإدخالها, كما يمكنك اختيار ملفات البحث التي قمت بحفظها من قبل من صندوق الخيارات واختيار الفعل المناسب الذي تريده من صندوق الخيارات التالي. إذا لم يتم العثور على ملفات لكلمات بحث للمستند الحالي, سيخبرك NVDA بذلك.
-*	control+shift+NVDA+k; يقوم بحفظ الموضع الحالي للمؤشر كعلامة مرجعية.
-*	control+shift+NVDA+delete; يحذف العلامة المرجعية المتطابقة مع الموضع الحالي للمؤشر.
-*	NVDA+k; ينتقل إلى العلامة المرجعية التالية.
-*	shift+NVDA+k; ينتقل إلى العلامة المرجعية السابقة.
-*	control+shift+k; ينسخ اسم الملف, دون الامتداد, الذي سيتم فيه حفظ بيانات العلامات المرجعية.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+
 
 ## العلامات المرجعية قائمة فرعية (NVDA+N) ##
 
-
-استخدام القائمة الفرعية علامات مرجعية, الموجودة بداخل قائمة التفضيلات والتي
-تمكنك من الوصول إلى:
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	مجلد كلمات البحث: يقوم بفتح المجلد الخاص بكلمات البحث التي قمت بحفظها من
   قبل.
-*	مجلد العلامات المرجعية, يقوم هذا الأمر بفتح المجلد الذي يحتوي على العلامات
-  المرجعية التي قمت بحفظها.
-*	نسخ مجلد العلامات المرجعية, يمكنك أخذ نسخة من المجلد الذي يحتوي على
-  العلامات المرجعية التي قمت بحفظها.
-*	استرجاع العلامات المرجعية, يمكنك استرجاع العلامات المرجعية التي قمت بحفظها
-  من خلال مجلد قمت بحفظ العلامات المرجعية به مسبقا.
-*	ملف اقرأني, باللغة التي تحددها إذا كان الملف مترجم إليها, أو قراءة الملف
-  باللغة الإنجليزية.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-ملحوظة: يعتمد مكان العلامة المرجعية على عدد الأحرف; لذا فإن الصفحات ذات
-المحتوى المتغير يستحسن استخدام البحث, وليست العلامات المرجعية لحفظ مكان
-دقيق.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## مستجدات الإصدار 6.0 ##
 * عندما تكون خصائص الإضافة غير مستخدمة, فسترسل الاختصارات المضغوطة للتطبيق

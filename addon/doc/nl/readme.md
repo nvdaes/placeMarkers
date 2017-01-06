@@ -4,47 +4,67 @@
 * Download [stabiele versie][1]
 * Download [ontwikkelversie][2]
 
-Deze addon dient om specifieke tekstdelen of bookmarks op te slaan en te
-zoeken, op webpagina's of documenten met de bladermodus van NVDA. De add-on
-kan ook gebruikt worden voor het opzoeken van tekst in meervoudige
-invoervelden; wanneer het in dit geval niet mogelijk is om de cursor te
-updaten wordt de tekst naar het klembord gekopieerd zodat deze gezocht kan
-worden met behulp van andere hulpmiddelen. De plugin slaat de tekstdelen en
-bookmarks op in text- en pickle-bestanden. De bestandsnaam is gebaseerd op
-de titel en URL van het huidige document.
-
-Deze addon is gebaseerd op SpecificSearch en Bookmark&Search, ontwikkeld
-door dezelfde auteur. U moet ze verwijderen om deze addon te kunnen
-gebruiken omdat ze gemeenschappelijke sneltoetsen en features hebben.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
 ## Belangrijke commando's: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+
 
 ## Place markers Submenu (NVDA+N) ##
 
-
-Via het Place markers submenu, onder het Instellingen menu, heeft u toegang
-tot:
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
 *	Specific search folder: opent een map met eerder opgeslagen specific
   searches.
-*	Bookmarks folder; opent een map met de opgeslagen bookmarks.
-*	Copy placeMarkers folder; u kan een kopie maken van de map met bookmarks.
-*	Restore placeMarkers; u kan uw bookmarks herstellen vanuit een map met
-  eerder opgeslagen placeMarkers.
-*	Documentation file, in uw gekozen taal indien beschikbaar, of standaard in
-  het Engels.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-Noot: de bookmark positie is gebaseerd op het aantal tekens; in pagina's met
-dynamische inhoud kunt u beter de specific search gebruiken in plaats van de
-bookmarks die een specifieke positie opslaan.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
 
 ## Changes for 6.0 ##
 * When the add-on features are not usable, gestures are sent to the
