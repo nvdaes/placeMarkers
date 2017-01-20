@@ -24,9 +24,8 @@ ominaisuuksia.
   merkkijonon hakuhistoriasta valintaruutua käyttäen. Voit lisäksi valita,
   lisätäänkö muokkausruudun sisältämä teksti hakuhistoriaasi. Valitse
   lopuksi toiminto seuraavien valintapainikkeiden ryhmästä (Etsi seuraava,
-  Etsi edellinen tai Ei etsintää), ja määrittää, suorittaako NVDA
-  kirjainkoon huomioivan haun. Kun painat OK, NVDA etsii antamaasi
-  merkkijonoa.
+  Etsi edellinen tai Ei hakua), ja määrittää, suorittaako NVDA kirjainkoon
+  huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
 *	Ctrl+Shift+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi.
 *	Ctrl+Shift+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
 *	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
@@ -40,8 +39,8 @@ ominaisuuksia.
 Asetukset-valikosta löytyvästä Paikkamerkit-alavalikosta pääset käyttämään
 seuraavia toimintoja:
 
-*	Sivukohtaisen haun kansio: avaa aiemmin tallennettujen sivukohtaisten
-  hakujen kansion.
+*	Sivukohtaisen haun kansio: avaa tallennettujen sivukohtaisten hakujen
+  kansion.
 *	Paikkamerkkien kansio: Avaa tallennettujen paikkamerkkien kansion.
 *	Kopioi paikkamerkkien kansio: Tallentaa kopion paikkamerkkien kansiosta.
 *	Palauta paikkamerkit: Palauttaa paikkamerkit aiemmin tallennetusta
@@ -49,7 +48,7 @@ seuraavia toimintoja:
 
 Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten tämän
 vuoksi muuttuvan sisällön sivuilla on parasta käyttää tarkan sijainnin
-tallentavien paikkamerkkien sijasta sivukohtaista hakua.
+tallentavien paikkamerkkien asemesta sivukohtaista hakua.
 
 ## Muutokset versiossa 7.0 ##
 *	Merkkijonon sivukohtaiseen hakuun tallentava valintaikkuna on

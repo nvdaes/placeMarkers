@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers-1.0\n"
+"Project-Id-Version: placeMarkers-7.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2016-02-25 23:43-0800\n"
+"PO-Revision-Date: 2017-01-19 20:02+0100\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: es_ES\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.11\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -29,19 +29,109 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Instalar o actualizar complemento"
 
-#. Translators: label of error dialog, translated in NVDA core.
-#, python-format
-msgid "text \"%s\" not found"
-msgstr "Texto %s no encontrado"
-
-#. Translators: title of error dialog, translated in NVDA core.
-msgid "Find Error"
-msgstr "Error de búsqueda"
-
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s copiado al  portapapeles"
+
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Búsqueda específica"
+
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "Textos &guardados:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&Eliminar de historial"
+
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&Texto a buscar:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&Añadir a historial"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "&Acción en Buscar"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Buscar &siguiente"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Buscar &anterior"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&No buscar:"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Marcadores copiados"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Carpeta no copiada"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Error en la Copia"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Marcadores restaurados"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Copiar marcadores"
+
+#. Translators: An informational message displayed in the Copy dialog.
+#, python-format
+msgid ""
+"Select a folder to save a backup of your current place markers.\n"
+"\n"
+"\t\tThey will be copied from %s."
+msgstr ""
+"Selecciona una carpeta para guardar un respaldo de tu actual place markers.\n"
+"\n"
+"\t\tSe copiará de %s."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "directorio para el respaldo:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Selecciona el directorio para copiar"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Restaurar marcadores"
+
+#. Translators: An informational message displayed in the Restore dialog.
+#, python-format
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers.\n"
+"\n"
+"\t\tThey will be copied to %s."
+msgstr ""
+"Selecciona una carpeta para restaurar un respaldo de tus marcadores copiados "
+"anteriormente.\n"
+"\n"
+"\t\tSe copiarán a %s."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "directorio que contiene el respaldo:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Seleccionar directorio a restaurar"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
@@ -83,41 +173,23 @@ msgstr "&Restaurar marcas..."
 msgid "Restore previously saved place markers"
 msgstr "Restaurar a partir de una carpeta de Marcas guardada previamente"
 
-#. Translators: label of a dialog presented for copying place markers.
-msgid "Select a folder for copying your saved place markers"
-msgstr "Selecciona la carpeta donde guardar las marcas"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "Carpeta no copiada"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "Error en la Copia"
-
-#. Translators: label of a dialog presented for restoring place markers.
-msgid "Select the place markers folder you wish to restore"
-msgstr "Selecciona la carpeta de las marcas que deseas restaurar"
-
-#. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved searches"
-msgstr ""
-"Teclea el texto que deseas guardar, o elimina cualquier texto si quieres "
-"borrarlo de anteriores búsquedas guardadas"
-
-#. Translators: title of a dialog presented to save a string for specific search.
-msgid "Save text for specific search"
-msgstr "Guardar texto de búsqueda específica"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Abre la carpeta de búsqueda específica"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves a text string for a specific search."
-msgstr "Guarda un fragmento de texto para una búsqueda específica."
+msgid "Opens the bookmarks folder."
+msgstr "Abre la carpeta de marcadores."
 
-#. Translators: message presented when there is not file for specific search.
-msgid "File for specific search not found"
-msgstr "Fichero para búsqueda específica no encontrado"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Activa el diálogo Copiar de %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Activa el diálogo Restaurar de %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
@@ -174,9 +246,9 @@ msgstr "Borra la marca actual."
 msgid "No bookmarks found"
 msgstr "No se encuentra ninguna marca"
 
-#. Translators: message presented when cannot find any bookmark.
-msgid "Cannot find any bookmark"
-msgstr "No es posible encontrar la marca"
+#. Translators: message presented when cannot find any bookmarks.
+msgid "Cannot find any bookmarks"
+msgstr "No se puede encontrar ningún marcador"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -211,47 +283,6 @@ msgstr "Nombre del archivo de las  marcas copiado en el portapapeles;"
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Copia el nombre del archivo de las marcas actual;"
 
-#. Translators: This is the label for the specific search settings dialog.
-msgid "Specific Search"
-msgstr "Búsqueda Específica"
-
-#. Translators: This is the label for a textfield in the
-#. specific search settings dialog.
-msgid "&Text to search:"
-msgstr "&Texto a buscar:"
-
-#. Translators: The label for a setting in specific search to select a saved text.
-msgid "&Saved texts:"
-msgstr "Textos &guardados:"
-
-#. Translators: A combo box to choose a saved text.
-msgid "Saved texts to search:"
-msgstr "Textos guardados para buscar:"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search down"
-msgstr "Búsqueda hacia abajo"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search up"
-msgstr "Búsqueda hacia arriba"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Delete"
-msgstr "Eliminar"
-
-#. Translators: The label for a setting in specific search to select an action.
-msgid "&Actions to choose:"
-msgstr "&Acciones a elegir:"
-
-#. Translators: A combo box to choose an action.
-msgid "Select an action to perform:"
-msgstr "Seleccionar una acción a realizar:"
-
-#. Translators: An option in specific search to perform case-sensitive search, copied from core.
-msgid "Case &sensitive"
-msgstr "&Sensible a las mayúsculas"
-
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -263,3 +294,40 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para establecer las marcas en páginas Web y documentos virtuales "
 "específicos."
+
+#~ msgid "text \"%s\" not found"
+#~ msgstr "Texto %s no encontrado"
+
+#~ msgid "Find Error"
+#~ msgstr "Error de búsqueda"
+
+#~ msgid "Select a folder for copying your saved place markers"
+#~ msgstr "Selecciona la carpeta donde guardar las marcas"
+
+#~ msgid "Select the place markers folder you wish to restore"
+#~ msgstr "Selecciona la carpeta de las marcas que deseas restaurar"
+
+#~ msgid ""
+#~ "Type the text you wish to save, or delete any text if you want to remove "
+#~ "it from the previous saved searches"
+#~ msgstr ""
+#~ "Teclea el texto que deseas guardar, o elimina cualquier texto si quieres "
+#~ "borrarlo de anteriores búsquedas guardadas"
+
+#~ msgid "Save text for specific search"
+#~ msgstr "Guardar texto de búsqueda específica"
+
+#~ msgid "Saves a text string for a specific search."
+#~ msgstr "Guarda un fragmento de texto para una búsqueda específica."
+
+#~ msgid "File for specific search not found"
+#~ msgstr "Fichero para búsqueda específica no encontrado"
+
+#~ msgid "Saved texts to search:"
+#~ msgstr "Textos guardados para buscar:"
+
+#~ msgid "Delete"
+#~ msgstr "Eliminar"
+
+#~ msgid "Case &sensitive"
+#~ msgstr "&Sensible a las mayúsculas"

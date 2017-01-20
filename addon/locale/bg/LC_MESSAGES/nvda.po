@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2016-02-25 23:12-0800\n"
+"PO-Revision-Date: 2017-01-16 22:33+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -32,19 +32,110 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Инсталиране или обновяване на добавката"
 
-#. Translators: label of error dialog, translated in NVDA core.
-#, python-format
-msgid "text \"%s\" not found"
-msgstr "Текстът \"%s\" не е намерен"
-
-#. Translators: title of error dialog, translated in NVDA core.
-msgid "Find Error"
-msgstr "Грешка при търсене"
-
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s е копиран в клипборда"
+
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Конкретно търсене"
+
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Запазени текстове"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&Премахни от хронологията"
+
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&Текст за търсене:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&Добави в хронологията"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "Действие при т&ърсене"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Намери &следващ"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Намери &предишен"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Не търси"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Позиционните маркери са копирани"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Папката не е копирана"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Грешка при копиране"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Позиционните маркери са възстановени"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Копиране на позиционните маркери"
+
+#. Translators: An informational message displayed in the Copy dialog.
+#, python-format
+msgid ""
+"Select a folder to save a backup of your current place markers.\n"
+"\n"
+"\t\tThey will be copied from %s."
+msgstr ""
+"Изберете папка за записване на архивно копие на вашите текущи позиционни "
+"маркери.\n"
+"\n"
+"\t\tТе ще бъдат копирани от %s."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "Директория за резервното копие:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Избор на папка за копирането"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Възстановяване на позиционните маркери"
+
+#. Translators: An informational message displayed in the Restore dialog.
+#, python-format
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers.\n"
+"\n"
+"\t\tThey will be copied to %s."
+msgstr ""
+"Изберете папка, от която да възстановите архивно копие на вашите предишно "
+"копирани позиционни маркери.\n"
+"\n"
+"\t\tТе ще бъдат копирани в %s."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "Директория, съдържаща архивно копие:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Избор на папка за възстановяване"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
@@ -86,41 +177,23 @@ msgstr "&Възстановяване на позиционните маркер
 msgid "Restore previously saved place markers"
 msgstr "Възстановява предишно запазени позиционни маркери"
 
-#. Translators: label of a dialog presented for copying place markers.
-msgid "Select a folder for copying your saved place markers"
-msgstr "Изберете папка за копиране на вашите запазени позиционни маркери"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "Папката не е копирана"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "Грешка при копиране"
-
-#. Translators: label of a dialog presented for restoring place markers.
-msgid "Select the place markers folder you wish to restore"
-msgstr "Изберете папката с позиционни маркери, която искате да възстановите"
-
-#. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved searches"
-msgstr ""
-"Въведете текста, който искате да запазите, или изтрийте текста, който искате "
-"да премахнете от предишни запазени търсения"
-
-#. Translators: title of a dialog presented to save a string for specific search.
-msgid "Save text for specific search"
-msgstr "Запазете текст за конкретно търсене"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Отваря папката за конкретно търсене"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves a text string for a specific search."
-msgstr "Запазва текстов низ за конкретно търсене."
+msgid "Opens the bookmarks folder."
+msgstr "Отваря папката с отметки"
 
-#. Translators: message presented when there is not file for specific search.
-msgid "File for specific search not found"
-msgstr "Файлът за конкретно търсене не е намерен"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Задейства диалоговия прозорец за копиране на %s"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Задейства диалоговия прозорец за възстановяване на %s"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
@@ -176,9 +249,9 @@ msgstr "Изтрива текущата отметка"
 msgid "No bookmarks found"
 msgstr "Няма намерени отметки"
 
-#. Translators: message presented when cannot find any bookmark.
-msgid "Cannot find any bookmark"
-msgstr "Не мога да намеря нито една отметка"
+#. Translators: message presented when cannot find any bookmarks.
+msgid "Cannot find any bookmarks"
+msgstr "Не бяха намерени никакви отметки"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -213,47 +286,6 @@ msgstr "Името на файла с позиционните маркери е
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Копира името на файла с текущите позиционни маркери в клипборда."
 
-#. Translators: This is the label for the specific search settings dialog.
-msgid "Specific Search"
-msgstr "Конкретно търсене"
-
-#. Translators: This is the label for a textfield in the
-#. specific search settings dialog.
-msgid "&Text to search:"
-msgstr "&Текст за търсене:"
-
-#. Translators: The label for a setting in specific search to select a saved text.
-msgid "&Saved texts:"
-msgstr "&Запазени текстове:"
-
-#. Translators: A combo box to choose a saved text.
-msgid "Saved texts to search:"
-msgstr "Запазен текст за търсене:"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search down"
-msgstr "Търсене напред"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search up"
-msgstr "Търсене назад"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Delete"
-msgstr "Изтрий"
-
-#. Translators: The label for a setting in specific search to select an action.
-msgid "&Actions to choose:"
-msgstr "Възможни &действия:"
-
-#. Translators: A combo box to choose an action.
-msgid "Select an action to perform:"
-msgstr "Изберете действие, което да се извърши:"
-
-#. Translators: An option in specific search to perform case-sensitive search, copied from core.
-msgid "Case &sensitive"
-msgstr "&Зачитане на главни/малки"
-
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -264,3 +296,40 @@ msgstr "Позиционни маркери"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Добавка за задаване на позиционни маркери за определени виртуални документи"
+
+#~ msgid "text \"%s\" not found"
+#~ msgstr "Текстът \"%s\" не е намерен"
+
+#~ msgid "Find Error"
+#~ msgstr "Грешка при търсене"
+
+#~ msgid "Select a folder for copying your saved place markers"
+#~ msgstr "Изберете папка за копиране на вашите запазени позиционни маркери"
+
+#~ msgid "Select the place markers folder you wish to restore"
+#~ msgstr "Изберете папката с позиционни маркери, която искате да възстановите"
+
+#~ msgid ""
+#~ "Type the text you wish to save, or delete any text if you want to remove "
+#~ "it from the previous saved searches"
+#~ msgstr ""
+#~ "Въведете текста, който искате да запазите, или изтрийте текста, който "
+#~ "искате да премахнете от предишни запазени търсения"
+
+#~ msgid "Save text for specific search"
+#~ msgstr "Запазете текст за конкретно търсене"
+
+#~ msgid "Saves a text string for a specific search."
+#~ msgstr "Запазва текстов низ за конкретно търсене."
+
+#~ msgid "File for specific search not found"
+#~ msgstr "Файлът за конкретно търсене не е намерен"
+
+#~ msgid "Saved texts to search:"
+#~ msgstr "Запазен текст за търсене:"
+
+#~ msgid "Delete"
+#~ msgstr "Изтрий"
+
+#~ msgid "Case &sensitive"
+#~ msgstr "&Зачитане на главни/малки"

@@ -37,35 +37,36 @@ since they have common keystrokes and features.
 
 ## Submeniul Place markers (NVDA+N) ##
 
-Using the Place markers submenu under NVDA's Preferences menu, you can
-access:
+Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
 
 *	Dosarul Căutări specificate: Deschide un director al căutărilor
   specificate salvate înainte.
-*	Bookmarks folder: Opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+*	Dosarul semnelor de carte; deschide un folder al semnelor de carte
+  salvate.
+*	Copiere folder placeMarkers; puteți salva o copie a a folderului cu semne
+  de carte.
+*	Restaurare placeMarkers; puteți restaura semnele dumneavoastră de carte
+  dintr-un folder placeMarkers salvat înainte.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-bookmarks.
+Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
+urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
+specifică, și nu marcajele care economisesc o poziție precisă.
 
-## Changes for 7.0 ##
-*	The dialog to save a string of text for specific search has been
-  removed. This functionality is now included in the Specific search dialog,
-  which has been redesigned to allow different actions when pressing the OK
-  button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
-*	Requires NVDA 2016.4 or later.
-*	Now you can assign gestures to open the Copy and Restore place markers
-  dialogs.
-*	NVDA will present a message to notify when place markers have been copied
-  or restored with the corresponding dialogs.
+## Modificări în 6.0 ##
+*	Dialogul pentru salvarea unui string a textului pentru căutarea
+  specificată a fost șters. Această funcționalitate acum este inclusă în
+  dialogul căutării specificate care a fost reproiectat pentru a permite
+  acțiuni diferite la apăsarea butonului OK.
+*	Prezentarea vizuală a dialogurilor a fost îmbunătățită, aderând la
+  aspectul dialogurilor afișate în NVDA.
+*	Efectuând comanda găsirea anterioară sau găsirea următoare în modul
+  navigare acum va face în mod corect un caz de căutare sensitiv, dacă
+  căutarea originală este în cazul sensitiv.
+*	Necesită 2016.4 sau mai nou.
+*	Acum poți atribui gesturi pentru a deschide dialogurile copiere și
+  restaurare place marker.
+*	NVDA va prezenta când place markerul a fost copiat sau restaurat cu
+  dialogurile corespunzătoare.
 
 ## Modificări în 6.0 ##
 * Când caracteristicile add-on-ului nu sunt utilizabile, gesturile sunt
