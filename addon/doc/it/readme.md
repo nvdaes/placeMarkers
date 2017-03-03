@@ -1,58 +1,103 @@
 # placeMarkers #
 
 * Autori: Noelia, Chris.
-* download [stable version: 1.0][1]
-* download [development version: 2.0-dev][2]
+* download [stable version][1]
+* download [development version][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks, on web pages or documents in NVDA's browse mode. It can also be
-used for saving or searching strings of text in multi-line controls; in this
-case, if it's not possible to update the caret, the corresponding string
-will be copied to the clipboard, so that it can be searched using other
-tools.  The plugin saves the specified strings and bookmarks to text and
-pickle files. The name of these files is based on the title and URL of the
-current document.
-
-Questo componente aggiuntivo è basato su due lavori precedenti,
-SpecificSearch e Bookmark and Search scritti dal medesimo autore. è
-assolutamente necessario disinstallarli entrambi per utilizzare il presente
-componente aggiuntivo, in quanto essi contengono funzioni e tasti rapidi che
-andrebbero in conflitto.
+Questo componente aggiuntivo è utilizzato per salvare segnaposti e cercare
+stringhe di testo specifiche, sia nelle pagine web che in documenti,
+utilizzando la modalità navigazione di NVDA. Consente la ricerca di stringhe
+in campi di testo editabile; in questo caso, se non è possibile aggiornare
+il cursore, la stringa corrispondente verrà copiata negli appunti, in modo
+che possa essere cercata utilizzando altri strumenti. Il componente
+aggiuntivo salva  i segnaposti e le ricerche specifiche in file che vengono
+nominati secondo il titolo e l'indirizzo  del documento attuale. Place
+Markers deriva da SpecificSearch e Bookmark&Search, sviluppato dalla stessa
+autrice. È preferibile disinstallare i vecchi componenti aggiuntivi, dal
+momento che usano gli stessi comandi ed hanno le stesse funzioni di Place
+Markers. 
 
 ## Comandi rapidi: ##
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	control+shift+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	NVDA+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+*	Control+shift+NVDA+f: apre una finestra con un campo di editazione che
+  mostra l'ultima ricerca salvata; tramite una casella combinata è anche
+  possibile selezionare una ricerca specifica salvata in precedenza  o
+  rimuovere la stringa selezionata dallo storico utilizzando una casella di
+  controllo. È possibile scegliere se il testo contenuto nel campo
+  editazione verrà aggiunto allo storico del testo salvato. Infine, è
+  possibile selezionare tramite radio pulsanti tra le azioni Cerca
+  successiva, Cerca Precedente o Non Cercare, e specificare se considerare
+  le maiuscole o minuscole nella ricerca. Premendo Ok NVDA cercherà la
+  stringa digitata.
+*	Control+shift+NVDA+k: salva la posizione corrente come segnaposto.
+*	Control+Shift+NVDA+Delete: Elimina il segnaposto corrispondente a questa
+  posizione.
+*	NVDA+k: vai al segnaposto successivo.
+*	Shift+NVDA+k: vai al segnaposto precedente.
+*	Control+Shift+K: copia negli appunti il nome del file per il quale
+  verranno salvati i segnaposti e le ricerche. (Il nome non contiene
+  l'estenzione).
+
 
 ## Sottomenu Segnaposto (NVDA+N) ##
 
-
-Using Place markers submenu, under Preferences menu, you can access:
+Utilizzando il menu Placemarkes, dal menu Preferenze di NVDA, si può
+accedere a:
 
 *	Cartella ricerche specifiche; Apre una cartella delle ricerche specifiche
   precedentemente salvate.
-*	Bookmarks folder; opens a folder of the saved bookmarks.
-*	Copiare cartella segnaposti; è possibile salvare una copia della cartella
-  segnalibri.
-*	Restore placeMarkers; you can restore your bookmarks from a previously
-  saved placeMarkers folder .
-*	File di documentazione, nella tua lingua selezionata, se disponibile, o in
-  inglese per impostazione predefinita.
+*	Cartella segnaposto; Apre una cartella dei segnaposti precedentemente
+  salvati.
+*	Copia cartella segnaposti; è possibile salvare una copia della cartella
+  segnaposti.
+*	Ripristinare segnaposti; è possibile ripristinare i segnaposti da una
+  cartella  segnaposti precedentemente salvata.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in pages with a dynamic content is better to use the specific
-search, and not the bookmarks which save a precise position.
+Nota: La posizione del segnalibro è basata sul numero di caratteri; in
+pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
+non i segnaposti per salvare una posizione precisa.
+
+## Novità nella versione 7.0 ##
+*	La finestra di dialogo per salvare una stringa di testo per la ricerca
+  specifica è stata rimossa. Questa funzionalità è ora inserita nella
+  finestra di ricerca Specifica , la quale è stata modificata per eseguire
+  diverse azioni quando si preme il pulsante Ok.
+*	Migliorata la rappresentazione grafica della interfaccia per la finestra
+  di dialogo, conforme alle finestre di dialogo usate in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Placemarkers richiede NVDA 2016.4 o versioni successive.
+*	Ora è possibile assegnare comandi da tastiera per aprire le finestre di
+  dialogo per copiare o ripristinare. 
+*	NVDA avviserà con un messaggio di notifica quando Placemarkers copia o
+  ripristina le cartelle usando le relative finestre.
+
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
+
+## Changes for 4.0 ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
+
+## Changes for 3.1 ##
+* Translation updates and new language.
+* Bookmark position is not announced in skim reading.
+
+## Changes for 3.0 ##
+* Added support for skim reading.
 
 ## Changes for 2.0 ##
 * Added options to save and delete different searches for each file.
 * Fixed bug which broke when paths contained non latin characters.
 * Shortcuts can now be reassigned using the NVDA gesture input dialog.
-
 
 ## Cambiamenti nella 1.0 ##
 * Versione Iniziale.
