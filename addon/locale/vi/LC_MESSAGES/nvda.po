@@ -1,95 +1,94 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the placeMarkers package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers 6.2\n"
+"Project-Id-Version: placeMarkers 7.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2016-02-12 16:00+1000\n"
-"PO-Revision-Date: 2017-03-05 17:49+0200\n"
-"Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
-"Language-Team: \n"
-"Language: ro\n"
+"POT-Creation-Date: 2017-02-24 16:00+1000\n"
+"PO-Revision-Date: 2017-03-09 13:24+0700\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"Last-Translator: Dang Manh Cuong <cuong@trungtamsaomai.org>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.12\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"Dosarul dumneavoastră cu configurația NVDA conține fișiere care par a fi "
-"derivate dintr-o versiune precedentă a acestui add-on. Doriți să îl "
-"actualizați?"
+"Thư mục cấu hình NvDA của bạn có vẻ như đang chứa các tập tin tạo ra từ một "
+"phiên bản cũ hơn của add-on này. Bạn có muốn cập nhật không?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Instalare sau actualizare supliment"
+msgstr "Cài đặt hoặc cập nhật Add-on"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s copiat în planșetă"
+msgstr "Đã chép %s vào bộ nhớ tạm"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
-msgstr "Căutare specifică"
+msgstr "Tìm kiếm cụ thể"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "&Texte &salvate:"
+msgstr "Các văn bản đã &lưu"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
-msgstr "* Ștergere din istoric"
+msgstr "&Xoá khỏi lịch sử"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
-msgstr "&Text de căutat:"
+msgstr "Văn bản cần &tìm:"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Add to history"
-msgstr "& Adăugare la istoric"
+msgstr "T&hêm vào lịch sử"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
 msgid "Action on s&earch"
-msgstr "&Acțiuni de căutare"
+msgstr "Hành động tìm &kiếm"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "Search &next"
-msgstr "&Caută următorul"
+msgstr "Tìm &tiếp"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "Search &previous"
-msgstr "&Caută precedentul"
+msgstr "Tìm t&rước"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "&Don't search"
-msgstr "&Nu căuta"
+msgstr "Khô&ng tìm kiếm"
 
 #. Translators: Message presented when place markers have been copied.
 msgid "Place markers copied"
-msgstr "Locația marcajelor copiată"
+msgstr "Đã chép điểm đánh dấu"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "Dosar necopiat"
+msgstr "Thư mục không được  chép"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "Eroare copiere"
+msgstr "Lỗi sao chép"
 
 #. Translators: Message presented when place markers have been restored.
 msgid "Place markers restored"
-msgstr "Locația marcajelor restaurată"
+msgstr "Đã phục hồi điểm đánh dấu"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
-msgstr "Copiază locația marcajelor"
+msgstr "Chép điểm đánh dấu"
 
 #. Translators: An informational message displayed in the Copy dialog.
 #, python-format
@@ -98,22 +97,21 @@ msgid ""
 "\n"
 "\t\tThey will be copied from %s."
 msgstr ""
-"Selectați un dosar pentru a salva o copie de siguranță a locului de "
-"marcaje.\n"
+"Chọn thư mục để sao lưu các điểm đánh dấu hiện tại của bạn.\n"
 "\n"
-"tEle vor fi copiate de la %s."
+"\t\tChúng sẽ được chép từ %s."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "Dosar pentru copie de siguranță:"
+msgstr "thư mục để sao lưu:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
 msgid "Select directory to copy"
-msgstr "Selectați dosarul pentru copiere"
+msgstr "Chọn thư mục để sao chép"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
-msgstr "Restaurează locația marcajelor"
+msgstr "Khôi phục các điểm đánh dấu"
 
 #. Translators: An informational message displayed in the Restore dialog.
 #, python-format
@@ -122,218 +120,174 @@ msgid ""
 "\n"
 "\t\tThey will be copied to %s."
 msgstr ""
-"Selectați un dosar pentru a restaura o copie de siguranță a locului de "
-"marcaje copiat anterior..\n"
+"Chọn thư mục để phục hồi bản sao lưu các điểm đánh dấu đã được sao chép "
+"trước đó.\n"
 "\n"
-"tEle vor fi copiate la %s."
+"\t\tChúng sẽ được chép vào %s."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
-msgstr "Dosarul care conține copia de siguranță:"
+msgstr "thư mục chứa bản sao lưu:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 msgid "Select directory to restore"
-msgstr "Selectează dosarul pentru restaurare"
+msgstr "Chọn thư mục để khôi phục"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "Marcaje &locație"
+msgstr "P&lace markers"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Meniu căutare și semne de carte"
+msgstr "Trình đơn dấu trang và tìm kiếm"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "Căutare &specifică dosar"
+msgstr "T&hư mục tìm kiếm cụ thể"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Deschide dosarul de căutare specific"
+msgstr "Mở thư mục tìm kiếm cụ thể"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "Dosar &semne de carte"
+msgstr "&Thư mục dấu trang"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Deschide dosarul semnelor de carte"
+msgstr "Mở thư mục dấu trang"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Copiere dosar marcaje locație..."
+msgstr "Sao &chép thư mục các điểm đánh dấu "
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Copie de rezervă a marcajelor de locație"
+msgstr "Sao lưu các điểm đánh dấu"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "R&estaurare marcaje de locație..."
+msgstr "&Phục hồi các điểm đánh dấu..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Restaurează marcajele de locație salvate anterior"
+msgstr "Khôi phục các điểm đánh dấu đã lưu trước đó"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Deschide dosarul de căutare specifică"
+msgstr "Mở thư mục tìm kiếm cụ thể"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Deschide dosarul semnelor de carte"
+msgstr "Mở thư mục bookmarks"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Copy dialog of %s."
-msgstr "Activează dialogul de copiere a %s."
+msgstr "Kích hoạt hộp thoại Sao Chép của %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
-msgstr "Activează dialogul de restaurare a %s."
+msgstr "Kích hoạt hộp thoại Khôi Phục của%s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"găsește un șir de text de la poziția curentă a cursorului pentru un anumit "
-"document."
+"tìm một chuỗi văn bản từ vị trí con trỏ hiện tại cho một tài liệu cụ thể."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "Semnul de carte nu poate fi salvat."
+msgstr "Không thể lưu dấu trang"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "Această poziție a fost salvată deja"
+msgstr "Vị trí này đã được lưu"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "Poziție salvată la caracterul %d"
+msgstr "Đã lưu vị trí tại kí tự %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Nu se poate salva semnul de carte"
+msgstr "Không thể lưu dấu trang"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Salvează poziția curentă drept semn de carte"
+msgstr "Lưu vị trí hiện thời thành dấu trang"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "Fără semne de carte"
+msgstr "Không có dấu trang"
 
 msgid "Bookmark cannot be deleted"
-msgstr "Semnul de carte nu poate fi șters"
+msgstr "Không thể xóa dấu trang"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "Niciun semn de carte selectat"
+msgstr "Không có dấu trang nào được chọn"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Semn de carte șters"
+msgstr "Đã xóa dấu trang"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Nu se poate șterge semnul de carte"
+msgstr "Không thể xóa dấu trang"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Șterge semnul de carte curent."
+msgstr "Xóa dấu trang hiện tại"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Niciun semn de carte găsit"
+msgstr "Không tìm thấy dấu trang"
 
 #. Translators: message presented when cannot find any bookmarks.
 msgid "Cannot find any bookmarks"
-msgstr "Nu se poate găsi niciun semn de carte"
+msgstr "Không thể tìm thấy bất kỳ dấu trang nào"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "Poziție: caracter %d"
+msgstr "Vị trí: kí tự %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Următorul semn de carte negăsit"
+msgstr "Không tìm thấy dấu trang tiếp theo"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Mută la următorul semn de carte."
+msgstr "Chuyển đến dấu trang tiếp theo"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "Anteriorul semn de carte negăsit"
+msgstr "Không tìm thấy dấu trang trước"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Mută la anteriorul semn de carte."
+msgstr "Chuyển đến dấu trang trước."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Nu se poate copia numele fișierului pentru marcajele de locație"
+msgstr "Không thể sao chép tên tập tin để đánh dấu"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Numele fișierului marcajelor de locație copiat în planșetă"
+msgstr "Đã chép tên tập tin đánh dấu vào bộ nhớ tạm"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr ""
-"Copiază numele fișierului curent pentru marcaje de locație în planșetă."
+msgstr "Chép tên của tập tin muốn đánh dấu hiện tại vào bộ  nhớ tạm."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Marcaje locație"
+msgstr "Đánh dấu"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr ""
-"Supliment pentru plasarea de marcaje de locație pe documente virtuale "
-"specifice"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "textul \"%s\" nu a fost găsit"
-
-#~ msgid "Find Error"
-#~ msgstr "Eroare la căutare"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr ""
-#~ "Selectați un dosar pentru copierea marcajelor dumneavoastră de locație "
-#~ "salvate"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr ""
-#~ "Selectați dosarul cu marcaje de locație pe care doriți să-l restabiliți"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Tastați textul pe care îl doriți salvat sau ștergeți textul dacă doriți "
-#~ "să îl înlăturați din căutarile anterior salvate."
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Salvează text pentru căutare specifică"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Salvează un șir cu text pentru o căutare specifică"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Fișierul pentru căutarea specifică nu a fost găsit"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Texte salvate pentru căutare:"
-
-#~ msgid "Delete"
-#~ msgstr "Ștergere"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&Apreciere majuscule"
+msgstr "Add-on thực hiện đánh dấu trên các tài liệu ảo cụ thể"
