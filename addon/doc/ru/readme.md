@@ -4,16 +4,17 @@
 * загрузить [стабильную версию][1]
 * загрузить [разрабатываемую версию][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks. It can be used  on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-bookmarks to files whose name is based on the title and URL of the current
-document.  This addon is based on SpecificSearch and Bookmark&Search,
-developed by the same author. You should uninstall them to use this one,
-since they have common keystrokes and features.
+Это дополнение используется для сохранения и поиска определенных строк
+текста или закладок. Оно может быть использовано на веб-страницах или
+документах в режиме обзора NVDA. также оно может быть использовано для
+сохранения или поиска строк текста в многострочных элементах управления, в
+случае невозможности обновить курсор, соответствующая строка будет
+скопирована в буфер обмена, так что она может быть найдена с помощью других
+инструментов. Дополнение сохраняет указанные строки и закладки в файлах, чье
+имя основано на названии и URL-адресе текущего документа. Это дополнение
+основано на SpecificSearch и Bookmark&Search, разработанных тем же
+автором. Вы должны удалить их, чтобы использовать его, поскольку они имеют
+общие функции и комбинации клавиш.
 
 ## Клавиатурные Команды: ##
 
@@ -36,31 +37,31 @@ since they have common keystrokes and features.
 
 ## Подменю Закладки (NVDA+N) ##
 
-Using the Place markers submenu under NVDA's Preferences menu, you can
-access:
+Используя подменю Закладки в меню Параметры NVDA, вы можете получить доступ
+к следующим элементам:
 
 *	Папка поисковых запросов; открывает папку сохранённых ранее поисковых
   запросов.
-*	Bookmarks folder: Opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+*	Папка закладок: открывает папку сохранённых закладок.
+*	Копировать папку закладок: вы можете сохранить копию папки закладок.
+*	Восстановить папку закладок: вы можете востановить ваши закладки из ранее
+  сохранённой копии закладок.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-bookmarks.
+Примечание: Положение закладки основано на количестве символов; и поэтому на
+страницах с динамическим содержимым лучше использовать конкретный поиск, а
+не закладки которые сохраняют чёткую позицию.
 
-## Changes for 7.0 ##
+## Изменения для 7.0 ##
 *	The dialog to save a string of text for specific search has been
   removed. This functionality is now included in the Specific search dialog,
   which has been redesigned to allow different actions when pressing the OK
   button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
+*	Визуальное представление диалогов было модифицировано, придерживаясь
+  внешнего вида диалогов, отображаемых в NVDA.
 *	Performing a Find Next or Find Previous command in Browse Mode will now
   correctly do a case sensitive search if the original Find was case
   sensitive.
-*	Requires NVDA 2016.4 or later.
+*	Требуется NVDA 2016.4 или позднее.
 *	Now you can assign gestures to open the Copy and Restore place markers
   dialogs.
 *	NVDA will present a message to notify when place markers have been copied
