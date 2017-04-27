@@ -217,7 +217,7 @@ class SpecificSearchDialog(wx.Dialog):
 			self.addCheckBox.Disable()
 			self.searchRadioBox.Disable()
 			self.caseSensitiveCheckBox.Disable()
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.Center(wx.BOTH | wx.Center)
 
 	def onSearchEditTextChange(self, evt):
 		if self.searchTextEdit.Value:
@@ -329,7 +329,7 @@ class CopyDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.Center(wx.BOTH | wx.Center)
 
 	def onCopy(self, evt):
 		if not self.copyDirectoryEdit.Value:
@@ -400,7 +400,7 @@ class RestoreDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.Center(wx.BOTH | wx.Center)
 
 	def onRestore(self, evt):
 		if not self.restoreDirectoryEdit.Value:
@@ -468,7 +468,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def terminate(self):
 		try:
 			self.menu.RemoveItem(self.mainItem)
-		except wx.PyDeadObjectError:
+		except RuntimeError:
 			pass
 
 	def onSpecificSearch(self, evt):
