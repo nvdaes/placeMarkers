@@ -29,6 +29,10 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
+
+## Changes for 8.0 ##
+*	Removed fragment identifiers from bookmark filenames, which can avoid issues in the VitalSource Bookshelf.
+
 ## Changes for 7.0 ##
 *	The dialog to save a string of text for specific search has been removed. This functionality is now included in the Specific search dialog, which has been redesigned to allow different actions when pressing the OK button.
 *	The visual presentation of the dialogs has been enhanced, adhering to the appearance of the dialogs shown in NVDA.
