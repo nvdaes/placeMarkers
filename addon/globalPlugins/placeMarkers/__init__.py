@@ -122,7 +122,7 @@ def getFile(folder, ext=""):
 		childID = obj.IAccessibleChildID
 		iAObj = obj.IAccessibleObject
 		accValue = iAObj.accValue(childID)
-		nameToAdd = " - %s" % accValue.split("/")[-1].split("\\")[-1].split("#")[0]
+		nameToAdd = " - %s" % accValue.split("#")[0].split("/")[-1].split("\\")[-1]
 	except:
 		nameToAdd = ""
 	file = file.rsplit(" - ", 1)[0]
