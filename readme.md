@@ -31,7 +31,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 
 ## Changes for 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid issues in the VitalSource Bookshelf.
+*	Removed fragment identifiers from bookmark filenames, which can avoid issues in the VitalSource Bookshelf ePUB reader.
 
 ## Changes for 7.0 ##
 *	The dialog to save a string of text for specific search has been removed. This functionality is now included in the Specific search dialog, which has been redesigned to allow different actions when pressing the OK button.
