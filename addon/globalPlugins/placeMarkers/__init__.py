@@ -176,7 +176,7 @@ def getSavedBookmarks():
 	try:
 		savedBookmarks = cPickle.load(file(fileName, "r"))
 	except IOError:
-		savedBookmarks = []
+		savedBookmarks = {}
 	return savedBookmarks
 
 ### Dialogs
@@ -315,10 +315,13 @@ class NotesDialog(wx.Dialog):
 		super(NotesDialog, self).__init__(parent, title=_("Notes"))
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
-		# Translators: The label of a combo box in the Notes dialog.
+		# Translators: The label of a list box in the Notes dialog.
 		notesLabel = _("&Notes")
-		self.notesComboBox = sHelper.addLabeledControl(notesLabel, wx.Choice, choices=["%s" %bookmark for bookmark in getSavedBookmarks()])
-		self.notesComboBox.Bind(wx.EVT_CHOICE, self.onNotesChange)
+		positions = getSavedBookmarks().keys()
+		positions.sort()
+		self.notesListBox = sHelper.addLabeledControl(notesLabel, wx.ListBox, choices=["%s" % pos for pos in positions])
+		self.notesListBox.Selection = 0
+		self.notesListBox.Bind(wx.EVT_LISTBOX, self.onNotesChange)
 		# Translators: The label of an edit box in the Notes dialog.
 		noteLabel = _("Not&e:")
 		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, noteLabel, wx.TextCtrl, style=wx.TE_MULTILINE)
@@ -329,7 +332,7 @@ class NotesDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.notesComboBox.SetFocus()
+		self.notesListBox.SetFocus()
 		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
 
 	def onNotesChange(self, evt):
@@ -338,10 +341,10 @@ class NotesDialog(wx.Dialog):
 
 	def onOk(self, evt):
 		self.Destroy()
-		position = int(self.notesComboBox.GetStringSelection())
-		note = Note(position)
-		note.text = self.noteEdit.Value
-		wx.CallLater(100, moveToBookmark, position)
+		pos = int(self.notesListBox.GetStringSelection())
+		note = Note(pos)
+		self.noteEdit.Value = note.text
+		wx.CallLater(100, moveToBookmark, pos)
 
 class CopyDialog(wx.Dialog):
 
@@ -617,13 +620,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
-		if count in bookmarks:
+		positions = bookmarks.keys()
+		if count in positions:
 			ui.message(
 				# Translators: message presented when the current position was previously saved as a bookmark.
 				_("This position was already saved"))
 			return
-		bookmarks.append(count)
-		bookmarks.sort()
+		bookmarks[count] = Note(count)
 		fileName = getFileBookmarks()
 		try:
 			cPickle.dump(bookmarks, file(fileName, "wb"))
@@ -648,7 +651,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		if len(bookmarks) == 0:
+		positions = bookmarks.keys()
+		if len(positions) == 0:
 			ui.message(
 				# Translators: message presented when the current document doesn't contain bookmarks.
 				_("No bookmarks"))
@@ -661,15 +665,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
-		if count not in bookmarks:
+		if count not in positions:
 			ui.message(
 				# Translators: message presented when the current document has bookmarks, but none is selected.
 				_("No bookmark selected"))
 			return
-		bookmarks.remove(count)
+		del(bookmarks[count])
 		fileName = getFileBookmarks()
-		if len(bookmarks) > 0:
-			bookmarks.sort()
+		if len(positions) > 0:
 			try:
 				cPickle.dump(bookmarks, file(fileName, "wb"))
 				ui.message(
@@ -703,7 +706,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		if len(bookmarks) == 0:
+		positions = bookmarks.keys()
+		if len(positions) == 0:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
@@ -718,16 +722,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
-		for bookmark in bookmarks:
-			if bookmark > count:
-				end.move(textInfos.UNIT_CHARACTER, bookmark-count)
+		positions.sort()
+		for pos in positions:
+			if pos > count:
+				end.move(textInfos.UNIT_CHARACTER, pos - count)
 				obj.selection = end
 				if not willSayAllResume(gesture):
 					end.move(textInfos.UNIT_LINE,1,endPoint="end")
 					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
 					ui.message(
 						# Translators: message presented when a bookmark is selected.
-						_("Position: character %d") % bookmark)
+						_("Position: character %d") % pos)
 				return
 		ui.message(
 			# Translators: message presented when the next bookmark is not found.
@@ -745,7 +750,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		if len(bookmarks) == 0:
+		positions = bookmarks.keys()
+		if len(positions) == 0:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
@@ -759,17 +765,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
-		bookmarks.reverse()
-		for bookmark in bookmarks:
-			if bookmark < count:
-				end.move(textInfos.UNIT_CHARACTER, bookmark-count)
+		positions.reverse()
+		for pos in positions:
+			if pos < count:
+				end.move(textInfos.UNIT_CHARACTER, pos - count)
 				obj.selection = end
 				if not willSayAllResume(gesture):
 					end.move(textInfos.UNIT_LINE,1,endPoint="end")
 					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
 					ui.message(
 						# Translators: message presented when a bookmark is selected.
-						_("Position: character %d") % bookmark)
+						_("Position: character %d") % pos)
 				return
 		ui.message(
 			# Translators: message presented when the previous bookmark is not found.
