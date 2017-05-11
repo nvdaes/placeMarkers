@@ -317,9 +317,12 @@ class NotesDialog(wx.Dialog):
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		# Translators: The label of a list box in the Notes dialog.
 		notesLabel = _("&Notes")
-		positions = getSavedBookmarks().keys()
-		positions.sort()
-		self.notesListBox = sHelper.addLabeledControl(notesLabel, wx.ListBox, choices=["%s" % pos for pos in positions])
+		bookmarks = getSavedBookmarks().keys()
+		bookmarks.sort()
+		notesChoices = []
+		for pos in bookmarks:
+			notesChoices.append("{position} - {title}".format(position=pos, title=getSavedBookmarks()[pos].title))
+		self.notesListBox = sHelper.addLabeledControl(notesLabel, wx.ListBox , choices=notesChoices)
 		self.notesListBox.Selection = 0
 		self.notesListBox.Bind(wx.EVT_LISTBOX, self.onNotesChange)
 		# Translators: The label of an edit box in the Notes dialog.
@@ -341,7 +344,7 @@ class NotesDialog(wx.Dialog):
 
 	def onOk(self, evt):
 		self.Destroy()
-		pos = int(self.notesListBox.GetStringSelection())
+		pos = int(self.notesListBox.GetStringSelection().split(" - ")[0])
 		note = Note(pos)
 		self.noteEdit.Value = note.text
 		wx.CallLater(100, moveToBookmark, pos)
@@ -479,9 +482,10 @@ class RestoreDialog(wx.Dialog):
 
 class Note(object):
 
-	def __init__(self, position):
+	def __init__(self, position, title=""):
 		super(Note, self).__init__()
 		self.position = position
+		self.title = title
 		self.text = ""
 
 ### Global plugin
@@ -621,12 +625,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
 		positions = bookmarks.keys()
-		if count in positions:
-			ui.message(
+		#if count in positions and not hasattr(obj,'selection'):
+			#ui.message(
 				# Translators: message presented when the current position was previously saved as a bookmark.
-				_("This position was already saved"))
-			return
-		bookmarks[count] = Note(count)
+				#_("This position was already saved"))
+			#return
+		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:50]
+		bookmarks[count] = Note(count, noteTitle.encode("mbcs"))
 		fileName = getFileBookmarks()
 		try:
 			cPickle.dump(bookmarks, file(fileName, "wb"))
