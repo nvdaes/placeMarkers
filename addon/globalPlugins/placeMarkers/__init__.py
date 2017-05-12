@@ -509,7 +509,6 @@ class Note(object):
 		super(Note, self).__init__()
 		self.title = title
 		self.body = body
-		self.text = ""
 
 ### Global plugin
 
@@ -653,11 +652,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
 		positions = bookmarks.keys()
-		#if count in positions and not hasattr(obj,'selection'):
-			#ui.message(
-				# Translators: message presented when the current position was previously saved as a bookmark.
-				#_("This position was already saved"))
-			#return
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
 		bookmarks[count] = Note(noteTitle)
 		fileName = getFileBookmarks()
@@ -696,8 +690,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except (NotImplementedError, RuntimeError):
 			ui.message(
 				# Translators: Message presented when a bookmark can't be deleted.
-				#
-			_("Bookmark cannot be deleted"))
+				_("Bookmark cannot be deleted"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
