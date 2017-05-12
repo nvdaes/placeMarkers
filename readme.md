@@ -11,11 +11,12 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 ## Key Commands: ##
 
 *	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box or remove the selected string from the history using a checkbox. You can choose if the text contained in the edit box will be added to the history of your saved texts. Finally, choose an action from the next group of radio buttons (between Search next, Search previous or Don't search), and specify if NVDA will make a case sensitive search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+k: Saves the current position as a bookmark. If you want to provide a name for this bookmark, select some text from this position before saving it.
 *	control+shift+NVDA+delete: Deletes the bookmark corresponding to this position.
 *	NVDA+k: Moves to the next bookmark.
 *	shift+NVDA+k: Moves to the previous bookmark.
 *	control+shift+k: Copies the file name where the place markers data will be saved to the clipboard, without an extension.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing OK you can move to the selected position.
 
 
 ## Place markers Submenu (NVDA+N) ##
@@ -32,6 +33,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid issues in the VitalSource Bookshelf ePUB reader.
+*	Added a Notes dialog, to associate comments for saved bookmarks and move to the selected position.
 
 ## Changes for 7.0 ##
 *	The dialog to save a string of text for specific search has been removed. This functionality is now included in the Specific search dialog, which has been redesigned to allow different actions when pressing the OK button.
