@@ -651,9 +651,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
-		positions = bookmarks.keys()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
-		bookmarks[count] = Note(noteTitle)
+		noteBody = bookmarks[count].body
+		bookmarks[count] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
 			cPickle.dump(bookmarks, file(fileName, "wb"))
