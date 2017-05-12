@@ -322,7 +322,7 @@ class NotesDialog(wx.Dialog):
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		# Translators: The label of a list box in the Notes dialog.
-		notesLabel = _("&Notes")
+		notesLabel = _("&Bookmarks")
 		self.bookmarks = getSavedBookmarks()
 		positions = self.bookmarks.keys()
 		positions.sort()
