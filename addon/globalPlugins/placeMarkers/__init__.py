@@ -175,6 +175,11 @@ def getSavedBookmarks():
 	fileName = getFileBookmarks()
 	try:
 		savedBookmarks = cPickle.load(file(fileName, "r"))
+		if isinstance(savedBookmarks, list):
+			bookmarksDic = {}
+			for bookmark in savedBookmarks:
+				bookmarksDic[bookmark] = Note()
+			savedBookmarks = bookmarksDic
 	except IOError:
 		savedBookmarks = {}
 	return savedBookmarks
@@ -310,26 +315,35 @@ def doRestore(restoreDirectory):
 
 class NotesDialog(wx.Dialog):
 
-	def __init__(self, parent):
+	def __init__(self, parent, fileName):
 		# Translators: The title of the Notes dialog.
 		super(NotesDialog, self).__init__(parent, title=_("Notes"))
+		self.fileName = fileName
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		# Translators: The label of a list box in the Notes dialog.
 		notesLabel = _("&Notes")
-		bookmarks = getSavedBookmarks().keys()
-		bookmarks.sort()
+		self.bookmarks = getSavedBookmarks()
+		positions = self.bookmarks.keys()
+		positions.sort()
+		self.pos = positions[0]
+		firstNoteBody = self.bookmarks[self.pos].body
 		notesChoices = []
-		for pos in bookmarks:
-			notesChoices.append("{position} - {title}".format(position=pos, title=getSavedBookmarks()[pos].title))
+		for pos in positions:
+			notesChoices.append("{position} - {title}".format(position=pos, title=self.bookmarks[pos].title))
 		self.notesListBox = sHelper.addLabeledControl(notesLabel, wx.ListBox , choices=notesChoices)
 		self.notesListBox.Selection = 0
 		self.notesListBox.Bind(wx.EVT_LISTBOX, self.onNotesChange)
 		# Translators: The label of an edit box in the Notes dialog.
 		noteLabel = _("Not&e:")
-		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, noteLabel, wx.TextCtrl, style=wx.TE_MULTILINE)
+		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, noteLabel, wx.TextCtrl, style=wx.TE_MULTILINE )
 		self.noteEdit = noteLabeledCtrl.control
-		self.noteEdit.Value = ""
+		self.noteEdit.SetMaxLength(1024)
+		self.noteEdit.Value = firstNoteBody
+		bHelper = sHelper.addItem(guiHelper.ButtonHelper(orientation=wx.HORIZONTAL))
+		# Translators: The label for a button in the Notes dialog.
+		self.saveButton = bHelper.addButton(self, label=_("&Save note"))
+		self.Bind(wx.EVT_BUTTON, self.onSave, self.saveButton)
 		sHelper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK|wx.CANCEL))
 		self.Bind(wx.EVT_BUTTON, self.onOk, id=wx.ID_OK)
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
@@ -339,15 +353,24 @@ class NotesDialog(wx.Dialog):
 		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
 
 	def onNotesChange(self, evt):
-		#self.searchTextEdit.Value = self.savedTextsComboBox.GetStringSelection()
-		return
+		self.pos = int(self.notesListBox.GetStringSelection().split(" - ")[0])
+		self.noteEdit.Value = self.bookmarks[self.pos].body
+
+	def onSave(self, evt):
+		noteTitle = self.notesListBox.GetStringSelection().split(" - ")[1].encode("mbcs")
+		noteBody = self.noteEdit.Value
+		note = Note(noteTitle, noteBody)
+		self.bookmarks[self.pos] = note
+		try:
+			cPickle.dump(self.bookmarks, file(self.fileName, "wb"))
+			self.notesListBox.SetFocus()
+		except Exception as e:
+			log.debugWarning("Error saving bookmark", exc_info=True)
+			raise e
 
 	def onOk(self, evt):
 		self.Destroy()
-		pos = int(self.notesListBox.GetStringSelection().split(" - ")[0])
-		note = Note(pos)
-		self.noteEdit.Value = note.text
-		wx.CallLater(100, moveToBookmark, pos)
+		wx.CallLater(300, moveToBookmark, self.pos)
 
 class CopyDialog(wx.Dialog):
 
@@ -482,10 +505,10 @@ class RestoreDialog(wx.Dialog):
 
 class Note(object):
 
-	def __init__(self, position, title=""):
+	def __init__(self, title="", body=""):
 		super(Note, self).__init__()
-		self.position = position
 		self.title = title
+		self.body = body
 		self.text = ""
 
 ### Global plugin
@@ -590,8 +613,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
 
 	def popupNotesDialog(self):
+		if getSavedBookmarks() == {}:
+			ui.message(
+				# Translators: message presented when the current document doesn't contain bookmarks.
+				_("No bookmarks"))
+			return
 		gui.mainFrame.prePopup()
-		d = NotesDialog(gui.mainFrame)
+		d = NotesDialog(gui.mainFrame, getFileBookmarks())
 		d.Show()
 		gui.mainFrame.postPopup()
 
@@ -630,8 +658,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when the current position was previously saved as a bookmark.
 				#_("This position was already saved"))
 			#return
-		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:50]
-		bookmarks[count] = Note(count, noteTitle.encode("mbcs"))
+		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
+		bookmarks[count] = Note(noteTitle)
 		fileName = getFileBookmarks()
 		try:
 			cPickle.dump(bookmarks, file(fileName, "wb"))
@@ -666,7 +694,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			end = obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
-			ui.message(_("Bookmark cannot be deleted"))
+			ui.message(
+				# Translators: Message presented when a bookmark can't be deleted.
+				#
+			_("Bookmark cannot be deleted"))
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
@@ -808,24 +839,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
 
-	def script_saveNote(self, gesture):
-		fileName = getFileBookmarks()
-		note = Note(1)
-		notes = {}
-		try:
-			cPickle.dump(notes, file(fileName, "wb"))
-			ui.message(
-				# Translators: message presented when a note is saved.
-				_("Saved note at character %s") % note.position)
-		except Exception as e:
-			log.debugWarning("Error saving note", exc_info=True)
-			ui.message(
-				# Translators: message presented when a note cannot be saved.
-				_("Cannot save note"))
-			raise e
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_saveNote.__doc__ = _("Saves a note at the current position.")
-
 	__gestures = {
 		"kb:control+shift+NVDA+f": "specificFind",
 		"kb:control+shift+NVDA+k": "saveBookmark",
@@ -833,6 +846,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		"kb:NVDA+k": "selectNextBookmark",
 		"kb:shift+NVDA+k": "selectPreviousBookmark",
 		"kb:control+shift+k": "copyCurrentBookmarksFile",
-		"kb:control+shift+NVDA+n": "activateNotesDialog",
+		"kb:alt+NVDA+k": "activateNotesDialog",
 	}
 
