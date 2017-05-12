@@ -652,7 +652,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
-		noteBody = bookmarks[count].body
+		positions = bookmarks.keys()
+		if count in positions:
+			noteBody = bookmarks[count].body
+		else:
+			noteBody = ""
 		bookmarks[count] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
