@@ -18,6 +18,8 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 *	control+shift+k: Copies the file name where the place markers data will be saved to the clipboard, without an extension.
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing OK you can move to the selected position.
 
+Note: Sometimes this doesn't work on browsers like Firefox. If it happens, please refresh the buffer pressing NVDA+f5 and try to use the dialog again, or move to the bookmark from the document using NVDA+k.
+
 
 ## Place markers Submenu (NVDA+N) ##
 
