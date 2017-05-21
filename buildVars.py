@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("Add-on for setting place markers on specific virtual documents"),
 	# version
-	"addon_version" : "8.0-dev",
+	"addon_version" : "8.1-dev",
 	# Author(s)
 	"addon_author" : u"Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>",
 	# URL for the add-on documentation support
