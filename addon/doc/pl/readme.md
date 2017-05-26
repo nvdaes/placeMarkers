@@ -4,16 +4,15 @@
 * Pobierz [wersja stabilna][1]
 * Pobierz [wersja rozwojowa][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks. It can be used  on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-bookmarks to files whose name is based on the title and URL of the current
-document.  This addon is based on SpecificSearch and Bookmark&Search,
-developed by the same author. You should uninstall them to use this one,
-since they have common keystrokes and features.
+Ten dodatek jest używany do zapisywania i wyszukiwania określonych ciągów
+tekstowych lub zakładek, na stronach internetowych lub dokumentach trybu
+czytania NVDA.  Może również być użyta do zapisania lub wyszukania ciągów
+tekstowych w kontrolkach wieloliniowych; w takim przypadku, jeśli nie jest
+możliwe przemieszczenie kursora, odpowiadający łańcuch zostanie skopiowany
+do schowka, dzięki czemu może zostać wyszukany przy użyciu innych narzędzi.
+Wtyczka zapisuje określone ciągi tekstowe i zakładki w plikach tekstowych i
+.pickle. Nazwa tych plików oparta jest na tytule i adresie bieżącego
+dokumentu.
 
 ## Skróty klawiszowe: ##
 
@@ -25,7 +24,7 @@ since they have common keystrokes and features.
   action from the next group of radio buttons (between Search next, Search
   previous or Don't search), and specify if NVDA will make a case sensitive
   search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+k: Zachowuję teraźniejszą pozycję jako zakładkę.
 *	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
   position.
 *	NVDA+k: Moves to the next bookmark.
@@ -36,21 +35,22 @@ since they have common keystrokes and features.
 
 ## Podmenu Znaczniki miejsc (NVDA+N) ##
 
-Using the Place markers submenu under NVDA's Preferences menu, you can
-access:
+Używając podmenu znaczniki miejsc, w menu NVDA Ustawienia, możesz uzyskać
+dostęp do:
 
 *	Folder wyszukiwania: otwiera poprzednio zapisany folder specyficznych
   wyszukiwań.
-*	Bookmarks folder: Opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+*	Folder zakładek; otwiera folder zapisanych zakładek.
+*	Kopiuj folder znaczników miejsc; możesz zapisać kopię folderu z
+  zakładkami.
+*	Przywróć zakładki; możesz przywrócić zakładki z poprzednio zapisanego
+  folderu znaczników miejsc.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-bookmarks.
+Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
+dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
+określone miejsce.
 
-## Changes for 7.0 ##
+## Zmiany dla wersji 7.0 ##
 *	The dialog to save a string of text for specific search has been
   removed. This functionality is now included in the Specific search dialog,
   which has been redesigned to allow different actions when pressing the OK
@@ -60,15 +60,15 @@ bookmarks.
 *	Performing a Find Next or Find Previous command in Browse Mode will now
   correctly do a case sensitive search if the original Find was case
   sensitive.
-*	Requires NVDA 2016.4 or later.
+*	Wymagane NVDA 2016.4 lub nowsze.
 *	Now you can assign gestures to open the Copy and Restore place markers
   dialogs.
 *	NVDA will present a message to notify when place markers have been copied
   or restored with the corresponding dialogs.
 
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+## Zmiany dla wersji 6.0 ##
+* Kiedy funkcje dodatku nie są dostępne, zdarzenia wejścia są wysyłane do
+  danej aplikacji.
 
 ## Zmiany dla wersji 5.0 ##
 * Dodane wyszukiwanie z uwzględnieniem wielkości liter.
