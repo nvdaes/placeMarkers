@@ -370,7 +370,7 @@ class NotesDialog(wx.Dialog):
 
 	def onOk(self, evt):
 		self.Destroy()
-		wx.CallLater(300, moveToBookmark, self.pos)
+		wx.CallLater(1000, moveToBookmark, self.pos)
 
 class CopyDialog(wx.Dialog):
 
