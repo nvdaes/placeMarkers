@@ -16,19 +16,19 @@ dokumentu.
 
 ## Skróty klawiszowe: ##
 
-*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
-  saved search; in this dialog you can also select the previously saved
-  searches from a combo box or remove the selected string from the history
-  using a checkbox. You can choose if the text contained in the edit box
-  will be added to the history of your saved texts. Finally, choose an
-  action from the next group of radio buttons (between Search next, Search
-  previous or Don't search), and specify if NVDA will make a case sensitive
-  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+f: Otwiera dialog z polem edycyjnym wyświetlające
+  ostatnie wyszukiwanie; W tym oknie można także zaznaczyć wczesne
+  wyszukiwania z pola kombi, albo usunąć łańcuch tekstu z historii używając
+  pole wyboru. Można wybierać, czy podany tekst ma być zachowany w historii
+  wyszukiwań,. Nareście można wybrać akcje z następujących przycisków opcji
+  (pomiędzy wyszukaj następny, wyszukaj poprzedni albo nie wyszukuj), i
+  określić, czy NVDA ma zrwacać uwagę na wielkość liter. When you press
+  okay, NVDA will search for this string.
 *	control+shift+NVDA+k: Zachowuję teraźniejszą pozycję jako zakładkę.
-*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
-  position.
-*	NVDA+k: Moves to the next bookmark.
-*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+NVDA+delete: Usuwa zakładkę, odnoszącą się do konkretnej
+  pozycji.
+*	NVDA+k: Przemieszcza się do następującej zakładki.
+*	shift+NVDA+k: Przemieszcza się do poprzedniej zakładki.
 *	control+shift+k: Copies the file name where the place markers data will be
   saved to the clipboard, without an extension.
 
@@ -102,6 +102,6 @@ określone miejsce.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
