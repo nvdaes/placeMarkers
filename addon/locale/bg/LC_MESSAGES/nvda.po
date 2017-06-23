@@ -89,6 +89,23 @@ msgstr "Грешка при копиране"
 msgid "Place markers restored"
 msgstr "Позиционните маркери са възстановени"
 
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr ""
+
+#. Translators: The label of a list box in the Notes dialog.
+#, fuzzy
+msgid "&Bookmarks"
+msgstr "Папка с &отметки"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr ""
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr ""
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Копиране на позиционните маркери"
@@ -201,13 +218,17 @@ msgid ""
 msgstr ""
 "Търси текстов низ от текущата позиция на курсора за конкретен документ."
 
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Няма отметки"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr ""
+
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
 msgstr "Отметката не може да бъде запазена"
-
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "Тази позиция вече е била запазена"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -222,10 +243,7 @@ msgstr "Отметката не може да бъде запазена"
 msgid "Saves the current position as a bookmark."
 msgstr "Запазва текущата позиция като отметка."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Няма отметки"
-
+#. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
 msgstr "Отметката не може да бъде изтрита"
 
@@ -296,6 +314,9 @@ msgstr "Позиционни маркери"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Добавка за задаване на позиционни маркери за определени виртуални документи"
+
+#~ msgid "This position was already saved"
+#~ msgstr "Тази позиция вече е била запазена"
 
 #~ msgid "text \"%s\" not found"
 #~ msgstr "Текстът \"%s\" не е намерен"

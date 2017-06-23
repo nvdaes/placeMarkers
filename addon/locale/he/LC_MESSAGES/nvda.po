@@ -87,6 +87,23 @@ msgstr "שגיאת העתקה"
 msgid "Place markers restored"
 msgstr "סימניות שוחזרו"
 
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr ""
+
+#. Translators: The label of a list box in the Notes dialog.
+#, fuzzy
+msgid "&Bookmarks"
+msgstr "תיקיית &סימניות"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr ""
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr ""
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "העתק סימניות"
@@ -196,13 +213,17 @@ msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
 
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "אין סימניות"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr ""
+
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
 msgstr "לא ניתן לשמור את הסימנייה"
-
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "מיקום זה כבר שמור"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -217,10 +238,7 @@ msgstr "kלא ניתן לשמור את הסימנייה"
 msgid "Saves the current position as a bookmark."
 msgstr "שומר את המיקום הנוכחי כסימנייה"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "אין סימניות"
-
+#. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
 msgstr "לא ניתן למחוק את הסימנייה"
 
@@ -290,6 +308,9 @@ msgstr "סימניות"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "תוסף זה מיועד להגדיר סימניות במסמכים וירטואלים נבחרים"
+
+#~ msgid "This position was already saved"
+#~ msgstr "מיקום זה כבר שמור"
 
 #~ msgid "text \"%s\" not found"
 #~ msgstr "המחרוזת %s לא נמצאה"

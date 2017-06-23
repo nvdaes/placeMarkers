@@ -30,14 +30,19 @@ des raccourcis et des caractéristiques communes.
   radio (entre Recherche suivante, Recherche précédente ou Ne pas
   rechercher), et spécifiez si NVDA effectuera une recherche Respecter la
   casse. Lorsque vous appuyez sur OK, NVDA recherche cette chaîne.
-*	Contrôle+maj+NVDA+k : Enregistrer la position actuelle en tant que
-  marqueur.
+*	Contrôle+maj+NVDA+k : Enregistre la position actuelle comme un
+  marqueur. Si vous souhaitez donner un nom à ce marqueur, sélectionner un
+  texte à partir de cette position avant de l'enregistrer.
 *	Contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
   position.
 *	NVDA+k : Déplacer vers le marqueur suivant.
 *	Maj+NVDA+k : Déplacer vers le marqueur précédent.
 *	Control+maj+k : Copier le nom du fichier où les données des marqueurs de
   position seront enregistrées dans le presse-papiers, sans l'extension.
+*	Alt+NVDA+k : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
+  document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
+  Enregistrer note pour enregistrer les modifications. En appuyant sur OK
+  vous pouvez vous déplacer à la position sélectionnée.
 
 
 ## Sous-menu des marqueurs (NVDA+N) ##
@@ -56,6 +61,14 @@ vous pouvez accéder à :
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière, pas les marqueurs.
+
+
+## Changements pour la version 8.0 ##
+*	Identificateurs de fragment Supprimé pour les noms de fichiers  des
+  marqueurs, qui peut éviter des problèmes dans le lecteur VitalSource
+  Bookshelf ePUB.
+*	Ajout d'un dialogue Notes, pour associer des commentaires aux marqueurs
+  sauvegardés et se déplacer à la position sélectionnée.
 
 ## Changements pour la version 7.0 ##
 *	Le dialogue pour enregistrer une chaîne de caractères pour la recherche
@@ -85,7 +98,7 @@ spécifique pour marquer une position particulière, pas les marqueurs.
 
 ## Changements pour la version 4.0 ##
 * Identificateurs de fragment Supprimé pour les noms de fichiers  des
-  marqueurs , qui peut éviter des problèmes dans le module ePUBREADER de
+  marqueurs, qui peut éviter des problèmes dans le module ePUBREADER de
   Firefox.
 * L'aide du module complémentaire est disponible à partir du Gestionnaire de
   modules complémentaires.
@@ -112,6 +125,6 @@ spécifique pour marquer une position particulière, pas les marqueurs.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

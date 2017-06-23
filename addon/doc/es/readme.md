@@ -27,13 +27,19 @@ teclas y características.
   del siguiente grupo de botones de opción (entre buscar siguiente, buscar
   anterior o no buscar), y especificar si NVDA hará una búsqueda sensible a
   las mayúsculas. Cuando pulses Aceptar, NVDA buscará esta cadena.
-*	control+shift+NVDA+k: guarda la posición actual como una marca.
+*	control+shift+NVDA+k: guarda la posición actual como una marca. Si quieres
+  proporcionar un nombre para esta marca, selecciona algún texto de esta
+  posición antes de guardarla.
 *	control+shift+NVDA+suprimir: elimina la marca correspondiente a esta
   posición.
 *	NVDA+k: mueve a la marca siguiente.
 *	shift+NVDA+k: mueve a la marca anterior.
 *	control+shift+k: copia el nombre del fichero donde se guardarán los datos
   de marcadores al portapapeles, sin una extensión.
+*	alt+NVDA+k: abre un diálogo con las marcas guardadas para este
+  documento. Puedes escribir una nota para cada marca; pulsa Guardar Nota
+  para guardar cambios. Pulsando Aceptar puedes moverte al a la posición
+  seleccionada.
 
 
 ## Submmenú Place markers (NVDA+N) ##
@@ -52,6 +58,14 @@ a
 Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
+
+
+## Cambios para 8.0 ##
+*	Eliminados fragmentos de identificadores de nombres de ficheros de
+  marcador,  los cuales pueden evitar problemas en VitalSource Bookshelf
+  ePUB READER.
+*	Se añadió un diálogo Notas, para asociar comentarios para marcas guardadas
+  y para moverte a la posición seleccionada.
 
 ## Cambios para 7.0 ##
 *	El diálogo para guardar una cadena de texto para una búsqueda específica
@@ -108,6 +122,6 @@ y no las marcas.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

@@ -25,13 +25,18 @@ since they have common keystrokes and features.
   action from the next group of radio buttons (between Search next, Search
   previous or Don't search), and specify if NVDA will make a case sensitive
   search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark.
+*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
   position.
 *	NVDA+k: Moves to the next bookmark.
 *	shift+NVDA+k: Moves to the previous bookmark.
 *	control+shift+k: Copies the file name where the place markers data will be
   saved to the clipboard, without an extension.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing OK you can move to the selected position.
 
 
 ## Untermenü Sprungmarken (nvda+n) ##
@@ -49,6 +54,13 @@ access:
 Note: The bookmark position is based on the number of characters; and
 therefore in dynamic pages it is better to use the specific search, not
 bookmarks.
+
+
+## Changes for 8.0 ##
+*	Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in the VitalSource Bookshelf ePUB reader.
+*	Added a Notes dialog, to associate comments for saved bookmarks and move
+  to the selected position.
 
 ## Changes for 7.0 ##
 *	The dialog to save a string of text for specific search has been
@@ -105,6 +117,6 @@ bookmarks.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

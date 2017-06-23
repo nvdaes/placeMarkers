@@ -24,13 +24,18 @@ dokumentu.
   (pomiędzy wyszukaj następny, wyszukaj poprzedni albo nie wyszukuj), i
   określić, czy NVDA ma zrwacać uwagę na wielkość liter. When you press
   okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Zachowuję teraźniejszą pozycję jako zakładkę.
+*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: Usuwa zakładkę, odnoszącą się do konkretnej
   pozycji.
 *	NVDA+k: Przemieszcza się do następującej zakładki.
 *	shift+NVDA+k: Przemieszcza się do poprzedniej zakładki.
 *	control+shift+k: Copies the file name where the place markers data will be
   saved to the clipboard, without an extension.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing OK you can move to the selected position.
 
 
 ## Podmenu Znaczniki miejsc (NVDA+N) ##
@@ -50,13 +55,20 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+
+## Zmiany dla wersji 8.0 ##
+*	Usunięto identyfikatory fragmentów z nazw plików zakładek, co może
+  spowodować uniknięcie problemów  VitalSource ePUBREADER.
+*	Added a Notes dialog, to associate comments for saved bookmarks and move
+  to the selected position.
+
 ## Zmiany dla wersji 7.0 ##
 *	The dialog to save a string of text for specific search has been
   removed. This functionality is now included in the Specific search dialog,
   which has been redesigned to allow different actions when pressing the OK
   button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
+*	Wizualna prezentacja dialogów została ulepszona, aby była zgodna z
+  wyświetlanymi dialogami w NVDA.
 *	Performing a Find Next or Find Previous command in Browse Mode will now
   correctly do a case sensitive search if the original Find was case
   sensitive.
@@ -102,6 +114,6 @@ określone miejsce.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

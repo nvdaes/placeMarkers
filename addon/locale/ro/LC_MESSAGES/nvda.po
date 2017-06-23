@@ -87,6 +87,23 @@ msgstr "Eroare copiere"
 msgid "Place markers restored"
 msgstr "Locația marcajelor restaurată"
 
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr ""
+
+#. Translators: The label of a list box in the Notes dialog.
+#, fuzzy
+msgid "&Bookmarks"
+msgstr "Dosar &semne de carte"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr ""
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr ""
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Copiază locația marcajelor"
@@ -200,13 +217,17 @@ msgstr ""
 "găsește un șir de text de la poziția curentă a cursorului pentru un anumit "
 "document."
 
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Fără semne de carte"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr ""
+
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
 msgstr "Semnul de carte nu poate fi salvat."
-
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "Această poziție a fost salvată deja"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -221,10 +242,7 @@ msgstr "Nu se poate salva semnul de carte"
 msgid "Saves the current position as a bookmark."
 msgstr "Salvează poziția curentă drept semn de carte"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Fără semne de carte"
-
+#. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
 msgstr "Semnul de carte nu poate fi șters"
 
@@ -297,6 +315,9 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Supliment pentru plasarea de marcaje de locație pe documente virtuale "
 "specifice"
+
+#~ msgid "This position was already saved"
+#~ msgstr "Această poziție a fost salvată deja"
 
 #~ msgid "text \"%s\" not found"
 #~ msgstr "textul \"%s\" nu a fost găsit"

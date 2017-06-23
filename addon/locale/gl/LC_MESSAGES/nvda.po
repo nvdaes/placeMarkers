@@ -86,6 +86,23 @@ msgstr "Erro da Copia"
 msgid "Place markers restored"
 msgstr "Marcadores restaurados"
 
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr ""
+
+#. Translators: The label of a list box in the Notes dialog.
+#, fuzzy
+msgid "&Bookmarks"
+msgstr "Cartafol &Marcas"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr ""
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr ""
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Copiar marcadores"
@@ -199,13 +216,17 @@ msgstr ""
 "atopa unha secuencia de texto dende a posición actual do cursor dun "
 "documento específico."
 
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Non hai marcas"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr ""
+
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
 msgstr "A marca non poido ser gardada"
-
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "Esta posición xa foi gardada"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -220,10 +241,7 @@ msgstr "Non se poido gardar a marca"
 msgid "Saves the current position as a bookmark."
 msgstr "Garda a posición actual como unha marca."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Non hai marcas"
-
+#. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
 msgstr "A marca non pode ser eliminada"
 
@@ -293,6 +311,9 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Complemento para fixar marcas en documentos virtuais específicos"
+
+#~ msgid "This position was already saved"
+#~ msgstr "Esta posición xa foi gardada"
 
 #~ msgid "text \"%s\" not found"
 #~ msgstr "texto \"%s\" non atopado"

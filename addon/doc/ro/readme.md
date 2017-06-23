@@ -25,13 +25,19 @@ URL-ul documentului curent.
   rotative (între caută următorul, caută anteriorul, sau nu căuta), și
   specificați dacă NVDA va face un caz senzitiv de căutare. Când apăsați OK,
   NVDA va căuta pentru această frază.
-*	control+shift+NVDA+k: Salvează poziția curentă ca un semn de carte.
+*	control+shift+NVDA+k: Salvează poziția curentă ca un semn de carte. Dacă
+  vreți să furnizați un nume pentru el, selectați textul din acea poziție
+  înainte de a o salva.
 *	control+shift+NVDA+delete: Șterge semnul de carte corespunzător acestei
   poziții.
 *	NVDA+k: Deplasează la semnul de carte următor.
 *	shift+NVDA+k: Deplasează la semnul de carte precedent.
 *	control+shift+k: Copiază pe planșetă numele fișierului unde data place
   markers va fi salvată, fără o extensie.
+*	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
+  document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
+  „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
+  vă deplasați la poziția selectată.
 
 
 ## Submeniul Place markers (NVDA+N) ##
@@ -50,6 +56,13 @@ Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
 Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
+
+
+## Modificări în 8.0 ##
+*	Au fost eliminate identificatori de fragment din numele fișierului semn de
+  carte, care pot evita problemele în VitalSource Bookshelf ePUB reader.
+*	A fost adăugat un dialog de note pentru asocierea comentariilor pentru
+  semnele de carte salvate și pentru deplasarea la poziția selectată.
 
 ## Modificări în 6.0 ##
 *	Dialogul pentru salvarea unui string a textului pentru căutarea
@@ -103,6 +116,6 @@ specifică, și nu marcajele care economisesc o poziție precisă.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
