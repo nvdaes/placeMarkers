@@ -171,6 +171,9 @@ def getLastSpecificFindText():
 def getFileBookmarks():
 	return getFile("bookmarks", ".pickle")
 
+def getFileTempBookmark():
+	return getFile("bookmarks", ".txt")
+
 def getSavedBookmarks():
 	fileName = getFileBookmarks()
 	try:
@@ -835,6 +838,48 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Place markers file name copied to clipboard"))
 			# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
+
+	def script_saveTempBookmark(self, gesture):
+		obj = api.getFocusObject()
+		treeInterceptor=obj.treeInterceptor
+		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+			obj=treeInterceptor
+		else:
+			gesture.send()
+			return
+		start = obj.makeTextInfo(textInfos.POSITION_ALL)
+		try:
+			end = obj.makeTextInfo(textInfos.POSITION_CARET)
+		except (NotImplementedError, RuntimeError):
+			ui.message(
+				# Translators: message presented when a bookmark cannot be saved.
+				_("Bookmark cannot be saved"))
+			return
+		start.setEndPoint(end, "endToStart")
+		count = len(start.text)
+		fileName = getFileTempBookmark()
+		try:
+			with codecs.open(fileName, "w", "utf-8") as f:
+				f.write(str(count))
+				# Translators: Message presented when a temporary bookmark is saved.
+				ui.message(_("Saved temporary bookmark at position %d" % count))
+		except Exception as e:
+			log.debugWarning("Error saving temporary bookmark", exc_info=True)
+			raise e
+	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+	script_saveTempBookmark.__doc__ = _("Saves the current position as a temporary bookmark.")
+
+	def script_moveToTempBookmark(self, gesture):
+		fileName = getFileTempBookmark()
+		try:
+			with codecs.open(fileName, "r", "utf-8") as f:
+				tempBookmark = int(f.read())
+			moveToBookmark(tempBookmark)
+		except:
+			# Translators: Message presented when a temporary bookmark can't be found.
+			ui.message("Temporary bookmark not found")
+	# Translators: Message presented in input help mode.
+	script_moveToTempBookmark.__doc__ = _("Moves to the temporary bookmark for the current document.")
 
 	__gestures = {
 		"kb:control+shift+NVDA+f": "specificFind",
