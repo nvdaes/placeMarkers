@@ -344,6 +344,9 @@ class NotesDialog(wx.Dialog):
 		# Translators: The label for a button in the Notes dialog.
 		self.saveButton = bHelper.addButton(self, label=_("&Save note"))
 		self.Bind(wx.EVT_BUTTON, self.onSave, self.saveButton)
+		# Translators: The label for a button in the Notes dialog.
+		self.deleteButton = bHelper.addButton(self, label=_("&Delete..."))
+		self.deleteButton.Bind(wx.EVT_BUTTON, self.onDelete)
 		sHelper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK|wx.CANCEL))
 		self.Bind(wx.EVT_BUTTON, self.onOk, id=wx.ID_OK)
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
@@ -367,6 +370,39 @@ class NotesDialog(wx.Dialog):
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
 			raise e
+
+	def onDelete(self, evt):
+		if gui.messageBox(
+			# Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+			_("This bookmark will be permanently deleted. This action cannot be undone."),
+			# Message translated in NVDA core.
+			translate("Confirm Deletion"),
+			wx.OK | wx.CANCEL | wx.ICON_QUESTION, self
+		) != wx.OK:
+			return
+		del self.bookmarks[self.pos]
+		if len(self.bookmarks.keys()) > 0:
+			try:
+				cPickle.dump(self.bookmarks, file(self.fileName, "wb"))
+				self.notesListBox.Delete(self.notesListBox.Selection)
+				self.notesListBox.Selection = 0
+				self.onNotesChange(None)
+				self.notesListBox.SetFocus()
+			except Exception as e:
+				log.debugWarning("Error deleting bookmark", exc_info=True)
+				raise e
+		else:
+			try:
+				os.remove(self.fileName)
+				self.Destroy()
+				wx.CallAfter(gui.messageBox,
+					# Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+					_("No bookmarks"),
+					# Translators: The title of the warning dialog when all bookmarks have been deleted.
+					_("Bookmarks deleted"),
+					wx.OK | wx.ICON_WARNING, None)
+			except WindowsError:
+				pass
 
 	def onOk(self, evt):
 		self.Destroy()
