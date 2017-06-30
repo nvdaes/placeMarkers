@@ -60,8 +60,8 @@ tallentavien paikkamerkkien asemesta sivukohtaista hakua.
 ## Muutokset versiossa 8.0 ##
 *	Osatunnisteet poistettu paikkamerkkitiedostojen nimistä VitalSource
   Bookshelf -ePub-lukijaan liittyvien ongelmien välttämiseksi.
-*	Lisätty Merkinnät-valintaikkuna, jossa on mahdollista liittää
-  tallennettuihin paikkamerkkeihin merkintöjä sekä siirtyä valittuun
+*	Lisätty Muistiinpanot-valintaikkuna, jossa on mahdollista liittää
+  tallennettuihin paikkamerkkeihin muistiinpanoja sekä siirtyä valittuun
   sijaintiin.
 
 ## Muutokset versiossa 7.0 ##

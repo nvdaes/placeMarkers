@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2017-05-07 22:23+0100\n"
+"PO-Revision-Date: 2017-06-23 16:15+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
@@ -88,20 +88,19 @@ msgstr "Przywrócono znaczniki miejsc"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
-msgstr ""
+msgstr "Notatki"
 
 #. Translators: The label of a list box in the Notes dialog.
-#, fuzzy
 msgid "&Bookmarks"
-msgstr "Folder &zakładek"
+msgstr "&Zakładki"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr ""
+msgstr "Not&atka:"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
-msgstr ""
+msgstr "&Zachowaj notatkę"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -221,7 +220,7 @@ msgstr "Brak zakładek"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr ""
+msgstr "Wyświetla okno dialogowe notatek dla określonego dokumentu."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"

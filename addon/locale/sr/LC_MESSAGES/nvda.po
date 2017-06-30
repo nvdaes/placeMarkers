@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: placeMarkers 4.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-19 16:00+1000\n"
-"PO-Revision-Date: 2017-05-03 17:45+0100\n"
-"Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
+"PO-Revision-Date: 2017-06-23 16:08+0100\n"
+"Last-Translator: Nikola Jovic <wwenikola123@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -88,20 +88,19 @@ msgstr "Markeri vraćeni"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
-msgstr ""
+msgstr "Beleške"
 
 #. Translators: The label of a list box in the Notes dialog.
-#, fuzzy
 msgid "&Bookmarks"
-msgstr "Folder &markera"
+msgstr "&MarkeriFolder &markera"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr ""
+msgstr "B&eleška:"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
-msgstr ""
+msgstr "&Sačuvaj belešku"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -219,7 +218,7 @@ msgstr "Nema markera"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr ""
+msgstr "Prikazuje dijalog sa beleškama za trenutni dokument."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
