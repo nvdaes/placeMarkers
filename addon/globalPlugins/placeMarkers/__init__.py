@@ -114,7 +114,10 @@ def moveToBookmark(position):
 			obj=treeInterceptor
 		info = obj.makeTextInfo(textInfos.POSITION_FIRST)
 		info.move(textInfos.UNIT_CHARACTER, position)
-		info.updateCaret()
+		if hasattr(obj,'selection'):
+			obj.selection=info
+		else:
+			info.updateCaret()
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE,1,endPoint="end")
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
