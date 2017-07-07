@@ -56,13 +56,13 @@ therefore in dynamic pages it is better to use the specific search, not
 bookmarks.
 
 
-## Changes for 8.0 ##
+## Änderungen für 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid
   issues in the VitalSource Bookshelf ePUB reader.
 *	Added a Notes dialog, to associate comments for saved bookmarks and move
   to the selected position.
 
-## Changes for 7.0 ##
+## Änderungen für 7.0 ##
 *	The dialog to save a string of text for specific search has been
   removed. This functionality is now included in the Specific search dialog,
   which has been redesigned to allow different actions when pressing the OK
@@ -72,7 +72,7 @@ bookmarks.
 *	Performing a Find Next or Find Previous command in Browse Mode will now
   correctly do a case sensitive search if the original Find was case
   sensitive.
-*	Requires NVDA 2016.4 or later.
+*	Benötigt NVDA 2016.4 oder neuer.
 *	Now you can assign gestures to open the Copy and Restore place markers
   dialogs.
 *	NVDA will present a message to notify when place markers have been copied

@@ -57,7 +57,7 @@
 не закладки которые сохраняют чёткую позицию.
 
 
-## Changes for 8.0 ##
+## Изменения для 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid
   issues in the VitalSource Bookshelf ePUB reader.
 *	Added a Notes dialog, to associate comments for saved bookmarks and move
