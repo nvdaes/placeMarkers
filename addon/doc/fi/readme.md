@@ -23,15 +23,21 @@ ominaisuuksia.
   yhdistelmäruudusta aiemmin tallennettuja hakuja  tai poistaa valitun
   merkkijonon hakuhistoriasta valintaruutua käyttäen. Voit lisäksi valita,
   lisätäänkö muokkausruudun sisältämä teksti hakuhistoriaasi. Valitse
-  lopuksi toiminto seuraavien valintapainikkeiden ryhmästä (Etsi seuraava,
-  Etsi edellinen tai Ei hakua), ja määrittää, suorittaako NVDA kirjainkoon
+  lopuksi toiminto seuraavasta valintapainikeryhmästä (Etsi seuraava, Etsi
+  edellinen tai Ei hakua) ja määritä, suorittaako NVDA kirjainkoon
   huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
-*	Ctrl+Shift+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi.
+*	Control+Shift+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
+  haluat antaa merkille nimen, valitse sijainnista lyhyt tekstipätkä ennen
+  sen tallentamista.
 *	Ctrl+Shift+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
 *	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
 *	Shift+NVDA+K: Siirtää edelliseen paikkamerkkiin.
 *	Ctrl+Shift+K: Kopioi paikkamerkkitiedoston nimen leikepöydälle ilman
   tarkennetta.
+*	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle dokumentille
+  tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
+  merkinnän. Tallenna muutokset painamalla Tallenna muistiinpano. Siirry
+  valittuun sijaintiin painamalla OK.
 
 
 ## Paikkamerkit-alavalikko (NVDA+N) ##
@@ -50,6 +56,14 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten tämän
 vuoksi muuttuvan sisällön sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien asemesta sivukohtaista hakua.
 
+
+## Muutokset versiossa 8.0 ##
+*	Osatunnisteet poistettu paikkamerkkitiedostojen nimistä VitalSource
+  Bookshelf -ePub-lukijaan liittyvien ongelmien välttämiseksi.
+*	Lisätty Muistiinpanot-valintaikkuna, jossa on mahdollista liittää
+  tallennettuihin paikkamerkkeihin muistiinpanoja sekä siirtyä valittuun
+  sijaintiin.
+
 ## Muutokset versiossa 7.0 ##
 *	Merkkijonon sivukohtaiseen hakuun tallentava valintaikkuna on
   poistettu. Tämä toiminnallisuus on sisällytetty Sivukohtainen haku
@@ -59,7 +73,7 @@ tallentavien paikkamerkkien asemesta sivukohtaista hakua.
   ikkunoiden ulkoasua.
 *	Etsi seuraava- tai Etsi edellinen -komento suorittaa nyt selaustilassa
   kirjainkoon huomioivan haun, mikäli alkuperäinen haku oli sellainen.
-*	Edellyttää NVDA:n 2016.4-versiota tai uudempaa.
+*	Edellyttää NVDA 2016.4:ää tai uudempaa.
 *	Paikkamerkkien kopiointi- ja palautusvalintaikkunoille on nyt mahdollista
   määrittää syöte-eleet.
 *	NVDA ilmoittaa, kun paikkamerkkejä on kopioitu tai palautettu omilla
@@ -102,6 +116,6 @@ tallentavien paikkamerkkien asemesta sivukohtaista hakua.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

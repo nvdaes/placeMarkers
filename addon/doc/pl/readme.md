@@ -24,13 +24,19 @@ dokumentu.
   (pomiędzy wyszukaj następny, wyszukaj poprzedni albo nie wyszukuj), i
   określić, czy NVDA ma zrwacać uwagę na wielkość liter. When you press
   okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Zachowuję teraźniejszą pozycję jako zakładkę.
+*	control+shift+NVDA+k: Zapisuje terażniejszą pozycję jako zakładkę. Jeżeli
+  chcesz nadać nazwę tej zakładce, zaznacz jakiś tekst z tej pozycji przed
+  zapisywaniem zakładki.
 *	control+shift+NVDA+delete: Usuwa zakładkę, odnoszącą się do konkretnej
   pozycji.
 *	NVDA+k: Przemieszcza się do następującej zakładki.
 *	shift+NVDA+k: Przemieszcza się do poprzedniej zakładki.
-*	control+shift+k: Copies the file name where the place markers data will be
-  saved to the clipboard, without an extension.
+*	control+shift+k: kopiuję nazwę pliku, w którym dane znacznika miejsc mają
+  być zapisane do schowka, bez rozszerzenia.
+*	alt+NVDA+k: Otwiera okno dialogowe zawierające zakładki dla tego
+  dokumentu. Można napisać notatkę dla każdej zakładki; Naciśnij zapisz
+  zakładkę, aby zapisać zmiany. Wciskając OK, możesz przejść do danej
+  pozycji.
 
 
 ## Podmenu Znaczniki miejsc (NVDA+N) ##
@@ -50,21 +56,28 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+
+## Zmiany dla wersji 8.0 ##
+*	Usunięto identyfikatory fragmentów z nazw plików zakładek, co może
+  spowodować uniknięcie problemów  VitalSource ePUBREADER.
+*	Dodano dialog notatek, aby skojarzyć komentarze zapisanych zakładek i
+  przemieszczać się do danej pozycji.
+
 ## Zmiany dla wersji 7.0 ##
-*	The dialog to save a string of text for specific search has been
-  removed. This functionality is now included in the Specific search dialog,
-  which has been redesigned to allow different actions when pressing the OK
-  button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
+*	Dialog do przeszukiwania określonego łańcuchu tekstu jest usunięty. Ta
+  funkcjonalność jest przeniesiona do okna dialogowego określone
+  wyszukiwanie, który jest zmieniony, aby z niego użytkownicy mogli
+  wypełniać różne komendy.
+*	Wizualna prezentacja dialogów została ulepszona, aby była zgodna z
+  wyświetlanymi dialogami w NVDA.
+*	Przy wywołaniu komendy szukaj następne /poprzednie w trybie przeglądania
+  teraz sprawnie zrobi wyszukiwanie uwzględniające wielkie litery, jeżeli
+  wyszukiwanie oryginalne uwzględniało wielkość liter.
 *	Wymagane NVDA 2016.4 lub nowsze.
-*	Now you can assign gestures to open the Copy and Restore place markers
-  dialogs.
-*	NVDA will present a message to notify when place markers have been copied
-  or restored with the corresponding dialogs.
+*	Teraz można przydzielić zdarzenie wejścia dla okien dialogowych "kopiuj",
+  i "wklej" znaczniki miejsc.
+*	NVDA pokaże wiadomość przy powodzeniu kopiowania lub przywracania
+  znaczników za pomocą określonych okien dialogowych.
 
 ## Zmiany dla wersji 6.0 ##
 * Kiedy funkcje dodatku nie są dostępne, zdarzenia wejścia są wysyłane do
@@ -102,6 +115,6 @@ określone miejsce.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

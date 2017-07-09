@@ -86,6 +86,23 @@ msgstr "Greška pri kopiranju"
 msgid "Place markers restored"
 msgstr "Mjesne oznake su vraćene na zadane vrijedosti."
 
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr ""
+
+#. Translators: The label of a list box in the Notes dialog.
+#, fuzzy
+msgid "&Bookmarks"
+msgstr "&Mapa mjesnih oznaka"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr ""
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr ""
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Kopiraj mjesne oznake"
@@ -197,13 +214,17 @@ msgstr ""
 "Traži niz znakova u tekstu od trenutne pozicije kursora za trenutni "
 "specifičan dokument."
 
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Nema knjižnih oznaka."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr ""
+
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
 msgstr "Knjižna oznaka ne može biti spremljena."
-
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "Ovaj je smještaj već spremljen."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -218,10 +239,7 @@ msgstr "Ne mogu spremiti knjižnu oznaku"
 msgid "Saves the current position as a bookmark."
 msgstr "Sprema trenutnu poziciju kao knjižnu oznaku"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Nema knjižnih oznaka."
-
+#. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
 msgstr "Knjižna oznaka ne može biti izbrisana."
 
@@ -293,6 +311,9 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatak koji omogućuje postavljanje mjesnih oznaka na specifične virtualne "
 "dokumente"
+
+#~ msgid "This position was already saved"
+#~ msgstr "Ovaj je smještaj već spremljen."
 
 #~ msgid "text \"%s\" not found"
 #~ msgstr "tekst \"%s\" Nije pronađen"

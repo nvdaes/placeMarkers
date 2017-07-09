@@ -86,6 +86,23 @@ msgstr "خطأ في النسخ"
 msgid "Place markers restored"
 msgstr "تم استرجاع العلامات المرجعية"
 
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr ""
+
+#. Translators: The label of a list box in the Notes dialog.
+#, fuzzy
+msgid "&Bookmarks"
+msgstr "&مجلد العلامات المرجعية"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr ""
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr ""
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "انسخ العلامات المرجعية"
@@ -196,13 +213,17 @@ msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
 
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "لا يوجد علامات مرجعية"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr ""
+
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
 msgstr "لا يمكن حفظ العلامة المرجعية"
-
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "قد تم حفظ هذا الموضع مسبقا"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -217,10 +238,7 @@ msgstr "لا يمكن حفظ العلامة المرجعية"
 msgid "Saves the current position as a bookmark."
 msgstr "حفظ الموضع الحالي كعلامة مرجعية"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "لا يوجد علامات مرجعية"
-
+#. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
 msgstr "لا يمكن حذف العلامة المرجعية"
 
@@ -290,6 +308,9 @@ msgstr "علامات مرجعية"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "إضافة لوضع علامات مرجعية داخل مستندات نمط التصفح"
+
+#~ msgid "This position was already saved"
+#~ msgstr "قد تم حفظ هذا الموضع مسبقا"
 
 #~ msgid "text \"%s\" not found"
 #~ msgstr "النص \"%s\" غير موجود"

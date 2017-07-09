@@ -29,7 +29,9 @@ Markers.
   successiva, Cerca Precedente o Non Cercare, e specificare se considerare
   le maiuscole o minuscole nella ricerca. Premendo Ok NVDA cercherà la
   stringa digitata.
-*	Control+shift+NVDA+k: salva la posizione corrente come segnaposto.
+*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	Control+Shift+NVDA+Delete: Elimina il segnaposto corrispondente a questa
   posizione.
 *	NVDA+k: vai al segnaposto successivo.
@@ -37,6 +39,9 @@ Markers.
 *	Control+Shift+K: copia negli appunti il nome del file per il quale
   verranno salvati i segnaposti e le ricerche. (Il nome non contiene
   l'estenzione).
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing OK you can move to the selected position.
 
 
 ## Sottomenu Segnaposto (NVDA+N) ##
@@ -56,6 +61,13 @@ accedere a:
 Nota: La posizione del segnalibro è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposti per salvare una posizione precisa.
+
+
+## Changes for 8.0 ##
+*	Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in the VitalSource Bookshelf ePUB reader.
+*	Added a Notes dialog, to associate comments for saved bookmarks and move
+  to the selected position.
 
 ## Novità nella versione 7.0 ##
 *	La finestra di dialogo per salvare una stringa di testo per la ricerca
@@ -107,6 +119,6 @@ non i segnaposti per salvare una posizione precisa.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
