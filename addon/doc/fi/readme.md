@@ -75,7 +75,7 @@ tallentavien paikkamerkkien asemesta sivukohtaista hakua.
   kirjainkoon huomioivan haun, mikäli alkuperäinen haku oli sellainen.
 *	Edellyttää NVDA 2016.4:ää tai uudempaa.
 *	Paikkamerkkien kopiointi- ja palautusvalintaikkunoille on nyt mahdollista
-  määrittää syöte-eleet.
+  määrittää syötekomennot.
 *	NVDA ilmoittaa, kun paikkamerkkejä on kopioitu tai palautettu omilla
   valintaikkunoillaan.
 
@@ -105,8 +105,8 @@ tallentavien paikkamerkkien asemesta sivukohtaista hakua.
   tiedostolle.
 * Korjattu ohjelmavirhe, joka rikkoi lisäosan toiminnan, kun polut
   sisälsivät muita kuin latinalaisia merkkejä.
-* Näppäinyhdistelmien uudelleenmäärittely on nyt mahdollista NVDA:n
-  syöte-eleet-valintaikkunaa käyttäen.
+* Pikanäppäimien uudelleenmäärittely on nyt mahdollista NVDA:n
+  Syötekomennot-valintaikkunaa käyttäen.
 
 ## Muutokset versiossa 1.0 ##
 * Ensimmäinen versio.

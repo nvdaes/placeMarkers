@@ -56,13 +56,13 @@ therefore in dynamic pages it is better to use the specific search, not
 bookmarks.
 
 
-## Changes for 8.0 ##
+## Mudanças na 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid
   issues in the VitalSource Bookshelf ePUB reader.
 *	Added a Notes dialog, to associate comments for saved bookmarks and move
   to the selected position.
 
-## Changes for 7.0 ##
+## Mudanças na 7.0 ##
 *	The dialog to save a string of text for specific search has been
   removed. This functionality is now included in the Specific search dialog,
   which has been redesigned to allow different actions when pressing the OK
