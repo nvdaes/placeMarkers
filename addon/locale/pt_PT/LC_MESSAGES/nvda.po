@@ -8,16 +8,15 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2017-11-10 22:39-0000\n"
-"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"PO-Revision-Date: 2017-12-05 21:44+0000\n"
+"Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; rui.fontes@tiflotecnia.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"
@@ -34,7 +33,7 @@ msgstr "% s copiado para a área de transferência"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
-msgstr "Busca específica"
+msgstr "Procura específica"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
@@ -156,11 +155,11 @@ msgstr "Marcadores e procura"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "Busca e&specífica"
+msgstr "Procura e&specífica"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Abrir a pasta de busca específica:"
+msgstr "Abrir a pasta de procura específica:"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
@@ -188,7 +187,7 @@ msgstr "Restaurar os marcadores de lugar previamente guardados..."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Abrir a pasta de busca específica"
+msgstr "Abrir a pasta de procura específica"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
@@ -210,7 +209,7 @@ msgstr "Procura uma cadeia de texto a partir da posição actual do cursor para 
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "Marcadores"
+msgstr "Sem marcadores"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -303,4 +302,3 @@ msgstr "Marcadores de lugar"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Extra para definir marcadores de lugar em documentos virtuais específicos"
-
