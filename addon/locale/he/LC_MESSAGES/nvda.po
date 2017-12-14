@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 6.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-10-23 16:00+1000\n"
-"PO-Revision-Date: 2017-02-05 01:16+0200\n"
-"Last-Translator:  <shmuel_naaman@yahoo.com>\n"
+"PO-Revision-Date: 2017-07-03 11:09+0300\n"
+"Last-Translator: shmuel_naaman@yahoo.com\n"
 "Language-Team: \n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.0.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -89,20 +89,19 @@ msgstr "סימניות שוחזרו"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
-msgstr ""
+msgstr "הערות"
 
 #. Translators: The label of a list box in the Notes dialog.
-#, fuzzy
 msgid "&Bookmarks"
-msgstr "תיקיית &סימניות"
+msgstr "&סימניות"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr ""
+msgstr "&הערות"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
-msgstr ""
+msgstr "&שמור הערות"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -219,7 +218,7 @@ msgstr "אין סימניות"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr ""
+msgstr "הצג את תיבת הדו-שיח הערות למסמך מסוים."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"

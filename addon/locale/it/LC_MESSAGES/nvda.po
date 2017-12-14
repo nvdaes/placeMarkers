@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-02-03 12:47+0100\n"
+"PO-Revision-Date: 2017-09-25 11:29+0200\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
@@ -88,7 +88,7 @@ msgstr "Segnaposti ripristinati"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 #. Translators: The label of a list box in the Notes dialog.
 #, fuzzy
@@ -97,11 +97,11 @@ msgstr "Cartella Segnaposti"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr ""
+msgstr "Not&a:"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
-msgstr ""
+msgstr "&Salva nota"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -114,10 +114,12 @@ msgid ""
 "\n"
 "\t\tThey will be copied from %s."
 msgstr ""
+"Selezionare una cartella dove salvare un backup dei segnaposti.\n"
+"\t\tSaranno copiati da %s"
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr ""
+msgstr "Cartella per i backup:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
 msgid "Select directory to copy"
