@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 6.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-10-23 16:00+1000\n"
-"PO-Revision-Date: 2017-07-03 11:09+0300\n"
+"PO-Revision-Date: 2017-11-15 13:11+0200\n"
 "Last-Translator: shmuel_naaman@yahoo.com\n"
 "Language-Team: \n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.0.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -49,7 +49,7 @@ msgstr "&הסר מההיסטוריה"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
-msgstr "&מחרוזת לחיפוש"
+msgstr "&מחרוזת לחיפוש:"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Add to history"
@@ -97,7 +97,7 @@ msgstr "&סימניות"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr "&הערות"
+msgstr "&הערות:"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
@@ -175,7 +175,7 @@ msgstr "פותח את תיקיית הסימניות"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "ה&עתקת תיקיית הסימניות"
+msgstr "ה&עתקת תיקיית הסימניות..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -183,7 +183,7 @@ msgstr "גיבוי הסימניות"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "&שחזור הסימניות"
+msgstr "&שחזור הסימניות..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
@@ -191,21 +191,21 @@ msgstr "משחזר סימניות שנשמרו בעבר"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "פותח את תיקיית החיפוש הממוקד"
+msgstr "פותח את תיקיית החיפוש הממוקד."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "פותח את תיקיית הסימניות"
+msgstr "פותח את תיקיית הסימניות."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Copy dialog of %s."
-msgstr "הפעל את תיבת הדו-שיח של העתקה %s"
+msgstr "הפעל את תיבת הדו-שיח של העתקה %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
-msgstr "הפעל את תיבת הדוח-שיח של שחזור %s"
+msgstr "הפעל את תיבת הדוח-שיח של שחזור %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
@@ -231,11 +231,11 @@ msgstr "מיקום שמור עבור התו %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "kלא ניתן לשמור את הסימנייה"
+msgstr "לא ניתן לשמור את הסימנייה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "שומר את המיקום הנוכחי כסימנייה"
+msgstr "שומר את המיקום הנוכחי כסימנייה."
 
 #. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
@@ -255,7 +255,7 @@ msgstr "לאניתן למחוק את הסימנייה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "מחיקת הסימנייה הנוכחית"
+msgstr "מחיקת הסימנייה הנוכחית."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
@@ -276,7 +276,7 @@ msgstr "הסימנייה הבאה לא נמצאה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "מעבר לסימנייה הבאה"
+msgstr "מעבר לסימנייה הבאה."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
@@ -284,7 +284,7 @@ msgstr "הסימנייה הקודמת לא נמצאה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "מעבר לסימנייה הקודמת"
+msgstr "מעבר לסימנייה הקודמת."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -296,7 +296,7 @@ msgstr "שם הקובץ הועתק כסימנייה בזכרון הזמני"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני"
+msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
