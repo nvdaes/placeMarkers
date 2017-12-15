@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-7.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-06-23 17:47+0100\n"
+"PO-Revision-Date: 2017-12-14 08:05-0800\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: es_ES\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -311,43 +311,3 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para establecer las marcas en páginas Web y documentos virtuales "
 "específicos."
-
-#~ msgid "This position was already saved"
-#~ msgstr "Esta posición ya estaba guardada"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "Texto %s no encontrado"
-
-#~ msgid "Find Error"
-#~ msgstr "Error de búsqueda"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Selecciona la carpeta donde guardar las marcas"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Selecciona la carpeta de las marcas que deseas restaurar"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Teclea el texto que deseas guardar, o elimina cualquier texto si quieres "
-#~ "borrarlo de anteriores búsquedas guardadas"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Guardar texto de búsqueda específica"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Guarda un fragmento de texto para una búsqueda específica."
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Fichero para búsqueda específica no encontrado"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Textos guardados para buscar:"
-
-#~ msgid "Delete"
-#~ msgstr "Eliminar"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&Sensible a las mayúsculas"

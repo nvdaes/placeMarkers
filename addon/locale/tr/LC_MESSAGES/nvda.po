@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '8.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-09-27 14:45+0300\n"
+"PO-Revision-Date: 2017-12-14 09:11-0800\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: tr <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -313,50 +313,3 @@ msgstr "Sanal dokümanlar için yerimi eklentisi"
 
 msgid "Case &sensitive"
 msgstr "Büyük &küçük harf duyarlı"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Bu konum zaten kaydedilmiş"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "metin \"%s\" bulunamadı"
-
-#~ msgid "Find Error"
-#~ msgstr "arama hatası"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Yerimlerinizi yedeklemek için klasör seçin"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Yerimlerinizi geri almak için klasör seçin"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr "Kaydetmek için metin yazın ya da önceden kaydedileni silin"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Özel arama için metin kaydı"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Özel arama için metin kaydeder"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Özel arama dosyası bulunamadı"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Özel arama için metin kaydı"
-
-#~ msgid "Delete"
-#~ msgstr "Sil"
-
-#~ msgid "Open &documentation"
-#~ msgstr "&Dokümantasyonu aç"
-
-#~ msgid "Open documentation for current language"
-#~ msgstr "Mevcut dil için dokümantasyonu aç"
-
-#~ msgid "Opens documentation for %s"
-#~ msgstr "%s için dokümantasyonu açar"
-
-#~ msgid "Type the text you wish to find"
-#~ msgstr "Aramak için metin girin"

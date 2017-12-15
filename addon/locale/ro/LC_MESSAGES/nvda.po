@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 6.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2016-02-12 16:00+1000\n"
-"PO-Revision-Date: 2017-06-23 09:56+0300\n"
+"PO-Revision-Date: 2017-12-14 09:08-0800\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
@@ -314,46 +314,3 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Supliment pentru plasarea de marcaje de locație pe documente virtuale "
 "specifice"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Această poziție a fost salvată deja"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "textul \"%s\" nu a fost găsit"
-
-#~ msgid "Find Error"
-#~ msgstr "Eroare la căutare"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr ""
-#~ "Selectați un dosar pentru copierea marcajelor dumneavoastră de locație "
-#~ "salvate"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr ""
-#~ "Selectați dosarul cu marcaje de locație pe care doriți să-l restabiliți"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Tastați textul pe care îl doriți salvat sau ștergeți textul dacă doriți "
-#~ "să îl înlăturați din căutarile anterior salvate."
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Salvează text pentru căutare specifică"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Salvează un șir cu text pentru o căutare specifică"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Fișierul pentru căutarea specifică nu a fost găsit"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Texte salvate pentru căutare:"
-
-#~ msgid "Delete"
-#~ msgstr "Ștergere"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&Apreciere majuscule"

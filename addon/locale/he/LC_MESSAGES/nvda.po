@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 6.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-10-23 16:00+1000\n"
-"PO-Revision-Date: 2017-11-15 13:11+0200\n"
+"PO-Revision-Date: 2017-12-14 08:49-0800\n"
 "Last-Translator: shmuel_naaman@yahoo.com\n"
 "Language-Team: \n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.9\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -307,43 +307,3 @@ msgstr "סימניות"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "תוסף זה מיועד להגדיר סימניות במסמכים וירטואלים נבחרים"
-
-#~ msgid "This position was already saved"
-#~ msgstr "מיקום זה כבר שמור"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "המחרוזת %s לא נמצאה"
-
-#~ msgid "Find Error"
-#~ msgstr "שגיאת חיפוש"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "נא לבחור תיקייה שבתוכה תתבצע שמירת הסימניות"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "נא לבחור את תיקיית הסימניות שברצונך לשחזר"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "נא להקיש את הטקסט שברצונך לשמור,  או מחק טקסט שברצונך להסיר מהחיפושים "
-#~ "הקודמים"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "שמירת הטקסט לחיפוש ממוקד"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "שמירת המחרוזת שהוקשה לשם חיפוש ממוקד."
-
-#~ msgid "File for specific search not found"
-#~ msgstr "לא נמצא קובץ העונה לחיפוש הממוקד."
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "מחרוזות שנשמרו לחיפוש"
-
-#~ msgid "Delete"
-#~ msgstr "מחיקה"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "אותיות &רישיות"

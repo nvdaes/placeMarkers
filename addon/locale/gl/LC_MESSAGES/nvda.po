@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '7.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-06-23 17:46+0100\n"
+"PO-Revision-Date: 2017-12-14 08:56-0800\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
 "Language-Team: \n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -310,43 +310,3 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Complemento para fixar marcas en documentos virtuais específicos"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Esta posición xa foi gardada"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "texto \"%s\" non atopado"
-
-#~ msgid "Find Error"
-#~ msgstr "Erro Atopado"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Seleccionar un cartafol para copiar as marcas gardadas"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Selecciona o cartafol de marcas que desexas restaurar"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Teclea o texto que desexes gardar, ou elimina calquer texto se queres "
-#~ "borralo das anteriores buscas gardadas"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Gardar texto para a busca específica"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Garda unha secuencia de texto para unha busca específica."
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Non se atopou o ficheiro para a busca específica"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Texto gardado para a busca:"
-
-#~ msgid "Delete"
-#~ msgstr "Eliminar"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&Sensible ás maiúsculas"

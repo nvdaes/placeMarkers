@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2017-06-23 16:15+0100\n"
+"PO-Revision-Date: 2017-12-14 09:06-0800\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -311,43 +311,3 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek pozwalający ustawić znaczniki miejsca wewnątrz określonych "
 "dokumentów wirtualnych"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Ta pozycja już została zapisana"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "nie znaleziono tekstu \"%s\" "
-
-#~ msgid "Find Error"
-#~ msgstr "Błąd wyszukiwania"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Wybierz folder do skopiowania znaczników miejsca"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Wybierz folder znaczników miejsca, który chcesz przywrócić"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Wpisz tekst, który chcesz zachować, albo usuń tekst, jeśli chcesz "
-#~ "skasować go z listy poprzednio zapisanych wyszukiwań"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Zapisz tekst określonego wyszukiwania"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Zapisuje ciąg znaków określonego wyszukiwania."
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Nie znaleziono pliku określonego wyszukiwania"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "zapisane teksty do wyszukania:"
-
-#~ msgid "Delete"
-#~ msgstr "Usuń"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "Uwzględniaj &wielkość liter"

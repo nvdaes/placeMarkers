@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-06-26 17:08+0530\n"
+"PO-Revision-Date: 2017-12-14 09:11-0800\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
+"Your configuration folder for NVDA contains files that seem to be derived from a previous "
+"version of this add-on. Do you want to update it?"
 msgstr ""
-"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் "
-"கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
+"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் கொண்டிருப்பதாக தோன்றுகிறது. "
+"கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -113,8 +113,7 @@ msgid ""
 "\n"
 "\t\tThey will be copied from %s."
 msgstr ""
-"தங்களின் தற்போதைய இடக்குறிப்பிகளின் காப்பினைச் சேமிக்க வேண்டியக் கோப்புரையைத் தெரிவுச் "
-"செய்க.\n"
+"தங்களின் தற்போதைய இடக்குறிப்பிகளின் காப்பினைச் சேமிக்க வேண்டியக் கோப்புரையைத் தெரிவுச் செய்க.\n"
 "\n"
 "\t\t இடக்குறிப்பிகள் இங்கிருந்து படியெடுக்கப்படும்: %s"
 
@@ -137,8 +136,7 @@ msgid ""
 "\n"
 "\t\tThey will be copied to %s."
 msgstr ""
-"தங்களின் முந்தைய இடக்குறிப்பிகளின் காப்பினை மீட்டமைக்க வேண்டியக் கோப்புரையைத் தெரிவுச் "
-"செய்க.\n"
+"தங்களின் முந்தைய இடக்குறிப்பிகளின் காப்பினை மீட்டமைக்க வேண்டியக் கோப்புரையைத் தெரிவுச் செய்க.\n"
 "\n"
 "\t\t இடக்குறிப்பிகள் இவ்விடத்தில் படியெடுக்கப்படும்: %s"
 
@@ -209,10 +207,8 @@ msgid "Activates the Restore dialog of %s."
 msgstr "%s-இன் மீட்டமைக்கவும் உரையாடலைச் செயற்படுத்துகிறது"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds a text string from the current cursor position for a specific document."
-msgstr ""
-"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
+msgid "finds a text string from the current cursor position for a specific document."
+msgstr "ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
@@ -309,45 +305,3 @@ msgstr "இடக் குறிப்பிகள்"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
-
-#~ msgid "This position was already saved"
-#~ msgstr "நூற்குறி  ஒன்று இந்த நிலையில் ஏற்கனவே சேமிக்கப்பட்டுள்ளது "
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "உரை \"%s\" காணப்படவில்லை"
-
-#~ msgid "Find Error"
-#~ msgstr "கண்டுபிடித்தலில் பிழை"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr ""
-#~ "சேமிக்கப்பட்டுள்ள தங்களின்  இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறையை தெரிவு "
-#~ "செய்க"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "மீட்டெடுக்கப்பட வேண்டிய கோப்புறையைத் தெரிவு செய்க"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "சேமிக்கப்பட வேண்டிய உரையைத் தட்டச்சிடவும், அல்லது முன்னதாக சேமிக்கப்பட்டுள்ள உரையை நீக்க "
-#~ "வேண்டுமானால், அவ்வுரையை அழிக்கவும்"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "குறிப்பான தேடுதலுக்கு உரையை சேமிக்கவும்"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "குறிப்பான தேடுதலுக்கு ஒரு உரைச் சரத்தை சேமிக்கிறது"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "குறிப்பாக தேடப்பட வேண்டிய உரை ஏதும் காணப்படவில்லை"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "தேடுதலுக்கான சேமிக்கப்பட்ட உரைகள்: "
-
-#~ msgid "Delete"
-#~ msgstr "அழிக்கவும்"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "வகையுணர்ி (&S)"

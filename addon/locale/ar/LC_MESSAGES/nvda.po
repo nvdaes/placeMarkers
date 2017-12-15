@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-17 20:50+0200\n"
-"PO-Revision-Date: 2017-04-20 13:34+0200\n"
+"PO-Revision-Date: 2017-12-14 06:54-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -308,43 +308,3 @@ msgstr "علامات مرجعية"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "إضافة لوضع علامات مرجعية داخل مستندات نمط التصفح"
-
-#~ msgid "This position was already saved"
-#~ msgstr "قد تم حفظ هذا الموضع مسبقا"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "النص \"%s\" غير موجود"
-
-#~ msgid "Find Error"
-#~ msgstr "وقع خطأ"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "اختيار مجلد لنسخ علاماتك المرجعية المحفوظة"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "اختيار مجلد العلامات المرجعية المراد استعادته"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "اكتب النص الذي تود الاحتفاظ به أو احذف أي نص إذا أردت حذفه من نتائج البحث "
-#~ "المحفوظة مسبقا. "
-
-#~ msgid "Save text for specific search"
-#~ msgstr "حفظ نص يتعلق ببحث معين"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "حفظ كلمة البحث"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "ملف بحث معين غير موجود"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "حفظ كلمة البحث"
-
-#~ msgid "Delete"
-#~ msgstr "حذف"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&حساس لحالة الأحرف"

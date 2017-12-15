@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 4.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-19 16:00+1000\n"
-"PO-Revision-Date: 2017-06-23 16:08+0100\n"
+"PO-Revision-Date: 2017-12-14 09:10-0800\n"
 "Last-Translator: Nikola Jovic <wwenikola123@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.9\n"
+"Language-Team: \n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -307,41 +307,3 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Dodatak za postavljanje markera na virtuelnim dokumentima"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Ova pozicija je već sačuvana"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "Tekst \"%s\" nije pronađen"
-
-#~ msgid "Find Error"
-#~ msgstr "Greška pretrage"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Izaberi folder za kopiranje trenutno sačuvanih markera"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Izaberite folder sa markerima za vraćanje"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr "Upišite tekst koji želite da sačuvate ili obrišite sačuvani tekst"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Sačuvaj tekst za specifičnu pretragu"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Čuva tekst za specifičnu pretragu"
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Datoteka za specifičnu pretragu nije pronađena"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Sačuvani tekstovi za pretragu"
-
-#~ msgid "Delete"
-#~ msgstr "&Obriši"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "Osetljivo na veličinu teksta"

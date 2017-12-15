@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-08-05 01:33+0100\n"
+"PO-Revision-Date: 2017-12-14 09:09-0800\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -310,43 +310,3 @@ msgstr "Prostorske označbe"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek za postavitev prostorskih označb v izbranih navideznih dokumentih"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Ta položaj je že shranjen"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr " \"%s\" besedilo se ni našlo"
-
-#~ msgid "Find Error"
-#~ msgstr "Napaka Najdi"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Izberite mapo za preslikavo vaših shranjenih prostorskih označb"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Izberite mapo s prostorskimi označbami, ki jo želite obnoviti"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Natipkajte besedilo, ki ga želite shraniti ali zbrišite katerikoli del le-"
-#~ "tega, ki ga želite odstraniti iz prej shranjenega iskanja"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Shrani besedilo za posebno iskanje"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Shrani niz besedila za posebno iskanje."
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Datoteka za posebno iskanje se ni našla"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Shranjeno besedilo za iskanje:"
-
-#~ msgid "Delete"
-#~ msgstr "Izbriši"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&Razlikovanje malih in velikih črk"

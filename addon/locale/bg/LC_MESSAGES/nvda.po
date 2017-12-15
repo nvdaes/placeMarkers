@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2017-06-23 09:56+0200\n"
+"PO-Revision-Date: 2017-12-14 06:59-0800\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -313,43 +313,3 @@ msgstr "Позиционни маркери"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Добавка за задаване на позиционни маркери за определени виртуални документи"
-
-#~ msgid "This position was already saved"
-#~ msgstr "Тази позиция вече е била запазена"
-
-#~ msgid "text \"%s\" not found"
-#~ msgstr "Текстът \"%s\" не е намерен"
-
-#~ msgid "Find Error"
-#~ msgstr "Грешка при търсене"
-
-#~ msgid "Select a folder for copying your saved place markers"
-#~ msgstr "Изберете папка за копиране на вашите запазени позиционни маркери"
-
-#~ msgid "Select the place markers folder you wish to restore"
-#~ msgstr "Изберете папката с позиционни маркери, която искате да възстановите"
-
-#~ msgid ""
-#~ "Type the text you wish to save, or delete any text if you want to remove "
-#~ "it from the previous saved searches"
-#~ msgstr ""
-#~ "Въведете текста, който искате да запазите, или изтрийте текста, който "
-#~ "искате да премахнете от предишни запазени търсения"
-
-#~ msgid "Save text for specific search"
-#~ msgstr "Запазете текст за конкретно търсене"
-
-#~ msgid "Saves a text string for a specific search."
-#~ msgstr "Запазва текстов низ за конкретно търсене."
-
-#~ msgid "File for specific search not found"
-#~ msgstr "Файлът за конкретно търсене не е намерен"
-
-#~ msgid "Saved texts to search:"
-#~ msgstr "Запазен текст за търсене:"
-
-#~ msgid "Delete"
-#~ msgstr "Изтрий"
-
-#~ msgid "Case &sensitive"
-#~ msgstr "&Зачитане на главни/малки"
