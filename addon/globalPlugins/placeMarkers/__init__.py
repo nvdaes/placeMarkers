@@ -1,14 +1,20 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-#Copyright (C) 2012-2016 Noelia Ruiz Martínez
+#Copyright (C) 2012-2017 Noelia Ruiz Martínez
 # Released under GPL 2
+# Converted to Python 3 by Joseph Lee in 2017
 
-import addonHandler
-import globalPluginHandler
-import api
+try:
+	import cPickle as pickle
+except ImportError:
+	import pickle
+import codecs
 import re
 import os
 import shutil
+import addonHandler
+import globalPluginHandler
+import api
 import config
 import globalVars
 import languageHandler
@@ -19,13 +25,11 @@ from gui import guiHelper
 import wx
 import ui
 import speech
-import cPickle
-import codecs
 import sayAllHandler
 from scriptHandler import willSayAllResume
 from cursorManager import CursorManager
 from logHandler import log
-from skipTranslation import translate
+from .skipTranslation import translate
 
 addonHandler.initTranslation()
 
@@ -125,7 +129,10 @@ def moveToBookmark(position):
 def standardFileName(fileName):
 	fileName.encode("mbcs")
 	notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
-	allowed = re.sub(notAllowed, "", unicode(fileName))
+	try:
+		allowed = re.sub(notAllowed, "", unicode(fileName))
+	except NameError:
+		allowed = re.sub(notAllowed, "", str(fileName))
 	return allowed
 
 def getFile(folder, ext=""):
@@ -177,7 +184,7 @@ def getFileBookmarks():
 def getSavedBookmarks():
 	fileName = getFileBookmarks()
 	try:
-		savedBookmarks = cPickle.load(file(fileName, "r"))
+		savedBookmarks = pickle.load(file(fileName, "r"))
 		if isinstance(savedBookmarks, list):
 			bookmarksDic = {}
 			for bookmark in savedBookmarks:
@@ -327,7 +334,7 @@ class NotesDialog(wx.Dialog):
 		# Translators: The label of a list box in the Notes dialog.
 		notesLabel = _("&Bookmarks")
 		self.bookmarks = getSavedBookmarks()
-		positions = self.bookmarks.keys()
+		positions = list(self.bookmarks.keys())
 		positions.sort()
 		self.pos = positions[0]
 		firstNoteBody = self.bookmarks[self.pos].body
@@ -365,7 +372,7 @@ class NotesDialog(wx.Dialog):
 		note = Note(noteTitle, noteBody)
 		self.bookmarks[self.pos] = note
 		try:
-			cPickle.dump(self.bookmarks, file(self.fileName, "wb"))
+			pickle.dump(self.bookmarks, file(self.fileName, "wb"))
 			self.notesListBox.SetFocus()
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
@@ -517,7 +524,10 @@ class Note(object):
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
-	scriptCategory = unicode(ADDON_SUMMARY)
+	try:
+		scriptCategory = unicode(ADDON_SUMMARY)
+	except NameError:
+		scriptCategory = str(ADDON_SUMMARY)
 
 	def __init__(self):
 		super(globalPluginHandler.GlobalPlugin, self).__init__()
@@ -655,7 +665,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
-		positions = bookmarks.keys()
+		positions = list(bookmarks.keys())
 		if count in positions:
 			noteBody = bookmarks[count].body
 		else:
@@ -663,7 +673,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		bookmarks[count] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
-			cPickle.dump(bookmarks, file(fileName, "wb"))
+			pickle.dump(bookmarks, file(fileName, "wb"))
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
 				_("Saved position at character %d") %count)
@@ -685,7 +695,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		positions = bookmarks.keys()
+		positions = list(bookmarks.keys())
 		if len(positions) == 0:
 			ui.message(
 				# Translators: message presented when the current document doesn't contain bookmarks.
@@ -710,7 +720,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		fileName = getFileBookmarks()
 		if len(positions) > 0:
 			try:
-				cPickle.dump(bookmarks, file(fileName, "wb"))
+				pickle.dump(bookmarks, file(fileName, "wb"))
 				ui.message(
 					# Translators: message presented when a bookmark is deleted.
 					_("Bookmark deleted"))
@@ -742,7 +752,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		positions = bookmarks.keys()
+		positions = list(bookmarks.keys())
 		if len(positions) == 0:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
@@ -786,7 +796,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		positions = bookmarks.keys()
+		positions = list(bookmarks.keys())
 		if len(positions) == 0:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
