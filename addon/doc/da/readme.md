@@ -1,82 +1,85 @@
-# placeMarkers (stedmærker) #
+# placeMarkers (Stedmærker) #
 
 * Forfattere: Noelia, Chris.
 * Download [stabil version][1]
 * download [testversion][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks. It can be used  on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-bookmarks to files whose name is based on the title and URL of the current
-document.  This addon is based on SpecificSearch and Bookmark&Search,
-developed by the same author. You should uninstall them to use this one,
-since they have common keystrokes and features.
+Dette tilføjelsesprogram bruges til at gemme og søge efter bestemte
+tekststrenge på websider eller i dokumenter, som understøtter NVDAs
+gennemsynstilstand. Det kan også bruges til at gemme eller søge efter
+tekststrenge i felter med flere linjer. I dette tilfælde, hvis det ikke er
+muligt at flytte markøren, vil den relevante tekst blive kopieret til
+udklipsholderen, så man kan søge med andre værktøjer. Tilføjelsesprogrammet
+gemmer de valgte strenge og bogmærker til filer der har lignende navne
+svarende til de gemte strenge og bogmærker. Denne tilføjelsespakke er
+baseret på Specific Search og Bookmark Search, der er udviklet af samme
+forfatter. Disse tilføjelser deler tastetryk og funktionalitet, så det
+anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 
 ## Tastaturkommandoer ##
 
-*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
-  saved search; in this dialog you can also select the previously saved
-  searches from a combo box or remove the selected string from the history
-  using a checkbox. You can choose if the text contained in the edit box
-  will be added to the history of your saved texts. Finally, choose an
-  action from the next group of radio buttons (between Search next, Search
-  previous or Don't search), and specify if NVDA will make a case sensitive
-  search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
-  position before saving it.
-*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+*	CTRL+Skift+NVDA+F: Åbner en dialog der viser den seneste søgning. I denne
+  dialog kan du vælge tidligere udførte søgninger fra en comboboks, eller
+  fjerne dem fra historikken ved hjælp af en checkboks. Du kan vælge om
+  teksten i boksen skal tilføjes til historikken af gemte tekster. Endelig
+  skal du vælge en handling fra gruppen af radioknapper (herunder søg
+  fremad, søg bagud eller søg ikke), og dernæst beslutte om NVDA skal gøre
+  forskel på store og små bogstaver under søgningen. Når du trykker på "ok",
+  vil NVDA udføre din søgning.
+*	CTRL+skift+NVDA+k: Gemmer den aktuelle position som et bogmærke. Hvis du
+  vil angive et navn til dette bogmærke, skal du vælge en tekst fra denne
+  position, før du gemmer den.
+*	CTRL+skift+NVDA+delete: Sletter bogmærket, der svarer til den aktuelle
   position.
-*	NVDA+k: Moves to the next bookmark.
-*	shift+NVDA+k: Moves to the previous bookmark.
-*	control+shift+k: Copies the file name where the place markers data will be
-  saved to the clipboard, without an extension.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing OK you can move to the selected position.
+*	NVDA+K: Flytter til det næste bogmærke.
+*	Skift+NVDA+K: Flytter til det forrige bogmærke.
+*	CTRL+Skift+K: Kopierer filnavnet på filen hvor data på stedmærker bliver
+  gemt til Udklipsholderen uden filtypenavn.
+*	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
+  dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
+  at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
+  position.
 
 
 ## Undermenu for stedmærker (NVDA+n) ##
 
-Using the Place markers submenu under NVDA's Preferences menu, you can
-access:
+Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
 
 *	Mappe med specifikke søgninger: Åbner en mappe med tidligere gemte
   specifikke søgninger.
-*	Bookmarks folder: Opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+*	Mappe med bogmærker: Åbner en mappe med de tidligere gemte bogmærker.
+*	Kopier mappe med stedmærker: Du kan gemme en kopi af mappen med bogmærker.
+*	Gendan stedmærker: Du kan gendanne dine bogmærker fra en tidligere gemt
+  mappe med stedmærker.
 
-Note: The bookmark position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-bookmarks.
+Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
+dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
+bogmærker, som gemmer en præcis position.
 
 
-## Changes for 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in the VitalSource Bookshelf ePUB reader.
-*	Added a Notes dialog, to associate comments for saved bookmarks and move
-  to the selected position.
+## Ændringer i 8.0 ##
+*	Fjernet fragmenter af identificeringsstrenge fra filnavne på
+  bogmærker. Dette kan forhindre problemer i VitalSource Bookshelf ePUB
+  reader.
+*	Tilføjet en dialogboks, noter, for at knytte kommentarer til gemte
+  bogmærker og flytte til den valgte placering.
 
-## Changes for 7.0 ##
-*	The dialog to save a string of text for specific search has been
-  removed. This functionality is now included in the Specific search dialog,
-  which has been redesigned to allow different actions when pressing the OK
-  button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
-*	Requires NVDA 2016.4 or later.
-*	Now you can assign gestures to open the Copy and Restore place markers
-  dialogs.
-*	NVDA will present a message to notify when place markers have been copied
-  or restored with the corresponding dialogs.
+## Ændringer i 7,0 ##
+*	Dialogen til at gemme en tekststreng til specifikke søgninger er blevet
+  fjernet. Denne funktionalitet er nu inkluderet i dialogen specifik
+  søgning, som er blevet redesignet til at tillade forskellige handlinger,
+  når du trykker på knappen OK.
+*	Dialogens visuelle præsentation er blevet forbedret og overholder
+  udseendet af de dialoger, der vises i NVDA.
+*	Udføring af en Find næste eller Find forrige kommando i gennemsynstilstand
+  vil nu korrekt udføre en bogstavsøgning der gør forskel på store og små
+  bogstaver, hvis den oprindelige søgning gjorde forskel på store og små
+  bogstaver.
+*	Kræver NVDA 2016.4 eller nyere.
+*	Nu kan du tildele bevægelser til at åbne dialogerne kopier og gendan
+  stedmærker.
+*	NVDA vil informere når stedmærker er blevet kopieret eller gendannet med
+  de tilsvarende dialoger.
 
 ## Ændringer i 6.0 ##
 * Når funktionerne i tilføjelsesprogrammet ikke kan bruges, bliver
