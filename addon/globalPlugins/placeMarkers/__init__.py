@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-#Copyright (C) 2012-2017 Noelia Ruiz Martínez
+#Copyright (C) 2012-2018 Noelia Ruiz Martínez
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 
@@ -34,13 +34,11 @@ from .skipTranslation import translate
 addonHandler.initTranslation()
 
 ### Constants
-ADDON_DIR = os.path.join(os.path.dirname(__file__), "..", "..")  # The root of the addon folder
-ADDON_INSTANCE = addonHandler.Addon(ADDON_DIR)
-ADDON_SUMMARY = ADDON_INSTANCE.manifest['summary']
 PLACE_MARKERS_PATH = os.path.join(os.path.dirname(__file__), "savedPlaceMarkers").decode("mbcs")
 SEARCH_FOLDER = os.path.join(PLACE_MARKERS_PATH, "search")
 BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
 CONFIG_PATH = globalVars.appArgs.configPath
+ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
 def createSearchFolder():
 	if os.path.isdir(SEARCH_FOLDER):
