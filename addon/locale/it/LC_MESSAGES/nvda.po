@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 09:02-0800\n"
+"PO-Revision-Date: 2018-02-05 11:33+0100\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -91,9 +91,8 @@ msgid "Notes"
 msgstr "Note"
 
 #. Translators: The label of a list box in the Notes dialog.
-#, fuzzy
 msgid "&Bookmarks"
-msgstr "Cartella Segnaposti"
+msgstr "Segnaposti"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
@@ -219,7 +218,7 @@ msgstr "Nessun Segnaposto;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr ""
+msgstr "Mostra la finestra di dialogo delle note per un documento specifico."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"

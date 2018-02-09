@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '8.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 09:11-0800\n"
+"PO-Revision-Date: 2018-02-05 09:05+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: tr <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -304,7 +304,7 @@ msgstr "Yerimleri için kullanılan dosya adını panoya kopyalar"
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Yerim&leri"
+msgstr "Yerimleri"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
