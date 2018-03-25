@@ -809,6 +809,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
+		positions.sort()
 		positions.reverse()
 		for pos in positions:
 			if pos < count:
