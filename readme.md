@@ -16,7 +16,7 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 *	NVDA+k: Moves to the next bookmark.
 *	shift+NVDA+k: Moves to the previous bookmark.
 *	control+shift+k: Copies the file name where the place markers data will be saved to the clipboard, without an extension.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing OK you can move to the selected position.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing Delete you can remove the selected bookmark. Pressing OK you can move to the selected position.
 
 
 ## Place markers Submenu (NVDA+N) ##
@@ -30,6 +30,9 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
+
+## Changes for 9.0
+*	Bookmarks can be deleted from the Notes dialog.
 
 ## Changes for 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid issues in the VitalSource Bookshelf ePUB reader.
