@@ -394,7 +394,7 @@ class NotesDialog(wx.Dialog):
 		del self.bookmarks[self.pos]
 		if len(self.bookmarks.keys()) > 0:
 			try:
-				cPickle.dump(self.bookmarks, file(self.fileName, "wb"))
+				pickle.dump(self.bookmarks, file(self.fileName, "wb"))
 				self.notesListBox.Delete(self.notesListBox.Selection)
 				self.notesListBox.Selection = 0
 				self.onNotesChange(None)
