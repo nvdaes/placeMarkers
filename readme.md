@@ -34,7 +34,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 
 ## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows the system cursor. (#i6).
+*	When moving to a bookmark from the Notes dialog, the review cursor follows the system cursor.
 *	The command to select the previous bookmark works properly again.
 *	Bookmarks can be deleted from the Notes dialog.
 *	Now you can assign gestures to save and move to a temporary bookmark for each document.
