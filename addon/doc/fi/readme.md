@@ -18,7 +18,7 @@ ominaisuuksia.
 
 ## Näppäinkomennot: ##
 
-*	Ctrl+Shift+NVDA+F: Avaa muokkausruudun sisältävän valintaikkunan, joka
+*	Ctrl+Vaihto+NVDA+F: Avaa muokkausruudun sisältävän valintaikkunan, joka
   näyttää viimeksi tallennetun haun. Tässä ikkunassa voit myös valita
   yhdistelmäruudusta aiemmin tallennettuja hakuja  tai poistaa valitun
   merkkijonon hakuhistoriasta valintaruutua käyttäen. Voit lisäksi valita,
@@ -26,13 +26,13 @@ ominaisuuksia.
   lopuksi toiminto seuraavasta valintapainikeryhmästä (Etsi seuraava, Etsi
   edellinen tai Ei hakua) ja määritä, suorittaako NVDA kirjainkoon
   huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
-*	Control+Shift+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
+*	Ctrl+Vaihto+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
   haluat antaa merkille nimen, valitse sijainnista lyhyt tekstipätkä ennen
   sen tallentamista.
-*	Ctrl+Shift+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
+*	Ctrl+Vaihto+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
 *	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
-*	Shift+NVDA+K: Siirtää edelliseen paikkamerkkiin.
-*	Ctrl+Shift+K: Kopioi paikkamerkkitiedoston nimen leikepöydälle ilman
+*	Vaihto+NVDA+K: Siirtää edelliseen paikkamerkkiin.
+*	Ctrl+Vaihto+K: Kopioi paikkamerkkitiedoston nimen leikepöydälle ilman
   tarkennetta.
 *	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle dokumentille
   tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
