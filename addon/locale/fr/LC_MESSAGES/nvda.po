@@ -105,6 +105,25 @@ msgstr "Not&e :"
 msgid "&Save note"
 msgstr "&Enregistrer note"
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Pas de marqueur"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "Marqueur supprimé"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Copier les marqueurs de position"
@@ -218,10 +237,6 @@ msgstr ""
 "Rechercher un fragment de texte à partir de la position actuelle du curseur "
 "dans un document particulier."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Pas de marqueur"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Afficher le dialogue Notes pour un document spécifique."
@@ -305,6 +320,20 @@ msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr ""
 "Copie dans le presse-papiers le nom du fichier courant contenant les "
 "marqueurs de position."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Sauvegarder la position courante comme marqueur."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

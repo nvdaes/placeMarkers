@@ -34,10 +34,12 @@ URL-ul documentului curent.
 *	shift+NVDA+k: Deplasează la semnul de carte precedent.
 *	control+shift+k: Copiază pe planșetă numele fișierului unde data place
   markers va fi salvată, fără o extensie.
-*	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
-  document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
-  „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
-  vă deplasați la poziția selectată.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
+*	Not assigned: Saves a position as a temporary bookmark.
+*	Not assigned: Moves to the temporary bookmark for the current document.
 
 
 ## Submeniul Place markers (NVDA+N) ##
@@ -57,6 +59,14 @@ Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
 
+
+## Changes for 9.0
+*	When moving to a bookmark from the Notes dialog, the review cursor follows
+  the system cursor.
+*	The command to select the previous bookmark works properly again.
+*	Bookmarks can be deleted from the Notes dialog.
+*	Now you can assign gestures to save and move to a temporary bookmark for
+  each document.
 
 ## Modificări în 8.0 ##
 *	Au fost eliminate identificatori de fragment din numele fișierului semn de

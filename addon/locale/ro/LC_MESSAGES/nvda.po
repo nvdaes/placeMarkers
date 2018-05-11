@@ -103,6 +103,25 @@ msgstr "&Notă:"
 msgid "&Save note"
 msgstr "Salvare notă"
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Fără semne de carte"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "Semn de carte șters"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Copiază locația marcajelor"
@@ -216,10 +235,6 @@ msgstr ""
 "găsește un șir de text de la poziția curentă a cursorului pentru un anumit "
 "document."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Fără semne de carte"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Arată dialogul notelor pentru un document specificat."
@@ -302,6 +317,20 @@ msgstr "Numele fișierului marcajelor de locație copiat în planșetă"
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr ""
 "Copiază numele fișierului curent pentru marcaje de locație în planșetă."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Salvează poziția curentă drept semn de carte"
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

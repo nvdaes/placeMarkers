@@ -102,6 +102,25 @@ msgstr "&Napomena "
 msgid "&Save note"
 msgstr "&Spremi napomenu "
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Nema knjižnih oznaka."
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "Knjižna oznaka izbrisana"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Kopiraj mjesne oznake"
@@ -213,10 +232,6 @@ msgstr ""
 "Traži niz znakova u tekstu od trenutne pozicije kursora za trenutni "
 "specifičan dokument."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Nema knjižnih oznaka."
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Prikaži dijaloški okvir napomena za specifični dokument."
@@ -298,6 +313,20 @@ msgstr "Ime datoteke za mjesne oznake kopirano u međuspremnik"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Kopira ime trenutne datoteke za mjesne oznake u međuspremnik."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Sprema trenutnu poziciju kao knjižnu oznaku"
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

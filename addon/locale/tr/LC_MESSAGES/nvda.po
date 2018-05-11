@@ -105,6 +105,25 @@ msgstr "No&t:"
 msgid "&Save note"
 msgstr "Notu kayd&et"
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Yerimi bulunmuyor"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "Yerimi silindi"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Yerimlerini kopyala"
@@ -215,10 +234,6 @@ msgid ""
 msgstr ""
 "Özel bir belge içinde imlecin mevcut konumundan itibaren özel bir metin arar"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Yerimi bulunmuyor"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Belli bir belgeyle ilgili notlar iletişim kutusunu gösterir."
@@ -301,6 +316,20 @@ msgstr "Yerimi dosya adı panoya kopyalandı"
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Yerimleri için kullanılan dosya adını panoya kopyalar"
 
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Mevcut konumu yerimi olarak kaydeder"
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
+
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
@@ -311,5 +340,5 @@ msgstr "Yerimleri"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Sanal dokümanlar için yerimi eklentisi"
 
-msgid "Case &sensitive"
-msgstr "Büyük &küçük harf duyarlı"
+#~ msgid "Case &sensitive"
+#~ msgstr "Büyük &küçük harf duyarlı"

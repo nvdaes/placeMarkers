@@ -41,8 +41,13 @@ des raccourcis et des caractéristiques communes.
   position seront enregistrées dans le presse-papiers, sans l'extension.
 *	Alt+NVDA+k : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
   document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
-  Enregistrer note pour enregistrer les modifications. En appuyant sur OK
-  vous pouvez vous déplacer à la position sélectionnée.
+  Enregistrer note pour enregistrer les modifications. En appuyant sur
+  Supprimer vous pouvez supprimer le marqueur sélectionné. En appuyant sur
+  OK vous pouvez vous déplacer à la position sélectionnée.
+*	Non assigné : Enregistrer la position actuelle en tant que marqueur
+  temporaire.
+*	Non assigné : Ce déplacer au marqueur temporaire pour le document en
+  cours.
 
 
 ## Sous-menu des marqueurs (NVDA+N) ##
@@ -62,6 +67,15 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique pour marquer une position particulière, pas les marqueurs.
 
+
+## Changements pour la version 9.0
+*	Lorsque vous déplacez un marqueur dans le dialogue Notes, le curseur de
+  revue suit le curseur système.
+*	La commande permettant de sélectionner le marqueur précédent fonctionne à
+  nouveau correctement.
+*	Les marqueurs peuvent être supprimés depuis le dialogue Notes.
+*	Vous pouvez maintenant assigner des gestes pour sauvegarder et déplacer un
+  marqueur temporaire pour chaque document.
 
 ## Changements pour la version 8.0 ##
 *	Identificateurs de fragment Supprimé pour les noms de fichiers  des
