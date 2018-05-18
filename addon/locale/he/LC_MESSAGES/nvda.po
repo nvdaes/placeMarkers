@@ -103,6 +103,25 @@ msgstr "&הערות:"
 msgid "&Save note"
 msgstr "&שמור הערות"
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "אין סימניות"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "הסימנייה נמחקה"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "העתק סימניות"
@@ -212,10 +231,6 @@ msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "אין סימניות"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "הצג את תיבת הדו-שיח הערות למסמך מסוים."
@@ -297,6 +312,20 @@ msgstr "שם הקובץ הועתק כסימנייה בזכרון הזמני"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "שומר את המיקום הנוכחי כסימנייה."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

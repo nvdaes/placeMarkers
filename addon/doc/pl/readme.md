@@ -33,10 +33,12 @@ dokumentu.
 *	shift+NVDA+k: Przemieszcza się do poprzedniej zakładki.
 *	control+shift+k: kopiuję nazwę pliku, w którym dane znacznika miejsc mają
   być zapisane do schowka, bez rozszerzenia.
-*	alt+NVDA+k: Otwiera okno dialogowe zawierające zakładki dla tego
-  dokumentu. Można napisać notatkę dla każdej zakładki; Naciśnij zapisz
-  zakładkę, aby zapisać zmiany. Wciskając OK, możesz przejść do danej
-  pozycji.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
+*	Not assigned: Saves a position as a temporary bookmark.
+*	Not assigned: Moves to the temporary bookmark for the current document.
 
 
 ## Podmenu Znaczniki miejsc (NVDA+N) ##
@@ -56,6 +58,14 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+
+## Changes for 9.0
+*	When moving to a bookmark from the Notes dialog, the review cursor follows
+  the system cursor.
+*	The command to select the previous bookmark works properly again.
+*	Bookmarks can be deleted from the Notes dialog.
+*	Now you can assign gestures to save and move to a temporary bookmark for
+  each document.
 
 ## Zmiany dla wersji 8.0 ##
 *	Usunięto identyfikatory fragmentów z nazw plików zakładek, co może

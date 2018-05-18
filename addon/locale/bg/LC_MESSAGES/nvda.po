@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2017-12-14 06:59-0800\n"
+"PO-Revision-Date: 2018-05-11 09:57+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -105,6 +105,25 @@ msgstr "&Бележка:"
 msgid "&Save note"
 msgstr "&Запиши бележката"
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Изтрий..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+"Този маркер ще бъде изтрит безвъзвратно. Действието не може да бъде отменено."
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Няма маркери"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Маркерите са изтрити"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Копиране на позиционните маркери"
@@ -159,7 +178,7 @@ msgstr "Позиционни &маркери"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Отметки и меню за търсене"
+msgstr "Маркери и меню за търсене"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
@@ -171,11 +190,11 @@ msgstr "Отваря папката за конкретно търсене"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "Папка с &отметки"
+msgstr "Папка с &маркери"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Отваря папката с отметки"
+msgstr "Отваря папката с маркери"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
@@ -199,8 +218,8 @@ msgstr "Отваря папката за конкретно търсене"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Отваря папката с отметки"
 
+msgstr "Отваря папката с маркери"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Copy dialog of %s."
@@ -217,17 +236,13 @@ msgid ""
 msgstr ""
 "Търси текстов низ от текущата позиция на курсора за конкретен документ."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Няма отметки"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Показва диалога за бележки за определен документ"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "Отметката не може да бъде запазена"
+msgstr "Маркерът не може да бъде запазен"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -236,39 +251,39 @@ msgstr "Запазена позиция на знак %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Отметката не може да бъде запазена"
+msgstr "Маркерът не може да бъде запазен"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Запазва текущата позиция като отметка."
+msgstr "Запазва текущата позиция като маркер."
 
 #. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
-msgstr "Отметката не може да бъде изтрита"
+msgstr "Маркерът не може да бъде изтрит"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "Няма избрана отметка"
+msgstr "Няма избран маркер"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Отметката е изтрита"
+msgstr "Маркерът е изтрит"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Отметката не може да бъде изтрита"
+msgstr "Маркерът не може да бъде изтрит"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Изтрива текущата отметка"
+msgstr "Изтрива текущия маркер"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Няма намерени отметки"
+msgstr "Няма намерени маркери"
 
 #. Translators: message presented when cannot find any bookmarks.
 msgid "Cannot find any bookmarks"
-msgstr "Не бяха намерени никакви отметки"
+msgstr "Не бяха намерени никакви маркери"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -277,19 +292,19 @@ msgstr "Позиция: знак %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Няма следваща отметка"
+msgstr "Няма следващ маркер"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Премества курсора до следваща отметка"
+msgstr "Премества курсора до следващ маркер"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "Няма предишна отметка"
+msgstr "Няма предишен маркер"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Премества курсора до предишна отметка"
+msgstr "Премества курсора до предишен маркер"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -302,6 +317,19 @@ msgstr "Името на файла с позиционните маркери е
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Копира името на файла с текущите позиционни маркери в клипборда."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Запазен временен маркер на позиция %d"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Запазва текущата позиция като временен маркер."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Преминава към временния маркер за текущия документ."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

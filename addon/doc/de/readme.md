@@ -37,10 +37,12 @@ URLs der angezeigten Dokumente.
 *	STRG+Umschalt+k: Kopiert den Dateinamen (ohne Dateierweiterung), unter
   welchem die Daten der Lesezeichen in der Zwischenablage gespeichert
   werden.
-*	alt+NVDA+k: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
-  Lesezeichen. Sie können für jedes Lesezeichen eine Notiz schreiben, indem
-  sie auf Notiz speichern klicken. Mit der Taste OK können Sie zur gewählten
-  Position springen.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
+*	Not assigned: Saves a position as a temporary bookmark.
+*	Not assigned: Moves to the temporary bookmark for the current document.
 
 
 ## Lesezeichen Untermenü (nvda+n) ##
@@ -59,6 +61,14 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+
+## Changes for 9.0
+*	When moving to a bookmark from the Notes dialog, the review cursor follows
+  the system cursor.
+*	The command to select the previous bookmark works properly again.
+*	Bookmarks can be deleted from the Notes dialog.
+*	Now you can assign gestures to save and move to a temporary bookmark for
+  each document.
 
 ## Änderungen in 8.0 ##
 *	Fragment-Identifikatoren aus den Dateinamen der Lesezeichen

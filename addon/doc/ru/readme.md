@@ -37,7 +37,10 @@
   saved to the clipboard, without an extension.
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
   can write a note for each bookmark; press Save note to save
-  changes. Pressing OK you can move to the selected position.
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
+*	Not assigned: Saves a position as a temporary bookmark.
+*	Not assigned: Moves to the temporary bookmark for the current document.
 
 
 ## Подменю Закладки (NVDA+N) ##
@@ -56,6 +59,14 @@
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
 
+
+## Changes for 9.0
+*	When moving to a bookmark from the Notes dialog, the review cursor follows
+  the system cursor.
+*	The command to select the previous bookmark works properly again.
+*	Bookmarks can be deleted from the Notes dialog.
+*	Now you can assign gestures to save and move to a temporary bookmark for
+  each document.
 
 ## Изменения для 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid

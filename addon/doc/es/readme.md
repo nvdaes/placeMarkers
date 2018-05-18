@@ -40,6 +40,8 @@ teclas y características.
   documento. Puedes escribir una nota para cada marca; pulsa Guardar Nota
   para guardar cambios. Pulsando Aceptar puedes moverte al a la posición
   seleccionada.
+*	Sin asignar: guarda la posición actual como una marca temporal.
+*	Sin asignar: Se mueve a la marca temporal para el documento actual.
 
 
 ## Submmenú Place markers (NVDA+N) ##
@@ -59,6 +61,15 @@ Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
 
+
+## Cambios para 9.0
+*	Al moverse a una marca desde el cuadro de diálogo Notas, El cursor de
+  revisión sigue al cursor del sistema.
+*	La orden para seleccionar la marca anterior funciona de nuevo
+  adecuadamente.
+*	Las marcas pueden eliminarse desde el cuadro de diálogo Notas.
+*	Ahora puedes asignar gestos para guardar y moverte a una marca temporal
+  para cada documento.
 
 ## Cambios para 8.0 ##
 *	Eliminados fragmentos de identificadores de nombres de ficheros de

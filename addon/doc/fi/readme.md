@@ -27,8 +27,8 @@ ominaisuuksia.
   edellinen tai Ei hakua) ja määritä, suorittaako NVDA kirjainkoon
   huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
 *	Ctrl+Vaihto+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
-  haluat antaa merkille nimen, valitse sijainnista lyhyt tekstipätkä ennen
-  sen tallentamista.
+  haluat antaa sille nimen, valitse sijainnista lyhyt tekstipätkä ennen
+  paikkamerkin tallentamista.
 *	Ctrl+Vaihto+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
 *	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
 *	Vaihto+NVDA+K: Siirtää edelliseen paikkamerkkiin.
@@ -36,8 +36,11 @@ ominaisuuksia.
   tarkennetta.
 *	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle dokumentille
   tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
-  merkinnän. Tallenna muutokset painamalla Tallenna muistiinpano. Siirry
-  valittuun sijaintiin painamalla OK.
+  muistiinpanon. Tallenna muutokset painamalla Tallenna muistiinpano. Voit
+  poistaa valitun paikkamerkin painamalla Delete. Siirry valittuun
+  sijaintiin painamalla OK.
+*	Ei määritetty: Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi.
+*	Ei määritetty: Siirtää tilapäiseen kirjanmerkkiin nykyisessä dokumentissa.
 
 
 ## Paikkamerkit-alavalikko (NVDA+N) ##
@@ -56,6 +59,14 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten tämän
 vuoksi muuttuvan sisällön sivuilla on parasta käyttää tarkan sijainnin
 tallentavien paikkamerkkien asemesta sivukohtaista hakua.
 
+
+## Muutokset versiossa 9.0
+*	Tarkastelukohdistin seuraa järjestelmän kohdistinta siirryttäessä
+  paikkamerkkiin Muistiinpanot-valintaikkunasta.
+*	Edellisen paikkamerkin valitseva komento toimii jälleen asianmukaisesti.
+*	Paikkamerkkejä on mahdollista poistaa Muistiinpanot-valintaikkunasta.
+*	Voit nyt määrittää kullekin dokumentille syötekomennot paikkamerkkien
+  tallentamista ja niihin siirtymistä varten.
 
 ## Muutokset versiossa 8.0 ##
 *	Osatunnisteet poistettu paikkamerkkitiedostojen nimistä VitalSource

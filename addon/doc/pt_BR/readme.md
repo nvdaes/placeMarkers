@@ -35,10 +35,12 @@ têm teclas de atalho e recursos em comum.
 *	shift+NVDA+k: Moves para o marcador anterior.
 *	control+shift+k: Copia para a área de transferência o nome do arquivo no
   qual serão salvos os dados dos marcadores, sem a extensão.
-*	alt+NVDA+k: Abre um diálogo com os marcadores salvos para este
-  documento. Pode escrever uma nota para cada marcador; pressione salvar
-  notas para salvar as alterações. Pressionando OK você pode mover para a
-  posição selecionada.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
+*	Not assigned: Saves a position as a temporary bookmark.
+*	Not assigned: Moves to the temporary bookmark for the current document.
 
 
 ## Submenu Marcadores (NVDA+N) ##
@@ -56,6 +58,14 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a busca específica e não
 marcadores.
 
+
+## Changes for 9.0
+*	When moving to a bookmark from the Notes dialog, the review cursor follows
+  the system cursor.
+*	The command to select the previous bookmark works properly again.
+*	Bookmarks can be deleted from the Notes dialog.
+*	Now you can assign gestures to save and move to a temporary bookmark for
+  each document.
 
 ## Mudanças na 8.0 ##
 *	Removidos identificadores de fragmentos dos nomes dos arquivos de

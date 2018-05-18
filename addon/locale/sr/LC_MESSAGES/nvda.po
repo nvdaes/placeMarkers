@@ -10,12 +10,12 @@ msgstr ""
 "POT-Creation-Date: 2014-12-19 16:00+1000\n"
 "PO-Revision-Date: 2017-12-14 09:10-0800\n"
 "Last-Translator: Nikola Jovic <wwenikola123@gmail.com>\n"
+"Language-Team: \n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.9\n"
-"Language-Team: \n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -101,6 +101,25 @@ msgstr "B&eleška:"
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
 msgstr "&Sačuvaj belešku"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Nema markera"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "Marker je obrisan"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -212,10 +231,6 @@ msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "Traži tekst za specifični dokument od trenutne pozicije kursora."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Nema markera"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Prikazuje dijalog sa beleškama za trenutni dokument."
@@ -297,6 +312,20 @@ msgstr "Ime datoteke markera kopirano u privremenu memoriju"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Kopira ime datoteke markera u privremenu memoriju"
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Čuva trenutnu poziciju kao marker"
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

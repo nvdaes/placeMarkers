@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 09:09-0800\n"
+"PO-Revision-Date: 2018-05-17 04:19+0100\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -101,6 +101,24 @@ msgstr "Belež&ka:"
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
 msgstr "&Shrani beležko"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Izbriši..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "Ta zaznamek se bo trajno izbrisal. Ta dejavnost je nepovratna."
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Ni zaznamkov"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Zaznamki izbrisani"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -214,10 +232,6 @@ msgid ""
 msgstr ""
 "Najde niz besedila od trenutnega položaja utripalke v izbranem dokumentu."
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Ni zaznamkov"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Pokaži pogovorno okno beležk za izbran navidezen dokument."
@@ -299,6 +313,19 @@ msgstr "Ime datoteke prostorskih označb preslikano v odložišče"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Preslika ime trenutne datoteke s prostorskimi označbami v odložišče."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Začasni zaznamek se je shranil na položaju %d"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Shrani trenutni položaj kot začasni zaznamek."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Se pomakne na začasni zaznamek v trenutnem dokumentu."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

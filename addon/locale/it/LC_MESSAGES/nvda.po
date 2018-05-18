@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-02-05 11:33+0100\n"
+"PO-Revision-Date: 2018-05-11 14:14+0200\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
@@ -101,6 +101,26 @@ msgstr "Not&a:"
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
 msgstr "&Salva nota"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Elimina..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+"Questo segnalibro sarà eliminato in maniera permanente. L'azione non può "
+"essere annullata."
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Nessun Segnaposto;"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Segnaposti cancellati;"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -212,10 +232,6 @@ msgid ""
 msgstr ""
 "Trova del testo a partire dalla posizione del cursore in documenti specifici;"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Nessun Segnaposto;"
-
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Mostra la finestra di dialogo delle note per un documento specifico."
@@ -297,6 +313,19 @@ msgstr "Nome del file del segnaposto copiato negli appunti;"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "Copia il nome del file del segnaposto atuale negli appunti"
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Segnalibro temporaneo salvato alla posizione %d"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Salva la posizione corrente come Segnaposto temporaneo."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Vai al segnalibro temporaneo per il documento corrente."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

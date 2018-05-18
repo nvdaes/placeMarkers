@@ -35,10 +35,12 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 *	Skift+NVDA+K: Flytter til det forrige bogmærke.
 *	CTRL+Skift+K: Kopierer filnavnet på filen hvor data på stedmærker bliver
   gemt til Udklipsholderen uden filtypenavn.
-*	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
-  dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
-  at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
-  position.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
+*	Not assigned: Saves a position as a temporary bookmark.
+*	Not assigned: Moves to the temporary bookmark for the current document.
 
 
 ## Undermenu for stedmærker (NVDA+n) ##
@@ -56,6 +58,14 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
+
+## Changes for 9.0
+*	When moving to a bookmark from the Notes dialog, the review cursor follows
+  the system cursor.
+*	The command to select the previous bookmark works properly again.
+*	Bookmarks can be deleted from the Notes dialog.
+*	Now you can assign gestures to save and move to a temporary bookmark for
+  each document.
 
 ## Ændringer i 8.0 ##
 *	Fjernet fragmenter af identificeringsstrenge fra filnavne på

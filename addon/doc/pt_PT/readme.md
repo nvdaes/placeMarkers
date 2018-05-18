@@ -38,8 +38,10 @@ comuns.
   lugar serão guardados para a área de transferência, sem uma extensão.
 *	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores guardados para
   este documento. Pode escrever uma nota para cada marcador; pressione
-  guardar nota para guardar as alterações. Pressionando OK, Pode mover-se
-  para a posição selecionada.
+  "guardar nota", para guardar as alterações. Pressionando OK, Pode mover-se
+  para a posição seleccionada.
+*	Não atribuído: salva uma posição como um marcador temporário.
+*	Não atribuído: Move para o marcador temporário do documento actual.
 
 
 ## Submenu marcadores (NVDA + N) ##
@@ -56,6 +58,15 @@ Usando o submenu de Marcadores, no menu Preferências do NVDA, pode aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
+
+## Alterações para 9.0
+*	Ao mover-se para um marcador da caixa de diálogo Notas, o cursor de
+  revisão segue o cursor do sistema.
+*	O comando para seleccionar o marcador anterior funciona, novamente, de
+  modo correcto.
+*	Os marcadores podem ser excluídos a partir da caixa de diálogo de Notas.
+*	Agora, pode atribuir comandos para guardar e mover para um marcador
+  temporário para cada documento.
 
 ## Alterações para 8.0 ##
 *	Foram removidos Identificadores de fragmentos de nomes de marcadores, que

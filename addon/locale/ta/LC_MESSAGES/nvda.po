@@ -19,11 +19,11 @@ msgstr ""
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived from a previous "
-"version of this add-on. Do you want to update it?"
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் கொண்டிருப்பதாக தோன்றுகிறது. "
-"கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
+"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் "
+"கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -102,6 +102,25 @@ msgstr "குறிப்பு (&E)"
 msgid "&Save note"
 msgstr "குறிப்பினைச் சேமிக்கவும் (&S)"
 
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr ""
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "நூற்குறிகள் ஏதுமில்லை"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "நூற்குறி அழிக்கப்பட்டது"
+
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "இடக் குறிப்பிகளைப் படியெடுக்கவும்"
@@ -113,7 +132,8 @@ msgid ""
 "\n"
 "\t\tThey will be copied from %s."
 msgstr ""
-"தங்களின் தற்போதைய இடக்குறிப்பிகளின் காப்பினைச் சேமிக்க வேண்டியக் கோப்புரையைத் தெரிவுச் செய்க.\n"
+"தங்களின் தற்போதைய இடக்குறிப்பிகளின் காப்பினைச் சேமிக்க வேண்டியக் கோப்புரையைத் தெரிவுச் "
+"செய்க.\n"
 "\n"
 "\t\t இடக்குறிப்பிகள் இங்கிருந்து படியெடுக்கப்படும்: %s"
 
@@ -136,7 +156,8 @@ msgid ""
 "\n"
 "\t\tThey will be copied to %s."
 msgstr ""
-"தங்களின் முந்தைய இடக்குறிப்பிகளின் காப்பினை மீட்டமைக்க வேண்டியக் கோப்புரையைத் தெரிவுச் செய்க.\n"
+"தங்களின் முந்தைய இடக்குறிப்பிகளின் காப்பினை மீட்டமைக்க வேண்டியக் கோப்புரையைத் தெரிவுச் "
+"செய்க.\n"
 "\n"
 "\t\t இடக்குறிப்பிகள் இவ்விடத்தில் படியெடுக்கப்படும்: %s"
 
@@ -207,12 +228,10 @@ msgid "Activates the Restore dialog of %s."
 msgstr "%s-இன் மீட்டமைக்கவும் உரையாடலைச் செயற்படுத்துகிறது"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "finds a text string from the current cursor position for a specific document."
-msgstr "ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
-
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "நூற்குறிகள் ஏதுமில்லை"
+msgid ""
+"finds a text string from the current cursor position for a specific document."
+msgstr ""
+"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -295,6 +314,20 @@ msgstr "இடக் குறிப்பிகளின் கோப்பு�
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr "இடக் குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "தற்போதைய நிலையை ஒரு நூற்குறியாக சேமிக்கிறது"
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
