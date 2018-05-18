@@ -14,11 +14,14 @@ import os
 import shutil
 import addonHandler
 import globalPluginHandler
+import appModuleHandler
 import api
 import config
 import globalVars
 import languageHandler
 import textInfos
+from cursorManager import CursorManager
+from browseMode import BrowseModeDocumentTreeInterceptor
 import controlTypes
 import gui
 from gui import guiHelper
@@ -66,54 +69,56 @@ def doFindText(text, reverse=False, caseSensitive=False):
 		return
 	obj=api.getFocusObject()
 	treeInterceptor=obj.treeInterceptor
-	if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj=treeInterceptor
-		CursorManager._lastFindText = text
-		CursorManager._lastCaseSensitivity = caseSensitive
+		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive)
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
-	try:
-		info=obj.makeTextInfo(textInfos.POSITION_CARET)
-	except (NotImplementedError, RuntimeError):
-		info=obj.makeTextInfo(textInfos.POSITION_FIRST)
-	try:
-		res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
-	except WindowsError:
-		wx.CallAfter(gui.messageBox,
-			# Message translated in NVDA core.
-			translate('text "%s" not found') % text,
-			# Message translated in NVDA core.
-			translate("Find Error"),
-			wx.OK|wx.ICON_ERROR)
-	except:
-		if api.copyToClip(text):
-			# Translators: message presented when a string of text has been copied to the clipboard.
-			ui.message(_("%s copied to clipboard") % text)
-		return
-	if res:
-		if hasattr(obj,'selection'):
-			obj.selection=info
-		else:
-			info.updateCaret()
-		speech.cancelSpeech()
-		info.move(textInfos.UNIT_LINE,1,endPoint="end")
-		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 	else:
-		wx.CallAfter(gui.messageBox,
-			# Message translated in NVDA core.
-			translate('text "%s" not found') % text,
-			# Message translated in NVDA core.
-			translate("Find Error"),
-			wx.OK|wx.ICON_ERROR)
+		CursorManager._lastFindText = text
+		CursorManager._lastCaseSensitivity = caseSensitive
+		try:
+			info=obj.makeTextInfo(textInfos.POSITION_CARET)
+		except (NotImplementedError, RuntimeError):
+			info=obj.makeTextInfo(textInfos.POSITION_FIRST)
+		try:
+			res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
+		except WindowsError:
+			wx.CallAfter(gui.messageBox,
+				# Message translated in NVDA core.
+				translate('text "%s" not found') % text,
+				# Message translated in NVDA core.
+				translate("Find Error"),
+				wx.OK|wx.ICON_ERROR)
+		except:
+			if api.copyToClip(text):
+				# Translators: message presented when a string of text has been copied to the clipboard.
+				ui.message(_("%s copied to clipboard") % text)
+			return
+		if res:
+			if hasattr(obj,'selection'):
+				obj.selection=info
+			else:
+				info.updateCaret()
+			speech.cancelSpeech()
+			info.move(textInfos.UNIT_LINE,1,endPoint="end")
+			speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+		else:
+			wx.CallAfter(gui.messageBox,
+				# Message translated in NVDA core.
+				translate('text "%s" not found') % text,
+				# Message translated in NVDA core.
+				translate("Find Error"),
+				wx.OK|wx.ICON_ERROR)
 
 def doFindTextUp(text, caseSensitive=False):
 	doFindText(text, reverse=True, caseSensitive=caseSensitive)
 
 def moveToBookmark(position):
-		obj = api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
-			obj=treeInterceptor
+	obj = api.getFocusObject()
+	treeInterceptor=obj.treeInterceptor
+	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
+		obj=treeInterceptor
 		info = obj.makeTextInfo(textInfos.POSITION_FIRST)
 		info.move(textInfos.UNIT_CHARACTER, position)
 		if hasattr(obj,'selection'):
@@ -273,9 +278,9 @@ class SpecificSearchDialog(wx.Dialog):
 		if actionToPerform < 2:  # Search
 			caseSensitive = self.caseSensitiveCheckBox.Value
 			if actionToPerform == 0:
-				wx.CallLater(100, doFindText, text, caseSensitive=caseSensitive)
+				wx.CallLater(1000, doFindText, text, caseSensitive=caseSensitive)
 			else:
-				wx.CallLater(100, doFindTextUp, text, caseSensitive=caseSensitive)
+				wx.CallLater(1000, doFindTextUp, text, caseSensitive=caseSensitive)
 		if self.addCheckBox.Value or self.removeCheckBox.Value:
 			savedStrings = self.savedTexts
 			if self.removeCheckBox.Value:
@@ -654,10 +659,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
-			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
 				gesture.send()
 				return
-		wx.CallAfter(self.popupSpecificSearchDialog)
+			obj = treeInterceptor
+		gui.mainFrame.prePopup()
+		d = SpecificSearchDialog(gui.mainFrame)
+		d.Show()
+		gui.mainFrame.postPopup()
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
 
@@ -674,6 +683,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_activateNotesDialog(self, gesture):
 		obj=api.getFocusObject()
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
 			gesture.send()
@@ -684,6 +697,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_saveBookmark(self, gesture):
 		obj = api.getFocusObject()
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -782,6 +799,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_selectNextBookmark(self, gesture):
 		obj = api.getFocusObject()
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -826,6 +847,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_selectPreviousBookmark(self, gesture):
 		obj = api.getFocusObject()
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
