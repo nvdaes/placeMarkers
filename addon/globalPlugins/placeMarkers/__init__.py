@@ -662,11 +662,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
 				gesture.send()
 				return
-			obj = treeInterceptor
-		gui.mainFrame.prePopup()
-		d = SpecificSearchDialog(gui.mainFrame)
-		d.Show()
-		gui.mainFrame.postPopup()
+		self.popupSpecificSearchDialog()
 	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
 
@@ -914,6 +910,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def script_saveTempBookmark(self, gesture):
 		obj = api.getFocusObject()
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -943,6 +943,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	script_saveTempBookmark.__doc__ = _("Saves the current position as a temporary bookmark.")
 
 	def script_moveToTempBookmark(self, gesture):
+		obj = api.getFocusObject()
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
+		treeInterceptor=obj.treeInterceptor
+		if not(hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+			gesture.send()
+			return
 		fileName = getFileTempBookmark()
 		try:
 			with codecs.open(fileName, "r", "utf-8") as f:
