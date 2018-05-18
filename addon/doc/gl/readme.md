@@ -34,12 +34,12 @@ combinacións de teclas e características.
 *	shift+NVDA+k: move á marca anterior.
 *	control+shift+k: copia o nome do ficheiro onde se gardarán os datos dos
   marcadores ao portapapeis, sen unha extensión.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	alt+NVDA+k: abre un diálogo coas marcas gardadas para este
+  documento. Podes escreber unha nota para cada marca; preme Gardar Nota
+  para guardar cambios. Pulsando Aceptar puedes moverte al a la posición
+  seleccionada.
+*	Sen asignar: garda a posición actual coma unha marca temporal.
+*	Sen asignar: Móvese á marca temporal para o documento actual.
 
 
 ## Submenú Place markers (NVDA+N) ##
@@ -59,13 +59,13 @@ páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
 
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## Cambios para 9.0
+*	Ao se mover a unha marca dende a Caixa de diálogo Notas, o cursor de
+  revisión segue ao cursor do sistema.
+*	A orde para selecionar a marca anterior funciona de novo adecuadamente.
+*	As marcas poden borrarse dende a Caixa de diálogo Notas.
+*	Agora podes asignar xestos para gardar e moverte a unha marca temporal
+  para cada documento.
 
 ## Cambios para 8.0 ##
 *	Elimináronse os identificadores de fragmentos dos nomes de ficheiro de

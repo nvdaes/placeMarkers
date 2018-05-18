@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-02-05 11:33+0100\n"
+"PO-Revision-Date: 2018-05-11 14:14+0200\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
@@ -104,12 +104,14 @@ msgstr "&Salva nota"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Elimina..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
+"Questo segnalibro sarà eliminato in maniera permanente. L'azione non può "
+"essere annullata."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -117,9 +119,8 @@ msgid "No bookmarks"
 msgstr "Nessun Segnaposto;"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Segnaposto cancellato;"
+msgstr "Segnaposti cancellati;"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -316,16 +317,15 @@ msgstr "Copia il nome del file del segnaposto atuale negli appunti"
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Segnalibro temporaneo salvato alla posizione %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Salva la posizione corrente come Segnaposto."
+msgstr "Salva la posizione corrente come Segnaposto temporaneo."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Vai al segnalibro temporaneo per il documento corrente."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

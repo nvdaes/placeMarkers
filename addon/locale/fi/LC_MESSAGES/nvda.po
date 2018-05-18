@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 08:50-0800\n"
+"PO-Revision-Date: 2018-05-11 09:29+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.6.11\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -105,12 +105,12 @@ msgstr "Ta&llenna muistiinpano"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Poista..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
-msgstr ""
+msgstr "Tämä paikkamerkki poistetaan pysyvästi. Poistoa ei voi perua."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -118,9 +118,8 @@ msgid "No bookmarks"
 msgstr "Ei paikkamerkkejä"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Paikkamerkki poistettu"
+msgstr "Paikkamerkit poistettu"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -275,7 +274,7 @@ msgstr "Poistaa nykyisen paikkamerkin."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Paikkamerkkejä ei löydy"
+msgstr "Paikkamerkkejä ei löytynyt"
 
 #. Translators: message presented when cannot find any bookmarks.
 msgid "Cannot find any bookmarks"
@@ -317,16 +316,15 @@ msgstr "Kopioi nykyisen paikkamerkkitiedoston nimen leikepöydälle."
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Tilapäinen paikkamerkki tallennettu sijaintiin %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Tallentaa nykyisen sijainnin paikkamerkiksi."
+msgstr "Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Siirtää tilapäiseen paikkamerkkiin nykyisessä dokumentissa."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

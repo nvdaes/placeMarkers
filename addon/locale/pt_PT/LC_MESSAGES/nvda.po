@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2017-12-05 21:44+0000\n"
+"PO-Revision-Date: 2018-05-15 19:14+0100\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -106,12 +106,14 @@ msgstr "&Guardar nota"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Apagar..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
+"Este marcador será permanentemente excluído. Esta acção não pode ser "
+"desfeita."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -119,9 +121,8 @@ msgid "No bookmarks"
 msgstr "Sem marcadores"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Marcador apagado"
+msgstr "Marcadores apagados"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -323,16 +324,15 @@ msgstr ""
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Marcador temporário guardado na posição% d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Guarda a posição actual como marcador"
+msgstr "Guarda a posição actual como um marcador temporário"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Move para o marcador temporário do documento actual."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
