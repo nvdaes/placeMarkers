@@ -434,8 +434,7 @@ class CopyDialog(wx.Dialog):
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 
 		# Translators: An informational message displayed in the Copy dialog.
-		dialogCaption=_("""Select a folder to save a backup of your current place markers.\n
-		They will be copied from %s.""" % PLACE_MARKERS_PATH)
+		dialogCaption=_("Select a folder to save a backup of your current place markers.")
 		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
 
 		# Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
@@ -503,8 +502,7 @@ class RestoreDialog(wx.Dialog):
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 
 		# Translators: An informational message displayed in the Restore dialog.
-		dialogCaption=_("""Select a folder to restore a backup of your previous copied place markers.\n
-		They will be copied to %s.""" % PLACE_MARKERS_PATH)
+		dialogCaption=_("Select a folder to restore a backup of your previous copied place markers.")
 		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
 
 		# Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
