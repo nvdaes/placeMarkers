@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2017-12-14 09:06-0800\n"
+"PO-Revision-Date: 2018-05-19 13:43+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -104,12 +104,13 @@ msgstr "&Zachowaj notatkę"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Skasować..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
+"Ten znacznik miejsca będzie skasowany na zawsze. Ta akcja jest nieodwracalna."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -117,9 +118,8 @@ msgid "No bookmarks"
 msgstr "Brak zakładek"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Zakładka usunięta"
+msgstr "Zakładki usunięte"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -318,16 +318,15 @@ msgstr "Kopiuje do schowka nazwę aktualnego pliku znaczników miejsca."
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Tymczasowy znacznik miejsc został zapisany w pozycji %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Zapisuje bieżącą pozycję jako zakładkę."
+msgstr "Zapisuje bieżącą pozycję jako zakładkę tymczasowa."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Przemieszcza do tymczasowego znacznika miejsc w aktualnym dokumencie."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

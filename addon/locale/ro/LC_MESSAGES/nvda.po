@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 6.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2016-02-12 16:00+1000\n"
-"PO-Revision-Date: 2017-12-14 09:08-0800\n"
+"PO-Revision-Date: 2018-05-19 11:52+0300\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -41,7 +41,7 @@ msgstr "Căutare specifică"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "&Texte &salvate:"
+msgstr "&Texte salvate"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
@@ -105,12 +105,13 @@ msgstr "Salvare notă"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Șterge..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
+"Acest semn de carte va fi șters permanent. Această acțiune este ireversibilă."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -118,7 +119,6 @@ msgid "No bookmarks"
 msgstr "Fără semne de carte"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
 msgstr "Semn de carte șters"
 
@@ -140,7 +140,7 @@ msgstr ""
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "Dosar pentru copie de siguranță:"
+msgstr "dosar pentru copie de siguranță:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
 msgid "Select directory to copy"
@@ -164,7 +164,7 @@ msgstr ""
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
-msgstr "Dosarul care conține copia de siguranță:"
+msgstr "dosarul care conține copia de siguranță:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -212,11 +212,11 @@ msgstr "Restaurează marcajele de locație salvate anterior"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Deschide dosarul de căutare specifică"
+msgstr "Deschide dosarul de căutare specifică."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Deschide dosarul semnelor de carte"
+msgstr "Deschide dosarul semnelor de carte."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -241,7 +241,7 @@ msgstr "Arată dialogul notelor pentru un document specificat."
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "Semnul de carte nu poate fi salvat."
+msgstr "Semnul de carte nu poate fi salvat"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -254,7 +254,7 @@ msgstr "Nu se poate salva semnul de carte"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Salvează poziția curentă drept semn de carte"
+msgstr "Salvează poziția curentă drept semn de carte."
 
 #. Translators: Message presented when a bookmark can't be deleted.
 msgid "Bookmark cannot be deleted"
@@ -321,16 +321,15 @@ msgstr ""
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Semn de carte temporar salvar la poziția %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Salvează poziția curentă drept semn de carte"
+msgstr "Salvează poziția curentă drept semn de carte temporar."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Deplasează la semnul de carte temporar pentru documentul curent."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
