@@ -30,8 +30,8 @@ zasnovan je na naslovu i adresi stranice/dokumenta.
   can write a note for each bookmark; press Save note to save
   changes. Pressing Delete you can remove the selected bookmark. Pressing OK
   you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	Nije dodijeljeno: Sprema poziciju kao privremenu zabilješku.
+*	Nije dodijeljeno: Pomiče se na privremenu zabilješku za trenutni dokument.
 
 
 ## Podizbornik Mjesne oznake (NVDA+N)  ##
@@ -51,10 +51,10 @@ dinamičkim stranicama, bolje je koristiti posebnu pretragu, ne zabilješke.
 
 
 ## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
+*	Dok se pomičete na zabilješku iz dijaloškog okvira Napomene, pregledni
+  kursor slijedi kursor sustava.
+*	Naredba za odabir prethodne zabilješke opet radi ispravno.
+*	Zabilješke se mogu brisati u dijaloškom okviru Napomene.
 *	Now you can assign gestures to save and move to a temporary bookmark for
   each document.
 
