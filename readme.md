@@ -33,6 +33,10 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
 
+## Changes for 10.0 ##
+*	In Edge, gestures associated with bookmarks selection, such as NVDA+k, NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of trying to move the cursor to bookmarks, to avoid errors, especially in long documents.
+*	Now specific search is supported in Edge.
+
 ## Changes for 9.0
 *	When moving to a bookmark from the Notes dialog, the review cursor follows the system cursor.
 *	The command to select the previous bookmark works properly again.
