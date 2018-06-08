@@ -50,6 +50,13 @@ Napomena: Pozicija zabilješke bazirana je na broju znakova; nadalje, u
 dinamičkim stranicama, bolje je koristiti posebnu pretragu, ne zabilješke.
 
 
+## Changes for 10.0 ##
+*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
+  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
+  trying to move the cursor to bookmarks, to avoid errors, especially in
+  long documents.
+*	Now specific search is supported in Edge.
+
 ## Changes for 9.0
 *	Dok se pomičete na zabilješku iz dijaloškog okvira Napomene, pregledni
   kursor slijedi kursor sustava.

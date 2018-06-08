@@ -59,6 +59,13 @@ Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
 
+## Alterações para 10.0 ##
+*	No Edge, os comandos associados à selecção de favoritos, como NVDA + k,
+  NVDA + shift + k ou NVDA + alt + k, serão enviados para o aplicativo em
+  vez de tentar mover o cursor para marcadores, para evitar erros,
+  especialmente em documentos longos.
+*	Agora, a pesquisa específica é suportada no Edge.
+
 ## Alterações para 9.0
 *	Ao mover-se para um marcador da caixa de diálogo Notas, o cursor de
   revisão segue o cursor do sistema.

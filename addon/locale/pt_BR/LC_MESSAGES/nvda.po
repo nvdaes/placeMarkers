@@ -128,11 +128,8 @@ msgid "Copy place markers"
 msgstr "Copiar marcadores"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, python-format
-msgid ""
-"Select a folder to save a backup of your current place markers.\n"
-"\n"
-"\t\tThey will be copied from %s."
+#, fuzzy
+msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Selecione uma pasta para salvar cópia dos marcadores atuais.\n"
 "\n"
@@ -151,11 +148,9 @@ msgid "Restore place markers"
 msgstr "Restaurar marcadores"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, python-format
+#, fuzzy
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers.\n"
-"\n"
-"\t\tThey will be copied to %s."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Selecione uma pasta para restaurar cópia de marcadores anteriormente "
 "copiados.\n"

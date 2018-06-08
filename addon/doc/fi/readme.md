@@ -55,10 +55,17 @@ seuraavia toimintoja:
 *	Palauta paikkamerkit: Palauttaa paikkamerkit aiemmin tallennetusta
   paikkamerkkien kansiosta.
 
-Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten tämän
-vuoksi muuttuvan sisällön sivuilla on parasta käyttää tarkan sijainnin
-tallentavien paikkamerkkien asemesta sivukohtaista hakua.
+Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
+sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
+paikkamerkkien asemesta sivukohtaista hakua.
 
+
+## Muutokset versiossa 10.0 ##
+*	Virheiden välttämiseksi (erityisesti pitkissä dokumenteissa)
+  paikkamerkkien valintaan liittyvät syötekomennot, kuten NVDA+K,
+  NVDA+Vaihto+K tai NVDA+Alt+K, lähetetään Edgessä sovellukselle sen sijaan,
+  että yritettäisiin siirtää kohdistinta paikkamerkkeihin.
+*	Sivukohtaista hakua tuetaan nyt Edgessä.
 
 ## Muutokset versiossa 9.0
 *	Tarkastelukohdistin seuraa järjestelmän kohdistinta siirryttäessä

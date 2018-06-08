@@ -59,6 +59,13 @@ páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
 
+## Changes for 10.0 ##
+*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
+  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
+  trying to move the cursor to bookmarks, to avoid errors, especially in
+  long documents.
+*	Now specific search is supported in Edge.
+
 ## Cambios para 9.0
 *	Ao se mover a unha marca dende a Caixa de diálogo Notas, o cursor de
   revisión segue ao cursor do sistema.

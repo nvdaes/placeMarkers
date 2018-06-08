@@ -126,11 +126,8 @@ msgid "Copy place markers"
 msgstr "இடக் குறிப்பிகளைப் படியெடுக்கவும்"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, python-format
-msgid ""
-"Select a folder to save a backup of your current place markers.\n"
-"\n"
-"\t\tThey will be copied from %s."
+#, fuzzy
+msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "தங்களின் தற்போதைய இடக்குறிப்பிகளின் காப்பினைச் சேமிக்க வேண்டியக் கோப்புரையைத் தெரிவுச் "
 "செய்க.\n"
@@ -150,11 +147,9 @@ msgid "Restore place markers"
 msgstr "இடக் குறிப்பிகளை மீட்டமைக்கவும்"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, python-format
+#, fuzzy
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers.\n"
-"\n"
-"\t\tThey will be copied to %s."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "தங்களின் முந்தைய இடக்குறிப்பிகளின் காப்பினை மீட்டமைக்க வேண்டியக் கோப்புரையைத் தெரிவுச் "
 "செய்க.\n"

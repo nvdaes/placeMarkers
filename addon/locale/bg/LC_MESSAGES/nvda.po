@@ -129,11 +129,8 @@ msgid "Copy place markers"
 msgstr "Копиране на позиционните маркери"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, python-format
-msgid ""
-"Select a folder to save a backup of your current place markers.\n"
-"\n"
-"\t\tThey will be copied from %s."
+#, fuzzy
+msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Изберете папка за записване на архивно копие на вашите текущи позиционни "
 "маркери.\n"
@@ -153,11 +150,9 @@ msgid "Restore place markers"
 msgstr "Възстановяване на позиционните маркери"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, python-format
+#, fuzzy
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers.\n"
-"\n"
-"\t\tThey will be copied to %s."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Изберете папка, от която да възстановите архивно копие на вашите предишно "
 "копирани позиционни маркери.\n"
@@ -218,8 +213,8 @@ msgstr "Отваря папката за конкретно търсене"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-
 msgstr "Отваря папката с маркери"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Copy dialog of %s."

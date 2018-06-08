@@ -125,11 +125,8 @@ msgid "Copy place markers"
 msgstr "Preslikava prostorskih označb"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, python-format
-msgid ""
-"Select a folder to save a backup of your current place markers.\n"
-"\n"
-"\t\tThey will be copied from %s."
+#, fuzzy
+msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Izberite mapo, kjer želite imeti varnostno kopijo vaših trenutnih "
 "prostorskih označb.\n"
@@ -149,11 +146,9 @@ msgid "Restore place markers"
 msgstr "Obnovitev prosstorskih označb"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, python-format
+#, fuzzy
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers.\n"
-"\n"
-"\t\tThey will be copied to %s."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Izberite mapo, kamor želite obnoviti prostorske označbe iz prej ustvarjene "
 "varnostne kopije.\n"

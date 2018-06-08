@@ -65,8 +65,15 @@ vous pouvez accéder à :
 
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
-spécifique pour marquer une position particulière, pas les marqueurs.
+spécifique, pas les marqueurs.
 
+
+## Changements pour la version 10.0 ##
+*	Dans Edge, les gestes associés à la sélection de marqueurs tels que
+  NVDA+k, NVDA+maj+k ou NVDA+alt+k, seront envoyés à l'application au lieu
+  d'essayer de déplacer le curseur sur les marqueurs pour éviter les
+  erreurs, en particulier dans de longs documents.
+*	La recherche de texte spécifique est maintenant prise en charge dans Edge.
 
 ## Changements pour la version 9.0
 *	Lorsque vous déplacez un marqueur dans le dialogue Notes, le curseur de

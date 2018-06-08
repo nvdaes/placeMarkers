@@ -59,6 +59,13 @@ dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
 
+## Changes for 10.0 ##
+*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
+  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
+  trying to move the cursor to bookmarks, to avoid errors, especially in
+  long documents.
+*	Now specific search is supported in Edge.
+
 ## Changes for 9.0
 *	When moving to a bookmark from the Notes dialog, the review cursor follows
   the system cursor.
