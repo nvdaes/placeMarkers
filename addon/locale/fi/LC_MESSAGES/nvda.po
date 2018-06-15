@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-05-11 09:29+0200\n"
+"PO-Revision-Date: 2018-06-08 10:13+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -126,12 +126,9 @@ msgid "Copy place markers"
 msgstr "Kopioi paikkamerkit"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Valitse kansio, johon nykyisten paikkamerkkiesi varmuuskopio tallennetaan.\n"
-"\n"
-"\t\tPaikkamerkit kopioidaan kansiosta %s."
+"Valitse kansio, johon nykyisten paikkamerkkiesi varmuuskopio tallennetaan."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -146,13 +143,10 @@ msgid "Restore place markers"
 msgstr "Palauta paikkamerkit"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Valitse kansio, josta aiemmin varmuuskopioimasi paikkamerkit palautetaan.\n"
-"\n"
-"\t\tNe kopioidaan kansioon %s."
+"Valitse kansio, josta aiemmin varmuuskopioimasi paikkamerkit palautetaan."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"

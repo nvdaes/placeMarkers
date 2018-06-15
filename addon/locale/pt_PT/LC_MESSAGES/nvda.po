@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2018-05-15 19:14+0100\n"
+"PO-Revision-Date: 2018-06-08 11:30+0100\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -34,7 +34,7 @@ msgstr "Instalar ou actualizar o extra"
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "% s copiado para a área de transferência"
+msgstr "%s copiado para a área de transferência"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -129,13 +129,10 @@ msgid "Copy place markers"
 msgstr "Copiar marcadores de lugar"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Escolha uma pasta para guardar um backup dos seus marcadores de lugar "
-"actuais. \n"
-"\n"
-"\t \t Eles serão copiados de% s."
+"actuais."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -150,14 +147,11 @@ msgid "Restore place markers"
 msgstr "Repor marcadores de lugar"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Escolha uma pasta para restaurar um backup dos seus marcadores de lugar "
-"anteriormente copiados. \n"
-"\n"
-"\t \t Eles serão copiados para% s."
+"anteriormente copiados."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
@@ -319,7 +313,7 @@ msgstr ""
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr "Marcador temporário guardado na posição% d"
+msgstr "Marcador temporário guardado na posição %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."

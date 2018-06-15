@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers-8.0\n"
+"Project-Id-Version: placeMarkers-10.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 08:11-0800\n"
+"PO-Revision-Date: 2018-06-08 17:59+0200\n"
 "Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language-Team: Michel Such <Michel.such@free.fr>\n"
 "Language: fr_FR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SearchPath-0: C:/Users/User/AppData/Roaming/nvda/addons/"
 "Bookmark&Search/globalPlugins\n"
 "X-Poedit-SearchPath-1: C:/Users/User/AppData/Roaming/nvda/addons/"
@@ -107,12 +107,12 @@ msgstr "&Enregistrer note"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Effacer..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
-msgstr ""
+msgstr "Ce marqueur sera effacé définitivement. Cette action est irréversible."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -120,22 +120,18 @@ msgid "No bookmarks"
 msgstr "Pas de marqueur"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Marqueur supprimé"
+msgstr "Marqueurs supprimés"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Copier les marqueurs de position"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Sélectionner un dossier pour enregistrer une sauvegarde de vos marqueurs de "
-"position actuels.\n"
-"\n"
-"\t\tIls seront copiés à partir de %s."
+"position actuels."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -150,14 +146,11 @@ msgid "Restore place markers"
 msgstr "Restaurer les marqueurs de position"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Sélectionner un dossier pour restaurer une sauvegarde de vos précédents "
-"marqueurs de position copiés.\n"
-"\n"
-"\t\tIls seront copiés dans %s."
+"marqueurs de position copiés."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
@@ -319,16 +312,15 @@ msgstr ""
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Marqueur temporaire à la position %d sauvegardé"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Sauvegarder la position courante comme marqueur."
+msgstr "Sauvegarder la position courante comme marqueur temporaire."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Aller au marqueur temporaire du document courant"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2018-05-11 09:57+0200\n"
+"PO-Revision-Date: 2018-06-08 14:44+0200\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -129,13 +129,10 @@ msgid "Copy place markers"
 msgstr "Копиране на позиционните маркери"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Изберете папка за записване на архивно копие на вашите текущи позиционни "
-"маркери.\n"
-"\n"
-"\t\tТе ще бъдат копирани от %s."
+"маркери."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -150,14 +147,11 @@ msgid "Restore place markers"
 msgstr "Възстановяване на позиционните маркери"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Изберете папка, от която да възстановите архивно копие на вашите предишно "
-"копирани позиционни маркери.\n"
-"\n"
-"\t\tТе ще бъдат копирани в %s."
+"копирани позиционни маркери."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"

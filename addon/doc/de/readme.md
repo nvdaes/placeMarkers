@@ -37,12 +37,14 @@ URLs der angezeigten Dokumente.
 *	STRG+Umschalt+k: Kopiert den Dateinamen (ohne Dateierweiterung), unter
   welchem die Daten der Lesezeichen in der Zwischenablage gespeichert
   werden.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	alt+NVDA+k: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
+  Lesezeichen. Sie können für jedes Lesezeichen eine Notiz schreiben. Mit
+  Klicken auf "Notiz speichern" können Sie die Änderungen speichern. Mit
+  "Entfernen" können Sie das ausgewählte Lesezeichen löschen und mit dem
+  Schalter OK können Sie zur gewählten Position springen.
+*	Nicht zugewiesen: speichert die Position als temporäres Lesezeichen.
+*	Nicht zugewiesen: springt zum temporären Lesezeichen für das aktuelle
+  Dokument.
 
 
 ## Lesezeichen Untermenü (nvda+n) ##
@@ -62,20 +64,24 @@ Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
 
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+## Änderungen in 10.0 ##
+*	In Microsoft Edge, vor allem in langen Dokumenten, werden bestimmte
+  Tastenkombinationen zur Anwendung weitergereicht ohne den Cursor zu einem
+  Lesezeichen zu bewegen, um Fehlermeldungen zu vermeiden. Dies gilt für
+  Tastenkombinationen, die für das Auswählen von Lesezeichen zugewiesen
+  wurden (z.B. NVDA+k, NVDA+Umschalt+k oder NVDA+Alt+k).
+*	Die gezielte Suche nach Lesezeichen funktioniert jetzt auch in Microsoft
+  Edge.
 
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## Änderungen in 9.0
+*	Der NVDA-Cursor folgt dem System-Cursor, wenn Sie aus dem Dialog für
+  Notizen zu einem Lesezeichen springen.
+*	Der Befehl zum Auswählen des vorherigen Lesezeichens funktioniert wieder
+  ordnungsgemäß.
+*	Lesezeichen können aus dem Dialog für Notizen gelöscht werden.
+*	Nun können dokumentspezifische Tastenkombinationen im NVDA Eingabendialog
+  zugewiesen werden, um temporäre Lesezeichen in einem bestimmten Dokument
+  anzusteuern und zu speichern.
 
 ## Änderungen in 8.0 ##
 *	Fragment-Identifikatoren aus den Dateinamen der Lesezeichen

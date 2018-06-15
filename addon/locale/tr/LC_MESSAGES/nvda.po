@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '8.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-05-25 11:06+0300\n"
+"PO-Revision-Date: 2018-06-12 10:21+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: tr <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -128,12 +128,8 @@ msgid "Copy place markers"
 msgstr "Yerimlerini kopyala"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"Mevcut yerimlerinizin yedekleneceği klasörü seçin.\n"
-"\n"
-"\t\tŞuradan kopyalanacak: %s."
+msgstr "Mevcut yerimlerinizin yedekleneceği klasörü seçin."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -148,13 +144,10 @@ msgid "Restore place markers"
 msgstr "Yerimlerini geri yükle"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Daha önce yedeklediğiniz yerimlerini geri yüklemek için bir klasör seçin.\n"
-"\n"
-"\t\tŞuraya kopyalanacak: %s."
+"Daha önce yedeklediğiniz yerimlerini geri yüklemek için bir klasör seçin."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
