@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-05-11 14:14+0200\n"
+"PO-Revision-Date: 2018-06-15 16:00+0200\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
@@ -127,11 +127,8 @@ msgid "Copy place markers"
 msgstr "Copia segnaposti"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"Selezionare una cartella dove salvare un backup dei segnaposti.\n"
-"\t\tSaranno copiati da %s"
+msgstr "Selezionare una cartella dove salvare un backup dei segnaposti."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -146,14 +143,11 @@ msgid "Restore place markers"
 msgstr "Ripristina Segnaposti"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Selezionare una cartella per ripristinare un backup dei segnaposti "
-"precedentemente copiato.\n"
-"\n"
-"\tVerrà copiato in %s"
+"precedentemente copiato."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
