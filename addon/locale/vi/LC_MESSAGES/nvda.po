@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 7.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-24 16:00+1000\n"
-"PO-Revision-Date: 2017-12-14 09:12-0800\n"
+"PO-Revision-Date: 2018-07-06 11:26+0700\n"
 "Last-Translator: Dang Hoai Phuc <danghoaiphuc@gmail.com>\n"
 "Language-Team: \n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.0.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -44,7 +44,7 @@ msgstr "Các văn bản đã &lưu"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
-msgstr "&Xoá khỏi lịch sử"
+msgstr "&Xóa khỏi lịch sử"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
@@ -92,7 +92,7 @@ msgstr "Ghi chú"
 
 #. Translators: The label of a list box in the Notes dialog.
 msgid "&Bookmarks"
-msgstr "Các đánh dấu"
+msgstr "&Các đánh dấu"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
@@ -104,12 +104,12 @@ msgstr "Lưu ghi chú"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Xóa..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
-msgstr ""
+msgstr "Dấu trang này sẽ bị xóa vĩnh viễn. Thao tác này không thể phục hồi."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -126,10 +126,9 @@ msgid "Copy place markers"
 msgstr "Chép điểm đánh dấu"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Chọn thư mục để sao lưu các điểm đánh dấu hiện tại của bạn.\n"
+"Chọn thư mục để sao lưu các điểm đánh dấu hiện thời của bạn.\n"
 "\n"
 "\t\tChúng sẽ được chép từ %s."
 
@@ -165,7 +164,7 @@ msgstr "Chọn thư mục để khôi phục"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "P&lace markers"
+msgstr "Đá&nh dấu"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
@@ -209,7 +208,7 @@ msgstr "Mở thư mục tìm kiếm cụ thể"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Mở thư mục bookmarks"
+msgstr "Mở thư mục dấu trang"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -225,7 +224,7 @@ msgstr "Kích hoạt hộp thoại Khôi Phục của%s."
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"tìm một chuỗi văn bản từ vị trí con trỏ hiện tại cho một tài liệu cụ thể."
+"tìm một chuỗi văn bản từ vị trí con trỏ hiện thời cho một tài liệu cụ thể."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -266,7 +265,7 @@ msgstr "Không thể xóa dấu trang"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Xóa dấu trang hiện tại"
+msgstr "Xóa dấu trang hiện thời"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
@@ -307,12 +306,12 @@ msgstr "Đã chép tên tập tin đánh dấu vào bộ nhớ tạm"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Chép tên của tập tin muốn đánh dấu hiện tại vào bộ  nhớ tạm."
+msgstr "Chép tên của tập tin muốn đánh dấu hiện thời vào bộ  nhớ tạm."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Đã lưu dấu trang tạm thời tại vị trí %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, fuzzy
@@ -321,7 +320,7 @@ msgstr "Lưu vị trí hiện thời thành dấu trang"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Chuyển tới dấu trang tạm thời cho tài liệu hiện tại."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
