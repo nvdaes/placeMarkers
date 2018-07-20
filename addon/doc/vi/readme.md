@@ -1,8 +1,8 @@
 # placeMarkers #
 
 * Tác giả: Noelia, Chris.
-* Tải về [phiên bản stable][1]
-* tải về [phiên bản development][2]
+* Tải về [phiên bản chính thức][1]
+* tải về [phiên bản thử nghiệm][2]
 
 Addon này dùng để lưu lại và tìm kiếm một chuỗi văn bản hay dấu trang cụ
 thể. nó có thể được dùng trên các trang web hay tài liệu trong chế độ duyệt
