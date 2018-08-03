@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 7.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-24 16:00+1000\n"
-"PO-Revision-Date: 2018-07-08 21:34+0700\n"
+"PO-Revision-Date: 2018-07-29 22:47+0700\n"
 "Last-Translator: Cuong Dang Manh <dangmanhcuong@gmail.com>\n"
 "Language-Team: \n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -117,9 +117,8 @@ msgid "No bookmarks"
 msgstr "Không có dấu trang"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Đã xóa dấu trang"
+msgstr "Đã xóa các dấu trang"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -310,9 +309,8 @@ msgid "Saved temporary bookmark at position %d"
 msgstr "Đã lưu dấu trang tạm thời tại vị trí %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Lưu vị trí hiện thời thành dấu trang"
+msgstr "Lưu vị trí hiện thời thành dấu trang."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
