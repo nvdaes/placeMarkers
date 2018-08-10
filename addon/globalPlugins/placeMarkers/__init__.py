@@ -74,41 +74,42 @@ def doFindText(text, reverse=False, caseSensitive=False):
 		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive)
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
-	CursorManager._lastFindText = text
-	CursorManager._lastCaseSensitivity = caseSensitive
-	try:
-		info=obj.makeTextInfo(textInfos.POSITION_CARET)
-	except (NotImplementedError, RuntimeError):
-		info=obj.makeTextInfo(textInfos.POSITION_FIRST)
-	try:
-		res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
-	except WindowsError:
-		wx.CallAfter(gui.messageBox,
-			# Message translated in NVDA core.
-			translate('text "%s" not found') % text,
-			# Message translated in NVDA core.
-			translate("Find Error"),
-			wx.OK|wx.ICON_ERROR)
-	except:
-		if api.copyToClip(text):
-			# Translators: message presented when a string of text has been copied to the clipboard.
-			ui.message(_("%s copied to clipboard") % text)
-		return
-	if res:
-		if hasattr(obj,'selection'):
-			obj.selection=info
-		else:
-			info.updateCaret()
-		speech.cancelSpeech()
-		info.move(textInfos.UNIT_LINE,1,endPoint="end")
-		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 	else:
-		wx.CallAfter(gui.messageBox,
-			# Message translated in NVDA core.
-			translate('text "%s" not found') % text,
-			# Message translated in NVDA core.
-			translate("Find Error"),
-			wx.OK|wx.ICON_ERROR)
+		CursorManager._lastFindText = text
+		CursorManager._lastCaseSensitivity = caseSensitive
+		try:
+			info=obj.makeTextInfo(textInfos.POSITION_CARET)
+		except (NotImplementedError, RuntimeError):
+			info=obj.makeTextInfo(textInfos.POSITION_FIRST)
+		try:
+			res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
+		except WindowsError:
+			wx.CallAfter(gui.messageBox,
+				# Message translated in NVDA core.
+				translate('text "%s" not found') % text,
+				# Message translated in NVDA core.
+				translate("Find Error"),
+				wx.OK|wx.ICON_ERROR)
+		except:
+			if api.copyToClip(text):
+				# Translators: message presented when a string of text has been copied to the clipboard.
+				ui.message(_("%s copied to clipboard") % text)
+			return
+		if res:
+			if hasattr(obj,'selection'):
+				obj.selection=info
+			else:
+				info.updateCaret()
+			speech.cancelSpeech()
+			info.move(textInfos.UNIT_LINE,1,endPoint="end")
+			speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+		else:
+			wx.CallAfter(gui.messageBox,
+				# Message translated in NVDA core.
+				translate('text "%s" not found') % text,
+				# Message translated in NVDA core.
+				translate("Find Error"),
+				wx.OK|wx.ICON_ERROR)
 
 def doFindTextUp(text, caseSensitive=False):
 	doFindText(text, reverse=True, caseSensitive=caseSensitive)
@@ -368,7 +369,7 @@ class NotesDialog(wx.Dialog):
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
 		self.notesListBox.SetFocus()
-		self.CenterOnScreen()
+		self.CentreOnScreen()
 
 	def onNotesChange(self, evt):
 		self.pos = int(self.notesListBox.GetStringSelection().split(" - ")[0])
@@ -455,7 +456,7 @@ class CopyDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.CenterOnScreen()
+		self.CentreOnScreen()
 
 	def onCopy(self, evt):
 		if not self.copyDirectoryEdit.Value:
@@ -525,7 +526,7 @@ class RestoreDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.CenterOnScreen()
+		self.CentreOnScreen()
 
 	def onRestore(self, evt):
 		if not self.restoreDirectoryEdit.Value:
