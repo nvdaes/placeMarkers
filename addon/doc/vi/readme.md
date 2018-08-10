@@ -56,14 +56,14 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
 
-## Các thay đổi cho 10.0 ##
+## Các thay đổi cho phiên bản 10.0 ##
 *	Trong Edge, các thao tác liên quan đến chọn dấu trang như NVDA+k,
   NVDA+shift+k hay NVDA+alt+k sẽ gửi tới ứng dụng thay vì cố gắng chuyển con
   trỏ đến các dấu trang, nhằm tránh gây ra lỗi, đặc biệt là trong các tài
   liệu dài.
 *	Giờ đây đã hỗ trợ tìm kiếm cụ thể trong Edge.
 
-## Các thay đổi cho 9.0
+## Các thay đổi cho phiên bản 9.0
 *	Khi chuyển đến một dấu trang từ hộp thoại ghi chú, con trỏ duyệt đi theo
   con trỏ hệ thống.
 *	Phím lệnh chọn dấu trang trước đã hoạt động trở lại như mong muốn.
@@ -71,13 +71,13 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 *	Giờ đây bạn có thể gán lệnh để lưu và di chuyển đến một dấu trang tạm thời
   cho mỗi tài liệu.
 
-## Các thay đổi cho 8.0 ##
+## Các thay đổi cho phiên bản 8.0 ##
 *	Gỡ bỏ số nhận dạng phân đoạn từ tập tin các dấu trang, nhằm tránh gây ra
   lỗi trong VitalSource Bookshelf ePUB reader.
 *	Đã thêm hộp thoại ghi chú để tích hợp chú thích cho các dấu trang đã lưu
   và di chuyển đến vị trí được chọn.
 
-## Các thay đổi cho 7.0 ##
+## Các thay đổi cho phiên bản 7.0 ##
 *	Hộp thoại lưu chuỗi văn bản cho tìm kiếm cụ thể đã được gỡ bỏ. Tính năng
   này giờ đây được tích hợp trong hộp thoại tìm kiếm cụ thể, đã được thiết
   kế lại để cho phép thực hiện các hoạt động khác nhau khi bấm OK.
@@ -92,34 +92,34 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 *	NVDA sẽ phát một thông điệp để thông báo khi các điểm đánh dấu được sao
   chép hay khôi phục ở các hộp thoại tương ứng.
 
-## Các thay đổi cho 6.0 ##
+## Các thay đổi cho phiên bản 6.0 ##
 * Khi không dùng được tính năng của add-on, các thao tác sẽ được gửi đến các
   ứng dụng tương ứng.
 
-## Các thay đổi cho 5.0 ##
+## Các thay đổi cho phiên bản 5.0 ##
 * Thêm tính năng tìm kiếm phân biệt chữ hoa / thường.
 * Gỡ bỏ tùy chọn mở tài liệu từ trình đơn đánh dấu.
 * Thêm các phím lệnh trực quan.
 
-## Các thay đổi cho 4.0 ##
+## Các thay đổi cho phiên bản 4.0 ##
 * Gỡ bỏ  số nhận dạng phân đoạn từ tên tập tin dấu trang nhằm tránh gây ra
   lỗi trong ePUBREADER Firefox add-on.
 * Thông tin giúp đỡ cho add-on đã hiển thị trong phần quản lý add-on.
 
-## Các thay đổi cho 3.1 ##
+## Các thay đổi cho phiên bản 3.1 ##
 * Cập nhất các bản dịch và ngôn ngữ mới.
 * Vị trí dấu trang không được thông báo trong chế độ thay đổi vị trí đọc.
 
-## Các thay đổi cho 3.0 ##
+## Các thay đổi cho phiên bản 3.0 ##
 * Thêm hỗ trợ cho thay đổi vị trí đọc.
 
-## Các thay đổi cho 2.0 ##
+## Các thay đổi cho phiên bản 2.0 ##
 * Thêm các tùy chọn để lưu và xóa các tìm kiếm khác nhau cho mỗi tập tin.
 * Sửa lỗi bị treo khi đường dẫn chứa các kí tự không phải chữ latin.
 * Các phím tắt giờ đây có thể gán lại bằng hộp thoại quản lý thao tác của
   NVDA.
 
-## Các thay đổi cho 1.0 ##
+## Các thay đổi cho phiên bản 1.0 ##
 * Phiên bản đầu tiên.
 * Đã dịch sang: tiếng Bồ Đào Nha brazi, Farsi, Phần Lan, Pháp, Galicia, Đức,
   Ý, Nhật, Hàn Quốc, Nepal, Bồ Đào Nha, Tây Ban Nha, Slovak, Slovenia, Nam

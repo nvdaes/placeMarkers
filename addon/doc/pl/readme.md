@@ -1,4 +1,4 @@
-# Znaczniki miejsc / placeMarkers #
+# placeMarkers #
 
 * Autorzy: Noelia, Chris.
 * Pobierz [wersja stabilna][1]
