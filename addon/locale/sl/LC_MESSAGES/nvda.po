@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-05-17 04:19+0100\n"
+"PO-Revision-Date: 2018-08-15 16:52+0100\n"
 "Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -125,13 +125,10 @@ msgid "Copy place markers"
 msgstr "Preslikava prostorskih označb"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Izberite mapo, kjer želite imeti varnostno kopijo vaših trenutnih "
-"prostorskih označb.\n"
-"\n"
-"\t\tTi se bodo preslikali iz  %s."
+"prostorskih označb."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -146,14 +143,11 @@ msgid "Restore place markers"
 msgstr "Obnovitev prosstorskih označb"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Izberite mapo, kamor želite obnoviti prostorske označbe iz prej ustvarjene "
-"varnostne kopije.\n"
-"\n"
-"\t\tTi se bodo preslikali v %s."
+"varnostne kopije."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"

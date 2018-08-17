@@ -1,22 +1,23 @@
+# Placemarkers Simplified Chinese Messages.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers-10.1\n"
+"Project-Id-Version: placeMarkers10.2\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2018-05-19 18:27+0200\n"
-"PO-Revision-Date: 2018-05-25 17:56+0800\n"
-"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
+"POT-Creation-Date: 2018-08-10 20:17+0800\n"
+"PO-Revision-Date: 2018-08-12 15:37+0800\n"
 "Language-Team: NVDA Simplified Chinese Team <dingpengyu06@gmail.com>\n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: .\n"
+"Language: zh_CN\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -110,7 +111,8 @@ msgstr "删除(&D)..."
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
-msgstr "此书签将被永久删除。此操作无法撤消。"
+msgstr ""
+"This bookmark will be permanently deleted. This action cannot be undone."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -118,7 +120,6 @@ msgid "No bookmarks"
 msgstr "没有书签"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
 msgstr "书签已删除"
 
@@ -127,11 +128,7 @@ msgid "Copy place markers"
 msgstr "复制位置标记"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy, python-format
-msgid ""
-"Select a folder to save a backup of your current place markers.\n"
-"\n"
-"\t\tThey will be copied from %s."
+msgid "Select a folder to save a backup of your current place markers."
 msgstr "选择一个文件夹用来保存当前位置标记的备份。"
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
@@ -147,11 +144,8 @@ msgid "Restore place markers"
 msgstr "恢复位置标记"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy, python-format
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers.\n"
-"\n"
-"\t\tThey will be copied to %s."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr "选择一个文件夹来还原以前复制的位置标记的备份。"
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
@@ -313,7 +307,6 @@ msgid "Saved temporary bookmark at position %d"
 msgstr "在当前位置保存临时书签%d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
 msgstr "保存当前位置做为书签。"
 
