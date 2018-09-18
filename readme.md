@@ -33,6 +33,10 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
 
+## Changes for 11.0 ##
+*	Compatible with NVDA 2018.3 or later (required).
+*	If needed, you can download the [last version compatible with NVDA 2017.3][3].
+
 ## Changes for 10.0 ##
 *	In Edge, gestures associated with bookmarks selection, such as NVDA+k, NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of trying to move the cursor to bookmarks, to avoid errors, especially in long documents.
 *	Now specific search is supported in Edge.
@@ -86,3 +90,4 @@ Note: The bookmark position is based on the number of characters; and therefore 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
 
 [2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[3]: https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

@@ -29,7 +29,7 @@ import wx
 import ui
 import speech
 import sayAllHandler
-from scriptHandler import willSayAllResume
+from scriptHandler import willSayAllResume, script
 from cursorManager import CursorManager
 from logHandler import log
 from .skipTranslation import translate
@@ -226,7 +226,7 @@ class SpecificSearchDialog(wx.Dialog):
 		self.searchTextEdit.Bind(wx.EVT_TEXT, self.onSearchEditTextChange)
 		# Translators: A label for a chekbox in the Specific search dialog.
 		self.addCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add to history")))
-				# Translators: Label for a set of radio buttons in the Specific search dialog.
+		# Translators: Label for a set of radio buttons in the Specific search dialog.
 		searchActionsLabel = _("Action on s&earch")
 		searchChoices = (
 			# Translators: An action in the Search group of the Specific search dialog.
@@ -250,7 +250,7 @@ class SpecificSearchDialog(wx.Dialog):
 			self.addCheckBox.Disable()
 			self.searchRadioBox.Disable()
 			self.caseSensitiveCheckBox.Disable()
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.CentreOnScreen()
 
 	def onSearchEditTextChange(self, evt):
 		if self.searchTextEdit.Value:
@@ -369,7 +369,7 @@ class NotesDialog(wx.Dialog):
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
 		self.notesListBox.SetFocus()
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.CentreOnScreen()
 
 	def onNotesChange(self, evt):
 		self.pos = int(self.notesListBox.GetStringSelection().split(" - ")[0])
@@ -456,7 +456,7 @@ class CopyDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.CentreOnScreen()
 
 	def onCopy(self, evt):
 		if not self.copyDirectoryEdit.Value:
@@ -526,7 +526,7 @@ class RestoreDialog(wx.Dialog):
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
 		self.Sizer = mainSizer
 		mainSizer.Fit(self)
-		self.Center(wx.BOTH | wx.CENTER_ON_SCREEN)
+		self.CentreOnScreen()
 
 	def onRestore(self, evt):
 		if not self.restoreDirectoryEdit.Value:
@@ -570,7 +570,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		scriptCategory = str(ADDON_SUMMARY)
 
 	def __init__(self):
-		super(globalPluginHandler.GlobalPlugin, self).__init__()
+		super(GlobalPlugin, self).__init__()
 		self.menu = gui.mainFrame.sysTrayIcon.preferencesMenu
 		self.BSMenu = wx.Menu()
 		self.mainItem = self.menu.AppendSubMenu(self.BSMenu,
@@ -605,25 +605,29 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	def terminate(self):
 		try:
-			self.menu.RemoveItem(self.mainItem)
-		except wx.PyDeadObjectError:
+			self.menu.Remove(self.mainItem)
+		except:
 			pass
 
 	def onSpecificSearch(self, evt):
 		os.startfile(SEARCH_FOLDER)
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Opens the specific search folder.")
+	)
 	def script_openSpecificSearchFolder(self, gesture):
 		wx.CallAfter(self.onSpecificSearch, None)
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_openSpecificSearchFolder.__doc__ = _("Opens the specific search folder.")
 
 	def onBookmarks(self, evt):
 		os.startfile(BOOKMARKS_FOLDER)
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Opens the bookmarks folder.")
+	)
 	def script_openBookmarksFolder(self, gesture):
 		wx.CallAfter(self.onBookmarks, None)
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_openBookmarksFolder.__doc__ = _("Opens the bookmarks folder.")
 
 	def onCopy(self, evt):
 		gui.mainFrame.prePopup()
@@ -631,10 +635,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		d.Show()
 		gui.mainFrame.postPopup()
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Activates the Copy dialog of %s." % ADDON_SUMMARY)
+	)
 	def script_activateCopyDialog(self, gesture):
 		wx.CallAfter(self.onCopy, None)
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_activateCopyDialog.__doc__ = _("Activates the Copy dialog of %s." % ADDON_SUMMARY)
 
 	def onRestore(self, evt):
 		gui.mainFrame.prePopup()
@@ -642,10 +648,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		d.Show()
 		gui.mainFrame.postPopup()
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Activates the Restore dialog of %s." % ADDON_SUMMARY)
+	)
 	def script_activateRestoreDialog(self, gesture):
 		wx.CallAfter(self.onRestore, None)
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_activateRestoreDialog.__doc__ = _("Activates the Restore dialog of %s." % ADDON_SUMMARY)
 
 	def popupSpecificSearchDialog(self):
 		gui.mainFrame.prePopup()
@@ -653,6 +661,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		d.Show()
 		gui.mainFrame.postPopup()
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("finds a text string from the current cursor position for a specific document."),
+		gesture="kb:NVDA+control+shift+f"
+	)
 	def script_specificFind(self,gesture):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
@@ -661,8 +674,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		self.popupSpecificSearchDialog()
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_specificFind.__doc__ = _("finds a text string from the current cursor position for a specific document.")
 
 	def popupNotesDialog(self):
 		if getSavedBookmarks() == {}:
@@ -675,6 +686,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		d.Show()
 		gui.mainFrame.postPopup()
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Show the Notes dialog for a specific document."),
+		gesture="kb:NVDA+alt+k"
+	)
 	def script_activateNotesDialog(self, gesture):
 		obj=api.getFocusObject()
 		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
@@ -686,9 +702,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		wx.CallAfter(self.popupNotesDialog)
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_activateNotesDialog.__doc__ = _("Show the Notes dialog for a specific document.")
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Saves the current position as a bookmark."),
+		gesture="kb:NVDA+control+shift+k"
+	)
 	def script_saveBookmark(self, gesture):
 		obj = api.getFocusObject()
 		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
@@ -713,8 +732,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
-		positions = list(bookmarks.keys())
-		if count in positions:
+		if count in bookmarks:
 			noteBody = bookmarks[count].body
 		else:
 			noteBody = ""
@@ -731,9 +749,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when a bookmark cannot be saved.
 				_("Cannot save bookmark"))
 			raise e
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_saveBookmark.__doc__ = _("Saves the current position as a bookmark.")
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Deletes the current bookmark."),
+		gesture="kb:NVDA+control+shift+delete"
+	)
 	def script_deleteBookmark(self, gesture):
 		obj = api.getFocusObject()
 		treeInterceptor=obj.treeInterceptor
@@ -743,8 +764,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		positions = list(bookmarks.keys())
-		if len(positions) == 0:
+		if bookmarks == {}:
 			ui.message(
 				# Translators: message presented when the current document doesn't contain bookmarks.
 				_("No bookmarks"))
@@ -759,14 +779,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
-		if count not in positions:
+		if count not in bookmarks:
 			ui.message(
 				# Translators: message presented when the current document has bookmarks, but none is selected.
 				_("No bookmark selected"))
 			return
 		del(bookmarks[count])
 		fileName = getFileBookmarks()
-		if len(positions) > 0:
+		if bookmarks != {}:
 			try:
 				pickle.dump(bookmarks, file(fileName, "wb"))
 				ui.message(
@@ -778,9 +798,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			try:
 				os.remove(fileName)
-				ui.message(_
+				ui.message(
 					# Translators: message presented when the current document doesn't contain bookmarks.
-					("No bookmarks"))
+					_("No bookmarks"))
 				return
 			except WindowsError:
 				pass
@@ -788,9 +808,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		ui.message(
 			# Translators: message presented when cannot delete a bookmark.
 			_("Cannot delete bookmark"))
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_deleteBookmark.__doc__ = _("Deletes the current bookmark.")
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Moves to the next bookmark."),
+		resumeSayAllMode=sayAllHandler.CURSOR_CARET,
+		gesture="kb:NVDA+k"
+	)
 	def script_selectNextBookmark(self, gesture):
 		obj = api.getFocusObject()
 		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
@@ -804,8 +828,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		positions = list(bookmarks.keys())
-		if len(positions) == 0:
+		if bookmarks == {}:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
@@ -820,6 +843,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
+		positions = list(bookmarks.keys())
 		positions.sort()
 		for pos in positions:
 			if pos > count:
@@ -835,10 +859,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		ui.message(
 			# Translators: message presented when the next bookmark is not found.
 			_("Next bookmark not found"))
-	script_selectNextBookmark.resumeSayAllMode=sayAllHandler.CURSOR_CARET
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_selectNextBookmark.__doc__ = _("Moves to the next bookmark.")
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Moves to the previous bookmark."),
+		resumeSayAllMode=sayAllHandler.CURSOR_CARET,
+		gesture="kb:NVDA+shift+k"
+	)
 	def script_selectPreviousBookmark(self, gesture):
 		obj = api.getFocusObject()
 		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
@@ -852,8 +879,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmarks = getSavedBookmarks()
-		positions = list(bookmarks.keys())
-		if len(positions) == 0:
+		if bookmarks == {}:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
@@ -867,6 +893,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
+		positions = list(bookmarks.keys())
 		positions.sort()
 		positions.reverse()
 		for pos in positions:
@@ -883,10 +910,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		ui.message(
 			# Translators: message presented when the previous bookmark is not found.
 			_("Previous bookmark not found"))
-	script_selectPreviousBookmark.resumeSayAllMode=sayAllHandler.CURSOR_CARET
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_selectPreviousBookmark.__doc__ = _("Moves to the previous bookmark.")
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Copies the name of the current file for place markers to the clipboard."),
+		gesture="kb:control+shift+k"
+	)
 	def script_copyCurrentBookmarksFile(self, gesture):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
@@ -903,9 +932,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		ui.message(
 			# Translators: message presented when file name for place markers is copied to clipboard.
 			_("Place markers file name copied to clipboard"))
-			# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_copyCurrentBookmarksFile.__doc__ = _("Copies the name of the current file for place markers to the clipboard.")
 
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Saves the current position as a temporary bookmark.")
+	)
 	def script_saveTempBookmark(self, gesture):
 		obj = api.getFocusObject()
 		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
@@ -937,9 +968,11 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
-	# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-	script_saveTempBookmark.__doc__ = _("Saves the current position as a temporary bookmark.")
 
+	@script(
+		# Translators: Message presented in input help mode.
+		description=_("Moves to the temporary bookmark for the current document.")
+	)
 	def script_moveToTempBookmark(self, gesture):
 		obj = api.getFocusObject()
 		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
@@ -958,16 +991,3 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except:
 			# Translators: Message presented when a temporary bookmark can't be found.
 			ui.message("Temporary bookmark not found")
-	# Translators: Message presented in input help mode.
-	script_moveToTempBookmark.__doc__ = _("Moves to the temporary bookmark for the current document.")
-
-	__gestures = {
-		"kb:control+shift+NVDA+f": "specificFind",
-		"kb:control+shift+NVDA+k": "saveBookmark",
-		"kb:control+shift+NVDA+delete": "deleteBookmark",
-		"kb:NVDA+k": "selectNextBookmark",
-		"kb:shift+NVDA+k": "selectPreviousBookmark",
-		"kb:control+shift+k": "copyCurrentBookmarksFile",
-		"kb:alt+NVDA+k": "activateNotesDialog",
-	}
-
