@@ -34,7 +34,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 
 ## Changes for 11.0 ##
-*	Requires NVDA 2018.3.
+*	Compatible with NVDA 2018.3 or later (required).
 *	If needed, you can download the [last version compatible with NVDA 2017.3][3].
 
 ## Changes for 10.0 ##
