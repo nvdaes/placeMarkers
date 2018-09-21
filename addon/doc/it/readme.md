@@ -66,6 +66,11 @@ pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposti per salvare una posizione precisa.
 
 
+## Changes for 11.0 ##
+*	Compatible with NVDA 2018.3 or later (required).
+*	If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Changes for 10.0 ##
 *	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
   NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
@@ -137,6 +142,7 @@ non i segnaposti per salvare una posizione precisa.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

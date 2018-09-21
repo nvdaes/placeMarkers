@@ -33,6 +33,10 @@
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
 
 
+## 版本11.0 ##
+*	兼容NVDA 2018.3或更高版本（必需）。
+*	如果需要，您可以下载[与NVDA 2017.3兼容的最新版本] [3]。
+
 ## 版本10.0 ##
 *	在Edge中，与书签选择相关联的手势（例如NVDA + k，NVDA + shift + k或NVDA + alt +
   k）将被发送至应用程序，而不是尝试将光标移至书签，以避免错误，特别是在长时间的文档。
@@ -86,6 +90,7 @@
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

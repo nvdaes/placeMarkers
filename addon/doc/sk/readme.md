@@ -59,6 +59,11 @@ therefore in dynamic pages it is better to use the specific search, not
 bookmarks.
 
 
+## Changes for 11.0 ##
+*	Compatible with NVDA 2018.3 or later (required).
+*	If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Changes for 10.0 ##
 *	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
   NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
@@ -131,6 +136,7 @@ bookmarks.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

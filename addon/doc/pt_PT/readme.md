@@ -59,6 +59,11 @@ Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
 
+## Changes for 11.0 ##
+*	Compatible with NVDA 2018.3 or later (required).
+*	If needed, you can download the [last version compatible with NVDA
+  2017.3][3].
+
 ## Alterações para 10.0 ##
 *	No Edge, os comandos associados à selecção de favoritos, como NVDA + k,
   NVDA + shift + k ou NVDA + alt + k, serão enviados para o aplicativo em
@@ -134,6 +139,7 @@ em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

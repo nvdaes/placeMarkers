@@ -63,6 +63,11 @@ Bookmark&Search, разработени от същия автор. Трябва
 търсене вместо маркерите.
 
 
+## Промени във версия 11.0 ##
+*	Съвместимост с NVDA 2018.3 и бъдещи версии (изисква се).
+*	Ако е необходимо, можете да изтеглите [последната версия, съвместима с
+  NVDA 2017.3][3].
+
 ## Промени във версия 10.0 ##
 *	В Edge, жестовете, обвързани с избора на маркери, като например NVDA+K,
   NVDA+Shift+K или NVDA+Alt+K, ще бъдат препредадени към приложението вместо
@@ -141,6 +146,7 @@ Bookmark&Search, разработени от същия автор. Трябва
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

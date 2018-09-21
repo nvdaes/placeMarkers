@@ -60,6 +60,11 @@ sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
 
+## Muutokset versiossa 11.0 ##
+*	Yhteensopiva NVDA 2018.3:n tai uudemman kanssa (vaaditaan).
+*	Viimeisen NVDA 2017.3:n kanssa yhteensopivan version voi ladata
+  [tästä.][3]
+
 ## Muutokset versiossa 10.0 ##
 *	Virheiden välttämiseksi (erityisesti pitkissä dokumenteissa)
   paikkamerkkien valintaan liittyvät syötekomennot, kuten NVDA+K,
@@ -134,6 +139,7 @@ paikkamerkkien asemesta sivukohtaista hakua.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

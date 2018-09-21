@@ -32,12 +32,12 @@ URLs der angezeigten Dokumente.
   Lesezeichen speichern.
 *	STRG+Umschalt+NVDA+Entfernen: Löscht das Lesezeichen an der aktuellen
   Position.
-*	NVDA+k: Wechselt zum nächsten Lesezeichen.
-*	Umschalt+NVDA+k: Wechselt zum vorherigen Lesezeichen.
-*	STRG+Umschalt+k: Kopiert den Dateinamen (ohne Dateierweiterung), unter
+*	NVDA+K: Wechselt zum nächsten Lesezeichen.
+*	Umschalt+NVDA+K: Wechselt zum vorherigen Lesezeichen.
+*	STRG+Umschalt+K: Kopiert den Dateinamen (ohne Dateierweiterung), unter
   welchem die Daten der Lesezeichen in der Zwischenablage gespeichert
   werden.
-*	alt+NVDA+k: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
+*	Alt+NVDA+K: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
   Lesezeichen. Sie können für jedes Lesezeichen eine Notiz schreiben. Mit
   Klicken auf "Notiz speichern" können Sie die Änderungen speichern. Mit
   "Entfernen" können Sie das ausgewählte Lesezeichen löschen und mit dem
@@ -63,6 +63,11 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+
+## Änderungen in 11.0 ##
+*	Kompatibel mit NVDA 2018.3 oder neuer (erforderlich).
+*	Bei Bedarf können Sie die [letzte Version][3], die mit NVDA 2017.3
+  kompatibel ist herunterladen.
 
 ## Änderungen in 10.0 ##
 *	In Microsoft Edge, vor allem in langen Dokumenten, werden bestimmte
@@ -146,6 +151,7 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

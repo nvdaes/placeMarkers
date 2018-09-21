@@ -59,6 +59,11 @@ páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
 
+## Cambios para 11.0 ##
+*	Compatible co NVDA 2018.3 ou posterior (requerido).
+*	Se fora necesario, podes descargar a [última versión compatible co NVDA
+  2017.3][3].
+
 ## Cambios para 10.0 ##
 *	En Edge, os xestos asociados coa seleción de marcas, como NVDA+k,
   NVDA+shift+k ou NVDA+alt+k, enviaranse á aplicación en lugar de tentar
@@ -135,6 +140,7 @@ marcas.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon

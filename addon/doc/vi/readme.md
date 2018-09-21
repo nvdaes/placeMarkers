@@ -1,7 +1,7 @@
 # placeMarkers #
 
 * Tác giả: Noelia, Chris.
-* Tải về [phiên bản chính thức][1]
+* tải về [phiên bản chính thức][1]
 * tải về [phiên bản thử nghiệm][2]
 
 Addon này dùng để lưu lại và tìm kiếm một chuỗi văn bản hay dấu trang cụ
@@ -55,6 +55,11 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
+
+## Các thay đổi cho phiên bản 11.0 ##
+*	Tương thích với NVDA 2018.3 trở lên (yêu cầu).
+*	Nếu cần, bạn có thể tải về [phiên bản cuối cùng tương thích với NVDA
+  2017.3][3].
 
 ## Các thay đổi cho phiên bản 10.0 ##
 *	Trong Edge, các thao tác liên quan đến chọn dấu trang như NVDA+k,
@@ -127,6 +132,7 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
+https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
