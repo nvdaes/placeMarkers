@@ -90,4 +90,5 @@ Note: The bookmark position is based on the number of characters; and therefore 
 [1]: http://addons.nvda-project.org/files/get.php?file=pm
 
 [2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
-[3]: https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+
+[3]: http://addons.nvda-project.org/files/get.php?file=pm-o
