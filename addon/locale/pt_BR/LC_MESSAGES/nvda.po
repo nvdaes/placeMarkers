@@ -1,15 +1,15 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Brazilian Portuguese translation of placeMarkers.
+# Copyright (C) 2013-2018 NVDA Contributors.
+# This file is distributed under the same license as the NVDA package.
+# Cleverson Casarin Uliana <clever97@gmail.com>, 2013-2015, 2017.
+# Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: 'placeMarkers'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 09:07-0800\n"
-"Last-Translator: Cleverson Casarin Uliana <clever97@gmail.com>\n"
+"PO-Revision-Date: 2018-09-24 17:22-0300\n"
+"Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
 "Language-Team: Equipe de tradução do NVDA para Português do Brasil "
 "<clever97@gmail.com>\n"
 "Language: pt_BR\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"Sua pasta de opções do NVDA contém arquivos que parecem derivar duma versão "
-"antiga deste complemento. Deseja atualizá-la?"
+"Sua pasta de configurações do NVDA contém arquivos que parecem derivar duma "
+"versão antiga deste complemento. Deseja atualizá-la?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -74,7 +74,7 @@ msgstr "&Não buscar"
 
 #. Translators: Message presented when place markers have been copied.
 msgid "Place markers copied"
-msgstr "Marcadores copiados"
+msgstr "Marcadores de lugar copiados"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
@@ -86,7 +86,7 @@ msgstr "Erro de cópia"
 
 #. Translators: Message presented when place markers have been restored.
 msgid "Place markers restored"
-msgstr "Marcadores restaurados"
+msgstr "Marcadores de lugar restaurados"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
@@ -106,12 +106,13 @@ msgstr "&Salvar nota"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "E&xcluir..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
+"Este marcador será permanentemente excluído. Essa ação não pode ser desfeita."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -119,25 +120,22 @@ msgid "No bookmarks"
 msgstr "Sem marcadores"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Marcador apagado"
+msgstr "Marcadores excluídos"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
-msgstr "Copiar marcadores"
+msgstr "Copiar marcadores de lugar"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Selecione uma pasta para salvar cópia dos marcadores atuais.\n"
-"\n"
-"\t\tEles serão copiados de %s."
+"Selecione uma pasta para salvar cópia de segurança dos marcadores de lugar "
+"atuais."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "diretório para cópia"
+msgstr "diretório para cópia de segurança"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
 msgid "Select directory to copy"
@@ -145,21 +143,18 @@ msgstr "Selecione diretório a copiar"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
-msgstr "Restaurar marcadores"
+msgstr "Restaurar marcadores de lugar"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Selecione uma pasta para restaurar cópia de marcadores anteriormente "
-"copiados.\n"
-"\n"
-"\t\tEles serão copiados para %s."
+"Selecione uma pasta para restaurar cópia de marcadores de lugar "
+"anteriormente copiados."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
-msgstr "diretório que contém cópia:"
+msgstr "diretório que contém cópia de segurança:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -167,7 +162,7 @@ msgstr "Selecione diretório a restaurar"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "M&arcadores"
+msgstr "M&arcadores de lugar"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
@@ -191,19 +186,19 @@ msgstr "Abre a pasta de marcadores"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Copiar pasta do complemento de marcadores..."
+msgstr "&Copiar pasta do complemento de marcadores de lugar..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Cópia de segurança do complemento de marcadores"
+msgstr "Cópia de segurança do complemento de marcadores de lugar"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "R&estaurar marcadores..."
+msgstr "R&estaurar marcadores de lugar..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Restaura marcadores anteriormente salvos"
+msgstr "Restaura marcadores de lugar anteriormente salvos"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
@@ -260,15 +255,15 @@ msgstr "Nenhum marcador selecionado"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "Marcador apagado"
+msgstr "Marcador excluído"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Impossível apagar marcador"
+msgstr "Impossível excluir marcador"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Apaga o marcador atual."
+msgstr "Exclui o marcador atual."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
@@ -301,37 +296,39 @@ msgstr "Move para o marcador anterior."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Impossível copiar nome do arquivo de marcadores"
+msgstr "Impossível copiar nome do arquivo de marcadores de lugar"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Nome do arquivo de marcadores copiado para a área de transferência"
+msgstr ""
+"Nome do arquivo de marcadores de lugar copiado para a área de transferência"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
 msgstr ""
-"Copia o nome do arquivo atual de marcadores para a área de transferência."
+"Copia o nome do arquivo atual de marcadores de lugar para a área de "
+"transferência."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Marcador temporário salvo na posição %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Salva a posição atual como um marcador."
+msgstr "Salva a posição atual como um marcador temporário."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Move para o marcador temporário do documento atual."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Marcadores"
+msgstr "Marcadores de lugar"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Complemento para criar marcadores em documentos virtuais específicos"
+msgstr ""
+"Complemento para criar marcadores de lugar em documentos virtuais específicos"

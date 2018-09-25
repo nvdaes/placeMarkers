@@ -68,10 +68,10 @@ les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+## Changements pour la version 11.0 ##
+*	Compatible avec NVDA 2018.3 ou version ultérieure (requis).
+*	Si nécessaire, vous pouvez télécharger la [dernière version compatible
+  avec NVDA 2017.3][3].
 
 ## Changements pour la version 10.0 ##
 *	Dans Edge, les gestes associés à la sélection de marqueurs tels que
@@ -153,5 +153,6 @@ spécifique, pas les marqueurs.
 
 [1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

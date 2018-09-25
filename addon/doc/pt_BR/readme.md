@@ -1,4 +1,4 @@
-# marcadores #
+# marcadores de lugar #
 
 * Autores: Noelia, Chris.
 * baixe a [versão estável][1]
@@ -34,50 +34,54 @@ têm teclas de atalho e recursos em comum.
 *	NVDA+k: Moves para o próximo marcador.
 *	shift+NVDA+k: Moves para o marcador anterior.
 *	control+shift+k: Copia para a área de transferência o nome do arquivo no
-  qual serão salvos os dados dos marcadores, sem a extensão.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+  qual serão salvos os dados de marcadores de lugar, sem a extensão.
+*	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores salvos para este
+  documento. Você pode escrever uma nota para cada marcador; pressione
+  Salvar nota para salvar as alterações. Pressionando Excluir você pode
+  remover o marcador selecionado. Pressionando OK você pode se mover para a
+  posição selecionada.
+*	Não atribuído: salva uma posição como um marcador temporário.
+*	Não atribuído: Move para o marcador temporário do documento atual.
 
 
-## Submenu Marcadores (NVDA+N) ##
+## Submenu Marcadores de lugar (NVDA+N) ##
 
-Ao usar o submenu Marcadores no menu Preferências do NVDA, pode acessar:
+Ao usar o submenu Marcadores de lugar no menu Preferências do NVDA, pode
+acessar:
 
 *	Pasta de busca específica: abre uma pasta com buscas específicas salvas
   anteriormente.
 *	Pasta de marcadores: Abre uma pasta com os marcadores salvos.
-*	Copiar pasta de marcadores: Pode salvar uma cópia da pasta de marcadores.
-*	Restaurar marcadores: Pode restaurar os marcadores a partir de uma pasta
-  de marcadores anteriormente salva.
+*	Copiar pasta de marcadores de lugar: Pode salvar uma cópia da pasta de
+  marcadores.
+*	Restaurar marcadores de lugar: Pode restaurar os marcadores a partir de
+  uma pasta de marcadores de lugar anteriormente salva.
 
 Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a busca específica e não
 marcadores.
 
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+## Mudanças na 11.0 ##
+*	Compatível com o NVDA 2018.3 ou posterior (requerido).
+*	Se necessário, você pode fazer o download da [última versão compatível com
+  o NVDA 2017.3][3].
 
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+## Mudanças na 10.0 ##
+*	No Edge, os gestos associados à seleção de favoritos, como NVDA+k,
+  NVDA+shift+k ou NVDA+alt+k, serão enviados para o aplicativo em vez de
+  tentar mover o cursor para marcadores, para evitar erros, especialmente em
+  documentos longos.
+*	Agora, a pesquisa específica é suportada no Edge.
 
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## Mudanças na 9.0
+*	Ao mover para um marcador da caixa de diálogo Notas, o cursor de
+  exploração segue o cursor do sistema.
+*	O comando para selecionar o marcador anterior funciona corretamente
+  novamente.
+*	Os marcadores podem ser excluídos da caixa de diálogo de Notas.
+*	Agora você pode atribuir gestos para salvar e mover para um marcador
+  temporário para cada documento.
 
 ## Mudanças na 8.0 ##
 *	Removidos identificadores de fragmentos dos nomes dos arquivos de
@@ -98,9 +102,9 @@ marcadores.
   a procura original for com diferenças de caixa.
 *	Requer NVDA 2016.4 ou posterior.
 *	Agora você pode atribuir gestos para abrir os diálogos de copiar e
-  restaurar marcadores.
-*	O NVDA apresentará uma mensagem para notificar quando marcadores forem
-  copiados ou restaurados, com os respectivos diálogos.
+  restaurar marcadores de lugar.
+*	O NVDA apresentará uma mensagem para notificar quando marcadores de lugar
+  forem copiados ou restaurados, com os respectivos diálogos.
 
 ## Mudanças na 6.0 ##
 * Quando não é possível usar os recursos do complemento, os gestos são
@@ -108,7 +112,8 @@ marcadores.
 
 ## Mudanças na 5.0 ##
 * Adicionada busca com diferenciação de maiúsculas.
-* Removida a opção de abrir a documentação a partir do menu dos marcadores.
+* Removida a opção de abrir a documentação a partir do menu de marcadores de
+  lugar.
 * Teclas de comandos mais intuitivas.
 
 ## Mudanças na 4.0 ##
@@ -135,12 +140,13 @@ marcadores.
 ## Mudanças na 1.0 ##
 * Versão inicial.
 * Traduzido para: Alemão, Coreano, Eslovaco, Esloveno, Espanhol, Finlandês,
-  Francês, Galego, Italiano, Japonês, Persa, Português, Português do Brasil,
-  Tâmil.
+  Francês, Galego, Italiano, Japonês, Persa, Português, Português
+  Brasileiro, Tâmil.
 
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

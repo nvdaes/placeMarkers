@@ -134,5 +134,6 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 
 [1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

@@ -47,7 +47,7 @@ teclas y características.
 ## Submmenú Place markers (NVDA+N) ##
 
 Utilizando el submenú Place markers en el menú Preferencias, puedes acceder
-a 
+a:
 
 *	Carpeta de búsqueda específica: abre una carpeta de búsquedas específicas
   guardadas previamente.
@@ -147,5 +147,6 @@ y no las marcas.
 
 [1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o
