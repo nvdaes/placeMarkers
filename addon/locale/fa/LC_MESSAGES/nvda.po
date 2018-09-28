@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-26 14:59+0200\n"
-"PO-Revision-Date: 2018-09-21 14:00+0330\n"
+"PO-Revision-Date: 2018-09-26 01:25+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation Team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -125,12 +125,9 @@ msgid "Copy place markers"
 msgstr "کپی کردنِ نشان‌گذاری‌ها"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید.\n"
-"\n"
-"\t\tآن‌ها از %s کپی خواهند شد."
+"پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -145,13 +142,9 @@ msgid "Restore place markers"
 msgstr "برگرداندنِ نشان‌گذاری‌ها"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
-msgstr ""
-"پوشه‌ای را برای برگرداندنِ نشان‌گذاری‌های از‌پیش کپی‌شده‌تان انتخاب کنید.\n"
-"\n"
-"\t\tآنها در %s کپی خواهند شد."
+msgstr "پوشه‌ای را برای برگرداندنِ نشان‌گذاری‌های از‌پیش کپی‌شده‌تان انتخاب کنید."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"

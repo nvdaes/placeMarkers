@@ -59,10 +59,10 @@ Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+## Alterações para 11.0 ##
+*	Compatibilidade com o NVDA 2018.3 ou posterior (requerido).
+*	Se necessário, pode fazer o download da [última versão compatível com o
+  NVDA 2017.3] [3].
 
 ## Alterações para 10.0 ##
 *	No Edge, os comandos associados à selecção de favoritos, como NVDA + k,
