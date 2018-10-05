@@ -1,8 +1,8 @@
 # placeMarkers #
 
 * Autori: Noelia, Chris.
-* Descărcați [versiunea stabilă][1]
-* Descărcați [versiunea în dezvoltare][2]
+* descărcați [versiunea stabilă][1]
+* descărcați [versiunea în dezvoltare][2]
 
 Acest supliment este folosit pentru salvarea și căutarea textelor specifice
 din stringuri sau semne de carte, pe paginile web sau documente în modul de
@@ -34,12 +34,12 @@ URL-ul documentului curent.
 *	shift+NVDA+k: Deplasează la semnul de carte precedent.
 *	control+shift+k: Copiază pe planșetă numele fișierului unde data place
   markers va fi salvată, fără o extensie.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
+  document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
+  „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
+  vă deplasați la poziția selectată.
+*	Neatribuit: Salvează poziția curentă ca un semn de carte temporar.
+*	Neatribuită: Mută la semnul de carte temporar pentru documentul curent.
 
 
 ## Submeniul Place markers (NVDA+N) ##
@@ -60,25 +60,26 @@ urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutare
 specifică, și nu marcajele care economisesc o poziție precisă.
 
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
+## Modificări în 11.0 ##
+*	Compatibil cu NVDA 2018.3 sau mai nou (necesar).
+*	Dacă e musai, puteți descărca [ultima versiune compatibilă cu NVDA
   2017.3][3].
 
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+## Modificări în 10.0 ##
+*	În Edge, gesturile asociate cu selectarea semnelor de carte, cum ar fi
+  NVDA+k, NVDA+shift+k sau NVDA+alt+k, vor fi trimise la aplicație în loc să
+  încerce să mute cursorul la semne de carte ca să evite erori, în special
+  din documentele bogate în conținut.
+*	Nicio căutare specifică nu este suportată în Edge.
 
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## Modificări în 9.0
+*	Atunci când se deplasează la un semn de carte de la dialogul notelor,
+  cursorul de examinare îl urmărește pe cel al sistemului.
+*	Comanda pentru selectarea semnului de carte anterior funcționează din nou
+  așa cum trebuie.
+*	Semnele de carte pot fi șterse din dialogul notelor.
+*	Acum poți atribui gesturi pentru a salva și pentru a te deplasa la un semn
+  de carte temporar.
 
 ## Modificări în 8.0 ##
 *	Au fost eliminate identificatori de fragment din numele fișierului semn de
