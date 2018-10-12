@@ -2,7 +2,7 @@
 
 * Autores: Noelia, Chris.
 * descargar [versión estable][1]
-* descarga [versión de desarrollo][2]
+* descargar [versión de desarrollo][2]
 
 Este complemento se utiliza para guardar y restaurar cadenas de texto
 específicas o marcas. Puede utilizarse en páginas web o en documentos en el
@@ -32,13 +32,13 @@ teclas y características.
   posición antes de guardarla.
 *	control+shift+NVDA+suprimir: elimina la marca correspondiente a esta
   posición.
-*	NVDA+k: mueve a la marca siguiente.
-*	shift+NVDA+k: mueve a la marca anterior.
+*	NVDA+k: se mueve a la marca siguiente.
+*	shift+NVDA+k: se mueve a la marca anterior.
 *	control+shift+k: copia el nombre del fichero donde se guardarán los datos
-  de marcadores al portapapeles, sin una extensión.
+  de las marcas al portapapeles, sin una extensión.
 *	alt+NVDA+k: abre un diálogo con las marcas guardadas para este
   documento. Puedes escribir una nota para cada marca; pulsa Guardar Nota
-  para guardar cambios. Pulsando Aceptar puedes moverte al a la posición
+  para guardar cambios. Pulsando Aceptar puedes moverte a la posición
   seleccionada.
 *	Sin asignar: guarda la posición actual como una marca temporal.
 *	Sin asignar: Se mueve a la marca temporal para el documento actual.
@@ -52,10 +52,10 @@ a:
 *	Carpeta de búsqueda específica: abre una carpeta de búsquedas específicas
   guardadas previamente.
 *	Carpeta de marcas: abre una carpeta con las marcas guardadas.
-*	Copiar carpeta de marcadores: puedes guardar una copia de la carpeta de
-  marcadores.
-*	Restaurar marcadores: Puedes guardar tus marcas desde una carpeta de
-  marcadores guardada anteriormente.
+*	Copiar carpeta de marcas: puedes guardar una copia de la carpeta de
+  marcas.
+*	Restaurar marcas: Puedes guardar tus marcas desde una carpeta de marcas
+  guardada anteriormente.
 
 Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
@@ -67,7 +67,7 @@ y no las marcas.
 *	Si fuese necesario, puedes descargar la [última versión compatible con
   NVDA 2017.3][3].
 
-## Cambios para 19.0 ##
+## Cambios para 10.0 ##
 *	En Edge, los gestos asociados con la selección de marcas, tales como
   NVDA+k, NVDA+shift+k o NVDA+alt+k, se enviarán a la aplicación en lugar de
   intentar mover el cursor a las marcas, para evitar errores, especialmente
@@ -84,9 +84,8 @@ y no las marcas.
   para cada documento.
 
 ## Cambios para 8.0 ##
-*	Eliminados fragmentos de identificadores de nombres de ficheros de
-  marcador,  los cuales pueden evitar problemas en VitalSource Bookshelf
-  ePUB READER.
+*	Eliminados fragmentos de identificadores de nombres de ficheros de marcas,
+  los cuales pueden evitar problemas en VitalSource Bookshelf ePUB READER.
 *	Se añadió un diálogo Notas, para asociar comentarios para marcas guardadas
   y para moverte a la posición seleccionada.
 
@@ -102,29 +101,29 @@ y no las marcas.
   mayúsculas si la búsqueda original era sensible a las mayúsculas.
 *	Se requiere de NVDA 2016.4 o posterior.
 *	Ahora puedes asignar gestos para abrir los diálogos Copiar y Restaurar
-  marcadores.
-*	NVDA presentará un mensaje para notificar cuando se haya copiado o
-  restaurado los marcadores con los diálogos correspondientes.
+  marcas.
+*	NVDA presentará un mensaje para notificar cuando se hayan copiado o
+  restaurado las marcas con los diálogos correspondientes.
 
 ## Cambios para 6.0 ##
-* Cuando las características del complemento no son usables, los gestos se
+* Cuando las características del complemento no sean usables, los gestos se
   envían a la aplicación correspondiente.
 
 ## Cambios para 5.0 ##
-* Añadida búsqueda sensible a las mayúsculas.
+* Añadida la búsqueda sensible a las mayúsculas.
 * Eliminada la opción para abrir documentación desde el menú Place markers.
 * Órdenes de teclado más intuitivas.
 
 ## Cambios para  4.0 ##
-* Eliminados fragmentos de identificadores de nombres de ficheros de
-  marcador,  los cuales pueden evitar problemas en el complemento de Firefox
+* Eliminados fragmentos de identificadores de nombres de ficheros de marcas,
+  los cuales pueden evitar problemas en el complemento de Firefox
   ePUBREADER.
 * La ayuda del complemento está disponible desde el Administrador de
   Complementos.
 
 ## Cambios para 3.1 ##
 * Actualización de traducciones y nuevos idiomas.
-* Ahora no se anuncia la posición del marcador en la lectura superficial.
+* Ahora no se anuncia la posición de la marca en la lectura superficial.
 
 ## Cambios para 3.0 ##
 * Añadido el soporte para lectura superficial.
