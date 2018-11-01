@@ -32,6 +32,8 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
+## Changes for 12.0 ##
+*	Fixed a critical bug which caused NVDA to crash when trying to open the Notes dialog, if chinese characters were selected before saving bookmarks.
 
 ## Changes for 11.0 ##
 *	Compatible with NVDA 2018.3 or later (required).
