@@ -1,8 +1,8 @@
 # Lesezeichen #
 
 * Autoren: Noelia, Chris.
-* [stabile version:][1] herunterladen
-* [Testversion][2] herunterladen
+* [stabile version herunterladen][1]
+* [Entwicklungsversion herunterladen][2]
 
 Mit dieser Erweiterung können Sie innerhalb des Lesemodus von NVDA
 Suchanfragen oder Lesezeichen speichern Bzw. Suchläufe durchführen. Die
