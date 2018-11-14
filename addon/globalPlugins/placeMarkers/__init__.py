@@ -731,7 +731,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		start.setEndPoint(end, "endToStart")
 		count = len(start.text)
 		bookmarks = getSavedBookmarks()
-		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("mbcs")
+		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("utf-8")
 		if count in bookmarks:
 			noteBody = bookmarks[count].body
 		else:
