@@ -61,6 +61,10 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a busca específica e não
 marcadores.
 
+## Mudanças na 12.0 ##
+*	Corrigido um erro crítico que fazia com que o NVDA falhasse ao tentar
+  abrir a caixa de diálogo do Notes, se os caracteres chineses fossem
+  selecionados antes de salvar os favoritos.
 
 ## Mudanças na 11.0 ##
 *	Compatível com o NVDA 2018.3 ou posterior (requerido).

@@ -59,6 +59,9 @@ Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
 
+## Changes for 12.0 ##
+*	Fixed a critical bug which caused NVDA to crash when trying to open the
+  Notes dialog, if chinese characters were selected before saving bookmarks.
 
 ## Modificări în 11.0 ##
 *	Compatibil cu NVDA 2018.3 sau mai nou (necesar).

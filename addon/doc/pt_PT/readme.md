@@ -58,6 +58,10 @@ Usando o submenu de Marcadores, no menu Preferências do NVDA, pode aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
+## Alterações para 12.0 ##
+*	Corrigido um erro crítico que fazia com que o NVDA falhasse ao tentar
+  abrir a caixa de diálogo do Notes, se os caracteres chineses fossem
+  seleccionados antes de guardar os favoritos.
 
 ## Alterações para 11.0 ##
 *	Compatibilidade com o NVDA 2018.3 ou posterior (requerido).

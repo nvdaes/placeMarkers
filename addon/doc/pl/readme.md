@@ -58,6 +58,9 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 12.0 ##
+*	Fixed a critical bug which caused NVDA to crash when trying to open the
+  Notes dialog, if chinese characters were selected before saving bookmarks.
 
 ## Changes for 11.0 ##
 *	Compatible with NVDA 2018.3 or later (required).

@@ -58,6 +58,9 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
+## Changes for 12.0 ##
+*	Fixed a critical bug which caused NVDA to crash when trying to open the
+  Notes dialog, if chinese characters were selected before saving bookmarks.
 
 ## Changes for 11.0 ##
 *	Compatible with NVDA 2018.3 or later (required).

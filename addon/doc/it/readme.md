@@ -65,6 +65,9 @@ Nota: La posizione del segnalibro è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposti per salvare una posizione precisa.
 
+## Changes for 12.0 ##
+*	Fixed a critical bug which caused NVDA to crash when trying to open the
+  Notes dialog, if chinese characters were selected before saving bookmarks.
 
 ## Changes for 11.0 ##
 *	Compatible with NVDA 2018.3 or later (required).

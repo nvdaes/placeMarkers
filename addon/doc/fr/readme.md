@@ -67,6 +67,10 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
+## Changements pour la version 12.0 ##
+*	Correction d'un bug critique qui provoquait le blocage de NVDA lors de la
+  tentative d'ouverture de la boîte de dialogue Notes, si les caractères
+  chinois étaient sélectionnés avant la sauvegarde des marqueurs.
 
 ## Changements pour la version 11.0 ##
 *	Compatible avec NVDA 2018.3 ou version ultérieure (requis).

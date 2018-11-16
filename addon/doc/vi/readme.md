@@ -55,6 +55,10 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
+## Các thay đổi cho phiên bản 12.0 ##
+*	Sửa một lỗi nghiêm trọng làm cho NVDA bị treo khi nỗ lực mở hộp thoại các
+  ghi chú, nếu các kí tự tiếng Trung Quốc được chọn trước khi lưu các dấu
+  trang.
 
 ## Các thay đổi cho phiên bản 11.0 ##
 *	Tương thích với NVDA 2018.3 trở lên (yêu cầu).

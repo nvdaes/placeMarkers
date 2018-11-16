@@ -59,6 +59,10 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
+## Muutokset versiossa 12.0 ##
+*	Korjattu kriittinen bugi, joka kaatoi NVDA:n yritettäessä avata
+  Muistiinpanot-valintaikkunaa, mikäli kiinalaisia merkkejä oli valittuna
+  ennen paikkamerkkien tallentamista.
 
 ## Muutokset versiossa 11.0 ##
 *	Yhteensopiva NVDA 2018.3:n tai uudemman kanssa (vaaditaan).

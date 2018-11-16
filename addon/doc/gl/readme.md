@@ -58,6 +58,10 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
+## Changes for 12.0 ##
+*	Solucionado un erro crítico que causaba o peche de NVDA ao tratar de abrir
+  o diálogo de notas cando estaban seleccionados caracteres chinos antes de
+  gardar marcadores.
 
 ## Cambios para 11.0 ##
 *	Compatible co NVDA 2018.3 ou posterior (requerido).
