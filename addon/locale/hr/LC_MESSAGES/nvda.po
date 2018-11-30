@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2017-12-14 09:00-0800\n"
+"PO-Revision-Date: 2018-11-25 18:56+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -104,12 +104,13 @@ msgstr "&Spremi napomenu "
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "&Izbriši..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
+"Ova knjižna oznaka bit će trajno izbrisana. Ovo brisanje je nepovratno."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -117,21 +118,16 @@ msgid "No bookmarks"
 msgstr "Nema knjižnih oznaka."
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Knjižna oznaka izbrisana"
+msgstr "Knjižne oznake su izbrisane"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Kopiraj mjesne oznake"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"Označite mapu u koju će biti spremljene vaše mjesne oznake.\n"
-"\n"
-"\t\tOne će biti spremljene u %s."
+msgstr "Odaberite mapu u koju želite pospremiti vaše knjižne oznake."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -146,13 +142,9 @@ msgid "Restore place markers"
 msgstr "Vrati mjesne oznake"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
-msgstr ""
-"Odaberite mapu u kojoj su smešteni vaše mjesne oznake.\n"
-"\n"
-"\t\tOne će biti iskopirane u %s."
+msgstr "Odaberite mapu iz koje želite vratiti vaše knjižne oznake."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
@@ -312,16 +304,15 @@ msgstr "Kopira ime trenutne datoteke za mjesne oznake u međuspremnik."
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Spremljena knjižna oznaka na poziciji %d"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Sprema trenutnu poziciju kao knjižnu oznaku"
+msgstr "Sprema trenutnu knjižnu oznaku kao privremenu."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Premješta se na privremenu knjižnu oznaku u trenutnom dokumentu."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
