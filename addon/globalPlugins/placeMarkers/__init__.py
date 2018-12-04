@@ -25,6 +25,7 @@ from browseMode import BrowseModeDocumentTreeInterceptor
 import controlTypes
 import gui
 from gui import guiHelper
+import core
 import wx
 import ui
 import speech
@@ -278,9 +279,9 @@ class SpecificSearchDialog(wx.Dialog):
 		if actionToPerform < 2:  # Search
 			caseSensitive = self.caseSensitiveCheckBox.Value
 			if actionToPerform == 0:
-				wx.CallLater(1000, doFindText, text, caseSensitive=caseSensitive)
+				core.callLater(1000, doFindText, text, caseSensitive=caseSensitive)
 			else:
-				wx.CallLater(1000, doFindTextUp, text, caseSensitive=caseSensitive)
+				core.callLater(1000, doFindTextUp, text, caseSensitive=caseSensitive)
 		if self.addCheckBox.Value or self.removeCheckBox.Value:
 			savedStrings = self.savedTexts
 			if self.removeCheckBox.Value:
@@ -301,7 +302,7 @@ def doCopy(copyDirectory):
 	try:
 		shutil.rmtree(copyDirectory, ignore_errors=True)
 		shutil.copytree(PLACE_MARKERS_PATH, copyDirectory)
-		wx.CallLater(100, ui.message,
+		core.callLater(100, ui.message,
 			# Translators: Message presented when place markers have been copied.
 			_("Place markers copied"))
 	except Exception as e:
@@ -317,7 +318,7 @@ def doRestore(restoreDirectory):
 	try:
 		shutil.rmtree(PLACE_MARKERS_PATH, ignore_errors=True)
 		shutil.copytree(restoreDirectory, PLACE_MARKERS_PATH)
-		wx.CallLater(100, ui.message,
+		core.callLater(100, ui.message,
 			# Translators: Message presented when place markers have been restored.
 			_("Place markers restored"))
 	except Exception as e:
@@ -422,7 +423,7 @@ class NotesDialog(wx.Dialog):
 
 	def onOk(self, evt):
 		self.Destroy()
-		wx.CallLater(1000, moveToBookmark, self.pos)
+		core.callLater(1000, moveToBookmark, self.pos)
 
 class CopyDialog(wx.Dialog):
 
