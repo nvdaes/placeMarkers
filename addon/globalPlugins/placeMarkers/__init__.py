@@ -20,6 +20,7 @@ import config
 import globalVars
 import languageHandler
 import textInfos
+from textInfos.offsets import Offsets
 from cursorManager import CursorManager
 from browseMode import BrowseModeDocumentTreeInterceptor
 import controlTypes
@@ -120,15 +121,13 @@ def moveToBookmark(position):
 	treeInterceptor=obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj=treeInterceptor
-		info = obj.makeTextInfo(textInfos.POSITION_FIRST)
-		info.move(textInfos.UNIT_CHARACTER, position)
-		if hasattr(obj,'selection'):
-			obj.selection=info
-		else:
-			info.updateCaret()
+		bookmark = getSavedBookmarks()[position].bookmark
+		if bookmark is None
+			bookmark = obj.makeTextInfo(Offsets(position, position))
+		bookmark.updateSelection()
 		speech.cancelSpeech()
-		info.move(textInfos.UNIT_LINE,1,endPoint="end")
-		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+		bookmark.move(textInfos.UNIT_LINE,1,endPoint="end")
+		speech.speakTextInfo(bookmark,reason=controlTypes.REASON_CARET)
 
 def standardFileName(fileName):
 	fileName.encode("mbcs")
@@ -556,10 +555,11 @@ class RestoreDialog(wx.Dialog):
 
 class Note(object):
 
-	def __init__(self, title="", body=""):
+	def __init__(self, title="", body="", bookmark=None):
 		super(Note, self).__init__()
 		self.title = title
 		self.body = body
+		self.bookmark = bookmark
 
 ### Global plugin
 
@@ -711,39 +711,31 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_saveBookmark(self, gesture):
 		obj = api.getFocusObject()
-		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		if appName == "MicrosoftEdgeCP.exe":
-			gesture.send()
-			return
+		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		#if appName == "MicrosoftEdgeCP.exe":
+			#gesture.send()
+			#return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			ui.message(
-				# Translators: message presented when a bookmark cannot be saved.
-				_("Bookmark cannot be saved"))
-			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
+		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+		startOffset = bookmark.startOffset
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("utf-8")
-		if count in bookmarks:
-			noteBody = bookmarks[count].body
+		if startOffset in bookmarks:
+			noteBody = bookmarks[startOffset].body
 		else:
 			noteBody = ""
-		bookmarks[count] = Note(noteTitle, noteBody)
+		bookmarks[startOffset] = Note(noteTitle, noteBody, bookmark)
 		fileName = getFileBookmarks()
 		try:
 			pickle.dump(bookmarks, file(fileName, "wb"))
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
-				_("Saved position at character %d") %count)
+				_("Saved position at character %d") % bookmark)
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
 			ui.message(
@@ -818,12 +810,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_selectNextBookmark(self, gesture):
 		obj = api.getFocusObject()
-		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		if appName == "MicrosoftEdgeCP.exe":
-			gesture.send()
-			return
+		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		#if appName == "MicrosoftEdgeCP.exe":
+			#gesture.send()
+			#return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
@@ -834,28 +826,15 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
+		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		nextBookmark = min(bookmarks, key=lambda x:abs(x-bookmark))
+		nextBookmark.updateSelection()
+		if not willSayAllResume(gesture):
+			bookmark.move(textInfos.UNIT_LINE,1,endPoint="end")
+			speech.speakTextInfo(bookmark,reason=controlTypes.REASON_CARET)
 			ui.message(
-				# Translators: message presented when cannot find any bookmarks.
-				_("Cannot find any bookmarks"))
-			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
-		positions = list(bookmarks.keys())
-		positions.sort()
-		for pos in positions:
-			if pos > count:
-				end.move(textInfos.UNIT_CHARACTER, pos - count)
-				obj.selection = end
-				if not willSayAllResume(gesture):
-					end.move(textInfos.UNIT_LINE,1,endPoint="end")
-					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
-					ui.message(
-						# Translators: message presented when a bookmark is selected.
-						_("Position: character %d") % pos)
+				# Translators: message presented when a bookmark is selected.
+				_("Position: character %d") % pos)
 				return
 		ui.message(
 			# Translators: message presented when the next bookmark is not found.
