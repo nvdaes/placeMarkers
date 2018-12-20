@@ -730,7 +730,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		bookmarks[startOffset] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
-			pickle.dump(sorted(bookmarks), file(fileName, "wb"))
+			pickle.dump(bookmarks, file(fileName, "wb"))
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
 				_("Saved position at character %d") % bookmark.startOffset)
@@ -817,7 +817,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
 		nextPos = None
-		for pos in bookmarks:
+		for pos in sorted(bookmarks):
 			if pos > curPos:
 				nextPos = pos
 				break
@@ -907,32 +907,24 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_saveTempBookmark(self, gesture):
 		obj = api.getFocusObject()
-		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		if appName == "MicrosoftEdgeCP.exe":
-			gesture.send()
-			return
+		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		#if appName == "MicrosoftEdgeCP.exe":
+			#gesture.send()
+			#return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			ui.message(
-				# Translators: message presented when a bookmark cannot be saved.
-				_("Bookmark cannot be saved"))
-			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
+		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+		startOffset = bookmark.startOffset
 		fileName = getFileTempBookmark()
 		try:
 			with codecs.open(fileName, "w", "utf-8") as f:
-				f.write(str(count))
+				f.write(str(startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
-				ui.message(_("Saved temporary bookmark at position %d" % count))
+				ui.message(_("Saved temporary bookmark at position %d" % startOffset))
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
