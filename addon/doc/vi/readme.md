@@ -1,6 +1,7 @@
 # Đánh dấu #
 
 * Tác giả: Noelia, Chris.
+* NVDA tương thích: 2018.3 đến 2019.1
 * tải về [phiên bản chính thức][1]
 * tải về [phiên bản thử nghiệm][2]
 

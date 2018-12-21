@@ -1,6 +1,7 @@
 # Lesezeichen #
 
 * Autoren: Noelia, Chris.
+* NVDA-Kompatibilität: 2018.3 bis 2019.1
 * [stabile version herunterladen][1]
 * [Entwicklungsversion herunterladen][2]
 
@@ -63,9 +64,10 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
-## Changes for 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+## Änderungen für 12.0 ##
+*	Es wurde ein kritischer Fehler behoben, der dazu führte, dass NVDA beim
+  Versuch, den Notizen-Dialog zu öffnen, abstürzte, wenn chinesische Zeichen
+  ausgewählt wurden bevor Lesezeichen gespeichert wurden.
 
 ## Änderungen in 11.0 ##
 *	Kompatibel mit NVDA 2018.3 oder neuer (erforderlich).

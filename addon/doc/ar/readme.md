@@ -1,6 +1,7 @@
 # placeMarkers #
 
 * مطورو الإضافة: Noelia, Chris.
+* NVDA compatibility: 2018.3 to 2019.1
 * تحميل [الإصدار النهائي][1]
 * تحميل [الإصدار التجريبي][2]
 

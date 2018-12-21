@@ -1,6 +1,7 @@
 # marcadores de lugar #
 
 * Autores: Noelia, Chris.
+* NVDA compatibility: 2018.3 to 2019.1
 * baixe a [versão estável][1]
 * baixe a [versão de desenvolvimento][2]
 

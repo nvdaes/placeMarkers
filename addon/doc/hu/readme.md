@@ -1,6 +1,7 @@
 # Könyvjelzők #
 
 * Készítők: Noelia, Chris.
+* NVDA compatibility: 2018.3 to 2019.1
 * [stabil verzió][1] letöltése
 * [fejlesztői verzió][2] letöltése
 

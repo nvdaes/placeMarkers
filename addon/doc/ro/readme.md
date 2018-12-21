@@ -1,6 +1,7 @@
 # placeMarkers #
 
 * Autori: Noelia, Chris.
+* Compatibilitate NVDA: 2018.3 - 2019.1
 * descărcați [versiunea stabilă][1]
 * descărcați [versiunea în dezvoltare][2]
 
@@ -59,9 +60,10 @@ Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
 
-## Changes for 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+## Modificări în 12.0 ##
+*	S-a rezolvat o problemă critică care făcea ca NVDA să dea crash când
+  încerca să deschidă dialogul de note dacă caractere chinezești erau
+  selectate înainte de salvarea semnelor de carte.
 
 ## Modificări în 11.0 ##
 *	Compatibil cu NVDA 2018.3 sau mai nou (necesar).
