@@ -20,6 +20,7 @@ import config
 import globalVars
 import languageHandler
 import textInfos
+from textInfos.offsets import Offsets
 from cursorManager import CursorManager
 from browseMode import BrowseModeDocumentTreeInterceptor
 import controlTypes
@@ -119,13 +120,10 @@ def moveToBookmark(position):
 	obj = api.getFocusObject()
 	treeInterceptor=obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-		obj=treeInterceptor
-		info = obj.makeTextInfo(textInfos.POSITION_FIRST)
-		info.move(textInfos.UNIT_CHARACTER, position)
-		if hasattr(obj,'selection'):
-			obj.selection=info
-		else:
-			info.updateCaret()
+		obj = treeInterceptor
+		bookmark = Offsets(position, position)
+		info = obj.makeTextInfo(bookmark)
+		info.updateSelection()
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE,1,endPoint="end")
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
@@ -716,34 +714,25 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			ui.message(
-				# Translators: message presented when a bookmark cannot be saved.
-				_("Bookmark cannot be saved"))
-			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
+		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("utf-8")
-		if count in bookmarks:
-			noteBody = bookmarks[count].body
+		if bookmark.startOffset in bookmarks:
+			noteBody = bookmarks[bookmark.startOffset].body
 		else:
 			noteBody = ""
-		bookmarks[count] = Note(noteTitle, noteBody)
+		bookmarks[bookmark.startOffset] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
 			pickle.dump(bookmarks, file(fileName, "wb"))
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
-				_("Saved position at character %d") %count)
+				_("Saved position at character %d") % bookmark.startOffset)
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
 			ui.message(
@@ -759,7 +748,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_deleteBookmark(self, gesture):
 		obj = api.getFocusObject()
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
@@ -770,22 +759,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when the current document doesn't contain bookmarks.
 				_("No bookmarks"))
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			ui.message(
-				# Translators: Message presented when a bookmark can't be deleted.
-				_("Bookmark cannot be deleted"))
-			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
-		if count not in bookmarks:
+		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		if curPos not in bookmarks:
 			ui.message(
 				# Translators: message presented when the current document has bookmarks, but none is selected.
 				_("No bookmark selected"))
 			return
-		del(bookmarks[count])
+		del(bookmarks[curPos])
 		fileName = getFileBookmarks()
 		if bookmarks != {}:
 			try:
@@ -823,7 +803,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
@@ -834,29 +814,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			ui.message(
-				# Translators: message presented when cannot find any bookmarks.
-				_("Cannot find any bookmarks"))
+		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		nextPos = None
+		for pos in sorted(bookmarks):
+			if pos > curPos:
+				nextPos = pos
+				break
+		if nextPos is not None:
+			info = obj.makeTextInfo(Offsets(nextPos, nextPos))
+			info.updateSelection()
+			if willSayAllResume(gesture):
+				info.move(textInfos.UNIT_LINE,1,endPoint="end")
+				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+			else:
+				ui.message(
+					# Translators: message presented when a bookmark is selected.
+					_("Position: character %d") % nextPos)
 			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
-		positions = list(bookmarks.keys())
-		positions.sort()
-		for pos in positions:
-			if pos > count:
-				end.move(textInfos.UNIT_CHARACTER, pos - count)
-				obj.selection = end
-				if not willSayAllResume(gesture):
-					end.move(textInfos.UNIT_LINE,1,endPoint="end")
-					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
-					ui.message(
-						# Translators: message presented when a bookmark is selected.
-						_("Position: character %d") % pos)
-				return
 		ui.message(
 			# Translators: message presented when the next bookmark is not found.
 			_("Next bookmark not found"))
@@ -874,7 +848,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
@@ -885,29 +859,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				# Translators: message presented when trying to select a bookmark, but none is found.
 				_("No bookmarks found"))
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			# Translators: message presented when cannot find any bookmarks.
-			ui.message(_("Cannot find any bookmarks"))
+		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		prevPos = None
+		for pos in sorted(bookmarks, reverse=True):
+			if pos < curPos:
+				prevPos = pos
+				break
+		if prevPos is not None:
+			info = obj.makeTextInfo(Offsets(prevPos, prevPos))
+			info.updateSelection()
+			if willSayAllResume(gesture):
+				info.move(textInfos.UNIT_LINE,1,endPoint="end")
+				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+			else:
+				ui.message(
+					# Translators: message presented when a bookmark is selected.
+					_("Position: character %d") % prevPos)
 			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
-		positions = list(bookmarks.keys())
-		positions.sort()
-		positions.reverse()
-		for pos in positions:
-			if pos < count:
-				end.move(textInfos.UNIT_CHARACTER, pos - count)
-				obj.selection = end
-				if not willSayAllResume(gesture):
-					end.move(textInfos.UNIT_LINE,1,endPoint="end")
-					speech.speakTextInfo(end,reason=controlTypes.REASON_CARET)
-					ui.message(
-						# Translators: message presented when a bookmark is selected.
-						_("Position: character %d") % pos)
-				return
 		ui.message(
 			# Translators: message presented when the previous bookmark is not found.
 			_("Previous bookmark not found"))
@@ -945,27 +913,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough:
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
 		else:
 			gesture.send()
 			return
-		start = obj.makeTextInfo(textInfos.POSITION_ALL)
-		try:
-			end = obj.makeTextInfo(textInfos.POSITION_CARET)
-		except (NotImplementedError, RuntimeError):
-			ui.message(
-				# Translators: message presented when a bookmark cannot be saved.
-				_("Bookmark cannot be saved"))
-			return
-		start.setEndPoint(end, "endToStart")
-		count = len(start.text)
+		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
 		fileName = getFileTempBookmark()
 		try:
 			with codecs.open(fileName, "w", "utf-8") as f:
-				f.write(str(count))
+				f.write(str(bookmark.startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
-				ui.message(_("Saved temporary bookmark at position %d" % count))
+				ui.message(_("Saved temporary bookmark at position %d" % bookmark.startOffset))
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
@@ -981,7 +940,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if not(hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
+			obj=treeInterceptor
+		else:
 			gesture.send()
 			return
 		fileName = getFileTempBookmark()
