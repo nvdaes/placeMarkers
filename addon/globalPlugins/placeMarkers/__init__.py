@@ -709,10 +709,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_saveBookmark(self, gesture):
 		obj = api.getFocusObject()
-		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		#if appName == "MicrosoftEdgeCP.exe":
-			#gesture.send()
-			#return
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -720,14 +720,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
-		startOffset = bookmark.startOffset
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("utf-8")
-		if startOffset in bookmarks:
-			noteBody = bookmarks[startOffset].body
+		if bookmark.startOffset in bookmarks:
+			noteBody = bookmarks[bookmark.startOffset].body
 		else:
 			noteBody = ""
-		bookmarks[startOffset] = Note(noteTitle, noteBody)
+		bookmarks[bookmark.startOffset] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
 			pickle.dump(bookmarks, file(fileName, "wb"))
@@ -799,10 +798,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_selectNextBookmark(self, gesture):
 		obj = api.getFocusObject()
-		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		#if appName == "MicrosoftEdgeCP.exe":
-			#gesture.send()
-			#return
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -824,13 +823,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if nextPos is not None:
 			info = obj.makeTextInfo(Offsets(nextPos, nextPos))
 			info.updateSelection()
-			if not willSayAllResume(gesture):
+			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
 				speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+			else:
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
 					_("Position: character %d") % nextPos)
-				return
+			return
 		ui.message(
 			# Translators: message presented when the next bookmark is not found.
 			_("Next bookmark not found"))
@@ -843,10 +843,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_selectPreviousBookmark(self, gesture):
 		obj = api.getFocusObject()
-		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		#if appName == "MicrosoftEdgeCP.exe":
-			#gesture.send()
-			#return
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -868,13 +868,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if prevPos is not None:
 			info = obj.makeTextInfo(Offsets(prevPos, prevPos))
 			info.updateSelection()
-			if not willSayAllResume(gesture):
+			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
 				speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+			else:
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
 					_("Position: character %d") % prevPos)
-				return
+			return
 		ui.message(
 			# Translators: message presented when the previous bookmark is not found.
 			_("Previous bookmark not found"))
