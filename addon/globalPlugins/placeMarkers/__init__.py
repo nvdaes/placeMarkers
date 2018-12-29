@@ -825,7 +825,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			info.updateSelection()
 			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
-				speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 			else:
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
@@ -870,7 +870,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			info.updateSelection()
 			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
-				speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 			else:
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
