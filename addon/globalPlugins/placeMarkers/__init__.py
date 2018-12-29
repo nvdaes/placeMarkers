@@ -763,7 +763,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if curPos not in bookmarks:
 			ui.message(
 				# Translators: message presented when the current document has bookmarks, but none is selected.
-				(_("No bookmark selected")))
+				_("No bookmark selected"))
 			return
 		del(bookmarks[curPos])
 		fileName = getFileBookmarks()
@@ -908,10 +908,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_saveTempBookmark(self, gesture):
 		obj = api.getFocusObject()
-		#appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
-		#if appName == "MicrosoftEdgeCP.exe":
-			#gesture.send()
-			#return
+		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		if appName == "MicrosoftEdgeCP.exe":
+			gesture.send()
+			return
 		treeInterceptor=obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj=treeInterceptor
@@ -919,13 +919,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
-		startOffset = bookmark.startOffset
 		fileName = getFileTempBookmark()
 		try:
 			with codecs.open(fileName, "w", "utf-8") as f:
-				f.write(str(startOffset))
+				f.write(str(bookmark.startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
-				ui.message(_("Saved temporary bookmark at position %d" % startOffset))
+				ui.message(_("Saved temporary bookmark at position %d" % bookmark.startOffset))
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
@@ -941,7 +940,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if not(hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
+			obj=treeInterceptor
+		else:
 			gesture.send()
 			return
 		fileName = getFileTempBookmark()
