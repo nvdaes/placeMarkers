@@ -1,9 +1,9 @@
 # placeMarkers #
 
 * Autori: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.1
-* download [stable version][1]
-* download [development version][2]
+* Compatibilità con NVDA: dalla 2018.3 alla 2019.1
+* Scarica la  [versione stabile][1]
+* Scarica la [versione in sviluppo][2]
 
 Questo componente aggiuntivo è utilizzato per salvare segnaposti e cercare
 stringhe di testo specifiche, sia nelle pagine web che in documenti,
@@ -30,9 +30,9 @@ Markers.
   successiva, Cerca Precedente o Non Cercare, e specificare se considerare
   le maiuscole o minuscole nella ricerca. Premendo Ok NVDA cercherà la
   stringa digitata.
-*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
-  position before saving it.
+*	control+shift+NVDA+k: Salva la posizione corrente come segnalibro. Se si
+  desidera dare un nome per il segnalibro, selezionare un testo da questa
+  posizione prima di salvarlo.
 *	Control+Shift+NVDA+Delete: Elimina il segnaposto corrispondente a questa
   posizione.
 *	NVDA+k: vai al segnaposto successivo.
@@ -40,12 +40,15 @@ Markers.
 *	Control+Shift+K: copia negli appunti il nome del file per il quale
   verranno salvati i segnaposti e le ricerche. (Il nome non contiene
   l'estenzione).
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	alt+NVDA+k: apre una finestra di dialogo con i segnalibri salvati per il
+  documento corrente. È possibile scrivere una nota per ogni segnalibro;
+  premere Salva nota per salvare le modifiche. Premendo il tasto Canc è
+  possibile rimuovere il segnalibro selezionato. Premendo OK si sposta il
+  cursore nella posizione selezionata.
+*	Tasto non assegnato: Salva la posizione attuale come segnalibro
+  temporaneo.
+*	Tasto non assegnato: sposta il cursore nel segnalibro temporaneo nel
+  documento corrente. 
 
 
 ## Sottomenu Segnaposto (NVDA+N) ##
@@ -67,28 +70,29 @@ pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposti per salvare una posizione precisa.
 
 ## Changes for 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+*	Risolto un errore che causava un crash in NVDA quando si tentava di aprire
+  la finestra di dialogo Note, se i caratteri cinesi venivano selezionati
+  prima di salvare i segnalibri.
 
 ## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
+*	Compatibile con NVDA 2018.3 superiori(required).
+*	Se è necessario, è possibile scaricare la  [versione compatibile  con NVDA
   2017.3][3].
 
 ## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+*	In Edge, i comandi associati ai segnaposti, come NVDA+k, NVDA+shift+k o
+  NVDA+alt+k, saranno inviati all'applicazione, invece di tentare di
+  spostare il cursore al segnaposto, per evitare errori, particolarmente in
+  documenti lunghi.
+*	La ricerca specifica è supportata anche in Edge.
 
 ## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
+*	Quando ci si sposta ad un segnalibro dalla finestra  Note, il cursore di
+  controllo segue il cursore di sistema. 
 *	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+*	I segnalibri possono essere eliminati dalla finestra  Note.
+*	Ora  è possibile assegnare comandi da tastiera per spostarsi sui
+  segnalibri temporanei.
 
 ## Changes for 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid
@@ -96,7 +100,7 @@ non i segnaposti per salvare una posizione precisa.
 *	Added a Notes dialog, to associate comments for saved bookmarks and move
   to the selected position.
 
-## Novità nella versione 7.0 ##
+## Changes for 7.0 ##
 *	La finestra di dialogo per salvare una stringa di testo per la ricerca
   specifica è stata rimossa. Questa funzionalità è ora inserita nella
   finestra di ricerca Specifica , la quale è stata modificata per eseguire
