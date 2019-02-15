@@ -1,7 +1,7 @@
 # placeMarkers (Stedmærker) #
 
 * Forfattere: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.1
+* NVDA-kompatibilitet: 2018.3 til 2019.1
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -36,12 +36,13 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 *	Skift+NVDA+K: Flytter til det forrige bogmærke.
 *	CTRL+Skift+K: Kopierer filnavnet på filen hvor data på stedmærker bliver
   gemt til Udklipsholderen uden filtypenavn.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
+  dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
+  at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
+  position.
+*	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
+*	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
+  dokument.
 
 
 ## Undermenu for stedmærker (NVDA+n) ##
@@ -59,29 +60,30 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
-## Changes for 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+## Ændringer for 12.0 ##
+*	Rettede en kritisk fejl, der forårsagede at NVDA gik ned, når man forsøgte
+  at åbne dialogboksen Noter, hvis kinesiske tegn blev valgt, før bogmærker
+  blev gemt.
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
+## Ændringer for 11.0 ##
+*	Kompatibel med NVDA 2018.3 eller nyere (påkrævet).
+*	Hvis nødvendigt, kan du hente [den sidste version kompatibel med NVDA
   2017.3][3].
 
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+## Ændringer for 10.0 ##
+*	I Edge vil kommandoer i forbindelse med bogmærkevalg, såsom NVDA+k,
+  NVDA+shift+k eller NVDA+alt+k, blive sendt til applikationen i stedet for
+  at forsøge at flytte markøren til bogmærker for at undgå fejl, især i
+  lange dokumenter.
+*	Nu understøttes specifik søgning i Edge.
 
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## Ændringer for 9.0
+*	Når du flytter til et bogmærke i dialogboksen Noter, følger
+  korrekturmarkøren systemmarkøren.
+*	Kommandoen til at vælge det forrige bogmærke fungerer korrekt igen.
+*	Bogmærker kan slettes fra dialogen Noter.
+*	Nu kan du tildele bevægelser, så du lettere kan gemme og flytte til
+  midlertidige bogmærker for hvert dokument.
 
 ## Ændringer i 8.0 ##
 *	Fjernet fragmenter af identificeringsstrenge fra filnavne på
