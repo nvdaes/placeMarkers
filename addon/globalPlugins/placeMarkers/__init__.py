@@ -20,6 +20,7 @@ import config
 import globalVars
 import languageHandler
 import textInfos
+import review
 from textInfos.offsets import Offsets
 from cursorManager import CursorManager
 from browseMode import BrowseModeDocumentTreeInterceptor
@@ -124,6 +125,7 @@ def moveToBookmark(position):
 		bookmark = Offsets(position, position)
 		info = obj.makeTextInfo(bookmark)
 		info.updateSelection()
+		review.handleCaretMove(info)
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE,1,endPoint="end")
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
@@ -823,6 +825,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if nextPos is not None:
 			info = obj.makeTextInfo(Offsets(nextPos, nextPos))
 			info.updateSelection()
+			review.handleCaretMove(info)
 			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
 				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
@@ -868,6 +871,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if prevPos is not None:
 			info = obj.makeTextInfo(Offsets(prevPos, prevPos))
 			info.updateSelection()
+			review.handleCaretMove(info)
 			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
 				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
