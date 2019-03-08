@@ -5,18 +5,17 @@
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
 
-Ce module complémentaire sert à sauvegarder et rechercher des chaînes de
-caractères ou des marqueurs spécifiques sur des pages web ou des documents
-en Mode navigation de NVDA. Ce module complémentaire peut également être
-utilisé pour sauvegarder et rechercher des chaînes de caractères Dans des
-contrôleurs multilignes; dans ce cas, s'il n'est pas possible de mettre à
-jour le point d'insertion, la chaîne correspondante sera copiée dans le
-Presse-papiers, afin de pouvoir la rechercher à l'aide d'autres outils. Le
-module complémentaire sauvegarde les textes et les marqueurs spécifiés dans
-des fichiers. Le nom des fichiers est basé sur le titre et l'url du document
-en cours.   Ce module complémentaire est basé sur les modules
-complémentaires SpecificSearch et Bookmark&Search, développé par le même
-auteur. Vous devriez les désinstaller pour utiliser celui-ci, car ils ont
+Cette extension sert à sauvegarder et rechercher des chaînes de caractères
+ou des marqueurs spécifiques sur des pages web ou des documents en Mode
+navigation de NVDA. Elle peut également être utilisé pour sauvegarder et
+rechercher des chaînes de caractères Dans des contrôleurs multilignes; dans
+ce cas, s'il n'est pas possible de mettre à jour le point d'insertion, la
+chaîne correspondante sera copiée dans le Presse-papiers, afin de pouvoir la
+rechercher à l'aide d'autres outils. L'extension sauvegarde les textes et
+les marqueurs spécifiés dans des fichiers. Le nom des fichiers est basé sur
+le titre et l'url du document en cours.   Cette extension est basé sur les
+extensions SpecificSearch et Bookmark&Search, développées par le même
+auteur. Vous devriez les désinstaller pour utiliser celle-ci, car elles ont
 des raccourcis et des caractéristiques communes.
 
 ## Touches de commandes : ##
@@ -118,8 +117,8 @@ spécifique, pas les marqueurs.
   auront été copiés ou restaurés avec les dialogues correspondants.
 
 ## Changements pour la version 6.0 ##
-* Lorsque les fonctionnalités du module complémentaire ne sont pas
-  utilisables, les gestes sont envoyés à l'application correspondante.
+* Lorsque les fonctionnalités de l'extension ne sont pas utilisables, les
+  gestes sont envoyés à l'application correspondante.
 
 ## Changements pour la version 5.0 ##
 * Ajout de la recherche Respecter la casse.
@@ -131,8 +130,8 @@ spécifique, pas les marqueurs.
 * Identificateurs de fragment Supprimé pour les noms de fichiers  des
   marqueurs, qui peut éviter des problèmes dans le module ePUBREADER de
   Firefox.
-* L'aide du module complémentaire est disponible à partir du Gestionnaire de
-  modules complémentaires.
+* L'aide de l'extension est disponible à partir du Gestionnaire
+  d'extensions.
 
 ## Changements pour la version 3.1 ##
 * Mises à jour des traduction et nouvelle langue.
