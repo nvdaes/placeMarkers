@@ -20,6 +20,8 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing Delete you can remove the selected bookmark. Pressing OK you can move to the selected position.
 *	Not assigned: Saves a position as a temporary bookmark.
 *	Not assigned: Moves to the temporary bookmark for the current document.
+*	Not assigned: Finds the next occurrence of the last text searched for any specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for any specific document.
 
 
 ## Place markers Submenu (NVDA+N) ##
@@ -32,6 +34,9 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 *	Restore placeMarkers: You can restore your bookmarks from a previously saved placeMarkers folder.
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of the last text searched for any specific document.
 
 ## Changes for 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the Notes dialog, if chinese characters were selected before saving bookmarks.

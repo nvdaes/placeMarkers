@@ -46,6 +46,10 @@ BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
 CONFIG_PATH = globalVars.appArgs.configPath
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
+### Globals
+lastFindText = ""
+lastCaseSensitivity = ""
+
 def createSearchFolder():
 	if os.path.isdir(SEARCH_FOLDER):
 		return
@@ -282,6 +286,9 @@ class SpecificSearchDialog(wx.Dialog):
 				core.callLater(1000, doFindText, text, caseSensitive=caseSensitive)
 			else:
 				core.callLater(1000, doFindTextUp, text, caseSensitive=caseSensitive)
+			global lastFindText, lastCaseSensitivity
+			lastFindText = text
+			lastCaseSensitivity = caseSensitive
 		if self.addCheckBox.Value or self.removeCheckBox.Value:
 			savedStrings = self.savedTexts
 			if self.removeCheckBox.Value:
@@ -675,6 +682,38 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		self.popupSpecificSearchDialog()
+
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("finds the next occurrence of the last text searched for any specific document."),
+	)
+	def script_specificFindNext(self, gesture):
+		obj=api.getFocusObject()
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
+				gesture.send()
+				return
+		if not lastFindText:
+			self.popupSpecificSearchDialog()
+		else:
+			doFindText(lastFindText, lastCaseSensitivity)
+
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("finds the previous occurrence of the last text searched for any specific document."),
+	)
+	def script_specificFindPrevious(self, gesture):
+		obj=api.getFocusObject()
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
+				gesture.send()
+				return
+		if not lastFindText:
+			self.popupSpecificSearchDialog()
+		else:
+			doFindTextUp(lastFindText, lastCaseSensitivity)
 
 	def popupNotesDialog(self):
 		if getSavedBookmarks() == {}:
