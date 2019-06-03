@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-10.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2018-05-19 18:27+0200\n"
-"PO-Revision-Date: 2019-01-09 07:53+0800\n"
+"PO-Revision-Date: 2019-04-06 09:55+0800\n"
 "Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
 "Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
 "2010-2019>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
@@ -98,7 +98,7 @@ msgstr "&书签"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr "不&e:"
+msgstr "笔记(&E):"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
@@ -127,11 +127,7 @@ msgid "Copy place markers"
 msgstr "复制位置标记"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy, python-format
-msgid ""
-"Select a folder to save a backup of your current place markers.\n"
-"\n"
-"\t\tThey will be copied from %s."
+msgid "Select a folder to save a backup of your current place markers."
 msgstr "选择一个文件夹用来保存当前位置标记的备份。"
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
@@ -147,12 +143,9 @@ msgid "Restore place markers"
 msgstr "恢复位置标记"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy, python-format
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers.\n"
-"\n"
-"\t\tThey will be copied to %s."
-msgstr "选择一个文件夹来还原以前复制的位置标记的备份。"
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr "选择一个文件夹用来还原以前复制的位置标记的备份。"
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
@@ -229,9 +222,9 @@ msgstr "在指定的文档中查找光标所在位置的文本。"
 msgid "Show the Notes dialog for a specific document."
 msgstr "显示特定文档的笔记对话框。"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "书签未能保存"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "保存当前位置做为书签。"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -243,12 +236,8 @@ msgid "Cannot save bookmark"
 msgstr "不能保存书签"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "保存当前位置做为书签。"
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "书签无法删除"
+msgid "Deletes the current bookmark."
+msgstr "删除当前的书签。"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -263,16 +252,12 @@ msgid "Cannot delete bookmark"
 msgstr "不能删除书签"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "删除当前的书签。"
+msgid "Moves to the next bookmark."
+msgstr "移动到下一个书签。"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "未找到书签"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "无法找到任何书签"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -284,16 +269,16 @@ msgid "Next bookmark not found"
 msgstr "未找到下一个书签"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "移动到下一个书签。"
+msgid "Moves to the previous bookmark."
+msgstr "移动到上一个书签。"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "未找到上一个书签"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "移动到上一个书签。"
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "复制位置标记对应文件的名称到剪贴板。"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -304,17 +289,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "位置标记文件名以拷贝到剪贴板"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "复制位置标记对应文件的名称到剪贴板。"
+msgid "Saves the current position as a temporary bookmark."
+msgstr "将当前位置保存为临时书签。"
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "在当前位置保存临时书签%d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "将当前位置保存为临时书签。"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -329,3 +310,12 @@ msgstr "位置标记"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "一个在指定的虚拟文档中设置位置标记的插件"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "书签未能保存"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "书签无法删除"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "无法找到任何书签"
