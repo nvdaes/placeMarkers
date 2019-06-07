@@ -37,6 +37,8 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked if this option was selected for the last search.
 
 ## Changes for 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the Notes dialog, if chinese characters were selected before saving bookmarks.
