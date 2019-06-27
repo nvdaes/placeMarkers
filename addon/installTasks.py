@@ -12,10 +12,23 @@ import wx
 
 addonHandler.initTranslation()
 
+def moveTree(src, dst, clearDst=0):
+	if clearDst and os.path.isdir(dst):
+		shutil.rmtree(dst, ignore_errors=False)
+	try:
+		shutil.copytree(src, dst)
+	except IOError:
+		pass
+
 def onInstall():
 	configPath = globalVars.appArgs.configPath
-	addonPath = os.path.join(configPath, "placeMarkersBackup")
-	if not os.path.isdir(addonPath):
+	addonDir = os.path.dirname(__file__)
+	placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
+	addonBackupPath = os.path.join(configPath, "placeMarkersBackup")
+	previousPlaceMarkersPath = os.path.join(configPath, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers")
+	if os.path.isdir(previousPlaceMarkersPath):
+		moveTree(previousPlaceMarkersPath, placeMarkersPath)
+	if not os.path.isdir(addonBackupPath):
 		return
 	if gui.messageBox(
 	# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -23,9 +36,4 @@ def onInstall():
 	# Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 	_("Install or update add-on"),
 	wx.YES|wx.NO|wx.ICON_WARNING)==wx.YES:
-		addonDir = os.path.dirname(__file__)
-		placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
-		try:
-			shutil.copytree(addonPath, placeMarkersPath)
-		except IOError:
-			pass
+		moveTree(addonBackupPath, placeMarkersPath, 1)
