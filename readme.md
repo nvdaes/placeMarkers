@@ -39,6 +39,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 *	Added not assigned commands to find the next and previous occurrences of the last text searched for any specific document.
 *	The specific search feature works when the NVDA's About dialog is open.
 *	In the Specific search dialog, the case sensitive checkbox will be checked if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search saved in the previous version of the add-on will be automatically copied to the new version, unless you prefer to import place markers saved in the main configuration folder of NVDA.
 
 ## Changes for 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the Notes dialog, if chinese characters were selected before saving bookmarks.
