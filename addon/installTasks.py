@@ -12,9 +12,7 @@ import wx
 
 addonHandler.initTranslation()
 
-def moveTree(src, dst, clearDst=0):
-	if clearDst and os.path.isdir(dst):
-		shutil.rmtree(dst, ignore_errors=False)
+def copyTree(src, dst):
 	try:
 		shutil.copytree(src, dst)
 	except IOError:
@@ -26,14 +24,14 @@ def onInstall():
 	placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
 	addonBackupPath = os.path.join(configPath, "placeMarkersBackup")
 	previousPlaceMarkersPath = os.path.join(configPath, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers")
+	if os.path.isdir(addonBackupPath):
+		if gui.messageBox(
+			# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+			_("Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"),
+			# Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+			_("Install or update add-on"),
+			wx.YES|wx.NO|wx.ICON_WARNING)==wx.YES:
+				copyTree(addonBackupPath, placeMarkersPath)
+				return
 	if os.path.isdir(previousPlaceMarkersPath):
-		moveTree(previousPlaceMarkersPath, placeMarkersPath)
-	if not os.path.isdir(addonBackupPath):
-		return
-	if gui.messageBox(
-	# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-	_("Your configuration folder for NVDA contains files that seem to be derived from a previous version of this add-on. Do you want to update it?"),
-	# Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-	_("Install or update add-on"),
-	wx.YES|wx.NO|wx.ICON_WARNING)==wx.YES:
-		moveTree(addonBackupPath, placeMarkersPath, 1)
+		copyTree(previousPlaceMarkersPath, placeMarkersPath)
