@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # installTasks for placeMarkers add-on
-#Copyright (C) 2016,2019 Noelia Ruiz Martínez, Łukasz Golonka
+#Copyright (C) 2016-2019 Noelia Ruiz Martínez, Łukasz Golonka
 # Released under GPL 2
 
 import addonHandler
