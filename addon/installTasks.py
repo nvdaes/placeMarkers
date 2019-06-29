@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # installTasks for placeMarkers add-on
-#Copyright (C) 2016 Noelia Ruiz Martínez
+#Copyright (C) 2016,2019 Noelia Ruiz Martínez, Łukasz Golonka
 # Released under GPL 2
 
 import addonHandler
@@ -33,5 +33,5 @@ def onInstall():
 				copyTree(addonBackupPath, placeMarkersPath)
 				return
 	previousPlaceMarkersPath = os.path.join(configPath, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers")
-				if os.path.isdir(previousPlaceMarkersPath):
+	if os.path.isdir(previousPlaceMarkersPath):
 		copyTree(previousPlaceMarkersPath, placeMarkersPath)
