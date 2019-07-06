@@ -303,8 +303,14 @@ class SpecificSearchDialog(wx.Dialog):
 				raise e
 
 def doCopy(copyDirectory):
+	# Borrowed from @ibrahim-s code for readFeeds in PR#4
+	# to ensure that the removed directory will not be one of the main directories such as documents or music or other important ones
+	if not os.path.basename(copyDirectory) == "placeMarkersBackup":
+		copyDirectory=os.path.join(copyDirectory, "placeMarkersBackup")
 	try:
-		shutil.rmtree(copyDirectory, ignore_errors=True)
+		if os.path.exists(copyDirectory):
+			#if it exists, only placeMarkersBackup folder will be removed, which is the base name of copyDirectory path
+			shutil.rmtree(copyDirectory, ignore_errors=True)
 		shutil.copytree(PLACE_MARKERS_PATH, copyDirectory)
 		core.callLater(100, ui.message,
 			# Translators: Message presented when place markers have been copied.
