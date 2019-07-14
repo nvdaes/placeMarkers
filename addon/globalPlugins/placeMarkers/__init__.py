@@ -22,7 +22,6 @@ import languageHandler
 import textInfos
 import review
 from textInfos.offsets import Offsets
-from cursorManager import CursorManager
 from browseMode import BrowseModeDocumentTreeInterceptor
 import controlTypes
 import gui
@@ -33,7 +32,6 @@ import ui
 import speech
 import sayAllHandler
 from scriptHandler import willSayAllResume, script
-from cursorManager import CursorManager
 from logHandler import log
 from .skipTranslation import translate
 
@@ -45,6 +43,10 @@ SEARCH_FOLDER = os.path.join(PLACE_MARKERS_PATH, "search")
 BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
 CONFIG_PATH = globalVars.appArgs.configPath
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
+
+### Globals
+lastFindText = ""
+lastCaseSensitivity = False
 
 def createSearchFolder():
 	if os.path.isdir(SEARCH_FOLDER):
@@ -78,8 +80,6 @@ def doFindText(text, reverse=False, caseSensitive=False):
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	else:
-		CursorManager._lastFindText = text
-		CursorManager._lastCaseSensitivity = caseSensitive
 		try:
 			info=obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
@@ -241,6 +241,7 @@ class SpecificSearchDialog(wx.Dialog):
 		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
 		# Message translated in NVDA core.
 		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=translate("Case &sensitive")))
+		self.caseSensitiveCheckBox.Value = lastCaseSensitivity
 		sHelper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK|wx.CANCEL))
 		self.Bind(wx.EVT_BUTTON, self.onOk, id=wx.ID_OK)
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
@@ -282,6 +283,9 @@ class SpecificSearchDialog(wx.Dialog):
 				core.callLater(1000, doFindText, text, caseSensitive=caseSensitive)
 			else:
 				core.callLater(1000, doFindTextUp, text, caseSensitive=caseSensitive)
+			global lastFindText, lastCaseSensitivity
+			lastFindText = text
+			lastCaseSensitivity = caseSensitive
 		if self.addCheckBox.Value or self.removeCheckBox.Value:
 			savedStrings = self.savedTexts
 			if self.removeCheckBox.Value:
@@ -656,12 +660,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def script_activateRestoreDialog(self, gesture):
 		wx.CallAfter(self.onRestore, None)
 
-	def popupSpecificSearchDialog(self):
-		gui.mainFrame.prePopup()
-		d = SpecificSearchDialog(gui.mainFrame)
-		d.Show()
-		gui.mainFrame.postPopup()
-
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds a text string from the current cursor position for a specific document."),
@@ -674,7 +672,46 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
 				gesture.send()
 				return
-		self.popupSpecificSearchDialog()
+		# Adapted from Joseph Lee's work in NVDA's core
+		# #8566: We need this to be a modal dialog, but it mustn't block this script.
+		def run():
+			gui.mainFrame.prePopup()
+			d = SpecificSearchDialog(gui.mainFrame)
+			d.ShowModal()
+			gui.mainFrame.postPopup()
+		wx.CallAfter(run)
+
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("finds the next occurrence of the last text searched for any specific document."),
+	)
+	def script_specificFindNext(self, gesture):
+		obj=api.getFocusObject()
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
+				gesture.send()
+				return
+		if not lastFindText:
+			self.popupSpecificSearchDialog()
+		else:
+			doFindText(lastFindText, lastCaseSensitivity)
+
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("finds the previous occurrence of the last text searched for any specific document."),
+	)
+	def script_specificFindPrevious(self, gesture):
+		obj=api.getFocusObject()
+		if not controlTypes.STATE_MULTILINE in obj.states:
+			treeInterceptor=obj.treeInterceptor
+			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
+				gesture.send()
+				return
+		if not lastFindText:
+			self.popupSpecificSearchDialog()
+		else:
+			doFindTextUp(lastFindText, lastCaseSensitivity)
 
 	def popupNotesDialog(self):
 		if getSavedBookmarks() == {}:

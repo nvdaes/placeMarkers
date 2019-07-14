@@ -2,8 +2,8 @@
 
 * Autoren: Noelia, Chris.
 * NVDA-Kompatibilität: 2018.3 bis 2019.1
-* [stabile version herunterladen][1]
-* [Entwicklungsversion herunterladen][2]
+* [Stabile Version herunterladen][1]
+* [Entwicklerversion herunterladen][2]
 
 Mit dieser Erweiterung können Sie innerhalb des Lesemodus von NVDA
 Suchanfragen oder Lesezeichen speichern Bzw. Suchläufe durchführen. Die
