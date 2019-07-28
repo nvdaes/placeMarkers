@@ -20,7 +20,7 @@ def copyTree(src, dst):
 
 def onInstall():
 	configPath = globalVars.appArgs.configPath
-	addonDir = os.path.dirname(__file__).decode("mbcs")
+	addonDir = os.path.abspath(os.path.dirname(__file__))
 	placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
 	addonBackupPath = os.path.join(configPath, "placeMarkersBackup")
 	if os.path.isdir(addonBackupPath):

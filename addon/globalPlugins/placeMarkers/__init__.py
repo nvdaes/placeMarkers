@@ -1,14 +1,10 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-#Copyright (C) 2012-2018 Noelia Ruiz Martínez
+#Copyright (C) 2012-2019 Noelia Ruiz Martínez
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 
-try:
-	import cPickle as pickle
-except ImportError:
-	import pickle
-import codecs
+import pickle
 import re
 import os
 import shutil
@@ -38,10 +34,11 @@ from .skipTranslation import translate
 addonHandler.initTranslation()
 
 ### Constants
-PLACE_MARKERS_PATH = os.path.join(os.path.dirname(__file__), "savedPlaceMarkers").decode("mbcs")
+CONFIG_PATH = globalVars.appArgs.configPath
+PLACE_MARKERS_PATH = os.path.join(CONFIG_PATH, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers")
 SEARCH_FOLDER = os.path.join(PLACE_MARKERS_PATH, "search")
 BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
-CONFIG_PATH = globalVars.appArgs.configPath
+
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
 ### Globals
@@ -170,7 +167,7 @@ def getFileSearch():
 def getSavedTexts():
 	searchFile = getFileSearch()
 	try:
-		with codecs.open(searchFile, "r", "utf-8") as f:
+		with open(searchFile, 'r', encoding="utf_8") as f:
 			savedStrings = f.read().split("\n")
 	except:
 		savedStrings = []
@@ -191,7 +188,8 @@ def getFileTempBookmark():
 def getSavedBookmarks():
 	fileName = getFileBookmarks()
 	try:
-		savedBookmarks = pickle.load(file(fileName, "r"))
+		with open(fileName, "rb") as f:
+			savedBookmarks = pickle.load(f)
 		if isinstance(savedBookmarks, list):
 			bookmarksDic = {}
 			for bookmark in savedBookmarks:
@@ -296,7 +294,7 @@ class SpecificSearchDialog(wx.Dialog):
 				os.remove(self.searchFile)
 				return
 			try:
-				with codecs.open(self.searchFile, "w", "utf-8") as f:
+				with open(self.searchFile, 'w', encoding="utf_8") as f:
 					f.write("\n".join(savedStrings))
 			except Exception as e:
 				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
@@ -392,7 +390,8 @@ class NotesDialog(wx.Dialog):
 		note = Note(noteTitle, noteBody)
 		self.bookmarks[self.pos] = note
 		try:
-			pickle.dump(self.bookmarks, file(self.fileName, "wb"))
+			with open(self.fileName, "wb") as f:
+				pickle.dump(self.bookmarks, f)
 			self.notesListBox.SetFocus()
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
@@ -410,7 +409,8 @@ class NotesDialog(wx.Dialog):
 		del self.bookmarks[self.pos]
 		if len(self.bookmarks.keys()) > 0:
 			try:
-				pickle.dump(self.bookmarks, file(self.fileName, "wb"))
+				with open(self.fileName, "wb") as f:
+					pickle.dump(self.bookmarks, f)
 				self.notesListBox.Delete(self.notesListBox.Selection)
 				self.notesListBox.Selection = 0
 				self.onNotesChange(None)
@@ -766,7 +766,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
 		bookmarks = getSavedBookmarks()
-		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100].encode("utf-8")
+		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100]
 		if bookmark.startOffset in bookmarks:
 			noteBody = bookmarks[bookmark.startOffset].body
 		else:
@@ -774,7 +774,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		bookmarks[bookmark.startOffset] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
-			pickle.dump(bookmarks, file(fileName, "wb"))
+			with open(fileName, "wb") as f:
+				pickle.dump(bookmarks, f)
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
 				_("Saved position at character %d") % bookmark.startOffset)
@@ -814,7 +815,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		fileName = getFileBookmarks()
 		if bookmarks != {}:
 			try:
-				pickle.dump(bookmarks, file(fileName, "wb"))
+				with open(fileName, "wb") as f:
+					pickle.dump(bookmarks, f)
 				ui.message(
 					# Translators: message presented when a bookmark is deleted.
 					_("Bookmark deleted"))
@@ -968,7 +970,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
 		fileName = getFileTempBookmark()
 		try:
-			with codecs.open(fileName, "w", "utf-8") as f:
+			with open(fileName, "w", "utf-8") as f:
 				f.write(str(bookmark.startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
 				ui.message(_("Saved temporary bookmark at position %d" % bookmark.startOffset))
@@ -994,7 +996,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		fileName = getFileTempBookmark()
 		try:
-			with codecs.open(fileName, "r", "utf-8") as f:
+			with open(fileName, "r", "utf-8") as f:
 				tempBookmark = int(f.read())
 			moveToBookmark(tempBookmark)
 		except:
