@@ -28,13 +28,12 @@ def md2html(source, dest):
 	}
 	with open(source, 'r', encoding="utf_8") as f:
 		mdText = f.read()
-		headerList = list(headerDic.items())
-		for k, v in headerList:
+		for k, v in headerDic.items():
 			mdText = mdText.replace(k, v, 1)
 		htmlText = markdown.markdown(mdText)
 	with open(dest, 'w', encoding="utf_8") as f:
 		f.write("<!DOCTYPE html>\n" +
-			"<html lang=\"%s\"" % lang +
+			"<html lang=\"%s\">\n" % lang +
 			"<head>\n" +
 			"<meta charset=\"UTF-8\">\n" +
 			"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
