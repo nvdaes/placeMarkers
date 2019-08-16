@@ -219,6 +219,20 @@ msgid ""
 msgstr "在指定的文档中查找光标所在位置的文本。"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "在指定的文档中查找光标所在位置的文本。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "在指定的文档中查找光标所在位置的文本。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "显示特定文档的笔记对话框。"
 

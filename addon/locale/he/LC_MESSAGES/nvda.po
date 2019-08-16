@@ -218,12 +218,26 @@ msgid ""
 msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "הצג את תיבת הדו-שיח הערות למסמך מסוים."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "לא ניתן לשמור את הסימנייה"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "שומר את המיקום הנוכחי כסימנייה."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -235,12 +249,8 @@ msgid "Cannot save bookmark"
 msgstr "לא ניתן לשמור את הסימנייה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "שומר את המיקום הנוכחי כסימנייה."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "לא ניתן למחוק את הסימנייה"
+msgid "Deletes the current bookmark."
+msgstr "מחיקת הסימנייה הנוכחית."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -255,16 +265,12 @@ msgid "Cannot delete bookmark"
 msgstr "לאניתן למחוק את הסימנייה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "מחיקת הסימנייה הנוכחית."
+msgid "Moves to the next bookmark."
+msgstr "מעבר לסימנייה הבאה."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "לא נמצאו סימנייותת"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "לא ניתן לזהות סימניות"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -276,16 +282,16 @@ msgid "Next bookmark not found"
 msgstr "הסימנייה הבאה לא נמצאה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "מעבר לסימנייה הבאה."
+msgid "Moves to the previous bookmark."
+msgstr "מעבר לסימנייה הקודמת."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "הסימנייה הקודמת לא נמצאה"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "מעבר לסימנייה הקודמת."
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -296,17 +302,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "שם הקובץ הועתק כסימנייה בזכרון הזמני"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "שומר את המיקום הנוכחי כסימנייה."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "סימניה זמנית שמורה במיקום %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "שומר את המיקום הנוכחי כסימנייה."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -321,3 +323,12 @@ msgstr "סימניות"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "תוסף זה מיועד להגדיר סימניות במסמכים וירטואלים נבחרים"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "לא ניתן לשמור את הסימנייה"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "לא ניתן למחוק את הסימנייה"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "לא ניתן לזהות סימניות"

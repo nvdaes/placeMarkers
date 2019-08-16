@@ -220,12 +220,28 @@ msgstr ""
 "ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "ஒரு குறிப்பிட்ட ஆவணத்திற்கான குறிப்புகள் உரையாடலைக் காட்டுக. "
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "நூற்குறியை சேமிக்க இயலவில்லை"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "தற்போதைய நிலையை ஒரு நூற்குறியாக சேமிக்கிறது"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -237,12 +253,8 @@ msgid "Cannot save bookmark"
 msgstr "நூற்குறியை சேமிக்க இயலவில்லை"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "தற்போதைய நிலையை ஒரு நூற்குறியாக சேமிக்கிறது"
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "நூற்குறியை அழிக்க இயலவில்லை"
+msgid "Deletes the current bookmark."
+msgstr "தற்போதைய நூற்குறியை அழிக்கிறது"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -257,16 +269,12 @@ msgid "Cannot delete bookmark"
 msgstr "நூற்குறியை அழிக்க இயலவில்லை"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "தற்போதைய நூற்குறியை அழிக்கிறது"
+msgid "Moves to the next bookmark."
+msgstr "அடுத்த நூற்குறிக்கு நகர்கிறது"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "நூற்குறிகள் ஏதும் காணப்படவில்லை"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "எந்த நூற்குறியையும் காண இயலவில்லை"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -278,16 +286,16 @@ msgid "Next bookmark not found"
 msgstr "அடுத்த நூற்குறி காணப்படவில்லை"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "அடுத்த நூற்குறிக்கு நகர்கிறது"
+msgid "Moves to the previous bookmark."
+msgstr "முந்தைய நூற்குறிக்கு நகர்கிறது"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "முந்தைய நூற்குறி காணப்படவில்லை"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "முந்தைய நூற்குறிக்கு நகர்கிறது"
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "இடக் குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -298,17 +306,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "இடக் குறிப்பிகளின் கோப்புப் பெயர் பிடிப்புப் பலகைக்கு படியெடுக்கப்பட்டது"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "இடக் குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
+msgid "Saves the current position as a temporary bookmark."
+msgstr "தற்போதைய நிலையை ஒரு தற்காலிக நூற்குறியாக சேமிக்கிறது"
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "தற்காலிக நூற்குறி நிலை %dல் சேமிக்கப்பட்டது"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "தற்போதைய நிலையை ஒரு தற்காலிக நூற்குறியாக சேமிக்கிறது"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -323,3 +327,12 @@ msgstr "இடக் குறிப்பிகள்"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "நூற்குறியை சேமிக்க இயலவில்லை"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "நூற்குறியை அழிக்க இயலவில்லை"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "எந்த நூற்குறியையும் காண இயலவில்லை"

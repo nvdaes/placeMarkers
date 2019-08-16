@@ -222,12 +222,28 @@ msgstr ""
 "tìm một chuỗi văn bản từ vị trí con trỏ hiện thời cho một tài liệu cụ thể."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"tìm một chuỗi văn bản từ vị trí con trỏ hiện thời cho một tài liệu cụ thể."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"tìm một chuỗi văn bản từ vị trí con trỏ hiện thời cho một tài liệu cụ thể."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Hiển thị hộp thoại ghi chú cho một tài liệu nào đó."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Không thể lưu dấu trang"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Lưu vị trí hiện thời thành dấu trang"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -239,12 +255,8 @@ msgid "Cannot save bookmark"
 msgstr "Không thể lưu dấu trang"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Lưu vị trí hiện thời thành dấu trang"
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Không thể xóa dấu trang"
+msgid "Deletes the current bookmark."
+msgstr "Xóa dấu trang hiện thời"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -259,16 +271,12 @@ msgid "Cannot delete bookmark"
 msgstr "Không thể xóa dấu trang"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Xóa dấu trang hiện thời"
+msgid "Moves to the next bookmark."
+msgstr "Chuyển đến dấu trang tiếp theo"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Không tìm thấy dấu trang"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Không thể tìm thấy bất kỳ dấu trang nào"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -280,16 +288,16 @@ msgid "Next bookmark not found"
 msgstr "Không tìm thấy dấu trang tiếp theo"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Chuyển đến dấu trang tiếp theo"
+msgid "Moves to the previous bookmark."
+msgstr "Chuyển đến dấu trang trước."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Không tìm thấy dấu trang trước"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Chuyển đến dấu trang trước."
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Chép tên của tập tin muốn đánh dấu hiện thời vào bộ  nhớ tạm."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -300,17 +308,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Đã chép tên tập tin đánh dấu vào bộ nhớ tạm"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Chép tên của tập tin muốn đánh dấu hiện thời vào bộ  nhớ tạm."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Lưu vị trí hiện thời thành dấu trang."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Đã lưu dấu trang tạm thời tại vị trí %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Lưu vị trí hiện thời thành dấu trang."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -325,3 +329,12 @@ msgstr "Đánh dấu"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Add-on thực hiện đánh dấu trên các tài liệu ảo"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Không thể lưu dấu trang"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Không thể xóa dấu trang"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Không thể tìm thấy bất kỳ dấu trang nào"

@@ -1,7 +1,6 @@
 # Paikkamerkit #
-
 * Tekijät: Noelia, Chris
-* NVDA-yhteensopivuus: 2018.3-2019.1
+* Yhteensopivuus: NVDA 2018.3-2019.2
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 
@@ -35,13 +34,17 @@ ominaisuuksia.
 *	Vaihto+NVDA+K: Siirtää edelliseen paikkamerkkiin.
 *	Ctrl+Vaihto+K: Kopioi paikkamerkkitiedoston nimen leikepöydälle ilman
   tarkennetta.
-*	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle dokumentille
+*	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle asiakirjalle
   tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
   muistiinpanon. Tallenna muutokset painamalla Tallenna muistiinpano. Voit
   poistaa valitun paikkamerkin painamalla Delete. Siirry valittuun
   sijaintiin painamalla OK.
 *	Ei määritetty: Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi.
-*	Ei määritetty: Siirtää tilapäiseen kirjanmerkkiin nykyisessä dokumentissa.
+*	Ei määritetty: Siirtää tilapäiseen kirjanmerkkiin nykyisessä asiakirjassa.
+*	Ei määritetty: Etsii viimeksi haetun tekstin seuraavan esiintymän mistä
+  tahansa määrätystä asiakirjasta.
+*	Ei määritetty: Etsii viimeksi haetun tekstin edellisen esiintymän mistä
+  tahansa määrätystä asiakirjasta.
 
 
 ## Paikkamerkit-alavalikko (NVDA+N) ##
@@ -59,6 +62,20 @@ seuraavia toimintoja:
 Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
+
+## Muutokset versiossa 13.0 ##
+*	Lisätty komennot ilman näppäinkomentoa viimeksi haetun tekstin seuraavan
+  ja edellisen esiintymän etsimiseen mistä tahansa  määrätystä asiakirjasta.
+*	Sivukohtainen haku toimii, kun NVDA:n Tietoja-valintaikkuna on avoimena.
+*	Sama kirjainkoko -valintaruutu valitaan sivukohtaisen haun
+  valintaikkunassa, jos se oli valittuna edellistä hakua suoritettaessa.
+*	Kun lisäosa päivitetään, aiemmassa versiossa tallennetut paikkamerkit ja
+  sivukohtaisen haun merkkijonot kopioidaan automaattisesti uuteen versioon,
+  paitsi jos haluat tuoda paikkamerkit NVDA-asetusten pääkansiosta.
+*	Jos valitulle kansiolle ei ole paikkamerkkien kopiointivalintaikkunassa
+  annettu nimeksi placeMarkersBackup, sen niminen alikansio luodaan, jotta
+  estetään tärkeää dataa sisältävien hakemistojen, kuten Tiedostot tai
+  Ladatut tiedostot, poistaminen.
 
 ## Muutokset versiossa 12.0 ##
 *	Korjattu kriittinen bugi, joka kaatoi NVDA:n yritettäessä avata

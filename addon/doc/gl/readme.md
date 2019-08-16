@@ -1,7 +1,6 @@
 # placeMarkers #
-
 * Autores: Noelia, Chris.
-* Compatibilidade con NVDA: da 2018.3 á 2019.1
+* Compatibilidade con NVDA: da 2018.3 á 2019.2
 * descarga [versión estable][1]
 * descarga [versión de desenvolvemento][2]
 
@@ -41,6 +40,10 @@ combinacións de teclas e características.
   seleccionada.
 *	Sen asignar: garda a posición actual coma unha marca temporal.
 *	Sen asignar: Móvese á marca temporal para o documento actual.
+*	Sen asignar: Buscar seguinte ocorrencia do último texto procurado en
+  calquera documento específico.
+*	Sen asignar: Buscar ocorrencia anterior do último texto procurado en
+  calquera documento específico.
 
 
 ## Submenú Place markers (NVDA+N) ##
@@ -58,6 +61,24 @@ Usando o submenú Place markers no Menú Preferencias, podes acceder a
 Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
+
+## Cambios para 13.0 ##
+*	Engadidas ordes sen asignar para buscar a próxima e anterior ocorrencia do
+  último texto procurado en calquera documento específico.
+*	A característica de busca específica funciona cando o diálogo Acerca de
+  NVDA está aberto.
+*	No diálogo Busca específica, a caixa de verificación sensible ás
+  maiúsculas estará verificada se esta opción se seleccionou na busca
+  anterior.
+*	Cando o complemento se actualice, os marcadores e as cadeas da busca
+  específica gardadas na versión anterior do complemento copiaranse
+  automaticamente á nova versión, a menos que prefiras importar os
+  marcadores de lugar gardados no cartafol principal de configuración de
+  NVDA.
+*	Ao utilizar o diálogo para copiar marcadores de lugar, se o cartafol
+  escollido non se chama placeMarkersBackup, crearase un subcartafol co
+  mesmo nome para previr a eliminación de directorios que conteñan datos
+  importantes, como Documentos ou Descargas.
 
 ## Cambios para 12.0 ##
 *	Solucionado un erro crítico que causaba o peche de NVDA ao tratar de abrir

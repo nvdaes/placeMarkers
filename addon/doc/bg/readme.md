@@ -1,7 +1,6 @@
 # Позиционни маркери (placeMarkers) #
-
 * Автори: Noelia, Chris.
-* Съвместимост с NVDA: от 2018.3 до 2019.1
+* NVDA compatibility: 2018.3 to 2019.2
 * Изтегляне на [стабилна версия][1]
 * Изтегляне на [тестова версия][2]
 
@@ -43,6 +42,10 @@ Bookmark&Search, разработени от същия автор. Трябва
   избрания маркер. Ако натиснете OK, можете да отидете до избраната позиция.
 *	Не е зададено: Запазва позиция като временен маркер.
 *	Не е зададено: Преминава към временния маркер за текущия документ.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
 
 ## Подменю Позиционни маркери (NVDA+N) ##
@@ -62,6 +65,21 @@ Bookmark&Search, разработени от същия автор. Трябва
 Забележка: Позицията на маркерите се базира на броя на знаците. Поради това,
 в страници с динамично съдържание е по-добре да използвате конкретното
 търсене вместо маркерите.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
 ## Промени във версия 12.0 ##
 *	Отстранена е критична грешка, която предизвиква срив на NVDA при опит за

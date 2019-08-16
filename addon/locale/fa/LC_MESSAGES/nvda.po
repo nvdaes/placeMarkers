@@ -218,16 +218,26 @@ msgid ""
 msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "پنجره‌ی یادداشت‌ها را برای یک سندِ خاص نشان میدهد."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
 msgstr "موقعیتِ فعلی را به عنوانِ نشان ذخیره میکند."
-
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "نشان ذخیره نشد"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -241,10 +251,6 @@ msgstr "نمیتوانم نشان را ذخیره کنم"
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
 msgstr "نشانِ فعلی را پاک میکند."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "نشان پاک نمیشود"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -265,10 +271,6 @@ msgstr "به نشانِ بعدی میرود."
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "نشانی پیدا نشد"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "نمیتوانم نشانی پیدا کنم"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -321,3 +323,12 @@ msgstr "نشان‌گذاری‌ها"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه‌ای برای تنظیمِ نشان‌گذاری‌ها در اسنادِ مجازی"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "نشان ذخیره نشد"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "نشان پاک نمیشود"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "نمیتوانم نشانی پیدا کنم"

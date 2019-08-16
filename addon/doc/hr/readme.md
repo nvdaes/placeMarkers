@@ -1,7 +1,6 @@
 # mjesne oznake / placemarkerss #
-
 * Autori: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.1
+* NVDA compatibility: 2018.3 to 2019.2
 * preuzmi [stabilnu inačicu][1]
 * preuzmi [razvojnu inačicu][2]
 
@@ -33,6 +32,10 @@ zasnovan je na naslovu i adresi stranice/dokumenta.
   you can move to the selected position.
 *	Nije dodijeljeno: Sprema poziciju kao privremenu zabilješku.
 *	Nije dodijeljeno: Pomiče se na privremenu zabilješku za trenutni dokument.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
 
 ## Podizbornik Mjesne oznake (NVDA+N)  ##
@@ -49,6 +52,21 @@ pristupiti:
 
 Napomena: Pozicija zabilješke bazirana je na broju znakova; nadalje, u
 dinamičkim stranicama, bolje je koristiti posebnu pretragu, ne zabilješke.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
 ## Changes for 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the

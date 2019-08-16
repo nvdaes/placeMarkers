@@ -225,12 +225,30 @@ msgstr ""
 "dokumentumban."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Megkeres egy adott szöveget a kurzor pozíciójától kezdve a megnyitott "
+"dokumentumban."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Megkeres egy adott szöveget a kurzor pozíciójától kezdve a megnyitott "
+"dokumentumban."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "A dokumentumhoz tartozó jegyzetek párbeszédpaneljének megtekintése"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "A könyvjelző nem menthető"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Elmenti az aktuális pozíciót könyvjelzőként."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -242,12 +260,8 @@ msgid "Cannot save bookmark"
 msgstr "A könyvjelző nem menthető"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Elmenti az aktuális pozíciót könyvjelzőként."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "A könyvjelző nem törölhető"
+msgid "Deletes the current bookmark."
+msgstr "Törli az aktuális könyvjelzőt."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -262,15 +276,11 @@ msgid "Cannot delete bookmark"
 msgstr "A könyvjelző nem törölhető"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Törli az aktuális könyvjelzőt."
+msgid "Moves to the next bookmark."
+msgstr "A következő könyvjelzőre lép."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Nem található könyvjelző"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
 msgstr "Nem található könyvjelző"
 
 #. Translators: message presented when a bookmark is selected.
@@ -283,16 +293,16 @@ msgid "Next bookmark not found"
 msgstr "Nincs következő könyvjelző"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "A következő könyvjelzőre lép."
+msgid "Moves to the previous bookmark."
+msgstr "Az előző könyvjelzőre lép"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Nincs előző könyvjelző"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Az előző könyvjelzőre lép"
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Az aktuális helyjelző fájlnevét a vágólapra másolja."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -303,17 +313,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "A helyjelző fájlneve a vágólapra másolva"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Az aktuális helyjelző fájlnevét a vágólapra másolja."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Elmenti az aktuális pozíciót ideiglenes könyvjelzőként."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "ideiglenes helyjelző elmentve ebbe a pozícióba %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Elmenti az aktuális pozíciót ideiglenes könyvjelzőként."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -328,3 +334,12 @@ msgstr "Helyjelzők"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Kiegészítő a helyjelzők elhelyezésére virtuális dokumentumokban"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "A könyvjelző nem menthető"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "A könyvjelző nem törölhető"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nem található könyvjelző"

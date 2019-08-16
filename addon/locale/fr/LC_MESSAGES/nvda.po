@@ -226,12 +226,30 @@ msgstr ""
 "dans un document particulier."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Rechercher un fragment de texte à partir de la position actuelle du curseur "
+"dans un document particulier."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Rechercher un fragment de texte à partir de la position actuelle du curseur "
+"dans un document particulier."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Afficher le dialogue Notes pour un document spécifique."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Le marqueur ne peut pas être sauvegardé"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Sauvegarder la position courante comme marqueur."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -243,12 +261,8 @@ msgid "Cannot save bookmark"
 msgstr "Impossible de sauvegarder le marqueur"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Sauvegarder la position courante comme marqueur."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Le marqueur ne peut pas être supprimé"
+msgid "Deletes the current bookmark."
+msgstr "Supprimer le marqueur courant"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -263,16 +277,12 @@ msgid "Cannot delete bookmark"
 msgstr "Impossible de supprimer le marqueur"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Supprimer le marqueur courant"
+msgid "Moves to the next bookmark."
+msgstr "Aller au marqueur suivant"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Aucun marqueur trouvé"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Impossible de trouver un marqueur"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -284,16 +294,18 @@ msgid "Next bookmark not found"
 msgstr "Marqueur suivant non trouvé"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Aller au marqueur suivant"
+msgid "Moves to the previous bookmark."
+msgstr "Aller au marqueur précédent"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Marqueur précédent non trouvé"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Aller au marqueur précédent"
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr ""
+"Copie dans le presse-papiers le nom du fichier courant contenant les "
+"marqueurs de position."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -304,19 +316,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Nom du fichier de marqueurs de position copié dans le presse-papiers"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr ""
-"Copie dans le presse-papiers le nom du fichier courant contenant les "
-"marqueurs de position."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Sauvegarder la position courante comme marqueur temporaire."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Marqueur temporaire à la position %d sauvegardé"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Sauvegarder la position courante comme marqueur temporaire."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -333,3 +339,12 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Module complémentaire permettant de placer des marqueurs de position dans "
 "des documents spécifiques"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Le marqueur ne peut pas être sauvegardé"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Le marqueur ne peut pas être supprimé"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Impossible de trouver un marqueur"

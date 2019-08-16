@@ -221,12 +221,28 @@ msgstr ""
 "Etsii sivukohtaista merkkijonoa kohdistimen nykyisestä sijainnista lähtien."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Etsii sivukohtaista merkkijonoa kohdistimen nykyisestä sijainnista lähtien."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Etsii sivukohtaista merkkijonoa kohdistimen nykyisestä sijainnista lähtien."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Näytä Muistiinpanot-valintaikkuna nykyiselle dokumentille."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Paikkamerkkiä ei voi tallentaa"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Tallentaa nykyisen sijainnin paikkamerkiksi."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -238,12 +254,8 @@ msgid "Cannot save bookmark"
 msgstr "Paikkamerkkiä ei voi tallentaa"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Tallentaa nykyisen sijainnin paikkamerkiksi."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Paikkamerkkiä ei voi poistaa"
+msgid "Deletes the current bookmark."
+msgstr "Poistaa nykyisen paikkamerkin."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -258,16 +270,12 @@ msgid "Cannot delete bookmark"
 msgstr "Paikkamerkkiä ei voi poistaa"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Poistaa nykyisen paikkamerkin."
+msgid "Moves to the next bookmark."
+msgstr "Siirtää seuraavaan paikkamerkkiin."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Paikkamerkkejä ei löytynyt"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Paikkamerkkejä ei löydy"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -279,16 +287,16 @@ msgid "Next bookmark not found"
 msgstr "Seuraavaa paikkamerkkiä ei löydy"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Siirtää seuraavaan paikkamerkkiin."
+msgid "Moves to the previous bookmark."
+msgstr "Siirtää edelliseen paikkamerkkiin."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Edellistä paikkamerkkiä ei löydy"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Siirtää edelliseen paikkamerkkiin."
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Kopioi nykyisen paikkamerkkitiedoston nimen leikepöydälle."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -299,17 +307,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Paikkamerkkkitiedoston nimi kopioitu leikepöydälle"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Kopioi nykyisen paikkamerkkitiedoston nimen leikepöydälle."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Tilapäinen paikkamerkki tallennettu sijaintiin %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -324,3 +328,12 @@ msgstr "Paikkamerkit"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Lisäosa sivukohtaisten paikkamerkkien määrittämiseen"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Paikkamerkkiä ei voi tallentaa"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Paikkamerkkiä ei voi poistaa"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Paikkamerkkejä ei löydy"

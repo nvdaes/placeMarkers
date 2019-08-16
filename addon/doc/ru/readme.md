@@ -1,7 +1,6 @@
 # placeMarkers #
-
 * Авторы: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.1
+* NVDA compatibility: 2018.3 to 2019.2
 * загрузить [стабильную версию][1]
 * загрузить [разрабатываемую версию][2]
 
@@ -42,6 +41,10 @@
   you can move to the selected position.
 *	Not assigned: Saves a position as a temporary bookmark.
 *	Not assigned: Moves to the temporary bookmark for the current document.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
 
 ## Подменю Закладки (NVDA+N) ##
@@ -59,6 +62,21 @@
 Примечание: Положение закладки основано на количестве символов; и поэтому на
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
 ## Changes for 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the

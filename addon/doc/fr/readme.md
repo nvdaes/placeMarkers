@@ -1,7 +1,6 @@
 # placeMarkers #
-
 * Auteurs : Noelia, Chris.
-* Compatibilité NVDA: 2018.3 à 2019.1
+* NVDA compatibility: 2018.3 to 2019.2
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
 
@@ -48,6 +47,10 @@ des raccourcis et des caractéristiques communes.
   temporaire.
 *	Non assigné : Ce déplacer au marqueur temporaire pour le document en
   cours.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
 
 ## Sous-menu des marqueurs (NVDA+N) ##
@@ -66,6 +69,21 @@ vous pouvez accéder à :
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
 ## Changements pour la version 12.0 ##
 *	Correction d'un bug critique qui provoquait le blocage de NVDA lors de la

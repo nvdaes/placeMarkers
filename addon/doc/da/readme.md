@@ -1,7 +1,6 @@
 # placeMarkers (Stedmærker) #
-
 * Forfattere: Noelia, Chris.
-* NVDA-kompatibilitet: 2018.3 til 2019.1
+* NVDA compatibility: 2018.3 to 2019.2
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -43,6 +42,10 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 *	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
 *	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
   dokument.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
 
 ## Undermenu for stedmærker (NVDA+n) ##
@@ -59,6 +62,21 @@ Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
 Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
 ## Ændringer for 12.0 ##
 *	Rettede en kritisk fejl, der forårsagede at NVDA gik ned, når man forsøgte

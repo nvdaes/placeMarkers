@@ -1,7 +1,6 @@
 # Lesezeichen #
-
 * Autoren: Noelia, Chris.
-* NVDA-Kompatibilität: 2018.3 bis 2019.1
+* NVDA-Kompatibilität: 2018.3 bis 2019.2
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 
@@ -46,6 +45,10 @@ URLs der angezeigten Dokumente.
 *	Nicht zugewiesen: speichert die Position als temporäres Lesezeichen.
 *	Nicht zugewiesen: springt zum temporären Lesezeichen für das aktuelle
   Dokument.
+*	Nicht zugeordnet: Findet das nächste Vorkommen des zuletzt gesuchten
+  Textes in einem bestimmten Dokument.
+*	Nicht zugeordnet: Findet das vorherige Vorkommen des zuletzt gesuchten
+  Textes in einem bestimmten Dokument.
 
 
 ## Lesezeichen Untermenü (nvda+n) ##
@@ -55,14 +58,33 @@ Elemente zugreifen:
 
 *	Suchanfragen: Öffnet einen Ordner, in dem zuvor gespeicherte Suchanfragen
   abgelegt sind.
-*	Lesezeichen-Ordner: öffnet einen Ordner mit gespeicherten Lesezeichen
-*	Lesezeichen-Ordner kopieren: Speichert eine Kopie des Lesezeichen-Ordners
+*	Lesezeichen-Ordner: öffnet einen Ordner mit gespeicherten Lesezeichen.
+*	Lesezeichen-Ordner kopieren: Speichert eine Kopie des Lesezeichen-Ordners.
 *	Lesezeichen wiederherstellen: Stellt die Lesezeichen aus einem zuvor
   gespeicherten Lesezeichen-Ordner wieder her.
 
 Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
+
+## Änderungen in 13.0 ##
+*	Es wurden nicht zugewiesene Befehle hinzugefügt, um das nächste und
+  vorherige Auftreten des zuletzt gesuchten Textes in einem bestimmten
+  Dokument zu finden.
+*	Die spezifische Suche funktioniert auch, wenn das Dialogfeld "Info" von
+  NVDA geöffnet ist.
+*	Im Dialogfeld Spezifische Suche wird das Kontrollkästchen für die
+  Berücksichtigung der Groß-/Kleinschreibung aktiviert, wenn diese Option
+  für die letzte Suche ausgewählt wurde.
+*	Bei der Aktualisierung dieser Erweiterung werden die in der vorherigen
+  Version gespeicherten Lesezeichen und Zeichenketten aus der spezifischen
+  Suche automatisch in die neue Version kopiert, es sei denn, Sie möchten
+  ausdrücklich, dass diese aus dem Hauptkonfigurationsordner von NVDA
+  importiert werden.
+*	Wenn Sie den Dialog zum Kopieren von Lesezeichen verwenden und der
+  ausgewählte Ordner nicht "placeMarkersBackup" heißt, wird ein Unterordner
+  mit diesem Namen erstellt, um das Löschen von Verzeichnissen mit wichtigen
+  Daten wie Dokumente oder Downloads zu verhindern.
 
 ## Änderungen für 12.0 ##
 *	Es wurde ein kritischer Fehler behoben, der dazu führte, dass NVDA beim
@@ -125,7 +147,7 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 * Die Groß- und Kleinschreibung kann nun bei der Suche berücksichtigt
   werden.
 * Der Menüpunkt Hilfe wurde aus dem Menü entfernt.
-* Tastenkürzel sind nun intuitiver
+* Tastenkürzel sind nun intuitiver.
 
 ## Änderungen in 4.0 ##
 * Fragment-Identifikatoren aus den Dateinamen der Lesezeichen
@@ -134,7 +156,7 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager verfügbar.
 
 ## Änderungen in 3.1 ##
-* aktualisierte Übersetzungen und neue Sprache.
+* Aktualisierte Übersetzungen und neue Sprache.
 * Die Position von Lesezeichen wird nicht während der Navigation während
   alles  lesen ausgegeben..
 
@@ -150,7 +172,7 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
 ## Änderungen in 1.0 ##
 * Erstveröffentlichung.
-* übersetzt in: brasilianisches Portugiesisch, Farsi, Finnisch, französisch,
+* Übersetzt in: brasilianisches Portugiesisch, Farsi, Finnisch, französisch,
   Galizisch, deutsch, italienisch, japanisch, Koreanisch, Nepalesisch,
   Portugiesisch, Spanisch, Slovakisch, Slovenisch, Tamil.
 

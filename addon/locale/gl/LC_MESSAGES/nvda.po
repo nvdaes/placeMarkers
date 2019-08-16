@@ -222,12 +222,30 @@ msgstr ""
 "documento específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"atopa unha secuencia de texto dende a posición actual do cursor dun "
+"documento específico."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"atopa unha secuencia de texto dende a posición actual do cursor dun "
+"documento específico."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Amosa o diálogo Notas para un documento específico."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "A marca non poido ser gardada"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Garda a posición actual como unha marca."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -239,12 +257,8 @@ msgid "Cannot save bookmark"
 msgstr "Non se poido gardar a marca"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Garda a posición actual como unha marca."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "A marca non pode ser eliminada"
+msgid "Deletes the current bookmark."
+msgstr "Elimina a marca actual."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -259,16 +273,12 @@ msgid "Cannot delete bookmark"
 msgstr "Non se pode eliminar a marca"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Elimina a marca actual."
+msgid "Moves to the next bookmark."
+msgstr "Móvese á seguinte marca."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Non se atoparon marcas"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Non se pode atopar ningún marcador"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -280,16 +290,16 @@ msgid "Next bookmark not found"
 msgstr "Non se atopou a seguinte marca"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Móvese á seguinte marca."
+msgid "Moves to the previous bookmark."
+msgstr "Móvese á  marca anterior."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Non se atopou a marca anterior"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Móvese á  marca anterior."
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Copia ó portapapeis o nome do ficheiro actual para marcas."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -300,17 +310,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Nome do ficheiro de marcas copiado ó portapapeis"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Copia ó portapapeis o nome do ficheiro actual para marcas."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Garda a posición actual coma unha marca temporal."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "A marca gardouse temporalmente na posición %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Garda a posición actual coma unha marca temporal."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -325,3 +331,12 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Complemento para fixar marcas en documentos virtuais específicos"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "A marca non poido ser gardada"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "A marca non pode ser eliminada"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Non se pode atopar ningún marcador"

@@ -222,12 +222,28 @@ msgstr ""
 "Trova del testo a partire dalla posizione del cursore in documenti specifici;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Trova del testo a partire dalla posizione del cursore in documenti specifici;"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Trova del testo a partire dalla posizione del cursore in documenti specifici;"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Mostra la finestra di dialogo delle note per un documento specifico."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Il segnaposto non può essere salvato"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Salva la posizione corrente come Segnaposto."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -239,12 +255,8 @@ msgid "Cannot save bookmark"
 msgstr "Impossibile salvare il segnaposto"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Salva la posizione corrente come Segnaposto."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Impossibile cancellare il segnaposto"
+msgid "Deletes the current bookmark."
+msgstr "Cancella il Segnaposto della posizione attuale;"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -259,16 +271,12 @@ msgid "Cannot delete bookmark"
 msgstr "Impossibile cancellare Segnaposto;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Cancella il Segnaposto della posizione attuale;"
+msgid "Moves to the next bookmark."
+msgstr "Vai al Segnaposto successivo;"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Nessun Segnaposto trovato;"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Impossibile trovare alcun Segnaposto"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -280,16 +288,16 @@ msgid "Next bookmark not found"
 msgstr "Nessun Segnaposto successivo;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Vai al Segnaposto successivo;"
+msgid "Moves to the previous bookmark."
+msgstr "Vai al Segnaposto precedente;"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Nessun Segnaposto precedente;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Vai al Segnaposto precedente;"
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Copia il nome del file del segnaposto atuale negli appunti"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -300,17 +308,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Nome del file del segnaposto copiato negli appunti;"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Copia il nome del file del segnaposto atuale negli appunti"
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Salva la posizione corrente come Segnaposto temporaneo."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Segnalibro temporaneo salvato alla posizione %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Salva la posizione corrente come Segnaposto temporaneo."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -327,3 +331,12 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Componente aggiuntivo per impostare Segnaposti in pagine Web e documenti "
 "virtuali."
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Il segnaposto non può essere salvato"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Impossibile cancellare il segnaposto"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Impossibile trovare alcun Segnaposto"

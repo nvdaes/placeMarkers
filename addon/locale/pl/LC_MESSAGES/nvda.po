@@ -219,12 +219,28 @@ msgstr ""
 "Poszukuje ciągu znaków od aktualnej pozycji kursora w określonym dokumencie."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Poszukuje ciągu znaków od aktualnej pozycji kursora w określonym dokumencie."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"Poszukuje ciągu znaków od aktualnej pozycji kursora w określonym dokumencie."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Wyświetla okno dialogowe notatek dla określonego dokumentu."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Zakładka nie może zostać zapisana."
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Zapisuje bieżącą pozycję jako zakładkę."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -236,12 +252,8 @@ msgid "Cannot save bookmark"
 msgstr "Nie można zapisać zakładki"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Zapisuje bieżącą pozycję jako zakładkę."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Zakładka nie może zostać usunięta"
+msgid "Deletes the current bookmark."
+msgstr "Usuwa aktualną zakładkę."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -256,16 +268,12 @@ msgid "Cannot delete bookmark"
 msgstr "Nie można usunąć zakładki"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Usuwa aktualną zakładkę."
+msgid "Moves to the next bookmark."
+msgstr "Przechodzi do następnej zakładki."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Nie znaleziono zakładek"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Nie można znaleźć żadnej zakładki"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -277,16 +285,16 @@ msgid "Next bookmark not found"
 msgstr "Nie znaleziono następnej zakładki"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Przechodzi do następnej zakładki."
+msgid "Moves to the previous bookmark."
+msgstr "Przechodzi do poprzedniej zakładki."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Nie znaleziono poprzedniej zakładki"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Przechodzi do poprzedniej zakładki."
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Kopiuje do schowka nazwę aktualnego pliku znaczników miejsca."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -297,17 +305,13 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Nazwa pliku znaczników miejsca skopiowana do schowka."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Kopiuje do schowka nazwę aktualnego pliku znaczników miejsca."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Zapisuje bieżącą pozycję jako zakładkę tymczasowa."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Tymczasowy znacznik miejsc został zapisany w pozycji %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Zapisuje bieżącą pozycję jako zakładkę tymczasowa."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -324,3 +328,12 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek pozwalający ustawić znaczniki miejsca wewnątrz określonych "
 "dokumentów wirtualnych"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Zakładka nie może zostać zapisana."
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Zakładka nie może zostać usunięta"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nie można znaleźć żadnej zakładki"

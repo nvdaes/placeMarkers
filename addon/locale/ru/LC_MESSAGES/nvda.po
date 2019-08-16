@@ -229,12 +229,26 @@ msgid ""
 msgstr "Нахождение строки текста от текущей позиции курсора в документе."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Показать диалог примечаний для конкретного документа."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Не возможно сохранить закладку"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Сохраняет текущую позицию как закладку."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -246,12 +260,8 @@ msgid "Cannot save bookmark"
 msgstr "Не удалось сохранить закладку"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Сохраняет текущую позицию как закладку."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Не возможно удалить закладку"
+msgid "Deletes the current bookmark."
+msgstr "Удаляет текущую закладку."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -266,16 +276,12 @@ msgid "Cannot delete bookmark"
 msgstr "Не удаётся удалить закладку"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Удаляет текущую закладку."
+msgid "Moves to the next bookmark."
+msgstr "Переходит к следующей закладке."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Закладки не найдены"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Не удалось найти никаких закладок"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -287,16 +293,16 @@ msgid "Next bookmark not found"
 msgstr "Нет следующей закладки"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Переходит к следующей закладке."
+msgid "Moves to the previous bookmark."
+msgstr "Переходит к предыдущей закладке."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Нет предыдущей закладки"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Переходит к предыдущей закладке."
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Копирует имени текущего файла закладок в буфер обмена."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -307,18 +313,14 @@ msgid "Place markers file name copied to clipboard"
 msgstr "Имя файла закладок скопировано в буфер обмена"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Копирует имени текущего файла закладок в буфер обмена."
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Сохраняет текущую позицию как закладку."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr ""
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Сохраняет текущую позицию как закладку."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -333,3 +335,12 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Дополнение для установки закладок в документы с виртуальном буфером"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Не возможно сохранить закладку"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Не возможно удалить закладку"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Не удалось найти никаких закладок"

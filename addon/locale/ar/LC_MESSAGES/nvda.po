@@ -228,12 +228,26 @@ msgid ""
 msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr ""
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "لا يمكن حفظ العلامة المرجعية"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "حفظ الموضع الحالي كعلامة مرجعية"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -245,12 +259,8 @@ msgid "Cannot save bookmark"
 msgstr "لا يمكن حفظ العلامة المرجعية"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "حفظ الموضع الحالي كعلامة مرجعية"
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "لا يمكن حذف العلامة المرجعية"
+msgid "Deletes the current bookmark."
+msgstr "حذف العلامة المرجعية"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -265,16 +275,12 @@ msgid "Cannot delete bookmark"
 msgstr "لا يمكن حذف العلامة المرجعية"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "حذف العلامة المرجعية"
+msgid "Moves to the next bookmark."
+msgstr "التنقل إلى العلامة المرجعية التالية"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "لا يوجد علامات مرجعية"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "لا يوجد أي علامات مرجعية"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -286,16 +292,16 @@ msgid "Next bookmark not found"
 msgstr "لا يوجد علامة مرجعية تالية"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "التنقل إلى العلامة المرجعية التالية"
+msgid "Moves to the previous bookmark."
+msgstr "التنقل للعلامة المرجعية السابقة"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "لا يوجد علامة مرجعية سابقة"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "التنقل للعلامة المرجعية السابقة"
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "نسخ اسم الملف الحالي للعلامات المرجعية إلى الحافظة"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
@@ -306,18 +312,14 @@ msgid "Place markers file name copied to clipboard"
 msgstr "نسخ اسم ملف العلامات المرجعية للحافظة"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "نسخ اسم الملف الحالي للعلامات المرجعية إلى الحافظة"
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "حفظ الموضع الحالي كعلامة مرجعية"
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr ""
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
-msgid "Saves the current position as a temporary bookmark."
-msgstr "حفظ الموضع الحالي كعلامة مرجعية"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -332,3 +334,12 @@ msgstr "علامات مرجعية"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "إضافة لوضع علامات مرجعية داخل مستندات نمط التصفح"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "لا يمكن حفظ العلامة المرجعية"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "لا يمكن حذف العلامة المرجعية"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "لا يوجد أي علامات مرجعية"
