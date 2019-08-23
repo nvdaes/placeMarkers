@@ -1,6 +1,6 @@
 # placeMarkers (Stedmærker) #
 * Forfattere: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA-kompatibilitet: 2018.3 til 2019.2
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -42,10 +42,10 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 *	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
 *	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
   dokument.
-*	Not assigned: Finds the next occurrence of the last text searched for any
-  specific document.
-*	Not assigned: Finds the previous occurrence of the last text searched for
-  any specific document.
+*	Ikke tildelt: Søger efter næste forekomst af den angivne søgestreng i et
+  dokument
+*	Ikke tildelt: Søger efter forrige forekomst af den angivne søgestreng i et
+  dokument
 
 
 ## Undermenu for stedmærker (NVDA+n) ##
@@ -63,20 +63,23 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
-## Changes for 13.0 ##
-*	Added not assigned commands to find the next and previous occurrences of
-  the last text searched for any specific document.
-*	The specific search feature works when the NVDA's About dialog is open.
-*	In the Specific search dialog, the case sensitive checkbox will be checked
-  if this option was selected for the last search.
-*	When the add-on is updated, bookmarks and strings for specific search
-  saved in the previous version of the add-on will be automatically copied
-  to the new version, unless you prefer to import place markers saved in the
-  main configuration folder of NVDA.
-*	When using the dialog to copy place markers, if the chosen folder is not
-  named placeMarkersBackup, a subfolder with this name will be created to
-  prevent the deletion of directories containing important data, such as
-  Documents or Downloads.
+## Ændringer i 13,0 ##
+*	Tilføjede kommandoer, så du nemt kan søge efter forrige og næste forekomst
+  af den sidst angivne tekststreng. Disse kommandoer har ingen tildelte
+  tastetryk.
+*	Funktionen til specifikke søgninger virker kun, når NVDAs søgedialog er
+  åbnet.
+*	I dialogen til specifike søgninger, vil boksen til at skelne mellem store
+  og små bogstaver forblive markeret, hvis dette var tilfældet under den
+  sidste søgning.
+*	Når tilføjelsesprogrammet er opdateret, kopieres bogmærker og strenge til
+  specifik søgning der er gemt i den tidligere version af tilføjelsen
+  automatisk til den nye version, medmindre du foretrækker at importere
+  stedmærker, der er gemt i den primære konfigurations mappe i NVDA.
+*	Når du bruger dialogen til at kopiere stedmærker, og hvis den valge mappe
+  ikke hedder "placeMarkersBackup", vil en undermappe med dette navn blive
+  oprettet for at forhindre sletning af mapper, der indeholder vigtige data,
+  såsom dokumenter eller overførsler.
 
 ## Ændringer for 12.0 ##
 *	Rettede en kritisk fejl, der forårsagede at NVDA gik ned, når man forsøgte

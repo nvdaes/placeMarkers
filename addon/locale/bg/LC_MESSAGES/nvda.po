@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2019-03-11 21:06+0200\n"
+"PO-Revision-Date: 2019-08-16 09:11+0300\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -226,20 +226,20 @@ msgstr ""
 "Търси текстов низ от текущата позиция на курсора за конкретен документ."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Търси текстов низ от текущата позиция на курсора за конкретен документ."
+"Намира следващото съвпадение на последния търсен текст за всеки конкретен "
+"документ."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Търси текстов низ от текущата позиция на курсора за конкретен документ."
+"Намира предишното съвпадение на последния търсен текст за всеки конкретен "
+"документ."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."

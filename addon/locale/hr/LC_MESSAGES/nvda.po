@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2018-11-25 18:56+0100\n"
+"PO-Revision-Date: 2019-08-16 10:45+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -220,22 +220,20 @@ msgstr ""
 "specifičan dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Traži niz znakova u tekstu od trenutne pozicije kursora za trenutni "
-"specifičan dokument."
+"Traži sljedeće podudaranje zadnjeg pretraživanog teksta u bilo kojem "
+"dokumentu."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Traži niz znakova u tekstu od trenutne pozicije kursora za trenutni "
-"specifičan dokument."
+"Traži prethodno podudaranje zadnjeg pretraživanog teksta u bilo kojem "
+"dokumentu."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."

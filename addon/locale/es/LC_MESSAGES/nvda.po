@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: placeMarkers-7.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-06-26 17:54+0100\n"
-"Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
+"PO-Revision-Date: 2019-08-16 10:40+0200\n"
+"Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -40,7 +40,7 @@ msgstr "Búsqueda específica"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "Textos &guardados:"
+msgstr "Textos &guardados"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
@@ -68,7 +68,7 @@ msgstr "Buscar &anterior"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "&Don't search"
-msgstr "&No buscar:"
+msgstr "&No buscar"
 
 #. Translators: Message presented when place markers have been copied.
 msgid "Place markers copied"
@@ -199,7 +199,7 @@ msgstr "Restaurar a partir de una carpeta de Marcas guardada previamente"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Abre la carpeta de búsqueda específica"
+msgstr "Abre la carpeta de búsqueda específica."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
@@ -219,25 +219,23 @@ msgstr "Activa el diálogo Restaurar de %s."
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Busca un fragmento de texto desde la posición actual del cursor para un "
+"busca un fragmento de texto desde la posición actual del cursor para un "
 "documento específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Busca un fragmento de texto desde la posición actual del cursor para un "
+"encuentra la siguiente coincidencia del último texto buscado para cualquier "
 "documento específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Busca un fragmento de texto desde la posición actual del cursor para un "
+"encuentra la coincidencia anterior del último texto buscado para cualquier "
 "documento específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -300,15 +298,15 @@ msgstr "Marca anterior no encontrada"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Copia el nombre del archivo de las marcas actual;"
+msgstr "Copia el nombre del archivo de las marcas actual."
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "No se puede copiar el nombre del archivo;"
+msgstr "No se puede copiar el nombre del archivo"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "Nombre del archivo de las  marcas copiado en el portapapeles;"
+msgstr "Nombre del archivo de las  marcas copiado en el portapapeles"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -333,7 +331,7 @@ msgstr "PlaceMarkers"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para establecer las marcas en páginas Web y documentos virtuales "
-"específicos."
+"específicos"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "La marca no se puede guardar"
