@@ -128,12 +128,8 @@ def moveToBookmark(position):
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 
 def standardFileName(fileName):
-	fileName.encode("mbcs")
 	notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
-	try:
-		allowed = re.sub(notAllowed, "", unicode(fileName))
-	except NameError:
-		allowed = re.sub(notAllowed, "", str(fileName))
+	allowed = re.sub(notAllowed, "", fileName)
 	return allowed
 
 def getFile(folder, ext=""):
@@ -167,7 +163,7 @@ def getFileSearch():
 def getSavedTexts():
 	searchFile = getFileSearch()
 	try:
-		with open(searchFile, 'r', encoding="utf_8") as f:
+		with open(searchFile, "r", encoding="utf-8") as f:
 			savedStrings = f.read().split("\n")
 	except:
 		savedStrings = []
@@ -294,7 +290,7 @@ class SpecificSearchDialog(wx.Dialog):
 				os.remove(self.searchFile)
 				return
 			try:
-				with open(self.searchFile, 'w', encoding="utf_8") as f:
+				with open(self.searchFile, "w", encoding="utf-8") as f:
 					f.write("\n".join(savedStrings))
 			except Exception as e:
 				log.debugWarning("Error saving strings of text for specific search", exc_info=True)
@@ -349,8 +345,7 @@ class NotesDialog(wx.Dialog):
 		# Translators: The label of a list box in the Notes dialog.
 		notesLabel = _("&Bookmarks")
 		self.bookmarks = getSavedBookmarks()
-		positions = list(self.bookmarks.keys())
-		positions.sort()
+		positions = sorted(self.bookmarks)
 		self.pos = positions[0]
 		firstNoteBody = self.bookmarks[self.pos].body
 		notesChoices = []
@@ -385,13 +380,13 @@ class NotesDialog(wx.Dialog):
 		self.noteEdit.Value = self.bookmarks[self.pos].body
 
 	def onSave(self, evt):
-		noteTitle = self.notesListBox.GetStringSelection().split(" - ")[1].encode("mbcs")
+		noteTitle = self.notesListBox.GetStringSelection().split(" - ")[1]
 		noteBody = self.noteEdit.Value
 		note = Note(noteTitle, noteBody)
 		self.bookmarks[self.pos] = note
 		try:
 			with open(self.fileName, "wb") as f:
-				pickle.dump(self.bookmarks, f)
+				pickle.dump(self.bookmarks, f, protocol=0)
 			self.notesListBox.SetFocus()
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
@@ -410,7 +405,7 @@ class NotesDialog(wx.Dialog):
 		if len(self.bookmarks.keys()) > 0:
 			try:
 				with open(self.fileName, "wb") as f:
-					pickle.dump(self.bookmarks, f)
+					pickle.dump(self.bookmarks, f, protocol=0)
 				self.notesListBox.Delete(self.notesListBox.Selection)
 				self.notesListBox.Selection = 0
 				self.onNotesChange(None)
@@ -575,10 +570,7 @@ class Note(object):
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
-	try:
-		scriptCategory = unicode(ADDON_SUMMARY)
-	except NameError:
-		scriptCategory = str(ADDON_SUMMARY)
+	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
 		super(GlobalPlugin, self).__init__()
@@ -742,7 +734,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor=obj.treeInterceptor
-		if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough):
+		if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
 			gesture.send()
 			return
 		wx.CallAfter(self.popupNotesDialog)
@@ -775,7 +767,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		fileName = getFileBookmarks()
 		try:
 			with open(fileName, "wb") as f:
-				pickle.dump(bookmarks, f)
+				pickle.dump(bookmarks, f, protocol=0)
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
 				_("Saved position at character %d") % bookmark.startOffset)
@@ -816,7 +808,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if bookmarks != {}:
 			try:
 				with open(fileName, "wb") as f:
-					pickle.dump(bookmarks, f)
+					pickle.dump(bookmarks, f, protocol=0)
 				ui.message(
 					# Translators: message presented when a bookmark is deleted.
 					_("Bookmark deleted"))
@@ -873,7 +865,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			review.handleCaretMove(info)
 			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
-				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 			else:
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
@@ -919,7 +910,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			review.handleCaretMove(info)
 			if willSayAllResume(gesture):
 				info.move(textInfos.UNIT_LINE,1,endPoint="end")
-				#speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
 			else:
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
@@ -931,25 +921,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Copies the name of the current file for place markers to the clipboard."),
-		gesture="kb:control+shift+k"
+		description=_("Shows the name of the current file for place markers in browse mode.")
 	)
 	def script_copyCurrentBookmarksFile(self, gesture):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
-			if not (hasattr(treeInterceptor,'TextInfo') and not treeInterceptor.passThrough) and controlTypes.STATE_MULTILINE not in obj.states:
+			if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
 				gesture.send()
 				return
 		fileName = getFile("bookmarks")
-		if not api.copyToClip(os.path.basename(fileName)):
-			ui.message(
-				# Translators: message presented when cannot copy the file name corresponding to place markers.
-				_("Cannot copy file name for place markers"))
-			return
-		ui.message(
-			# Translators: message presented when file name for place markers is copied to clipboard.
-			_("Place markers file name copied to clipboard"))
+		ui.browseableMessage(
+			# Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+			fileName, _("%s file" % ADDON_SUMMARY)
+		)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -970,7 +955,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
 		fileName = getFileTempBookmark()
 		try:
-			with open(fileName, "w", "utf-8") as f:
+			with open(fileName, "w", encoding="utf-8") as f:
 				f.write(str(bookmark.startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
 				ui.message(_("Saved temporary bookmark at position %d" % bookmark.startOffset))
@@ -996,7 +981,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		fileName = getFileTempBookmark()
 		try:
-			with open(fileName, "r", "utf-8") as f:
+			with open(fileName, "r", encoding="utf-8") as f:
 				tempBookmark = int(f.read())
 			moveToBookmark(tempBookmark)
 		except:
