@@ -36,7 +36,7 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
 ## Changes for 14.0 ##
-*	The command to copy the file where place markers data will be saved has been replaced by a command which shows this file in browse mode. This is not assigned to a gesture.
+*	The command to copy the name of the file where place markers data will be saved has been replaced by a command which shows this file name in browse mode. This is not assigned to a gesture.
 *	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
