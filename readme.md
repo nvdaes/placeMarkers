@@ -1,7 +1,7 @@
 # placeMarkers #
 
 * Authors: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later
 * download [stable version][1]
 * download [development version][2]
 
@@ -37,7 +37,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 14.0 ##
 *	The command to copy the file where place markers data will be saved has been replaced by a command which shows this file in browse mode. This is not assigned to a gesture.
-*	Requires NVDA 2019.3.
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of the last text searched for any specific document.
