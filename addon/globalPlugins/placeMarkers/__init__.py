@@ -221,8 +221,7 @@ class SpecificSearchDialog(wx.Dialog):
 		self.removeCheckBox.Disable()
 		# Translators: The label of an edit box in the Specific Search dialog.
 		searchTextLabel = _("&Text to search:")
-		searchLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, searchTextLabel, wx.TextCtrl)
-		self.searchTextEdit = searchLabeledCtrl.control
+		self.searchTextEdit = sHelper.addLabeledControl(searchTextLabel, wx.TextCtrl)
 		self.searchTextEdit.Value = getLastSpecificFindText()
 		self.searchTextEdit.Bind(wx.EVT_TEXT, self.onSearchEditTextChange)
 		# Translators: A label for a chekbox in the Specific search dialog.
