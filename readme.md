@@ -37,6 +37,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 14.0 ##
 *	The command to copy the name of the file where place markers data will be saved has been replaced by a command which shows this file name in browse mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field anymore. (Thanks to Cyrille Bougot).
 *	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
