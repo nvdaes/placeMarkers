@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autorzy: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* Zgodność z wersjami NVDA: 2018.3 do 2019.2
 * Pobierz [wersja stabilna][1]
 * Pobierz [wersja rozwojowa][2]
 
@@ -62,7 +62,7 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
-## Changes for 13.0 ##
+## Zmiany dla wersji 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of
   the last text searched for any specific document.
 *	The specific search feature works when the NVDA's About dialog is open.
@@ -77,23 +77,23 @@ określone miejsce.
   prevent the deletion of directories containing important data, such as
   Documents or Downloads.
 
-## Changes for 12.0 ##
+## Zmiany dla wersji 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the
   Notes dialog, if chinese characters were selected before saving bookmarks.
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
+## Zmiany dla wersji 11.0 ##
+*	Zgodny z NVDA 2018.3 i nowszymi (wymagane).
+*	Jeżeli jest to konieczne, możesz pobrać [ostatnią wersję zgodną z NVDA
   2017.3][3].
 
-## Changes for 10.0 ##
+## Zmiany dla wersji 10.0 ##
 *	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
   NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
   trying to move the cursor to bookmarks, to avoid errors, especially in
   long documents.
 *	Now specific search is supported in Edge.
 
-## Changes for 9.0
+## Zmiany dla wersji 8.0
 *	When moving to a bookmark from the Notes dialog, the review cursor follows
   the system cursor.
 *	The command to select the previous bookmark works properly again.
