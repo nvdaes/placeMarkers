@@ -125,8 +125,7 @@ def moveToBookmark(position):
 		obj = treeInterceptor
 		bookmark = Offsets(position, position)
 		info = obj.makeTextInfo(bookmark)
-		info.updateSelection()
-		review.handleCaretMove(info)
+		obj._set_selection(info)
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE,1,endPoint="end")
 		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
@@ -900,12 +899,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				nextPos = pos
 				break
 		if nextPos is not None:
-			info = obj.makeTextInfo(Offsets(nextPos, nextPos))
-			info.updateSelection()
-			review.handleCaretMove(info)
-			if willSayAllResume(gesture):
-				info.move(textInfos.UNIT_LINE,1,endPoint="end")
-			else:
+			moveToBookmark(nextPos)
+			if not willSayAllResume(gesture):
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
 					_("Position: character %d") % nextPos
@@ -948,12 +943,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				prevPos = pos
 				break
 		if prevPos is not None:
-			info = obj.makeTextInfo(Offsets(prevPos, prevPos))
-			info.updateSelection()
-			review.handleCaretMove(info)
-			if willSayAllResume(gesture):
-				info.move(textInfos.UNIT_LINE,1,endPoint="end")
-			else:
+			moveToBookmark(prevPos)
+			if not willSayAllResume(gesture):
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
 					_("Position: character %d") % prevPos
