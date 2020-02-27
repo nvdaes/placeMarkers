@@ -1,6 +1,6 @@
 # Paikkamerkit #
 * Tekijät: Noelia, Chris
-* Yhteensopivuus: NVDA 2018.3-2019.2
+* Yhteensopivuus: NVDA 2019.3 tai uudempi
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 
@@ -32,7 +32,7 @@ ominaisuuksia.
 *	Ctrl+Vaihto+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
 *	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
 *	Vaihto+NVDA+K: Siirtää edelliseen paikkamerkkiin.
-*	Ctrl+Vaihto+K: Kopioi paikkamerkkitiedoston nimen leikepöydälle ilman
+*	Ei määritetty: Näyttää paikkamerkkitiedoston nimen selaustilassa ilman
   tarkennetta.
 *	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle asiakirjalle
   tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
@@ -62,6 +62,13 @@ seuraavia toimintoja:
 Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
+
+## Muutokset versiossa 14.0 ##
+*	Paikkamerkkitiedoston nimen kopioiva komento on korvattu komennolla, joka
+  näyttää tiedostonimen selaustilassa. Syötekomentoa ei ole määritetty.
+*	"Etsittävä teksti" -kenttä ei enää ole "Tallennettu teksti" -kentän
+  päällä. (Kiitos Cyrille Bougotille).
+*	Edellyttää NVDA 2019.3:a tai uudempaa.
 
 ## Muutokset versiossa 13.0 ##
 *	Lisätty komennot ilman näppäinkomentoa viimeksi haetun tekstin seuraavan
@@ -158,6 +165,7 @@ paikkamerkkien asemesta sivukohtaista hakua.
 * Käännetty kielille: brasilianportugali, espanja, farsi, galego, italia,
   japani, korea, nepali, portugali, ranska, saksa, slovakki, slovenia, suomi
   ja tamili.
+
 
 [[!tag dev stable]]
 

@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autores: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later.
 * baixar [versão estável][1]
 * baixar [versão de desenvolvimento][2]
 
@@ -34,8 +34,8 @@ comuns.
 *	control+shift+NVDA+delete: Apaga o marcador correspondente a esta posição.
 *	NVDA+k: Move para o próximo marcador.
 *	shift+NVDA+k: Move para o marcador anterior.
-*	control+shift+k: Copia o nome do ficheiro onde os dados dos marcadores de
-  lugar serão guardados para a área de transferência, sem uma extensão.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores guardados para
   este documento. Pode escrever uma nota para cada marcador; pressione
   "guardar nota", para guardar as alterações. Pressionando OK, Pode mover-se
@@ -61,6 +61,14 @@ Usando o submenu de Marcadores, no menu Preferências do NVDA, pode aceder a:
 
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of
@@ -159,6 +167,7 @@ em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 * Traduzido para: Português brasileiro, farsi, finlandês, francês, galego,
   alemão, italiano, japonês, coreano, nepalês, português, espanhol,
   eslovaco, esloveno, tamil.
+
 
 [[!tag dev stable]]
 

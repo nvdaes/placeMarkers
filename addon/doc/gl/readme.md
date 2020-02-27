@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autores: Noelia, Chris.
-* Compatibilidade con NVDA: da 2018.3 á 2019.2
+* Compatibilidade con NVDA: 2019.3 ou posterior.
 * descarga [versión estable][1]
 * descarga [versión de desenvolvemento][2]
 
@@ -32,8 +32,8 @@ combinacións de teclas e características.
 *	control+shift+NVDA+suprimir: borra a marca correspondente a esta posición.
 *	NVDA+k: Move á marca seguinte.
 *	shift+NVDA+k: move á marca anterior.
-*	control+shift+k: copia o nome do ficheiro onde se gardarán os datos dos
-  marcadores ao portapapeis, sen unha extensión.
+*	Sen asignar: Amosa o nome do arquivo no que se gardarán os datos dos
+  marcadores de ubicación en modo exploración, sen extensión.
 *	alt+NVDA+k: abre un diálogo coas marcas gardadas para este
   documento. Podes escreber unha nota para cada marca; preme Gardar Nota
   para guardar cambios. Pulsando Aceptar puedes moverte al a la posición
@@ -48,7 +48,7 @@ combinacións de teclas e características.
 
 ## Submenú Place markers (NVDA+N) ##
 
-Usando o submenú Place markers no Menú Preferencias, podes acceder a
+Usando o submenú Place markers no Menú Preferencias, podes acceder a:
 
 *	Cartafol de busca específica:abre un cartafol de buscas específicas
   gardadas anteriormente.
@@ -61,6 +61,14 @@ Usando o submenú Place markers no Menú Preferencias, podes acceder a
 Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
+
+## Cambios para 14.0 ##
+*	O atallo para copiar o nome do arquivo onde se gardarán os datos dos
+  marcadores de ubicación reemprazouse por un atallo que amosa este nome de
+  arquivo en modo exploración. Está sen asignar a ningún xesto.
+*	O campo "Texto a buscar" xa non solapa ao campo "Texto gardado". (Grazas a
+  Cyrille Bougot).
+*	Require NVDA 2019.3 ou posterior.
 
 ## Cambios para 13.0 ##
 *	Engadidas ordes sen asignar para buscar a próxima e anterior ocorrencia do
@@ -163,6 +171,7 @@ marcas.
 * Traducido ó: Alemán, Español, Eslovaco, Esloveno, Farsi, Finés, Francés,
   Galego, Italiano, Coreán, Nepalí, Portugués, Portugués do Brasil, Tamil,
   Xaponés.
+
 
 [[!tag dev stable]]
 

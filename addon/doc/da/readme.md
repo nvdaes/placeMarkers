@@ -1,6 +1,6 @@
 # placeMarkers (Stedmærker) #
 * Forfattere: Noelia, Chris.
-* NVDA-kompatibilitet: 2018.3 til 2019.2
+* NVDA compatibility: 2019.3 or later.
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -33,8 +33,8 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
   position.
 *	NVDA+K: Flytter til det næste bogmærke.
 *	Skift+NVDA+K: Flytter til det forrige bogmærke.
-*	CTRL+Skift+K: Kopierer filnavnet på filen hvor data på stedmærker bliver
-  gemt til Udklipsholderen uden filtypenavn.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
   dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
   at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
@@ -62,6 +62,14 @@ Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
 Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Ændringer i 13,0 ##
 *	Tilføjede kommandoer, så du nemt kan søge efter forrige og næste forekomst
@@ -164,6 +172,7 @@ bogmærker, som gemmer en præcis position.
 * Oversat til: Brasiliansk portugisisk, farsi, finsk, fransk, galicisk,
   tysk, italiensk, japansk, koreansk, nepalesisk, portugisisk, spansk,
   slovakisk, slovensk og tamilsk.
+
 
 [[!tag dev stable]]
 

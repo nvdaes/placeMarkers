@@ -1,6 +1,6 @@
 # marcadores de lugar #
 * Autores: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* Compatibilidade com NVDA: 2019.3 ou posterior.
 * baixe a [versão estável][1]
 * baixe a [versão de desenvolvimento][2]
 
@@ -33,8 +33,8 @@ têm teclas de atalho e recursos em comum.
 *	control+shift+NVDA+delete: Apaga o marcador correspondente a esta posição.
 *	NVDA+k: Moves para o próximo marcador.
 *	shift+NVDA+k: Moves para o marcador anterior.
-*	control+shift+k: Copia para a área de transferência o nome do arquivo no
-  qual serão salvos os dados de marcadores de lugar, sem a extensão.
+*	Não atribuído: Mostra o nome do arquivo no qual serão salvos os dados de
+  marcadores de lugar, sem a extensão.
 *	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores salvos para este
   documento. Você pode escrever uma nota para cada marcador; pressione
   Salvar nota para salvar as alterações. Pressionando Excluir você pode
@@ -42,10 +42,10 @@ têm teclas de atalho e recursos em comum.
   posição selecionada.
 *	Não atribuído: salva uma posição como um marcador temporário.
 *	Não atribuído: Move para o marcador temporário do documento atual.
-*	Not assigned: Finds the next occurrence of the last text searched for any
-  specific document.
-*	Not assigned: Finds the previous occurrence of the last text searched for
-  any specific document.
+*	Não atribuído: localiza a ocorrência seguinte do último texto buscado em
+  qualquer documento específico.
+*	Não atribuído: localiza a ocorrência anterior do último texto buscado em
+  qualquer documento específico.
 
 
 ## Submenu Marcadores de lugar (NVDA+N) ##
@@ -65,20 +65,29 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a busca específica e não
 marcadores.
 
-## Changes for 13.0 ##
-*	Added not assigned commands to find the next and previous occurrences of
-  the last text searched for any specific document.
-*	The specific search feature works when the NVDA's About dialog is open.
-*	In the Specific search dialog, the case sensitive checkbox will be checked
-  if this option was selected for the last search.
-*	When the add-on is updated, bookmarks and strings for specific search
-  saved in the previous version of the add-on will be automatically copied
-  to the new version, unless you prefer to import place markers saved in the
-  main configuration folder of NVDA.
-*	When using the dialog to copy place markers, if the chosen folder is not
-  named placeMarkersBackup, a subfolder with this name will be created to
-  prevent the deletion of directories containing important data, such as
-  Documents or Downloads.
+## Mudanças na 14.0 ##
+*	O comando para copiar o nome do arquivo no qual os dados dos marcadores de
+  lugar serão salvos foi substituído por um comando que mostra esse nome de
+  arquivo no modo de navegação. Ele não está atribuído a um gesto.
+*	O campo "Texto a buscar" não se sobrepõe mais ao campo "texto
+  salvo". (Agradecimentos a Cyrille Bougot).
+*	Requer NVDA 2019.3 ou posterior.
+
+## Mudanças na 13.0 ##
+*	Adicionado um comando não atribuído para localizar as ocorrências seguinte
+  e anterior do último texto buscado em qualquer documento específico.
+*	O recurso de busca específica funciona quando o diálogo Sobre o NVDA
+  estiver aberto.
+*	No diálogo de busca específica, a caixa de seleção diferenciar maiúsculas
+  estará marcada se essa opção tiver sido selecionada na última busca.
+*	Quando o complemento for atualizado, marcadores e cadeias de buscas
+  específicas salvos na versão anterior do complemento serão automaticamente
+  copiados para a nova versão, a não ser que você prefira importar
+  marcadores salvos da pasta principal de configurações do NVDA.
+*	Ao usar o diálogo de copiar marcadores, caso a pasta escolhida não seja
+  nomeada placeMarkersBackup, será criada uma subpasta com esse nome para
+  prevenir o apagamento de diretórios que contenham dados importantes, tais
+  como Documentos ou Downloads.
 
 ## Mudanças na 12.0 ##
 *	Corrigido um erro crítico que fazia com que o NVDA falhasse ao tentar
@@ -165,6 +174,7 @@ marcadores.
 * Traduzido para: Alemão, Coreano, Eslovaco, Esloveno, Espanhol, Finlandês,
   Francês, Galego, Italiano, Japonês, Persa, Português, Português
   Brasileiro, Tâmil.
+
 
 [[!tag dev stable]]
 

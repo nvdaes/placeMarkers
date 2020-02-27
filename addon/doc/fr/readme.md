@@ -1,6 +1,6 @@
 # placeMarkers #
 * Auteurs : Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later.
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
 
@@ -36,8 +36,8 @@ des raccourcis et des caractéristiques communes.
   position.
 *	NVDA+k : Déplacer vers le marqueur suivant.
 *	Maj+NVDA+k : Déplacer vers le marqueur précédent.
-*	Control+maj+k : Copier le nom du fichier où les données des marqueurs de
-  position seront enregistrées dans le presse-papiers, sans l'extension.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	Alt+NVDA+k : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
   document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
   Enregistrer note pour enregistrer les modifications. En appuyant sur
@@ -69,6 +69,14 @@ vous pouvez accéder à :
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of
@@ -170,6 +178,7 @@ spécifique, pas les marqueurs.
 * Traduit en : Portugais Brésilien , Farsi, Finnois, Français, Galicien,
   Allemand, Italien, Japonais, Coréen, Nepali, Portugais, Espagnol,
   Slovaque, Slovène, Tamil.
+
 
 [[!tag dev stable]]
 

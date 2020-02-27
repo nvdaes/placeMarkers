@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-10.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2018-05-19 18:27+0200\n"
-"PO-Revision-Date: 2020-01-29 13:18+0800\n"
+"PO-Revision-Date: 2020-02-12 19:11+0800\n"
 "Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
 "Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
 "2010-2019>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
@@ -219,17 +219,16 @@ msgid ""
 msgstr "在指定的文档中查找光标所在位置的文本。"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
-msgstr "在指定的文档中查找光标所在位置的文本。"
+msgstr "在指定的文档中查找光标所在位置的下一个匹配项。"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
-msgstr "查找针对任何特定文档搜索的最后一个文本的上一个匹配项。"
+msgstr "在指定的文档中查找光标所在位置的上一个匹配项。"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."

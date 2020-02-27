@@ -1,6 +1,6 @@
 # Lesezeichen #
 * Autoren: Noelia, Chris.
-* NVDA-Kompatibilität: 2018.3 bis 2019.2
+* NVDA compatibility: 2019.3 or later.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 
@@ -34,9 +34,8 @@ URLs der angezeigten Dokumente.
   Position.
 *	NVDA+K: Wechselt zum nächsten Lesezeichen.
 *	Umschalt+NVDA+K: Wechselt zum vorherigen Lesezeichen.
-*	STRG+Umschalt+K: Kopiert den Dateinamen (ohne Dateierweiterung), unter
-  welchem die Daten der Lesezeichen in der Zwischenablage gespeichert
-  werden.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	Alt+NVDA+K: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
   Lesezeichen. Sie können für jedes Lesezeichen eine Notiz schreiben. Mit
   Klicken auf "Notiz speichern" können Sie die Änderungen speichern. Mit
@@ -66,6 +65,14 @@ Elemente zugreifen:
 Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Änderungen in 13.0 ##
 *	Es wurden nicht zugewiesene Befehle hinzugefügt, um das nächste und
@@ -175,6 +182,7 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 * Übersetzt in: brasilianisches Portugiesisch, Farsi, Finnisch, französisch,
   Galizisch, deutsch, italienisch, japanisch, Koreanisch, Nepalesisch,
   Portugiesisch, Spanisch, Slovakisch, Slovenisch, Tamil.
+
 
 [[!tag dev stable]]
 

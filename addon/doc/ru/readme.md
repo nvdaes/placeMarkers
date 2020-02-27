@@ -1,6 +1,6 @@
 # placeMarkers #
 * Авторы: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later.
 * загрузить [стабильную версию][1]
 * загрузить [разрабатываемую версию][2]
 
@@ -33,8 +33,8 @@
   position.
 *	NVDA+k: Moves to the next bookmark.
 *	shift+NVDA+k: Moves to the previous bookmark.
-*	control+shift+k: Copies the file name where the place markers data will be
-  saved to the clipboard, without an extension.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
   can write a note for each bookmark; press Save note to save
   changes. Pressing Delete you can remove the selected bookmark. Pressing OK
@@ -62,6 +62,14 @@
 Примечание: Положение закладки основано на количестве символов; и поэтому на
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of
@@ -158,6 +166,7 @@
 * Переведено на: бразильский португальский, фарси, финский, французский,
   галисийский, немецкий, итальянский, японский, корейский, непальский,
   португальский, испанский, словацкий, словенский, тамильский.
+
 
 [[!tag dev stable]]
 

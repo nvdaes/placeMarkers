@@ -1,6 +1,6 @@
 # placeMarkers #
 * 作者: Noelia, Chris.
-* NVDA互換性: 2018.3 から 2019.2
+* NVDA compatibility: 2019.3 or later.
 * ダウンロード [安定版][1]
 * ダウンロード [開発版][2]
 
@@ -15,7 +15,8 @@
 *	この位置に対応するブックマークを削除します。
 *	NVDA+k: 次のブックマークに移動します。
 *	shift+NVDA+k: 前に移動します。
-*	control+shift+k: Place Markersのデータが保存されるファイル名を、クリップボードに拡張子なしでコピーします。
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	alt+NVDA+k:
   このドキュメントに対して保存されているブックマークのダイアログを開きます。それぞれのブックマークに対してノートを書くことが出来ます。変更を保存するには、ノートを保存を押します。削除を押すと、選択されたブックマークを削除出来ます。OKを押すと選択された場所に移動出来ます。
 *	アサインなし: 一時的なブックマークとして位置を保存します。
@@ -35,6 +36,14 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## 13.0の変更点 ##
 *	特定のドキュメントで最後に検索した文字列の次または前の物を見つける、アサインなしのコマンドを追加しました。
@@ -103,6 +112,7 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 * 最初のバージョン
 * 次の言語に翻訳されました:
   ブラジルポルトガル語、ファルシ(ペルシア)語、フィンランド語、フランス語、ガリシア語、ドイツ語、イタリア語、日本語、韓国語、ネパール語、ポルトガル語、スペイン語、スロバキア語、スロベニア語、タミル語
+
 
 [[!tag dev stable]]
 

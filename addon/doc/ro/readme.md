@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autori: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later.
 * descărcați [versiunea stabilă][1]
 * descărcați [versiunea în dezvoltare][2]
 
@@ -32,8 +32,8 @@ URL-ul documentului curent.
   poziții.
 *	NVDA+k: Deplasează la semnul de carte următor.
 *	shift+NVDA+k: Deplasează la semnul de carte precedent.
-*	control+shift+k: Copiază pe planșetă numele fișierului unde data place
-  markers va fi salvată, fără o extensie.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
   document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
   „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
@@ -62,6 +62,14 @@ Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
 Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of
@@ -159,6 +167,7 @@ specifică, și nu marcajele care economisesc o poziție precisă.
 * Tradusă în: Portugheză Braziliană, Persană, Finlandeză, Franceză,
   Galiciană, Germană, Italiană, Japoneză, Coreeană, Nepaleză, Portugheză,
   Spaniolă, Slovacă, Slovenă, Tamilă.
+
 
 [[!tag dev stable]]
 

@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autori: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later.
 * Scarica la  [versione stabile][1]
 * Scarica la [versione in sviluppo][2]
 
@@ -36,9 +36,8 @@ Markers.
   posizione.
 *	NVDA+k: vai al segnaposto successivo.
 *	Shift+NVDA+k: vai al segnaposto precedente.
-*	Control+Shift+K: copia negli appunti il nome del file per il quale
-  verranno salvati i segnaposti e le ricerche. (Il nome non contiene
-  l'estenzione).
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	alt+NVDA+k: apre una finestra di dialogo con i segnalibri salvati per il
   documento corrente. È possibile scrivere una nota per ogni segnalibro;
   premere Salva nota per salvare le modifiche. Premendo il tasto Canc è
@@ -71,6 +70,14 @@ accedere a:
 Nota: La posizione del segnalibro è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposti per salvare una posizione precisa.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of
@@ -165,6 +172,7 @@ non i segnaposti per salvare una posizione precisa.
 * Tradotto in: portoghese brasiliano, farsi, finlandese, francese,
   galiziano, tedesco, italiano, giapponese, coreano, nepalese, portoghese,
   spagnolo, slovacco, sloveno, tamil.
+
 
 [[!tag dev stable]]
 

@@ -1,6 +1,6 @@
 # Oznake pozicija (placeMarkers) #
 * Autori: Noelia, Chris.
-* NVDA kompatibilnost: 2018.3 do 2019.2
+* NVDA kompatibilnost: 2019.3 ili novija.
 * Preuzmi [stabilnu verziju][1]
 * preuzmi [razvojnu verziju][2]
 
@@ -33,8 +33,7 @@ tipke i funkcije.
   poziciji.
 *	NVDA+k: Premješta se na sljedeću knjižnu oznaku.
 *	shift+NVDA+k: Premješta se na prethodnu knjižnu oznaku.
-*	control+shift+A: Kopira ime datoteke, u kojoj će se čuvati podaci oznake
-  pozicija, u međuspremnik, bez sufiksa.
+*	Nije dodijeljeno: Pokazuje naziv datoteke u modusu čitanja, bez nastavka.
 *	alt+NVDA+k: Otvara dijaloški okvir sa spremljenim knjižnim oznakama za
   ovaj dokument. Za svaku knjižnu oznaku je moguće upisati napomenu;
   pritisni „Spremi napomenu” za spremanje promjene. Pritiskom na „Odustani”
@@ -65,6 +64,14 @@ pristupiti:
 Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
+
+## Promjene u verziji 14.0 ##
+*	Prečac koji kopira ime datoteke u kojoj se spremaju oznake mjesta
+  zamijenjen je prečacem koji to pokazuje u modusu čitanja. Taj prečac nije
+  dodijeljen.
+*	Polje "tekst pretrage" više se ne poklapa s poljem "spremljeni
+  tekst". (Zahvaljujem Cyrilleu Bougotu).
+*	Zahtijeva NVDA 2019.3 ili noviju verziju.
 
 ## Promjene u verziji 13.0 ##
 *	Dodane se nedodijeljene naredbe za pronalaženje sljedeće i prethodne
@@ -163,6 +170,7 @@ oznake.
 * Prevedeno na: brazilski portugalski, farsi, finski, francuski, galicijski,
   njemački, talijanski, japanski, korejski, nepalski, portugalski,
   španjolski, slovački, slovenski, tamilski.
+
 
 [[!tag dev stable]]
 

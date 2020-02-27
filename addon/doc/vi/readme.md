@@ -1,6 +1,6 @@
 # Đánh dấu #
 * Tác giả: Noelia, Chris.
-* NVDA tương thích: 2018.3 đến 2019.2
+* NVDA tương thích: 2019.3 trở lên.
 * tải về [phiên bản chính thức][1]
 * tải về [phiên bản thử nghiệm][2]
 
@@ -30,8 +30,8 @@ addon này vì chúng có những tính năng và phím lệnh trùng nhau.
 *	control+shift+NVDA+delete: Xóa dấu trang tại vị trí tương ứng.
 *	NVDA+k: Chuyển đến dấu trang kế tiếp.
 *	shift+NVDA+k: Chuyển đến dấu trang trước.
-*	control+shift+k: Chép tên tập tin dùng để lưu dữ liệu của các điểm đánh
-  dấu vào bộ nhớ tạm mà không có phần mở rộng.
+*	Chưa gán: Hiển thị tên tập tin dùng để lưu dữ liệu của các điểm đánh dấu ở
+  chế độ duyệt mà không có phần mở rộng.
 *	alt+NVDA+k: Mở hộp thoại với các dấu trang đã lưu cho tài liệu hiện
   tại. Bạn có thể viết ghi chú cho mỗi dấu trang; bấm Lưu ghi chú để lưu các
   thay đổi. Có thể xóa dấu trang hiện tại bằng cách bấm Delete. Bấm OK để di
@@ -58,6 +58,14 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
+
+## Các thay đổi cho phiên bản 14.0 ##
+*	Lệnh chép tên của tập tin sẽ lưu dữ liệu của các điểm đánh dấu đã được
+  thay thế bởi một lệnh để hiển thị tên này trong chế độ duyệt. Lệnh này
+  không được gán thao tác.
+*	Ô "Văn bản cần tìm" không còn bị tràn qua ô "Các văn bản đã lưu" nữa. (cảm
+  ơn Cyrille Bougot).
+*	Yêu cầu NVDA 2019.3 trở lên.
 
 ## Các thay đổi cho phiên bản 13.0 ##
 *	Thêm các lệnh tìm kiếm văn bản kế và văn bản trước có chứa nội dugn tìm
@@ -148,9 +156,10 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 
 ## Các thay đổi cho phiên bản 1.0 ##
 * Phiên bản đầu tiên.
-* Đã dịch sang: tiếng Bồ Đào Nha brazi, Farsi, Phần Lan, Pháp, Galicia, Đức,
-  Ý, Nhật, Hàn Quốc, Nepal, Bồ Đào Nha, Tây Ban Nha, Slovak, Slovenia, Nam
-  Ấn Độ.
+* Đã dịch sang các ngôn ngữ: Bồ Đào Nha brazi, Farsi, Phần Lan, Pháp,
+  Galicia, Đức, Ý, Nhật, Hàn Quốc, Nepal, Bồ Đào Nha, Tây Ban Nha, Slovak,
+  Slovenia, Nam Ấn Độ.
+
 
 [[!tag dev stable]]
 
