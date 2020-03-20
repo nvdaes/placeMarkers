@@ -8,23 +8,24 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2018-06-08 11:30+0100\n"
+"PO-Revision-Date: 2020-03-17 19:57+0000\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"A sua pasta de configuração do NVDA contém ficheiros que parecem ser "
+"A sua pasta de configurações do NVDA contém ficheiros que parecem ser "
 "derivados de uma versão anterior deste extra. Deseja actualizá-lo?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -42,7 +43,7 @@ msgstr "Procura específica"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "&textos guardados"
+msgstr "Textos &guardados"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
@@ -50,11 +51,11 @@ msgstr "&Remover do histórico"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
-msgstr "T&exto a procurar"
+msgstr "&Texto a procurar"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Add to history"
-msgstr "&Adicionar ao histórico"
+msgstr "Adicionar ao &histórico"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
 msgid "Action on s&earch"
@@ -86,7 +87,7 @@ msgstr "Erro de cópia"
 
 #. Translators: Message presented when place markers have been restored.
 msgid "Place markers restored"
-msgstr "Marcadores de lugar repostos"
+msgstr "Marcadores de lugar restaurados"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
@@ -98,7 +99,7 @@ msgstr "&Marcadores"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr "No&ta:"
+msgstr "&Nota:"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
@@ -112,8 +113,7 @@ msgstr "&Apagar..."
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
-"Este marcador será permanentemente excluído. Esta acção não pode ser "
-"desfeita."
+"Este marcador será permanentemente apagado. Esta acção não pode ser anulada."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -131,12 +131,12 @@ msgstr "Copiar marcadores de lugar"
 #. Translators: An informational message displayed in the Copy dialog.
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Escolha uma pasta para guardar um backup dos seus marcadores de lugar "
-"actuais."
+"Escolha uma pasta para guardar a cópia de segurança dos seus marcadores de "
+"lugar actuais."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "Pasta para backup:"
+msgstr "Pasta para cópia de segurança:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
 msgid "Select directory to copy"
@@ -144,7 +144,7 @@ msgstr "Seleccionar pasta para copiar"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
-msgstr "Repor marcadores de lugar"
+msgstr "Restaurar marcadores de lugar"
 
 #. Translators: An informational message displayed in the Restore dialog.
 msgid ""
@@ -155,15 +155,15 @@ msgstr ""
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
-msgstr "Pasta que coantém o backup"
+msgstr "Pasta que contém a cópia de segurança"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 msgid "Select directory to restore"
-msgstr "Seleccionar pasta para repor"
+msgstr "Seleccionar pasta para restaurar"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "Ma&rcadores de lugar"
+msgstr "Marcadores de &lugar"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
@@ -171,7 +171,7 @@ msgstr "Marcadores e procura"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "Procura e&specífica"
+msgstr "Pasta de procuras &específicas"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
@@ -191,19 +191,19 @@ msgstr "&Copiar pasta de marcadores de lugar..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Backup de marcadores de lugar"
+msgstr "Cópia de segurança de marcadores de lugar"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "&Repor marcadores de lugar..."
+msgstr "&Restaurar marcadores de lugar..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Restaurar os marcadores de lugar previamente guardados..."
+msgstr "Restaurar os marcadores de lugar previamente guardados"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Abrir a pasta de procura específica"
+msgstr "Abre a pasta de procura específica"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
@@ -217,32 +217,30 @@ msgstr "Activa o diálogo de cópia de %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
-msgstr "Activa o diálogo de reposição de %s."
+msgstr "Activa o diálogo de restauro de %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Procura uma cadeia de texto a partir da posição actual do cursor para um "
-"documento específico."
+"Procura uma expressão a partir da posição actual do cursor para um documento "
+"específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Procura uma cadeia de texto a partir da posição actual do cursor para um "
-"documento específico."
+"Procura a próxima ocorrência do último texto procurado num documento "
+"específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Procura uma cadeia de texto a partir da posição actual do cursor para um "
-"documento específico."
+"Procura a ocorrência anterior do último texto procurado num documento "
+"específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -259,7 +257,7 @@ msgstr "Posição guardada no caracter %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "Não se pode guardar o marcador"
+msgstr "Não é possível guardar o marcador"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
@@ -275,7 +273,7 @@ msgstr "Marcador apagado"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Não se pode apagar o marcador."
+msgstr "Não é possível apagar o marcador."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
@@ -310,7 +308,7 @@ msgstr ""
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Não se pode copiar o nome do ficheiro para marcadores"
+msgstr "Não é possível copiar o nome do ficheiro para marcadores"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
@@ -323,7 +321,7 @@ msgstr "Guarda a posição actual como um marcador temporário"
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr "Marcador temporário guardado na posição %d"
+msgstr "Guardado marcador temporário na posição %d"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -347,4 +345,4 @@ msgstr ""
 #~ msgstr "O marcador não pode ser apagado."
 
 #~ msgid "Cannot find any bookmarks"
-#~ msgstr "Não se pode encontrar qualquer marcador."
+#~ msgstr "Não foi possível encontrar qualquer marcador."

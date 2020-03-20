@@ -18,7 +18,7 @@ tipke i funkcije.
 
 ## Tipkovnički prečaci: ##
 
-*	control+shift+NVDA+f: Otvara dijaloški okvir s uređivačkim poljem, koje
+*	kontrol+šift+NVDA+f: Otvara dijaloški okvir s uređivačkim poljem, koje
   prikazuje posljednju spremljenu pretragu. Moguće je odabrati prethodno
   spremljene pretrage iz odabirnog okvira ili ukloniti odabrani niz iz
   povijesti, pomoću potvrdnog okvira. Moguće je odabrati, hoće li se tekst u
@@ -26,13 +26,13 @@ tipke i funkcije.
   odaberi radnju iz sljedeće grupe izbornih gumba (Traži sljedeću, Traži
   prethodnu ili Ne traži), te odredi osjetljivost na velika i mala slova
   tijekom pretrage. Pritiskom gumba „U redu”, NVDA će tražiti taj niz.
-*	control+shift+NVDA+k: Sprema trenutačnu poziciju kao knjižnu oznaku. Ako
+*	kontrol+šift+NVDA+k: Sprema trenutačnu poziciju kao knjižnu oznaku. Ako
   toj knjižnoj oznaci želiš dodijeliti ime, odaberi neki tekst ove pozicije
   prije spremanja.
-*	control+shift+NVDA+delete: Briše knjižnu oznaku koja odgovara ovoj
+*	kontrol+šift+NVDA+delete: Briše knjižnu oznaku koja odgovara ovoj
   poziciji.
 *	NVDA+k: Premješta se na sljedeću knjižnu oznaku.
-*	shift+NVDA+k: Premješta se na prethodnu knjižnu oznaku.
+*	šift+NVDA+k: Premješta se na prethodnu knjižnu oznaku.
 *	Nije dodijeljeno: Pokazuje naziv datoteke u modusu čitanja, bez nastavka.
 *	alt+NVDA+k: Otvara dijaloški okvir sa spremljenim knjižnim oznakama za
   ovaj dokument. Za svaku knjižnu oznaku je moguće upisati napomenu;
@@ -101,7 +101,7 @@ oznake.
 
 ## Promjene u verziji 10.0 ##
 *	U Edgeu, geste koje su povezane s odabirom knjižnih oznaka, kao što su
-  NVDA+k, NVDA+shift+k ili NVDA+alt+k, bit će poslane aplikaciji, umjesto da
+  NVDA+k, NVDA+šift+k ili NVDA+alt+k, bit će poslane aplikaciji, umjesto da
   se pokuša premjestiti pokazivača na knjižne oznake, kako bi se izbjegle
   greške, posebno u dugačkim dokumentima.
 *	Sada se određena pretraga podržava u Edge.
