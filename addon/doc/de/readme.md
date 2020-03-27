@@ -1,6 +1,6 @@
 # Lesezeichen #
 * Autoren: Noelia, Chris.
-* NVDA compatibility: 2019.3 or later.
+* NVDA-Kompatibilität: 2019.3 oder höher.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 
@@ -34,8 +34,8 @@ URLs der angezeigten Dokumente.
   Position.
 *	NVDA+K: Wechselt zum nächsten Lesezeichen.
 *	Umschalt+NVDA+K: Wechselt zum vorherigen Lesezeichen.
-*	Not assigned: Shows the file name where the place markers data will be
-  saved in browse mode, without an extension.
+*	Nicht zugewiesen: Zeigt die Datei, in welcher die Lesezeichen gespeichert
+  werden im Lesemodus, ohne deren Erweiterung an.
 *	Alt+NVDA+K: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
   Lesezeichen. Sie können für jedes Lesezeichen eine Notiz schreiben. Mit
   Klicken auf "Notiz speichern" können Sie die Änderungen speichern. Mit
@@ -66,13 +66,13 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
-## Changes for 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
-*	Requires NVDA 2019.3 or later.
+## Änderungen für 14.0 ##
+*	Der Befehl zum Kopieren des Namens der Datei, in der Lesezeichen
+  gespeichert werden, wurde durch einen Befehl ersetzt, der diesen
+  Dateinamen im Lesemodus anzeigt. Dies ist keiner Geste zugewiesen.
+*	Das Feld "suchen" überlappt nun nicht mehr das Feld "gespeicherter
+  Text". (Danke an Cyrille Bougot).
+*	Erfordert NVDA 2019.3 oder höher.
 
 ## Änderungen in 13.0 ##
 *	Es wurden nicht zugewiesene Befehle hinzugefügt, um das nächste und
