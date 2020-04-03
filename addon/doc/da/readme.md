@@ -1,6 +1,6 @@
 # placeMarkers (Stedmærker) #
 * Forfattere: Noelia, Chris.
-* NVDA compatibility: 2019.3 or later.
+* NVDA-kompatibilitet: 2019.3 eller nyere
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -16,7 +16,7 @@ baseret på Specific Search og Bookmark Search, der er udviklet af samme
 forfatter. Disse tilføjelser deler tastetryk og funktionalitet, så det
 anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 
-## Tastaturkommandoer ##
+## Tastaturkommandoer: ##
 
 *	CTRL+Skift+NVDA+F: Åbner en dialog der viser den seneste søgning. I denne
   dialog kan du vælge tidligere udførte søgninger fra en comboboks, eller
@@ -33,8 +33,8 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
   position.
 *	NVDA+K: Flytter til det næste bogmærke.
 *	Skift+NVDA+K: Flytter til det forrige bogmærke.
-*	Not assigned: Shows the file name where the place markers data will be
-  saved in browse mode, without an extension.
+*	Ikke tildelt: Viser filnavnet, hvor stedmarkørens data gemmes i
+  gennemsynstilstand uden en filtypenavn.
 *	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
   dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
   at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
@@ -63,13 +63,14 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
-## Changes for 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
-*	Requires NVDA 2019.3 or later.
+## Ændringer for 14.0 ##
+*	Kommandoen til at kopiere navnet på filen, hvor stedmarkeringsdataene
+  gemmes, er blevet erstattet af en kommando, der viser dette filnavn i
+  gennemsynstilstanden. Kommandoen er ikke tildelt et tastetryk som
+  standard.
+*	Feltet "Tekst til søgning" overlapper ikke længere feltet "Gemt
+  tekst". (Tak til Cyrille Bougot).
+*	Kræver NVDA 2019.3 eller nyere.
 
 ## Ændringer i 13,0 ##
 *	Tilføjede kommandoer, så du nemt kan søge efter forrige og næste forekomst

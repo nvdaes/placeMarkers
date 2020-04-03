@@ -1,6 +1,6 @@
 # placeMarkers #
 * 作者: Noelia, Chris.
-* NVDA compatibility: 2019.3 or later.
+* NVDA互換性: 2019.3以降
 * ダウンロード [安定版][1]
 * ダウンロード [開発版][2]
 
@@ -15,8 +15,7 @@
 *	この位置に対応するブックマークを削除します。
 *	NVDA+k: 次のブックマークに移動します。
 *	shift+NVDA+k: 前に移動します。
-*	Not assigned: Shows the file name where the place markers data will be
-  saved in browse mode, without an extension.
+*	アサインなし: ブラウズモードで、place markersがデータを保存するファイル名を、拡張子なしで表示します。
 *	alt+NVDA+k:
   このドキュメントに対して保存されているブックマークのダイアログを開きます。それぞれのブックマークに対してノートを書くことが出来ます。変更を保存するには、ノートを保存を押します。削除を押すと、選択されたブックマークを削除出来ます。OKを押すと選択された場所に移動出来ます。
 *	アサインなし: 一時的なブックマークとして位置を保存します。
@@ -37,13 +36,11 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
 
-## Changes for 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
-*	Requires NVDA 2019.3 or later.
+## 14.0の変更点 ##
+*	place
+  markersのデータが保存されるファイル名のコピーのコマンドが、ブラウズモードでそのファイル名を表示するコマンドに変更されました。これはジェスチャーに割り当てされていません。
+*	「検索文字列」フィールドが「保存された文字列」フィールドに重ならなくなりました（Cyrille Bougotのおかげです）。
+*	NVDA2019.3以降が必要です。
 
 ## 13.0の変更点 ##
 *	特定のドキュメントで最後に検索した文字列の次または前の物を見つける、アサインなしのコマンドを追加しました。
