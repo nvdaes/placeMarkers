@@ -1,8 +1,8 @@
 # placeMarkers #
 * Autori: Noelia, Chris.
-* NVDA compatibility: 2019.3 or later.
-* Scarica la  [versione stabile][1]
-* Scarica la [versione in sviluppo][2]
+* Compatibilità con NVDA: versione 2019.3 o successive.
+* scarica la  [versione stabile][1]
+* scarica la [versione in sviluppo][2]
 
 Questo componente aggiuntivo è utilizzato per salvare segnaposti e cercare
 stringhe di testo specifiche, sia nelle pagine web che in documenti,
