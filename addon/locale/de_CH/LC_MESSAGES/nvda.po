@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDREss>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-05-12 20:20+0200\n"
-"Last-Translator: Karl Eick <hozosch@web.de>\n"
+"PO-Revision-Date: 2019-08-16 13:17+0200\n"
+"Last-Translator: Robert Hänggi <aarjay.robert@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_CH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -110,7 +110,7 @@ msgstr "&Entfernen..."
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
-"Dieses Lesezeichen wird permanent entfernt. Diese Aktion kann nicht "
+"Dieses Lesezeichen wird dauerhaft entfernt. Diese Aktion kann nicht "
 "rückgängig gemacht werden."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
@@ -127,13 +127,10 @@ msgid "Copy place markers"
 msgstr "Lesezeichen &kopieren"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Einen Ordner zum Speichern eines Backups Ihrer aktuellen Lesezeichen "
-"auswählen.\n"
-"\n"
-"\t\tSie werden aus \"%s\" kopiert."
+"Wählen SIE einen Ordner zum Speichern eines Backups Ihrer vorigen "
+"Lesezeichen."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -148,18 +145,15 @@ msgid "Restore place markers"
 msgstr "Lesezeichen &wiederherstellen"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Einen Ordner zum Wiederherstellen eines Backups Ihrer vorherigen Lesezeichen "
-"auswählen.\n"
-"\n"
-"\t\tSie werden nach \"%s\" kopiert."
+"Wählen SIE einen Ordner zum Wiederherstellen eines Backups Ihrer vorigen "
+"Lesezeichen."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
-msgstr "Backup-Ornder:"
+msgstr "Backup-Ordner:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -191,7 +185,7 @@ msgstr "Öffnet den Ordner der Lesezeichen"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "Lesezeichenornder &kopieren..."
+msgstr "Lesezeichenordner &kopieren..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -229,18 +223,20 @@ msgid ""
 msgstr "Sucht eine Zeichenkette im Dokument ab der Cursorposition."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
-msgstr "Sucht eine Zeichenkette im Dokument ab der Cursorposition."
+msgstr ""
+"findet das nächste Vorkommen des zuletzt gesuchten Textes für ein bestimmtes "
+"Dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
-msgstr "Sucht eine Zeichenkette im Dokument ab der Cursorposition."
+msgstr ""
+"findet das vorherige Vorkommen des zuletzt gesuchten Textes für ein "
+"bestimmtes Dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -308,7 +304,7 @@ msgstr ""
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "Dateiname für die Lesezeichen konnten nicht kopiert werden"
+msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
