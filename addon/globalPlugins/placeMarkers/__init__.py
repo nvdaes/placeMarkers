@@ -66,14 +66,14 @@ def createBookmarksFolder():
 createSearchFolder()
 createBookmarksFolder()
 
-def doFindText(text, reverse=False, caseSensitive=False):
+def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False):
 	if not text:
 		return
 	obj=api.getFocusObject()
 	treeInterceptor=obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj=treeInterceptor
-		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive)
+		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	else:
