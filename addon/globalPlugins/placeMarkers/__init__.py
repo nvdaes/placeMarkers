@@ -712,6 +712,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds the next occurrence of the last text searched for any specific document."),
+		resumeSayAllMode=sayAllHandler.CURSOR_CARET,
 	)
 	def script_specificFindNext(self, gesture):
 		obj=api.getFocusObject()
@@ -721,13 +722,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		if not lastFindText:
-			self.popupSpecificSearchDialog()
+			self.script_specificFind(gesture)
 		else:
-			doFindText(lastFindText, lastCaseSensitivity)
+			doFindText(
+				lastFindText,
+				lastCaseSensitivity,
+				willSayAllResume=willSayAllResume(gesture),
+			)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds the previous occurrence of the last text searched for any specific document."),
+		resumeSayAllMode=sayAllHandler.CURSOR_CARET,
 	)
 	def script_specificFindPrevious(self, gesture):
 		obj=api.getFocusObject()
@@ -737,9 +743,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		if not lastFindText:
-			self.popupSpecificSearchDialog()
+			self.script_specificFind(gesture)
 		else:
-			doFindTextUp(lastFindText, lastCaseSensitivity)
+			doFindTextUp(
+				lastFindText,
+				lastCaseSensitivity,
+				willSayAllResume=willSayAllResume(gesture),
+			)
 
 	def popupNotesDialog(self):
 		if getSavedBookmarks() == {}:

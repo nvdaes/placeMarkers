@@ -35,6 +35,11 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
+## Changes for 15.0 ##
+
+* When reading with say all in browse mode, the specific find next and specific find previous commands do not stop reading anymore if Allow skim reading option is enabled, according to find next and find previous commands from NVDA 2020.4.
+
+
 ## Changes for 14.0 ##
 *	The command to copy the name of the file where place markers data will be saved has been replaced by a command which shows this file name in browse mode. This is not assigned to a gesture.
 *	The "Text to search" field does not overlap the "Saved text" field anymore. (Thanks to Cyrille Bougot).
