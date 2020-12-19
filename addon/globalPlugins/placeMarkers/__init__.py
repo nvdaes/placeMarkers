@@ -66,6 +66,7 @@ def createBookmarksFolder():
 createSearchFolder()
 createBookmarksFolder()
 
+
 def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False):
 	if not text:
 		return
