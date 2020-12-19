@@ -7,7 +7,6 @@ import addonHandler
 import os
 import shutil
 import globalVars
-import gui
 import wx
 
 addonHandler.initTranslation()
@@ -19,6 +18,7 @@ def copyTree(src, dst):
 		pass
 
 def onInstall():
+	import gui
 	configPath = globalVars.appArgs.configPath
 	addonDir = os.path.abspath(os.path.dirname(__file__))
 	placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
