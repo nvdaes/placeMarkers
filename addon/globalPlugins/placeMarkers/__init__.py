@@ -116,8 +116,8 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				wx.OK|wx.ICON_ERROR
 			)
 
-def doFindTextUp(text, caseSensitive=False):
-	doFindText(text, reverse=True, caseSensitive=caseSensitive)
+def doFindTextUp(text, caseSensitive=False, willSayAllResume=False):
+	doFindText(text, reverse=True, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 
 def moveToBookmark(position):
 	obj = api.getFocusObject()
@@ -203,11 +203,12 @@ def getSavedBookmarks():
 
 class SpecificSearchDialog(wx.Dialog):
 
-	def __init__(self, parent):
+	def __init__(self, parent, reverse=False):
 		# Translators: The title of the Specific Search dialog.
 		super(SpecificSearchDialog, self).__init__(parent, title=_("Specific search"))
 		self.searchFile = getFileSearch()
 		self.savedTexts = getSavedTexts()
+		self.reverse = reverse
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		# Translators: The label of a combo box in the Specific Search dialog.
@@ -235,6 +236,8 @@ class SpecificSearchDialog(wx.Dialog):
 			_("&Don't search"),
 		)
 		self.searchRadioBox=sHelper.addItem(wx.RadioBox(self,label=searchActionsLabel, choices=searchChoices))
+		if self.reverse:
+			self.searchRadioBox.SetSelection(1)
 		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
 		# Message translated in NVDA core.
 		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=translate("Case &sensitive")))
@@ -694,7 +697,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("finds a text string from the current cursor position for a specific document."),
 		gesture="kb:NVDA+control+shift+f"
 	)
-	def script_specificFind(self,gesture):
+	def script_specificFind(self,gesture, reverse=False):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
@@ -705,7 +708,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# #8566: We need this to be a modal dialog, but it mustn't block this script.
 		def run():
 			gui.mainFrame.prePopup()
-			d = SpecificSearchDialog(gui.mainFrame)
+			d = SpecificSearchDialog(gui.mainFrame, reverse=reverse)
 			d.ShowModal()
 			gui.mainFrame.postPopup()
 		wx.CallAfter(run)
@@ -744,7 +747,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		if not lastFindText:
-			self.script_specificFind(gesture)
+			self.script_specificFind(gesture, reverse=True)
 		else:
 			doFindTextUp(
 				lastFindText,
