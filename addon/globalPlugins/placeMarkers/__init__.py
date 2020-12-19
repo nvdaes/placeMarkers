@@ -116,6 +116,7 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				wx.OK|wx.ICON_ERROR
 			)
 
+
 def doFindTextUp(text, caseSensitive=False, willSayAllResume=False):
 	doFindText(text, reverse=True, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 
@@ -697,7 +698,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("finds a text string from the current cursor position for a specific document."),
 		gesture="kb:NVDA+control+shift+f"
 	)
-	def script_specificFind(self,gesture, reverse=False):
+	def script_specificFind(self, gesture, reverse=False):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
