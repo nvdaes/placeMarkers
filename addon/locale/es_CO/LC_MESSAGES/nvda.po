@@ -1,42 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers-1.0\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2016-12-29 16:10-0800\n"
+"Project-Id-Version: eMule 1.0-dev\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2013-08-04 11:33+0200\n"
+"PO-Revision-Date: 2016-02-25 23:53-0800\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
-"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language: es_ES\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: .\n"
+"X-Generator: Poedit 1.5.5\n"
 
-#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
+#. Translators: Message presented in input help mode.
+msgid "Reads the specified column for the current list item."
+msgstr "Lee la columna especificada para el elemento de lista actual."
+
+#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#, python-format
+msgid "%s copied to clipboard"
+msgstr "%s copiado al portapapeles"
+
+#. Translators: Message presented in input help mode.
+msgid "Copies the last read column of the selected list item to clipboard."
 msgstr ""
-"Tu carpeta de configuración para NVDA contiene archivos que parecen "
-"derivados de una versión anterior de este complemento. ¿Quieres actualizarlo?"
+"Copia la última columna leída del elemento de lista seleccionado al "
+"portapapeles."
 
-#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Install or update add-on"
-msgstr "Instalar o actualizar complemento"
+#. Translators: Message presented in input help mode
+msgid "Moves the system focus and mouse to the main Tool Bar."
+msgstr ""
+"Mueve el foco del sistema y el ratón a la barra de herramientas principal."
+
+#. Translators: Message presented in input help mode.
+#. For instance: reads the search window, Statistics, IRC, etc.
+msgid "Reports the current window."
+msgstr "Anuncia la ventana actual."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves the system focus to the Name field of the Search window."
+msgstr ""
+"Mueve el foco del sistema al campo de nombre de la ventana de búsqueda."
+
+#. Translators: Message presented in input help mode.
+msgid ""
+"Moves the system focus and mouse to the search parameters list or Edit field "
+"for each option, in the Search window."
+msgstr ""
+"Mueve el foco del sistema y el ratón a la lista de parámetros de búsqueda o "
+"campo de edición para cada opción, en la ventana de Búsqueda."
+
+#. Translators: Message presented in input help mode.
+msgid ""
+"Moves the system focus to the first list in the current window. For example "
+"the results list in the Search window, downloads in Transfer, etc."
+msgstr ""
+"Mueve el foco del sistema a la primera lista en la ventana actual. Por "
+"ejemplo, la lista de los resultados en la ventana de búsqueda, descargas en "
+"Transfer, etc"
+
+#. Translators: Message presented in input help mode.
+msgid ""
+"Moves the system focus to read-only edit boxes in the current window. For "
+"example the IRC received messages."
+msgstr ""
+"Mueve el foco del sistema a cuadros de edición de sólo lectura en la ventana "
+"actual. Por ejemplo, el IRC ha recibido mensajes."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves the navigator object and mouse to the current list headers."
+msgstr ""
+"Mueve el navegador de objetos y el ratón a los encabezados de la lista "
+"actual."
+
+#. Translators: Message presented in input help mode.
+msgid "Reports first object of the Status Bar."
+msgstr "Informa sobre el primer objeto de la barra de estado."
+
+#. Translators: Message presented in input help mode.
+msgid "Reports second object of the Status Bar."
+msgstr "Informa sobre el segundo objeto de la barra de estado."
+
+#. Translators: Message presented in input help mode.
+msgid "Reports third object of the Status Bar."
+msgstr "Informa sobre el tercer objeto de la barra de estado."
+
+#. Translators: Message presented in input help mode.
+msgid "Reports fourth object of the Status Bar."
+msgstr "Informa sobre el cuarto objeto de la barra de estado."
+
+#. Translators: Label of a dialog presented when the specified string of text is not found.
+#, python-format
+msgid "text \"%s\" not found"
+msgstr "texto \"%s\" no encontrado"
+
+#. Translators: Title of a dialog presented when the specified string of text is not found.
+msgid "Find Error"
+msgstr "Error de Búsqeda"
+
+#. Translators: Label for a search box.
+msgid "Search for:"
+msgstr "Buscar:"
+
+#. Translators: title for the search dialog.
+msgid "eMule search"
+msgstr "Búsqueda de eMule"
+
+#. Translators: Message presented in input help mode
+msgid "Opens the find dialog when in read only edit boxes."
+msgstr ""
+"Abre el diálogo de búsqueda, cuando se está en cuadros de edición de sólo "
+"lectura."
+
+#. Translators: Message presented in input help mode.
+msgid "Find next occurence."
+msgstr "Buscar la siguiente aparición."
+
+#. Translators: Message presented in input help mode.
+msgid "Find previous occurrence."
+msgstr "Buscar la aparición anterior."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Place markers"
-msgstr "PlaceMarkers"
+msgid "eMule"
+msgstr "eMule"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for setting place markers on specific virtual documents"
+#, fuzzy
+msgid ""
+"Improves eMule's accessibility with NVDA.\n"
+"eMule is a P2P program to search and share files.\n"
+"You can get more information about eMule at\n"
+"https://www.emule-project.net"
 msgstr ""
-"Complemento para establecer las marcas en páginas Web y documentos virtuales "
-"específicos."
+"Mejora la accesibilidad de eMule con NVDA.\n"
+"\teMule es un programa P2P para buscar archivos y compartir.\n"
+"\tPuedes obtener más información acerca de eMule en\n"
+"\thttps://www.emule-project.net\n"
+"\t"

@@ -1,141 +1,91 @@
-# Postavljanje obeleživača #
+# eMule #
 
-* Autori: Noelia, Chris.
-* preuzmi [stabilnu verziju][1]
-* preuzmi [verziju u razvoju][2]
+*	Autori: Noelia, Chris, Alberto.
+*	NVDA compatibility: 2019.3 or later.
+*	Preuzmi[stabilnu verziju][1]
+*	Preuzmi[verziju u razvoju][3]
+*	download [version compatible with NVDA 2017.3][4]
 
-This addon is used for saving and searching specific text strings or
-bookmarks. It can be used  on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-bookmarks to files whose name is based on the title and URL of the current
-document.  This addon is based on SpecificSearch and Bookmark&Search,
-developed by the same author. You should uninstall them to use this one,
-since they have common keystrokes and features.
+This add-on helps to improve accessibility of eMule with nVDA.  It also
+provides additional keyboard commands for moving in different windows and
+gives Useful information about eMule.
 
-## Prečice ##
+It's based on the eMuleNVDASupport add-on, developed by the same author. You
+should uninstall that old add-on to use this one, since both have common
+keystrokes and features.
 
-*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
-  saved search; in this dialog you can also select the previously saved
-  searches from a combo box or remove the selected string from the history
-  using a checkbox. You can choose if the text contained in the edit box
-  will be added to the history of your saved texts. Finally, choose an
-  action from the next group of radio buttons (between Search next, Search
-  previous or Don't search), and specify if NVDA will make a case sensitive
-  search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
-  position before saving it.
-*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
-  position.
-*	NVDA+k: Moves to the next bookmark.
-*	shift+NVDA+k: Moves to the previous bookmark.
-*	control+shift+k: Copies the file name where the place markers data will be
-  saved to the clipboard, without an extension.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+Testirano na [eMule][2] 0.50a.
 
+## Glavne prečice ##
 
-## Podmeni za dodatak Postavljanje obeleživača (NVDA+N) ##
+*	control+shift+h: Pomera fokus i miš na glavnu traku.
+*	control+shift+t: Čita trenutni prozor.
+*	control+shift+n: Premešta fokus na polje za unos imena u dijalogu za
+  pretragu.
+*	control+shift+p: U prozoru za pretragu, premešta fokus na listu
+  podešavanja pretrage, ili opcije polja za uređivanje.
+*	control+shift+b: Premešta fokus na listu u trenutnom prozoru. Na primer
+  korisno u prozoru za pretragu, Preuzimanjima u prozoru za prebacivanje, i
+  tako dalje.
+*	control+shift+o: Premešta fokus na polja koja su samo za čitanje u
+  trenutnom prozoru. Na primer IRC primljene poruke, dostupni serveri, i
+  tako dalje.
+*	control+NVDA+f: Ako je kursor u polju koje je samo za čitanje, otvara
+  dijalog za pretragu kako biste koristili NVDA komande.
+*	control+shift+l: Pomera miš i navigacioni objekat na zaglavlje trenutne
+  liste.
+*	control+shift+q: Čita prvi objekat na statusnoj traci; pruža informacije o
+  poslednjim aktivnostima.
+*	control+shift+w: Čita drugi objekat statusne trake; sadrži informacije o
+  datotekama i korisnicima na trenutnom serveru.
+*	control+shift+e: Čita treći objekat statusne trake; korisno kako biste
+  znali trenutnu brzinu odpremanja i preuzimanja.
+*	control+shift+r: Čita četvrti objekat statusne trake; prijavjuje
+  povezivanja na eD2K i Kad mrežu.
 
-Using the Place markers submenu under NVDA's Preferences menu, you can
-access:
+## Upravljanje kolona ##
 
-*	Folder pretraga: Otvara folder sa ranije sačuvanim pretragama
-*	Bookmarks folder: Opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+Kada ste u listi, možete pomerati kursor između kolona i redova koristeći
+alt+control+ strelice.  U ovom dodatku sledeće komande su takođe dostupne:
 
-Note: The bookmark position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-bookmarks.
+*	nvda+control+1-0: čita prvih deset kolona.
+*	nvda+shift+1-0: Čita kolone 11 do 20.
+*	nvda+shift+C: Kopira sadržaj zadnje pročitane kolone u privremenu
+  memoriju.
 
-
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
-
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
-
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
-
-## Changes for 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in the VitalSource Bookshelf ePUB reader.
-*	Added a Notes dialog, to associate comments for saved bookmarks and move
-  to the selected position.
-
-## Changes for 7.0 ##
-*	The dialog to save a string of text for specific search has been
-  removed. This functionality is now included in the Specific search dialog,
-  which has been redesigned to allow different actions when pressing the OK
-  button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
-*	Requires NVDA 2016.4 or later.
-*	Now you can assign gestures to open the Copy and Restore place markers
-  dialogs.
-*	NVDA will present a message to notify when place markers have been copied
-  or restored with the corresponding dialogs.
-
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
-
-## Promene u 5.0 ##
-* Dodata pretraga osetljiva na veličinu slova.
-* Uklonjena opcija za otvaranje dokumentacije iz menija dodatka.
-* Prečice koje se lakše pamte.
-
-## Promene u 4.0 ##
-* Izmenjen način odabira naslova obeleživača, što rešava problem sa nekim
-  aplikacijama.
-* Pomoć za dodatak je dostupna iz menadžera/upravljača dodacima.
-
-## Promene u 3.1 ##
-* Ažurirani prevodi i novi jezik.
-* Pozicija obeleživača se više ne izgovara u čitanju dokumenta.
+## Changes for 4.0 ##
+*	Requires NVDA 2019.3 or later.
 
 ## Promene u 3.0 ##
-* Omogućeno brzo pregledanje.
+*	 To search text in the readonly edit boxes,  the find dialog  can be used,
+   such as nvda+control+f to activate the find dialog.
 
 ## Promene u 2.0 ##
-* Dodata mogućnost za čuvanje i brisanje pretraga za određeni fajl.
-* Omogućen rad sa nelatiničnim karakterima.
-* Omogućena izmena prečica kroz NVDA dijalog za ulazne komande.
+*	 Pomoć za dodatak je dostupna iz menia za upravljanje dodacima.
+
+## Promene u 1.2 ##
+*	 Kada ste u IRC porukama, izabran tekst je ispravno pročitan.
+*	 Prečica za prelazak na rezultate pretrage sada prelazi na bilo koju listu
+   u trenutnom prozoru.
+*	 Komanda za čitanje IRC poruka sada prelazi na bilo koje polje koje je
+   samo za čitanje, tako da možete pregledati informacije o konekciji u bilo
+   kom prozoru.
+*	 Kada premestite fokus i miš na traku sa alatkama, u nekim slučajevima
+   bila je izgovorena dva puta. Ovo je popravljeno.
+
+## Promene u 1.1 ##
+*	 Popravljen bag u eMule stavci u NVDA Meniju za pomoć, kada folder za
+   korisnička podešavanja sadrži znakove koji nisu latinični.
+*	 Prečice sada mogu biti promenjene u NVDA dijalogu za ulazne gestove.
 
 ## Promene u 1.0 ##
-* Prva verzija
-* Prevedeno na: brazilski portugalski, finski, francuski, galicijski,
-  italijanski, japanski, korejski, nemački, nepalski, persijski,
-  portugalski, slovački, slovenački, španski, tamilski.
-  Uskoro i na srpskom.
+*	 Prva verzija
+
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=em
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: https://www.emule-project.net
+
+[3]: https://addons.nvda-project.org/files/get.php?file=em-dev

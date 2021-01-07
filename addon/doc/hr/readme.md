@@ -1,137 +1,94 @@
-# mjesne oznake / placemarkerss #
+# eMule #
 
-* Autori: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.1
-* preuzmi [stabilnu inačicu][1]
-* preuzmi [razvojnu inačicu][2]
+*	Autori: Noelia, Chris, Alberto.
+*	NVDA kompatibilnost: 2019.3 i novija.
+*	Preuzmi [stabilnu verziju][1]
+*	Preuzmi [razvojnu verziju][3]
+*	Preuzmi [kompatibilna verzija s NVDA 2017.3][4]
 
-Ovaj dodatak se koristi za pretraživanje i čuvanje zabilješki na web
-stranicama i dokumentima u NVDA modu pretraživanja. Možete pretraživati i
-višelinijski, dodatak će se prilagoditi. Naziv zabilješke koju sačuvate
-zasnovan je na naslovu i adresi stranice/dokumenta. 
+Ovaj dodatak poboljšava pristupačnostof eMule programa uz pomoć NVDA
+čitača. Također pruža dodatne tipkovničke prečace za premještanje po
+različitim prozorima i daje korisne informacije u eMuleu.
 
-## Tipkovne prečice:  ##
+Ovaj je dodatak baziran na dodatku eMuleNVDASupport, kojeg je razvio isti
+autor. Stari se dodatak mora deinstalirati, kako bi se mogao koristiti ovaj
+dodatak, jer oba dodatka imaju zajedničke tipkovničke prečace i značajke.
 
-*	control+shift+NVDA+f: Otvara dijaloški okvir s uređivačkim poljem koje
-  prikazuje posljednju spremljenu pretragu; u tom dijaloškom okviru također
-  možete odabrati prethodno spremljene pretrage ili ukloniti odabrani
-  niz. Možete odabrati hoće li se tekst sadržan u uređivačkom polju dodati
-  među sačuvane tekstove. Konačno, odaberite akciju iz sljedeće grupe radio
-  gumbića (između Traži sljedeće, Traži prethodno ili Ne traži), te
-  definirajte hoće li NVDA biti osjetljiv na velika i mala slova tijekom
-  pretrage. Kada pritisnete u redu, NVDA će tražiti taj niz.
-*	control+shift+NVDA+k: Sprema trenutnu poziciju kao zabilješku. Ako želite
-  dodijeliti ime toj zabilješki, odaberite neki tekst prije spremanja. 
-*	control+shift+NVDA+delete: briše zabilješku u skladu s njenom pozicijom.
-*	NVDA+k: pomiče na sljedeću zabilješku.
-*	shift+NVDA+k: pomiče na prethodnu zabilješku.
-*	control+shift+A: Kopira ime datoteke u kojoj će se čuvati podaci mjesne
-  oznake u međuspremnik, bez ekstenzije.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Nije dodijeljeno: Sprema poziciju kao privremenu zabilješku.
-*	Nije dodijeljeno: Pomiče se na privremenu zabilješku za trenutni dokument.
+Testirano na [eMule][2] 0.50a.
 
+## Tipkovnički prečaci: ##
 
-## Podizbornik Mjesne oznake (NVDA+N)  ##
+*	kontrol+šift+h: Premješta fokus i miša na glavnu alatnu traku.
+*	kontrol+šift+t: Čita trenutačni prozor.
+*	kontrol+šift+n: Premješta fokus na polje za ime u prozoru pretrage.
+*	kontrol+šift+p: U prozoru pretrage, premješta fokus i miša na popis
+  parametara pretrage ili na opcije uređivačkog polja.
+*	kontrol+šift+b: Premješta fokus na popis u trenutačnom prozoru. Na
+  primjer, korisno u prozoru pretrage, preuzimanja u prozoru transfera, itd.
+*	kontrol+šift+o: Premješta fokus na polja za uređivanje koja su samo za
+  čitanje u trenutačnom prozoru. Na primjer, IRC primljene poruke, dostupni
+  poslužitelji, itd.
+*	kontrol+NVDA+f: Ako se kursor nalazi u polju za uređivanje koje je samo za
+  čitanje, otvara se dijalog za pretragu s NVDA naredbama za traženje
+  teksta.
+*	kontrol+šift+l: Premješta navigacijski objekt i miša na zaglavlja
+  trenutačnog popisa.
+*	kontrol+šift+q: Šita prvi objekt u statusnoj traci; pruža informacije o
+  nedavnoj aktivnosti.
+*	kontrol+šift+w: Čita drugi objekt statusne trake; sadrži informacije o
+  datotekama i korisnicima na trenutačnom poslužitelju.
+*	kontrol+šift+e: Čita treći objekt statusne trake; korisno, kad se želi
+  doznati brzina slanja/preuzimanja.
+*	kontrol+šift+r: Čita četvrti objekt statusne trake; izvještava o
+  povezivosti ed2k i Kad mreže.
 
-Korištenjem podizbornika Mjesne oznake u izborniku postavki NVDA, možete
-pristupiti: 
+## Upravljanje stupcima. ##
 
-*	Mapi posebnih pretraga: otvara mapu prethodno spremljenih posebnih
-  pretraživanja.
-*	Mapi zabilješki: otvara mapu spremljenih zabilješki.
-*	Kopiraj mapu mjesnih oznaka: Možete sačuvati kopiju mape zabilješki.
-*	Vrati mjesne oznake: Možete vratiti zabilješke iz mape prethodno
-  spremljenih zabilješki.
+Kad se nalaziš unutar popisa, možeš premještati kursor između stupaca i
+redaka pomoću alt+control+strelice. U ovom dodatku su dostupni i slijedeći
+prečaci:
 
-Napomena: Pozicija zabilješke bazirana je na broju znakova; nadalje, u
-dinamičkim stranicama, bolje je koristiti posebnu pretragu, ne zabilješke.
+*	nvda+kontrol+1-0: Čita prvih deset stupaca.
+*	nvda+šift+1-0: Čita jedamaesti do dvadeseti stupac.
+*	nvda+šift+C: Kopira sadržaj zadnje pročitanog stupca u međuspremnik.
 
-## Changes for 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+## Promjene u verziji 4.0 ##
+*	Zahtijeva NVDA 2019.3 ili noviju verziju.
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+## Promjene u verziji 2.0 ##
+*	 Za pretraživanje teksta u poljima koja su samo za čitanje, moguće je
+   koristiti dijaloški okvir pretrage, odnosno aktivirati ga pomoću tipki
+   nvda+kontrol+f.
 
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+## Promjene u verziji 2.0 ##
+*	 Pomoć za dodatak je dostupna unutar upravljača dodataka.
 
-## Changes for 9.0
-*	Dok se pomičete na zabilješku iz dijaloškog okvira Napomene, pregledni
-  kursor slijedi kursor sustava.
-*	Naredba za odabir prethodne zabilješke opet radi ispravno.
-*	Zabilješke se mogu brisati u dijaloškom okviru Napomene.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## Promjene u verziji 1.2 ##
+*	 Prilikom premještanja na IRC poruke, označeni se tekst čita ispravno.
+*	 Tipkovnički prečac za prijelaz na popis rezultata pretraživanja je sada
+   poopćen, kako bi se fokus mogao premjestiti na bilo koji dostupni popis u
+   trenutačnom prozoru.
+*	 Prečac koji se koristi za fokusiranje IRC poruka je sada poopćen, kako bi
+   se omogućilo premještanje na bilo koje polje za uređivanje koje je samo
+   za čitanje, čime se omogućuje pregled informacija o povezivosti u prozoru
+   Poslužitelji.
+*	 Prilikom premještanja miša ili fokusa na alatnu traku, u nekim se
+   slučajevima ovo izgovaralo dvaput. To je sada ispravljeno.
 
-## Promjene u inačici 8.0 ##
-*	Izmijenjen način odabira naslova zabilješki, što rješava problem sa nekim
-  aplikacijama kao što je ePUB reader.
-*	Dodan dijaloški okvir Napomene za dodavanje komentara spremljenim
-  zabilješkama i pomak na odabranu poziciju.
+## Promjene u verziji 1.1 ##
+*	 Ispravljena greška u e mule stavci izbornika unutar  NVDA izbornika
+   pomoć, kada korisnička mapa konfiguracije sadrži nelatinične znakove.
+*	 Prečace je sada moguće prenamijeniti, koristeći dijaloški okvir ulazne
+   geste u NVDA izborniku.
 
-## Promjene u inačici 7.0 ##
-*	Dijaloški okvir za spremanje niza teksta za posebnu pretragu je
-  uklonjen. Ta funkcija sada je uključena u dijaloški okvir Posebno
-  pretraživanje, koji je ponovno dizajniran kako bi omogućio različite
-  akcije dok pritisnete gumb U redu.
-*	Vizualni prikaz dijaloških okvira je poboljšan, pridržavajući se izgleda
-  dijaloških okvira u NVDA. 
-*	Naredbe Traži sljedeće i Traži prethodno sada će ispravno izvršavati
-  pretragu s osjetljivošću na velika i mala slova.
-*	Zahtijeva NVDA inačicu 2016.4 ili noviju.
-*	Sada možete dodati geste za otvaranje dijaloških okvira Kopiraj i Vrati
-  mjesne oznake.
-*	NVDA će prikazati poruku kako bi obavijestio da su mjesne oznake kopirane
-  ili premještene.
+## Promjene u verziji1.0 ##
+*	 Prva verzija.
 
-## Promjene u 6.0 ##
-* Kada značajke dodatka nisu upotrebljive, geste su poslane u odgovarajuću
-  aplikaciju.
-
-## Promjene u 5.0 ##
-* Dodana pretraga s osjetljivošću na velika i mala slova.
-* Uklonjena opcija za otvaranje dokumentacije iz izbornika Mjesne oznake.
-* Prečice koje se lakše pamte.
-
-## Promjene u inačici 4.0 ##
-* Promijenjen način definiranja naslova zabilješki, što rješava problem u
-  dodatku EPUBREADER za Firefox.
-* Pomoć za ovaj dodatak dostupna je u Upravitelju dodacima.
-
-## Promjene u inačici 3.1 ##
-* Ažurirani prijevodi i novi jezik.
-* Pozicija zabilješke više se ne izgovara u čitanju dokumenta.
-
-## Promjene u inačici 3.0 ##
-* Dodana podrška za čitanje dokumenta.
-
-## Promjene u inačici 2.0 ##
-* Dodane opcije za spremanje i brisanje različitih pretraga za svaku
-  datoteku.
-* Omogućen rad s nelatiničnim znakovima.
-* Omogućena promjena prečica korištenjem dijaloškog okvira za ulazne geste.
-
-## Promjene u inačici 1.0 ##
-* Prva verzija.
-* Prevedeno na: brazilski portugalski, farsi, finski, francuski, galicijski,
-  njemački, talijanski, japanski, korejski, nepalski, portugalski,
-  španjolski, slovački, slovenski, tamilski.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=em
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://www.emule-project.net
 
-[3]: https://addons.nvda-project.org/files/get.php?file=pm-o
+[3]: https://addons.nvda-project.org/files/get.php?file=em-dev

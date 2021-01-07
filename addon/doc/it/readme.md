@@ -1,157 +1,98 @@
-# placeMarkers #
+# eMule #
 
-* Autori: Noelia, Chris.
-* Compatibilità con NVDA: dalla 2018.3 alla 2019.1
-* Scarica la  [versione stabile][1]
-* Scarica la [versione in sviluppo][2]
+*	Autori: Noelia, Chris, Alberto.
+*	Compatibilità con NVDA: versione 2019.3 o successive.
+*	scarica la [versione stabile][1]
+*	scarica la [versione in sviluppo][3]
+*	scarica la [versione compatibile con NVDA 2017.3][4]
 
-Questo componente aggiuntivo è utilizzato per salvare segnaposti e cercare
-stringhe di testo specifiche, sia nelle pagine web che in documenti,
-utilizzando la modalità navigazione di NVDA. Consente la ricerca di stringhe
-in campi di testo editabile; in questo caso, se non è possibile aggiornare
-il cursore, la stringa corrispondente verrà copiata negli appunti, in modo
-che possa essere cercata utilizzando altri strumenti. Il componente
-aggiuntivo salva  i segnaposti e le ricerche specifiche in file che vengono
-nominati secondo il titolo e l'indirizzo  del documento attuale. Place
-Markers deriva da SpecificSearch e Bookmark&Search, sviluppato dalla stessa
-autrice. È preferibile disinstallare i vecchi componenti aggiuntivi, dal
-momento che usano gli stessi comandi ed hanno le stesse funzioni di Place
-Markers. 
+Questo componente aggiuntivo migliora l'accessibilità di Emule con
+NVDA. Contiene alcuni tasti rapidi per spostarsi all'interno delle varie
+schede e fornisce informazioni utili su Emule.
+
+Deriva dal componente aggiuntivo eMuleNVDASupport, sviluppato dalla stessa
+autrice. E' necessario disinstallare la vecchia versione, se presente, prima
+di installare questa versione.
+
+Testato su [eMule][2] 0.50a.
 
 ## Comandi rapidi: ##
 
-*	Control+shift+NVDA+f: apre una finestra con un campo di editazione che
-  mostra l'ultima ricerca salvata; tramite una casella combinata è anche
-  possibile selezionare una ricerca specifica salvata in precedenza  o
-  rimuovere la stringa selezionata dallo storico utilizzando una casella di
-  controllo. È possibile scegliere se il testo contenuto nel campo
-  editazione verrà aggiunto allo storico del testo salvato. Infine, è
-  possibile selezionare tramite radio pulsanti tra le azioni Cerca
-  successiva, Cerca Precedente o Non Cercare, e specificare se considerare
-  le maiuscole o minuscole nella ricerca. Premendo Ok NVDA cercherà la
-  stringa digitata.
-*	control+shift+NVDA+k: Salva la posizione corrente come segnalibro. Se si
-  desidera dare un nome per il segnalibro, selezionare un testo da questa
-  posizione prima di salvarlo.
-*	Control+Shift+NVDA+Delete: Elimina il segnaposto corrispondente a questa
-  posizione.
-*	NVDA+k: vai al segnaposto successivo.
-*	Shift+NVDA+k: vai al segnaposto precedente.
-*	Control+Shift+K: copia negli appunti il nome del file per il quale
-  verranno salvati i segnaposti e le ricerche. (Il nome non contiene
-  l'estenzione).
-*	alt+NVDA+k: apre una finestra di dialogo con i segnalibri salvati per il
-  documento corrente. È possibile scrivere una nota per ogni segnalibro;
-  premere Salva nota per salvare le modifiche. Premendo il tasto Canc è
-  possibile rimuovere il segnalibro selezionato. Premendo OK si sposta il
-  cursore nella posizione selezionata.
-*	Tasto non assegnato: Salva la posizione attuale come segnalibro
-  temporaneo.
-*	Tasto non assegnato: sposta il cursore nel segnalibro temporaneo nel
-  documento corrente. 
+*	control+shift+h: sposta il focus e il mouse sulla barra degli strumenti
+  principale.
+*	control+shift+t: Legge la finestra corrente.
+*	control+Shift+n: Sposta il focus sul campo Nome nella finestra Trova .
+*	control+shift+p: Nella finestra di ricerca , sposta il focus e il mouse
+  nell'elenco dei parametri di ricerca.
+*	control+shift+b: sposta il focus sull'elenco nella finestra corrente. Per
+  esempio, si sposta sui risultati nella finestra Cerca o nell'elenco dei
+  download nella finestra Trasferimenti.
+*	control+shift+o: sposta il focus nel campo editazione di sola lettura
+  nella finestra corrente. Per esempio, si sposta nei messaggi ricevuti
+  nella finestra IRC, etc.
+*	control+NVDA+f: Se il cursore si trova in un campo editazione di sola
+  lettura, apre la finestra di dialogo per la ricerca di testo di NVDA.
+*	control+shift+l: Sposta il Navigatore ad Oggetti e il puntatore Mouse
+  sull'intestazione di una colonna all'interno di un elenco.
+*	control+shift+q: Legge attività recenti, primo elemento della barra di
+  stato.
+*	control+shift+w: Legge utenti e files del server attuale, secondo elemento
+  della barra di stato.
+*	control+shift+e: Legge velocità di Download e Upload in eMule, terzo
+  elemento della barra di stato.
+*	control+shift+r: Legge connettività alle reti eD2K e Kad, quarto elemento
+  della barra di stato.
 
+## Esplorazione degli elenchi. ##
 
-## Sottomenu Segnaposto (NVDA+N) ##
+Negli elenchi di eMule è possibile navigare tra le colonne e le righe usando
+alt+control+ frecce direzionali. In questo componente aggiuntivo sono
+disponibili inoltre i seguenti comandi da tastiera:
 
-Utilizzando il menu Placemarkes, dal menu Preferenze di NVDA, si può
-accedere a:
+*	nvda+control+1-0: Consente di leggere le prime 10 colonne.
+*	nvda+shift+1-0: Consente di leggere le colonne corrispondenti, dalla
+  undicesima alla ventesima.
+*	nvda+shift+C: Copia negli appunti il contenuto dell'ultima colonna letta.
 
-*	Cartella ricerche specifiche; Apre una cartella delle ricerche specifiche
-  precedentemente salvate.
-*	Cartella segnaposto; Apre una cartella dei segnaposti precedentemente
-  salvati.
-*	Copia cartella segnaposti; è possibile salvare una copia della cartella
-  segnaposti.
-*	Ripristinare segnaposti; è possibile ripristinare i segnaposti da una
-  cartella  segnaposti precedentemente salvata.
+## Novità nella versione 4.0 ##
+*	Richiede NVDA 2019.3 o superiore.
 
-Nota: La posizione del segnalibro è basata sul numero di caratteri; in
-pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
-non i segnaposti per salvare una posizione precisa.
+## Novità nella versione 3.0 ##
+*	 Per la ricerca di testo in campi di sola lettura , ora è possibile
+   utilizzare icomandi disponibili in NVDA.
 
-## Changes for 12.0 ##
-*	Risolto un errore che causava un crash in NVDA quando si tentava di aprire
-  la finestra di dialogo Note, se i caratteri cinesi venivano selezionati
-  prima di salvare i segnalibri.
+## Novità nella versione 2.0 ##
+*	 L'aiuto sul componente aggiuntivo è disponibile dal gestore componenti
+   aggiuntivi.
 
-## Changes for 11.0 ##
-*	Compatibile con NVDA 2018.3 superiori(required).
-*	Se è necessario, è possibile scaricare la  [versione compatibile  con NVDA
-  2017.3][3].
+## Novità nella versione 1.2 ##
+*	 Quando ci si sposta sui messaggi IRC , il testo selezionato viene
+   riportato correttamente.
+*	 Il comando rapido  utilizzato per spostarsi alla lista dei risultati di
+   Ricerca è stato generalizzato per essere in grado di spostare il focus in
+   qualsiasi elenco nella finestra corrente.
+*	 Il comando utilizzato per focalizzare i messaggi IRC è stato
+   generalizzato per spostare il focus su qualsiasi campo editazione di sola
+   lettura, il che rende possibile rivedere le informazioni di connessione
+   nella finestra Server.
+*	 Spostando il mouse e il focus sulla barra degli strumenti, in alcuni casi
+   si aveva una doppia vocalizzazione. Questo problema è stato risolto.
 
-## Changes for 10.0 ##
-*	In Edge, i comandi associati ai segnaposti, come NVDA+k, NVDA+shift+k o
-  NVDA+alt+k, saranno inviati all'applicazione, invece di tentare di
-  spostare il cursore al segnaposto, per evitare errori, particolarmente in
-  documenti lunghi.
-*	La ricerca specifica è supportata anche in Edge.
+## Novità nella versione 1.1 ##
+*	 Risolto un problema nella voce Emule del menu Aiuto di NVDA, che si
+   verificava quando il nome della cartella di configurazione utente
+   conteneva caratteri non latini.
+*	 I tasti rapidi possono ora essere riassegnati utilizzando la finestra di
+   dialogo gesti e tasti di immissione di NVDA.
 
-## Changes for 9.0
-*	Quando ci si sposta ad un segnalibro dalla finestra  Note, il cursore di
-  controllo segue il cursore di sistema. 
-*	The command to select the previous bookmark works properly again.
-*	I segnalibri possono essere eliminati dalla finestra  Note.
-*	Ora  è possibile assegnare comandi da tastiera per spostarsi sui
-  segnalibri temporanei.
+## Novità nella versione 1.0 ##
+*	 Versione iniziale.
 
-## Changes for 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in the VitalSource Bookshelf ePUB reader.
-*	Added a Notes dialog, to associate comments for saved bookmarks and move
-  to the selected position.
-
-## Changes for 7.0 ##
-*	La finestra di dialogo per salvare una stringa di testo per la ricerca
-  specifica è stata rimossa. Questa funzionalità è ora inserita nella
-  finestra di ricerca Specifica , la quale è stata modificata per eseguire
-  diverse azioni quando si preme il pulsante Ok.
-*	Migliorata la rappresentazione grafica della interfaccia per la finestra
-  di dialogo, conforme alle finestre di dialogo usate in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
-*	Placemarkers richiede NVDA 2016.4 o versioni successive.
-*	Ora è possibile assegnare comandi da tastiera per aprire le finestre di
-  dialogo per copiare o ripristinare. 
-*	NVDA avviserà con un messaggio di notifica quando Placemarkers copia o
-  ripristina le cartelle usando le relative finestre.
-
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
-
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
-
-## Changes for 4.0 ##
-* Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in ePUBREADER Firefox add-on.
-* Add-on help is available from the Add-ons Manager.
-
-## Changes for 3.1 ##
-* Translation updates and new language.
-* Bookmark position is not announced in skim reading.
-
-## Changes for 3.0 ##
-* Added support for skim reading.
-
-## Changes for 2.0 ##
-* Added options to save and delete different searches for each file.
-* Fixed bug which broke when paths contained non latin characters.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog.
-
-## Cambiamenti nella 1.0 ##
-* Versione Iniziale.
-* Tradotto in: portoghese brasiliano, farsi, finlandese, francese,
-  galiziano, tedesco, italiano, giapponese, coreano, nepalese, portoghese,
-  spagnolo, slovacco, sloveno, tamil.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=em
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://www.emule-project.net
 
-[3]: https://addons.nvda-project.org/files/get.php?file=pm-o
+[3]: https://addons.nvda-project.org/files/get.php?file=em-dev
