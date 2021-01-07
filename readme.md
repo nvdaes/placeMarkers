@@ -1,7 +1,7 @@
 # placeMarkers #
 
 * Authors: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.2
+* NVDA compatibility: 2019.3 or later.
 * download [stable version][1]
 * download [development version][2]
 
@@ -16,7 +16,7 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 *	control+shift+NVDA+delete: Deletes the bookmark corresponding to this position.
 *	NVDA+k: Moves to the next bookmark.
 *	shift+NVDA+k: Moves to the previous bookmark.
-*	control+shift+k: Copies the file name where the place markers data will be saved to the clipboard, without an extension.
+*	Not assigned: Shows the file name where the place markers data will be saved in browse mode, without an extension.
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing Delete you can remove the selected bookmark. Pressing OK you can move to the selected position.
 *	Not assigned: Saves a position as a temporary bookmark.
 *	Not assigned: Moves to the temporary bookmark for the current document.
@@ -34,6 +34,11 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 *	Restore placeMarkers: You can restore your bookmarks from a previously saved placeMarkers folder.
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be saved has been replaced by a command which shows this file name in browse mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
 
 ## Changes for 13.0 ##
 *	Added not assigned commands to find the next and previous occurrences of the last text searched for any specific document.
