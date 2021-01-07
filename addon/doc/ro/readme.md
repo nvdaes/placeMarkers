@@ -1,94 +1,178 @@
-# eMule #
+# placeMarkers #
+* Autori: Noelia, Chris.
+* NVDA compatibility: 2019.3 or later.
+* descărcați [versiunea stabilă][1]
+* descărcați [versiunea în dezvoltare][2]
 
-*	Autori: Noelia, Chris, Alberto.
-*	NVDA compatibility: 2019.3 or later.
-*	Descărcați [versiunea stabilă][1]
-*	Descărcați [versiunea în dezvoltare][3]
-*	download [version compatible with NVDA 2017.3][4]
+Acest supliment este folosit pentru salvarea și căutarea textelor specifice
+din stringuri sau semne de carte, pe paginile web sau documente în modul de
+navigare al NVDA. De asemenea, poate fi utilizat pentru salvarea și căutarea
+stringurilor din textele controalelor linii-multiple. În acest caz, dacă nu
+este posibil să actualizați cursorul de scriere, stringul corespunzător va
+fi copiat pe planșetă, deci poate fi căutat folosind alte
+unelte. Suplimentul salvează stringurile specificate și semnele de carte la
+text și fișiere pickle. Numele acestor fișiere este bazat pe titlul și
+URL-ul documentului curent.
 
-This add-on helps to improve accessibility of eMule with nVDA.  It also
-provides additional keyboard commands for moving in different windows and
-gives Useful information about eMule.
+## Combinații de taste: ##
 
-It's based on the eMuleNVDASupport add-on, developed by the same author. You
-should uninstall that old add-on to use this one, since both have common
-keystrokes and features.
+*	control+shift+NVDA+f: Deschide un dialog cu o casetă de editare care arată
+  ultima căutare salvată; în acest dialog puteți, de asemenea, să selectați
+  căutările precedente salvate dintr-o casetă combinată sau să ștergeți
+  fraza selectată din istoric folosind o casetă de bifat. Puteți alege dacă
+  textul conținut în caseta de editare va fi adăugat la istoricul textelor
+  salvate. În final, alegeți o acțiune din următorul grup al butoanelor
+  rotative (între caută următorul, caută anteriorul, sau nu căuta), și
+  specificați dacă NVDA va face un caz senzitiv de căutare. Când apăsați OK,
+  NVDA va căuta pentru această frază.
+*	control+shift+NVDA+k: Salvează poziția curentă ca un semn de carte. Dacă
+  vreți să furnizați un nume pentru el, selectați textul din acea poziție
+  înainte de a o salva.
+*	control+shift+NVDA+delete: Șterge semnul de carte corespunzător acestei
+  poziții.
+*	NVDA+k: Deplasează la semnul de carte următor.
+*	shift+NVDA+k: Deplasează la semnul de carte precedent.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
+  document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
+  „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
+  vă deplasați la poziția selectată.
+*	Neatribuit: Salvează poziția curentă ca un semn de carte temporar.
+*	Neatribuită: Mută la semnul de carte temporar pentru documentul curent.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
-Testat pe [eMule][2] 0.50a.
 
-## Comenzi de taste: ##
+## Submeniul Place markers (NVDA+N) ##
 
-*	control+shift+h: Mută focalizarea și mausul la bara principală de unelte.
-*	control+shift+t: Citește fereastra curentă.
-*	control+shift+n: Mută focalizarea la câmpul Nume în fereastra de căutare.
-*	control+shift+p: În fereastra de căutare, mută focalizarea și mausul la
-  lista parametrilor de căutare sau la opțiunile câmpului de editare.
-*	control+shift+b: Mutați focalizarea la lista din fereastra curentă. De
-  exemplu, este utilizabil în fereastra de căutare, fereastra descărcărilor
-  în transfer, etc.
-*	control+shift+o: Mutați focalizarea pentru a citi doar casete de editare
-  în fereastra curentă. De exemplu, Mesaje IRC primite, servere disponibile
-  etc.
-*	control+NVDA+f: Dacă caret-ul este localizat într-o casetă de editare doar
-  citire, deschide un dialog găsit pentru a utiliza comenzile pentru
-  căutarea de text disponibilă în NVDA.
-*	control+shift+l: Mută obiectul navigator și mausul la antetele din lista
-  curentă.
-*	control+shift+q: Citește primul obiect în bara de stare; furnizează
-  informații despre activitatea recentă.
-*	control+shift+w: Citește al doilea obiect al barei de stare; conține
-  informații despre fișiere și utilizatori pe serverul curent.
-*	control+shift+e: Citește al treilea obiect al barei de stare; util pentru
-  a ști viteza de încărcare/descărcare.
-*	Control + Shift + R: Citește Al patrulea obiect al barei de stare;
-  rapoarte privind conectarea rețelei ed2k și Kad.
+Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
 
-## Gestionare coloane ##
+*	Dosarul Căutări specificate: Deschide un director al căutărilor
+  specificate salvate înainte.
+*	Dosarul semnelor de carte; deschide un folder al semnelor de carte
+  salvate.
+*	Copiere folder placeMarkers; puteți salva o copie a a folderului cu semne
+  de carte.
+*	Restaurare placeMarkers; puteți restaura semnele dumneavoastră de carte
+  dintr-un folder placeMarkers salvat înainte.
 
-Când vă aflați într-o listă, puteți muta caret-ul între rânduri și coloane
-folosind alt+control+ săgeți.  În acest add-on, următoarele comenzi de taste
-sunt de asemenea disponibile:
+Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
+urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
+specifică, și nu marcajele care economisesc o poziție precisă.
 
-*	nvda+control+1-0: Citește primele 10 coloane.
-*	nvda+shift+1-0: Citește coloanele de la 11 până la 20.
-*	nvda+shift+C: Copiază conținutul ultimei coloane citite pe planșetă.
-
-## Changes for 4.0 ##
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
 *	Requires NVDA 2019.3 or later.
 
-## Modificări aduse în versiunea 3.0 ##
-*	 To search text in the readonly edit boxes,  the find dialog  can be used,
-   such as nvda+control+f to activate the find dialog.
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
-## Modificări aduse în versiunea 2.0 ##
-*	 Ghidul add-on-ului este disponibil în managerul de add-on-uri.
+## Modificări în 12.0 ##
+*	S-a rezolvat o problemă critică care făcea ca NVDA să dea crash când
+  încerca să deschidă dialogul de note dacă caractere chinezești erau
+  selectate înainte de salvarea semnelor de carte.
 
-## Modificări aduse în versiunea 1.2 ##
-*	 Atunci când se deplasează la mesajele IRC, textul selectat este raportat
-   în mod corespunzător.
-*	 Combinațiile de taste utilizate pentru deplasarea la lista rezultatelor
-   de căutare a fost generalizată să fie capabilă pentru deplasarea
-   focalizării la orice listă disponibilă în fereastra curentă.
-*	 Comanda folosită la focalizarea mesajelor IRC a fost generalizată pentru
-   deplasarea la orice casetă de editare doar citire, ceea ce face posibilă
-   revizuirea informațiilor de conectare în fereastra serverelor.
-*	 Când deplasați mausul și focalizarea la bara principală de unelte, în
-   unele cazuri era anunțat de două ori. Această eroare a fost reparată.
+## Modificări în 11.0 ##
+*	Compatibil cu NVDA 2018.3 sau mai nou (necesar).
+*	Dacă e musai, puteți descărca [ultima versiune compatibilă cu NVDA
+  2017.3][3].
 
-## Modificări aduse în versiunea 1.1 ##
-*	 A fost reparată o eroare în elementul eMule din NVDA, meniul ajutor, când
-   numele folderului user config conține caractere nelatine.
-*	 Comenzile rapide pot fi reatribuite folosind dialogul gesturilor de
-   intrare NVDA.
+## Modificări în 10.0 ##
+*	În Edge, gesturile asociate cu selectarea semnelor de carte, cum ar fi
+  NVDA+k, NVDA+shift+k sau NVDA+alt+k, vor fi trimise la aplicație în loc să
+  încerce să mute cursorul la semne de carte ca să evite erori, în special
+  din documentele bogate în conținut.
+*	Nicio căutare specifică nu este suportată în Edge.
 
-## Modificări aduse în versiunea 1.0 ##
-*	 Versiunea inițială.
+## Modificări în 9.0
+*	Atunci când se deplasează la un semn de carte de la dialogul notelor,
+  cursorul de examinare îl urmărește pe cel al sistemului.
+*	Comanda pentru selectarea semnului de carte anterior funcționează din nou
+  așa cum trebuie.
+*	Semnele de carte pot fi șterse din dialogul notelor.
+*	Acum poți atribui gesturi pentru a salva și pentru a te deplasa la un semn
+  de carte temporar.
+
+## Modificări în 8.0 ##
+*	Au fost eliminate identificatori de fragment din numele fișierului semn de
+  carte, care pot evita problemele în VitalSource Bookshelf ePUB reader.
+*	A fost adăugat un dialog de note pentru asocierea comentariilor pentru
+  semnele de carte salvate și pentru deplasarea la poziția selectată.
+
+## Modificări în 6.0 ##
+*	Dialogul pentru salvarea unui string a textului pentru căutarea
+  specificată a fost șters. Această funcționalitate acum este inclusă în
+  dialogul căutării specificate care a fost reproiectat pentru a permite
+  acțiuni diferite la apăsarea butonului OK.
+*	Prezentarea vizuală a dialogurilor a fost îmbunătățită, aderând la
+  aspectul dialogurilor afișate în NVDA.
+*	Efectuând comanda găsirea anterioară sau găsirea următoare în modul
+  navigare acum va face în mod corect un caz de căutare sensitiv, dacă
+  căutarea originală este în cazul sensitiv.
+*	Necesită 2016.4 sau mai nou.
+*	Acum poți atribui gesturi pentru a deschide dialogurile copiere și
+  restaurare place marker.
+*	NVDA va prezenta când place markerul a fost copiat sau restaurat cu
+  dialogurile corespunzătoare.
+
+## Modificări în 6.0 ##
+* Când caracteristicile add-on-ului nu sunt utilizabile, gesturile sunt
+  trimise la aplicația corespunzătoare.
+
+## Modificări în 5.0 ##
+* A fost adăugată căutarea sensibilă.
+* A fost eliminată opțiunea pentru deschiderea documentației din meniul
+  Place markers.
+* Multe comenzi de taste intuitive.
+
+## Modificări în 4.0 ##
+* Au fost eliminate identificatori de fragment din numele fișierului semn de
+  carte, care pot evita problemele în ePUBREADER Firefox add-on.
+* Ghidul add-onului este disponibil în managerul de add-on-uri.
+
+## Modificări în 3.1 ##
+* Actualizări la traduceri și o limbă nouă adăugată.
+* Poziția semnului de carte nu este anunțată în citirea skim -ului.
+
+## Modificări în 3.0 ##
+* A fost adăugat suportul pentru citirea skim -ului.
+
+## Modificări în 2.0 ##
+* Au fost adăugate opțiuni pentru a salva și a șterge căutări diferite
+  pentru fiecare filă.
+* A fost t reparată o eroare cu calea care conținea caractere non latine.
+* Scurtăturile pot fi reatribuite utilizând dialogul gesturilor de intrare.
+
+## Modificări în 1.0 ##
+* Versiunea inițială.
+* Tradusă în: Portugheză Braziliană, Persană, Finlandeză, Franceză,
+  Galiciană, Germană, Italiană, Japoneză, Coreeană, Nepaleză, Portugheză,
+  Spaniolă, Slovacă, Slovenă, Tamilă.
 
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=em
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://www.emule-project.net
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=em-dev
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

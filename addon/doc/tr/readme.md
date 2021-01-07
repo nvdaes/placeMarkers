@@ -1,88 +1,86 @@
-# eMule #
+# yerİmleri #
 
-*	Yazarlar: Noelia, Chris, Alberto.
-*	NVDA compatibility: 2019.3 or later.
-*	İndir [kararlı versiyon][1]
-*	İndir [geliştirme sürümü][3]
-*	download [version compatible with NVDA 2017.3][4]
+* Yazarlar: Noelia, Chris.
+* İndir [kararlı sürüm][1]
+* İndir [geliştirilen sürüm][2]
 
-This add-on helps to improve accessibility of eMule with nVDA.  It also
-provides additional keyboard commands for moving in different windows and
-gives Useful information about eMule.
+Bu eklenti, NVDA tarama kipinde gösterilen web sayfaları veya belgeler
+üzerinde, belirli metin dizeleri veya yer imleri kaydetme ve arama için
+kullanılır, Aynı zamanda çoklu-hattı kontrol metinlerin dizeleri kaydetme
+veya aramak için de kullanılabilir; Bu durumda, imlecin konumunda güncelleme
+yapmak mümkün değil ise, karşılık gelen dize, panoya kopyalanır, böylece
+diğer araçlar kullanılarak aranabilir. metin ya da yer imi text ya da pickle
+dosyalarına kaydedilir. Bu dosyaların adı, geçerli belgenin başlığı ve URL
+adresine dayanmaktadır.
 
-It's based on the eMuleNVDASupport add-on, developed by the same author. You
-should uninstall that old add-on to use this one, since both have common
-keystrokes and features.
+Bu eklenti aynı yazar tarafından geliştirilen SpecificSearch ve Bookmark ve
+Arama adlı eklentiye  dayanmaktadır. Ortak tuş komutlarına ve özelliklere
+sahip oldukları için eskisini kaldırmanız gerekmektedir.
 
-[EMule] [2] 0.50a test edilmiştir.
+## Tuş Komutları: ##
 
-## Tuş komutları: ##
+*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
+*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
+*	control+shift+NVDA+k; Saves the current position as a bookmark
+*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
+*	NVDA+k; Moves to the next bookmark.
+*	shift+NVDA+k; Moves to the previous bookmark.
+*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
 
-*	control+shift+h: odak ve fareyi Ana araç çubuğuna  taşır.
-*	kontrol + shift + t: Geçerli pencereyi okur.
-*	kontrol + shift + n: Bul penceresinde odağı Ad alanınna taşır.
-*	kontrol + shift + p: Arama penceresinde, odağı ve fareyi arama
-  parametreleri listesine  veya alan düzenleme seçeneklerine taşır.
-*	control+shift+b: Move the focus to the list in the current window. For
-  example usable in the Search window, downloads in Transfer window, etc.
-*	control+shift+o: Move the focus to read-only edit boxes in the current
-  window. For example the IRC received messages, available Servers, etc.
-*	control+NVDA+f: If the caret is located in a read only edit box, opens a
-  find dialog to use the commands for searching text available in NVDA.
-*	kontrol + shift + l: Fare ve nesne sunucusunu Mevcut listenin başlıkları
-  üzerine taşır.
-*	kontrol + shift + q: durum çubuğunda ilk nesneyi okur; son etkinlik
-  hakkında bilgi verir.
-*	kontrol + shift + w: geçerli sunucu üzerinde dosya ve kullanıcılar
-  hakkında bilgi içeren durum çubuğunun ikinci nesnesini okur.
-*	kontrol + shift + e: yükleme ve indirme hızıyla ilgili bilgi veren durum
-  çubuğunun üçüncü nesnesini okur.
-*	kontrol + shift + r: eD2K ve Kad ağ bağlantı raporlarıyla ilgili durum
-  çubuğunun dördüncü nesnesini okur.
+## Yer imi Alt menüsü (NVDA + N) ##
 
-## Sütunların yönetimi. ##
 
-Bir liste içindeyken, alt + kontrol + yön tuşlarıyla satır ve sütunlar
-arasında dolaşabilirsiniz. Eklenti aşağıdaki tuş komutlarını da sağlar:
+Tercihler menüsünde yer işaretleri alt menüsünü kullanarak:
 
-*	NVDA + kontrol 1-0: ilk 10 sütunu okur.
-*	NVDA + shift 1-0: 11-20 sütunları okur.
-*	NVDA + shift + C: son okunan sütunun içeriğini panoya kopyalar .
+*	Özel arama klasörü: Önceden kaydedilen özel aramalar klasörü açılır.
+*	Yer imleri klasörü; kaydedilen yer imleri klasörü açılır.
+*	Yerimleri klasörünü kopyala; yer imleri klasörünün bir kopyasını
+  kaydedebilirsiniz.
+*	Yer imlerini geri yükle; önceden kaydettiğiniz yer imlerini geri
+  yükleyebilirsiniz.
+*	Dokümantasyon dosyası, seçtiğiniz dilde kullanılabilirse, ya da varsayılan
+  olarak İngilizce.
+
+Not: Yer imi konumu karakter sayısına dayanmaktadır; dinamik bir içeriğe
+sahip sayfalarda kesin bir konuma kaydetmek için özel arama değil, yer
+imleri kullanmak daha iyidir.
+
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
 ## Changes for 4.0 ##
-*	Requires NVDA 2019.3 or later.
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* Add-on help is available from the Add-ons Manager.
 
-## Changes for 3.0 ##
-*	 To search text in the readonly edit boxes,  the find dialog  can be used,
-   such as nvda+control+f to activate the find dialog.
+## Changes for 3.1 ##
+* Translation updates and new language.
+* Bookmark position is not announced in skim reading.
 
-## Changes for 2.0 ##
-*	 Add-on help is available from the Add-ons Manager.
+## 3.0 için Değişiklikler ##
+* Tarayarak okuma desteği eklendi.
 
-## 1.2 için Değişiklikler ##
-*	 IRC mesajları arasında dolaşılırken, seçilen metin düzgün bildiriliyor.
-*	 The keystroke used for moving to the Search results list has been
-   generalized to be able to move focus to any available list in the current
-   window.
-*	 The command used to focus the IRC messages has been generalized to move
-   to any read-only edit box, making it possible to review connection
-   information in the Servers window.
-*	 When moving mouse and focus to the toolbar, in some cases it was
-   announced twice. This has been fixed.
-
-## 1.1 Değişiklikler ##
-*	 NVDA yardım menüsü altındaki EMule ögesiyle ilgili sorun giderildi.
-*	 Kısayollar şimdi NVDA girdi hareketleri iletişim kutusu kullanılarak
-   yeniden atanabilir.
+## 2.0 Değişiklikler ##
+* Her dosya için farklı aramaları kaydetmek ve silmek için seçenekler
+  eklendi.
+* Fixed bug which broke when paths contained non latin characters.
+* Kısayollar şimdi NVDA girdi hareketleri iletişim kutusu kullanılarak
+  yeniden atanabilir.
 
 ## 1.0 Değişiklikler ##
-*	 İlk versiyon.
-
+* İlk sürümü.
+* Tercüme:, Japonca, Korece, Nepal, Portekizce, İspanyolca, Slovakça,
+  Slovence Tamil, İtalyanca, Almanca, Galiçyaca, Fransızca, Brezilya
+  Portekizcesi, Farsça, Fince.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=em
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://www.emule-project.net
-
-[3]: https://addons.nvda-project.org/files/get.php?file=em-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

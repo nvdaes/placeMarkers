@@ -1,14 +1,9 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 3.10\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2014-02-01 17:16+0100\n"
-"PO-Revision-Date: 2020-01-05 12:21+0800\n"
+"Project-Id-Version: placeMarkers-10.1\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2018-05-19 18:27+0200\n"
+"PO-Revision-Date: 2020-02-12 19:11+0800\n"
 "Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
 "Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
 "2010-2019>\n"
@@ -16,109 +11,323 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "朗读当前列表项目的指定列。"
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"由上一个版本的此插件生成的文件似乎已经被成功从您的 NVDA 配置文件夹中导出。您"
+"希望升级吗？"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "安装或升级插件"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s已经复制到剪贴板"
+msgstr "%s已复制到剪贴板"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr "拷贝已选择的列表项目中最后一次朗读的列到剪贴板。"
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "指定搜索"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "移动系统焦点和鼠标到主工具栏。"
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "保存的文本(&S)"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "朗读当前窗口。"
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "从历史记录中删除(&D)"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "移动系统焦点到“搜索”窗口的“名字”输入框。"
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "要搜索的文本(&T)："
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "添加到历史记录(&A)"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "选择一个希望执行的动作"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "搜索&下一个"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "搜索&历史"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&不要搜索"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "位置标记复制"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "文件夹未复制"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "复制错误"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "位置标记恢复"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "笔记"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&书签"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "笔记(&E):"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "保存笔记(&S)"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "删除(&D)..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
-msgstr "移动系统焦点和鼠标到“搜索”窗口中每一个搜索参数项或输入框。"
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "此书签将被永久删除。此操作无法撤消。"
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "没有书签"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "书签已删除"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "复制位置标记"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr "选择一个文件夹用来保存当前位置标记的备份。"
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "备份目录："
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "选择要复制的目录"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "恢复位置标记"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
-msgstr "移动系统焦点到当前窗口的第一个列表。"
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr "选择一个文件夹用来还原以前复制的位置标记的备份。"
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "包含备份的目录："
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "选择要恢复的目录"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "位置标记(&L)"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "书签和搜索菜单"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "指定搜索文件夹(&S)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "打开特定的搜索文件夹"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "书签文件夹(&B)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "打开书签文件夹"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "复制位置标记文件夹(&C)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "备份位置标记"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "恢复位置标记(&R)..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "恢复上次保存的位置标记"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "打开指定的搜索文件夹。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "打开书签文件夹。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "激活复制对话框%s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "激活恢复对话框%s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
-msgstr "移动系统焦点到当前窗口的只读编辑框（如 IRC 的以接受消息编辑框）"
+"finds a text string from the current cursor position for a specific document."
+msgstr "在指定的文档中查找光标所在位置的文本。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "在指定的文档中查找光标所在位置的下一个匹配项。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "在指定的文档中查找光标所在位置的上一个匹配项。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "显示特定文档的笔记对话框。"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "保存当前位置做为书签。"
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "在字符%d处保存位置"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "不能保存书签"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "删除当前的书签。"
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "没有选择的书签"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "书签已删除"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "不能删除书签"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "移动到下一个书签。"
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "未找到书签"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "位置：字符%d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "未找到下一个书签"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "移动到上一个书签。"
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "未找到上一个书签"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "复制位置标记对应文件的名称到剪贴板。"
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "无法拷贝位置标记对应的文件名"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "位置标记文件名以拷贝到剪贴板"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "将当前位置保存为临时书签。"
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "在当前位置保存临时书签%d"
 
 #. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
-msgstr "移动浏览对象和鼠标到当前表头。"
-
-#. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "朗读状态栏的第一个对象。"
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "朗读状态栏的第二个对象。"
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "朗读状态栏的第三个对象。"
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "朗读状态栏的第四个对象。"
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "移至当前文档的临时书签。"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr ""
-"eMule\n"
-"翻译者：雪岭冰龙"
+msgid "Place markers"
+msgstr "位置标记"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
-msgstr ""
-"提高 NVDA 在 eMule 上的可访问性。\n"
-"eMule 是一个提供文件搜索和分享的P2P软件。\n"
-"您若希望获取有关于 eMule 的信息可访问\n"
-"http://www.emule-project.net"
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "一个在指定的虚拟文档中设置位置标记的插件"
 
-#~ msgid "text \"%s\" not found"
-#~ msgstr "未找到文本\"%s\""
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "书签未能保存"
 
-#~ msgid "Find Error"
-#~ msgstr "查找错误"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "书签无法删除"
 
-#~ msgid "Search for:"
-#~ msgstr "搜索字串："
-
-#~ msgid "eMule search"
-#~ msgstr "eMule搜索"
-
-#~ msgid "Opens the find dialog when in read only edit boxes."
-#~ msgstr "在只读编辑框时打开“查找”对话框。"
-
-#~ msgid "Find next occurence."
-#~ msgstr "查找下一个项目"
-
-#~ msgid "Find previous occurrence."
-#~ msgstr "查找上一个项目"
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "无法找到任何书签"

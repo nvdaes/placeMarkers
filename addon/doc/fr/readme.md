@@ -1,101 +1,189 @@
-# eMule #
+# placeMarkers #
+* Auteurs : Noelia, Chris.
+* NVDA compatibility: 2019.3 or later.
+* Télécharger [version stable][1]
+* Télécharger [version de développement][2]
 
-*	Autheurs : Noelia, Chris, Alberto.
-*	NVDA compatibility: 2019.3 or later.
-*	Télécharger [version stable][1]
-*	Télécharger  [version de développement][3]
-*	download [version compatible with NVDA 2017.3][4]
+Cette extension sert à sauvegarder et rechercher des chaînes de caractères
+ou des marqueurs spécifiques sur des pages web ou des documents en Mode
+navigation de NVDA. Elle peut également être utilisé pour sauvegarder et
+rechercher des chaînes de caractères Dans des contrôleurs multilignes; dans
+ce cas, s'il n'est pas possible de mettre à jour le point d'insertion, la
+chaîne correspondante sera copiée dans le Presse-papiers, afin de pouvoir la
+rechercher à l'aide d'autres outils. L'extension sauvegarde les textes et
+les marqueurs spécifiés dans des fichiers. Le nom des fichiers est basé sur
+le titre et l'url du document en cours.   Cette extension est basé sur les
+extensions SpecificSearch et Bookmark&Search, développées par le même
+auteur. Vous devriez les désinstaller pour utiliser celle-ci, car elles ont
+des raccourcis et des caractéristiques communes.
 
-This add-on helps to improve accessibility of eMule with nVDA.  It also
-provides additional keyboard commands for moving in different windows and
-gives Useful information about eMule.
+## Touches de commandes : ##
 
-It's based on the eMuleNVDASupport add-on, developed by the same author. You
-should uninstall that old add-on to use this one, since both have common
-keystrokes and features.
+*	Contrôle+maj+NVDA+f : Ouvre un dialogue avec une zone d'édition qui
+  affiche la dernière recherche enregistrée; Dans ce dialogue, vous pouvez
+  également sélectionner les recherches précédemment enregistrées dans une
+  zone de liste déroulante ou supprimer la chaîne sélectionnée de
+  l'historique à l'aide d'une case à cocher. Vous pouvez choisir si le texte
+  contenu dans la zone d'édition sera ajouté à l'historique de vos textes
+  enregistrés. Enfin, choisissez une action du prochain groupe de boutons
+  radio (entre Recherche suivante, Recherche précédente ou Ne pas
+  rechercher), et spécifiez si NVDA effectuera une recherche Respecter la
+  casse. Lorsque vous appuyez sur OK, NVDA recherche cette chaîne.
+*	Contrôle+maj+NVDA+k : Enregistre la position actuelle comme un
+  marqueur. Si vous souhaitez donner un nom à ce marqueur, sélectionner un
+  texte à partir de cette position avant de l'enregistrer.
+*	Contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
+  position.
+*	NVDA+k : Déplacer vers le marqueur suivant.
+*	Maj+NVDA+k : Déplacer vers le marqueur précédent.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
+*	Alt+NVDA+k : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
+  document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
+  Enregistrer note pour enregistrer les modifications. En appuyant sur
+  Supprimer vous pouvez supprimer le marqueur sélectionné. En appuyant sur
+  OK vous pouvez vous déplacer à la position sélectionnée.
+*	Non assigné : Enregistrer la position actuelle en tant que marqueur
+  temporaire.
+*	Non assigné : Ce déplacer au marqueur temporaire pour le document en
+  cours.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
-Testé avec [eMule][2] 0.50a.
 
-## Touches de raccourcis : ##
+## Sous-menu des marqueurs (NVDA+N) ##
 
-*	control+maj+h : amène la souris et le focus sur la barre d'outils
-  principale.
-*	control+maj+t : Lit la fenêtre en cours.
-*	control+maj+n : Déplace le focus sur le champ Nom de la fenêtre
-  Rechercher.
-*	control+maj+p : Dans la fenêtre de recherche, déplace le focus et la
-  souris à la liste des paramètres de recherche, ou modifie les options des
-  champs.
-*	control+maj+b : Déplace le focus à la liste des résultats dans la fenêtre
-  de recherche. Utilisable par exemple dans la fenêtre de recherche, les
-  Transferts de téléchargements, etc.
-*	Ctrl + Maj + o : Déplace le focus aux zones d'édition en lecture seule
-  dans la fenêtre courante. Par exemple, les messages IRC reçus, Serveurs
-  disponibles, etc.
-*	contrôle + NVDA + f : Si le curseur est situé dans une zone d'édition en
-  lecture seule, ouvre un dialogue de Recherche afin d'utiliser les
-  commandes pour la recherche de texte disponible dans NVDA.
-*	Ctrl + Maj + L : Déplace l'objet de navigation et la souris aux en-têtes
-  de la liste actuelle.
-*	Ctrl + Maj + Q : Lit le premier objet dans la barre d'état, fournit des
-  informations sur l'activité récente.
-*	Ctrl + Maj + W : Lit le second objet de la barre d'état, contient des
-  informations sur les fichiers et les utilisateurs sur le serveur actuel.
-*	Ctrl + Maj + E: Lit le troisième objet de la barre d'état; utile pour
-  connaître la vitesse d'Envoi / Téléchargement.
-*	Ctrl + Maj + r: Affiche Le quatrième objet de la barre d'état, les
-  rapports sur la connexion de réseau eD2K et Kad.
+En utilisant le sous-menu des marqueurs, dans le menu préférences de NVDA,
+vous pouvez accéder à :
 
-## Gestion des colonnes. ##
+*	Dossier des recherches spécifiques : Ouvre le dossier des recherches
+  spécifiques précédemment sauvegardées.
+*	Dossier des marqueurs : Ouvre le dossier des marqueurs sauvegardés.
+*	Copier le dossier des marqueurs : Vous pouvez sauvegarder une copie du
+  dossier des marqueurs.
+*	Restorer des marqueurs : Vous pouvez restorer vos marqueurs à partir d'un
+  dossier de marqueurs précédemment sauvegardé.
 
-Lorsque vous êtes dans une liste, vous pouvez déplacer le curseur entre les
-lignes et les colonnes en utilisant Alt + Ctrl + Flèches. Dans ce module les
-touches de raccourci suivantes sont également disponibles :
+Note : la position du marqueur est basé sur le nombre de caractères. Dans
+les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
+spécifique, pas les marqueurs.
 
-*	NVDA + control +1-0 : Lit les 10 premières colonnes.
-*	NVDA + maj +1-0 : Lit colonnes 11 à 20.
-*	NVDA + Maj + C : Copie le contenu de la dernière colonne lue dans le
-  presse-papiers.
-
-## Changes for 4.0 ##
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
 *	Requires NVDA 2019.3 or later.
 
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
+
+## Changements pour la version 12.0 ##
+*	Correction d'un bug critique qui provoquait le blocage de NVDA lors de la
+  tentative d'ouverture de la boîte de dialogue Notes, si les caractères
+  chinois étaient sélectionnés avant la sauvegarde des marqueurs.
+
+## Changements pour la version 11.0 ##
+*	Compatible avec NVDA 2018.3 ou version ultérieure (requis).
+*	Si nécessaire, vous pouvez télécharger la [dernière version compatible
+  avec NVDA 2017.3][3].
+
+## Changements pour la version 10.0 ##
+*	Dans Edge, les gestes associés à la sélection de marqueurs tels que
+  NVDA+k, NVDA+maj+k ou NVDA+alt+k, seront envoyés à l'application au lieu
+  d'essayer de déplacer le curseur sur les marqueurs pour éviter les
+  erreurs, en particulier dans de longs documents.
+*	La recherche de texte spécifique est maintenant prise en charge dans Edge.
+
+## Changements pour la version 9.0
+*	Lorsque vous déplacez un marqueur dans le dialogue Notes, le curseur de
+  revue suit le curseur système.
+*	La commande permettant de sélectionner le marqueur précédent fonctionne à
+  nouveau correctement.
+*	Les marqueurs peuvent être supprimés depuis le dialogue Notes.
+*	Vous pouvez maintenant assigner des gestes pour sauvegarder et déplacer un
+  marqueur temporaire pour chaque document.
+
+## Changements pour la version 8.0 ##
+*	Identificateurs de fragment Supprimé pour les noms de fichiers  des
+  marqueurs, qui peut éviter des problèmes dans le lecteur VitalSource
+  Bookshelf ePUB.
+*	Ajout d'un dialogue Notes, pour associer des commentaires aux marqueurs
+  sauvegardés et se déplacer à la position sélectionnée.
+
+## Changements pour la version 7.0 ##
+*	Le dialogue pour enregistrer une chaîne de caractères pour la recherche
+  spécifique a été supprimée. Cette fonctionnalité est maintenant incluse
+  dans le dialogue Recherche spécifique, qui a été redessinée pour permettre
+  différentes actions lorsque vous appuyez sur le bouton OK.
+*	La présentation visuelle des dialogues a été améliorée, en respectant
+  l'apparence des dialogues présentés dans NVDA.
+*	L'exécution d'une commande Rechercher Suivant ou Rechercher Précédent dans
+  le Mode Navigation effectuera maintenant correctement une recherche
+  Respecter la casse si la recherche d'origine était Respecter la casse.
+*	Nécessite NVDA 2016.4 ou ultérieur.
+*	Vous pouvez maintenant assigner des gestes pour ouvrir les dialogues
+  Copier et Restaurer les marqueurs de position.
+*	NVDA affichera un message pour notifier lorsque les marqueurs de position
+  auront été copiés ou restaurés avec les dialogues correspondants.
+
+## Changements pour la version 6.0 ##
+* Lorsque les fonctionnalités de l'extension ne sont pas utilisables, les
+  gestes sont envoyés à l'application correspondante.
+
+## Changements pour la version 5.0 ##
+* Ajout de la recherche Respecter la casse.
+* L'option d'ouverture de la documentation a été retirée du menu des
+  marqueurs.
+* Commandes de base plus intuitives.
+
+## Changements pour la version 4.0 ##
+* Identificateurs de fragment Supprimé pour les noms de fichiers  des
+  marqueurs, qui peut éviter des problèmes dans le module ePUBREADER de
+  Firefox.
+* L'aide de l'extension est disponible à partir du Gestionnaire
+  d'extensions.
+
+## Changements pour la version 3.1 ##
+* Mises à jour des traduction et nouvelle langue.
+* La position du marqueur n'est pas annoncé dans la lecture rapide.
+
 ## Changements pour la version 3.0 ##
-*	 To search text in the readonly edit boxes,  the find dialog  can be used,
-   such as nvda+control+f to activate the find dialog.
+* Ajout du support de la lecture rapide.
 
 ## Changements pour la version 2.0 ##
-*	 L'aide de l'extension est disponible à partir du Gestionnaire
-   d'Extensions.
-
-## Changements pour la version 1.2 ##
-*	 Lors du déplacement aux messages IRC, le texte sélectionné est indiqué
-   correctement.
-*	 La combinaison de touches utilisée pour le déplacement à la liste de
-   résultats de recherche a été généralisée pour pouvoir déplacer le focus à
-   toutes les listes disponibles dans la fenêtre courante.
-*	 La commande utilisée pour mettre en focus les messages IRC a été
-   généralisée pour se déplacer sur toutes les zones d'édition en lecture
-   seule, ce qui permet de consulter les informations de connexion dans la
-   fenêtre des serveurs.
-*	 lors du déplacement de la souris et le focus à la barre d'outils, dans
-   certains cas, il a été annoncé deux fois. Ce problème a été corrigé.
-
-## Changements pour la version 1.1 ##
-*	 Correction d'un bug dans l'élément eMule sous le menu d'aide de NVDA,
-   lorsque le nom du dossier configuration utilisateur contient des
-   caractères non latins.
-*	 Les raccourcis peuvent maintenant être réaffectés à l'aide du dialogue
-   gestes de commande NVDA.
+* Ajout de la possibilité de sauvegarder et supprimer des recherches
+  différentes pour chaque fichier ajouté.
+* Correction d'un bug avec des chemins contenant des caractères non latins.
+* Les raccourcis peuvent désormais être réaffectés en utilisant le dialogue
+  des raccourcis de NVDA.
 
 ## Changements pour la version 1.0 ##
-*	 Première version.
+* Première version
+* Traduit en : Portugais Brésilien , Farsi, Finnois, Français, Galicien,
+  Allemand, Italien, Japonais, Coréen, Nepali, Portugais, Espagnol,
+  Slovaque, Slovène, Tamil.
 
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=em
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://www.emule-project.net
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=em-dev
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

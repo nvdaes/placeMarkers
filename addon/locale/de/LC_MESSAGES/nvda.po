@@ -5,129 +5,339 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 1.0-dev\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-08-04 11:33+0200\n"
-"PO-Revision-Date: 2018-10-03 02:33+0200\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2019-08-16 13:17+0200\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
-"Language-Team: Deutsch <bernd_dorer@yahoo.de>\n"
+"Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.3\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "Liest die angegebene Spalte für das aktuelle Listenelement."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Der Ordner Ihrer NVDA-Konfiguration enthält scheinbar noch eine ältere "
+"Version dieser Erweiterung. Möchten Sie sie jetzt aktualisieren?"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Erweiterung installieren oder aktualisieren"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s in die Zwischenablage kopiert."
+msgstr "%s in die Zwischenablage kopiert"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr ""
-"Kopiert die letzte Lesespalte des ausgewählten Listenelements in die "
-"Zwischenablage."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Erweiterte Suche"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "Bewegt den System-Fokus und die Maus auf die Hauptsymbolleiste."
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Gespeicherte Texte"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "Liest das aktuelle Fenster vor."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "Aus Verlauf &entfernen"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "Bewegt den System-Fokus in das Suchfeld des Fensters."
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "zu suchender &Text:"
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "Zum Verlauf &hinzufügen"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "&Aktion auswählen:"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Weitersuchen"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Rückwärtssuchen"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Keine Suche"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Lesezeichen kopiert"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Ordner nicht kopiert"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Fehler beim Kopieren"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Lesezeichen wiederhergestellt"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Notiz"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Lesezeichen"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&Notiz:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "Notiz &speichern"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Entfernen..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
+"This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
-"Bewegt den System-Fokus und die Maus auf die Liste der Suchparameter oder "
-"das Feld Bearbeiten für jede Option im Suchfenster."
+"Dieses Lesezeichen wird dauerhaft entfernt. Diese Aktion kann nicht "
+"rückgängig gemacht werden."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Keine Lesezeichen"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Lesezeichen entfernt"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Lesezeichen &kopieren"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr ""
+"Wählen SIE einen Ordner zum Speichern eines Backups Ihrer vorigen "
+"Lesezeichen."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "Ordner für Backups:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Ordner zum Kopieren auswählen"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Lesezeichen &wiederherstellen"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Bewegt den System-Fokus auf die erste Liste im aktuellen Fenster. Zum "
-"Beispiel die Ergebnisliste im Suchfenster, Downloads im Transfer, etc."
+"Wählen SIE einen Ordner zum Wiederherstellen eines Backups Ihrer vorigen "
+"Lesezeichen."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "Backup-Ordner:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Ordner zum Wiederherstellen auswählen"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "&Lesezeichen"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Lesezeichen und Suchmenü"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "Erweiterter &Suchordner"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "Öffnet den erweiterten Suchordner"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "Lese&zeichenordner"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "Öffnet den Ordner der Lesezeichen"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "Lesezeichenordner &kopieren..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Backup der Lesezeichen"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "Lesezeichen wi&ederherstellen"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Zuvor gespeicherte Lesezeichen wiederherstellen"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Öffnet den Ordner für die Erweiterte Suche"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Öffnet den Ordner der Lesezeichen"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Aktiviert das Kopieren-Dialogfeld von %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Aktiviert das Wiederherstellen-Dialogfeld von %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
+"finds a text string from the current cursor position for a specific document."
+msgstr "Sucht eine Zeichenkette im Dokument ab der Cursorposition."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
 msgstr ""
-"Bewegt den System-Fokus auf schreibgeschützte Eingabefelder im aktuellen "
-"Fenster. Zum Beispiel hat der IRC Nachrichten empfangen."
+"findet das nächste Vorkommen des zuletzt gesuchten Textes für ein bestimmtes "
+"Dokument."
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
 msgstr ""
-"Bewegt das Navigat-Orobjekt und die Maus auf die aktuellen "
-"Listenüberschriften."
+"findet das vorherige Vorkommen des zuletzt gesuchten Textes für ein "
+"bestimmtes Dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "zeigt die für das Dokument festgelegte Notiz an."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Speichert die aktuelle Position als Lesezeichen."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Gespeicherte Position bei Zeichen %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Lesezeichen konnte nicht gespeichert werden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Entfernt das aktuelle Lesezeichen."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Keine Lesezeichen ausgewählt"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Lesezeichen entfernt"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Lesezeichen konnte nicht entfernt werden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "Springt zum nächsten Lesezeichen."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Keine Lesezeichen gefunden"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Position: %d Zeichen"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Weitere Lesezeichen nicht gefunden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "Springt zum vorherigen Lesezeichen."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Vorheriges Lesezeichen nicht gefunden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr ""
+"Kopiert den Dateinamen der aktuellen Datei für die Lesezeichen in die "
+"zwischenablage."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "Dateiname der Lesezeichen in die Zwischenablage kopiert"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Speichert die aktuelle Position als temporäres Lesezeichen."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Temporäres Lesezeichen bei Position %d gesetzt."
 
 #. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "Liest das erste Objekt der Statusleiste vor."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "Liest das zweite Objekt der Statusleiste vor."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "Liest das dritte Objekt der Statusleiste vor."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "Liest das vierte Objekt der Statusleiste vor."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Springt zu dem temporären Lesezeichen für das aktuelle Dokument"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "Lesezeichen"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
-msgstr ""
-"Verbessert die Zugänglichkeit von eMule mit NVDA.\n"
-"eMule ist ein P2P-Programm zum Suchen und Teilen von Dateien.\n"
-"Weitere Informationen zu eMule finden Sie unter https://www.emule-project."
-"net.."
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "Erweiterung zum Einstellen der Lesezeichen in virtuellen Ansichten."
 
-#~ msgid "text \"%s\" not found"
-#~ msgstr "Text \"%s\" konnte nicht gefunden werden."
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Lesezeichen konnte nicht gespeichert werden"
 
-#~ msgid "Find Error"
-#~ msgstr "Fehler beim Suchen"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Lesezeichen konnte nicht entfernt werden"
 
-#~ msgid "Search for:"
-#~ msgstr "Suchen nach:"
-
-#~ msgid "eMule search"
-#~ msgstr "eMule-Suche"
-
-#~ msgid "Opens the find dialog when in read only edit boxes."
-#~ msgstr ""
-#~ "Öffnet das Dialogfeld Suchen, wenn Sie sich in geschützten Eingabefeldern "
-#~ "befinden."
-
-#~ msgid "Find next occurence."
-#~ msgstr "Nächstes Vorkommen suchen."
-
-#~ msgid "Find previous occurrence."
-#~ msgstr "Vorheriges Vorkommen suchen."
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Keine Lesezeichen gefunden"

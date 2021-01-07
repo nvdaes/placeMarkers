@@ -1,15 +1,15 @@
 # Hrvatska lokalizacija za NVDA.
 # Copyright (C) 2006-2019 NVDA contributors <https://www.nvda-project.org>
 # This file is distributed under the same license as the virtualRevision package.
-# Zvonimir Stanečić <zvonimirek222@yandex.com>, 2018.
+# Zvonimir Stanečić <zvonimirek222@yandex.com>, 2019.
 # Milo Ivir <mail@milotype.de>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 1.2-dev\n"
+"Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2014-02-01 17:16+0100\n"
-"PO-Revision-Date: 2019-11-15 23:33+0100\n"
+"POT-Creation-Date: 2013-12-13 17:50+0100\n"
+"PO-Revision-Date: 2019-11-15 23:30+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -17,93 +17,317 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.4\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "Čita određeni stupac trenutačne stavke popisa."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Konfiguracijska mapa za NVDA čitača sadrži datoteke, koje su vjerojatno "
+"izrađene iz prethodne verzije ovoga dodatka. Želiš li nadograditi dodatak?"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Instaliraj ili nadogradi dodatak"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s kopirano u međuspremnik"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr "Kopira zadnji pročitani stupac odabrane stavke popisa u međuspremnik."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Određena pretraga"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "Premješta sustavski fokus i miša na glavnu alatnu traku."
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Spremljeni tekstovi"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "Čita trenutačni prozor."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&Ukloni iz povijesti"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "Premješta sustavski fokus na polje za ime u prozoru pretrage."
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&Tekst koji se traži:"
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&Dodaj u povijest"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "Radnja tijekom pre&trage"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Traži &sljedeće"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Traži &prethodno"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Ne traži"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Oznaka pozicija su kopirane"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Mapa nije kopirana"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Greška pri kopiranju"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Oznake pozicija su obnovljene"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Napomene"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Knjižne oznake"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&Napomena:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&Spremi napomenu"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Izbriši …"
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
-msgstr ""
-"Premješta sustavski fokus i miša na popis parametara pretrage ili na opcije "
-"uređivačkog polja, u prozoru pretrage."
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "Ova knjižna oznaka će se trajno izbrisati. Ova radnja je nepovratna."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Nema knjižnih oznaka"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Knjižne oznake su izbrisane"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Kopiraj oznake pozicija"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr ""
+"Odaberi mapu za spremanje sigurnosne kopije trenutačnih oznaka pozicija."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "Mapa za sigurnosnu kopiju:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Odaberi mapu za kopiranje"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Obnovi oznake pozicija"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Premješta sustavski fokus na prvi popis u trenutačnom prozoru. Na primjer, "
-"popis rezultata pretrage u prozoru pretrage, preuzimanja u transferu, itd."
+"Odaberi mapu za obnavljanje prethodno kopiranih oznaka pozicija pomoću "
+"sigurnosne kopije."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "Mapa koji sadrži sigurnosnu kopiju:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Odaberi mapu za obnavljanje oznaka"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "&Oznake pozicija"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Knjižne oznake i izbornik pretrage"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "&Određena mapa pretrage"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "Otvara određenu mapu pretrage"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "&Mapa knjižnih oznaka"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "Otvara mapu knjižnih oznaka"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "&Kopiraj mapu oznaka pozicija …"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Sigurnosna kopija oznaka pozicija"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "Ob&novi oznake pozicija …"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Obnovi prethodno spremljene oznake pozicija"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Otvara određenu mapu pretrage."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Otvara mapu knjižnih oznaka."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Aktivira dijaloški okvir „Kopiraj” od %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Aktivira dijaloški okvir „Obnovi” od %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
+"finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Premješta sustavski fokus na polja za uređivanje koja su samo za čitanje u "
-"trenutačnom prozoru. Na primjer, IRC primljene poruke."
+"nalazi niz znakova u tekstu od trenutačne pozicije kursora za određeni "
+"dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"nalazi sljedeći slučaj zadnje traženog teksta za bilo koji određeni dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"nalazi prethodnu pojavu zadnje traženog teksta za bilo koji određeni "
+"dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "Prikaži dijaloški okvir napomena za određeni dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Sprema trenutačnu poziciju kao knjižnu oznaku."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Spremljena pozicija pri znaku %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Nije moguće spremiti knjižnu oznaku"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Briše trenutačnu knjižnu oznaku."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Nije odabrana niti jedna knjižna oznaka"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Knjižna oznaka je izbrisana"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Nije moguće izbrisati knjižnu oznaku"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "Premješta se na sljedeću knjižnu oznaku."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Nema knjižnih oznaka"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Pozicija: znak %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Nema sljedeće knjižne oznake"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "Premješta se na prethodnu knjižnu oznaku."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Nema prethodne knjižne oznake"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Kopira ime trenutačne datoteke za oznake pozicija u međuspremnik."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "Nije moguće kopirati ime datoteke za oznake pozicija"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "Ime datoteke za oznake pozicija je kopirano u međuspremnik"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Sprema trenutačnu poziciju kao privremenu knjižnu oznaku."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Spremljena privremena knjižna oznaka na poziciji %d"
 
 #. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
-msgstr "Premješta miša i navigacijski objekt na zaglavlja trenutačnog popisa."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "Čita prvi objekt statusne trake."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "Čita drugi objekt statusne trake."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "Čita treći objekt statusne trake."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "Čita četvrti objekt statusne trake."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Premješta se na privremenu knjižnu oznaku za trenutačni dokument."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "Oznake pozicija"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
+msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
-"Poboljšava pristupačnostof eMule programa uz pomoć NVDA čitača.\n"
-"eMule je P2P program za traženje i dijeljenje datoteka.\n"
-"Daljnje informacije za eMule na\n"
-"http://www.emule-project.net"
+"Dodatak koji omogućuje postavljanje oznaka pozicija na određene virtualne "
+"dokumente"

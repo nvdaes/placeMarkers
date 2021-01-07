@@ -5,128 +5,330 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 1.2-dev\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2014-02-01 17:16+0100\n"
-"PO-Revision-Date: 2016-02-25 23:38-0800\n"
+"Project-Id-Version: placeMarkers 1.0-beta\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2013-06-26 14:59+0200\n"
+"PO-Revision-Date: 2018-09-26 01:25+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
-"Language-Team: NVDA Translation team <nvda-translations@freelists.org>\n"
+"Language-Team: NVDA Translation Team <nvda-translations@groups.io>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.10\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "ستونِ معین مربوط به جزءِ فهرستِ جاری را میخوانَد."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"پوشه‌ی تنظیماتِ NVDAِ شما شامل فایل‌هایی است که به نظر میرسد از نسخه‌ی قبلیِ این "
+"افزونه به دست آمده است. آیا میخواهید به‌روزرسانیش کنید؟"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "نصب یا به‌روزرسانیِ افزونه"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s در کلیپ‌برد کپی شد."
+msgstr "%s در کلیپ‌برد کپی شد"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr ""
-"آخِرین ستونِ جزءِ فهرستِ انتخاب‌شده را که خوانده شده است در کلیپ‌برد کپی میکند."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "جستجوی اختصاصی"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "فکوسِ سیستم و موس را روی نوارِ ابزارِ اصلی میبَرَد."
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "متن‌های &ذخیره‌شده"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "پنجره‌ی پیشِ رو را گزارش می‌کند."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&حذف کردن از سابقه"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "فکوسِ سیستم را روی فیلدِ نام در پنجره‌ی جستجو میبَرَد."
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&متن برای جستجو:"
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&افزودن به سابقه"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "اقدام روی &جستجو"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "جستجوی &بعدی"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "جستجوی &قبلی"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&جستجو نکن"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "نشان‌گذاری‌ها کپی شدند"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "پوشه کپی نشد"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "خطا هنگامِ کپی"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "نشان‌گذاری‌ها برگردانده شدند"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "یادداشت‌ها"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&نشان‌ها"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&یادداشت:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&ذخیره کردنِ یادداشت"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&پاک کردن..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
-msgstr ""
-"در پنجره‌ی جستجو، فکوسِ سیستم و موس را روی فهرستِ پارامترهای جستجو یا فیلدِ "
-"ویرایشی مربوط به هر گزینه میبَرَد."
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "این نشان بطور همیشگی پاک خواهد شد. این عمل بازگشت‌پذیر نخواهد بود."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "نشانی وجود ندارد"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "نشان‌ها پاک شدند"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "کپی کردنِ نشان‌گذاری‌ها"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr ""
+"پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "پوشه برای پشتیبانگیری:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "پوشه را برای کپی کردن انتخاب کنید"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "برگرداندنِ نشان‌گذاری‌ها"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
-msgstr ""
-"فکوسِ سیستم را روی نخستین فهرست در پنجره‌ی فعلی میبَرَد. به عنوان مثال، فهرستِ "
-"نتایج در پنجره‌ی جستجو، دانلودهای در حالِ انجام، و غیره."
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr "پوشه‌ای را برای برگرداندنِ نشان‌گذاری‌های از‌پیش کپی‌شده‌تان انتخاب کنید."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "پوشه‌ی دارای نسخه‌ی پشتیبان:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "پوشه را برای برگرداندن انتخاب کنید"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "&نشان‌گذاری‌ها"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "منوی نشان‌ها و جستجو"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "پوشه‌ی جستجوی &اختصاصی"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "پوشه‌ی جستجوی اختصاصی را باز میکند"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "پوشه‌ی &نشان‌ها"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "پوشه‌ی نشان‌ها را باز میکند"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "&کپیِ پوشه‌ی نشان‌گذاری‌ها"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "پشتیبانِ نشان‌گذاری‌ها"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "&برگرداندنِ نشان‌گذاری‌ها"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "نشان‌گذاری‌های از‌پیش ذخیره‌شده را برمیگردانَد"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "پوشه‌ی جستجوی اختصاصی را باز میکند."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "پوشه‌ی نشان‌ها را باز میکند."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "پنجره‌ی کپیِ %s را فعال میکند."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "پنجره‌ی بازگردانیِ %s را فعال میکند."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
-msgstr ""
-"فکوسِ سیستم را در پنجره‌ی پیشِ رو روی جعبه‌های ویرایشیِ فقط‌خواندنی میبَرَد. به "
-"عنوان مثال، پیام‌های دریافت‌شده از IRC."
+"finds a text string from the current cursor position for a specific document."
+msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "پنجره‌ی یادداشت‌ها را برای یک سندِ خاص نشان میدهد."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "موقعیتِ فعلی را به عنوانِ نشان ذخیره میکند."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "موقعیتِ نویسه‌ی %d ذخیره شد"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "نمیتوانم نشان را ذخیره کنم"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "نشانِ فعلی را پاک میکند."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "نشانی انتخاب نشد"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "نشان پاک شد"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "نمیتوانم نشان را پاک کنم"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "به نشانِ بعدی میرود."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "نشانی پیدا نشد"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "موقعیت: نویسه‌ی %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "نشانِ بعدی پیدا نشد"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "به نشانِ قبلی میرود."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "نشانِ قبلی پیدا نشد"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "اسمِ فایلِ فعلی را برای نشان‌گذاری‌ها کپی میکند."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "نمیتوانم اسمِ فایل را برای نشان‌گذاری‌ها کپی کنم"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "اسمِ فایلِ نشان‌گذاری‌ها در کلیپ‌برد کپی شد"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "موقعیتِ فعلی را به عنوان نشانِ موقت ذخیره میکند."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "نشانِ موقتی در موقعیت %d ذخیره شد"
 
 #. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
-msgstr "شیءِ پِیمایِشگر و موس را به سرفهرستهای پیشِ رو میبَرَد."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "اولین شیءِ موجود در نوارِ وضعیت را اعلام میکند."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "دومین شیءِ موجود در نوارِ وضعیت را اعلام میکند."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "سومین شیءِ موجود در نوارِ وضعیت را اعلام میکند."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "چهارمین شیءِ موجود در نوارِ وضعیت را اعلام میکند."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "به نشانِ موقتی برای سندِ فعلی میرود."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "نشان‌گذاری‌ها"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
-msgstr ""
-"دسترسی‌پذیریِ EMule را برای NVDA بهبود میبخشد.\n"
-"EMule برنامه‌ی دستیابی به فایل‌های عمومیست که امکانِ جستجو و به‌اشتراک‌گذاریِ "
-"فایل‌ها را فراهم میکند.\n"
-"میتوانید برای به دست آوردن اطلاعاتِ بیشتر درباره EMule، مراجعه کنید به:\n"
-"https://www.emule-project.net"
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "افزونه‌ای برای تنظیمِ نشان‌گذاری‌ها در اسنادِ مجازی"
 
-#~ msgid "text \"%s\" not found"
-#~ msgstr "متنِ \"%s\" یافت نشد."
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "نشان ذخیره نشد"
 
-#~ msgid "Find Error"
-#~ msgstr "خطا در پیدا کردن"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "نشان پاک نمیشود"
 
-#~ msgid "Search for:"
-#~ msgstr "جستجو برای:"
-
-#~ msgid "eMule search"
-#~ msgstr "جستجوگرِ eMule"
-
-#~ msgid "Opens the find dialog when in read only edit boxes."
-#~ msgstr ""
-#~ "هنگامی که در جعبه‌های ویرایشیِ فقط‌خواندنی هستید، پنجره‌ی محاوره‌ایِ پیدا کردن "
-#~ "را باز میکند."
-
-#~ msgid "Find next occurence."
-#~ msgstr "موردِ بعدی را پیدا میکند."
-
-#~ msgid "Find previous occurrence."
-#~ msgstr "موردِ قبلی را پیدا میکند."
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "نمیتوانم نشانی پیدا کنم"

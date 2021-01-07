@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2016-02-26 02:18-0800\n"
-"Last-Translator: drishtibachak@gmail.com\n"
-"Language-Team: Nepali <drishtibachak@gmail.com>\n"
-"Language: ne\n"
+"PO-Revision-Date: 2016-02-26 02:22-0800\n"
+"Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
+"Language-Team: Japanese <nvdajp@nvda.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,241 +22,238 @@ msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"तपाइको नेत्रवाणी अभियोजन थैलीमा यो उपकर्मीका पुराना फाइलहरू रहेछन् । के तपाइ यसलाई "
-"अद्यावधिक गर्न चाहनु हुन्छ ?"
+"NVDA設定フォルダに、このアドオンの古いバージョンで保存された情報が見つかりま"
+"した。更新しますか？"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "उपकर्मीलाई भित्र्याउ अथवा अद्यावधिक गर ।"
+msgstr "アドオンのインストールまたは更新"
 
 #. Translators: label of error dialog, translated in NVDA core.
 #, python-format
 msgid "text \"%s\" not found"
-msgstr "पाठ \"%s\" भेट्टिएन ।"
+msgstr "テキスト %s が見つかりません"
 
 #. Translators: title of error dialog, translated in NVDA core.
 msgid "Find Error"
-msgstr "त्रुटी भेट्टाउ ।"
+msgstr "検索の失敗"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s लाई क्लीपपाटीमा उतारियो ।"
+msgstr "%s をクリップボードにコピー"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "श्थान &चिनो"
+msgstr "プレイスマーカー"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "पुस्तकचिनो र खोजी मेनु ।"
+msgstr "ブックマークと検索のメニュー"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
-msgstr "&विशेष खोजी थैली"
+msgstr "検索保存フォルダー"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "विशेष खोजी थैलीलाई खोल्ने छ ।"
+msgstr "検索保存フォルダーを開く"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "&पुस्तकचिनो थैली"
+msgstr "ブックマークフォルダー"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "पुस्तकचिनो थैली खोल्ने छ ।"
+msgstr "ブックマークフォルダーを開く"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&स्थान चिनो थैलीको नक्कल उतार्ने छ ।"
+msgstr "マーカー情報のバックアップ..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "स्थान चिनोको पृष्ट सुरक्षा ।"
+msgstr "マーカー情報をバックアップします"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "&स्थान चिनोको पुनर्स्थापन ।..."
+msgstr "マーカー情報の復元..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "विगतमा सञ्चीत स्थान चिनोलाई पुनर्स्थापित गर ।"
+msgstr "マーカー情報をバックアップから復元します"
 
 #. Translators: label of a dialog presented for copying place markers.
 msgid "Select a folder for copying your saved place markers"
-msgstr "बचत गरिएका स्थान चिनोहरूको नक्कल राख्ने थैलीको चयन गर ।"
+msgstr "マーカー情報のバックアップを作るフォルダーを選択"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
-msgstr "थैलीको नक्कल उतारिएन ।"
+msgstr "フォルダーのコピー失敗"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "नक्कल उतार्दा त्रुटी ।"
+msgstr "コピーの失敗"
 
 #. Translators: label of a dialog presented for restoring place markers.
 msgid "Select the place markers folder you wish to restore"
-msgstr "तपाइले पुनर्स्थापन गर्न चाहेको स्थान चिनो थैलीको चयन गर्नु होस् ।"
+msgstr "マーカー情報の復元に使うバックアップのフォルダーを指定"
 
 #. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
 "Type the text you wish to save, or delete any text if you want to remove it "
 "from the previous saved searches"
-msgstr ""
-"बचत गर्न इच्छा लागेको पाठ टङ्कण गर्नु होस्, अथवा यदि तपाई विगतमा बचत गरिएको खोजीलाई "
-"हटाउन चाहनु हुन्छ भने त्यो पाठलाई मेट्नु होस् ।"
+msgstr "保存するテキストを入力、または検索保存を消去したいときはテキストを削除"
 
 #. Translators: title of a dialog presented to save a string for specific search.
 msgid "Save text for specific search"
-msgstr "विशेष खोजीका लागि पाठ बचत गर ।"
+msgstr "テキスト検索の保存"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves a text string for a specific search."
-msgstr "विशेष खोजीका लागि पाठ पदावली बचत गर ।"
+msgstr "テキストの検索を保存します"
 
 #. Translators: message presented when there is not file for specific search.
 msgid "File for specific search not found"
-msgstr "विशेष खोजीका लागि फाइल पाइएन ।"
+msgstr "検索保存の情報が見つかりません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr ""
-"विशेष कागजातहरूमा चालू क्रसर रहेको स्थान देखि अगाडी रहेको पाठ पदावलीलाई फेला पार ।"
+msgstr "ドキュメントの現在のカーソル位置からテキストを検索"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Bookmark cannot be saved"
-msgstr "पुस्तकचिनोलाई बचत गर्न सकिएन ।"
+msgstr "ブックマークを保存できません"
 
 #. Translators: message presented when the current position was previously saved as a bookmark.
 msgid "This position was already saved"
-msgstr "यो स्थान त पहिले नै बचत गरिएको छ ।"
+msgstr "この位置は保存済みです"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
 msgid "Saved position at character %d"
-msgstr "वर्ण %d स्थानमा बचत गरियो ।"
+msgstr "文字数 %d の位置を保存しました"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "पुस्तकचिनो बचत गर्न सकिदैन ।"
+msgstr "ブックマークを保存できません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "चालु स्थानलाई पुस्तकचिनोको रुपमा बचत गर्ने छ ।"
+msgstr "現在位置をブックマークとして保存します"
 
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "कुनै पुस्तकचिनो छैन ।"
+msgstr "ブックマークなし"
 
 msgid "Bookmark cannot be deleted"
-msgstr "पुस्तकचिनो मेटाउन सकिएन ।"
+msgstr "ブックマークを削除できません"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "कुनै पुस्तकचिनो चयनित छैन ।"
+msgstr "ブックマークが選択されていません"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "पुस्तकचिनो मेटीयो ।"
+msgstr "ブックマークを削除しました"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "पुस्तकचिनो मेटाउन सकिदैन ।"
+msgstr "ブックマークが削除できません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "चालु पुस्तकचिनोलाई मेटाउने छ ।"
+msgstr "現在のブックマークを削除"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "पुस्तक चिनो पाइएन ।"
+msgstr "ブックマークが見つかりません"
 
 #. Translators: message presented when cannot find any bookmark.
 msgid "Cannot find any bookmark"
-msgstr "कुनै पुस्तक चिनो पाउन सकिएन ।"
+msgstr "ブックマークが見つかりません"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "स्थान: वर्ण %d"
+msgstr "文字数 %d の位置"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "पछिल्लो पुस्तकचिनो पाइएन ।"
+msgstr "次のブックマークがありません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "पछिल्लो पुस्तकचिनोमा जान्छ ।"
+msgstr "次のブックマークに移動"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "अघिल्लो पुस्तकचिनो पाइएन ।"
+msgstr "前のブックマークがありません"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "अघिल्लो पुस्तकचिनोमा जान्छ ।"
+msgstr "前のブックマークに移動"
 
 #. Translators: message presented when cannot copy the file name corresponding to place markers.
 msgid "Cannot copy file name for place markers"
-msgstr "स्थान चिनोको लागि फाइलको नक्कल उतार्न सकिएन । "
+msgstr "プレイスマーカーの名前をコピーできません"
 
 #. Translators: message presented when file name for place markers is copied to clipboard.
 msgid "Place markers file name copied to clipboard"
-msgstr "स्थान चिनो फाइललाई क्लीपपाटीमा उतारियो ।"
+msgstr "プレイスマーカーの名前をクリップボードにコピー"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "चालू फाइललाई स्थान चिनोको लागी क्लीपपाटीमा उतार्छ ।"
+msgstr "現在のプレイスマーカーを保存するファイル名をクリップボードにコピー"
 
 #. Translators: This is the label for the specific search settings dialog.
 msgid "Specific Search"
-msgstr "विशेष खोजी"
+msgstr "検索保存"
 
 #. Translators: This is the label for a textfield in the
 #. specific search settings dialog.
 msgid "&Text to search:"
-msgstr "&खोज्नु पर्ने पाठ"
+msgstr "テキストを検索(&T):"
 
 #. Translators: The label for a setting in specific search to select a saved text.
 msgid "&Saved texts:"
-msgstr "&बचत पाठ"
+msgstr "保存したテキスト(&S):"
 
 #. Translators: A combo box to choose a saved text.
 msgid "Saved texts to search:"
-msgstr "विशेष खोजीका लागि पाठ बचत गर ।"
+msgstr "保存した検索テキスト:"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search down"
-msgstr "तल खोजी"
+msgstr "下に検索"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Search up"
-msgstr "माथि खोजी"
+msgstr "上に検索"
 
 #. Translators: the name of an action presented in specific search dialog.
 msgid "Delete"
-msgstr "मेटाउ"
+msgstr "削除"
 
 #. Translators: The label for a setting in specific search to select an action.
 msgid "&Actions to choose:"
-msgstr "&कार्यको रोजाई"
+msgstr "アクションを選択(&A):"
 
 #. Translators: A combo box to choose an action.
 msgid "Select an action to perform:"
-msgstr "सम्पादन गरीने कार्यको चयन गर्नु होस् ।"
+msgstr "実行するアクションを選択:"
 
 #. Translators: An option in specific search to perform case-sensitive search, copied from core.
 msgid "Case &sensitive"
-msgstr "वर्ण &संवेदनसिल"
+msgstr "大文字と小文字を区別"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "स्थान चिनो "
+msgstr "Place markers"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "विशेष अवास्तविक कागजातहरूमा स्थान चिनो अनुकूलन गर्ने उपकर्मी ।"
+msgstr "ドキュメントにプレイスマーカーを設定できます"

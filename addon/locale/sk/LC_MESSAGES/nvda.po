@@ -5,122 +5,329 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 1.0-dev\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-08-04 11:33+0200\n"
-"PO-Revision-Date: 2020-01-12 15:42+0100\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2020-01-16 17:45+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.11\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "Prečíta vybratý stĺpec pre aktuálnu položku."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"priečinok s nastaveniami obsahuje súbory zo staršej verzie tohto doplnku. "
+"Chcete ho aktualizovať?"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Inštalovať alebo aktualizovať doplnok"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s skopírované do schránky"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr "Skopíruje posledný prečítaný stĺpec pre aktuálnu položku do schránky."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Špecifické vyhľadávanie"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "presunie systémový fokus a myš na hlavný panel nástrojov."
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Uložené reťazce"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "prečíta názov aktuálneho okna."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "Odstrániť z &Histórie"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "presunie systémový kurzor na pole názov v okne hľadania."
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "Zadajte text, ktorý &hľadáte"
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&Pridať do histórie"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "Dostupné možnosti"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Hľadať ď&alej"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Hľadať &predchádzajúce"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Nevyhľadávať"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Záložky zálohované"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "priečinok nebol skopírovaný"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Chyba pri kopírovaní"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Záložky obnovené"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Poznámky"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Záložky"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&Poznámka:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&Uložiť poznámku"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Vymazať..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
-msgstr ""
-"presunie systémový fokus a myš na zoznam parametrov hľadania alebo na "
-"editačné pole pre každý parameter v okne hľadania."
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "Záložka bude odstránená."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Žiadne záložky"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Záložky vymazané"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Kopírovať záložky"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr "Vyberte priečinok na uloženie záložiek."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "Priečinok so zálohou:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Vyberte priečinok"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "obnoviť záložky"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
-msgstr ""
-"presunie systémový fokus do prvého zoznamu v aktuálnom okne. Napríklad do "
-"zoznamu výsledkov v okne hľadania, alebo do zoznamu sťahovania pri prenose a "
-"podobne."
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr "Vyberte priečinok s uloženou zálohou záložiek."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "Priečinok so zálohou:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Vyberte priečinok na obnovenie"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "&Záložky"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Menu zo záložkami a reťazcami hľadania"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "Priečinok s reťazcami &hľadania"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "otvorí priečinok s reťazcami hľadania"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "&Priečinok so záložkami"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "otvorí priečinok so záložkami"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "&Zálohovať záložky..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Zálohovanie záložiek"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "&obnoviť záložky..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "obnoví uložené záložky"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "otvorí priečinok s reťazcami hľadania."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "otvorí priečinok so záložkami."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Aktivuje dialóg zálohovania %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Aktivuje dialóg obnovenia %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
-msgstr "Presunie systémový fokus do neprepisovateľných polí, napr správ IRC."
+"finds a text string from the current cursor position for a specific document."
+msgstr "Vyhľadá zadaný reťazec v aktuálnom dokumente."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "Vyhľadá najbližší výskyt zadaného reťazca v aktuálnom dokumente."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "Vyhľadá predchádzajúci výskyt reťazca v aktuálnom dokumente."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "Zobrazí dialóg s poznámkami pre aktívny dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Uloží aktuálne miesto v dokumente ako záložku."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Záložka uložená na pozícii %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Nie je možné uložiť záložku"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Odstráni aktuálnu záložku."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Žiadna vybratá záložka"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Záložka vymazaná"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Nie je možné odstrániť záložku"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "prejde na ďalšiu záložku."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Žiadne záložky"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Pozícia: %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Žiadna ďalšia záložka"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "prejde na predchádzajúcu záložku."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Žiadna predchádzajúca záložka"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Skopíruje názov súboru so záložkami do schránky."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "Nie je možné skopírovať názov súboru so záložkami"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "Názov súboru so záložkami skopírovaný do schránky"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Uloží aktuálne miesto v dokumente ako dočasnú záložku."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Dočasná záložka uložená na %d"
 
 #. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
-msgstr "presunie systémový kurzor a myš na hlavičky aktuálneho zoznamu."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "prečíta prvý objekt na stavovom riadku."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "prečíta druhý objekt na stavovom riadku."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "prečíta tretí objekt na stavovom riadku."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "prečíta štvrtý objekt na stavovom riadku."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Presunie kurzor na dočasnú záložku v aktuálnom dokumente."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "Záložky"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
+msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
-"Zlepšuje prístupnosť programu eMule s NVDA.\n"
-"EMule je P2P program na vyhľadávanie a zdieľanie súborov.\n"
-"Viac Informácií o eMule nájdete na\n"
-"https://www.emule-project.net"
+"umožňuje pridávať záložky do dokumentov zobrazených v režime prehliadania "
 
-#~ msgid "text \"%s\" not found"
-#~ msgstr "text \"%s\" nebol nájdený"
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Záložku sa nepodarilo uložiť"
 
-#~ msgid "Find Error"
-#~ msgstr "Chyba vyhľadávania"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Záložku nie je možné odstrániť"
 
-#~ msgid "Search for:"
-#~ msgstr "Hľadať:"
-
-#~ msgid "eMule search"
-#~ msgstr "Hľadať"
-
-#~ msgid "Opens the find dialog when in read only edit boxes."
-#~ msgstr "otvorí dialóg hľadania  v editačných poliach len na čítanie."
-
-#~ msgid "Find next occurence."
-#~ msgstr "Hľadá ďalší výskyt reťazca."
-
-#~ msgid "Find previous occurrence."
-#~ msgstr "Hľadá predchádzajúci výskyt reťazca."
+#, fuzzy
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nie je možné nájsť žiadne záložky"

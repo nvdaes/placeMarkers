@@ -5,129 +5,342 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 1.0-dev\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-08-04 11:33+0200\n"
-"PO-Revision-Date: 2014-10-29 00:19+0300\n"
-"Last-Translator: Ruslan <eye0@rambler.ru>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ru\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2017-12-14 09:09-0800\n"
+"Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
+"Language-Team: LL@li.org\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.9\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "Читает указанный столбец текущего элемента списка."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Папка конфигурации NVDA содержит файлы, которые, вероятно, остались от "
+"предыдущей версии этого дополнения. Хотите их обновить?"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Установка или обновление дополнения"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s скопировано в буфер обмена"
+msgstr "%s скопирован в буфер обмена"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Конкретный поиск"
+
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Сохранённые тексты"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&Удалить из истории"
+
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&Поиск:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&Добавить в историю"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "Действие при &поиске"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Искать вн&из"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Искать &вверх"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Не искать"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Закладки скопированы"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Папка не скопирована"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Ошибка Копирования"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Закладки восстановлены"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Примечания"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Закладки"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "Примеча&ние:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&Сохранить примечание"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
 msgstr ""
-"Копирует последний  прочитанный столбец выбранного элемента списка в буфер "
-"обмена."
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr ""
-"Перемещает системный фокус и указатель мыши на главную панель инструментов."
-
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "Читает текущее окно."
-
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "Перемещает системный фокус на поле Имя окна поиска."
-
-#. Translators: Message presented in input help mode.
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
+"This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
-"Перемещает системный фокус и мышь к списку параметров поиска или полю "
-"редактирования для каждой опции окна поиска."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Нет закладок"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#, fuzzy
+msgid "Bookmarks deleted"
+msgstr "Закладка удалена"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Копировать закладки"
+
+#. Translators: An informational message displayed in the Copy dialog.
+#, fuzzy
+msgid "Select a folder to save a backup of your current place markers."
+msgstr ""
+"Выберите папку для резервной копии ваших текущих закладок.\n"
+"\n"
+"\t\tОни будут скопированы из %s."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "каталог для резервной копии:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Выберите каталог для копирования"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Востановить закладки"
+
+#. Translators: An informational message displayed in the Restore dialog.
+#, fuzzy
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Перемещает системный фокус к первому списку в текущем окне. Например список "
-"результатов в окне поиска, загрузки в отдаче и т.д."
+"Выберите папку для восстановления резервной копии из ваших предварительно "
+"сохранённых закладок.\n"
+"\n"
+"\t\tОни будут скопированы в %s."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "каталог, содержащий резервную копию:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Выберите каталог для восстановления"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "З&акладки"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Меню Поиска и Закладок"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "&Папка поисковых запросов"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "Открывает папку поисковых запросов"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "Пап&ка закладок"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "Открывает папку закладок"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "&Копировать папку закладок"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Создаёт резервную копию закладок"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "Вост&ановить папку закладок"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Востанавливает ранее сохранённые закладки"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Открывает папку конкретных поисковых запросов."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Открывает папку закладок."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Активизирует диалог копирования из %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Активизирует диалог восстановления из %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
+"finds a text string from the current cursor position for a specific document."
+msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "Показать диалог примечаний для конкретного документа."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Сохраняет текущую позицию как закладку."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Позиция сохранена на символе %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Не удалось сохранить закладку"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Удаляет текущую закладку."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Не выбрана ни одна закладка"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Закладка удалена"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Не удаётся удалить закладку"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "Переходит к следующей закладке."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Закладки не найдены"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Позиция: символ %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Нет следующей закладки"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "Переходит к предыдущей закладке."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Нет предыдущей закладки"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Копирует имени текущего файла закладок в буфер обмена."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "Не удалось скопировать имя файла закладок"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "Имя файла закладок скопировано в буфер обмена"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Сохраняет текущую позицию как закладку."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
 msgstr ""
-"Перемещает системный фокус  к полям редактирования только для чтения в "
-"текущем окне. Например, входящие сообщения IRC."
 
 #. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
-msgstr "Перемещает объект навигатора и мышь к текущим заголовкам списка."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "Объявляет первый объект в строке состояния."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "Объявляет второй объект в строке состояния."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "Объявляет третий объект в строке состояния."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "Объявляет четвёртый объект в строке состояния."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr ""
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "Place markers"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
-msgstr ""
-"Улучшает доступность Emule с NVDA.\n"
-"eMule это P2P программа для поиска и обмена файлами.\n"
-"Вы можете получить более подробную информацию об eMule на \n"
-"https://www.emule-project.net"
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "Дополнение для установки закладок в документы с виртуальном буфером"
 
-#~ msgid "text \"%s\" not found"
-#~ msgstr "текст \"%s\" не найден"
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Не возможно сохранить закладку"
 
-#~ msgid "Find Error"
-#~ msgstr "Ошибка Поиска"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Не возможно удалить закладку"
 
-#~ msgid "Search for:"
-#~ msgstr "Найти:"
-
-#~ msgid "eMule search"
-#~ msgstr "поиск eMule"
-
-#~ msgid "Opens the find dialog when in read only edit boxes."
-#~ msgstr ""
-#~ "Открывает диалог поиска, когда находится в полях редактирования только "
-#~ "для чтения."
-
-#~ msgid "Find next occurence."
-#~ msgstr "Найти следующее вхождение."
-
-#~ msgid "Find previous occurrence."
-#~ msgstr "Найти предыдущее вхождение."
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Не удалось найти никаких закладок"

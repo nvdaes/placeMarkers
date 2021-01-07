@@ -1,8 +1,8 @@
-# Postavljanje obeleživača #
+# स्थान चिनो #
 
-* Autori: Noelia, Chris.
-* preuzmi [stabilnu verziju][1]
-* preuzmi [verziju u razvoju][2]
+* लेखक: Noelia, Chris.
+* अनुबहन[version 1.0][1]
+* अनुबहन [development version][2]
 
 This addon is used for saving and searching specific text strings or
 bookmarks. It can be used  on web pages or documents in NVDA's browse
@@ -15,7 +15,7 @@ document.  This addon is based on SpecificSearch and Bookmark&Search,
 developed by the same author. You should uninstall them to use this one,
 since they have common keystrokes and features.
 
-## Prečice ##
+## कुञ्जी आदेस: ##
 
 *	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
   saved search; in this dialog you can also select the previously saved
@@ -36,18 +36,16 @@ since they have common keystrokes and features.
   saved to the clipboard, without an extension.
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
   can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+  changes. Pressing OK you can move to the selected position.
 
 
-## Podmeni za dodatak Postavljanje obeleživača (NVDA+N) ##
+## स्थान आदेस उप मेनु(नेत्रवानी+N) ##
 
 Using the Place markers submenu under NVDA's Preferences menu, you can
 access:
 
-*	Folder pretraga: Otvara folder sa ranije sačuvanim pretragama
+*	Specific search folder: opens a folder of specific searches previously
+  saved.
 *	Bookmarks folder: Opens a folder of the saved bookmarks.
 *	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
 *	Restore placeMarkers: You can restore your bookmarks from a previously
@@ -57,26 +55,6 @@ Note: The bookmark position is based on the number of characters; and
 therefore in dynamic pages it is better to use the specific search, not
 bookmarks.
 
-
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
-
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
-
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
 
 ## Changes for 8.0 ##
 *	Removed fragment identifiers from bookmark filenames, which can avoid
@@ -104,38 +82,37 @@ bookmarks.
 * When the add-on features are not usable, gestures are sent to the
   corresponding application.
 
-## Promene u 5.0 ##
-* Dodata pretraga osetljiva na veličinu slova.
-* Uklonjena opcija za otvaranje dokumentacije iz menija dodatka.
-* Prečice koje se lakše pamte.
+## ३.० मा गरिएका परिवर्तनहरू ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
 
-## Promene u 4.0 ##
-* Izmenjen način odabira naslova obeleživača, što rešava problem sa nekim
-  aplikacijama.
-* Pomoć za dodatak je dostupna iz menadžera/upravljača dodacima.
+## ४.० मा गरिएका परिवर्तनहरू ##
+* Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in ePUBREADER Firefox add-on.
+* थप-साधन सहयोग थप-साधन व्यबस्थापकमा उपलब्ध छ ।.
 
-## Promene u 3.1 ##
-* Ažurirani prevodi i novi jezik.
-* Pozicija obeleživača se više ne izgovara u čitanju dokumenta.
+## ३.१ मा गरिएका परिवर्तनहरू ##
+* अनुवादको अध्यावधिकरण र अनुदित भाषाहरू
+* Bookmark position is not announced in skim reading.
 
-## Promene u 3.0 ##
-* Omogućeno brzo pregledanje.
+## ३.० मा गरिएका परिवर्तनहरू ##
+* योजना वाचनलाई थप गरियो ।
 
-## Promene u 2.0 ##
-* Dodata mogućnost za čuvanje i brisanje pretraga za određeni fajl.
-* Omogućen rad sa nelatiničnim karakterima.
-* Omogućena izmena prečica kroz NVDA dijalog za ulazne komande.
+## २.0 मा गरिएका परिवर्तनहरू ##
+* हरेक फाइलमा भएका विभिन्न खोजीलाइ मेटाउन र बचत गर्ने विकल्पहरू थप गरियो । 
+* गैर ल्याटीन वर्णहरू भएका मार्ग हुदाँ काटिने समस्या हल गरियो ।
+* अब नेत्रवाणीको लगानीसङ्केत पातो प्रयोग गरेर द्रुतमार्ग कायम गर्न सक्ने
+  बनाइयो ।
 
-## Promene u 1.0 ##
-* Prva verzija
-* Prevedeno na: brazilski portugalski, finski, francuski, galicijski,
-  italijanski, japanski, korejski, nemački, nepalski, persijski,
-  portugalski, slovački, slovenački, španski, tamilski.
-  Uskoro i na srpskom.
+## १.० मा गरिएका परिवर्तनहरू ##
+* सुरुको संस्करण
+* अनुवादीत भाषाहरू: ब्राजेलियन पुर्तगाली, फारसी, फिनिस, फ्रांन्सेली,
+  ग्यालेसियन, जर्मनि, इटालि, जापानी, कोरियाली, नेपालि, पुर्तगाली, स्पेनि,
+  स्लोभाक, स्लोबिनियन, तामिल ।
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

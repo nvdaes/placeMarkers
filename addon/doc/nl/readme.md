@@ -1,95 +1,120 @@
-# eMule #
+# place Markers #
 
-*	Auteurs: Noelia, Chris, Alberto.
-*	NVDA compatibility: 2019.3 or later.
-*	download [stabiele versie][1]
-*	download [ontwikkelversie][3]
-*	download [version compatible with NVDA 2017.3][4]
+* Auteur: Noelia, Chris.
+* Download [stabiele versie][1]
+* Download [ontwikkelversie][2]
 
-This add-on helps to improve accessibility of eMule with nVDA.  It also
-provides additional keyboard commands for moving in different windows and
-gives Useful information about eMule.
+This addon is used for saving and searching specific text strings or
+bookmarks. It can be used  on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+bookmarks to files whose name is based on the title and URL of the current
+document.  This addon is based on SpecificSearch and Bookmark&Search,
+developed by the same author. You should uninstall them to use this one,
+since they have common keystrokes and features.
 
-It's based on the eMuleNVDASupport add-on, developed by the same author. You
-should uninstall that old add-on to use this one, since both have common
-keystrokes and features.
+## Belangrijke commando's: ##
 
-Getest op [eMule][2] 0.50a.
+*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
+  saved search; in this dialog you can also select the previously saved
+  searches from a combo box or remove the selected string from the history
+  using a checkbox. You can choose if the text contained in the edit box
+  will be added to the history of your saved texts. Finally, choose an
+  action from the next group of radio buttons (between Search next, Search
+  previous or Don't search), and specify if NVDA will make a case sensitive
+  search. When you press okay, NVDA will search for this string.
+*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
+*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
+  position.
+*	NVDA+k: Moves to the next bookmark.
+*	shift+NVDA+k: Moves to the previous bookmark.
+*	control+shift+k: Copies the file name where the place markers data will be
+  saved to the clipboard, without an extension.
+*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing OK you can move to the selected position.
 
-## Sneltoetsen: ##
 
-*	control+shift+h: Verplaatst de focus en de muis naar de belangrijkste
-  taakbalk.
-*	control+shift+t: Leest het huidige scherm.
-*	control+shift+n: Verplaatst de focus naar het Naamveld in het Zoekvenster.
-*	control+shift+p: In het Zoekscherm, verplaatst focus en muis naar de lijst
-  met zoekopties, of opties voor het invoerveld.
-*	control+shift+b: Verplaatst de focus naar de lijst in het huidige
-  venster. Bijvoorbeeld: 
-*	control+shift+o: Verplaatst de focus naar alleen-lezen invoervelden in het
-  huidige venster. Bijvoorbeeld: via IRC ontvangen berichten, beschikbare
-  servers, etc.
-*	control+NVDA+f: If the caret is located in a read only edit box, opens a
-  find dialog to use the commands for searching text available in NVDA.
-*	control+shift+l: Verplaatst het navigator object en de muis naar de
-  hoofdingen van de huidige lijst.
-*	control+shift+q: Leest het eerste object in de statusbalk; geeft
-  informatie over recente activiteit.
-*	control+shift+w: Leest het tweede object van de statusbalk; bevat
-  informatie over bestanden en gebruikers op de huidige server.
-*	control+shift+e: Leest het derde object van de statusbalk; nuttig om de
-  UpLoad-/DownLoadsnelheid te kennen.
-*	control+shift+r: Leest het vierde object van de statusbalk; meld over
-  verbinding met eD2K en Kad netwerk.
+## Place markers Submenu (NVDA+N) ##
 
-## Kolommen beheren. ##
+Using the Place markers submenu under NVDA's Preferences menu, you can
+access:
 
-Als u zich in een lijst bevindt, kunt u de cursor bewegen tussen de rijen en
-kolommen met alt+control+pijltjestoetsen. In deze Add-on zijn ook de
-volgende sneltoetsen beschikbaar:
+*	Specific search folder: opent een map met eerder opgeslagen specific
+  searches.
+*	Bookmarks folder: Opens a folder of the saved bookmarks.
+*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
+*	Restore placeMarkers: You can restore your bookmarks from a previously
+  saved placeMarkers folder.
 
-*	nvda+control+1-0: Leest de eerste 10 kolommen.
-*	nvda+shift+1-0: Leest kolommen 11 tot 20.
-*	nvda+shift+C: Kopieer de inhoud van de laatstgelezen kolom naar het
-  klembord.
+Note: The bookmark position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+bookmarks.
 
-## Changes for 4.0 ##
-*	Requires NVDA 2019.3 or later.
 
-## Changes for 3.0 ##
-*	 To search text in the readonly edit boxes,  the find dialog  can be used,
-   such as nvda+control+f to activate the find dialog.
+## Changes for 8.0 ##
+*	Removed fragment identifiers from bookmark filenames, which can avoid
+  issues in the VitalSource Bookshelf ePUB reader.
+*	Added a Notes dialog, to associate comments for saved bookmarks and move
+  to the selected position.
+
+## Changes for 7.0 ##
+*	The dialog to save a string of text for specific search has been
+  removed. This functionality is now included in the Specific search dialog,
+  which has been redesigned to allow different actions when pressing the OK
+  button.
+*	The visual presentation of the dialogs has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Performing a Find Next or Find Previous command in Browse Mode will now
+  correctly do a case sensitive search if the original Find was case
+  sensitive.
+*	Requires NVDA 2016.4 or later.
+*	Now you can assign gestures to open the Copy and Restore place markers
+  dialogs.
+*	NVDA will present a message to notify when place markers have been copied
+  or restored with the corresponding dialogs.
+
+## Changes for 6.0 ##
+* When the add-on features are not usable, gestures are sent to the
+  corresponding application.
+
+## Changes for 5.0 ##
+* Added case sensitive search.
+* Removed option to open documentation from Place markers menu.
+* More intuitive key commands.
+
+## Veranderingen in 4.0 ##
+* Fragment identifiers verwijderd uit bestandsnamen zodat problemen met de
+  ePUBREADER Firefox add-on vermeden kunnen worden.
+* Add-on help is beschikbaar vanuit Add-ons beheren
+
+## Veranderingen in 3.1 ##
+* Vertalingen bijgewerkt en een nieuwe taal toegevoegd.
+* Bookmarkpositie wordt niet gemeld bij doorbladeren tijdens automatisch
+  lezen.
+
+## Veranderingen in 3.0 ##
+* Ondersteuning toegevoegd voor doorbladeren.
 
 ## Veranderingen in 2.0 ##
-*	 Add-on help is beschikbaar via Add-ons beheren.
-
-## Veranderingen voor 1.2 ##
-*	 Bij het navigeren naar de IRC-berichten wordt de geselecteerde tekst
-   correct gemeld.
-*	 De sneltoets die gebruikt werd voor het navigeren naar de
-   zoekresultatenlijst wordt nu gebruikt om te navigeren naar iedere
-   beschikbare lijst in het huidige venster.
-*	 Het gebruikte commando voor het weergeven van de IRC-berichten is
-   algemeen gemaakt om te navigeren naar ieder alleen-lezen invoerveld, wat
-   het mogelijk maakt om verbindingsinformatie in het servervenster te
-   bekijken.
-*	 Bij het verplaatsen van de muis of de focus naar de werkbalk werd dit in
-   sommige gevallen twee keer gemeld. Dit is opgelost.
-
-## Veranderingen voor 1.1 ##
-*	 Probleem opgelost in eMule item onder NVDA's help menu, als de naam van
-   de gebruikersconfiguratiemap niet-Latijnse karakters bevat.
-*	 Snelkoppelingen kunnen nu gewijzigd worden via het dialoogvenster
-   Invoerhandelingen koppelen van NVDA.
+* Opties toegevoegd die het mogelijk maken om verschillende zoekopdrachten
+  voor ieder bestand op te slaan en te verwijderen.
+* Een probleem opgelost met paden die vreemde tekens bevatten
+* Sneltoetsen kunnen nu opnieuw toegewezen worden met behulp van het NVDA
+  dialoogvenster voor invoergebaren.
 
 ## Veranderingen in 1.0 ##
-*	 Eerste versie.
-
+* Eerste versie.
+* Vertaald in: Braziliaans Portuguees, Farsi, Fins, Frans, Galicisch, Duits,
+  Italiaans, Japans, Koreaans, Nepalees, Portuguees, Spaans, Slovaaks,
+  Sloveens, Tamil.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=em
+[1]: http://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://www.emule-project.net
-
-[3]: https://addons.nvda-project.org/files/get.php?file=em-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev

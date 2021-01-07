@@ -5,98 +5,330 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 2.7\n"
+"Project-Id-Version: placeMarkers 6.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2015-10-23 05:05+1000\n"
-"PO-Revision-Date: 2019-03-12 15:36+0200\n"
-"Last-Translator: shmuel naaman <shmuel_naaman@yahoo.com>\n"
+"POT-Creation-Date: 2015-10-23 16:00+1000\n"
+"PO-Revision-Date: 2018-12-06 13:39+0200\n"
+"Last-Translator: shmuel_naaman@yahoo.com\n"
 "Language-Team: \n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "הקראת העמודה שצויינה עבור הפריט הנוכחי ברשימה."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"נראה כי תיקיית ההגדרות של NVDA מכילה קבצים המתיחסים לגרסה ישנה של תוסף זה. "
+"האם ברצונך לעדכן אותם?"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "התקנה או עדכון תוסף"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s הועתק לזכרון"
+msgstr "%s הועתק לזכרון הזמני"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr "העתקת העמודה האחרונה שנקראה עבור הפריט הנוכחי לזכרון."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "חיפוש ממוקד"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "העברת הפוקוס והעכבר לסרגל הכלים הראשי."
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&קטעים שנשמרו"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "הקראת החלון שבפוקוס."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&הסר מההיסטוריה"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "העברת הסמן לתיבת העריכה של חלונית החיפוש."
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&מחרוזת לחיפוש:"
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&הוסף להיסטוריה"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "&פעולות חיפוש לבחירה"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "חיפוש &קדימה"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "&חיפוש אחורה"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&לא לבצע חיפוש"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "סימניות העותקו"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "התיקיה לא הועתקה"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "שגיאת העתקה"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "סימניות שוחזרו"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "הערות"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&סימניות"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&הערות:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&שמור הערות"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&מחק..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
-msgstr ""
-"העברת הפוקוס והעכבר לרשימת הפרמטרים של החיפוש או לתיבת העריכה עבור כל "
-"אופציה, בחלונית החיפוש."
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "סימנייה זו תימחק לצמיתות. לא ניתן לבטל פעולה זו."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "אין סימניות"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "הסימנייה נמחקה"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "העתק סימניות"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr "בחר תיקייה לשמירת הגיבוי של הסימניות הנוכחיות."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "נתיב לגיבוי:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "בחר נתיב לגיבוי"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "&שחזור הסימניות"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
-msgstr ""
-"העברת הפוקוס לפריט הראשון בחלון שבפוקוס , לדוגמה : לרשימת תוצאות החיפוש, "
-"ההורדות וההעברות, וכו'."
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr "בחר תיקייה לשחזור הגיבוי של הסימניות האחרונות שנשמרו."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "ספרייה המכילה גיבוי:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "נא לבחור פעולה"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "&סימניות"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "סימניות ותפריט חיפוש"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "תיקייה לחיפוש &ממוקד"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "פותח את תיקית החיפוש הממוקד"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "תיקיית &סימניות"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "פותח את תיקיית הסימניות"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "ה&עתקת תיקיית הסימניות..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "גיבוי הסימניות"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "&שחזור הסימניות..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "משחזר סימניות שנשמרו בעבר"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "פותח את תיקיית החיפוש הממוקד."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "פותח את תיקיית הסימניות."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "הפעל את תיבת הדו-שיח של העתקה %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "הפעל את תיבת הדוח-שיח של שחזור %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
-msgstr ""
-"העברת הפוקוס לתיבת עריכה לקריאה בלבד בחלון שבפוקוס , לדוגמה : הודעות שנתקבלו."
+"finds a text string from the current cursor position for a specific document."
+msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "מחפש את המחרוזת שנבחרה ממקום הסמן והלאה במסמך שבפוקוס."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "הצג את תיבת הדו-שיח הערות למסמך מסוים."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "שומר את המיקום הנוכחי כסימנייה."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "מיקום שמור עבור התו %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "לא ניתן לשמור את הסימנייה"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "מחיקת הסימנייה הנוכחית."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "לא נבחרה סימנייה"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "הסימנייה נמחקה"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "לאניתן למחוק את הסימנייה"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "מעבר לסימנייה הבאה."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "לא נמצאו סימנייותת"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "מיקום: תו %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "הסימנייה הבאה לא נמצאה"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "מעבר לסימנייה הקודמת."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "הסימנייה הקודמת לא נמצאה"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "לא ניתן להעתיק שם קובץ כסימנייה"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "שם הקובץ הועתק כסימנייה בזכרון הזמני"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "שומר את המיקום הנוכחי כסימנייה."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "סימניה זמנית שמורה במיקום %d"
 
 #. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
-msgstr "העברת הפוקוס והעכבר לכותרת הרשימה שבפוקוס."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "הקראת הפריט הראשון של שורת המצב."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "הקראת הפריט השני של שורת המצב."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "הקראת הפריט השלישי של שורת המצב."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "הקראת הפריט הרביעי של שורת המצב."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "מעבר לסימנייה הזמנית עבור המסמך הנוכחי."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "סימניות"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
-msgstr "משפר את הנגישות של Emule תחת Nvd."
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "תוסף זה מיועד להגדיר סימניות במסמכים וירטואלים נבחרים"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "לא ניתן לשמור את הסימנייה"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "לא ניתן למחוק את הסימנייה"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "לא ניתן לזהות סימניות"

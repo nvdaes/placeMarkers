@@ -1,94 +1,184 @@
-# eMule #
+# placeMarkers (Stedmærker) #
+* Forfattere: Noelia, Chris.
+* NVDA-kompatibilitet: 2019.3 eller nyere
+* Download [stabil version][1]
+* download [testversion][2]
 
-*	Forfattere: Noelia, Chris, Alberto.
-*	NVDA-kompatibilitet: 2019.3 eller nyere
-*	download [stabil version][1]
-*	download [udviklingsversion][3]
-*	download [version kompatibel med NVDA 2017.3][4]
+Dette tilføjelsesprogram bruges til at gemme og søge efter bestemte
+tekststrenge på websider eller i dokumenter, som understøtter NVDAs
+gennemsynstilstand. Det kan også bruges til at gemme eller søge efter
+tekststrenge i felter med flere linjer. I dette tilfælde, hvis det ikke er
+muligt at flytte markøren, vil den relevante tekst blive kopieret til
+udklipsholderen, så man kan søge med andre værktøjer. Tilføjelsesprogrammet
+gemmer de valgte strenge og bogmærker til filer der har lignende navne
+svarende til de gemte strenge og bogmærker. Denne tilføjelsespakke er
+baseret på Specific Search og Bookmark Search, der er udviklet af samme
+forfatter. Disse tilføjelser deler tastetryk og funktionalitet, så det
+anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 
-Dette tilføjelsesprogram hjælper med at forbedre tilgængeligheden til eMule
-med NVDA. Det igver også ekstra tastaturkommandoer til at flytte rundt i
-forskellige vinduer, samt giver nyttig information om eMule.
+## Tastaturkommandoer: ##
 
-Programmet er baseret på tilføjelsesprogrammet eMuleNVDASupport, som er
-udviklet af samme forfatter. Du skal afinstallere det gamle
-tilføjelsesprogram for at kunne bruge denne version, da de har kommandoer og
-funktioner til fælles.
+*	CTRL+Skift+NVDA+F: Åbner en dialog der viser den seneste søgning. I denne
+  dialog kan du vælge tidligere udførte søgninger fra en comboboks, eller
+  fjerne dem fra historikken ved hjælp af en checkboks. Du kan vælge om
+  teksten i boksen skal tilføjes til historikken af gemte tekster. Endelig
+  skal du vælge en handling fra gruppen af radioknapper (herunder søg
+  fremad, søg bagud eller søg ikke), og dernæst beslutte om NVDA skal gøre
+  forskel på store og små bogstaver under søgningen. Når du trykker på "ok",
+  vil NVDA udføre din søgning.
+*	CTRL+skift+NVDA+k: Gemmer den aktuelle position som et bogmærke. Hvis du
+  vil angive et navn til dette bogmærke, skal du vælge en tekst fra denne
+  position, før du gemmer den.
+*	CTRL+skift+NVDA+delete: Sletter bogmærket, der svarer til den aktuelle
+  position.
+*	NVDA+K: Flytter til det næste bogmærke.
+*	Skift+NVDA+K: Flytter til det forrige bogmærke.
+*	Ikke tildelt: Viser filnavnet, hvor stedmarkørens data gemmes i
+  gennemsynstilstand uden en filtypenavn.
+*	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
+  dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
+  at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
+  position.
+*	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
+*	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
+  dokument.
+*	Ikke tildelt: Søger efter næste forekomst af den angivne søgestreng i et
+  dokument
+*	Ikke tildelt: Søger efter forrige forekomst af den angivne søgestreng i et
+  dokument
 
-Testet på [eMule][2] 0.50a.
 
-## Tastaturkommandoer ##
+## Undermenu for stedmærker (NVDA+n) ##
 
-*	Control+Shift+h: Flytter fokus og mus til hovedværktøjslinjen.
-*	Control+Shift+t: Læser det aktuelle vindue.
-*	Control+Shift+n: Flytter fokus til navnefeltet i søgevinduet.
-*	Control+Shift+p: I søgevinduet: Flytter fokus og mus til listen over
-  søgeparametre ellerredigering af feltindstillinger.
-*	Control+Shift+b: Flyt fokus til listen i det aktuelle vindue, brugbart
-  f.eks. i søgevinduet eller til downloads i overførselsvinduet.
-*	Control+Shift+o: Flyt fokus til skrivebeskyttede editfelter i det aktuelle
-  vindue, f.eks. "IRC received messages", "available Servers" osv.
-*	Control+NVDA+f: Åbner en søgedialog, hvis markøren er placeret i et
-  skrivebeskyttet editfelt.
-*	Control+Shift+l: Flytter navigatorobjektet og musen til overskrifterne på
-  den aktuelle liste.
-*	Control+Shift+q: Læser første objekt på statuslinjen; Giver information om
-  seneste aktivitet.
-*	Control+Shift+w: Læser det andet objekt på statuslinjen; Indeholder
-  oplysning om filer og brugere på den aktuelle server.
-*	Control+Shift+e: Læser tredje objekt på statuslinjen;
-  Upload/download-hastighed.
-*	Control+Shift+r: Læser fjerde objekt på statuslinjen: Annoncerer
-  oplysninger om forbindelse til eD2K- og Kad-netværk.
+Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
 
-## Styring af kolonner. ##
+*	Mappe med specifikke søgninger: Åbner en mappe med tidligere gemte
+  specifikke søgninger.
+*	Mappe med bogmærker: Åbner en mappe med de tidligere gemte bogmærker.
+*	Kopier mappe med stedmærker: Du kan gemme en kopi af mappen med bogmærker.
+*	Gendan stedmærker: Du kan gendanne dine bogmærker fra en tidligere gemt
+  mappe med stedmærker.
 
-I en liste kan du flytte markøren rundt i rækker og kolonner med
-Alt+Control+piletaster. I dette tilføjelsesprogram kan du også bruge
-følgende tastaturkommandoer:
+Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
+dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
+bogmærker, som gemmer en præcis position.
 
-*	NVDA+Control+1-0: Læser de første 10 kolonner.
-*	NVDA+Shift+1-0: Læser kolonne 11-20.
-*	NVDA+Shift+c: Kopierer indholdet i den sidst læste kolonne til
-  udklipsholderen.
-
-## Ændringer i4.0 ##
+## Ændringer for 14.0 ##
+*	Kommandoen til at kopiere navnet på filen, hvor stedmarkeringsdataene
+  gemmes, er blevet erstattet af en kommando, der viser dette filnavn i
+  gennemsynstilstanden. Kommandoen er ikke tildelt et tastetryk som
+  standard.
+*	Feltet "Tekst til søgning" overlapper ikke længere feltet "Gemt
+  tekst". (Tak til Cyrille Bougot).
 *	Kræver NVDA 2019.3 eller nyere.
 
+## Ændringer i 13,0 ##
+*	Tilføjede kommandoer, så du nemt kan søge efter forrige og næste forekomst
+  af den sidst angivne tekststreng. Disse kommandoer har ingen tildelte
+  tastetryk.
+*	Funktionen til specifikke søgninger virker kun, når NVDAs søgedialog er
+  åbnet.
+*	I dialogen til specifike søgninger, vil boksen til at skelne mellem store
+  og små bogstaver forblive markeret, hvis dette var tilfældet under den
+  sidste søgning.
+*	Når tilføjelsesprogrammet er opdateret, kopieres bogmærker og strenge til
+  specifik søgning der er gemt i den tidligere version af tilføjelsen
+  automatisk til den nye version, medmindre du foretrækker at importere
+  stedmærker, der er gemt i den primære konfigurations mappe i NVDA.
+*	Når du bruger dialogen til at kopiere stedmærker, og hvis den valge mappe
+  ikke hedder "placeMarkersBackup", vil en undermappe med dette navn blive
+  oprettet for at forhindre sletning af mapper, der indeholder vigtige data,
+  såsom dokumenter eller overførsler.
+
+## Ændringer for 12.0 ##
+*	Rettede en kritisk fejl, der forårsagede at NVDA gik ned, når man forsøgte
+  at åbne dialogboksen Noter, hvis kinesiske tegn blev valgt, før bogmærker
+  blev gemt.
+
+## Ændringer for 11.0 ##
+*	Kompatibel med NVDA 2018.3 eller nyere (påkrævet).
+*	Hvis nødvendigt, kan du hente [den sidste version kompatibel med NVDA
+  2017.3][3].
+
+## Ændringer for 10.0 ##
+*	I Edge vil kommandoer i forbindelse med bogmærkevalg, såsom NVDA+k,
+  NVDA+shift+k eller NVDA+alt+k, blive sendt til applikationen i stedet for
+  at forsøge at flytte markøren til bogmærker for at undgå fejl, især i
+  lange dokumenter.
+*	Nu understøttes specifik søgning i Edge.
+
+## Ændringer for 9.0
+*	Når du flytter til et bogmærke i dialogboksen Noter, følger
+  korrekturmarkøren systemmarkøren.
+*	Kommandoen til at vælge det forrige bogmærke fungerer korrekt igen.
+*	Bogmærker kan slettes fra dialogen Noter.
+*	Nu kan du tildele bevægelser, så du lettere kan gemme og flytte til
+  midlertidige bogmærker for hvert dokument.
+
+## Ændringer i 8.0 ##
+*	Fjernet fragmenter af identificeringsstrenge fra filnavne på
+  bogmærker. Dette kan forhindre problemer i VitalSource Bookshelf ePUB
+  reader.
+*	Tilføjet en dialogboks, noter, for at knytte kommentarer til gemte
+  bogmærker og flytte til den valgte placering.
+
+## Ændringer i 7,0 ##
+*	Dialogen til at gemme en tekststreng til specifikke søgninger er blevet
+  fjernet. Denne funktionalitet er nu inkluderet i dialogen specifik
+  søgning, som er blevet redesignet til at tillade forskellige handlinger,
+  når du trykker på knappen OK.
+*	Dialogens visuelle præsentation er blevet forbedret og overholder
+  udseendet af de dialoger, der vises i NVDA.
+*	Udføring af en Find næste eller Find forrige kommando i gennemsynstilstand
+  vil nu korrekt udføre en bogstavsøgning der gør forskel på store og små
+  bogstaver, hvis den oprindelige søgning gjorde forskel på store og små
+  bogstaver.
+*	Kræver NVDA 2016.4 eller nyere.
+*	Nu kan du tildele bevægelser til at åbne dialogerne kopier og gendan
+  stedmærker.
+*	NVDA vil informere når stedmærker er blevet kopieret eller gendannet med
+  de tilsvarende dialoger.
+
+## Ændringer i 6.0 ##
+* Når funktionerne i tilføjelsesprogrammet ikke kan bruges, bliver
+  kommandoer sendt til det relevante program.
+
+## Ændringer i 5.0 ##
+* Tilføjet Forskel på små og store bogstaver under søgning.
+* Fjernet mulighed for at åbne dokumentationen fra menuen Stedmærker.
+* Mere intuitive tastaturkommandoer.
+
+## Ændringer i4.0  ##
+* Fjernet fragmenter af identiceringsstrenge fra filnavne på
+  bogmærker. Dette kan forhindre problemer i tilføjelsesprogrammet
+  ePUBREADER til Firefox.
+* Hjælp til tilføjelsesprogrammet er til rådighed fra styring af
+  tilføjelsesprogrammer.
+
+## Ændringer i 3.1 ##
+* Opdateringer til oversættelse og nye sprog.
+* Positioner for bogmærker bliver ikke annonceret under skimlæsning.
+
 ## Ændringer i 3.0 ##
-*	 For at søge efter tekst i skrivebeskyttede redigeringsbokse, kan vi nu
-   bruge dialogboksen og kommandoer tilgængelige i NVDA.
+* Tilføjet understøttelse for skimlæsning.
 
 ## Ændringer i 2.0 ##
-*	 Hjælp til tilføjelsesprogrammet er til rådighed fra styring af
-   tilføjelsesprogrammer.
-
-## Ændringer i 1.2 ##
-*	 Når man flytter til IRC-meddelelserne, bliver den valgte tekst annonceret
-   rigtigt.
-*	 Det tastetryk, som bruges til at gå til listen over søgeresultater, er
-   blevet generaliseret, så man kan flytte til en hvilken som helst liste i
-   det aktuelle vindue.
-*	 Den kommando, som bruges til at bringe fokus til irc-meddelelserne, er
-   blevet generaliseret til at gå til et hvilket som helst skrivebeskyttet
-   editfelt. På den måde kan man læse forbindelsesoplysningerne i
-   servervinduet.
-*	 Når man flytter mus og fokus til værktøjslinjen, blev denne i nogle
-   tilfælde annonceret to gange. Dette er blevet løst.
-
-## Ændringer i 1.1 ##
-*	 Rettet fejl i emnet eMule under NVDAs hjælpemenu, når navnet på mappen
-   med NVDAs brugerkonfigurationer indeholder ikke-latinske tegn.
-*	 Genvejstaster kan nu ændres i NVDAs dialog til inputbevægelser.
+* Tilføjet mulighed for at gemme og slette forskellige søgninger for hver
+  fil.
+* Rettet fejl, som kom til udtryk når stier indeholdt ikke-latinske tegn.
+* Genvejstaster kan nu ændres i NVDAs dialog til inputbevægelser.
 
 ## Ændringer i 1.0 ##
-*	 Første version.
+* Første version.
+* Oversat til: Brasiliansk portugisisk, farsi, finsk, fransk, galicisk,
+  tysk, italiensk, japansk, koreansk, nepalesisk, portugisisk, spansk,
+  slovakisk, slovensk og tamilsk.
 
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=em
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://www.emule-project.net
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=em-dev
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

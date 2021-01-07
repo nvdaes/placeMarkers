@@ -1,109 +1,340 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the eMule package.
+# This file is distributed under the same license as the placeMarkers package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eMule 3.4\n"
+"Project-Id-Version: placeMarkers 7.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2017-02-10 05:05+1000\n"
-"PO-Revision-Date: 2018-09-28 23:22+0700\n"
+"POT-Creation-Date: 2017-02-24 16:00+1000\n"
+"PO-Revision-Date: 2019-08-16 15:52+0700\n"
 "Last-Translator: Dang Manh Cuong <dangmanhcuong@gmail.com>\n"
 "Language-Team: \n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 1.6.11\n"
 
-#. Translators: Message presented in input help mode.
-msgid "Reads the specified column for the current list item."
-msgstr "Đọc cột được chỉ định của thành phần hiện tại trong danh sách."
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Thư mục cấu hình NvDA của bạn có vẻ như đang chứa các tập tin tạo ra từ một "
+"phiên bản cũ hơn của add-on này. Bạn có muốn cập nhật không?"
 
-#. Translators: Message presented when the current column of the list item is copied to clipboard.
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Cài đặt hoặc cập nhật Add-on"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "Đã chép %s vào bộ nhớ tạm"
 
-#. Translators: Message presented in input help mode.
-msgid "Copies the last read column of the selected list item to clipboard."
-msgstr ""
-"Chép cột cuối cùng được đọc ở thành phần đã chọn trong danh sách hiện tại "
-"vào bộ nhớ tạm."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Tìm kiếm cụ thể"
 
-#. Translators: Message presented in input help mode
-msgid "Moves the system focus and mouse to the main Tool Bar."
-msgstr "Chuyển focus hệ thống và chuột đến thanh công cụ chính."
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "Các văn bản đã &lưu"
 
-#. Translators: Message presented in input help mode.
-#. For instance: reads the search window, Statistics, IRC, etc.
-msgid "Reports the current window."
-msgstr "Thông báo cửa sổ hiện tại."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&Xóa khỏi lịch sử"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the system focus to the Name field of the Search window."
-msgstr "Chuyển focus hệ thống đến trường Name (tên) trong cửa sổ tìm kiếm."
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "Văn bản cần &tìm:"
 
-#. Translators: Message presented in input help mode.
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "T&hêm vào lịch sử"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "Hoạt động tìm &kiếm"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Tìm &tiếp"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Tìm t&rước"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "Khô&ng tìm kiếm"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Đã chép điểm đánh dấu"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Thư mục không được  chép"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Lỗi sao chép"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Đã phục hồi điểm đánh dấu"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Các dấu trang"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&Ghi chú:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&Lưu ghi chú"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Xóa..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Moves the system focus and mouse to the search parameters list or Edit field "
-"for each option, in the Search window."
-msgstr ""
-"Chuyển focus hệ thống và  chuột đến danh sách các tham số tìm kiếm hoặc "
-"trường nhập liệu cho mỗi tùy chọn trong cửa sổ tìm kiếm."
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "Dấu trang này sẽ bị xóa vĩnh viễn. Thao tác này không thể phục hồi."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Không có dấu trang"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Đã xóa các dấu trang"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Chép điểm đánh dấu"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr "Chọn thư mục để sao lưu các điểm đánh dấu hiện thời của bạn."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "thư mục để sao lưu:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Chọn thư mục để sao chép"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Phục hồi các điểm đánh dấu"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Moves the system focus to the first list in the current window. For example "
-"the results list in the Search window, downloads in Transfer, etc."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Chuyển focus hệ thống đến danh sách đầu tiên trong cửa sổ hiện tại. Ví dụ "
-"như danh sách kết quả trong cửa sổ tìm kiếm, cái gì đang được tải, v..v..."
+"Chọn thư mục để phục hồi bản sao lưu các điểm đánh dấu đã được sao chép "
+"trước đó.\n"
+"\n"
+"\t\tChúng sẽ được chép vào %s."
 
-#. Translators: Message presented in input help mode.
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "thư mục chứa bản sao lưu:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Chọn thư mục để khôi phục"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "Đá&nh dấu"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Trình đơn dấu trang và tìm kiếm"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "T&hư mục tìm kiếm cụ thể"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "Mở thư mục tìm kiếm cụ thể"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "&Thư mục dấu trang"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "Mở thư mục dấu trang"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "Sao &chép thư mục các điểm đánh dấu "
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Sao lưu các điểm đánh dấu"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "&Phục hồi các điểm đánh dấu..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Phục hồi các điểm đánh dấu đã lưu trước đó"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Mở thư mục tìm kiếm cụ thể"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Mở thư mục dấu trang"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Kích hoạt hộp thoại Sao Chép của %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Kích hoạt hộp thoại Khôi Phục của%s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Moves the system focus to read-only edit boxes in the current window. For "
-"example the IRC received messages."
+"finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Chuyển focus hệ thống đến các hộp có thuộc tính chỉ đọc trong cửa sổ hiện "
-"tại. Ví dụ như các thông điệp IRC."
+"tìm một chuỗi văn bản từ vị trí con trỏ hiện thời cho một tài liệu cụ thể."
 
-#. Translators: Message presented in input help mode.
-msgid "Moves the navigator object and mouse to the current list headers."
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
 msgstr ""
-"Chuyển đối tượng điều hướng và chuột đến các tiêu đề của danh sách hiện tại."
+"tìm văn bản tiếp theo có chứa nội dugn tìm kiếm gần nhất cho mọi tài liệu cụ "
+"thể."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"tìm văn bản trước đó có chứa nội dugn tìm kiếm gần nhất cho mọi tài liệu cụ "
+"thể."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "Hiển thị hộp thoại ghi chú cho một tài liệu nào đó."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Lưu vị trí hiện thời thành dấu trang"
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Đã lưu vị trí tại kí tự %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Không thể lưu dấu trang"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Xóa dấu trang hiện thời"
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Không có dấu trang nào được chọn"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Đã xóa dấu trang"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Không thể xóa dấu trang"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "Chuyển đến dấu trang tiếp theo"
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Không tìm thấy dấu trang"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Vị trí: kí tự %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Không tìm thấy dấu trang tiếp theo"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "Chuyển đến dấu trang trước."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Không tìm thấy dấu trang trước"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "Chép tên của tập tin muốn đánh dấu hiện thời vào bộ  nhớ tạm."
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "Không thể sao chép tên tập tin để đánh dấu"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "Đã chép tên tập tin đánh dấu vào bộ nhớ tạm"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Lưu vị trí hiện thời thành dấu trang."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Đã lưu dấu trang tạm thời tại vị trí %d"
 
 #. Translators: Message presented in input help mode.
-msgid "Reports first object of the Status Bar."
-msgstr "Thông báo đối tượng thứ nhất của thanh trạng thái."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports second object of the Status Bar."
-msgstr "Thông báo đối tượng thứ hai của thanh trạng thái."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports third object of the Status Bar."
-msgstr "Thông báo đối tượng thứ ba của thanh trạng thái."
-
-#. Translators: Message presented in input help mode.
-msgid "Reports fourth object of the Status Bar."
-msgstr "Thông báo đối tượng thứ tư của thanh trạng thái."
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Chuyển tới dấu trang tạm thời cho tài liệu hiện tại."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "eMule"
-msgstr "eMule"
+msgid "Place markers"
+msgstr "Đánh dấu"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid ""
-"Improves eMule's accessibility with NVDA.\n"
-"eMule is a P2P program to search and share files.\n"
-"You can get more information about eMule at\n"
-"http://www.emule-project.net"
-msgstr ""
-"Cải thiện khả năng tiếp cận của eMule's với NVDA.\n"
-"eMule là chương trình P2P để tìm kiếm và chia sẻ dữ liệu.\n"
-"Xem thêm thông tin về eMule tại\n"
-"http://www.emule-project.net"
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "Add-on thực hiện đánh dấu trên các tài liệu ảo"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Không thể lưu dấu trang"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Không thể xóa dấu trang"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Không thể tìm thấy bất kỳ dấu trang nào"
