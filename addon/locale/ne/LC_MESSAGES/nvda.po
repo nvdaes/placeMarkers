@@ -5,258 +5,124 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2016-02-26 02:18-0800\n"
-"Last-Translator: drishtibachak@gmail.com\n"
-"Language-Team: Nepali <drishtibachak@gmail.com>\n"
+"Project-Id-Version: eMule 1.2-dev\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-02-01 17:16+0100\n"
+"PO-Revision-Date: 2016-02-26 02:17-0800\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 
-#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
-msgstr ""
-"तपाइको नेत्रवाणी अभियोजन थैलीमा यो उपकर्मीका पुराना फाइलहरू रहेछन् । के तपाइ यसलाई "
-"अद्यावधिक गर्न चाहनु हुन्छ ?"
+#. Translators: Message presented in input help mode.
+msgid "Reads the specified column for the current list item."
+msgstr "चालू सूची सामाग्रीको निर्दिष्ट महल पढ्ने छ ।"
 
-#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Install or update add-on"
-msgstr "उपकर्मीलाई भित्र्याउ अथवा अद्यावधिक गर ।"
-
-#. Translators: label of error dialog, translated in NVDA core.
-#, python-format
-msgid "text \"%s\" not found"
-msgstr "पाठ \"%s\" भेट्टिएन ।"
-
-#. Translators: title of error dialog, translated in NVDA core.
-msgid "Find Error"
-msgstr "त्रुटी भेट्टाउ ।"
-
-#. Translators: message presented when a string of text has been copied to the clipboard.
+#. Translators: Message presented when the current column of the list item is copied to clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s लाई क्लीपपाटीमा उतारियो ।"
+msgstr "%s लाई क्लिप पाटीमा उतारियो ।"
 
-#. Translators: the name of addon submenu.
-msgid "P&lace markers"
-msgstr "श्थान &चिनो"
+#. Translators: Message presented in input help mode.
+msgid "Copies the last read column of the selected list item to clipboard."
+msgstr "चयनीत सूची सामाग्री अन्तिम पटक पढेको महललाइ क्लिपपाटीमा उतार्ने छ ।"
 
-#. Translators: the tooltip text for addon submenu.
-msgid "Bookmarks and Search menu"
-msgstr "पुस्तकचिनो र खोजी मेनु ।"
+#. Translators: Message presented in input help mode
+msgid "Moves the system focus and mouse to the main Tool Bar."
+msgstr "पद्धति केन्द्रीयता र सुलसुलेलाई मुख्य औजार पट्टीमा लेजान्छ ।"
 
-#. Translators: the name for an item of addon submenu.
-msgid "&Specific search folder"
-msgstr "&विशेष खोजी थैली"
+#. Translators: Message presented in input help mode.
+#. For instance: reads the search window, Statistics, IRC, etc.
+msgid "Reports the current window."
+msgstr "चालू सञ्झ्याललाई बताउने छ ।"
 
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the specific search folder"
-msgstr "विशेष खोजी थैलीलाई खोल्ने छ ।"
+#. Translators: Message presented in input help mode.
+msgid "Moves the system focus to the Name field of the Search window."
+msgstr "पद्धति केन्द्रीयता लाई अन्वेषित सञ्झ्याल नाम भएको भुमीमा लेजान्छ ।."
 
-#. Translators: the name for an item of addon submenu.
-msgid "&Bookmarks folder"
-msgstr "&पुस्तकचिनो थैली"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the bookmarks folder"
-msgstr "पुस्तकचिनो थैली खोल्ने छ ।"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Copy placeMarkers folder..."
-msgstr "&स्थान चिनो थैलीको नक्कल उतार्ने छ ।"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Backup of place markers"
-msgstr "स्थान चिनोको पृष्ट सुरक्षा ।"
-
-#. Translators: the name for an item of addon submenu.
-msgid "R&estore place markers..."
-msgstr "&स्थान चिनोको पुनर्स्थापन ।..."
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Restore previously saved place markers"
-msgstr "विगतमा सञ्चीत स्थान चिनोलाई पुनर्स्थापित गर ।"
-
-#. Translators: label of a dialog presented for copying place markers.
-msgid "Select a folder for copying your saved place markers"
-msgstr "बचत गरिएका स्थान चिनोहरूको नक्कल राख्ने थैलीको चयन गर ।"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "थैलीको नक्कल उतारिएन ।"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "नक्कल उतार्दा त्रुटी ।"
-
-#. Translators: label of a dialog presented for restoring place markers.
-msgid "Select the place markers folder you wish to restore"
-msgstr "तपाइले पुनर्स्थापन गर्न चाहेको स्थान चिनो थैलीको चयन गर्नु होस् ।"
-
-#. Translators: label of a dialog presented to save or delete a string for specific search.
+#. Translators: Message presented in input help mode.
 msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved searches"
+"Moves the system focus and mouse to the search parameters list or Edit field "
+"for each option, in the Search window."
 msgstr ""
-"बचत गर्न इच्छा लागेको पाठ टङ्कण गर्नु होस्, अथवा यदि तपाई विगतमा बचत गरिएको खोजीलाई "
-"हटाउन चाहनु हुन्छ भने त्यो पाठलाई मेट्नु होस् ।"
+"पद्धति केन्द्रीयता र सुलसुलेलाई अन्वेषित सञ्झ्यालका विकल्पहरूमा खोजि गरिएका इकाइ सूचीहरू "
+"अथवा सम्पादन भुमीमा लेजान्छ । "
 
-#. Translators: title of a dialog presented to save a string for specific search.
-msgid "Save text for specific search"
-msgstr "विशेष खोजीका लागि पाठ बचत गर ।"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves a text string for a specific search."
-msgstr "विशेष खोजीका लागि पाठ पदावली बचत गर ।"
-
-#. Translators: message presented when there is not file for specific search.
-msgid "File for specific search not found"
-msgstr "विशेष खोजीका लागि फाइल पाइएन ।"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: Message presented in input help mode.
 msgid ""
-"finds a text string from the current cursor position for a specific document."
+"Moves the system focus to the first list in the current window. For example "
+"the results list in the Search window, downloads in Transfer, etc."
 msgstr ""
-"विशेष कागजातहरूमा चालू क्रसर रहेको स्थान देखि अगाडी रहेको पाठ पदावलीलाई फेला पार ।"
+"पद्धति केन्द्रीयता लाई चालू सञ्झ्यालको पहिलो सूचीमा लेजान्छ । जस्तै अन्वेषणको नतिजा सूची, "
+"डाउनलोड हस्तान्तरण आदी ।"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "पुस्तकचिनोलाई बचत गर्न सकिएन ।"
+#. Translators: Message presented in input help mode.
+msgid ""
+"Moves the system focus to read-only edit boxes in the current window. For "
+"example the IRC received messages."
+msgstr ""
+"पद्धति केन्द्रीयतालाई  चालू सञ्झ्यालको पठनिय मात्रै सम्पादन कोष्ठमा लेजान्छ । जस्तै IRC बाट "
+"प्राप्त सन्देसमा "
 
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "यो स्थान त पहिले नै बचत गरिएको छ ।"
+#. Translators: Message presented in input help mode.
+msgid "Moves the navigator object and mouse to the current list headers."
+msgstr "विचरण वस्तु र सुलसुलेलाइ चालू सूचीको शिर्षकमा लेजान्छ ।"
 
-#. Translators: message presented when a position is saved as a bookmark.
-#, python-format
-msgid "Saved position at character %d"
-msgstr "वर्ण %d स्थानमा बचत गरियो ।"
+#. Translators: Message presented in input help mode.
+msgid "Reports first object of the Status Bar."
+msgstr "स्थिति पट्टीको पहिलो सामाग्री बताउने छ ।"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Cannot save bookmark"
-msgstr "पुस्तकचिनो बचत गर्न सकिदैन ।"
+#. Translators: Message presented in input help mode.
+msgid "Reports second object of the Status Bar."
+msgstr "स्थिति पट्टीको दोश्रो सामाग्री बताउने छ ।"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "चालु स्थानलाई पुस्तकचिनोको रुपमा बचत गर्ने छ ।"
+#. Translators: Message presented in input help mode.
+msgid "Reports third object of the Status Bar."
+msgstr "स्थिति पट्टीको तेस्रो सामाग्री बताउने छ ।"
 
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "कुनै पुस्तकचिनो छैन ।"
-
-msgid "Bookmark cannot be deleted"
-msgstr "पुस्तकचिनो मेटाउन सकिएन ।"
-
-#. Translators: message presented when the current document has bookmarks, but none is selected.
-msgid "No bookmark selected"
-msgstr "कुनै पुस्तकचिनो चयनित छैन ।"
-
-#. Translators: message presented when a bookmark is deleted.
-msgid "Bookmark deleted"
-msgstr "पुस्तकचिनो मेटीयो ।"
-
-#. Translators: message presented when cannot delete a bookmark.
-msgid "Cannot delete bookmark"
-msgstr "पुस्तकचिनो मेटाउन सकिदैन ।"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "चालु पुस्तकचिनोलाई मेटाउने छ ।"
-
-#. Translators: message presented when trying to select a bookmark, but none is found.
-msgid "No bookmarks found"
-msgstr "पुस्तक चिनो पाइएन ।"
-
-#. Translators: message presented when cannot find any bookmark.
-msgid "Cannot find any bookmark"
-msgstr "कुनै पुस्तक चिनो पाउन सकिएन ।"
-
-#. Translators: message presented when a bookmark is selected.
-#, python-format
-msgid "Position: character %d"
-msgstr "स्थान: वर्ण %d"
-
-#. Translators: message presented when the next bookmark is not found.
-msgid "Next bookmark not found"
-msgstr "पछिल्लो पुस्तकचिनो पाइएन ।"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "पछिल्लो पुस्तकचिनोमा जान्छ ।"
-
-#. Translators: message presented when the previous bookmark is not found.
-msgid "Previous bookmark not found"
-msgstr "अघिल्लो पुस्तकचिनो पाइएन ।"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "अघिल्लो पुस्तकचिनोमा जान्छ ।"
-
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "स्थान चिनोको लागि फाइलको नक्कल उतार्न सकिएन । "
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "स्थान चिनो फाइललाई क्लीपपाटीमा उतारियो ।"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "चालू फाइललाई स्थान चिनोको लागी क्लीपपाटीमा उतार्छ ।"
-
-#. Translators: This is the label for the specific search settings dialog.
-msgid "Specific Search"
-msgstr "विशेष खोजी"
-
-#. Translators: This is the label for a textfield in the
-#. specific search settings dialog.
-msgid "&Text to search:"
-msgstr "&खोज्नु पर्ने पाठ"
-
-#. Translators: The label for a setting in specific search to select a saved text.
-msgid "&Saved texts:"
-msgstr "&बचत पाठ"
-
-#. Translators: A combo box to choose a saved text.
-msgid "Saved texts to search:"
-msgstr "विशेष खोजीका लागि पाठ बचत गर ।"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search down"
-msgstr "तल खोजी"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search up"
-msgstr "माथि खोजी"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Delete"
-msgstr "मेटाउ"
-
-#. Translators: The label for a setting in specific search to select an action.
-msgid "&Actions to choose:"
-msgstr "&कार्यको रोजाई"
-
-#. Translators: A combo box to choose an action.
-msgid "Select an action to perform:"
-msgstr "सम्पादन गरीने कार्यको चयन गर्नु होस् ।"
-
-#. Translators: An option in specific search to perform case-sensitive search, copied from core.
-msgid "Case &sensitive"
-msgstr "वर्ण &संवेदनसिल"
+#. Translators: Message presented in input help mode.
+msgid "Reports fourth object of the Status Bar."
+msgstr "स्थिति पट्टीको चौथो सामाग्री बताउने छ ।"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Place markers"
-msgstr "स्थान चिनो "
+msgid "eMule"
+msgstr "ईम्युल"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "विशेष अवास्तविक कागजातहरूमा स्थान चिनो अनुकूलन गर्ने उपकर्मी ।"
+#, fuzzy
+msgid ""
+"Improves eMule's accessibility with NVDA.\n"
+"eMule is a P2P program to search and share files.\n"
+"You can get more information about eMule at\n"
+"http://www.emule-project.net"
+msgstr ""
+"नेत्रवाणीमा ईम्युलको पहुँच बढाउने छ ।\n"
+"ईम्युल खोज्ने र फाइल साझेदारी गर्ने  P2P कार्यक्रम हो ।\n"
+"तपाइले ईम्युल सम्बन्धी थप जानकारीहरू\n"
+"https://www.emule-project.net मा पाउन सक्नु हुन्छ ।"
+
+#~ msgid "text \"%s\" not found"
+#~ msgstr "पाठ \"%s\" पाइएन"
+
+#~ msgid "Find Error"
+#~ msgstr "त्रुटी फेला पार"
+
+#~ msgid "Search for:"
+#~ msgstr "के खोज्ने:"
+
+#~ msgid "eMule search"
+#~ msgstr "ईम्युल खोजी"
+
+#~ msgid "Opens the find dialog when in read only edit boxes."
+#~ msgstr "पठनीय सम्पादन भूमिमा हुँदा फेला पार भन्ने पातोलाई पल्टाउने छ ।"
+
+#~ msgid "Find next occurence."
+#~ msgstr "अगाडी रहेको यही सामाग्री फेला पार।"
+
+#~ msgid "Find previous occurrence."
+#~ msgstr "पछाडी रहेको यही सामाग्री फेला पार।"
