@@ -290,16 +290,14 @@ msgid "Previous bookmark not found"
 msgstr "نشانِ قبلی پیدا نشد"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "اسمِ فایلِ فعلی را برای نشان‌گذاری‌ها کپی میکند."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "نمیتوانم اسمِ فایل را برای نشان‌گذاری‌ها کپی کنم"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "اسمِ فایلِ نشان‌گذاری‌ها در کلیپ‌برد کپی شد"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -323,6 +321,12 @@ msgstr "نشان‌گذاری‌ها"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه‌ای برای تنظیمِ نشان‌گذاری‌ها در اسنادِ مجازی"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "نمیتوانم اسمِ فایل را برای نشان‌گذاری‌ها کپی کنم"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "اسمِ فایلِ نشان‌گذاری‌ها در کلیپ‌برد کپی شد"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "نشان ذخیره نشد"

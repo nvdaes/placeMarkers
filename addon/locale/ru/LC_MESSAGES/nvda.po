@@ -301,16 +301,14 @@ msgid "Previous bookmark not found"
 msgstr "Нет предыдущей закладки"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Копирует имени текущего файла закладок в буфер обмена."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Не удалось скопировать имя файла закладок"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Имя файла закладок скопировано в буфер обмена"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, fuzzy
@@ -335,6 +333,12 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Дополнение для установки закладок в документы с виртуальном буфером"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Не удалось скопировать имя файла закладок"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Имя файла закладок скопировано в буфер обмена"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "Не возможно сохранить закладку"

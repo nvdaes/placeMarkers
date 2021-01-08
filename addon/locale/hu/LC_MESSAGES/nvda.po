@@ -301,16 +301,14 @@ msgid "Previous bookmark not found"
 msgstr "Nincs előző könyvjelző"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Az aktuális helyjelző fájlnevét a vágólapra másolja."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Nem másolható a helyjelző fájl neve"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "A helyjelző fájlneve a vágólapra másolva"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -334,6 +332,12 @@ msgstr "Helyjelzők"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Kiegészítő a helyjelzők elhelyezésére virtuális dokumentumokban"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nem másolható a helyjelző fájl neve"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "A helyjelző fájlneve a vágólapra másolva"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "A könyvjelző nem menthető"
