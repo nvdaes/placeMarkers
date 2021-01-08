@@ -296,16 +296,14 @@ msgid "Previous bookmark not found"
 msgstr "Predhodni zaznamek se ni našel"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Preslika ime trenutne datoteke s prostorskimi označbami v odložišče."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Ni mogoče preslikati imena datoteke za prostorske označbe"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Ime datoteke prostorskih označb preslikano v odložišče"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -330,6 +328,12 @@ msgstr "Prostorske označbe"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Dodatek za postavitev prostorskih označb v izbranih navideznih dokumentih"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Ni mogoče preslikati imena datoteke za prostorske označbe"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Ime datoteke prostorskih označb preslikano v odložišče"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "Zaznamek se ne more shraniti"

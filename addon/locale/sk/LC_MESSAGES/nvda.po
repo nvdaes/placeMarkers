@@ -287,16 +287,14 @@ msgid "Previous bookmark not found"
 msgstr "Žiadna predchádzajúca záložka"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Skopíruje názov súboru so záložkami do schránky."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Nie je možné skopírovať názov súboru so záložkami"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Názov súboru so záložkami skopírovaný do schránky"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -321,6 +319,12 @@ msgstr "Záložky"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "umožňuje pridávať záložky do dokumentov zobrazených v režime prehliadania "
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nie je možné skopírovať názov súboru so záložkami"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Názov súboru so záložkami skopírovaný do schránky"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "Záložku sa nepodarilo uložiť"

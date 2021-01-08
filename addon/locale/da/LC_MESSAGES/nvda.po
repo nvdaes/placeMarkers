@@ -292,17 +292,15 @@ msgid "Previous bookmark not found"
 msgstr "Forrige bogmærke ikke fundet"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Kopierer navnet på den aktuelle fil til stedmærker til udklipsholderen."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Kan ikke kopiere filnavn til stedmærker"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Filnavn til stedmærker kopieret til udklipsholder"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -327,6 +325,12 @@ msgstr "Stedmærker"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Tilføjelsesprogram til at sætte stedmærker i specifikke virtuelle dokumenter"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Kan ikke kopiere filnavn til stedmærker"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Filnavn til stedmærker kopieret til udklipsholder"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "Bogmærke kan ikke gemmes"

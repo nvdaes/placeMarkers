@@ -297,18 +297,16 @@ msgid "Previous bookmark not found"
 msgstr "Vorheriges Lesezeichen nicht gefunden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Kopiert den Dateinamen der aktuellen Datei für die Lesezeichen in die "
 "zwischenablage."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Dateiname der Lesezeichen in die Zwischenablage kopiert"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -332,6 +330,12 @@ msgstr "Lesezeichen"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Erweiterung zum Einstellen der Lesezeichen in virtuellen Ansichten."
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Dateiname der Lesezeichen in die Zwischenablage kopiert"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "Lesezeichen konnte nicht gespeichert werden"

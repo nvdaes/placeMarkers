@@ -299,19 +299,16 @@ msgid "Previous bookmark not found"
 msgstr "Não encontrado marcador anterior"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Copia o nome do arquivo atual de marcadores de lugar para a área de "
 "transferência."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Impossível copiar nome do arquivo de marcadores de lugar"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
 msgstr ""
-"Nome do arquivo de marcadores de lugar copiado para a área de transferência"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
@@ -336,6 +333,14 @@ msgstr "Marcadores de lugar"
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para criar marcadores de lugar em documentos virtuais específicos"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Impossível copiar nome do arquivo de marcadores de lugar"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr ""
+#~ "Nome do arquivo de marcadores de lugar copiado para a área de "
+#~ "transferência"
 
 #~ msgid "Bookmark cannot be saved"
 #~ msgstr "O marcador não pode ser salvo"
