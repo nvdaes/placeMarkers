@@ -1,7 +1,6 @@
 # placeMarkers #
-
 * Autores: Noelia, Chris.
-* Compatibilidad con NVDA: de 2018.3 a 2019.1
+* Compatibilidad con NVDA: 2019.3 o posterior.
 * descargar [versión estable][1]
 * descargar [versión de desarrollo][2]
 
@@ -35,14 +34,18 @@ teclas y características.
   posición.
 *	NVDA+k: se mueve a la marca siguiente.
 *	shift+NVDA+k: se mueve a la marca anterior.
-*	control+shift+k: copia el nombre del fichero donde se guardarán los datos
-  de las marcas al portapapeles, sin una extensión.
+*	Sin asignar: muestra el nombre del archivo donde se guardarán los datos de
+  Place Markers en modo exploración, sin extensión.
 *	alt+NVDA+k: abre un diálogo con las marcas guardadas para este
   documento. Puedes escribir una nota para cada marca; pulsa Guardar Nota
   para guardar cambios. Pulsando Aceptar puedes moverte a la posición
   seleccionada.
 *	Sin asignar: guarda la posición actual como una marca temporal.
 *	Sin asignar: Se mueve a la marca temporal para el documento actual.
+*	Sin asignar: encuentra la siguiente coincidencia del último texto buscado
+  en cualquier documento específico.
+*	Sin asignar: encuentra la coincidencia anterior del último texto buscado
+  en cualquier documento específico.
 
 
 ## Submmenú Place markers (NVDA+N) ##
@@ -61,6 +64,31 @@ a:
 Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
+
+## Cambios para 14.0 ##
+*	La orden para copiar el nombre del archivo donde se guardarán los datos de
+  Place Markers se ha sustituido por una orden que muestra el nombre de este
+  archivo en modo exploración. Esta orden no tiene gesto asignado.
+*	El campo "Texto a buscar" ya no se superpone al campo "Texto
+  guardado". (Gracias a Cyrille Bougot).
+*	Se requiere NVDA 2019.3 o posterior.
+
+## Cambios para 13.0 ##
+*	Se han añadido órdenes sin asignar para encontrar las coincidencias
+  siguientes y anteriores del último texto buscado de cualquier documento
+  específico.
+*	La característica de búsqueda específica funciona cuando el diálogo Acerca
+  de NVDA está abierto.
+*	En el diálogo de búsqueda específica, la casilla sensible a mayúsculas
+  estará marcada si se seleccionó esta opción en la última búsqueda.
+*	Cuando el complemento se actualice, los marcadores y las cadenas de
+  búsqueda específica guardadas en la versión anterior del complemento se
+  copiarán automáticamente a la nueva versión, a menos que prefieras
+  importar marcadores de la carpeta de configuración principal de NVDA.
+*	Al usar el diálogo para copiar marcadores, si la carpeta elegida no se
+  llama placeMarkersBackup, se creará una subcarpeta con este nombre para
+  evitar la eliminación de directorios que contengan datos importantes,
+  tales como Documentos o Descargas.
 
 ## Cambios para 12.0 ##
 *	Solucionado un error crítico que causaba el cierre de NVDA al tratar de
@@ -146,6 +174,7 @@ y no las marcas.
 * Traducido a: Alemán, Coreano, Eslovaco, Esloveno, Español, Farsi,
   Finlandés, Francés, Gallego, Italiano, Japonés, Nepalí, Portugués,
   Portugués del Brasil, Tamil.
+
 
 [[!tag dev stable]]
 

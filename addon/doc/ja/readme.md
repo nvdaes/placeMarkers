@@ -1,104 +1,85 @@
 # placeMarkers #
-
 * 作者: Noelia, Chris.
+* NVDA互換性: 2019.3以降
 * ダウンロード [安定版][1]
 * ダウンロード [開発版][2]
 
-This addon is used for saving and searching specific text strings or
-bookmarks. It can be used  on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-bookmarks to files whose name is based on the title and URL of the current
-document.  This addon is based on SpecificSearch and Bookmark&Search,
-developed by the same author. You should uninstall them to use this one,
-since they have common keystrokes and features.
+このアドオンは、特定の文字列やブックマークを保存して検索するのに使用されます。これはWebページまたはNVDAのブラウズモードのドキュメントに使用出来ます。また、複数行のコントロール中のテキストを保存したり検索したりするのに使用出来ます。この場合、キャレットを更新出来ない場合は、対応する文字列がクリップボードにコピーされ、他のツールを使用して検索出来るようになります。このプラグインは特定の文字列とブックマークを、そのドキュメントのタイトルとURLに基づいて付けられた名前のファイルに保存します。このアドオンは、同じ作者により開発された、SpecificSearchとBookmard&Searchに基づいています。よって、このアドオンを使用するには、これらをアンインストールしなければなりません。共通のショートカットキーと機能があるからです。
 
 ## キー操作: ##
 
-*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
-  saved search; in this dialog you can also select the previously saved
-  searches from a combo box or remove the selected string from the history
-  using a checkbox. You can choose if the text contained in the edit box
-  will be added to the history of your saved texts. Finally, choose an
-  action from the next group of radio buttons (between Search next, Search
-  previous or Don't search), and specify if NVDA will make a case sensitive
-  search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
-  position before saving it.
-*	control+shift+NVDA+delete: Deletes the bookmark corresponding to this
-  position.
-*	NVDA+k: Moves to the next bookmark.
-*	shift+NVDA+k: Moves to the previous bookmark.
-*	control+shift+k: Copies the file name where the place markers data will be
-  saved to the clipboard, without an extension.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
+*	control+shift+NVDA+f:
+  最後に保存された検索のエディットボックスのあるダイアログを開きます。このダイアログでは以前に保存した検索をコンボボックスから選択したり、選択した文字列をチェックボックスを使用して履歴から削除したり出来ます。エディットボックスに含まれる文字列を、保存した文字列の履歴に追加するかどうかを選択出来ます。最後に、次の組のラジオボタンから、動作を選択します（次を検索、前を検索、または検索しない）。OKを押すと、NVDAはその文字列を探します。
+*	control+shift+NVDA+k:
+  現在の位置をブックマークとして保存します。このブックマークに名前を付けたい場合は、保存する前に、この位置で何か文字列を選択します。
+*	この位置に対応するブックマークを削除します。
+*	NVDA+k: 次のブックマークに移動します。
+*	shift+NVDA+k: 前に移動します。
+*	アサインなし: ブラウズモードで、place markersがデータを保存するファイル名を、拡張子なしで表示します。
+*	alt+NVDA+k:
+  このドキュメントに対して保存されているブックマークのダイアログを開きます。それぞれのブックマークに対してノートを書くことが出来ます。変更を保存するには、ノートを保存を押します。削除を押すと、選択されたブックマークを削除出来ます。OKを押すと選択された場所に移動出来ます。
+*	アサインなし: 一時的なブックマークとして位置を保存します。
+*	アサインなし: 現在のドキュメントの一時的なブックマークに移動します。
+*	アサインなし: 特定のドキュメントで最後に検索された文字列について、次の物を見つけます。
+*	アサインなし: 特定のドキュメントで最後に検索された文字列について、前の物を見つけます。
 
 
 ## プレイスマーカーのサブメニュー(NVDA+N) ##
 
-Using the Place markers submenu under NVDA's Preferences menu, you can
-access:
+NVDAの設定メニュー下の、Place Markersのサブメニューを利用して、次の物にアクセス出来ます。
 
 *	検索保存フォルダー: 検索保存フォルダーを開きます。
-*	Bookmarks folder: Opens a folder of the saved bookmarks.
-*	Copy placeMarkers folder: You can save a copy of the bookmarks folder.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+*	ブックマークフォルダー: 保存したブックマークのフォルダーを開きます。
+*	プレイスマーカーフォルダーのコピー: ブックマークフォルダーのコピーを保存出来ます。
+*	マーカー情報の復元: マーカー情報のバックアップからブックマークを復元できます。
 
-Note: The bookmark position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-bookmarks.
+補足:
+ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
 
+## 14.0の変更点 ##
+*	place
+  markersのデータが保存されるファイル名のコピーのコマンドが、ブラウズモードでそのファイル名を表示するコマンドに変更されました。これはジェスチャーに割り当てされていません。
+*	「検索文字列」フィールドが「保存された文字列」フィールドに重ならなくなりました（Cyrille Bougotのおかげです）。
+*	NVDA2019.3以降が必要です。
 
-## Changes for 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+## 13.0の変更点 ##
+*	特定のドキュメントで最後に検索した文字列の次または前の物を見つける、アサインなしのコマンドを追加しました。
+*	特定の検索機能は、NVDAのAboutダイアログが開いている時に動作します。
+*	特定の検索のダイアログでは、最後に行った検索でチェックされていた場合、大文字と小文字の区別のチェックボックスはチェックされます。
+*	アドオンがアップデートされた場合、アドオンの前のバージョンで保存されていたブックマークと特定の検索の文字列は、自動的に新しいバージョンにコピーされます。ただし、Place
+  MarkersをNVDAのメインの設定フォルダに保存するようにしている場合を除きます。
+*	Place
+  Markersをコピーするダイアログを使用する時、選択されたフォルダの名前が、placeMarkersBackupでない場合は、この名前のサブフォルダが作られ、ドキュメントやダウンロードなどの重要なデータを含むディレクトリが消去されてしまうのを防ぎます。
 
-## Changes for 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+## 12.0の変更点 ##
+*	ノートダイアログを開こうとした時に、ブックマークの保存前に、中国の文字が選択されていると、NVDAのクラッシュの原因となる重大なバグを修正しました。
 
-## Changes for 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+## 11.0の変更点 ##
+*	NVDA 2018.3以降に互換します。（2018.3以降が必要）
+*	必要な場合は、NVDA 2017.3に互換する最後のバージョン[3]もダウンロード出来ます。
 
-## Changes for 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in the VitalSource Bookshelf ePUB reader.
-*	Added a Notes dialog, to associate comments for saved bookmarks and move
-  to the selected position.
+## 10.0の変更点 ##
+*	Edgeでは、ブックマーク選択に関するジェスチャー、NVDA+k、NVDA+shift+kまたはNVDA+alt+kは、カーソルをブックマークに移動する代わりに、アプリケーションに送られます。これは、特に長いドキュメントにおいて、エラーを避けるためです。
+*	現時点では、Edgeでは、特定の検索がサポートされています。
 
-## Changes for 7.0 ##
-*	The dialog to save a string of text for specific search has been
-  removed. This functionality is now included in the Specific search dialog,
-  which has been redesigned to allow different actions when pressing the OK
-  button.
-*	The visual presentation of the dialogs has been enhanced, adhering to the
-  appearance of the dialogs shown in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
-*	Requires NVDA 2016.4 or later.
-*	Now you can assign gestures to open the Copy and Restore place markers
-  dialogs.
-*	NVDA will present a message to notify when place markers have been copied
-  or restored with the corresponding dialogs.
+## 9.0の変更点
+*	ノートダイアログからブックマークに移動する時に、レビューカーソルがシステムカーソルを追随します。
+*	前のブックマークを選択するコマンドが、適切に動作するようになりました。
+*	ブックマークをノートダイアログから削除出来ます。
+*	それぞれのドキュメントに対して一時的なブックマークを保存したり移動したりするジェスチャーを保存出来ます。
+
+## 8.0の変更点 ##
+*	部分識別子をブックマークのファイル名から削除しました。これにより、VitalSource Bookshelf ePub
+  Readerでの問題を回避出来ます。
+*	ノートダイアログを追加して、保存されたブックマークにコメントを付けられるようにし、選択された位置に移動出来るようになりました。
+
+## 7.0の変更点 ##
+*	特定の検索の文字列を保存するダイアログが除かれました。この機能は現在、特定の検索のダイアログに含まれ、OKボタンを押した時に別の動作となるように再設計されました。
+*	ダイアログの見た目が拡張され、NVDAで見られるダイアログの外見に似るようになりました。
+*	元々の見つけるでの検索が、大文字と小文字を区別する物だった場合に、ブラウズモードでの、次を見つける、前を見つけるコマンドの実行が、正確に大文字と小文字を区別して行われるようになりました。
+*	NVDA2016.4以降が必要です。
+*	Place markersのコピーと復元ダイアログを開くジェスチャーを設定出来るようになりました。
+*	Place markersがコピーまたは復元されると、NVDAは、対応するダイアログでメッセージを表示します。
 
 ## 6.0の変更点 ##
 * ジェスチャーに対応するアドオンの機能が使用出来ない場合、そのジェスチャーは対応するアプリケーションに送られるようになりました。
@@ -129,9 +110,11 @@ bookmarks.
 * 次の言語に翻訳されました:
   ブラジルポルトガル語、ファルシ(ペルシア)語、フィンランド語、フランス語、ガリシア語、ドイツ語、イタリア語、日本語、韓国語、ネパール語、ポルトガル語、スペイン語、スロバキア語、スロベニア語、タミル語
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev [3]:
-https://github.com/nvdaes/placeMarkers/releases/download/10.2/placeMarkers-10.2.nvda-addon
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

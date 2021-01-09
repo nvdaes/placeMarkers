@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 4.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-19 16:00+1000\n"
-"PO-Revision-Date: 2018-06-16 16:38+0100\n"
+"PO-Revision-Date: 2019-12-15 19:03+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -222,12 +222,24 @@ msgid ""
 msgstr "Traži tekst za specifični dokument od trenutne pozicije kursora."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "Pretražuje sledeći rezultat pretrage teksta u dokumentu"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "Pretražuje prethodni rezultat traženog teksta u dokumentu"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Prikazuje dijalog sa beleškama za trenutni dokument."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Marker ne može biti sačuvan"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Čuva trenutnu poziciju kao marker"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -239,12 +251,8 @@ msgid "Cannot save bookmark"
 msgstr "Nije moguće sačuvati marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Čuva trenutnu poziciju kao marker"
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Marker ne može biti obrisan"
+msgid "Deletes the current bookmark."
+msgstr "Briše trenutni marker"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -259,16 +267,12 @@ msgid "Cannot delete bookmark"
 msgstr "Nije moguće obrisati marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Briše trenutni marker"
+msgid "Moves to the next bookmark."
+msgstr "Premešta se na sledeći marker"
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Nije pronađen nijedan marker"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Nije moguće pronaći nijedan marker"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -280,37 +284,31 @@ msgid "Next bookmark not found"
 msgstr "Nije pronađen sledeći marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Premešta se na sledeći marker"
+msgid "Moves to the previous bookmark."
+msgstr "Premešta se na prethodni marker"
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Nije pronađen prethodni marker"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Premešta se na prethodni marker"
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
+msgstr "Kopira ime datoteke markera u privremenu memoriju"
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Nije moguće kopirati ime datoteke za markere"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Ime datoteke markera kopirano u privremenu memoriju"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Kopira ime datoteke markera u privremenu memoriju"
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Čuva trenutnu poziciju kao privremeni marker."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Sačuvan privremeni marker na poziciji %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Čuva trenutnu poziciju kao privremeni marker."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -325,3 +323,18 @@ msgstr "Place markers"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Dodatak za postavljanje markera na virtuelnim dokumentima"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nije moguće kopirati ime datoteke za markere"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Ime datoteke markera kopirano u privremenu memoriju"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Marker ne može biti sačuvan"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Marker ne može biti obrisan"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nije moguće pronaći nijedan marker"

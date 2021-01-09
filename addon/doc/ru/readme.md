@@ -1,7 +1,6 @@
 # placeMarkers #
-
 * Авторы: Noelia, Chris.
-* NVDA compatibility: 2018.3 to 2019.1
+* NVDA compatibility: 2019.3 or later.
 * загрузить [стабильную версию][1]
 * загрузить [разрабатываемую версию][2]
 
@@ -34,14 +33,18 @@
   position.
 *	NVDA+k: Moves to the next bookmark.
 *	shift+NVDA+k: Moves to the previous bookmark.
-*	control+shift+k: Copies the file name where the place markers data will be
-  saved to the clipboard, without an extension.
+*	Not assigned: Shows the file name where the place markers data will be
+  saved in browse mode, without an extension.
 *	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
   can write a note for each bookmark; press Save note to save
   changes. Pressing Delete you can remove the selected bookmark. Pressing OK
   you can move to the selected position.
 *	Not assigned: Saves a position as a temporary bookmark.
 *	Not assigned: Moves to the temporary bookmark for the current document.
+*	Not assigned: Finds the next occurrence of the last text searched for any
+  specific document.
+*	Not assigned: Finds the previous occurrence of the last text searched for
+  any specific document.
 
 
 ## Подменю Закладки (NVDA+N) ##
@@ -59,6 +62,29 @@
 Примечание: Положение закладки основано на количестве символов; и поэтому на
 страницах с динамическим содержимым лучше использовать конкретный поиск, а
 не закладки которые сохраняют чёткую позицию.
+
+## Changes for 14.0 ##
+*	The command to copy the name of the file where place markers data will be
+  saved has been replaced by a command which shows this file name in browse
+  mode. This is not assigned to a gesture.
+*	The "Text to search" field does not overlap the "Saved text" field
+  anymore. (Thanks to Cyrille Bougot).
+*	Requires NVDA 2019.3 or later.
+
+## Changes for 13.0 ##
+*	Added not assigned commands to find the next and previous occurrences of
+  the last text searched for any specific document.
+*	The specific search feature works when the NVDA's About dialog is open.
+*	In the Specific search dialog, the case sensitive checkbox will be checked
+  if this option was selected for the last search.
+*	When the add-on is updated, bookmarks and strings for specific search
+  saved in the previous version of the add-on will be automatically copied
+  to the new version, unless you prefer to import place markers saved in the
+  main configuration folder of NVDA.
+*	When using the dialog to copy place markers, if the chosen folder is not
+  named placeMarkersBackup, a subfolder with this name will be created to
+  prevent the deletion of directories containing important data, such as
+  Documents or Downloads.
 
 ## Changes for 12.0 ##
 *	Fixed a critical bug which caused NVDA to crash when trying to open the
@@ -140,6 +166,7 @@
 * Переведено на: бразильский португальский, фарси, финский, французский,
   галисийский, немецкий, итальянский, японский, корейский, непальский,
   португальский, испанский, словацкий, словенский, тамильский.
+
 
 [[!tag dev stable]]
 

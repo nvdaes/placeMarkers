@@ -1,152 +1,188 @@
 # placeMarkers #
-
 * Autori: Noelia, Chris.
-* Compatibilità con NVDA: dalla 2018.3 alla 2019.1
-* Scarica la  [versione stabile][1]
-* Scarica la [versione in sviluppo][2]
+* Compatibilità con NVDA: versione 2019.3 e successive.
+* scarica la  [versione stabile][1]
+* scarica la [versione in sviluppo][2]
 
-Questo componente aggiuntivo è utilizzato per salvare segnaposti e cercare
+Questo componente aggiuntivo è utilizzato per salvare e cercare segnaposto e
 stringhe di testo specifiche, sia nelle pagine web che in documenti,
-utilizzando la modalità navigazione di NVDA. Consente la ricerca di stringhe
-in campi di testo editabile; in questo caso, se non è possibile aggiornare
-il cursore, la stringa corrispondente verrà copiata negli appunti, in modo
-che possa essere cercata utilizzando altri strumenti. Il componente
-aggiuntivo salva  i segnaposti e le ricerche specifiche in file che vengono
-nominati secondo il titolo e l'indirizzo  del documento attuale. Place
-Markers deriva da SpecificSearch e Bookmark&Search, sviluppato dalla stessa
-autrice. È preferibile disinstallare i vecchi componenti aggiuntivi, dal
-momento che usano gli stessi comandi ed hanno le stesse funzioni di Place
-Markers. 
+utilizzando la modalità navigazione di NVDA. E' utile anche per salvare e
+cercare  stringhe di testo in campi editazione multilinea; in questo caso,
+se non è possibile aggiornare il cursore, la stringa corrispondente verrà
+copiata negli appunti, in modo che possa essere cercata utilizzando altri
+strumenti. Il componente aggiuntivo salva  i segnaposto e le ricerche
+specifiche in file il cui nome si basa sul titolo e l'indirizzo  del
+documento attuale. Place Markers deriva da SpecificSearch e Bookmark&Search,
+sviluppati dalla stessa autrice. È preferibile disinstallare i vecchi
+componenti aggiuntivi, dal momento che usano gli stessi comandi ed hanno le
+stesse funzioni di Place Markers.
 
 ## Comandi rapidi: ##
 
-*	Control+shift+NVDA+f: apre una finestra con un campo di editazione che
-  mostra l'ultima ricerca salvata; tramite una casella combinata è anche
-  possibile selezionare una ricerca specifica salvata in precedenza  o
-  rimuovere la stringa selezionata dallo storico utilizzando una casella di
-  controllo. È possibile scegliere se il testo contenuto nel campo
-  editazione verrà aggiunto allo storico del testo salvato. Infine, è
-  possibile selezionare tramite radio pulsanti tra le azioni Cerca
-  successiva, Cerca Precedente o Non Cercare, e specificare se considerare
-  le maiuscole o minuscole nella ricerca. Premendo Ok NVDA cercherà la
-  stringa digitata.
-*	control+shift+NVDA+k: Salva la posizione corrente come segnalibro. Se si
-  desidera dare un nome per il segnalibro, selezionare un testo da questa
+*	control+shift+NVDA+f: apre una finestra con un campo editazione che mostra
+  l'ultima ricerca salvata; tramite una casella combinata è anche possibile
+  selezionare una ricerca specifica salvata in precedenza  o rimuovere la
+  stringa selezionata dalle ricerche recenti utilizzando una casella di
+  controllo. Nella stessa finestra, è possibile scegliere se il testo
+  contenuto nel campo editazione verrà aggiunto alle ricerche
+  recenti. Infine è possibile scegliere, tramite pulsanti radio, tra le
+  azioni Cerca successiva, Cerca Precedente o Non Cercare, e specificare se
+  distinguere tra le lettere maiuscole e minuscole nella ricerca. Premendo
+  Ok NVDA cercherà la stringa digitata.
+*	control+shift+NVDA+k: Salva la posizione corrente come segnaposto. Se si
+  desidera dare un nome al segnaposto, selezionare del testo da questa
   posizione prima di salvarlo.
-*	Control+Shift+NVDA+Delete: Elimina il segnaposto corrispondente a questa
+*	control+Shift+NVDA+canc: Elimina il segnaposto corrispondente a questa
   posizione.
-*	NVDA+k: vai al segnaposto successivo.
-*	Shift+NVDA+k: vai al segnaposto precedente.
-*	Control+Shift+K: copia negli appunti il nome del file per il quale
-  verranno salvati i segnaposti e le ricerche. (Il nome non contiene
-  l'estenzione).
-*	alt+NVDA+k: apre una finestra di dialogo con i segnalibri salvati per il
-  documento corrente. È possibile scrivere una nota per ogni segnalibro;
+*	NVDA+k: va al segnaposto successivo.
+*	shift+NVDA+k: va al segnaposto precedente.
+*	Tasto non assegnato: mostra il nome del file per il quale verranno salvati
+  i segnaposto e le ricerche in modalità navigazione. (Il nome non contiene
+  l'estensione).
+*	alt+NVDA+k: apre una finestra di dialogo con i segnaposto salvati per il
+  documento corrente. È possibile scrivere una nota per ogni segnaposto;
   premere Salva nota per salvare le modifiche. Premendo il tasto Canc è
-  possibile rimuovere il segnalibro selezionato. Premendo OK si sposta il
+  possibile rimuovere il segnaposto selezionato. Premendo OK si sposta il
   cursore nella posizione selezionata.
-*	Tasto non assegnato: Salva la posizione attuale come segnalibro
+*	Tasto non assegnato: Salva la posizione attuale come segnaposto
   temporaneo.
-*	Tasto non assegnato: sposta il cursore nel segnalibro temporaneo nel
-  documento corrente. 
+*	Tasto non assegnato: sposta il cursore nel segnaposto temporaneo del
+  documento corrente.
+*	Tasto non assegnato: trova l'occorrenza successiva dell'ultimo testo
+  cercato in uno specifico documento.
+*	Tasto non assegnato: trova l'occorrenza precedente dell'ultimo testo
+  cercato in uno specifico documento.
 
 
-## Sottomenu Segnaposto (NVDA+N) ##
+## Sottomenu Place Markers (NVDA+N) ##
 
-Utilizzando il menu Placemarkes, dal menu Preferenze di NVDA, si può
+Utilizzando il sottomenu Place markers dal menu Preferenze di NVDA, si può
 accedere a:
 
-*	Cartella ricerche specifiche; Apre una cartella delle ricerche specifiche
+*	Cartella ricerche specifiche: Apre una cartella delle ricerche specifiche
   precedentemente salvate.
-*	Cartella segnaposto; Apre una cartella dei segnaposti precedentemente
+*	Cartella segnaposto: Apre una cartella dei segnaposto precedentemente
   salvati.
-*	Copia cartella segnaposti; è possibile salvare una copia della cartella
-  segnaposti.
-*	Ripristinare segnaposti; è possibile ripristinare i segnaposti da una
-  cartella  segnaposti precedentemente salvata.
+*	Copia cartella segnaposto: è possibile salvare una copia della cartella
+  segnaposto.
+*	Ripristina segnaposto: è possibile ripristinare i segnaposto da una
+  cartella  segnaposto precedentemente salvata.
 
-Nota: La posizione del segnalibro è basata sul numero di caratteri; in
+Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
-non i segnaposti per salvare una posizione precisa.
+non i segnaposto, per salvare una posizione precisa.
 
-## Changes for 12.0 ##
+## Novità nella versione 14.0 ##
+*	Il comando per copiare il nome del file in cui vengono salvati i dati di
+  placeMarkers è stato sostituito da un comando che mostra questo nome file
+  in modalità navigazione. Questo comando non è assegnato ad alcun tasto.
+*	Il campo "Testo da cercare" non si sovrappone più al campo "Testo
+  salvato". (Grazie a Cyrille Bougot).
+*	Richiede NVDA 2019.3 o versioni successive.
+
+## Novità nella versione 13.0 ##
+*	Aggiunto un comando, non assegnato ad alcun tasto, per trovare
+  l'occorrenza precedente o successiva dell'ultimo testo cercato in uno
+  specifico documento.
+*	La funzione Ricerca specifica funziona anche quando è aperta la finestra
+  INformazioni su NVDA.
+*	Nella finestra Ricerca specifica, la casella di controllo per distinguere
+  tra lettere maiuscole e minuscole sarà attivata se era già attiva
+  nell'ultima ricerca.
+*	Quando il componente aggiuntivo viene aggiornato, i segnaposto e le
+  stringhe per le ricerche specifiche salvati nella precedente versione
+  saranno automaticamente copiati nella nuova, a meno che non si preferisca
+  importare i segnaposto salvati nella cartella di configurazione principale
+  di NVDA.
+*	Quando si usa la finestra per copiare i segnaposto, se la cartella scelta
+  non si chiama placeMarkersBackup, verrà creata una sottocartella con
+  questo nome, per evitare la cancellazione di cartelle contenenti dati
+  importanti, quali Documenti o Downloads.
+
+## Novità nella versione 12.0 ##
 *	Risolto un errore che causava un crash in NVDA quando si tentava di aprire
-  la finestra di dialogo Note, se i caratteri cinesi venivano selezionati
-  prima di salvare i segnalibri.
+  la finestra di dialogo Note, se venivano selezionati i caratteri cinesi
+  prima di salvare i segnaposto.
 
-## Changes for 11.0 ##
-*	Compatibile con NVDA 2018.3 superiori(required).
+## Novità nella versione 11.0 ##
+*	Compatibile con NVDA 2018.3 o superiore (richiesto).
 *	Se è necessario, è possibile scaricare la  [versione compatibile  con NVDA
   2017.3][3].
 
-## Changes for 10.0 ##
-*	In Edge, i comandi associati ai segnaposti, come NVDA+k, NVDA+shift+k o
+## Novità nella versione 10.0 ##
+*	In Edge, i comandi associati ai segnaposto, come NVDA+k, NVDA+shift+k o
   NVDA+alt+k, saranno inviati all'applicazione, invece di tentare di
-  spostare il cursore al segnaposto, per evitare errori, particolarmente in
-  documenti lunghi.
-*	La ricerca specifica è supportata anche in Edge.
+  spostare il cursore al segnaposto, per evitare errori, specie in documenti
+  lunghi.
+*	Ora la ricerca specifica è supportata anche in Edge.
 
-## Changes for 9.0
-*	Quando ci si sposta ad un segnalibro dalla finestra  Note, il cursore di
-  controllo segue il cursore di sistema. 
-*	The command to select the previous bookmark works properly again.
-*	I segnalibri possono essere eliminati dalla finestra  Note.
-*	Ora  è possibile assegnare comandi da tastiera per spostarsi sui
-  segnalibri temporanei.
+## Novità nella versione 9.0
+*	Quando ci si sposta ad un segnaposto dalla finestra  Note, il cursore di
+  controllo segue il cursore di sistema.
+*	Il comando per selezionare il segnaposto precedente funziona di nuovo
+  correttamente.
+*	I segnaposto possono essere eliminati dalla finestra  Note.
+*	Ora  è possibile assegnare comandi da tastiera per creare e spostarsi sui
+  segnaposto temporanei.
 
-## Changes for 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in the VitalSource Bookshelf ePUB reader.
-*	Added a Notes dialog, to associate comments for saved bookmarks and move
-  to the selected position.
+## Novità nella versione 8.0 ##
+*	Rimossi gli identificatori di frammento dai nomi dei file segnaposto, per
+  evitare problemi nell'ePUB reader VitalSource Bookshelf.
+*	Aggiunta una finestra Note, per associare commenti ai segnaposto salvati e
+  spostarsi alla posizione selezionata.
 
-## Changes for 7.0 ##
+## Novità nella versione 7.0 ##
 *	La finestra di dialogo per salvare una stringa di testo per la ricerca
   specifica è stata rimossa. Questa funzionalità è ora inserita nella
   finestra di ricerca Specifica , la quale è stata modificata per eseguire
   diverse azioni quando si preme il pulsante Ok.
-*	Migliorata la rappresentazione grafica della interfaccia per la finestra
-  di dialogo, conforme alle finestre di dialogo usate in NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
-*	Placemarkers richiede NVDA 2016.4 o versioni successive.
+*	La rappresentazione grafica dell'interfaccia per le finestre di dialogo è
+  stata migliorata, in conformità con il layout delle finestre di dialogo di
+  NVDA.
+*	L'esecuzione dei comandi Trova Successivo o Trova Precedente in Modalità
+  Navigazione  ora darà luogo a una ricerca distinguendo tra lettere
+  maiuscole e minuscole se così era stata impostata la ricerca originale.
+*	Richiede NVDA 2016.4 o superiore.
 *	Ora è possibile assegnare comandi da tastiera per aprire le finestre di
-  dialogo per copiare o ripristinare. 
-*	NVDA avviserà con un messaggio di notifica quando Placemarkers copia o
-  ripristina le cartelle usando le relative finestre.
+  dialogo per copiare o ripristinare i segnaposto.
+*	NVDA mostrerà un messaggio di notifica quando i segnaposto saranno copiati
+  o ripristinati mediante le relative finestre.
 
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+## Novità nella versione 6.0 ##
+* Quando le funzioni dell'add-on non sono utilizzabili, i comandi sono
+  inviati all'applicazione corrispondente.
 
-## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+## Novità nella versione 5.0 ##
+* Aggiunta la ricerca con distinzione tra lettere maiuscole e minuscole.
+* Rimossa l'opzione per aprire la documentazione dal menu di PlaceMarkers .
+* Comandi rapidi più intuitivi.
 
-## Changes for 4.0 ##
-* Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in ePUBREADER Firefox add-on.
-* Add-on help is available from the Add-ons Manager.
+## Novità nella versione 4.0 ##
+* Rimossi gli identificatori di frammento dai nomi dei file segnaposto, per
+  evitare problemi nel componente aggiuntivo di Firefox ePUBREADER.
+* La guida dell'add-on è disponibile dal gestore componenti aggiuntivi.
 
-## Changes for 3.1 ##
-* Translation updates and new language.
-* Bookmark position is not announced in skim reading.
+## Novità nella versione 3.1 ##
+* Traduzioni aggiornate e nuove lingue.
+* La posizione dei segnaposto non viene vocalizzata durante la lettura
+  continua.
 
-## Changes for 3.0 ##
-* Added support for skim reading.
+## Novità nella versione 3.0 ##
+* Aggiunto il supporto per la lettura continua.
 
-## Changes for 2.0 ##
-* Added options to save and delete different searches for each file.
-* Fixed bug which broke when paths contained non latin characters.
-* Shortcuts can now be reassigned using the NVDA gesture input dialog.
+## Novità nella versione 2.0 ##
+* Aggiunte opzioni per salvare e cancellare ricerche diverse per ogni file.
+* Risolto un problema che si verificava quando i percorsi contenevano
+  caratteri non latini.
+* I tasti possono ora essere riassegnati usando la finestra Gesti e Tasti di
+  Immissione di NVDA.
 
-## Cambiamenti nella 1.0 ##
+## Novità nella versione 1.0 ##
 * Versione Iniziale.
 * Tradotto in: portoghese brasiliano, farsi, finlandese, francese,
   galiziano, tedesco, italiano, giapponese, coreano, nepalese, portoghese,
   spagnolo, slovacco, sloveno, tamil.
+
 
 [[!tag dev stable]]
 

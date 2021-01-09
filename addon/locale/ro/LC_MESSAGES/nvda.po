@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 6.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2016-02-12 16:00+1000\n"
-"PO-Revision-Date: 2018-06-08 23:01+0300\n"
+"PO-Revision-Date: 2019-11-09 19:09+0200\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -225,12 +225,28 @@ msgstr ""
 "document."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"găsește apariția următoare a ultimului text căutat pentru orice document "
+"specific."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"găsește apariția anterioară a ultimului text căutat pentru orice document "
+"specific."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "Arată dialogul notelor pentru un document specificat."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Semnul de carte nu poate fi salvat"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Salvează poziția curentă drept semn de carte."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -242,12 +258,8 @@ msgid "Cannot save bookmark"
 msgstr "Nu se poate salva semnul de carte"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Salvează poziția curentă drept semn de carte."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Semnul de carte nu poate fi șters"
+msgid "Deletes the current bookmark."
+msgstr "Șterge semnul de carte curent."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -262,16 +274,12 @@ msgid "Cannot delete bookmark"
 msgstr "Nu se poate șterge semnul de carte"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Șterge semnul de carte curent."
+msgid "Moves to the next bookmark."
+msgstr "Mută la următorul semn de carte."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Niciun semn de carte găsit"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
-msgstr "Nu se poate găsi niciun semn de carte"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -283,38 +291,32 @@ msgid "Next bookmark not found"
 msgstr "Următorul semn de carte negăsit"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Mută la următorul semn de carte."
+msgid "Moves to the previous bookmark."
+msgstr "Mută la anteriorul semn de carte."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Anteriorul semn de carte negăsit"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Mută la anteriorul semn de carte."
-
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Nu se poate copia numele fișierului pentru marcajele de locație"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Numele fișierului marcajelor de locație copiat în planșetă"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Copiază numele fișierului curent pentru marcaje de locație în planșetă."
+
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Salvează poziția curentă drept semn de carte temporar."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Semn de carte temporar salvar la poziția %d"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Salvează poziția curentă drept semn de carte temporar."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -331,3 +333,18 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Supliment pentru plasarea de marcaje de locație pe documente virtuale "
 "specifice"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nu se poate copia numele fișierului pentru marcajele de locație"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Numele fișierului marcajelor de locație copiat în planșetă"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Semnul de carte nu poate fi salvat"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Semnul de carte nu poate fi șters"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nu se poate găsi niciun semn de carte"

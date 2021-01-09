@@ -1,21 +1,19 @@
-# placeMarkers #
-
+# Marcadores de lugar #
 * Autores: Noelia, Chris.
-* Compatibilidade com o NVDA: 2018.3 até 2019.1
-* baixar [versão estável][1]
-* baixar [versão de desenvolvimento][2]
+* Compatibilidade: NVDA 2019.3 ou posterior
+* Descarregar [versão estável][1]
+* Descarregar [versão de desenvolvimento][2]
 
-Este extra é usado para guardar e procurar cadeias ou marcadores de texto
+Este extra é usado para guardar e procurar expressões ou marcadores de texto
 específicos. Pode ser usado em páginas da Web ou documentos no modo de
-navegação do NVDA. Também pode ser usado para guardar ou procurar cadeias de
-texto em controlos de múltiplas linhas; neste caso, se não for possível
-actualizar o cursor, a sequência correspondente será copiada para a área de
-transferência, para que possa ser pesquisada usando outras ferramentas. O
-plugin guarda as cadeias e marcadores especificados para ficheiros cujo nome
-se baseia no título e URL do documento actual. Este addon é baseado em
-SpecificSearch e Bookmark & ​​Search, desenvolvido pelo mesmo autor. Deve
-desinstalá-los para usar este, uma vez que eles têm comandos e recursos
-comuns.
+navegação do NVDA. Também pode ser usado para guardar ou procurar expressões
+em controlos de múltiplas linhas; neste caso, se não for possível actualizar
+o cursor, a expressão será copiada para a área de transferência, para que
+possa ser pesquisada usando outras ferramentas. O extra guarda as expressões
+e marcadores específicos em ficheiros cujo nome se baseia no título e URL do
+documento actual. Este extra é baseado em "SpecificSearch" e
+"Bookmark&Search", desenvolvidos pelo mesmo autor. Deve desinstalá-los para
+usar este, uma vez que têm comandos e recursos comuns.
 
 ## Comandos: ##
 
@@ -35,45 +33,77 @@ comuns.
 *	control+shift+NVDA+delete: Apaga o marcador correspondente a esta posição.
 *	NVDA+k: Move para o próximo marcador.
 *	shift+NVDA+k: Move para o marcador anterior.
-*	control+shift+k: Copia o nome do ficheiro onde os dados dos marcadores de
-  lugar serão guardados para a área de transferência, sem uma extensão.
+*	Não atribuído: Mostra o nome do ficheiro onde os dados dos marcadores de
+  lugar serão guardados em modo de navegação, sem uma extensão.
 *	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores guardados para
   este documento. Pode escrever uma nota para cada marcador; pressione
-  "guardar nota", para guardar as alterações. Pressionando OK, Pode mover-se
-  para a posição seleccionada.
+  "guardar nota", para guardar as alterações. Pressione Delete para apagar o
+  marcador seleccionado. Pressionando OK, Pode mover-se para a posição
+  seleccionada.
 *	Não atribuído: salva uma posição como um marcador temporário.
 *	Não atribuído: Move para o marcador temporário do documento actual.
+*	Não atribuído: Procura a próxima ocorrência do último texto procurado num
+  documento específico.
+*	Não atribuído: Procura a ocorrência anterior do último texto procurado num
+  documento específico.
 
 
-## Submenu marcadores (NVDA + N) ##
+## Submenu marcadores de lugar(NVDA + N) ##
 
-Usando o submenu de Marcadores, no menu Preferências do NVDA, pode aceder a:
+Usando o submenu de Marcadores de lugar, no menu Preferências do NVDA, pode
+aceder a:
 
-*	Pasta de procura específica: abre uma pasta de buscas específicas
+*	Pasta de procuras específicas: abre uma pasta de buscas específicas
   anteriormente guardadas.
 *	Pasta de marcadores: abre uma pasta dos marcadores guardados.
-*	Copiar pasta de marcadores: pode guardar uma cópia da pasta de marcadores.
-*	Restore placeMarkers: You can restore your bookmarks from a previously
-  saved placeMarkers folder.
+*	Copiar pasta de marcadores: pode guardar uma cópia da pasta de marcadores
+  de lugar.
+*	Restaurar marcadores: Pode restaurar os seus marcadores a partir de uma
+  cópia da pasta de Marcadores de lugar.
 
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
-em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
+em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
+
+## Alterações para 14.0 ##
+*	O comando para copiar o nome do ficheiro onde os dados dos marcadores
+  serão guardados foi substituído pelo comando que mostra o nome do ficheiro
+  em modo de navegação. Este comando não tem tecla associada.
+*	O campo "Texto a procurar" já não se sobrepõe ao campo "Textos
+  guardados". (Agradecimentos a Cyrille Bougot).
+*	Requer NVDA 2019.3 ou posterior.
+
+## Alterações para 13.0 ##
+*	Adicionado comandos não atribuídos para Procurar a próxima ou a nterior
+  ocorrência da última expressão procurada para qualquer documento
+  específico.
+*	A procura específica funciona no diálogo Sobre o NVDA'.
+*	No diálogo de Procura específica, a caixa de verificação "Ignorar
+  maiúsculas/minúsculas" estará marcada, se esta opção estava marcada na
+  última procura.
+*	Quando o extra é actualizado, os marcadores e expressões para procuras
+  específicas, guardados na versão anterior, são automaticamente copiados
+  para a nova versão, a não ser que prefira importar os marcadores guardados
+  na pasta principal de configurações do NVDA.
+*	Quando se usa o diálogo para copiar marcadores de lugar, se a pasta
+  selecionada não se chamar "placeMarkersBackup", será criada uma subpasta
+  com este nome para prevenir a eventual eliminação de dados importantes,
+  como documentos e transferências.
 
 ## Alterações para 12.0 ##
 *	Corrigido um erro crítico que fazia com que o NVDA falhasse ao tentar
-  abrir a caixa de diálogo do Notes, se os caracteres chineses fossem
+  abrir a caixa de diálogo de Notas, se os caracteres chineses fossem
   seleccionados antes de guardar os favoritos.
 
 ## Alterações para 11.0 ##
-*	Compatibilidade com o NVDA 2018.3 ou posterior (requerido).
+*	Compatível com o NVDA 2018.3 ou posterior (requerido).
 *	Se necessário, pode fazer o download da [última versão compatível com o
   NVDA 2017.3] [3].
 
 ## Alterações para 10.0 ##
 *	No Edge, os comandos associados à selecção de favoritos, como NVDA + k,
-  NVDA + shift + k ou NVDA + alt + k, serão enviados para o aplicativo em
-  vez de tentar mover o cursor para marcadores, para evitar erros,
-  especialmente em documentos longos.
+  NVDA + shift + k ou NVDA + alt + k, serão enviados para a aplicação em vez
+  de tentar mover o cursor para marcadores, para evitar erros, especialmente
+  em documentos longos.
 *	Agora, a pesquisa específica é suportada no Edge.
 
 ## Alterações para 9.0
@@ -92,15 +122,15 @@ em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
   marcadores guardados e mover para a posição seleccionada.
 
 ## Alterações para 7.0 ##
-*	A caixa de diálogo para guardar uma sequência de texto para pesquisa
-  específica foi removida. Esta funcionalidade agora está incluída na caixa
-  de diálogo Pesquisa específica, que foi redesenhada para permitir
-  diferentes acções ao pressionar o botão OK.
+*	A caixa de diálogo para guardar uma expressão para procura específica foi
+  removida. Esta funcionalidade agora está incluída na caixa de diálogo
+  Procura específica, que foi redesenhada para permitir diferentes acções ao
+  pressionar o botão OK.
 *	A apresentação visual dos diálogos foi aprimorada, seguindo a aparência
   dos diálogos mostrados no NVDA.
-*	Executar um comando Encontrar Próximo ou Buscar Anterior no Modo de
-  Navegação agora irá fazer uma pesquisa sensível a maiúsculas e minúsculas
-  se o original a encontrar for sensível a maiúsculas e minúsculas.
+*	Executar um comando Procurar Próximo ou Procurar Anterior no Modo de
+  Navegação agora irá fazer uma pesquisa sensível a maiúsculas e minúsculas,
+  se a procura original for sensível a maiúsculas e minúsculas.
 *	Requer NVDA 2016.4 ou posterior.
 *	Agora, pode atribuir comandos para abrir as caixas de diálogo de copiar e
   restaurar Marcadores.
@@ -123,10 +153,10 @@ em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 
 ## Alterações para 3.1 ##
 * Actualização de traduções e um novo idioma.
-* A posição dos marcadores não é anunciada na leitura superficial.
+* A posição dos marcadores não é anunciada na leitura rápida.
 
 ## Alterações para 3.0 ##
-* Adicionado suporte para leitura superficial.
+* Adicionado suporte para leitura rápida.
 
 ## Alterações para 2.0 ##
 * Adicionadas opções para guardar e excluir pesquisas diferentes para cada
@@ -141,6 +171,7 @@ em páginas dinâmicas, é melhor usar a pesquisa específica, não marcadores.
 * Traduzido para: Português brasileiro, farsi, finlandês, francês, galego,
   alemão, italiano, japonês, coreano, nepalês, português, espanhol,
   eslovaco, esloveno, tamil.
+
 
 [[!tag dev stable]]
 

@@ -1,7 +1,6 @@
 # placeMarkers (Stedmærker) #
-
 * Forfattere: Noelia, Chris.
-* NVDA-kompatibilitet: 2018.3 til 2019.1
+* NVDA-kompatibilitet: 2019.3 eller nyere
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -17,7 +16,7 @@ baseret på Specific Search og Bookmark Search, der er udviklet af samme
 forfatter. Disse tilføjelser deler tastetryk og funktionalitet, så det
 anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 
-## Tastaturkommandoer ##
+## Tastaturkommandoer: ##
 
 *	CTRL+Skift+NVDA+F: Åbner en dialog der viser den seneste søgning. I denne
   dialog kan du vælge tidligere udførte søgninger fra en comboboks, eller
@@ -34,8 +33,8 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
   position.
 *	NVDA+K: Flytter til det næste bogmærke.
 *	Skift+NVDA+K: Flytter til det forrige bogmærke.
-*	CTRL+Skift+K: Kopierer filnavnet på filen hvor data på stedmærker bliver
-  gemt til Udklipsholderen uden filtypenavn.
+*	Ikke tildelt: Viser filnavnet, hvor stedmarkørens data gemmes i
+  gennemsynstilstand uden en filtypenavn.
 *	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
   dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
   at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
@@ -43,6 +42,10 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
 *	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
 *	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
   dokument.
+*	Ikke tildelt: Søger efter næste forekomst af den angivne søgestreng i et
+  dokument
+*	Ikke tildelt: Søger efter forrige forekomst af den angivne søgestreng i et
+  dokument
 
 
 ## Undermenu for stedmærker (NVDA+n) ##
@@ -59,6 +62,33 @@ Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
 Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
+
+## Ændringer for 14.0 ##
+*	Kommandoen til at kopiere navnet på filen, hvor stedmarkeringsdataene
+  gemmes, er blevet erstattet af en kommando, der viser dette filnavn i
+  gennemsynstilstanden. Kommandoen er ikke tildelt et tastetryk som
+  standard.
+*	Feltet "Tekst til søgning" overlapper ikke længere feltet "Gemt
+  tekst". (Tak til Cyrille Bougot).
+*	Kræver NVDA 2019.3 eller nyere.
+
+## Ændringer i 13,0 ##
+*	Tilføjede kommandoer, så du nemt kan søge efter forrige og næste forekomst
+  af den sidst angivne tekststreng. Disse kommandoer har ingen tildelte
+  tastetryk.
+*	Funktionen til specifikke søgninger virker kun, når NVDAs søgedialog er
+  åbnet.
+*	I dialogen til specifike søgninger, vil boksen til at skelne mellem store
+  og små bogstaver forblive markeret, hvis dette var tilfældet under den
+  sidste søgning.
+*	Når tilføjelsesprogrammet er opdateret, kopieres bogmærker og strenge til
+  specifik søgning der er gemt i den tidligere version af tilføjelsen
+  automatisk til den nye version, medmindre du foretrækker at importere
+  stedmærker, der er gemt i den primære konfigurations mappe i NVDA.
+*	Når du bruger dialogen til at kopiere stedmærker, og hvis den valge mappe
+  ikke hedder "placeMarkersBackup", vil en undermappe med dette navn blive
+  oprettet for at forhindre sletning af mapper, der indeholder vigtige data,
+  såsom dokumenter eller overførsler.
 
 ## Ændringer for 12.0 ##
 *	Rettede en kritisk fejl, der forårsagede at NVDA gik ned, når man forsøgte
@@ -143,6 +173,7 @@ bogmærker, som gemmer en præcis position.
 * Oversat til: Brasiliansk portugisisk, farsi, finsk, fransk, galicisk,
   tysk, italiensk, japansk, koreansk, nepalesisk, portugisisk, spansk,
   slovakisk, slovensk og tamilsk.
+
 
 [[!tag dev stable]]
 

@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDREss>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-05-12 20:20+0200\n"
-"Last-Translator: Karl Eick <hozosch@web.de>\n"
+"PO-Revision-Date: 2019-08-16 13:17+0200\n"
+"Last-Translator: Robert Hänggi <aarjay.robert@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_CH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -110,7 +110,7 @@ msgstr "&Entfernen..."
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
-"Dieses Lesezeichen wird permanent entfernt. Diese Aktion kann nicht "
+"Dieses Lesezeichen wird dauerhaft entfernt. Diese Aktion kann nicht "
 "rückgängig gemacht werden."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
@@ -127,13 +127,10 @@ msgid "Copy place markers"
 msgstr "Lesezeichen &kopieren"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Einen Ordner zum Speichern eines Backups Ihrer aktuellen Lesezeichen "
-"auswählen.\n"
-"\n"
-"\t\tSie werden aus \"%s\" kopiert."
+"Wählen SIE einen Ordner zum Speichern eines Backups Ihrer vorigen "
+"Lesezeichen."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -148,18 +145,15 @@ msgid "Restore place markers"
 msgstr "Lesezeichen &wiederherstellen"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Einen Ordner zum Wiederherstellen eines Backups Ihrer vorherigen Lesezeichen "
-"auswählen.\n"
-"\n"
-"\t\tSie werden nach \"%s\" kopiert."
+"Wählen SIE einen Ordner zum Wiederherstellen eines Backups Ihrer vorigen "
+"Lesezeichen."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
-msgstr "Backup-Ornder:"
+msgstr "Backup-Ordner:"
 
 #. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -191,7 +185,7 @@ msgstr "Öffnet den Ordner der Lesezeichen"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "Lesezeichenornder &kopieren..."
+msgstr "Lesezeichenordner &kopieren..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -229,12 +223,28 @@ msgid ""
 msgstr "Sucht eine Zeichenkette im Dokument ab der Cursorposition."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"findet das nächste Vorkommen des zuletzt gesuchten Textes für ein bestimmtes "
+"Dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"findet das vorherige Vorkommen des zuletzt gesuchten Textes für ein "
+"bestimmtes Dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
 msgstr "zeigt die für das Dokument festgelegte Notiz an."
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Lesezeichen konnte nicht gespeichert werden"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Speichert die aktuelle Position als Lesezeichen."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -246,12 +256,8 @@ msgid "Cannot save bookmark"
 msgstr "Lesezeichen konnte nicht gespeichert werden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Speichert die aktuelle Position als Lesezeichen."
-
-#. Translators: Message presented when a bookmark can't be deleted.
-msgid "Bookmark cannot be deleted"
-msgstr "Lesezeichen konnte nicht entfernt werden"
+msgid "Deletes the current bookmark."
+msgstr "Entfernt das aktuelle Lesezeichen."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -266,15 +272,11 @@ msgid "Cannot delete bookmark"
 msgstr "Lesezeichen konnte nicht entfernt werden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Entfernt das aktuelle Lesezeichen."
+msgid "Moves to the next bookmark."
+msgstr "Springt zum nächsten Lesezeichen."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Keine Lesezeichen gefunden"
-
-#. Translators: message presented when cannot find any bookmarks.
-msgid "Cannot find any bookmarks"
 msgstr "Keine Lesezeichen gefunden"
 
 #. Translators: message presented when a bookmark is selected.
@@ -287,39 +289,33 @@ msgid "Next bookmark not found"
 msgstr "Weitere Lesezeichen nicht gefunden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Springt zum nächsten Lesezeichen."
+msgid "Moves to the previous bookmark."
+msgstr "Springt zum vorherigen Lesezeichen."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Vorheriges Lesezeichen nicht gefunden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Springt zum vorherigen Lesezeichen."
-
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Dateiname für die Lesezeichen konnten nicht kopiert werden"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Dateiname der Lesezeichen in die Zwischenablage kopiert"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
+#, fuzzy
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Kopiert den Dateinamen der aktuellen Datei für die Lesezeichen in die "
 "zwischenablage."
+
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr ""
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Speichert die aktuelle Position als temporäres Lesezeichen."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Temporäres Lesezeichen bei Position %d gesetzt."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Speichert die aktuelle Position als temporäres Lesezeichen."
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
@@ -334,3 +330,18 @@ msgstr "Lesezeichen"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Erweiterung zum Einstellen der Lesezeichen in virtuellen Ansichten."
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Dateiname der Lesezeichen in die Zwischenablage kopiert"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Lesezeichen konnte nicht gespeichert werden"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Lesezeichen konnte nicht entfernt werden"
+
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Keine Lesezeichen gefunden"
