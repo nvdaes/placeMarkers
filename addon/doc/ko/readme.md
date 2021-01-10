@@ -1,25 +1,24 @@
-# क्लिप सामाग्री नमुनाकार #
+# Clip Contents Designer #
 
-*	लेखकहरू: नोलिया रुइज्
-*	[स्थीर संस्करण][1] को अनुबहन
-*	[विकास संस्करण][2] को अनुबहन
+*	저자: 노엘리아 루이즈 마르티네스.
+*	다운로드 [출시판][1]
+*	다운로드 [개발판][2]
 
 This add-on is used to add text to the clipboard, which can be useful when
 you want to join sections of text together ready for pasting.  The clipboard
 content can also be cleared.
 
-## कुञ्जीपाटी आदेश ##
+## 키보드 명령 목록 ##
 *	NVDA+windows+c: Add selected text, Unicode braille characters which
   represent MathML objects, or the string which has been marked with the
   review cursor, to the clipboard.
-*	नेत्रवाणी+windows+x: क्लिपमा रहेका सामाग्रिलाई मेटाउ ।
+*	NVDA+windows+x: 클립보드 내용을 삭제합니다.
 *	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
     If you use nvda+F9, the text will not be added.
 
-टिप्पणी: उपरोक्त आदेशहरूलाई नेत्रवाणी मेनु, प्राथमिकताहरू उप-मेनु,लगानी
-सङ्केत पातोमा  रहेको पाठ समिक्षा वर्गीकरणमा गएर परिवर्तन गर्न सकिन्छ ।
+주의: 위 명령들은 NVDA 설정 메뉴에 있는 단춧키 설정내 텍스트 리뷰 목록에서 변경할 수 있습니다.
 
-## प्राथमिकता मेनु ##
+## 설정 메뉴 ##
 *	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
 It's also possible to choose if the added text will be appended or prepended.
 
@@ -50,11 +49,11 @@ Input gestures dialog, Configuration category.
 *	Added a check box in the settings dialog, for choosing if the separator
   should be copied to be imported when reinstalling the add-on.
 
-## २.० संस्करणमा गरिएका परिवर्तनहरू ##
+## Changes for 2.0 ##
 *	Hindi characters can be used as the separator between added contents.
 
-## १.० मा गरिएका परिवर्तनहरू ##
-*	सुरुको संस्करण
+## 버전 1.0 ##
+*	첫 출시판.
 
 [[!tag dev stable]]
 

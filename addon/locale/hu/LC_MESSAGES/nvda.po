@@ -5,345 +5,238 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2018-06-26 05:53+0100\n"
-"Last-Translator: oaron@nvda.hu\n"
-"Language-Team: HU <LL@li.org>\n"
+"Project-Id-Version: clipContentsDesigner 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2020-07-29 16:48+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.10\n"
 
-#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+#. Translators: label of a dialog.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
 msgstr ""
-"Az ön konfigurációs mappája tartalmaz a kiegészítő előző verziójából "
-"fájlokat. Kívánja frissíteni ezeket?"
+"A bővítmény lehetőséget nyújt rá, hogy a program megerősítést kérjen mielőtt "
+"a vágólap tartalma kicserélődne a control+x vagy a ctrl+c billentyűparancsok "
+"segítségével. Ezt emulált kivágásnak vagy másolásnak nevezzük, "
+"alapértelmezetten akkor működik, ha a vágólap szöveget tartalmaz.\n"
+"Be szeretné állítani most az emulált kivágást és másolást? Ezt később is "
+"megteheti bármikor."
 
-#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Install or update add-on"
-msgstr "A kiegészítő telepítése vagy frissítése"
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Az emulált kivágás és másolás beállítása"
 
-#. Translators: message presented when a string of text has been copied to the clipboard.
-#, python-format
-msgid "%s copied to clipboard"
-msgstr "%s a vágólapra másolva"
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "HTML alapú előformázott szöveg"
 
-#. Translators: The title of the Specific Search dialog.
-msgid "Specific search"
-msgstr "Részletes keresés"
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML, mint a böngészőben"
 
-#. Translators: The label of a combo box in the Specific Search dialog.
-msgid "Sa&ved texts"
-msgstr "Mentett &szövegek"
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "Nyers szöveg"
 
-#. Translators: A label for a chekbox in the Specific search dialog.
-msgid "&Remove from history"
-msgstr "Eltávolítás az előzményekből"
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Megjeleníti a vágólap tartalomtervező beállítás ablakát."
 
-#. Translators: The label of an edit box in the Specific Search dialog.
-msgid "&Text to search:"
-msgstr "A keresett szöveg:"
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Vágólap kiürítve"
 
-#. Translators: A label for a chekbox in the Specific search dialog.
-msgid "&Add to history"
-msgstr "Hozzáadás az előzményekhez"
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "A vágólapot nem lehet kiüríteni"
 
-#. Translators: Label for a set of radio buttons in the Specific search dialog.
-msgid "Action on s&earch"
-msgstr "&Műveletválasztás a kereséshez:"
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "Kezdőpont beállítva"
 
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "Search &next"
-msgstr "&Következő Keresése"
-
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "Search &previous"
-msgstr "&Előző keresése"
-
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "&Don't search"
-msgstr "Ne keresse"
-
-#. Translators: Message presented when place markers have been copied.
-msgid "Place markers copied"
-msgstr "Helyjelzők másolva"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "A mappa nem másolható"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "Másolási hiba"
-
-#. Translators: Message presented when place markers have been restored.
-msgid "Place markers restored"
-msgstr "Helyjelzők visszaállítva"
-
-#. Translators: The title of the Notes dialog.
-msgid "Notes"
-msgstr "Jegyzetek"
-
-#. Translators: The label of a list box in the Notes dialog.
-msgid "&Bookmarks"
-msgstr "&Könyvjelzők"
-
-#. Translators: The label of an edit box in the Notes dialog.
-msgid "Not&e:"
-msgstr "&Jegyzet"
-
-#. Translators: The label for a button in the Notes dialog.
-msgid "&Save note"
-msgstr "Jegyzet &mentése"
-
-#. Translators: The label for a button in the Notes dialog.
-msgid "&Delete..."
-msgstr "&Törlés"
-
-#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+#. Translators: message presented in input mode.
 msgid ""
-"This bookmark will be permanently deleted. This action cannot be undone."
-msgstr "A könyvjelző törlésre kerül, és ez nem vonható vissza"
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr "Megjelöli az áttekintő kurzornál lévő pozíciót a kijelölés kezdeteként"
 
-#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Nincsenek könyvjelzők"
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "Nincs kijelölés, nincs megadva kijelölési kezdőpont"
 
-#. Translators: The title of the warning dialog when all bookmarks have been deleted.
-msgid "Bookmarks deleted"
-msgstr "Könyvjelző törölve"
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "a kezdő pontnak ugyanabban az objektumban kell lennie."
 
-#. Translators: The title of the Copy dialog.
-msgid "Copy place markers"
-msgstr "Helyjelzők másolása"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
+msgstr "Nincs hozzáfűzhető szöveg"
 
-#. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
-msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"Kérem válasszon ki egy mappát a helyjelzőinek biztonsági mentéséhez.\n"
-"\t\tMásolás innen %s."
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Kérem erősítse meg, ha szöveget akar adni a vágólap tartalmához"
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
-msgid "directory for backup:"
-msgstr "biztonsági mentés könybtára"
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "szöveg hozzáadása a vágólaphoz"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
-msgid "Select directory to copy"
-msgstr "Mappaválasztás másoláshoz"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "hozzáadva"
 
-#. Translators: The title of the Restore dialog.
-msgid "Restore place markers"
-msgstr "Helyjelzők visszaállítása"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Nem fűzhető hozzá"
 
-#. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
+#. Translators: message presented in input mode.
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers."
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
-"Válasszon ki egy könybtárat a helyjelzői biztonsági mentéséhez. Ezek ide "
-"lesznek másolva %s."
+"A kijelölt szöveget, vagy a kezdőponttól az áttekintőkurzor pozíciójáig "
+"kijelölt szövegrészt a vágólap tartalmához fűzi."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
-msgid "directory containing backup:"
-msgstr "Biztonsági másolatot tartalmazó könyvtár"
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Kérem erősítse meg, hogy ki akarja üríteni a vágólapot"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
-msgid "Select directory to restore"
-msgstr "Mappaválasztás a visszaállításhoz"
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Vágólap ürítése"
 
-#. Translators: the name of addon submenu.
-msgid "P&lace markers"
-msgstr "&helyjelzők"
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Törli a hozzáfűzött szöveget, és a vágólap tartalmát."
 
-#. Translators: the tooltip text for addon submenu.
-msgid "Bookmarks and Search menu"
-msgstr "Könyvjelzők és keresés menü"
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Kérem erősítse meg, hogy másolni szeretne a vágólap tartalmához"
 
-#. Translators: the name for an item of addon submenu.
-msgid "&Specific search folder"
-msgstr "&Speciális keresések mappája"
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "másolás a vágólapra"
 
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the specific search folder"
-msgstr "Megnyitja a speciális keresések mappáját"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Bookmarks folder"
-msgstr "&Könyvjelzők mappa"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the bookmarks folder"
-msgstr "Megnyitja a könyvjelzők mappáját"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Copy placeMarkers folder..."
-msgstr "Helyjelző könyvtárának m&ásolása..."
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Backup of place markers"
-msgstr "helyjelzők biztonsági mentése"
-
-#. Translators: the name for an item of addon submenu.
-msgid "R&estore place markers..."
-msgstr "helyjelzők &visszaállítása"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Restore previously saved place markers"
-msgstr "&Régebbi helyjelzők visszaállítása"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Opens the specific search folder."
-msgstr "Megnyitja a speciális keresések mappáját"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Opens the bookmarks folder."
-msgstr "Megnyitja a könyvjelzők mappáját"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, python-format
-msgid "Activates the Copy dialog of %s."
-msgstr "Aktiválja a másolási párbeszédpanelet ehhez %s."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, python-format
-msgid "Activates the Restore dialog of %s."
-msgstr "Aktiválja a visszaállítási párbeszédpanelt ehhez %s."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: message presented in input mode.
 msgid ""
-"finds a text string from the current cursor position for a specific document."
-msgstr ""
-"Megkeres egy adott szöveget a kurzor pozíciójától kezdve a megnyitott "
-"dokumentumban."
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Másolás a vágólapra, a művelet megerősítését kérheti"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Kérem erősítse meg, hogy ki akar vágni a vágólapról"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "kivágás a vágólapról"
+
+#. Translators: message presented in input mode.
 msgid ""
-"finds the next occurrence of the last text searched for any specific "
-"document."
-msgstr ""
-"Megkeres egy adott szöveget a kurzor pozíciójától kezdve a megnyitott "
-"dokumentumban."
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "Kivágás a vágólapról, a művelet megerősítését kérheti"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "A vágólap nem üres, de nincs megjeleníthető szöveg"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "A vágólap üres"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "Vágólap szövege ({max}/{current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "A vágólap szöveges tartalmának megjelenítése böngészőmódban"
+
+#. Translators: label of a dialog.
 msgid ""
-"finds the previous occurrence of the last text searched for any specific "
-"document."
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
 msgstr ""
-"Megkeres egy adott szöveget a kurzor pozíciójától kezdve a megnyitott "
-"dokumentumban."
+"Adja meg a vágólaphoz hozzáfűzött tartalmak közé beszúrandó elválasztó "
+"szöveget"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Show the Notes dialog for a specific document."
-msgstr "A dokumentumhoz tartozó jegyzetek párbeszédpaneljének megtekintése"
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "szöveg hozzáadása a vágólap tartalma elé"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Elmenti az aktuális pozíciót könyvjelzőként."
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "A következő műveletek végrehajtása előtt kérjen megerősítést:"
 
-#. Translators: message presented when a position is saved as a bookmark.
-#, python-format
-msgid "Saved position at character %d"
-msgstr "Pozíció mentve a(z) %d. karakternél"
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Szöveg hozzáadása"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Cannot save bookmark"
-msgstr "A könyvjelző nem menthető"
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Vágólap ürítése"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Törli az aktuális könyvjelzőt."
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "Másolás emulálása"
 
-#. Translators: message presented when the current document has bookmarks, but none is selected.
-msgid "No bookmark selected"
-msgstr "Nincs könyvjelző kiválasztva"
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "Kivágás emulálása"
 
-#. Translators: message presented when a bookmark is deleted.
-msgid "Bookmark deleted"
-msgstr "Könyvjelző törölve"
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "Megerősítés kérése:"
 
-#. Translators: message presented when cannot delete a bookmark.
-msgid "Cannot delete bookmark"
-msgstr "A könyvjelző nem törölhető"
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Mindig"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "A következő könyvjelzőre lép."
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "Ha a vágólap szöveget tartalmaz"
 
-#. Translators: message presented when trying to select a bookmark, but none is found.
-msgid "No bookmarks found"
-msgstr "Nem található könyvjelző"
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Ha a vágólap nem üres"
 
-#. Translators: message presented when a bookmark is selected.
-#, python-format
-msgid "Position: character %d"
-msgstr "Pozíció: %d karakternél"
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "A böngészőmódú szöveg formátuma:"
 
-#. Translators: message presented when the next bookmark is not found.
-msgid "Next bookmark not found"
-msgstr "Nincs következő könyvjelző"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Az előző könyvjelzőre lép"
-
-#. Translators: message presented when the previous bookmark is not found.
-msgid "Previous bookmark not found"
-msgstr "Nincs előző könyvjelző"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
-msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Az aktuális helyjelző fájlnevét a vágólapra másolja."
-
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
-#, python-format
-msgid "%s file"
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
 msgstr ""
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Elmenti az aktuális pozíciót ideiglenes könyvjelzőként."
-
-#. Translators: Message presented when a temporary bookmark is saved.
-#, python-format
-msgid "Saved temporary bookmark at position %d"
-msgstr "ideiglenes helyjelző elmentve ebbe a pozícióba %d"
-
-#. Translators: Message presented in input help mode.
-msgid "Moves to the temporary bookmark for the current document."
-msgstr "A jelenlegi dokumentum ideiglenes helyjeltőjéhez ugrik"
+"Karakterek &maximális száma a vágólap tartalmának böngészőmódú "
+"megjelenítéséhez"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Place markers"
-msgstr "Helyjelzők"
+msgid "Clip Contents Designer"
+msgstr "Vágólap tartalomtervező"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Kiegészítő a helyjelzők elhelyezésére virtuális dokumentumokban"
+msgid "Add-on for managing clipboard text."
+msgstr "Kiegészítő a vágólap szöveges tartalmának kezeléséhez."
 
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "Nem másolható a helyjelző fájl neve"
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&szöveg megerősítése a vágólapon"
 
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "A helyjelző fájlneve a vágólapra másolva"
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Vágólap tartalomtervező beállításai"
 
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "A könyvjelző nem menthető"
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "A könyvjelző nem törölhető"
-
-#~ msgid "Cannot find any bookmarks"
-#~ msgstr "Nem található könyvjelző"
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Vágólap tartalomtervező beállításai"

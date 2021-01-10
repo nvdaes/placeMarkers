@@ -1,184 +1,130 @@
-# placeMarkers (Stedmærker) #
-* Forfattere: Noelia, Chris.
-* NVDA-kompatibilitet: 2019.3 eller nyere
-* Download [stabil version][1]
-* download [testversion][2]
+# Udklipsdesigner (Clip Contents Designer) #
 
-Dette tilføjelsesprogram bruges til at gemme og søge efter bestemte
-tekststrenge på websider eller i dokumenter, som understøtter NVDAs
-gennemsynstilstand. Det kan også bruges til at gemme eller søge efter
-tekststrenge i felter med flere linjer. I dette tilfælde, hvis det ikke er
-muligt at flytte markøren, vil den relevante tekst blive kopieret til
-udklipsholderen, så man kan søge med andre værktøjer. Tilføjelsesprogrammet
-gemmer de valgte strenge og bogmærker til filer der har lignende navne
-svarende til de gemte strenge og bogmærker. Denne tilføjelsespakke er
-baseret på Specific Search og Bookmark Search, der er udviklet af samme
-forfatter. Disse tilføjelser deler tastetryk og funktionalitet, så det
-anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
-
-## Tastaturkommandoer: ##
-
-*	CTRL+Skift+NVDA+F: Åbner en dialog der viser den seneste søgning. I denne
-  dialog kan du vælge tidligere udførte søgninger fra en comboboks, eller
-  fjerne dem fra historikken ved hjælp af en checkboks. Du kan vælge om
-  teksten i boksen skal tilføjes til historikken af gemte tekster. Endelig
-  skal du vælge en handling fra gruppen af radioknapper (herunder søg
-  fremad, søg bagud eller søg ikke), og dernæst beslutte om NVDA skal gøre
-  forskel på store og små bogstaver under søgningen. Når du trykker på "ok",
-  vil NVDA udføre din søgning.
-*	CTRL+skift+NVDA+k: Gemmer den aktuelle position som et bogmærke. Hvis du
-  vil angive et navn til dette bogmærke, skal du vælge en tekst fra denne
-  position, før du gemmer den.
-*	CTRL+skift+NVDA+delete: Sletter bogmærket, der svarer til den aktuelle
-  position.
-*	NVDA+K: Flytter til det næste bogmærke.
-*	Skift+NVDA+K: Flytter til det forrige bogmærke.
-*	Ikke tildelt: Viser filnavnet, hvor stedmarkørens data gemmes i
-  gennemsynstilstand uden en filtypenavn.
-*	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
-  dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
-  at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
-  position.
-*	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
-*	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
-  dokument.
-*	Ikke tildelt: Søger efter næste forekomst af den angivne søgestreng i et
-  dokument
-*	Ikke tildelt: Søger efter forrige forekomst af den angivne søgestreng i et
-  dokument
+*	Forfattere: Noelia, Abdel.Forfatter: Noelia Ruiz Martinez.
+*	NVDA-kompatibilitet: 2019.3 eller nyere
+*	Download [stabil version][1]
+*	Download [udviklingsversion][2]
 
 
-## Undermenu for stedmærker (NVDA+n) ##
+Denne tilføjelse bruges til at tilføje tekst til udklipsholderen, hvilket
+kan være nyttigt, når du vil tilslutte tekstafsnit sammen klar til
+indsætning. Udklipsholderens indhold kan også ryddes og vises i
+gennemsynstilstand.
 
-Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
+## Tastaturkommandoer ##
 
-*	Mappe med specifikke søgninger: Åbner en mappe med tidligere gemte
-  specifikke søgninger.
-*	Mappe med bogmærker: Åbner en mappe med de tidligere gemte bogmærker.
-*	Kopier mappe med stedmærker: Du kan gemme en kopi af mappen med bogmærker.
-*	Gendan stedmærker: Du kan gendanne dine bogmærker fra en tidligere gemt
-  mappe med stedmærker.
+* NVDA+Windows+c: Tilføj tekst, Unicode-Braille-tegn, som repræsenterer
+  MathML-objekter, eller den tekststreng, som er blevet markeret med
+  læsemarkøren, til udklipsholderen.
+* NVDA+Windows+x: Ryd udklipsholderen.
+* Ikke tildelt: Kopierer til (eller klipper fra) udklipsholderen med
+  mulighed for at blive bedt om en bekræftelse.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
-Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
-dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
-bogmærker, som gemmer en præcis position.
+Bemærk: Kommandoerne ovenfor kan ændres fra NVDA-menuen / Præferencer/
+Inputbevægelser / kategorien tekstlæsning.
 
-## Ændringer for 14.0 ##
-*	Kommandoen til at kopiere navnet på filen, hvor stedmarkeringsdataene
-  gemmes, er blevet erstattet af en kommando, der viser dette filnavn i
-  gennemsynstilstanden. Kommandoen er ikke tildelt et tastetryk som
-  standard.
-*	Feltet "Tekst til søgning" overlapper ikke længere feltet "Gemt
-  tekst". (Tak til Cyrille Bougot).
-*	Kræver NVDA 2019.3 eller nyere.
+## Indstillinger-menuen ##
+Indstillinger for Udklipsdesigner: Her kan du indstille en separator, som kan bruge til at finde de enkelte tekstsegmenter, når først hele den tilføjede tekst er blevet indsat.
+Her kan du også vælge om den tilføjede tekst skal indsættes før eller efter eksisterende tekst, om tilgængelige handlinger (tilføj, ryd udklipsholder, emuler kopi og emuler klip) skal udføres straks eller efter handlingen bekræftes, og om der kun skal anmodes om bekræftelse, hvis udklipsholderen indeholder tekst.
+Yderligere kan du ændre formatet og max antal af tegn, der skal vises i gennemsynstilstand, når du får udklipsholderens indhold vist i gennemsynstilstand. Det højeste tal er 100000 tegn.
 
-## Ændringer i 13,0 ##
-*	Tilføjede kommandoer, så du nemt kan søge efter forrige og næste forekomst
-  af den sidst angivne tekststreng. Disse kommandoer har ingen tildelte
-  tastetryk.
-*	Funktionen til specifikke søgninger virker kun, når NVDAs søgedialog er
-  åbnet.
-*	I dialogen til specifike søgninger, vil boksen til at skelne mellem store
-  og små bogstaver forblive markeret, hvis dette var tilfældet under den
-  sidste søgning.
-*	Når tilføjelsesprogrammet er opdateret, kopieres bogmærker og strenge til
-  specifik søgning der er gemt i den tidligere version af tilføjelsen
-  automatisk til den nye version, medmindre du foretrækker at importere
-  stedmærker, der er gemt i den primære konfigurations mappe i NVDA.
-*	Når du bruger dialogen til at kopiere stedmærker, og hvis den valge mappe
-  ikke hedder "placeMarkersBackup", vil en undermappe med dette navn blive
-  oprettet for at forhindre sletning af mapper, der indeholder vigtige data,
-  såsom dokumenter eller overførsler.
+Bemærkninger:
 
-## Ændringer for 12.0 ##
-*	Rettede en kritisk fejl, der forårsagede at NVDA gik ned, når man forsøgte
-  at åbne dialogboksen Noter, hvis kinesiske tegn blev valgt, før bogmærker
-  blev gemt.
+*	Ovennævnte kommando kan ændres fra NVDAs menu, under Præferencer. Herunder
+  gå til Inputbevægelser og vælg kategorien "Configuration".
+*	Bekræftelse vil ikke blive anmodet, når en meddelelsesdialog fra NVDA
+  stadig er åben. I disse situationer vil handlingen straks udføres.
 
-## Ændringer for 11.0 ##
-*	Kompatibel med NVDA 2018.3 eller nyere (påkrævet).
-*	Hvis nødvendigt, kan du hente [den sidste version kompatibel med NVDA
-  2017.3][3].
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
-## Ændringer for 10.0 ##
-*	I Edge vil kommandoer i forbindelse med bogmærkevalg, såsom NVDA+k,
-  NVDA+shift+k eller NVDA+alt+k, blive sendt til applikationen i stedet for
-  at forsøge at flytte markøren til bogmærker for at undgå fejl, især i
-  lange dokumenter.
-*	Nu understøttes specifik søgning i Edge.
+## Ændringer i 11.0
+* Nu er det muligt at tilføje tekst markeret med læsemarkøren ved hjælp af
+  standardkommandoer for NVDA (NVDA+f9 og NVDA+f10). NVDA+windows+f9 bruges
+  ikke længere til, således tilføjelsen fungerer i overensstemmelse med
+  NVDA+Shift+F9.
+* Kræver NVDA 2019.3 eller nyere.
+
+## Ændringer i 10.0
+* Rettet en fejl i den dialog, der blev brugt til at vise teksten i
+  udklipsholderen, når dens titel indeholdte ikke-latinske tegn.
+* Rettet en fejl ved brug af emuleringen af klip/kopier og
+  kopieringsfunktioner med et arabisk tastaturlayout. Dette er rettet af
+  Abdel, nu tilføjet som en forfatter.
 
 ## Ændringer for 9.0
-*	Når du flytter til et bogmærke i dialogboksen Noter, følger
-  korrekturmarkøren systemmarkøren.
-*	Kommandoen til at vælge det forrige bogmærke fungerer korrekt igen.
-*	Bogmærker kan slettes fra dialogen Noter.
-*	Nu kan du tildele bevægelser, så du lettere kan gemme og flytte til
-  midlertidige bogmærker for hvert dokument.
+
+* Tilføjet mulighed for at vise udklipsholderens aktuelle tekstindhold i
+  gennemsynstilstand.
+* Tilføjet en mulighed for at vælge, om der skal kræves bekræftelse, hvis
+  udklipsholderen ikke er tom, hvis der f.eks. Er kopieret filer eller
+  mapper.
+* Kræver NVDA 2018.4 eller nyere.
 
 ## Ændringer i 8.0 ##
-*	Fjernet fragmenter af identificeringsstrenge fra filnavne på
-  bogmærker. Dette kan forhindre problemer i VitalSource Bookshelf ePUB
-  reader.
-*	Tilføjet en dialogboks, noter, for at knytte kommentarer til gemte
-  bogmærker og flytte til den valgte placering.
 
-## Ændringer i 7,0 ##
-*	Dialogen til at gemme en tekststreng til specifikke søgninger er blevet
-  fjernet. Denne funktionalitet er nu inkluderet i dialogen specifik
-  søgning, som er blevet redesignet til at tillade forskellige handlinger,
-  når du trykker på knappen OK.
+* Tilføjelsens indstillinger vises i den tilsvarende kategori NVDA
+  indstillinger i dialogboksen.
+* Kræver NVDA 2018.2 eller nyere.
+* Hvis nødvendigt, kan du hente [sidste version kompatibel med NVDA
+  2017.3][3].
+
+## Ændringer i7.0
+
+* Hvis du vælger "nej" i dialogen, hvor du kan konfigurere funktionaliteten
+  til at emulere kopi og klip under installationen, vil kommandoerne for
+  disse funktioner blive deaktiveret. Dette gendanner den sædvanlige adfærd
+  for Ctrl+C og Ctrl+X.
+
+## ændringer i 6.0
+
+*	 Tilføjede indstilling der lader dig vælge, om tilgængelige handlinger skal bekræftes, før de udføres.
+*	 Tilføjede tastetryk for emuler kopi og emuler klip, der kan tildeles under dialogen "Inputbevægelser".
+*	 Tilføjede en dialog, der lader dig konfigure emuler klip og emuler klip under installationen. Dette tilføjer handlingerne Kopi og Klip til kommandoerne Ctrl+C og Ctrl+X, og spørger om du vil erstatte udklipsholderens indhold, når du benytter disse taster.
+*	 rettede dokumentation for script_add (Windows+NVDA+c).
+
+## ændringer i 5.0 ##
+
 *	Dialogens visuelle præsentation er blevet forbedret og overholder
   udseendet af de dialoger, der vises i NVDA.
-*	Udføring af en Find næste eller Find forrige kommando i gennemsynstilstand
-  vil nu korrekt udføre en bogstavsøgning der gør forskel på store og små
-  bogstaver, hvis den oprindelige søgning gjorde forskel på store og små
-  bogstaver.
 *	Kræver NVDA 2016.4 eller nyere.
-*	Nu kan du tildele bevægelser til at åbne dialogerne kopier og gendan
-  stedmærker.
-*	NVDA vil informere når stedmærker er blevet kopieret eller gendannet med
-  de tilsvarende dialoger.
 
-## Ændringer i 6.0 ##
-* Når funktionerne i tilføjelsesprogrammet ikke kan bruges, bliver
-  kommandoer sendt til det relevante program.
+## Ændringer i 4.0 ##
+*	Tilføjelsesindstillinger administreres fra NVDA-konfiguration, så
+  standardprofiler kan bruges til at gemme forskellige separatorer, og det
+  er ikke nødvendigt at kopiere indstillingerne til import ved
+  geninstallation.
+*	Nu er det muligt at vælge, om den tilføjede tekst vil blive tilføjet til
+  begyndelsen eller slutningen, ved at markere checkboksen "Tilføj tekst før
+  data i udklipsholder" i dialogen Indstillinger for udklipsdesigner.
 
-## Ændringer i 5.0 ##
-* Tilføjet Forskel på små og store bogstaver under søgning.
-* Fjernet mulighed for at åbne dokumentationen fra menuen Stedmærker.
-* Mere intuitive tastaturkommandoer.
+## ændringer i 3.0 ##
+*	Punktskriftrepræsentation af MathML-objekter kan tilføjes til
+  udklipsholderen, hvis MathPlayer er installeret.
+*	Hvis der ikke er indstillet nogen separator, vil der blot blive indsat en
+  enkelt linje mellem de tilføjede tekstsegmenter.
+*	Der kan knyttes en genvejstast til at åbne dialogen Indstillinger for
+  Udklipsdesigner.
+*	Tilføjede en checkboks i dialogen Indstillinger til at vælge, om
+  separatoren skal kopieres, så den kan importeres, når
+  tilføjelsesprogrammet bliver geninstalleret.
 
-## Ændringer i4.0  ##
-* Fjernet fragmenter af identiceringsstrenge fra filnavne på
-  bogmærker. Dette kan forhindre problemer i tilføjelsesprogrammet
-  ePUBREADER til Firefox.
-* Hjælp til tilføjelsesprogrammet er til rådighed fra styring af
-  tilføjelsesprogrammer.
+## ændringer i 2.0 ##
+*	Hindi-tegn kan nu bruges som separator mellem tilføjet indhold.
 
-## Ændringer i 3.1 ##
-* Opdateringer til oversættelse og nye sprog.
-* Positioner for bogmærker bliver ikke annonceret under skimlæsning.
-
-## Ændringer i 3.0 ##
-* Tilføjet understøttelse for skimlæsning.
-
-## Ændringer i 2.0 ##
-* Tilføjet mulighed for at gemme og slette forskellige søgninger for hver
-  fil.
-* Rettet fejl, som kom til udtryk når stier indeholdt ikke-latinske tegn.
-* Genvejstaster kan nu ændres i NVDAs dialog til inputbevægelser.
-
-## Ændringer i 1.0 ##
-* Første version.
-* Oversat til: Brasiliansk portugisisk, farsi, finsk, fransk, galicisk,
-  tysk, italiensk, japansk, koreansk, nepalesisk, portugisisk, spansk,
-  slovakisk, slovensk og tamilsk.
-
+## ændringer i 1.0 ##
+*	Første version.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=pm-o
+[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o[1]:
+https://addons.nvda-project.org/files/get.php?file=ccd

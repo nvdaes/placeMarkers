@@ -1,86 +1,64 @@
-# yerİmleri #
+# Pano içerik düzenleyicisi #
 
-* Yazarlar: Noelia, Chris.
-* İndir [kararlı sürüm][1]
-* İndir [geliştirilen sürüm][2]
+*	Yazarlar: Noelia Ruiz Martínez.
+*	İndir [Kararlı Sürüm][1]
+*	İndir [Geliştirme sürümü][2]
 
-Bu eklenti, NVDA tarama kipinde gösterilen web sayfaları veya belgeler
-üzerinde, belirli metin dizeleri veya yer imleri kaydetme ve arama için
-kullanılır, Aynı zamanda çoklu-hattı kontrol metinlerin dizeleri kaydetme
-veya aramak için de kullanılabilir; Bu durumda, imlecin konumunda güncelleme
-yapmak mümkün değil ise, karşılık gelen dize, panoya kopyalanır, böylece
-diğer araçlar kullanılarak aranabilir. metin ya da yer imi text ya da pickle
-dosyalarına kaydedilir. Bu dosyaların adı, geçerli belgenin başlığı ve URL
-adresine dayanmaktadır.
+This add-on is used to add text to the clipboard, which can be useful when
+you want to join sections of text together ready for pasting.  The clipboard
+content can also be cleared.
 
-Bu eklenti aynı yazar tarafından geliştirilen SpecificSearch ve Bookmark ve
-Arama adlı eklentiye  dayanmaktadır. Ortak tuş komutlarına ve özelliklere
-sahip oldukları için eskisini kaldırmanız gerekmektedir.
+## Klavye komutları ##
+*	NVDA+windows+c: Add selected text, Unicode braille characters which
+  represent MathML objects, or the string which has been marked with the
+  review cursor, to the clipboard.
+*	NVDA+windows+x: Pano içeriğini siler.
+*	NVDA+windows+f9: Mark the current position of the review cursor as the start of the text to be added to the clipboard.
+    If you use nvda+F9, the text will not be added.
 
-## Tuş Komutları: ##
+Not: Yukarıdaki komutlar NVDA menüsünden, Tercihler altmenüsünden, girdi
+hareketleri iletişim kutusu içerisindeki Metin incelemesi kategorisi
+altından değiştirilebilir .
 
-*	control+shift+NVDA+s; Opens a dialog that allows you to save a text string   you want to find in the current document. By default, the text previously saved for this file is shown. Delete this text and press Ok button if you wish to remove the text file corresponding to the saved search, or type new text to add another search.
-*	control+shift+NVDA+f; opens a dialog with a edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box and choose an action from the next combo box. If there is no available files for specific search in the current document, NVDA will warn you that it is not found any file for specific search.
-*	control+shift+NVDA+k; Saves the current position as a bookmark
-*	control+shift+NVDA+delete; Deletes the bookmark corresponding to this position.
-*	NVDA+k; Moves to the next bookmark.
-*	shift+NVDA+k; Moves to the previous bookmark.
-*	control+shift+k; Copies to clipboard the file name, without extension, where the place markers data will be saved.
+## Tercihler Menüsü ##
+*	Clip Contents Designer settings: Allows to set a separator which can be used to find the text segments once the entire added text is pasted.
+It's also possible to choose if the added text will be appended or prepended.
 
-## Yer imi Alt menüsü (NVDA + N) ##
-
-
-Tercihler menüsünde yer işaretleri alt menüsünü kullanarak:
-
-*	Özel arama klasörü: Önceden kaydedilen özel aramalar klasörü açılır.
-*	Yer imleri klasörü; kaydedilen yer imleri klasörü açılır.
-*	Yerimleri klasörünü kopyala; yer imleri klasörünün bir kopyasını
-  kaydedebilirsiniz.
-*	Yer imlerini geri yükle; önceden kaydettiğiniz yer imlerini geri
-  yükleyebilirsiniz.
-*	Dokümantasyon dosyası, seçtiğiniz dilde kullanılabilirse, ya da varsayılan
-  olarak İngilizce.
-
-Not: Yer imi konumu karakter sayısına dayanmaktadır; dinamik bir içeriğe
-sahip sayfalarda kesin bir konuma kaydetmek için özel arama değil, yer
-imleri kullanmak daha iyidir.
-
-## Changes for 6.0 ##
-* When the add-on features are not usable, gestures are sent to the
-  corresponding application.
+Note: The above command can be changed from NVDA menu, Preferences submenu,
+Input gestures dialog, Configuration category.
 
 ## Changes for 5.0 ##
-* Added case sensitive search.
-* Removed option to open documentation from Place markers menu.
-* More intuitive key commands.
+
+*	The visual presentation of the dialog has been enhanced, adhering to the
+  appearance of the dialogs shown in NVDA.
+*	Requires NVDA 2016.4 or later.
 
 ## Changes for 4.0 ##
-* Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in ePUBREADER Firefox add-on.
-* Add-on help is available from the Add-ons Manager.
+*	Add-on settings are managed from NVDA configuration, so that standard
+  profiles can be used to save different separators, and it's not needed to
+  copy the settings for importing at reinstallation.
+*	Now it's possible to choose if the added text will be appended or
+  prepended, using the Add text before clip data check box from the Clip
+  Contents Designer settings dialog.
 
-## Changes for 3.1 ##
-* Translation updates and new language.
-* Bookmark position is not announced in skim reading.
+## Changes for 3.0 ##
+*	Braille representation of MathML objects can be added to the clipboard if
+  MathPlayer is installed.
+*	If no separator is set, just a single line will be placed between the
+  added text segments.
+*	A shortcut can be assigned to open the Clip Contents Designer settings
+  dialog.
+*	Added a check box in the settings dialog, for choosing if the separator
+  should be copied to be imported when reinstalling the add-on.
 
-## 3.0 için Değişiklikler ##
-* Tarayarak okuma desteği eklendi.
+## Changes for 2.0 ##
+*	Hindi characters can be used as the separator between added contents.
 
-## 2.0 Değişiklikler ##
-* Her dosya için farklı aramaları kaydetmek ve silmek için seçenekler
-  eklendi.
-* Fixed bug which broke when paths contained non latin characters.
-* Kısayollar şimdi NVDA girdi hareketleri iletişim kutusu kullanılarak
-  yeniden atanabilir.
-
-## 1.0 Değişiklikler ##
-* İlk sürümü.
-* Tercüme:, Japonca, Korece, Nepal, Portekizce, İspanyolca, Slovakça,
-  Slovence Tamil, İtalyanca, Almanca, Galiçyaca, Fransızca, Brezilya
-  Portekizcesi, Farsça, Fince.
+## 1.0 için Değişiklikler ##
+*	İlk versiyon.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: http://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=ccd-dev

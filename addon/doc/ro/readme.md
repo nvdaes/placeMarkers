@@ -1,178 +1,127 @@
-# placeMarkers #
-* Autori: Noelia, Chris.
-* NVDA compatibility: 2019.3 or later.
-* descărcați [versiunea stabilă][1]
-* descărcați [versiunea în dezvoltare][2]
+# Clip Contents Designer #
 
-Acest supliment este folosit pentru salvarea și căutarea textelor specifice
-din stringuri sau semne de carte, pe paginile web sau documente în modul de
-navigare al NVDA. De asemenea, poate fi utilizat pentru salvarea și căutarea
-stringurilor din textele controalelor linii-multiple. În acest caz, dacă nu
-este posibil să actualizați cursorul de scriere, stringul corespunzător va
-fi copiat pe planșetă, deci poate fi căutat folosind alte
-unelte. Suplimentul salvează stringurile specificate și semnele de carte la
-text și fișiere pickle. Numele acestor fișiere este bazat pe titlul și
-URL-ul documentului curent.
-
-## Combinații de taste: ##
-
-*	control+shift+NVDA+f: Deschide un dialog cu o casetă de editare care arată
-  ultima căutare salvată; în acest dialog puteți, de asemenea, să selectați
-  căutările precedente salvate dintr-o casetă combinată sau să ștergeți
-  fraza selectată din istoric folosind o casetă de bifat. Puteți alege dacă
-  textul conținut în caseta de editare va fi adăugat la istoricul textelor
-  salvate. În final, alegeți o acțiune din următorul grup al butoanelor
-  rotative (între caută următorul, caută anteriorul, sau nu căuta), și
-  specificați dacă NVDA va face un caz senzitiv de căutare. Când apăsați OK,
-  NVDA va căuta pentru această frază.
-*	control+shift+NVDA+k: Salvează poziția curentă ca un semn de carte. Dacă
-  vreți să furnizați un nume pentru el, selectați textul din acea poziție
-  înainte de a o salva.
-*	control+shift+NVDA+delete: Șterge semnul de carte corespunzător acestei
-  poziții.
-*	NVDA+k: Deplasează la semnul de carte următor.
-*	shift+NVDA+k: Deplasează la semnul de carte precedent.
-*	Not assigned: Shows the file name where the place markers data will be
-  saved in browse mode, without an extension.
-*	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
-  document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
-  „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
-  vă deplasați la poziția selectată.
-*	Neatribuit: Salvează poziția curentă ca un semn de carte temporar.
-*	Neatribuită: Mută la semnul de carte temporar pentru documentul curent.
-*	Not assigned: Finds the next occurrence of the last text searched for any
-  specific document.
-*	Not assigned: Finds the previous occurrence of the last text searched for
-  any specific document.
+*	Autori: Noelia și Abdel.
+*	NVDA compatibility: 2019.3 or later
+*	Descarcă [versiunea stabilă][1]
+*	Descarcă [versiunea în dezvoltare][2]
 
 
-## Submeniul Place markers (NVDA+N) ##
+Acest supliment este utilizat pentru a adăuga text pe planșetă, care poate
+fi folositor când dorești să accesezi secțiuni de text împreună gata pentru
+a fi lipit. Conținutul de pe planșetă poate, deasemenea, fi curățat și
+afișat în modul de navigare.
 
-Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
+## Comenzi de taste ##
 
-*	Dosarul Căutări specificate: Deschide un director al căutărilor
-  specificate salvate înainte.
-*	Dosarul semnelor de carte; deschide un folder al semnelor de carte
-  salvate.
-*	Copiere folder placeMarkers; puteți salva o copie a a folderului cu semne
-  de carte.
-*	Restaurare placeMarkers; puteți restaura semnele dumneavoastră de carte
-  dintr-un folder placeMarkers salvat înainte.
+* NVDA+Windows+C: Adaugă textul selectat, caracterele Unicode braille care
+  reprezintă obiectele MathML, sau string-ul care a fost marcat cu cursorul
+  de vizualizare, pe planșetă.
+* NVDA+Windows+X: Curăță contentul de pe planșetă.
+* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
+  of being asked for a previous confirmation.
+* Not assigned: Shows the clipboard text in browse mode, or announces if
+  clipboard is empty or has contents which can't be presented in a
+  browseable message, for instance if files or folders are been copied from
+  Windows Explorer.
 
-Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
-urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
-specifică, și nu marcajele care economisesc o poziție precisă.
+Notă: Comenzile de mai sus pot fi modificate din meniul NVDA, Preferințe,
+Gesturi de intrare, Categoria de vizualizare a textului.
 
-## Changes for 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
-*	Requires NVDA 2019.3 or later.
+## Meniul de preferințe ##
+*\TSetări Contents Clip Designer: Permite setarea unui separator care poate fi utilizat pentru a găsi segmente de text odată ce întregul text adăugat este lipit.
+Este de asemenea posibil să se aleagă dacă textul adăugat va fi anexat sau prefixat, dacă există opțiuni disponibile (adaugă, curăță planșeta, simulează copia și simulează tăierea) ar trebui să fie efectuate imediat sau după confirmare și dacă confirmările vor fi solicitate doar dacă textul este conținut pe planșetă.
+În plus, puteți modifica formatul și numărul maxim de caractere pe care textul de pe planșetă care va fi afișat în modul de navigare trebuie să îl aibă. Vă rugăm să aveți în vedere faptul că, cu cât e mai mare limita, cu atât mai mult sunt șanse să apară probleme. Limita implicită este de 100000 de caractere.
 
-## Changes for 13.0 ##
-*	Added not assigned commands to find the next and previous occurrences of
-  the last text searched for any specific document.
-*	The specific search feature works when the NVDA's About dialog is open.
-*	In the Specific search dialog, the case sensitive checkbox will be checked
-  if this option was selected for the last search.
-*	When the add-on is updated, bookmarks and strings for specific search
-  saved in the previous version of the add-on will be automatically copied
-  to the new version, unless you prefer to import place markers saved in the
-  main configuration folder of NVDA.
-*	When using the dialog to copy place markers, if the chosen folder is not
-  named placeMarkersBackup, a subfolder with this name will be created to
-  prevent the deletion of directories containing important data, such as
-  Documents or Downloads.
+Note:
 
-## Modificări în 12.0 ##
-*	S-a rezolvat o problemă critică care făcea ca NVDA să dea crash când
-  încerca să deschidă dialogul de note dacă caractere chinezești erau
-  selectate înainte de salvarea semnelor de carte.
+*	Comanda de mai sus poate fi modificată din meniul NVDA, Preferințe,
+  Gesturi de intrare, Categoria de configurare.
+*	Confirmations won't be requested when a message box of NVDA is still
+  opened. In those cases, actions will be inmediately performed.
 
-## Modificări în 11.0 ##
-*	Compatibil cu NVDA 2018.3 sau mai nou (necesar).
-*	Dacă e musai, puteți descărca [ultima versiune compatibilă cu NVDA
-  2017.3][3].
+## Changes for 12.0
+* Fixed bugs when using emulate copy in applications like LibreOffice
+  Writer.
 
-## Modificări în 10.0 ##
-*	În Edge, gesturile asociate cu selectarea semnelor de carte, cum ar fi
-  NVDA+k, NVDA+shift+k sau NVDA+alt+k, vor fi trimise la aplicație în loc să
-  încerce să mute cursorul la semne de carte ca să evite erori, în special
-  din documentele bogate în conținut.
-*	Nicio căutare specifică nu este suportată în Edge.
+## Changes for 11.0
+* Now it's possible to add text marked with the review cursor using standard
+  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
+  used, for a better integration with the new NVDA+shift+f9 command.
+* Requires NVDA 2019.3 or later.
+
+## Modificări în 10.0
+* S-a rezolvat o problemă în dialog care făcea să se afișeze textul de pe
+  planșetă când titlul său conținea caractere nelatine.
+* S-a rezolvat o problemă întâmpinată la utilizarea copierii și a tăierii
+  simulate cu o tastatură arabă. A fost rezolvată de Abdel, care acum are
+  statutul de autor al suplimentului.
 
 ## Modificări în 9.0
-*	Atunci când se deplasează la un semn de carte de la dialogul notelor,
-  cursorul de examinare îl urmărește pe cel al sistemului.
-*	Comanda pentru selectarea semnului de carte anterior funcționează din nou
-  așa cum trebuie.
-*	Semnele de carte pot fi șterse din dialogul notelor.
-*	Acum poți atribui gesturi pentru a salva și pentru a te deplasa la un semn
-  de carte temporar.
+
+* Acum, este posibilă afișarea textului aflat pe planșetă în modul de
+  navigare.
+* S-a adăugat o opțiune care vă permite să alegeți dacă vor fi sau nu
+  necesare confirmările îb cazul în care planșeta nu este goală, un bun
+  exemplu fiind copierea fișierelor sau a folderelor.
+* Necesită NVDA 2018.4 sau mai nou.
 
 ## Modificări în 8.0 ##
-*	Au fost eliminate identificatori de fragment din numele fișierului semn de
-  carte, care pot evita problemele în VitalSource Bookshelf ePUB reader.
-*	A fost adăugat un dialog de note pentru asocierea comentariilor pentru
-  semnele de carte salvate și pentru deplasarea la poziția selectată.
 
-## Modificări în 6.0 ##
-*	Dialogul pentru salvarea unui string a textului pentru căutarea
-  specificată a fost șters. Această funcționalitate acum este inclusă în
-  dialogul căutării specificate care a fost reproiectat pentru a permite
-  acțiuni diferite la apăsarea butonului OK.
-*	Prezentarea vizuală a dialogurilor a fost îmbunătățită, aderând la
-  aspectul dialogurilor afișate în NVDA.
-*	Efectuând comanda găsirea anterioară sau găsirea următoare în modul
-  navigare acum va face în mod corect un caz de căutare sensitiv, dacă
-  căutarea originală este în cazul sensitiv.
-*	Necesită 2016.4 sau mai nou.
-*	Acum poți atribui gesturi pentru a deschide dialogurile copiere și
-  restaurare place marker.
-*	NVDA va prezenta când place markerul a fost copiat sau restaurat cu
-  dialogurile corespunzătoare.
+* Setările suplimentului sunt afișate în categoria corespunzătoare a
+  dialogului setărilor NVDA..
+* Necesită NVDA 2018.2 sau mai nou.
+* Dacă e musai, puteți să descărcați [ultima versiune compatibilă cu NVDA
+  2017.3][3].
 
-## Modificări în 6.0 ##
-* Când caracteristicile add-on-ului nu sunt utilizabile, gesturile sunt
-  trimise la aplicația corespunzătoare.
+## Modificări în 7.0
+
+* În dialogul pentru configurarea copierii și tăierii simulate la instalare,
+  dacă alegeți nu, comenzile pentru aceste caracteristici vor fi șterse,
+  astfel încât să puteți restaura comportamentul normal pentru control+c și
+  control+x.
+
+## Modificări în 6.0
+
+*	 Au fost adăugate opțiuni pentru a alege dacă opțiunile disponibile ar trebui efectuate după confirmare.
+*	 Au fost adăugate comenzile de simulare a copiei și a tăierii, care pot fi atribuite din dialogul gesturilor de intrare.
+*	 A fost adăugat un dialog pentru configurarea funcționalităților de simulare a copiei și a tăierii la instalare. Aceasta permite adăugarea comenzii control+c și control+x pentru copiere și tăiere. Veți fi întrebat dacă vreți să înlocuiți conținuturile planșetei la apăsarea acestor combinații de taste.
+*	A fost reparată documentația pentru script_add (Windows+NVDA+c).
 
 ## Modificări în 5.0 ##
-* A fost adăugată căutarea sensibilă.
-* A fost eliminată opțiunea pentru deschiderea documentației din meniul
-  Place markers.
-* Multe comenzi de taste intuitive.
 
-## Modificări în 4.0 ##
-* Au fost eliminate identificatori de fragment din numele fișierului semn de
-  carte, care pot evita problemele în ePUBREADER Firefox add-on.
-* Ghidul add-onului este disponibil în managerul de add-on-uri.
+*	Prezentarea vizuală a dialogului a fost îmbunătățită, aderând la aspectul
+  dialogurilor afișate în NVDA.
+*	Necesită NVDA 2016.4 sau mai nou.
 
-## Modificări în 3.1 ##
-* Actualizări la traduceri și o limbă nouă adăugată.
-* Poziția semnului de carte nu este anunțată în citirea skim -ului.
+## Modificări din 4.0 ##
+*	Setările suplimentului sunt gestionate din configurarea NVDA, deci
+  profilurile implicite pot fi folosite pentru a salva diferite separatoare,
+  și nu este nevoie să copiezi setările pentru a le importa la reinstalare.
+*	Acum este posibilă selectarea dacă textul adăugat va fi anexat sau
+  prefixat, utilizând căsuța Adăugare text din dialogul de setări al Clip
+  Contents Designer-ului.
 
-## Modificări în 3.0 ##
-* A fost adăugat suportul pentru citirea skim -ului.
+## Modificări din 3.0 ##
+*	Reprezentarea Braille din obiectele MathML poate fi adăugat pe planșetă
+  dacă MathPlayer este instalat.
+*	Dacă niciun separator nu este setat, o singură linie va fi adăugată între
+  segmentele textului adăugat.
+*	O scurtătură poate fi definită pentru a deschide setările Clip Contents
+  Designer-ului.
+*	A fost adăugată o căsuță în dialogul de setări, pentru a selecta dacă
+  separatorul trebuie să fie copiat pentru a fi immportat când reinstalezi
+  add-on-ul.
 
-## Modificări în 2.0 ##
-* Au fost adăugate opțiuni pentru a salva și a șterge căutări diferite
-  pentru fiecare filă.
-* A fost t reparată o eroare cu calea care conținea caractere non latine.
-* Scurtăturile pot fi reatribuite utilizând dialogul gesturilor de intrare.
+## Modificări din 2.0 ##
+*	Caracterele indiene pot fi folosite ca separator între content-ul adăugat.
 
-## Modificări în 1.0 ##
-* Versiunea inițială.
-* Tradusă în: Portugheză Braziliană, Persană, Finlandeză, Franceză,
-  Galiciană, Germană, Italiană, Japoneză, Coreeană, Nepaleză, Portugheză,
-  Spaniolă, Slovacă, Slovenă, Tamilă.
-
+## Modificări din 1.0 ##
+*	Versiunea inițială.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://addons.nvda-project.org/files/get.php?file=ccd
 
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=pm-o
+[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o

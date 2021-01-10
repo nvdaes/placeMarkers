@@ -5,335 +5,238 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers 3.0\n"
+"Project-Id-Version: clipContentsDesigner 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2020-03-25 14:24+0100\n"
+"POT-Creation-Date: 2015-06-26 03:00+1000\n"
+"PO-Revision-Date: 2019-08-23 19:17+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
-"Language-Team: Polish <killer@tyflonet.com>\n"
+"Language-Team: pl <LL@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.10\n"
 
-#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+#. Translators: label of a dialog.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
 msgstr ""
-"Twój folder konfiguracyjny NVDA zawiera pliki pochodzące z poprzedniej "
-"wersji tego dodatku. Czy chcesz je zaktualizować?"
+"Ten dodatek umożliwia potwierdzenie kopiowania i wklejania, Zamieniając "
+"treść schowka, gdy naciśnięte są skróty ctrl+c oraz ctrl+x. Taka akcja "
+"nazywa się emulowanie kopiowania i wklejania, i działa ona gdy w schowku "
+"znajduje się tekst. Czy chcesz skonfigurować emulowanie kopiowania i "
+"wklejania? Można to zmienić, oraz zrobić to później."
 
-#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Install or update add-on"
-msgstr "Zainstaluj lub aktualizuj dodatek"
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "Konfigurowanie emulacji kopiowania i wklejania"
 
-#. Translators: message presented when a string of text has been copied to the clipboard.
-#, python-format
-msgid "%s copied to clipboard"
-msgstr "%s skopiowane do schowka"
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "Przeformatowany tekst w HTML"
 
-#. Translators: The title of the Specific Search dialog.
-msgid "Specific search"
-msgstr "Określone wyszukiwanie"
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML taki jak w przeglądarce"
 
-#. Translators: The label of a combo box in the Specific Search dialog.
-msgid "Sa&ved texts"
-msgstr "&Zapisane teksty"
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "tekst surowy"
 
-#. Translators: A label for a chekbox in the Specific search dialog.
-msgid "&Remove from history"
-msgstr "&Usuń z historii"
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "Wyświetla dialog ustawień dodatku Clip Contents Designer."
 
-#. Translators: The label of an edit box in the Specific Search dialog.
-msgid "&Text to search:"
-msgstr "&tekst do znalezienia:"
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "Schowek wyczyszczony"
 
-#. Translators: A label for a chekbox in the Specific search dialog.
-msgid "&Add to history"
-msgstr "&Dodaj do Historii"
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "Schowek nie jest wyczyszczony"
 
-#. Translators: Label for a set of radio buttons in the Specific search dialog.
-msgid "Action on s&earch"
-msgstr "Akcje do &wyszukiwania"
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "Znacznik początkowy ustawiony"
 
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "Search &next"
-msgstr "Szukaj w &dół"
-
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "Search &previous"
-msgstr "Szukaj w &górę"
-
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "&Don't search"
-msgstr "&Nie wyszukuj"
-
-#. Translators: Message presented when place markers have been copied.
-msgid "Place markers copied"
-msgstr "Skopiowano znaczniki miejsc"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "Folder nie został skopiowany"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "Błąd kopiowania"
-
-#. Translators: Message presented when place markers have been restored.
-msgid "Place markers restored"
-msgstr "Przywrócono znaczniki miejsc"
-
-#. Translators: The title of the Notes dialog.
-msgid "Notes"
-msgstr "Notatki"
-
-#. Translators: The label of a list box in the Notes dialog.
-msgid "&Bookmarks"
-msgstr "&Zakładki"
-
-#. Translators: The label of an edit box in the Notes dialog.
-msgid "Not&e:"
-msgstr "Not&atka:"
-
-#. Translators: The label for a button in the Notes dialog.
-msgid "&Save note"
-msgstr "&Zachowaj notatkę"
-
-#. Translators: The label for a button in the Notes dialog.
-msgid "&Delete..."
-msgstr "&Skasować..."
-
-#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+#. Translators: message presented in input mode.
 msgid ""
-"This bookmark will be permanently deleted. This action cannot be undone."
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
 msgstr ""
-"Ten znacznik miejsca będzie skasowany na zawsze. Ta akcja jest nieodwracalna."
+"Oznacza teraźniejszą pozycję kursora przeglądu jako początek tekstu, który "
+"musi być dodany do schowka."
 
-#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Brak zakładek"
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "Nic nie jest oznaczone. Znacznik początkowy nie jest ustawiony"
 
-#. Translators: The title of the warning dialog when all bookmarks have been deleted.
-msgid "Bookmarks deleted"
-msgstr "Zakładki usunięte"
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "Znacznik początkowy powinien znajdować się na początku obiektu"
 
-#. Translators: The title of the Copy dialog.
-msgid "Copy place markers"
-msgstr "kopiuj znaczniki miejsca"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
+msgstr "Nie ma tekstu do dodania"
 
-#. Translators: An informational message displayed in the Copy dialog.
-msgid "Select a folder to save a backup of your current place markers."
-msgstr "Wybierz katalog do zapisywania kopii znaczników miejsc."
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "Proszę potwierdzić dodawanie tekstu do schowka"
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
-msgid "directory for backup:"
-msgstr "Katalog dla kopii zapasowej:"
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "Dodawanie tekstu do schowka"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
-msgid "Select directory to copy"
-msgstr "Oznacz katalog do kopiowania"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "Dodano"
 
-#. Translators: The title of the Restore dialog.
-msgid "Restore place markers"
-msgstr "Przywróć znaczniki miejsca"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "Nie można dodać"
 
-#. Translators: An informational message displayed in the Restore dialog.
+#. Translators: message presented in input mode.
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers."
-msgstr "Wybierz katalog do przywracania kopii znaczników miejsc."
-
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
-msgid "directory containing backup:"
-msgstr "Katalog zawierający kopie zapasową:"
-
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
-msgid "Select directory to restore"
-msgstr "Wybierz katalog do przywrócenia"
-
-#. Translators: the name of addon submenu.
-msgid "P&lace markers"
-msgstr "Zna&czniki miejsca"
-
-#. Translators: the tooltip text for addon submenu.
-msgid "Bookmarks and Search menu"
-msgstr "menu zakładek i wyszukiwania"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Specific search folder"
-msgstr "&określony folder wyszukiwania"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the specific search folder"
-msgstr "Otwiera określony folder wyszukiwania"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Bookmarks folder"
-msgstr "Folder &zakładek"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the bookmarks folder"
-msgstr "Otwiera folder zakładek"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Copy placeMarkers folder..."
-msgstr "s&kopiuj folder znaczników miejsca..."
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Backup of place markers"
-msgstr "Kopia zapasowa znaczników miejsca"
-
-#. Translators: the name for an item of addon submenu.
-msgid "R&estore place markers..."
-msgstr "P&rzywróć znaczniki miejsca..."
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Restore previously saved place markers"
-msgstr "Przywróć poprzednio zapisane znaczniki miejsca"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Opens the specific search folder."
-msgstr "Otwiera określony folder wyszukiwania"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Opens the bookmarks folder."
-msgstr "Otwiera katalog z zakładkami"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, python-format
-msgid "Activates the Copy dialog of %s."
-msgstr "Uaktywnia dialog kopiowania %s."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, python-format
-msgid "Activates the Restore dialog of %s."
-msgstr "Uaktywnia dialog \"przywróć\" %s."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds a text string from the current cursor position for a specific document."
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
-"Poszukuje ciągu znaków od aktualnej pozycji kursora w określonym dokumencie."
+"Pobiera oznaczony ciąg znaków lub tekst od ustawionego wcześniej znacznika "
+"początkowego wyłącznie z pozycją teraźniejszą kursora przeglądu, i dodaje ją "
+"do schowka."
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "Proszę potwierdzić kasowanie schowka"
+
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "Kasowanie schowka"
+
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "Usuwa dodany tekst i treść ze schowka."
+
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "Proszę potwierdzić kopiowanie do schowka"
+
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "Kopiuję do schowka"
+
+#. Translators: message presented in input mode.
 msgid ""
-"finds the next occurrence of the last text searched for any specific "
-"document."
-msgstr "Wyszukuje następne występowanie tekstu dla określonego dokumentu."
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "kopiuje ze schowka, uprzednio pytając o zgodeconfirmation"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "Proszę potwierdzić wycinanie ze schowka"
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "Wycinam ze schowka"
+
+#. Translators: message presented in input mode.
 msgid ""
-"finds the previous occurrence of the last text searched for any specific "
-"document."
-msgstr "Wyszukuje poprzednie występowanie tekstu dla określonego dokumentu."
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "wycina ze schowka, uprzednio pytając o zgode"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Show the Notes dialog for a specific document."
-msgstr "Wyświetla okno dialogowe notatek dla określonego dokumentu."
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "Schowek nie jest pusty, ale nie ma tekstu do pokazania"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Zapisuje bieżącą pozycję jako zakładkę."
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "Schowek jest pusty"
 
-#. Translators: message presented when a position is saved as a bookmark.
-#, python-format
-msgid "Saved position at character %d"
-msgstr "Zapisano miejsce na pozycji %d"
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "tekst schowka ({max}/{current} - {formatForTitle})"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Cannot save bookmark"
-msgstr "Nie można zapisać zakładki"
+msgid "Shows the clipboard text in browse mode"
+msgstr "Pokazuje tekst schowka w trybie czytania"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Usuwa aktualną zakładkę."
-
-#. Translators: message presented when the current document has bookmarks, but none is selected.
-msgid "No bookmark selected"
-msgstr "Nie wybrano zakładki"
-
-#. Translators: message presented when a bookmark is deleted.
-msgid "Bookmark deleted"
-msgstr "Zakładka usunięta"
-
-#. Translators: message presented when cannot delete a bookmark.
-msgid "Cannot delete bookmark"
-msgstr "Nie można usunąć zakładki"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Przechodzi do następnej zakładki."
-
-#. Translators: message presented when trying to select a bookmark, but none is found.
-msgid "No bookmarks found"
-msgstr "Nie znaleziono zakładek"
-
-#. Translators: message presented when a bookmark is selected.
-#, python-format
-msgid "Position: character %d"
-msgstr "Pozycja: znak %d"
-
-#. Translators: message presented when the next bookmark is not found.
-msgid "Next bookmark not found"
-msgstr "Nie znaleziono następnej zakładki"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Przechodzi do poprzedniej zakładki."
-
-#. Translators: message presented when the previous bookmark is not found.
-msgid "Previous bookmark not found"
-msgstr "Nie znaleziono poprzedniej zakładki"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
-msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Kopiuje do schowka nazwę aktualnego pliku znaczników miejsca."
-
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
-#, python-format
-msgid "%s file"
+#. Translators: label of a dialog.
+msgid ""
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
 msgstr ""
+"Wpisz ciąg znaków, który ma być użyty jako &separator pomiędzy treścią "
+"dodaną do schowka."
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a temporary bookmark."
-msgstr "Zapisuje bieżącą pozycję jako zakładkę tymczasowa."
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "&Dodaj tekst przed danymi Clip"
 
-#. Translators: Message presented when a temporary bookmark is saved.
-#, python-format
-msgid "Saved temporary bookmark at position %d"
-msgstr "Tymczasowy znacznik miejsc został zapisany w pozycji %d"
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "&wybierz działania wymagających uprzedniego potwierdzenia"
 
-#. Translators: Message presented in input help mode.
-msgid "Moves to the temporary bookmark for the current document."
-msgstr "Przemieszcza do tymczasowego znacznika miejsc w aktualnym dokumencie."
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "Potwierdzenie dodawania &tekstu"
+
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "Potwierdzenie &kasowania schowka"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "&Potwierdzenie emulowania kopiowania"
+
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "&Potwierdzenie emulowania wycięcia"
+
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "&żądaj potwierdzenie wykonując następujące akcje gdy:"
+
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "Zawsze"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "jeśli schowek zawiera tekst"
+
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "Jeśli schowek nie jest pusty"
+
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&Format do pokazywania schowka w trybie czytania:"
+
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "&Maksymalna liczba pokazywanych znaków w trybie czytania"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Place markers"
-msgstr "Znaczniki miejsca"
+msgid "Clip Contents Designer"
+msgstr "Clip Contents Designer"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for setting place markers on specific virtual documents"
-msgstr ""
-"Dodatek pozwalający ustawić znaczniki miejsca wewnątrz określonych "
-"dokumentów wirtualnych"
+msgid "Add-on for managing clipboard text."
+msgstr "Dodatek do zarządzania tekstem ze schowka."
 
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "Nie można skopiować nazwy pliku znaczników miejsca"
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "&tekst do potwierdzenia w schowku"
 
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "Nazwa pliku znaczników miejsca skopiowana do schowka."
+#~ msgid "&Clip Contents Designer settings..."
+#~ msgstr "&Ustawienia projektanta zawartości schowka..."
 
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "Zakładka nie może zostać zapisana."
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "Zakładka nie może zostać usunięta"
-
-#~ msgid "Cannot find any bookmarks"
-#~ msgstr "Nie można znaleźć żadnej zakładki"
+#~ msgid "Clip Contents Designer settings"
+#~ msgstr "Ustawienia projektanta zawartości schowka"

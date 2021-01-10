@@ -5,345 +5,226 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers 1.0-beta\n"
+"Project-Id-Version: clipContentsDesigner 1.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-06-17 20:50+0200\n"
-"PO-Revision-Date: 2017-12-14 06:54-0800\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-12-27 19:18+1000\n"
+"PO-Revision-Date: 2019-06-10 18:17+0200\n"
+"Last-Translator: wafiqtaher <wafiqtaher@gmail.com>\n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.6.11\n"
 
-#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+#. Translators: label of a dialog.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
+"This add-on allows to confirm if you want to copy and cut, replacing the "
+"clipboard contents, when pressing control+c and control+x. This is named "
+"Emulate copy and cut, and by default it works just when clipboard contains "
+"text. Do you want to configure Emulate copy and cut now? You may do or "
+"change this later."
 msgstr ""
-"مجلد الإعدادات لديك يحتوي على ملفات تم استخراجها من نسخة أقدم من هذه "
-"الإضافة. هل تود تحديثه؟"
+"تسمح هذه الإضافة بتأكيد ما إذا كنت تريد النسخ والقص ، واستبدال محتويات "
+"الحافظة ، عند الضغط على control + c و control + x. يستدعى مربع الحوار هذا "
+"للتأكيد على النسخة و القص ، وبشكل افتراضي يعمل فقط عندما تحتوي الحافظة على "
+"نص. هل تريد التأكيد"
 
-#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Install or update add-on"
-msgstr "تنصيب أو تحديث الإضافة"
+#. Translators: title of a dialog.
+msgid "Configure Emulate copy and cut"
+msgstr "تكوين محاكاة القص و النسخ"
 
-#. Translators: message presented when a string of text has been copied to the clipboard.
-#, python-format
-msgid "%s copied to clipboard"
-msgstr "%s نقل إلى الحافظة"
+#. Translators: label of a dialog.
+msgid "Preformatted text in HTML"
+msgstr "التنسيق المسبق للنص في HTML"
 
-#. Translators: The title of the Specific Search dialog.
-msgid "Specific search"
-msgstr "بحث معين"
+#. Translators: label of a dialog.
+msgid "HTML as shown in a web browser"
+msgstr "HTML كما هو موضح في متصفح الويب"
 
-#. Translators: The label of a combo box in the Specific Search dialog.
-msgid "Sa&ved texts"
-msgstr "&النصوص المحفوظة"
+#. Translators: label of a dialog.
+msgid "Raw text"
+msgstr "النص الأصلي"
 
-#. Translators: A label for a chekbox in the Specific search dialog.
-msgid "&Remove from history"
-msgstr "&حذف من المحفوظات"
+#. Translators: message presented in input mode.
+msgid "Shows the Clip Contents Designer settings."
+msgstr "يظهر إعدادات Clip Contents Designer."
 
-#. Translators: The label of an edit box in the Specific Search dialog.
-msgid "&Text to search:"
-msgstr "كلمة للبحث"
+#. Translators: message presented when the clipboard content has been deleted.
+msgid "Clipboard cleared"
+msgstr "تم مسح محتوى الحافظة"
 
-#. Translators: A label for a chekbox in the Specific search dialog.
-msgid "&Add to history"
-msgstr "إ&ضافة للمحفوظات"
+#. Translators: message presented when the clipboard content cannot be deleted.
+msgid "Clipboard not cleared"
+msgstr "لم يتم مسح محتوى الحافظة"
 
-#. Translators: Label for a set of radio buttons in the Specific search dialog.
-msgid "Action on s&earch"
-msgstr "إجراء ال&بحث"
+#. Translators: message presented when the start marker for appending text has been set using the review cursor.
+msgid "Start marker set"
+msgstr "تم وضع علامة بداية التحديد"
 
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "Search &next"
-msgstr "بحث ال&تالي"
-
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "Search &previous"
-msgstr "بحث ال&سابق"
-
-#. Translators: An action in the Search group of the Specific search dialog.
-msgid "&Don't search"
-msgstr "لا &تقم بالبحث"
-
-#. Translators: Message presented when place markers have been copied.
-msgid "Place markers copied"
-msgstr "تم نسخ العلامات المرجعية"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "لم يتم نسخ المجلد"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "خطأ في النسخ"
-
-#. Translators: Message presented when place markers have been restored.
-msgid "Place markers restored"
-msgstr "تم استرجاع العلامات المرجعية"
-
-#. Translators: The title of the Notes dialog.
-msgid "Notes"
-msgstr ""
-
-#. Translators: The label of a list box in the Notes dialog.
-#, fuzzy
-msgid "&Bookmarks"
-msgstr "&مجلد العلامات المرجعية"
-
-#. Translators: The label of an edit box in the Notes dialog.
-msgid "Not&e:"
-msgstr ""
-
-#. Translators: The label for a button in the Notes dialog.
-msgid "&Save note"
-msgstr ""
-
-#. Translators: The label for a button in the Notes dialog.
-msgid "&Delete..."
-msgstr ""
-
-#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+#. Translators: message presented in input mode.
 msgid ""
-"This bookmark will be permanently deleted. This action cannot be undone."
-msgstr ""
+"Marks the current position of the review cursor as the start of text to be "
+"appended to the clipboard."
+msgstr "تحديد الموضع الحالي لمؤشر الاستعراض كبداية للنص الذي سيلحق بالحافظة."
 
-#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "لا يوجد علامات مرجعية"
+#. Translators: message presented when it's not possible to add text, since no text has been selected or marked.
+msgid "No selection. No start marker set"
+msgstr "لا يوجد نص محدد. لم توضع علامة لبداية التحديد"
 
-#. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
-msgid "Bookmarks deleted"
-msgstr "تم حذف العلامة المرجعية"
+#. Translators: Message presented when a start marked has been placed, but not in the current object.
+msgid "The start marker must reside within the same object"
+msgstr "علامة البداية يجب أن تتواجد في نفس الكائن "
 
-#. Translators: The title of the Copy dialog.
-msgid "Copy place markers"
-msgstr "انسخ العلامات المرجعية"
+#. Translators: message presented when review cursor has been used to add text and there is no text to add.
+msgid "No text to add"
+msgstr "لا يوجد نص لإلحاقه بالحافظة"
 
-#. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
-msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"حدد مجلد كي تحفظ به نسخة احطياطية من العلامات المرجعية الحالية.\n"
-"\n"
-"\t\tسيتم نسخهم من %s."
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to add text to the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت ترغب في إضافة نص إلى الحافظة "
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
-msgid "directory for backup:"
-msgstr "مجلد النسخ الاحطياطي: "
+#. Translators: Title of a dialog.
+msgid "Adding text to clipboard"
+msgstr "إضافة النص الى الحافظة"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
-msgid "Select directory to copy"
-msgstr "حدد مجلد للنسخ"
+#. Translators: message presented when the text has been added to the clipboard.
+msgid "Added"
+msgstr "تمت إضافته"
 
-#. Translators: The title of the Restore dialog.
-msgid "Restore place markers"
-msgstr "استرجاع العلامات المرجعية"
+#. Translators: message presented when the text cannot be added to the clipboard.
+msgid "Cannot add"
+msgstr "تعذر الإلحاق بالحافظة"
 
-#. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
+#. Translators: message presented in input mode.
 msgid ""
-"Select a folder to restore a backup of your previous copied place markers."
+"Retrieves the selected string or the text from the previously set start "
+"marker up to and including the current position of the review cursor, and "
+"adds it to the clipboard."
 msgstr ""
-"قم بتحديد مجلد لاسترجاع نسخة احطياطية من العلامات المرجعية التي قمت بنسخها "
-"من قبل.\n"
-"\n"
-"\t\tسيتم النسخ إلى %s."
+"استرجاع النص المحدد بداية من علامة التحديد التي تم تعيينها مسبقاويشمل ذلك "
+"استرجاع الموضع الحالي لمؤشر الاستعراض وإلحاقه بالحافظة."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
-msgid "directory containing backup:"
-msgstr "المجلد الذي يحتوي على النسخة الاحطياطية هو:"
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to clear the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت ترغب في مسح الحافظة "
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
-msgid "Select directory to restore"
-msgstr "حدد أحد المجلدات لتكون مكان للاسترجاع"
+#. Translators: Title of a dialog.
+msgid "Clearing clipboard"
+msgstr "مسح الحافظة "
 
-#. Translators: the name of addon submenu.
-msgid "P&lace markers"
-msgstr "ع&لامات مرجعية"
+#. Translators: message presented in input mode.
+msgid "Deletes the added text and the content of the clipboard."
+msgstr "حذف النص المضاف للحافظة ومحتواها."
 
-#. Translators: the tooltip text for addon submenu.
-msgid "Bookmarks and Search menu"
-msgstr "العلامات المرجعية وقائمة البحث"
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to copy to the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت تريد نسخ إلى الحافظة "
 
-#. Translators: the name for an item of addon submenu.
-msgid "&Specific search folder"
-msgstr "&مجلد بحث محدد"
+#. Translators: Title of a dialog.
+msgid "Copying to clipboard"
+msgstr "نسخ إلى الحافظة "
 
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the specific search folder"
-msgstr "فتح مجلد البحث المحدد"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Bookmarks folder"
-msgstr "&مجلد العلامات المرجعية"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Opens the bookmarks folder"
-msgstr "فتح مجلد العلامات المرجعية"
-
-#. Translators: the name for an item of addon submenu.
-msgid "&Copy placeMarkers folder..."
-msgstr "&نسخ مجلد العلامات المرجعية"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Backup of place markers"
-msgstr "عمل نسخة احطياطية من العلامات المرجعية"
-
-#. Translators: the name for an item of addon submenu.
-msgid "R&estore place markers..."
-msgstr "ا&ستعادة العلامات المرجعية"
-
-#. Translators: the tooltip text for an item of addon submenu.
-msgid "Restore previously saved place markers"
-msgstr "استعادة العلامات المرجعية المحفوظة مسبقا"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Opens the specific search folder."
-msgstr "فتح مجلد البحث المحدد"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Opens the bookmarks folder."
-msgstr "فتح مجلد العلامات المرجعية"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, python-format
-msgid "Activates the Copy dialog of %s."
-msgstr "تنشيط محاورة النسخ من %s."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, python-format
-msgid "Activates the Restore dialog of %s."
-msgstr "تنشيط محاورة الاسترجاع من %s."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#. Translators: message presented in input mode.
 msgid ""
-"finds a text string from the current cursor position for a specific document."
-msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
+"Copies to the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "نسخ إلى الحافظة ، مع إمكانية التأكيد على ذلك مسبقاً"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
+#. Translators: Label of a dialog.
+msgid "Please, confirm if you want to cut from the clipboard"
+msgstr "يرجى تأكيد ما إذا كنت ترغب في القص إلى الحافظة "
+
+#. Translators: Title of a dialog.
+msgid "Cutting from clipboard"
+msgstr "قص إلى الحافظة "
+
+#. Translators: message presented in input mode.
 msgid ""
-"finds the next occurrence of the last text searched for any specific "
-"document."
-msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
+"Cuts from the clipboard, with the possibility of being asked for a previous "
+"confirmation"
+msgstr "التأكيد على القص الى الحافظة"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
+#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
+msgid "Clipboard is not empty, but there is no text to show"
+msgstr "الحافظة ليست فارغة ، لكن لا يوجد نص لإظهاره"
+
+#. Translators: presented when clipboard is empty.
+msgid "Clipboard is empty"
+msgstr "الحافظة فارغة"
+
+#. Translators: title of a browseable message.
+#, python-brace-format
+msgid "Clipboard text ({max}/{current} - {formatForTitle})"
+msgstr "نص الحافظة ({max} / {current} - {formatForTitle})"
+
+msgid "Shows the clipboard text in browse mode"
+msgstr "لأظهار نص الحافظة في وضع الإستعراض"
+
+#. Translators: label of a dialog.
 msgid ""
-"finds the previous occurrence of the last text searched for any specific "
-"document."
-msgstr "العثور على نص من موضع المؤشر الحالي بمستند معين. "
+"Type the string to be used as a &separator between contents added to the "
+"clipboard."
+msgstr "اكتب الرمز الذي سيستخدم ك&فاصل بين النصوص التي ستلحق بالحافظة"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Show the Notes dialog for a specific document."
-msgstr ""
+#. Translators: label of a dialog.
+msgid "&Add text before clip data"
+msgstr "إ&لحاق نص قبل البيانات الموجودة بالحافظة"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "حفظ الموضع الحالي كعلامة مرجعية"
+#. Translators: label of a dialog.
+msgid "Sele&ct the actions which require previous confirmation"
+msgstr "حدد الإجراءات التي تتطلب التأكيد المسبق"
 
-#. Translators: message presented when a position is saved as a bookmark.
-#, python-format
-msgid "Saved position at character %d"
-msgstr "الموضع المحفوظ عند حرف %d"
+#. Translators: label of a dialog.
+msgid "Confirm to add text"
+msgstr "التأكيد على إضافة النص"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Cannot save bookmark"
-msgstr "لا يمكن حفظ العلامة المرجعية"
+#. Translators: label of a dialog.
+msgid "Confirm to clear clipboard"
+msgstr "التأكيد على مسح الحافظة"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "حذف العلامة المرجعية"
+#. Translators: label of a dialog.
+msgid "Confirm to emulate copy"
+msgstr "التأكيد على النسخ"
 
-#. Translators: message presented when the current document has bookmarks, but none is selected.
-msgid "No bookmark selected"
-msgstr "لم يتم تحديد علامة مرجعية"
+#. Translators: label of a dialog.
+msgid "Confirm to emulate cut"
+msgstr "التأكيد على القص"
 
-#. Translators: message presented when a bookmark is deleted.
-msgid "Bookmark deleted"
-msgstr "تم حذف العلامة المرجعية"
+#. Translators: label of a dialog.
+msgid "&Request confirmation before performing the selected actions when:"
+msgstr "طلب التأكيد قبل تنفيذ الإجراءات المحددة عندما :"
 
-#. Translators: message presented when cannot delete a bookmark.
-msgid "Cannot delete bookmark"
-msgstr "لا يمكن حذف العلامة المرجعية"
+#. Translators: label of a dialog.
+msgid "Always"
+msgstr "دائما"
 
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "التنقل إلى العلامة المرجعية التالية"
+#. Translators: label of a dialog.
+msgid "If the clipboard contains text"
+msgstr "إذا كانت الحافظة تحتوي على نص"
 
-#. Translators: message presented when trying to select a bookmark, but none is found.
-msgid "No bookmarks found"
-msgstr "لا يوجد علامات مرجعية"
+#. Translators: label of a dialog.
+msgid "If the clipboard is not empty"
+msgstr "إذا كانت  الحافظة ليست فارغة"
 
-#. Translators: message presented when a bookmark is selected.
-#, python-format
-msgid "Position: character %d"
-msgstr "الموضع: حرف %d"
+#. Translators: label of a dialog.
+msgid "&Format to show the clipboard text in browse mode:"
+msgstr "&تنسيق لإظهار نص الحافظة في وضع الإستعراض:"
 
-#. Translators: message presented when the next bookmark is not found.
-msgid "Next bookmark not found"
-msgstr "لا يوجد علامة مرجعية تالية"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "التنقل للعلامة المرجعية السابقة"
-
-#. Translators: message presented when the previous bookmark is not found.
-msgid "Previous bookmark not found"
-msgstr "لا يوجد علامة مرجعية سابقة"
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
-msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "نسخ اسم الملف الحالي للعلامات المرجعية إلى الحافظة"
-
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
-#, python-format
-msgid "%s file"
-msgstr ""
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
-msgid "Saves the current position as a temporary bookmark."
-msgstr "حفظ الموضع الحالي كعلامة مرجعية"
-
-#. Translators: Message presented when a temporary bookmark is saved.
-#, python-format
-msgid "Saved temporary bookmark at position %d"
-msgstr ""
-
-#. Translators: Message presented in input help mode.
-msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+#. Translators: label of a dialog.
+msgid ""
+"&Maximum number of characters when showing clipboard text in browse mode"
+msgstr "الحد الأقصى لعدد الأحرف عند عرض نص الحافظة في وضع التصفح"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Place markers"
-msgstr "علامات مرجعية"
+msgid "Clip Contents Designer"
+msgstr "التحكم في محتوى الحافظة"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "إضافة لوضع علامات مرجعية داخل مستندات نمط التصفح"
+msgid "Add-on for managing clipboard text."
+msgstr "إضافة لإدارة النص الموجود بالحافظة"
 
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "لا يمكن نسخ اسم ملف العلامات المرجعية"
-
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "نسخ اسم ملف العلامات المرجعية للحافظة"
-
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "لا يمكن حفظ العلامة المرجعية"
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "لا يمكن حذف العلامة المرجعية"
-
-#~ msgid "Cannot find any bookmarks"
-#~ msgstr "لا يوجد أي علامات مرجعية"
+#~ msgid "&Text in clipboard to confirm"
+#~ msgstr "التأ&كيد عند وجود نص في الحافظة"
