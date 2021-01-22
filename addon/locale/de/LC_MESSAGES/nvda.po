@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2019-08-16 13:17+0200\n"
+"PO-Revision-Date: 2021-01-08 12:35+0100\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -56,7 +56,7 @@ msgstr "Zum Verlauf &hinzufügen"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
 msgid "Action on s&earch"
-msgstr "&Aktion auswählen:"
+msgstr "&Aktion bei der Suche"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "Search &next"
@@ -193,7 +193,7 @@ msgstr "Backup der Lesezeichen"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "Lesezeichen wi&ederherstellen"
+msgstr "Lesezeichen &wiederherstellen..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
@@ -297,16 +297,13 @@ msgid "Previous bookmark not found"
 msgstr "Vorheriges Lesezeichen nicht gefunden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr ""
-"Kopiert den Dateinamen der aktuellen Datei für die Lesezeichen in die "
-"zwischenablage."
+msgstr "Zeigt den Namen der aktuellen Datei für Lesezeichen im Lesemodus an."
 
 #. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
-msgstr ""
+msgstr "%s-Datei"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '7.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2019-08-16 12:57+0200\n"
+"PO-Revision-Date: 2021-01-10 17:19+0100\n"
 "Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
 "Language-Team: \n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -40,7 +40,7 @@ msgstr "Procura Específica"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "Textos &gardados:"
+msgstr "Textos &gardados"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
@@ -198,11 +198,11 @@ msgstr "Restaurar marcas gardadas anteriormente"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Abre o cartafol procura específica"
+msgstr "Abre o cartafol procura específica."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Abre o cartafol marcadores"
+msgstr "Abre o cartafol marcadores."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -296,14 +296,13 @@ msgid "Previous bookmark not found"
 msgstr "Non se atopou a marca anterior"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Copia ó portapapeis o nome do ficheiro actual para marcas."
+msgstr "Amosa o nome do arquivo actual de marcas en modo exploración."
 
 #. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
-msgstr ""
+msgstr "arquivo %s"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."

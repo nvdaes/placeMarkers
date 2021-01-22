@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2019-11-17 10:53+0530\n"
+"PO-Revision-Date: 2021-01-09 20:30+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -290,14 +290,13 @@ msgid "Previous bookmark not found"
 msgstr "முந்தைய நூற்குறி காணப்படவில்லை"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "இடக் குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
+msgstr "இடக்குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை உலாவும் நிலையில் காண்பிக்கிறது."
 
 #. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
-msgstr ""
+msgstr "கோப்பின் பெயர் %s"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."

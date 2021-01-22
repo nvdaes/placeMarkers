@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2019-08-16 17:06+0200\n"
+"PO-Revision-Date: 2021-01-12 16:14+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
@@ -295,14 +295,13 @@ msgid "Previous bookmark not found"
 msgstr "Edellistä paikkamerkkiä ei löydy"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Kopioi nykyisen paikkamerkkitiedoston nimen leikepöydälle."
+msgstr "Näyttää nykyisen paikkamerkkitiedoston nimen  selaustilassa."
 
 #. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
-msgstr ""
+msgstr "%s-tiedosto"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2013-06-26 14:59+0200\n"
-"PO-Revision-Date: 2016-02-26 02:20-0800\n"
+"PO-Revision-Date: 2021-01-13 21:17+0100\n"
 "Last-Translator: Leonard de Ruijter <alderuijter@gmail.com>\n"
 "Language-Team: NVDA Nederlandstalig vertaalteam <nvda-nl@googlegroups.com>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -29,23 +29,139 @@ msgstr ""
 msgid "Install or update add-on"
 msgstr "Add-on installeren of bijwerken"
 
-#. Translators: label of error dialog, translated in NVDA core.
-#, python-format
-msgid "text \"%s\" not found"
-msgstr "Tekst \"%s\" niet gevonden"
-
-#. Translators: title of error dialog, translated in NVDA core.
-msgid "Find Error"
-msgstr "Zoekfout"
-
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s naar klembord gekopieerd"
 
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Specifiek zoeken"
+
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "Opg&eslagen teksten:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "&Verwijder uit geschiedenis"
+
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&Zoekterm:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "&Voeg toe aan geschiedenis"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "Acties voor z&oekopdracht"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "&Volgende zoeken"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "&Vorige zoeken"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Niet zoeken"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Plaatsmarkeringen gekopieerd"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Map niet gekopieerd"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Fout tijdens kopieren"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Plaatsmarkeringen hersteld"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Notities"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Bladwijzers"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "Niet&e:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "&Sla notitie op"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Verwijder..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+"Deze bladwijzer wordt definitief verwijderd. Deze actie kan niet ongedaan "
+"gemaakt worden."
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Geen bladwijzers"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Bladwijzers verwijderd"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Kopieer plaatsmarkeringen"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr ""
+"Selecteer een map om een back-up van uw huidige plaatsmarkeringen op te "
+"slaan."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "map voor back-up:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Selecteer de map om te kopiëren"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Herstel plaatsmarkeringen"
+
+#. Translators: An informational message displayed in the Restore dialog.
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr ""
+"Selecteer een map om een back-up van uw eerder gekopieerde plaatsmarkeringen "
+"te herstellen."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "map met back-up:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Selecteer de map om te herstellen"
+
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "P&lace markers"
+msgstr "P&laats markeringen"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
@@ -73,64 +189,62 @@ msgstr "PlaceMarkers map &kopieren..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Backup van place markers"
+msgstr "Backup van plaats markeringen"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "Place markers t&erugzetten..."
+msgstr "plaats markeringen t&erugzetten..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Terugzetten van eerder opgeslagen place markers"
-
-#. Translators: label of a dialog presented for copying place markers.
-msgid "Select a folder for copying your saved place markers"
-msgstr "Selecteer een map voor het kopieren van de opgeslagen place markers"
-
-#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-msgid "Folder not copied"
-msgstr "Map niet gekopieerd"
-
-#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-msgid "Copy Error"
-msgstr "Fout tijdens kopieren"
-
-#. Translators: label of a dialog presented for restoring place markers.
-msgid "Select the place markers folder you wish to restore"
-msgstr "Selecteer de map met place markers die u wilt terugzetten"
-
-#. Translators: label of a dialog presented to save or delete a string for specific search.
-msgid ""
-"Type the text you wish to save, or delete any text if you want to remove it "
-"from the previous saved searches"
-msgstr ""
-"Type de tekst die u wilt opslaan, of verwijder alle tekst om deze te "
-"verwijderen van de eerder opgeslagen zoekopdrachten"
-
-#. Translators: title of a dialog presented to save a string for specific search.
-msgid "Save text for specific search"
-msgstr "Tekst opslaan voor specifieke zoekopdracht"
+msgstr "Terugzetten van eerder opgeslagen plaats markeringen"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves a text string for a specific search."
-msgstr "Slaat tekst op voor een specifieke zoekopdracht"
+msgid "Opens the specific search folder."
+msgstr "Opent de specifieke zoekmap."
 
-#. Translators: message presented when there is not file for specific search.
-msgid "File for specific search not found"
-msgstr "Bestand voor specifieke zoekopdracht niet gevonden"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Opent de map met bladwijzers."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Activeert het dialoogvenster Kopiëren van %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Activeert het dialoogvenster Herstellen van %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "Zoekt naar tekst vanaf de cursorpositie in een specifiek document"
 
-#. Translators: message presented when a bookmark cannot be saved.
-msgid "Bookmark cannot be saved"
-msgstr "Bladwijzer kan niet worden opgeslagen"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"vindt het volgende exemplaar van de laatst gezochte tekst voor een specifiek "
+"document."
 
-#. Translators: message presented when the current position was previously saved as a bookmark.
-msgid "This position was already saved"
-msgstr "Deze positie is al opgeslagen"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"vindt het vorige voorkomen van de laatst gezochte tekst voor een specifiek "
+"document."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "Toon het dialoogvenster Notities voor een specifiek document."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Slaat de huidige positie op als een bladwijzer"
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -142,15 +256,8 @@ msgid "Cannot save bookmark"
 msgstr "Kan bladwijzer niet opslaan"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Saves the current position as a bookmark."
-msgstr "Slaat de huidige positie op als een bladwijzer"
-
-#. Translators: message presented when the current document doesn't contain bookmarks.
-msgid "No bookmarks"
-msgstr "Geen bladwijzers"
-
-msgid "Bookmark cannot be deleted"
-msgstr "Bladwijzer kan niet worden verwijderd"
+msgid "Deletes the current bookmark."
+msgstr "Verwijdert de huidige bladwijzer"
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -165,16 +272,12 @@ msgid "Cannot delete bookmark"
 msgstr "Kan bladwijzer niet verwijderen"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Deletes the current bookmark."
-msgstr "Verwijdert de huidige bladwijzer"
+msgid "Moves to the next bookmark."
+msgstr "Verplaatst nar de volgende bladwijzer."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
 msgstr "Geen bladwijzers gevonden"
-
-#. Translators: message presented when cannot find any bookmark.
-msgid "Cannot find any bookmark"
-msgstr "Kan geen bladwijzers vinden"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -186,77 +289,59 @@ msgid "Next bookmark not found"
 msgstr "Volgende bladwijzer niet gevonden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the next bookmark."
-msgstr "Verplaatst nar de volgende bladwijzer."
+msgid "Moves to the previous bookmark."
+msgstr "Gaat naar de vorige bladwijzer."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
 msgstr "Vorige bladwijzer niet gevonden"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Moves to the previous bookmark."
-msgstr "Gaat naar de vorige bladwijzer."
+msgid "Shows the name of the current file for place markers in browse mode."
+msgstr ""
+"Toont de naam van het huidige bestand voor plaatsmarkeringen in bladermodus."
 
-#. Translators: message presented when cannot copy the file name corresponding to place markers.
-msgid "Cannot copy file name for place markers"
-msgstr "Kan bestandsnaam voor bladwijzers niet kopieren"
-
-#. Translators: message presented when file name for place markers is copied to clipboard.
-msgid "Place markers file name copied to clipboard"
-msgstr "Bestandsnaam van bladwijzers naar klembord gekopieerd"
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr "%s bestand"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid "Copies the name of the current file for place markers to the clipboard."
-msgstr "Kopieert de bestandsnaam van de huidige bladwijzers naar het klembord."
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Slaat de huidige positie op als een tijdelijke bladwijzer"
 
-#. Translators: This is the label for the specific search settings dialog.
-msgid "Specific Search"
-msgstr "Specifieke zoekopdracht"
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Tijdelijke bladwijzer opgeslagen op positie %d"
 
-#. Translators: This is the label for a textfield in the
-#. specific search settings dialog.
-msgid "&Text to search:"
-msgstr "&Zoekterm:"
-
-#. Translators: The label for a setting in specific search to select a saved text.
-msgid "&Saved texts:"
-msgstr "&Opgeslagen teksten:"
-
-#. Translators: A combo box to choose a saved text.
-msgid "Saved texts to search:"
-msgstr "Opgeslagen zoekopdrachten:"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search down"
-msgstr "Zoek omlaag"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Search up"
-msgstr "Zoek omhoog"
-
-#. Translators: the name of an action presented in specific search dialog.
-msgid "Delete"
-msgstr "Verwijder"
-
-#. Translators: The label for a setting in specific search to select an action.
-msgid "&Actions to choose:"
-msgstr "Mogelijke &acties:"
-
-#. Translators: A combo box to choose an action.
-msgid "Select an action to perform:"
-msgstr "Kies een uit te voeren actie:"
-
-#. Translators: An option in specific search to perform case-sensitive search, copied from core.
-msgid "Case &sensitive"
-msgstr "Hoofdletter&gevoelig"
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Gaat naar de tijdelijke bladwijzer voor het huidige document."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
-msgstr "Place markers"
+msgstr "Plaats markeringen"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
-"Add-on om place markers in specifieke virtuele documenten aan te brengen"
+"Add-on om plaats markeringen in specifieke virtuele documenten aan te brengen"
+
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Kan bestandsnaam voor bladwijzers niet kopieren"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Bestandsnaam van bladwijzers naar klembord gekopieerd"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Bladwijzer kan niet worden opgeslagen"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Bladwijzer kan niet worden verwijderd"
+
+#, fuzzy
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Kan geen bladwijzers vinden"
