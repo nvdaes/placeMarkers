@@ -66,14 +66,15 @@ def createBookmarksFolder():
 createSearchFolder()
 createBookmarksFolder()
 
-def doFindText(text, reverse=False, caseSensitive=False):
+
+def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False):
 	if not text:
 		return
 	obj=api.getFocusObject()
 	treeInterceptor=obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj=treeInterceptor
-		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive)
+		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	else:
@@ -115,8 +116,9 @@ def doFindText(text, reverse=False, caseSensitive=False):
 				wx.OK|wx.ICON_ERROR
 			)
 
-def doFindTextUp(text, caseSensitive=False):
-	doFindText(text, reverse=True, caseSensitive=caseSensitive)
+
+def doFindTextUp(text, caseSensitive=False, willSayAllResume=False):
+	doFindText(text, reverse=True, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 
 def moveToBookmark(position):
 	obj = api.getFocusObject()
@@ -202,11 +204,12 @@ def getSavedBookmarks():
 
 class SpecificSearchDialog(wx.Dialog):
 
-	def __init__(self, parent):
+	def __init__(self, parent, reverse=False):
 		# Translators: The title of the Specific Search dialog.
 		super(SpecificSearchDialog, self).__init__(parent, title=_("Specific search"))
 		self.searchFile = getFileSearch()
 		self.savedTexts = getSavedTexts()
+		self.reverse = reverse
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
 		# Translators: The label of a combo box in the Specific Search dialog.
@@ -234,6 +237,8 @@ class SpecificSearchDialog(wx.Dialog):
 			_("&Don't search"),
 		)
 		self.searchRadioBox=sHelper.addItem(wx.RadioBox(self,label=searchActionsLabel, choices=searchChoices))
+		if self.reverse:
+			self.searchRadioBox.SetSelection(1)
 		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
 		# Message translated in NVDA core.
 		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=translate("Case &sensitive")))
@@ -693,7 +698,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("finds a text string from the current cursor position for a specific document."),
 		gesture="kb:NVDA+control+shift+f"
 	)
-	def script_specificFind(self,gesture):
+	def script_specificFind(self, gesture, reverse=False):
 		obj=api.getFocusObject()
 		if not controlTypes.STATE_MULTILINE in obj.states:
 			treeInterceptor=obj.treeInterceptor
@@ -704,7 +709,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# #8566: We need this to be a modal dialog, but it mustn't block this script.
 		def run():
 			gui.mainFrame.prePopup()
-			d = SpecificSearchDialog(gui.mainFrame)
+			d = SpecificSearchDialog(gui.mainFrame, reverse=reverse)
 			d.ShowModal()
 			gui.mainFrame.postPopup()
 		wx.CallAfter(run)
@@ -712,6 +717,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds the next occurrence of the last text searched for any specific document."),
+		resumeSayAllMode=sayAllHandler.CURSOR_CARET,
 	)
 	def script_specificFindNext(self, gesture):
 		obj=api.getFocusObject()
@@ -721,13 +727,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		if not lastFindText:
-			self.popupSpecificSearchDialog()
+			self.script_specificFind(gesture)
 		else:
-			doFindText(lastFindText, lastCaseSensitivity)
+			doFindText(
+				lastFindText,
+				lastCaseSensitivity,
+				willSayAllResume=willSayAllResume(gesture),
+			)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds the previous occurrence of the last text searched for any specific document."),
+		resumeSayAllMode=sayAllHandler.CURSOR_CARET,
 	)
 	def script_specificFindPrevious(self, gesture):
 		obj=api.getFocusObject()
@@ -737,9 +748,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		if not lastFindText:
-			self.popupSpecificSearchDialog()
+			self.script_specificFind(gesture, reverse=True)
 		else:
-			doFindTextUp(lastFindText, lastCaseSensitivity)
+			doFindTextUp(
+				lastFindText,
+				lastCaseSensitivity,
+				willSayAllResume=willSayAllResume(gesture),
+			)
 
 	def popupNotesDialog(self):
 		if getSavedBookmarks() == {}:
