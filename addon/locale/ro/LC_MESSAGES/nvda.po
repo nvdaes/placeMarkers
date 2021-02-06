@@ -5,245 +5,346 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 3.4\n"
+"Project-Id-Version: placeMarkers 6.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2016-02-12 03:00+1000\n"
-"PO-Revision-Date: 2019-06-05 10:06+0300\n"
+"POT-Creation-Date: 2016-02-12 16:00+1000\n"
+"PO-Revision-Date: 2019-11-09 19:09+0200\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
-#. Translators: label of a dialog.
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Dosarul dumneavoastră cu configurația NVDA conține fișiere care par a fi "
+"derivate dintr-o versiune precedentă a acestui add-on. Doriți să îl "
+"actualizați?"
+
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Instalare sau actualizare supliment"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
+#, python-format
+msgid "%s copied to clipboard"
+msgstr "%s copiat în planșetă"
+
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Căutare specifică"
+
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Texte salvate"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "* Ștergere din istoric"
+
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "&Text de căutat:"
+
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "& Adăugare la istoric"
+
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "&Acțiuni de căutare"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "&Caută următorul"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "&Caută precedentul"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Nu căuta"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Locația marcajelor copiată"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Dosar necopiat"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Eroare copiere"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Locația marcajelor restaurată"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Note"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&semne de carte"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&Notă:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "Salvare notă"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Șterge..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr ""
+"Acest semn de carte va fi șters permanent. Această acțiune este ireversibilă."
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Fără semne de carte"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Semn de carte șters"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Copiază locația marcajelor"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
+msgstr ""
+"Selectați un dosar în care să salvați o copie de siguranță a locului de "
+"marcaje."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "dosar pentru copie de siguranță:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Selectați dosarul pentru copiere"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Restaurează locația marcajelor"
+
+#. Translators: An informational message displayed in the Restore dialog.
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr ""
+"Selectați un dosar în care să restaurați o copie de siguranță a locului de "
+"marcaje copiat anterior.."
+
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "dosarul care conține copia de siguranță:"
+
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Selectează dosarul pentru restaurare"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "Marcaje &locație"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Meniu căutare și semne de carte"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "Căutare &specifică dosar"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "Deschide dosarul de căutare specific"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "Dosar &semne de carte"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "Deschide dosarul semnelor de carte"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "&Copiere dosar marcaje locație..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Copie de rezervă a marcajelor de locație"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "R&estaurare marcaje de locație..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Restaurează marcajele de locație salvate anterior"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Deschide dosarul de căutare specifică."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Deschide dosarul semnelor de carte."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Activează dialogul de copiere a %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Activează dialogul de restaurare a %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds a text string from the current cursor position for a specific document."
+msgstr ""
+"găsește un șir de text de la poziția curentă a cursorului pentru un anumit "
+"document."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"găsește apariția următoare a ultimului text căutat pentru orice document "
+"specific."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"găsește apariția anterioară a ultimului text căutat pentru orice document "
+"specific."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "Arată dialogul notelor pentru un document specificat."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Salvează poziția curentă drept semn de carte."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Poziție salvată la caracterul %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Nu se poate salva semnul de carte"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Șterge semnul de carte curent."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Niciun semn de carte selectat"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Semn de carte șters"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Nu se poate șterge semnul de carte"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "Mută la următorul semn de carte."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Niciun semn de carte găsit"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Poziție: caracter %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Următorul semn de carte negăsit"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "Mută la anteriorul semn de carte."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Anteriorul semn de carte negăsit"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, fuzzy
-msgid ""
-"This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents,\n"
-"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
-"cut.\n"
-"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
-"this later."
+msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
-"Acest suplimemt permite să confirmați dacă vreți să copiați și să tăiați, "
-"înlocuind conținuturile planșetei la apăsarea control+c și control+x. "
-"Aceasta este numită copie sau tăiere simulată, iar în mod implicit "
-"funcționează doar atunci când planșeta conține text. Vreți să configurați "
-"copia sau tăierea simulată? Puteți face asta acum sau mai târziu."
+"Copiază numele fișierului curent pentru marcaje de locație în planșetă."
 
-#. Translators: title of a dialog.
-msgid "Configure Emulate copy and cut"
-msgstr "Configurați copia sau tăierea simulată"
-
-#. Translators: label of a dialog.
-msgid "Preformatted text in HTML"
-msgstr "Text preformat în HTML"
-
-#. Translators: label of a dialog.
-msgid "HTML as shown in a web browser"
-msgstr "Ca și cum HTML ar fi afișat într-un browser web"
-
-#. Translators: label of a dialog.
-msgid "Raw text"
-msgstr "Text brut"
-
-#. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings."
-msgstr "Arată setările Clip Contents Designer."
-
-#. Translators: message presented when the clipboard content has been deleted.
-msgid "Clipboard cleared"
-msgstr "Planșetă golită"
-
-#. Translators: message presented when the clipboard content cannot be deleted.
-msgid "Clipboard not cleared"
-msgstr "Planșetă negolită"
-
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Fără text de adăugat"
-
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to add text to the clipboard"
-msgstr "Vă rugăm să confirmați dacă vreți să adăugați text pe planșetă"
-
-#. Translators: Title of a dialog.
-msgid "Adding text to clipboard"
-msgstr "Se adaugă text pe planșetă"
-
-#. Translators: message presented when the text has been added to the clipboard.
-msgid "Added"
-msgstr "Adăugat"
-
-#. Translators: message presented when the text cannot be added to the clipboard.
-msgid "Cannot add"
-msgstr "Nu se poate adăuga"
-
-#. Translators: message presented in input mode.
-#, fuzzy
-msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
 msgstr ""
-"Recuperează șirul selectat sau textul de la marcajul de început stabilit "
-"anterior și până la poziția curentă a cursorului de examinare, inclusiv, și "
-"îl adaugă la sfârșit în planșetă."
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Vă rugăm să confirmați dacă vreți să curățați planșeta"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Salvează poziția curentă drept semn de carte temporar."
 
-#. Translators: Title of a dialog.
-msgid "Clearing clipboard"
-msgstr "Se curăță planșeta"
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Semn de carte temporar salvar la poziția %d"
 
-#. Translators: message presented in input mode.
-msgid "Deletes the added text and the content of the clipboard."
-msgstr "Șterge textul adăugat și conținutul planșetei."
-
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "Vă rugăm să confirmați dacă vreți să copiați pe planșetă"
-
-#. Translators: Title of a dialog.
-msgid "Copying to clipboard"
-msgstr "Se copiază pe planșetă"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Copies to the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr ""
-"Copiază pe planșetă, cu posibilitatea de a fi întrebat pentru o confirmare "
-"anterioară"
-
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "Vă rugăm să confirmați dacă vreți să tăiați de pe planșetă"
-
-#. Translators: Title of a dialog.
-msgid "Cutting from clipboard"
-msgstr "Se taie de pe planșetă"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Cuts from the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr ""
-"Se taie de pe planșetă, cu posibilitatea de a fi întrebat pentru o "
-"confirmare anterioară"
-
-#. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
-msgstr "Afișează textul planșetei în modul de navigare"
-
-#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
-msgid "Clipboard is not empty, but there is no text to show"
-msgstr "Planșeta nu este goală, însă nu există niciun text de afișat"
-
-#. Translators: presented when clipboard is empty.
-msgid "Clipboard is empty"
-msgstr "Planșeta este goală"
-
-#. Translators: title of a browseable message.
-#, python-brace-format
-msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "Text planșetă ({max}/{current} - {formatForTitle})"
-
-#. Translators: label of a dialog.
-msgid ""
-"Type the string to be used as a &separator between contents added to the "
-"clipboard."
-msgstr ""
-"Tastați șirul de caractere ce va fi folosit ca &separator între "
-"conținuturile adăugate în planșetă."
-
-#. Translators: label of a dialog.
-msgid "&Add text before clip data"
-msgstr "&Adaugă text înainte de clip data"
-
-#. Translators: label of a dialog.
-msgid "Sele&ct the actions which require previous confirmation"
-msgstr "&Selectează acțiunea care necesită o confirmare precedentă"
-
-#. Translators: label of a dialog.
-msgid "Confirm to add text"
-msgstr "Confirma&ți pentru a adăuga text"
-
-#. Translators: label of a dialog.
-msgid "Confirm to clear clipboard"
-msgstr "Confirmați pentru a curăța planșeta"
-
-#. Translators: label of a dialog.
-msgid "Confirm to emulate copy"
-msgstr "Confirmați pentru a simula copia"
-
-#. Translators: label of a dialog.
-msgid "Confirm to emulate cut"
-msgstr "Confirmați pentru a simula tăierea"
-
-#. Translators: label of a dialog.
-msgid "&Request confirmation before performing the selected actions when:"
-msgstr "S&olicită o confirmare înainte de a efectua acțiunile selectate:"
-
-#. Translators: label of a dialog.
-msgid "Always"
-msgstr "Mereu"
-
-#. Translators: label of a dialog.
-msgid "If the clipboard contains text"
-msgstr "Dacă planșeta conține text"
-
-#. Translators: label of a dialog.
-msgid "If the clipboard is not empty"
-msgstr "Dacă planșeta nu este goală"
-
-#. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
-msgstr "Format de afișare a textului planșetei în modul de navigare:"
-
-#. Translators: label of a dialog.
-msgid ""
-"&Maximum number of characters when showing clipboard text in browse mode"
-msgstr ""
-"&Număr maxim de caractere la afișarea textului planșetei în modul de navigare"
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Deplasează la semnul de carte temporar pentru documentul curent."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer (Proiectantul conținutului planșetei)"
+msgid "Place markers"
+msgstr "Marcaje locație"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "Supliment pentru gestionarea textului din planșetă."
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr ""
+"Supliment pentru plasarea de marcaje de locație pe documente virtuale "
+"specifice"
 
-#~ msgid "Start marker set"
-#~ msgstr "Marcaj de început stabilit"
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nu se poate copia numele fișierului pentru marcajele de locație"
 
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Marchează poziția curentă a cursorului de examinare ca începutul textului "
-#~ "ce va fi adăugat în planșetă."
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Numele fișierului marcajelor de locație copiat în planșetă"
 
-#~ msgid "No selection. No start marker set"
-#~ msgstr "Fără selecție. Niciun marcaj de început stabilit"
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Semnul de carte nu poate fi salvat"
 
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr ""
-#~ "Marcatorul de pornire trebuie să se afle în interiorul obiectului curent"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Semnul de carte nu poate fi șters"
 
-#~ msgid "&Text in clipboard to confirm"
-#~ msgstr "Te&xt pe planșetă pentru confirmare"
-
-#~ msgid "&Clip Contents Designer settings..."
-#~ msgstr "Opțiuni &Clip Contents Designer..."
-
-#~ msgid "Clip Contents Designer settings"
-#~ msgstr "Configurare Clip Contents Designer"
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nu se poate găsi niciun semn de carte"

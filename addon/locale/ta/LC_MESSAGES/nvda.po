@@ -5,240 +5,333 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 1.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-15 10:55+0530\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2021-01-09 20:30+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
-"Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
+"Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.11\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. Translators: label of a dialog.
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents,\n"
-"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
-"cut.\n"
-"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
-"this later."
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"ஏற்கெனவே பிடிப்புப் பலகையில் உரை இருந்து, கட்டுப்பாடு+c, கட்டுப்பாடு+x\n"
-" \t\tவிசைகளைக் கொண்டு உரையைப் பிடிப்புப் பலகைக்குச் சேர்க்க முயலும்பொழுது, அச்செயல்களைச் "
-"செய்ய வேண்டுமா என்று உறுதிச் செய்ய இக்கூட்டுக் கூறு கேட்கும்.\n"
-" \t\tஇவ்வசதியை இப்பொழுதே அமைவடிவமாக்க விரும்புகிறீர்களா? பிறகும் கூட "
-"அமைவடிவமாக்கலாம், அல்லது மாற்றங்களை மேற்கொள்ளலாம். "
+"தங்களின் என்விடிஏ கோப்புறை இக்கூட்டுறுப்பின் முந்தைய பதிப்பிற்கான கோப்புகளைக் "
+"கொண்டிருப்பதாக தோன்றுகிறது. கோப்புறையை இற்றைப்படுத்த விரும்புகிறீர்களா?"
 
-#. Translators: title of a dialog.
-msgid "Configure Emulate copy and cut"
-msgstr "படியெடுக்கும் மற்றும் வெட்டும் செயலை அமைவடிவமாக்குக"
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "கூட்டுறுப்பை நிறுவுக, அல்லது இற்றைப்படுத்துக"
 
-#. Translators: label of a dialog.
-msgid "Preformatted text in HTML"
-msgstr "எச்.டி.எம்.எல்லில் முன்வடிவூட்டப்பட்ட உரை"
+#. Translators: message presented when a string of text has been copied to the clipboard.
+#, python-format
+msgid "%s copied to clipboard"
+msgstr "%s பிடிப்புப் பலகைக்கு படியெடுக்கப்பட்டது"
 
-#. Translators: label of a dialog.
-msgid "HTML as shown in a web browser"
-msgstr "இணைய உலாவியில் காட்டப்படுவது போன்ற எச்.டி.எம்.எல்."
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "குறிப்பானத் தேடல்"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
-msgstr "கச்சா உரை"
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "சேமிக்கப்பட்ட உரைகள் (&V)"
 
-#. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings."
-msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகளைக் காட்டுகிறது"
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "வரலாற்றிலிருந்து நீக்குக (&R)"
 
-#. Translators: message presented when the clipboard content has been deleted.
-msgid "Clipboard cleared"
-msgstr "பிடிப்புப்பலகை துடைக்கப்பட்டது"
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "தேடப்பட வேண்டிய உரை (&T): "
 
-#. Translators: message presented when the clipboard content cannot be deleted.
-msgid "Clipboard not cleared"
-msgstr "பிடிப்புப்பலகை துடைக்கப்படவில்லை"
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "வரலாற்றில் சேர்க்கவும் (&A)"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "பின்னிணைக்க உரை ஏதுமில்லை"
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "தேடலின் மீதான செயல் (&E)"
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to add text to the clipboard"
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "அடுத்ததைத் தேடுக (&N)"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "முந்தயதைத் தேடுக (&P)"
+
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "தேடாதிருக்கவும் (&D)"
+
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "இடக் குறிப்பிகள் படியெடுக்கப்பட்டன"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "கோப்புறை படியெடுக்கப்படவில்லை"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "படியெடுப்பதில் பிழை"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "இடக் குறிப்பிகள் மீட்டமைக்கப்பட்டன"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "நூற்குறிகள் (&B)"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "குறிப்பு (&E)"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "குறிப்பினைச் சேமிக்கவும் (&S)"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "அழிக்கவும்... (&D)"
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
+msgstr "இந்த நூற்குறி நிரந்தரமாக அழிக்கப்படும். இச்செயலைத் திரும்பப் பெற இயலாது."
+
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "நூற்குறிகள் ஏதுமில்லை"
+
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "நூற்குறிகள் அழிக்கப்பட்டன"
+
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "இடக் குறிப்பிகளைப் படியெடுக்கவும்"
+
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"பிடிப்புப் பலகையில் உரை பின்னிணைக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+"தங்களின் தற்போதைய இடக்குறிப்பிகளின் காப்பினைச் சேமிக்க வேண்டிய கோப்புரையைத் தெரிவுச் செய்க."
 
-#. Translators: Title of a dialog.
-msgid "Adding text to clipboard"
-msgstr "பிடிப்புப்பலகையில் உரையைப்  பின்னிணைக்கிறது "
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "காப்பிற்கான அடைவு"
 
-#. Translators: message presented when the text has been added to the clipboard.
-msgid "Added"
-msgstr "பின்னிணைக்கப்பட்டது"
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "படியெடுப்பதற்கான அடைவினைத் தெரிவுச் செய்க"
 
-#. Translators: message presented when the text cannot be added to the clipboard.
-msgid "Cannot add"
-msgstr "பின்னிணைக்க இயலாது"
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "இடக் குறிப்பிகளை மீட்டமைக்கவும்"
 
-#. Translators: message presented in input mode.
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"துவக்கக் குறியிலிருக்கும் சரம், அல்லது உரையிலிருந்து தற்போதைய சீராய்வுச்\n"
-" \t\tசுட்டியின் நிலை வரை தெரிவுச் செய்து பிடிப்புப்பலகையில் பின்னிணைக்கிறது. "
+"தங்களின் முந்தைய இடக்குறிப்பிகளின் காப்பினை மீட்டமைக்க வேண்டிய கோப்புரையைத் தெரிவுச் செய்க."
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to clear the clipboard"
-msgstr "பிடிப்புப் பலகை துடைக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "காப்பினைக் கொண்டுள்ள அடைவு"
 
-#. Translators: Title of a dialog.
-msgid "Clearing clipboard"
-msgstr "பிடிப்புப் பலகை துடைக்கப்படுகிறது"
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "இந்த அடைவிலிருந்து மீட்டமைக்கவும் "
 
-#. Translators: message presented in input mode.
-msgid "Deletes the added text and the content of the clipboard."
-msgstr "பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்ட உரையையும், உள்ளடக்கங்களையும் அழிக்கிறது."
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "இடக் குறிப்பிகள் (&L)"
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to copy to the clipboard"
-msgstr "பிடிப்புப் பலகைக்கு படியெடுக்கப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "நூற்குறிகள் மற்றும் தேடுதல் உட்பட்டியல்"
 
-#. Translators: Title of a dialog.
-msgid "Copying to clipboard"
-msgstr "பிடிப்புப் பலகைக்குப் படியெடுக்கிறது"
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "குறிப்பான தேடுதல்களின் கோப்புறை (&S)"
 
-#. Translators: message presented in input mode.
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "குறிப்பான தேடுதல்களின் கோப்புறையைத் திறக்கிறது"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "நூற்குறிகளின் கோப்புறை (&B)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "நூற்குறிகளின் கோப்புறையைத் திறக்கிறது"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "இடக் குறிப்பிகளை படியெடுக்க வேண்டிய கோப்புறை (&C)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "இடக் குறிப்பிகளின் காப்பமைவு"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "இடக் குறிப்பிகளை மீட்டேடுக்கவும் (&E)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "முன்னதாக சேமிக்கப்பட்டுள்ள இடக் குறிப்பிகளை மீட்டெடுக்கவும்"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "குறிப்பான தேடுதல்களின் கோப்புறையைத் திறக்கிறது"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "நூற்குறிகளின் கோப்புறையைத் திறக்கிறது"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "%s-இன் படியெடுக்கவும் உரையாடலைச் செயற்படுத்துகிறது"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "%s-இன் மீட்டமைக்கவும் உரையாடலைச் செயற்படுத்துகிறது"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Copies to the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு படியெடுக்கிறது"
-
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to cut from the clipboard"
-msgstr "பிடிப்புப் பலகைக்கு வெட்டப்பட வேண்டுமா என்பதை அருள் கூர்ந்து உறுதிச் செய்க"
-
-#. Translators: Title of a dialog.
-msgid "Cutting from clipboard"
-msgstr "பிடிப்புப் பலகைக்கு வெட்டப்படுகிறது"
-
-#. Translators: message presented in input mode.
-msgid ""
-"Cuts from the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr "பயனரிடம் உறுதிச் செய்துகொண்டு, உரையை பிடிப்புப் பலகைக்கு வெட்டுகிறது"
-
-#. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டுகிறது"
-
-#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
-msgid "Clipboard is not empty, but there is no text to show"
-msgstr "வெற்றுப் பிடிப்புப்பலகையல்ல. ஆனால், காட்டப்படுவதற்கு உரையேதுமில்லை."
-
-#. Translators: presented when clipboard is empty.
-msgid "Clipboard is empty"
-msgstr "வெற்றுப் பிடிப்புப்பலகை"
-
-#. Translators: title of a browseable message.
-#, python-brace-format
-msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "பிடிப்புப்பலகை உரை ({max}/{current} - {formatForTitle})"
-
-#. Translators: label of a dialog.
-msgid ""
-"Type the string to be used as a &separator between contents added to the "
-"clipboard."
+"finds a text string from the current cursor position for a specific document."
 msgstr ""
-"பிடிப்புப்பலகையில் பின்னிணைக்கப்பட்டிருக்கும் உரையைப் பிரித்துக் காட்டுவதற்குப் பயன்படுத்தப்பட "
-"வேண்டிய சரத்தை தட்டச்சிடவும். (&S)"
+"ஒரு ஆவணத்தில், தற்போதைய சுட்டியின் நிலையிலிருந்து ஒரு உரைச் சரத்தை கண்டுபிடிக்கிறது"
 
-#. Translators: label of a dialog.
-msgid "&Add text before clip data"
-msgstr "உரையை பிடிப்புப்பலகையின் உரைக்கு முன்னிணைக்கவும். (&A)"
-
-#. Translators: label of a dialog.
-msgid "Sele&ct the actions which require previous confirmation"
-msgstr "முன்கூட்டியே உறுதிப்படுத்தப்பட வேண்டிய செயல்களைத் தெரிவுச் செய்க (&C)"
-
-#. Translators: label of a dialog.
-msgid "Confirm to add text"
-msgstr "உரையைப் பின்னிணைப்பதற்கு முன் உறுதிச் செய்க"
-
-#. Translators: label of a dialog.
-msgid "Confirm to clear clipboard"
-msgstr "பிடிப்புப்பலகையை துடைப்பதற்கு முன் உறுதிச் செய்க"
-
-#. Translators: label of a dialog.
-msgid "Confirm to emulate copy"
-msgstr "போன்று படியெடுத்தலை செயலாக்குவதற்கு முன் உறுதிச் செய்க"
-
-#. Translators: label of a dialog.
-msgid "Confirm to emulate cut"
-msgstr "போன்று வெட்டுதலை செயலாக்குவதற்கு முன் உறுதிச் செய்க"
-
-#. Translators: label of a dialog.
-msgid "&Request confirmation before performing the selected actions when:"
-msgstr "தெரிவுச் செய்த செயல்களை எப்பொழுது உறுதிப்படுத்த வேண்டும் (&R):"
-
-#. Translators: label of a dialog.
-msgid "Always"
-msgstr "எப்பொழுதும்"
-
-#. Translators: label of a dialog.
-msgid "If the clipboard contains text"
-msgstr "பிடிப்புப்பலகையில் உரை இருக்கும்பொழுது"
-
-#. Translators: label of a dialog.
-msgid "If the clipboard is not empty"
-msgstr "பிடிப்புப்பலகை வெற்றாக இல்லாதபொழுது"
-
-#. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
-msgstr "உலாவு நிலையில் காட்டப்பட வேண்டிய பிடிப்புப்பலகையின் வடிவூட்டம் (&F)"
-
-#. Translators: label of a dialog.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"&Maximum number of characters when showing clipboard text in browse mode"
-msgstr ""
-"பிடிப்புப்பலகையில் இருக்கும் உரையை உலாவு நிலையில் காட்டப்படும்பொழுது, காட்டப்பட வேண்டிய "
-"வரியுருக்களின் உச்ச எண்ணிக்கை (&M)"
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr "ஒரு ஆவணத்தில் இறுதியாகத் தேடப்பட்ட உரையின் அடுத்த தோற்றத்தைக் கண்டறிகிறது. "
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr "ஒரு ஆவணத்தில் இறுதியாகத் தேடப்பட்ட உரையின் முந்தைய தோற்றத்தைக் கண்டறிகிறது. "
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "ஒரு குறிப்பிட்ட ஆவணத்திற்கான குறிப்புகள் உரையாடலைக் காட்டுக. "
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "தற்போதைய நிலையை ஒரு நூற்குறியாக சேமிக்கிறது"
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "%d வரியுரு நிலையில் நூற்குறி சேமிக்கப்பட்டது"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "நூற்குறியை சேமிக்க இயலவில்லை"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "தற்போதைய நூற்குறியை அழிக்கிறது"
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "நூற்குறிகள் ஏதும் தெரிவு செய்யப்படவில்லை"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "நூற்குறி அழிக்கப்பட்டது"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "நூற்குறியை அழிக்க இயலவில்லை"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "அடுத்த நூற்குறிக்கு நகர்கிறது"
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "நூற்குறிகள் ஏதும் காணப்படவில்லை"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "நிலை: வரியுரு %d"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "அடுத்த நூற்குறி காணப்படவில்லை"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "முந்தைய நூற்குறிக்கு நகர்கிறது"
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "முந்தைய நூற்குறி காணப்படவில்லை"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Shows the name of the current file for place markers in browse mode."
+msgstr "இடக்குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை உலாவும் நிலையில் காண்பிக்கிறது."
+
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr "கோப்பின் பெயர் %s"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "தற்போதைய நிலையை ஒரு தற்காலிக நூற்குறியாக சேமிக்கிறது"
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "தற்காலிக நூற்குறி நிலை %dல் சேமிக்கப்பட்டது"
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "நடப்புக் கோப்பின் தற்காலிக நூற்குறிக்கு நகர்கிறது."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Clip Contents Designer"
-msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர்"
+msgid "Place markers"
+msgstr "இடக் குறிப்பிகள்"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "பிடிப்புப்பலகையில் இருக்கும் உரையை மேலாள்வதற்கான கூட்டுக்கூறு."
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "HTML போன்ற நிகர் ஆவணங்களில் இடக் குறிப்பிகளை அமைப்பதற்கான கூட்டுறுப்பு "
 
-#~ msgid "Start marker set"
-#~ msgstr "துவக்கக் குறி இடப்பட்டது"
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "இடக் குறிப்பிகளுக்கு கோப்பின் பெயரை படியெடுக்க இயலவில்லை"
 
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "சீராய்வுச் சுட்டியின் தற்போதைய நிலையை, பிடிப்புப்பலகையில் பின்னிணைக்க வேண்டிய உரையின் "
-#~ "துவக்கமாகக் குறிக்கிறது. "
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "இடக் குறிப்பிகளின் கோப்புப் பெயர் பிடிப்புப் பலகைக்கு படியெடுக்கப்பட்டது"
 
-#~ msgid "No selection. No start marker set"
-#~ msgstr "தெரிவு ஏதுமில்லை, அல்லது துவக்கம் குறிக்கப்படவில்லை."
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "நூற்குறியை சேமிக்க இயலவில்லை"
 
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "துவக்கக் குறி அதே பொருளுக்குள் இருக்க வேண்டும்"
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "நூற்குறியை அழிக்க இயலவில்லை"
 
-#~ msgid "&Text in clipboard to confirm"
-#~ msgstr "பிடிப்புப்பலகையில் இருக்கும் உறுதிச் செய்யப்பட வேண்டிய உரை (&T)"
-
-#~ msgid "&Clip Contents Designer settings..."
-#~ msgstr "கிளிப் கண்டெண்ட்ஸ் டிசைனர் அமைப்புகள்... (&C)"
-
-#~ msgid "Clip Contents Designer settings"
-#~ msgstr "கிளிப் கண்டென்ட்ஸ் டிசைனர் அமைப்புகள்"
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "எந்த நூற்குறியையும் காண இயலவில்லை"

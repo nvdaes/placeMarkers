@@ -1,114 +1,154 @@
-# Rozšírená schránka #
+# Záložky #
+* Autori): Noelia, Chris.
+* Funguje s NVDA od verzie 2019.3.
+* Stiahnuť [Stabilnú verzia][1]
+* Stiahnuť [Vývojovú verzia][2]
 
-*	Autori: Noelia, Abdel.
-*	Funguje s NVDA od verzie 2019.3
-*	Stiahnuť [stabilnú verziu][1]
-*	Stiahnuť [vývojovú verziu][2]
+Doplnok dokáže uložiť reťazec pre vyhľadávanie, alebo konkrétne miesto v
+dokumente ako záložku. Funguje na webových stránkach a dokumentoch v režime
+prehliadania. Funguje tiež vo viacriadkových editačných poliach. Ak sa nedá
+aktualizovať systémový kurzor, reťazec je skopírovaný do schránky pre
+hľadanie cez iné nástroje. Záložky a reťazce hľadania sú uložené v
+súboroch. Názvy súborov sú odvodené od cesty, názvu a URL dokumentu.
+
+## Klávesové skratky: ##
+
+*	ctrl+shift+NVDA+f: Otvorí dialóg hľadania a zobrazí naposledy hľadané
+  reťazce. Zo zoznamu môžete vybrať reťazce, ktoré ste už hľadali. Takisto
+  môžete vybraté reťazce odstrániťz histórie začiarknutím príslušného
+  políčka. Takisto môžete určiť, či aktuálny reťazec hľadania chcete uložiť
+  na neskoršie použitie. V tomto okne môžete tiež určiť smer hľadania
+  (hľadať predchádzajúce, hľadať nasledujúce), prípadne nehľadať
+  vôbec. Takisto môžete začiarknuť rozlišovanie malých a veľkých
+  písmen. Hľadanie spustíte tlačidlom OK.
+*	ctrl+shift+NVDA+k: Uloží aktuálne miesto ako záložku. Ak chcete záložku
+  pomenovať, vyberte pred stlačením skratky nejaký text, ktorý sa použije
+  ako názov.
+*	ctrl+shift+NVDA+delete: Odstráni záložku pod kurzorom.
+*	Nvda+k: Presunie kurzor na nasledujúcu záložku.
+*	NVDA+shift+k: Presunie kurzor na predchádzajúcu záložku.
+*	Nedefinované: zobrazí v režime prehliadania názov súboru so záložkami pre
+  aktuálny dokument.
+*	alt+NVDA+k: Otvorí dialóg s uloženými záložkami pre aktuálny dokument. Tu
+  môžete k záložkám priradiť poznámky. Tlačidlom vymazať záložku odstránite
+  vybratú záložku. Tlačidlom OK presuniete kurzor na vybratú záložku.
+*	Nedefinované: Uloží pozíciu kurzora ako dočasnú záložku.
+*	Nedefinované: Presunie kurzor na dočasnú záložku.
+*	Nedefinované: Nájde nasledujúci výskyt posledného hľadaného reťazca v
+  dokumente.
+*	Nedefinované: Nájde predchádzajúci výskyt posledného hľadaného reťazca v
+  dokumente.
 
 
-Tento doplnok využijete, ak chcete do schránky Windows postupne vkladať
-rôzne časti textu a výsledok naraz prilepiť. Doplnok vie tiež vyčistiť obsah
-schránky a zobraziť obsah schránky v režime prehliadania.
+## Podmenu záložky (nvda+n) ##
 
-## Klávesové skratky ##
+Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 
-* NVDA+windows+c: pripojí k obsahu schránky vybratý text, alebo text, ktorý
-  ste označili prezeracím kurzorom. Takto je možné pridať aj znaky unicode,
-  MathML.
-* NVDA+windows+x: vymaže obsah schránky.
-* Nepridelené: Skopíruje alebo vystrihne obsah, pričom zobrazí varovanie.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	Priečinok s reťazcami hľadania: Otvorí priečinok so súbormi, v ktorých sú
+  uložené reťazce pre hľadanie.
+*	priečinok so záložkami: otvorí priečinok v ktorom sú uložené súbory so
+  záložkami.
+*	Zálohovať záložky: skopíruje priečinok so záložkami na určené miesto.
+*	Obnoviť záložky: Obnoví záložky z uloženého priečinka.
 
-Tieto skratky môžete zmeniť z menu NVDA >možnosti > klávesové skratky,
-kategória prezeranie textu.
+Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránkach
+je lepšie použiť reťazce hľadania.
 
-## Možnosti ##
-*	Nastavenia rozšírenej schránky umožňujú nastaviť reťazec, ktorý bude oddeľovať jednotlivé kúsky textu, ktoré ste do schránky vložili.
-Takisto môžete určiť, či sa bude obsah vkladať na koniec alebo na začiatok obsahu schránky. Tiež môžete aktivovať varovanie, ktoré sa zobrazí pred kopírovaním alebo vystrihnutím do schránky, pričom varovanie je možné zobraziť len vtedy, ak je v schránke obsah.
-Nakoniec, môžete určiť formát  a počet znakov, ktoré sa zobrazia zo schránky v režime prehliadania. Odporúčame vám nenastavovať vysoký počet znakov. Predvolene sa v režime prehliadania zobrazuje 100000 znakov.
+## Zmeny vo verzii 14.0 ##
+*	Namiesto kopírovania názvu súboru do schránky sa teraz názov zobrazí v
+  režime prehliadania. Funkcia nemá priradenú klávesovú skratku.
+*	Políčka hľadanie a história sa viac neprekrývajú (opravil Cyrille Bougot).
+*	Vyžaduje NVDA od verzie 2019.3.
 
-Poznámky:
+## Zmeny vo verzii 13.0 ##
+*	Pridané funkcie na vyhľadanie predchádzajúceho a nasledujúceho výskytu
+  hľadaného reťazca. Skratky je potrebné nastaviť ručne.
+*	Vyhľadávanie funguje aj vtedy, ak je otvorený dialóg O NVDA.
+*	Políčko rozlišovať malé a veľké písmená sa začiarkne, ak bolo začiarknuté
+  pri poslednom hľadaní.
+*	Pri aktualizácii sa aktualizujú a presunú aj adresáre so záložkami, pričom
+  stále je možné ponechať súbory aj v hlavnom adresári NVDA.
+*	Pri zálohovaní sa vytvorí priečinok placeMarkersBackup a do neho sa
+  skopírujú príslušné súbory, abysa zabránilo nechcenému odstráneniu súborov
+  a priečinkou s dátami. Toto sa deje len v prípade, ak už vybratý priečinok
+  nemá  názov placeMarkersBackup.
 
-*	skratku môžete zmeniť z menu NVDA >možnosti > klávesové skratky, kategória
-  možnosti.
-*	Ak je otvorené nejaké okno NVDA, nie je možné zobraziť varovanie. V
-  takomto prípade sa varovanie nezobrazí a akcia sa rovno vykoná.
+## Zmeny vo verzii 12.0 ##
+*	NVDA viac nepadá pri vybratí čínskych znakov a následnom pokuse napísať
+  poznámku k záložke.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice
-  Writer.
+## Zmeny vo verzii 11.0 ##
+*	Vyžaduje NVDA od verzie 2018.3.
+*	Môžete si stiahnuť [Verziu pre NVDA 2017.3][3].
 
-## Zmeny vo verzii 11.0
-* Odteraz je možné do schránky pridať aj reťazce označené štandardnými
-  príkazmi na označovanie pomocou prezeracieho kurzora (NVDA+F9,
-  NVDA+F10). Nvda+windows+F9 sa už nepoužíva, pre lepšiu integráciu so
-  skratkou nvda+shift+F9.
-* Vyžaduje NVDA od verzie 2019.3.
-
-## Zmeny vo verzii 10.0
-* Opravená chyba, ktorá nastávala pri zobrazení názvu okna so zobrazením
-  textu v režime prehliadania, ak boli v názve okna špeciálne znaky.
-* Abdel opravil problémy s kopírovaním na Arabskom rozložení klávesnice.
+## Zmeny vo verzii 10.0 ##
+*	V aplikácii MS edge sú skratky NVDA+k, NVDA+shift+k alebo NVDA+alt+k
+  odosielané aj do aplikácie, aby nedochádzalo k chybám, hlavne pri dlhých
+  dokumentoch.
+*	Špecifické hľadanie funguje aj v aplikácii Edge.
 
 ## Zmeny vo verzii 9.0
-
-* Pridané zobrazenie obsahu schránky v režime prehliadania.
-* Pridaná možnosť zobraziť varovanie, ak schránka nie je prázdna, napríklad
-  ak sú v schránke súbory a priečinky.
-* Vyžaduje sa NVDA od verzie 2018.4.
+*	Prezerací kurzor sleduje systémový kurzor pri aktivovaní záložky z
+  dialógu.
+*	Opravené fungovanie prechodu na predchádzajúcu záložku.
+*	Záložky je možné odstrániť z dialógu s poznámkami.
+*	Odteraz je možné nastaviť skratky pre uloženie a aktivovanie dočasnej
+  záložky.
 
 ## Zmeny vo verzii 8.0 ##
+*	odstránená identifikácia fragmentov z názvov súborov pre záložky, keďže
+  toto spôsobovalo problémy v programe VitalSource Bookshelf ePUB reader.
+*	Pridaný dialóg, v ktorom je možné k záložkám písať poznámky a tiež
+  presunúť kurzor na vybratú záložku.
 
-* Nastavenia doplnku pridané do stromu s nastaveniami NVDA.
-* Vyžaduje NVDA od verzie 2018.2.
-* Stále si môžete stiahnuť [verziu pre NVDA 2017.3][3].
+## Zmeny vo verzii 7.0 ##
+*	Dialóg s uložením špecifického textu hľadania bol nahradený novým. Tu je
+  možné určiť presné parametre hľadania.
+*	Upravený vzhľad dialógov.
+*	Vyhľadanie predchádzajúceho alebo nasledujúceho výskytu rešpektuje
+  nastavenie rozlišovania malých a veľkých písmen.
+*	Vyžaduje NVDA od verzie 2016.4.
+*	Pridaná možnosť nastaviť skratky na zálohu a obnovenie záložiek.
+*	NVDA upozorní po dokončení obnovi alebo zálohy záložiek.
 
-## Zmeny vo verzii 7.0
-
-* Ak nepovolíte simulovanie kopírovania pri inštalácii, doplnok neupravuje
-  klávesové skratky.
-
-## Zmeny vo verzii 6.0
-
-*	 Pridané varovanie pri kopírovaní a vystrihnutí.
-*	Pridané skratky, ktoré preberajú kontrolu nad schránkou a dajú sa nastaviť z dialógu Klávesové skratky.
-*	 Pridané okno, ktoré sa zobrazí pri prvom spustení doplnku a umožňuje nastaviť prevzatieskratiek na prácu so schránkou. Toto umožňuje následné zobrazovanie varovaní pri kopírovaní a vystrihnutí.
-*	Opravená dokumentácia pre skript_add (Windows+NVDA+c).
+## Zmeny vo verzii 6.0 ##
+* Ak nie sú dostupné funkcie doplnku, doplnok odošle skratky do aktuálneho
+  otvoreného okna príslušnej aplikácie.
 
 ## Zmeny vo verzii 5.0 ##
-
-*	Opravené vizuálne zobrazenie dialógov doplnku.
-*	Vyžaduje NVDA od verzie 2016.4
+* pridané hľadanie s rozlišovaním malých a veľkých písmen.
+* odstránená položka na otvorenie návodu z menu doplnku.
+* Prepracované klávesové skratky.
 
 ## Zmeny vo verzii 4.0 ##
-*	Nastavenia sa ukladajú podľa pravidiel NVDA, takže je možné použiť
-  konfiguračné profily NVDA a nie je potrebné po preinštalovaní doplnku
-  nanovo importovať nastavenia.
-*	Odteraz je možné v nastaveniach doplnku určiť, či sa bude text vkladať na
-  koniec alebo na začiatok obsahu schránky. 
+* odstránená identifikácia fragmentov z názvov súborov pre záložky, keďže
+  toto spôsobovalo problémy v doplnku ePUBREADER pre Firefox.
+* Návod k doplnku nájdete v správcovi doplnkov.
+
+## Zmeny vo verzii 3.1 ##
+* aktualizované a doplnené preklady.
+* Pozícia záložky nie je oznamovaná počas rýchleho čítania.
 
 ## Zmeny vo verzii 3.0 ##
-*	Braillovské znaky pre matematické operátory je takisto možné vkladať do
-  schránky, ak je k dispozícii MathPlayer.
-*	Ak nezadáte znaky na oddelenie, použije sa jeden prázdny riadok.
-*	Nastavenia doplnku je možné vyvolať klávesovou skratkou, ktorú si
-  nastavíte v dialógu klávesové skratky.
-*	Pridané začiarkávacie políčko, ktoré zaistí importovanie nastavení po
-  preinštalovaní doplnku.
+* pridaná podpora pre rýchle čítanie
 
 ## Zmeny vo verzii 2.0 ##
-*	Znaky v jazyku Hindi môžu byť použité na oddelenie častí schránky.
+* pridaná možnosť uložiť rôzne reťazce hľadania pre rôzne dokumenty.
+* opravená chyba, ktorá sa vyskytovala, ak cesta neobsahovala len ascii
+  znaky.
+* Skratky môžete zmeniť v nastaveniach klávesových skratiek NVDA.
 
 ## Zmeny vo verzii 1.0 ##
-*	prvé vydanie.
+* prvé vydanie
+* Pridané jazyky: Brazílska portugalčina, fínčina, francúzština,
+  galícijčina, nemčina, taliančina, japončina, kórejčina, nepálčina,
+  Perzština, Portugalčina, španielčina, slovenčina, slovinčina, Tamilčina.
+
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

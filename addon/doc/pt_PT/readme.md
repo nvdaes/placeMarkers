@@ -1,128 +1,182 @@
-# Clip Contents Designer #
+# Marcadores de lugar #
+* Autores: Noelia, Chris.
+* Compatibilidade: NVDA 2019.3 ou posterior
+* Descarregar [versão estável][1]
+* Descarregar [versão de desenvolvimento][2]
 
-*	Authors: Noelia, Abdel.
-*	NVDA compatibility: 2019.3 or later
-*	Baixar a [versão estável][1]
-*	Baixar a [versão de desenvolvimento][2]
+Este extra é usado para guardar e procurar expressões ou marcadores de texto
+específicos. Pode ser usado em páginas da Web ou documentos no modo de
+navegação do NVDA. Também pode ser usado para guardar ou procurar expressões
+em controlos de múltiplas linhas; neste caso, se não for possível actualizar
+o cursor, a expressão será copiada para a área de transferência, para que
+possa ser pesquisada usando outras ferramentas. O extra guarda as expressões
+e marcadores específicos em ficheiros cujo nome se baseia no título e URL do
+documento actual. Este extra é baseado em "SpecificSearch" e
+"Bookmark&Search", desenvolvidos pelo mesmo autor. Deve desinstalá-los para
+usar este, uma vez que têm comandos e recursos comuns.
+
+## Comandos: ##
+
+*	control+shift+NVDA+f: abre uma caixa de diálogo com uma caixa de edição
+  que mostra a última pesquisa guardada; Nesta caixa de diálogo, também pode
+  seleccionar as pesquisas guardadas anteriormente de uma caixa de
+  combinação ou remover a cadeia seleccionada do histórico usando uma caixa
+  de selecção. Pode escolher se o texto contido na caixa de edição será
+  adicionado ao histórico dos seus textos guardados. Finalmente, escolha uma
+  acção do próximo grupo de botões de rádio (entre Pesquisar próximo,
+  Pesquisar anterior ou Não pesquisar) e especifique se o NVDA fará uma
+  pesquisa sensível a maiúsculas e minúsculas. Quando pressiona ok, o NVDA
+  procurará essa cadeia.
+*	control+shift+NVDA+k: guarda a posição actual como marcador. Se quiser
+  fornecer um nome para este marcador, seleccione algum texto desta posição
+  antes de guardá-lo.
+*	control+shift+NVDA+delete: Apaga o marcador correspondente a esta posição.
+*	NVDA+k: Move para o próximo marcador.
+*	shift+NVDA+k: Move para o marcador anterior.
+*	Não atribuído: Mostra o nome do ficheiro onde os dados dos marcadores de
+  lugar serão guardados em modo de navegação, sem uma extensão.
+*	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores guardados para
+  este documento. Pode escrever uma nota para cada marcador; pressione
+  "guardar nota", para guardar as alterações. Pressione Delete para apagar o
+  marcador seleccionado. Pressionando OK, Pode mover-se para a posição
+  seleccionada.
+*	Não atribuído: salva uma posição como um marcador temporário.
+*	Não atribuído: Move para o marcador temporário do documento actual.
+*	Não atribuído: Procura a próxima ocorrência do último texto procurado num
+  documento específico.
+*	Não atribuído: Procura a ocorrência anterior do último texto procurado num
+  documento específico.
 
 
-Este extra é usado para adicionar texto à área de transferência, o que lhe
-pode ser útil quando quiser juntar várias partes de textos num só, pronto
-para colar.  O conteúdo da área de transferência também pode ser visto no
-modo de navegação.
+## Submenu marcadores de lugar(NVDA + N) ##
 
-## Comandos de teclado ##
+Usando o submenu de Marcadores de lugar, no menu Preferências do NVDA, pode
+aceder a:
 
-* NVDA+windows+c: adiciona o texto seleccionado, os caracteres unicode em
-  Braille que representem objetos MathML, ou a cadeia que foi marcada com o
-  cursor de exploração, à área de transferência.
-* NVDA+windows+x: limpa o conteúdo da área de transferência.
-* Not assigned: Copies to (or cuts from) the clipboard, with the possibility
-  of being asked for a previous confirmation.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	Pasta de procuras específicas: abre uma pasta de buscas específicas
+  anteriormente guardadas.
+*	Pasta de marcadores: abre uma pasta dos marcadores guardados.
+*	Copiar pasta de marcadores: pode guardar uma cópia da pasta de marcadores
+  de lugar.
+*	Restaurar marcadores: Pode restaurar os seus marcadores a partir de uma
+  cópia da pasta de Marcadores de lugar.
 
-Nota: Os comandos anteriores podem ser alterados a partir do menu do NVDA,
-submenu Preferências, comandos, categoria Revisão de texto.
+Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
+em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
 
-## Menu Preferências ##
-*	 Configurações do conteúdo do extra: Permite definir um separador que pode ser usado para procurar os segmentos de texto logo que todo o texto adicionado seja colado.
-Também é possível escolher se o texto adicionado será acrescentado ou prefixado, se as ações disponíveis (adicionar, limpar área de transferência, emular cópia e emular recortar) devem ser executadas imediatamente ou após a confirmação e se as confirmações serão solicitadas sempre, apenas se o texto estiver já contido na área de transferência ou se a área de transferência não estiver vazia.
-Além disso, é possível alterar o formato e o número máximo de caracteres do texto da área de transferência, que será mostrado no modo de navegação. Por favor, esteja ciente de que aumentar este limite pode produzir problemas se a área de transferência contiver grandes cadeias de texto. O limite padrão é de 100.000 caracteres.
+## Alterações para 14.0 ##
+*	O comando para copiar o nome do ficheiro onde os dados dos marcadores
+  serão guardados foi substituído pelo comando que mostra o nome do ficheiro
+  em modo de navegação. Este comando não tem tecla associada.
+*	O campo "Texto a procurar" já não se sobrepõe ao campo "Textos
+  guardados". (Agradecimentos a Cyrille Bougot).
+*	Requer NVDA 2019.3 ou posterior.
 
-Notas:
+## Alterações para 13.0 ##
+*	Adicionado comandos não atribuídos para Procurar a próxima ou a nterior
+  ocorrência da última expressão procurada para qualquer documento
+  específico.
+*	A procura específica funciona no diálogo Sobre o NVDA'.
+*	No diálogo de Procura específica, a caixa de verificação "Ignorar
+  maiúsculas/minúsculas" estará marcada, se esta opção estava marcada na
+  última procura.
+*	Quando o extra é actualizado, os marcadores e expressões para procuras
+  específicas, guardados na versão anterior, são automaticamente copiados
+  para a nova versão, a não ser que prefira importar os marcadores guardados
+  na pasta principal de configurações do NVDA.
+*	Quando se usa o diálogo para copiar marcadores de lugar, se a pasta
+  selecionada não se chamar "placeMarkersBackup", será criada uma subpasta
+  com este nome para prevenir a eventual eliminação de dados importantes,
+  como documentos e transferências.
 
-*	Os comandos anteriores podem ser modificados a partir do menu do NVDA,
-  submenu Preferências, comandos, configuração.
-*	Confirmations won't be requested when a message box of NVDA is still
-  opened. In those cases, actions will be inmediately performed.
+## Alterações para 12.0 ##
+*	Corrigido um erro crítico que fazia com que o NVDA falhasse ao tentar
+  abrir a caixa de diálogo de Notas, se os caracteres chineses fossem
+  seleccionados antes de guardar os favoritos.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice
-  Writer.
+## Alterações para 11.0 ##
+*	Compatível com o NVDA 2018.3 ou posterior (requerido).
+*	Se necessário, pode fazer o download da [última versão compatível com o
+  NVDA 2017.3] [3].
 
-## Changes for 11.0
-* Now it's possible to add text marked with the review cursor using standard
-  commands of NVDA (NVDA+f9 and NVDA+f10). NVDA+windows+f9 is no longer
-  used, for a better integration with the new NVDA+shift+f9 command.
-* Requires NVDA 2019.3 or later.
+## Alterações para 10.0 ##
+*	No Edge, os comandos associados à selecção de favoritos, como NVDA + k,
+  NVDA + shift + k ou NVDA + alt + k, serão enviados para a aplicação em vez
+  de tentar mover o cursor para marcadores, para evitar erros, especialmente
+  em documentos longos.
+*	Agora, a pesquisa específica é suportada no Edge.
 
-## Changes for 10.0
-* Fixed a bug in the dialog used to show the clipboard text, when its title
-  contains non latin characters.
-* Fixed a bug when using the emulate cut and copy features with an Arabic
-  keyboard layout. This has been fixed by Abdel, added as an add-on author.
+## Alterações para 9.0
+*	Ao mover-se para um marcador da caixa de diálogo Notas, o cursor de
+  revisão segue o cursor do sistema.
+*	O comando para seleccionar o marcador anterior funciona, novamente, de
+  modo correcto.
+*	Os marcadores podem ser excluídos a partir da caixa de diálogo de Notas.
+*	Agora, pode atribuir comandos para guardar e mover para um marcador
+  temporário para cada documento.
 
-## Alterações para a versão 9.0
+## Alterações para 8.0 ##
+*	Foram removidos Identificadores de fragmentos de nomes de marcadores, que
+  podem evitar problemas no leitor de ePUB VitalSource Bookshelf.
+*	Adicionada uma caixa de diálogo Notas, para associar comentários para
+  marcadores guardados e mover para a posição seleccionada.
 
-* Adicionada a possibilidade de mostrar o texto da área de transferência no
-  modo de navegação.
-* Adicionada uma opção para escolher se as confirmações serão necessárias se
-  a área de transferência não estiver vazia, por exemplo, se os arquivos ou
-  pastas forem copiados.
-* Requer o NVDA 2018.4 ou posterior.
+## Alterações para 7.0 ##
+*	A caixa de diálogo para guardar uma expressão para procura específica foi
+  removida. Esta funcionalidade agora está incluída na caixa de diálogo
+  Procura específica, que foi redesenhada para permitir diferentes acções ao
+  pressionar o botão OK.
+*	A apresentação visual dos diálogos foi aprimorada, seguindo a aparência
+  dos diálogos mostrados no NVDA.
+*	Executar um comando Procurar Próximo ou Procurar Anterior no Modo de
+  Navegação agora irá fazer uma pesquisa sensível a maiúsculas e minúsculas,
+  se a procura original for sensível a maiúsculas e minúsculas.
+*	Requer NVDA 2016.4 ou posterior.
+*	Agora, pode atribuir comandos para abrir as caixas de diálogo de copiar e
+  restaurar Marcadores.
+*	O NVDA apresentará uma mensagem para notificar quando os marcadores foram
+  copiados ou restaurados com as caixas de diálogo correspondentes.
 
-## Alterações para a versão 8.0 ##
+## Alterações para 6.0 ##
+* Quando os recursos do extra não são utilizáveis, os comandos são enviados
+  para o aplicativo correspondente.
 
-* As configurações adicionais são mostradas na categoria correspondente da
-  caixa de diálogo Configurações do NVDA.
-* Requer o NVDA 2018.2 ou posterior.
-* Se for necessário, pode fazer o download da [última versão compatível com
-  o NVDA 2017.3] [3].
+## Alterações para 5.0 ##
+* Adicionada procura sensível a maiúsculas e minúsculas.
+* Removida a opção para abrir a documentação a partir do menu de marcadores.
+* Comandos mais intuitivos.
 
-## Alterações para a versão 7.0
+## Alterações para 4.0 ##
+* Foram removidos Identificadores de fragmentos de nomes de marcadores, que
+  podem provocar problemas no extra ePUBREADER do Firefox.
+* A ajuda do extra passa a estar disponível no gestor de extras.
 
-* Na caixa de diálogo da instalação para configurar as funcionalidades
-  Emular cópia e Emular corte, se escolher não, os comandos para esses
-  recursos serão removidos, para que possa restaurar o comportamento normal
-  para controle + c e controle + x.
+## Alterações para 3.1 ##
+* Actualização de traduções e um novo idioma.
+* A posição dos marcadores não é anunciada na leitura rápida.
 
-## Alterações para a versão 6.0
+## Alterações para 3.0 ##
+* Adicionado suporte para leitura rápida.
 
-*	 Adicionadas opções para escolher se as acções disponíveis devem ser executadas após confirmação.
-*	Adicionados os comandos emulação de copiar e emulação de cortar, que podem ser atribuídos no diálogo definir comandos.
-*	 Adicionado um diálogo para configurar as funções emulação de copiar e de cortar na instalação. Isso permite acrescentar os comandos control+c e control+x para copiar e cortar e ser questionado sobre se deseja substituir o conteúdo da área de transferência ao pressionar essas teclas.
-*	Corrigida a documentação para script_add (Windows+NVDA+c).
+## Alterações para 2.0 ##
+* Adicionadas opções para guardar e excluir pesquisas diferentes para cada
+  ficheiro.
+* Corrigido o erro que desactivava quando os caminhos continham caracteres
+  não latinos.
+* Os atalhos agora podem ser reatribuídos usando a caixa de diálogo de
+  definição de comandos do NVDA.
 
-## Alterações para a versão 5.0 ##
+## Alterações para 1.0 ##
+* Versão inicial.
+* Traduzido para: Português brasileiro, farsi, finlandês, francês, galego,
+  alemão, italiano, japonês, coreano, nepalês, português, espanhol,
+  eslovaco, esloveno, tamil.
 
-*	A apresentação visual do diálogo foi melhorada, coincidindo com a
-  aparência dos diálogos mostrados no NVDA.
-*	Requer o NVDA 2016.4 ou posterior.
-
-## Alterações para a versão 4.0 ##
-*	As opções do extra são agora geridas directamente pela configuração do
-  NVDA, de modo que se pode usar perfis para salvar diferentes separadores e
-  não é necessário copiar as opções para importá-las quando numa
-  reinstalação.
-*	Agora é possível escolher se o texto será colocado depois ou antes do que
-  já lá está, usando a caixa de selecção  existente no diálogo de opções do
-  gestor de conteúdos da área de transferência.
-
-## Alterações para a versão 3.0 ##
-*	As representações braile de objectos MathML podem ser acrescentadas à área
-  de transferência, se o MathPlayer estiver instalado.
-*	Se não for definido qualquer separador, apenas será colocada uma linha
-  entre os vários fragmentos de texto adicionados.
-*	Pode criar-se uma tecla de atalho para abrir o diálogo de opções do gestor
-  do conteúdo de transferência.
-*	Acrescentada uma caixa de selecção ao diálogo de opções, a qual permite
-  escolher se o separador de fragmentos deve ser copiado para ser importado
-  ao reinstalar o extra.
-
-## Alterações para a versão 2.0 ##
-*	Os caracteres hindi podem ser usados como separador entre conteúdos
-  acrescentados.
-
-## Alterações para a versão 1.0 ##
-*	Versão inicial.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

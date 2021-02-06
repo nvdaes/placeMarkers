@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 1.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2014-12-27 19:18+1000\n"
-"PO-Revision-Date: 2021-01-12 09:37+0100\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2021-01-08 12:35+0100\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -17,237 +17,328 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#. Translators: label of a dialog.
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"This add-on allows to confirm if you want to copy and cut, replacing the "
-"clipboard contents,\n"
-"\t\twhen pressing control+c and control+x. This is named Emulate copy and "
-"cut.\n"
-"\t\tDo you want to configure Emulate copy and cut now? You may do or change "
-"this later."
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"Mit dieser Erweiterung können Sie bestätigen, ob Sie kopieren und "
-"ausschneiden möchten, und den Inhalt der Zwischenablage ersetzen.\\N\n"
-"\t\\Beim Drücken von Strg+C und Strg+X. Dies wird als \"Kopieren und "
-"Ausschneiden emulieren\" bezeichnet.\\N\n"
-"\t\tMöchten Sie das \"Kopieren und Ausschneiden emulieren\" jetzt "
-"konfigurieren? Sie können dies später ändern."
+"Der Ordner Ihrer NVDA-Konfiguration enthält scheinbar noch eine ältere "
+"Version dieser Erweiterung. Möchten Sie sie jetzt aktualisieren?"
 
-#. Translators: title of a dialog.
-msgid "Configure Emulate copy and cut"
-msgstr "Einstellungen für Kopieren und Ausschneiden emulieren anpassen"
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Erweiterung installieren oder aktualisieren"
 
-#. Translators: label of a dialog.
-msgid "Preformatted text in HTML"
-msgstr "Vorformatierter Text in HTML"
+#. Translators: message presented when a string of text has been copied to the clipboard.
+#, python-format
+msgid "%s copied to clipboard"
+msgstr "%s in die Zwischenablage kopiert"
 
-#. Translators: label of a dialog.
-msgid "HTML as shown in a web browser"
-msgstr "HTML wie im Web-Browser"
+#. Translators: The title of the Specific Search dialog.
+msgid "Specific search"
+msgstr "Erweiterte Suche"
 
-#. Translators: label of a dialog.
-msgid "Raw text"
-msgstr "Nur Text"
+#. Translators: The label of a combo box in the Specific Search dialog.
+msgid "Sa&ved texts"
+msgstr "&Gespeicherte Texte"
 
-#. Translators: message presented in input mode.
-msgid "Shows the Clip Contents Designer settings."
-msgstr "Zeigt die Einstellungen des Clip Contents Designers an."
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Remove from history"
+msgstr "Aus Verlauf &entfernen"
 
-#. Translators: message presented when the clipboard content has been deleted.
-msgid "Clipboard cleared"
-msgstr "Zwischenablage geleert"
+#. Translators: The label of an edit box in the Specific Search dialog.
+msgid "&Text to search:"
+msgstr "zu suchender &Text:"
 
-#. Translators: message presented when the clipboard content cannot be deleted.
-msgid "Clipboard not cleared"
-msgstr "Zwischenablage ist nicht leer"
+#. Translators: A label for a chekbox in the Specific search dialog.
+msgid "&Add to history"
+msgstr "Zum Verlauf &hinzufügen"
 
-#. Translators: message presented when it's not possible to add text, since no text has been selected.
-msgid "No text to add"
-msgstr "Kein Text zum Hinzufügen ausgewühlt"
+#. Translators: Label for a set of radio buttons in the Specific search dialog.
+msgid "Action on s&earch"
+msgstr "&Aktion bei der Suche"
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to add text to the clipboard"
-msgstr ""
-"Bitte bestätigen Sie, dass Sie den Text zur Zwischenablage hinzufügen möchten"
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &next"
+msgstr "Weitersuchen"
 
-#. Translators: Title of a dialog.
-msgid "Adding text to clipboard"
-msgstr "Text wird zur Zwischenablage hinzugefügt"
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "Search &previous"
+msgstr "Rückwärtssuchen"
 
-#. Translators: message presented when the text has been added to the clipboard.
-msgid "Added"
-msgstr "Hinzugefügt"
+#. Translators: An action in the Search group of the Specific search dialog.
+msgid "&Don't search"
+msgstr "&Keine Suche"
 
-#. Translators: message presented when the text cannot be added to the clipboard.
-msgid "Cannot add"
-msgstr "Der Text konnte nicht hinzugefügt werden"
+#. Translators: Message presented when place markers have been copied.
+msgid "Place markers copied"
+msgstr "Lesezeichen kopiert"
 
-#. Translators: message presented in input mode.
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "Ordner nicht kopiert"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "Fehler beim Kopieren"
+
+#. Translators: Message presented when place markers have been restored.
+msgid "Place markers restored"
+msgstr "Lesezeichen wiederhergestellt"
+
+#. Translators: The title of the Notes dialog.
+msgid "Notes"
+msgstr "Notiz"
+
+#. Translators: The label of a list box in the Notes dialog.
+msgid "&Bookmarks"
+msgstr "&Lesezeichen"
+
+#. Translators: The label of an edit box in the Notes dialog.
+msgid "Not&e:"
+msgstr "&Notiz:"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Save note"
+msgstr "Notiz &speichern"
+
+#. Translators: The label for a button in the Notes dialog.
+msgid "&Delete..."
+msgstr "&Entfernen..."
+
+#. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to\n"
-"\t\tand including the current position of the review cursor, and adds it to "
-"the clipboard."
+"This bookmark will be permanently deleted. This action cannot be undone."
 msgstr ""
-"Bezieht die ausgewählte Zeichenfolge oder den Text von der zuvor "
-"festgelegten Startmarkierung bis einschließlich der aktuellen Position des "
-"NVDA-Cursors ein und fügt sie der Zwischenablage hinzu."
+"Dieses Lesezeichen wird dauerhaft entfernt. Diese Aktion kann nicht "
+"rückgängig gemacht werden."
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to clear the clipboard"
-msgstr "Bitte bestätigen Sie, ob Sie die Zwischenablage leeren möchten"
+#. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "Keine Lesezeichen"
 
-#. Translators: Title of a dialog.
-msgid "Clearing clipboard"
-msgstr "Der Inhalt aus der Zwischenablage wird entfernt"
+#. Translators: The title of the warning dialog when all bookmarks have been deleted.
+msgid "Bookmarks deleted"
+msgstr "Lesezeichen entfernt"
 
-#. Translators: message presented in input mode.
-msgid "Deletes the added text and the content of the clipboard."
-msgstr "Löscht den Inhalt der Zwischenablage."
+#. Translators: The title of the Copy dialog.
+msgid "Copy place markers"
+msgstr "Lesezeichen &kopieren"
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to copy to the clipboard"
+#. Translators: An informational message displayed in the Copy dialog.
+msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Bitte bestätigen Sie, dass sie den Inhalt in die Zwischenablage kopieren "
-"möchten"
+"Wählen SIE einen Ordner zum Speichern eines Backups Ihrer vorigen "
+"Lesezeichen."
 
-#. Translators: Title of a dialog.
-msgid "Copying to clipboard"
-msgstr "Der Inhalt wird in die Zwischenablage kopiert"
+#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+msgid "directory for backup:"
+msgstr "Ordner für Backups:"
 
-#. Translators: message presented in input mode.
+#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+msgid "Select directory to copy"
+msgstr "Ordner zum Kopieren auswählen"
+
+#. Translators: The title of the Restore dialog.
+msgid "Restore place markers"
+msgstr "Lesezeichen &wiederherstellen"
+
+#. Translators: An informational message displayed in the Restore dialog.
 msgid ""
-"Copies to the clipboard, with the possibility of being asked for a previous "
-"confirmation"
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
-"Kopiert Inhalt in die Zwischenablage, nachdem ggf. eine Bestätigung erfolgt "
-"ist"
+"Wählen SIE einen Ordner zum Wiederherstellen eines Backups Ihrer vorigen "
+"Lesezeichen."
 
-#. Translators: Label of a dialog.
-msgid "Please, confirm if you want to cut from the clipboard"
-msgstr ""
-"Bitte bestätigen Sie, dass Sie den Inhalt aus der zwischenablage "
-"ausschneiden möchten"
+#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+msgid "directory containing backup:"
+msgstr "Backup-Ordner:"
 
-#. Translators: Title of a dialog.
-msgid "Cutting from clipboard"
-msgstr "Inhalt wird aus der Zwischenablage ausgeschnitten"
+#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+msgid "Select directory to restore"
+msgstr "Ordner zum Wiederherstellen auswählen"
 
-#. Translators: message presented in input mode.
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "&Lesezeichen"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "Lesezeichen und Suchmenü"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "Erweiterter &Suchordner"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "Öffnet den erweiterten Suchordner"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "Lese&zeichenordner"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "Öffnet den Ordner der Lesezeichen"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "Lesezeichenordner &kopieren..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "Backup der Lesezeichen"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "Lesezeichen &wiederherstellen..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "Zuvor gespeicherte Lesezeichen wiederherstellen"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the specific search folder."
+msgstr "Öffnet den Ordner für die Erweiterte Suche"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Opens the bookmarks folder."
+msgstr "Öffnet den Ordner der Lesezeichen"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Copy dialog of %s."
+msgstr "Aktiviert das Kopieren-Dialogfeld von %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, python-format
+msgid "Activates the Restore dialog of %s."
+msgstr "Aktiviert das Wiederherstellen-Dialogfeld von %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Cuts from the clipboard, with the possibility of being asked for a previous "
-"confirmation"
-msgstr ""
-"Schneidet Inhalt aus der Zwischenablage aus, nachdem ggf. eine Bestätigung "
-"erfolgt ist"
+"finds a text string from the current cursor position for a specific document."
+msgstr "Sucht eine Zeichenkette im Dokument ab der Cursorposition."
 
-#. Translators: message presented in input mode.
-msgid "Shows the clipboard text in browse mode"
-msgstr "Zeigt den Text der Zwischenablage im Lesemodus"
-
-#. Translators: presented when clipboard is not empty, but there is no text to show in browse mode.
-msgid "Clipboard is not empty, but there is no text to show"
-msgstr "Zwischenablage ist nicht leer, aber es gibt keinen Text zu zeigen"
-
-#. Translators: presented when clipboard is empty.
-msgid "Clipboard is empty"
-msgstr "Zwischenablage ist leer"
-
-#. Translators: title of a browseable message.
-#, python-brace-format
-msgid "Clipboard text ({max}/{current} - {formatForTitle})"
-msgstr "Text der Zwischenablage ({max}/{current} - {formatForTitle})"
-
-#. Translators: label of a dialog.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Type the string to be used as a &separator between contents added to the "
-"clipboard."
+"finds the next occurrence of the last text searched for any specific "
+"document."
 msgstr ""
-"Geben Sie die Zeichenfolge ein, die verwendet werden soll, um mehrere "
-"Textfragmente in der Zwischenablage voneinander zu trennen."
+"findet das nächste Vorkommen des zuletzt gesuchten Textes für ein bestimmtes "
+"Dokument."
 
-#. Translators: label of a dialog.
-msgid "&Add text before clip data"
-msgstr "Text an erster Stelle der Daten in der Zwischenablage &hinzufügen"
-
-#. Translators: label of a dialog.
-msgid "Sele&ct the actions which require previous confirmation"
-msgstr "&wähle die Aktionen, die eine vorherige Bestätigung erfordern"
-
-#. Translators: label of a dialog.
-msgid "Confirm to add text"
-msgstr "Text einfügen bestätigen"
-
-#. Translators: label of a dialog.
-msgid "Confirm to clear clipboard"
-msgstr "Leeren der Zwischenablage bestätigen"
-
-#. Translators: label of a dialog.
-msgid "Confirm to emulate copy"
-msgstr "Emulieren von kopieren bestätigen"
-
-#. Translators: label of a dialog.
-msgid "Confirm to emulate cut"
-msgstr "emulieren von ausschneiden bestätigen"
-
-#. Translators: label of a dialog.
-msgid "&Request confirmation before performing the selected actions when:"
-msgstr ""
-"Vor der Durchführung der ausgewählten Aktionen Bestätigung anfordern, wenn:"
-
-#. Translators: label of a dialog.
-msgid "Always"
-msgstr "Immer"
-
-#. Translators: label of a dialog.
-msgid "If the clipboard contains text"
-msgstr "Wenn die Zwischenablage Text enthält"
-
-#. Translators: label of a dialog.
-msgid "If the clipboard is not empty"
-msgstr "Wenn die Zwischenablage nicht leer ist"
-
-#. Translators: label of a dialog.
-msgid "&Format to show the clipboard text in browse mode:"
-msgstr "& Format, um den Text der Zwischenablage im Browsermodus anzuzeigen:"
-
-#. Translators: label of a dialog.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"&Maximum number of characters when showing clipboard text in browse mode"
+"finds the previous occurrence of the last text searched for any specific "
+"document."
 msgstr ""
-"& Maximale Anzahl der Zeichen bei der Anzeige der Zwischenablage im Lesemodus"
+"findet das vorherige Vorkommen des zuletzt gesuchten Textes für ein "
+"bestimmtes Dokument."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Show the Notes dialog for a specific document."
+msgstr "zeigt die für das Dokument festgelegte Notiz an."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "Speichert die aktuelle Position als Lesezeichen."
+
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "Gespeicherte Position bei Zeichen %d"
+
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "Lesezeichen konnte nicht gespeichert werden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "Entfernt das aktuelle Lesezeichen."
+
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "Keine Lesezeichen ausgewählt"
+
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "Lesezeichen entfernt"
+
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "Lesezeichen konnte nicht entfernt werden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "Springt zum nächsten Lesezeichen."
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "Keine Lesezeichen gefunden"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "Position: %d Zeichen"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "Weitere Lesezeichen nicht gefunden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "Springt zum vorherigen Lesezeichen."
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "Vorheriges Lesezeichen nicht gefunden"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Shows the name of the current file for place markers in browse mode."
+msgstr "Zeigt den Namen der aktuellen Datei für Lesezeichen im Lesemodus an."
+
+#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#, python-format
+msgid "%s file"
+msgstr "%s-Datei"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a temporary bookmark."
+msgstr "Speichert die aktuelle Position als temporäres Lesezeichen."
+
+#. Translators: Message presented when a temporary bookmark is saved.
+#, python-format
+msgid "Saved temporary bookmark at position %d"
+msgstr "Temporäres Lesezeichen bei Position %d gesetzt."
+
+#. Translators: Message presented in input help mode.
+msgid "Moves to the temporary bookmark for the current document."
+msgstr "Springt zu dem temporären Lesezeichen für das aktuelle Dokument"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Clip Contents Designer"
-msgstr "Designer für den  Inhalt der Zwischenablage"
+msgid "Place markers"
+msgstr "Lesezeichen"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "Erweiterung zum Umgang mit der Windows-Zwischenablage."
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "Erweiterung zum Einstellen der Lesezeichen in virtuellen Ansichten."
 
-#~ msgid "Start marker set"
-#~ msgstr "Startmarke gesetzt"
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
 
-#~ msgid ""
-#~ "Marks the current position of the review cursor as the start of text to "
-#~ "be appended to the clipboard."
-#~ msgstr ""
-#~ "Setzt an der aktuellen Position des NVDA-Cursors eine Startmarke für das "
-#~ "Anfügen von Text zum Inhalt der Zwischenablage."
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Dateiname der Lesezeichen in die Zwischenablage kopiert"
 
-#~ msgid "No selection. No start marker set"
-#~ msgstr "Keine Auswahl. Daher wurde keine Startmarke gesetzt."
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Lesezeichen konnte nicht gespeichert werden"
 
-#~ msgid "The start marker must reside within the same object"
-#~ msgstr "Die Startmarkierung muss sich innerhalb desselben Objekts befinden."
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Lesezeichen konnte nicht entfernt werden"
 
-#~ msgid "&Text in clipboard to confirm"
-#~ msgstr "&Text in der Zwischenablage bestätigen"
-
-#~ msgid "&Clip Contents Designer settings..."
-#~ msgstr "&Zwischenablagen-Designer-Einstellungen..."
-
-#~ msgid "Clip Contents Designer settings"
-#~ msgstr "Zwischenablagen-Designer-Einstellungen"
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Keine Lesezeichen gefunden"

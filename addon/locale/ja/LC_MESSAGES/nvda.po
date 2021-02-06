@@ -5,121 +5,255 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: clipContentsDesigner 2.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2015-03-20 03:00+1000\n"
-"PO-Revision-Date: 2015-07-12 23:14+0900\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2016-02-26 02:22-0800\n"
 "Last-Translator: Takuya Nishimoto <nishimotz@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: Japanese <nvdajp@nvda.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 
-#. Translators: the label of a message box dialog.
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"You have installed the AppendText add-on, probably an old and incompatible "
-"version with this one. Do you want to uninstall the old version?"
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"このアドオンと互換性のない旧式のAppendTextアドオンがインストールされていま"
-"す。古いバージョンをアンインストールしますか?"
+"NVDA設定フォルダに、このアドオンの古いバージョンで保存された情報が見つかりま"
+"した。更新しますか？"
 
-#. Translators: the title of a message box dialog.
-msgid "Uninstall incompatible add-on"
-msgstr "互換性のないアドオンをアンインストール"
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "アドオンのインストールまたは更新"
 
-#. Translators: the label of a message box dialog.
+#. Translators: label of error dialog, translated in NVDA core.
+#, python-format
+msgid "text \"%s\" not found"
+msgstr "テキスト %s が見つかりません"
+
+#. Translators: title of error dialog, translated in NVDA core.
+msgid "Find Error"
+msgstr "検索の失敗"
+
+#. Translators: message presented when a string of text has been copied to the clipboard.
+#, python-format
+msgid "%s copied to clipboard"
+msgstr "%s をクリップボードにコピー"
+
+#. Translators: the name of addon submenu.
+msgid "P&lace markers"
+msgstr "プレイスマーカー"
+
+#. Translators: the tooltip text for addon submenu.
+msgid "Bookmarks and Search menu"
+msgstr "ブックマークと検索のメニュー"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Specific search folder"
+msgstr "検索保存フォルダー"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the specific search folder"
+msgstr "検索保存フォルダーを開く"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Bookmarks folder"
+msgstr "ブックマークフォルダー"
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Opens the bookmarks folder"
+msgstr "ブックマークフォルダーを開く"
+
+#. Translators: the name for an item of addon submenu.
+msgid "&Copy placeMarkers folder..."
+msgstr "マーカー情報のバックアップ..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Backup of place markers"
+msgstr "マーカー情報をバックアップします"
+
+#. Translators: the name for an item of addon submenu.
+msgid "R&estore place markers..."
+msgstr "マーカー情報の復元..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+msgid "Restore previously saved place markers"
+msgstr "マーカー情報をバックアップから復元します"
+
+#. Translators: label of a dialog presented for copying place markers.
+msgid "Select a folder for copying your saved place markers"
+msgstr "マーカー情報のバックアップを作るフォルダーを選択"
+
+#. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+msgid "Folder not copied"
+msgstr "フォルダーのコピー失敗"
+
+#. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+msgid "Copy Error"
+msgstr "コピーの失敗"
+
+#. Translators: label of a dialog presented for restoring place markers.
+msgid "Select the place markers folder you wish to restore"
+msgstr "マーカー情報の復元に使うバックアップのフォルダーを指定"
+
+#. Translators: label of a dialog presented to save or delete a string for specific search.
 msgid ""
-"You seem to have previous settings saved for this add-on. Do you want to "
-"import them?"
-msgstr "このアドオンで過去に設定が保存されています。設定をインポートしますか？"
+"Type the text you wish to save, or delete any text if you want to remove it "
+"from the previous saved searches"
+msgstr "保存するテキストを入力、または検索保存を消去したいときはテキストを削除"
 
-#. Translators: the title of a message box dialog.
-msgid "Import ClipContentsDesigner add-on settings"
-msgstr "Clip Contents Designer 設定のインポート"
+#. Translators: title of a dialog presented to save a string for specific search.
+msgid "Save text for specific search"
+msgstr "テキスト検索の保存"
 
-#. Translators: name of the option in the menu.
-msgid "&Clip Contents Designer settings..."
-msgstr "&Clip Contents Designer 設定..."
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves a text string for a specific search."
+msgstr "テキストの検索を保存します"
 
-msgid "Shows the Clip Contents Designer settings dialog."
-msgstr "Clip Contents Designer 設定ダイアログの表示"
+#. Translators: message presented when there is not file for specific search.
+msgid "File for specific search not found"
+msgstr "検索保存の情報が見つかりません"
 
-#. Translators: message presented when the clipboard content has been deleted.
-msgid "Clipboard cleared"
-msgstr "クリップボードクリア"
-
-#. Translators: message presented when the clipboard content cannot be deleted.
-msgid "Clipboard not cleared"
-msgstr "クリップボードはクリアされていません"
-
-#. Translators: message presented when the start marker for appending text has been set using the review cursor.
-msgid "Start marker set"
-msgstr "スタートマーカー設定"
-
-#. Translators: message presented in input mode.
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"Marks the current position of the review cursor as the start of text to be "
-"appended to the clipboard."
-msgstr ""
-"レビューカーソルの現在の場所をクリップボードに追加されるテキストの開始位置と"
-"してマーク"
+"finds a text string from the current cursor position for a specific document."
+msgstr "ドキュメントの現在のカーソル位置からテキストを検索"
 
-#. Translators: message presented when it's not possible to append text, since no text has been selected or marked.
-msgid "No selection. No start marker set"
-msgstr "選択されていません。スタートマーカーが設定されていません"
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Bookmark cannot be saved"
+msgstr "ブックマークを保存できません"
 
-#. Translators: message presented when user tries to select text across object boundaries
-msgid "The start marker must reside within the same object"
-msgstr "スタートマーカーは同じオブジェクト内になければなりません"
+#. Translators: message presented when the current position was previously saved as a bookmark.
+msgid "This position was already saved"
+msgstr "この位置は保存済みです"
 
-#. Translators: message presented when review cursor has been used to append text and there is no text to append.
-msgid "No text to append"
-msgstr "追加するテキストがありません"
+#. Translators: message presented when a position is saved as a bookmark.
+#, python-format
+msgid "Saved position at character %d"
+msgstr "文字数 %d の位置を保存しました"
 
-#. Translators: message presented when the text has been appended to the clipboard.
-msgid "Appended"
-msgstr "追加されました"
+#. Translators: message presented when a bookmark cannot be saved.
+msgid "Cannot save bookmark"
+msgstr "ブックマークを保存できません"
 
-#. Translators: message presented when the text cannot be appended to the clipboard.
-msgid "Cannot append"
-msgstr "追加できません"
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Saves the current position as a bookmark."
+msgstr "現在位置をブックマークとして保存します"
 
-#. Translators: message presented in input mode.
-msgid ""
-"Retrieves the selected string or the text from the previously set start "
-"marker up to and including the current position of the review cursor, and "
-"appends it to the clipboard."
-msgstr ""
-"選択された文字列、または、あらかじめ設定されたスタートマーカーから、現在のレ"
-"ビューカーソルの位置までを含むテキストを抽出し、クリップボードに追加"
+#. Translators: message presented when the current document doesn't contain bookmarks.
+msgid "No bookmarks"
+msgstr "ブックマークなし"
 
-#. Translators: message presented in input mode.
-msgid "Deletes the appended text and the content of the clipboard."
-msgstr "追加されたテキストとクリップボードの内容を削除しました"
+msgid "Bookmark cannot be deleted"
+msgstr "ブックマークを削除できません"
 
-#. Translators: title of a dialog.
-msgid "Clip Contents Designer settings"
-msgstr "Clip Contents Designer 設定"
+#. Translators: message presented when the current document has bookmarks, but none is selected.
+msgid "No bookmark selected"
+msgstr "ブックマークが選択されていません"
 
-#. Translators: label of a dialog.
-msgid ""
-"Type the string to be used as a &separator between contents appended to the "
-"clipboard."
-msgstr ""
-"クリップボードに追加される内容の間のセパレータとして使用する文字列を入力(&S)"
+#. Translators: message presented when a bookmark is deleted.
+msgid "Bookmark deleted"
+msgstr "ブックマークを削除しました"
 
-#. Translators: label of a dialog.
-msgid "&Copy settings"
-msgstr "設定のコピー(&C)"
+#. Translators: message presented when cannot delete a bookmark.
+msgid "Cannot delete bookmark"
+msgstr "ブックマークが削除できません"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Deletes the current bookmark."
+msgstr "現在のブックマークを削除"
+
+#. Translators: message presented when trying to select a bookmark, but none is found.
+msgid "No bookmarks found"
+msgstr "ブックマークが見つかりません"
+
+#. Translators: message presented when cannot find any bookmark.
+msgid "Cannot find any bookmark"
+msgstr "ブックマークが見つかりません"
+
+#. Translators: message presented when a bookmark is selected.
+#, python-format
+msgid "Position: character %d"
+msgstr "文字数 %d の位置"
+
+#. Translators: message presented when the next bookmark is not found.
+msgid "Next bookmark not found"
+msgstr "次のブックマークがありません"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the next bookmark."
+msgstr "次のブックマークに移動"
+
+#. Translators: message presented when the previous bookmark is not found.
+msgid "Previous bookmark not found"
+msgstr "前のブックマークがありません"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Moves to the previous bookmark."
+msgstr "前のブックマークに移動"
+
+#. Translators: message presented when cannot copy the file name corresponding to place markers.
+msgid "Cannot copy file name for place markers"
+msgstr "プレイスマーカーの名前をコピーできません"
+
+#. Translators: message presented when file name for place markers is copied to clipboard.
+msgid "Place markers file name copied to clipboard"
+msgstr "プレイスマーカーの名前をクリップボードにコピー"
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid "Copies the name of the current file for place markers to the clipboard."
+msgstr "現在のプレイスマーカーを保存するファイル名をクリップボードにコピー"
+
+#. Translators: This is the label for the specific search settings dialog.
+msgid "Specific Search"
+msgstr "検索保存"
+
+#. Translators: This is the label for a textfield in the
+#. specific search settings dialog.
+msgid "&Text to search:"
+msgstr "テキストを検索(&T):"
+
+#. Translators: The label for a setting in specific search to select a saved text.
+msgid "&Saved texts:"
+msgstr "保存したテキスト(&S):"
+
+#. Translators: A combo box to choose a saved text.
+msgid "Saved texts to search:"
+msgstr "保存した検索テキスト:"
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Search down"
+msgstr "下に検索"
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Search up"
+msgstr "上に検索"
+
+#. Translators: the name of an action presented in specific search dialog.
+msgid "Delete"
+msgstr "削除"
+
+#. Translators: The label for a setting in specific search to select an action.
+msgid "&Actions to choose:"
+msgstr "アクションを選択(&A):"
+
+#. Translators: A combo box to choose an action.
+msgid "Select an action to perform:"
+msgstr "実行するアクションを選択:"
+
+#. Translators: An option in specific search to perform case-sensitive search, copied from core.
+msgid "Case &sensitive"
+msgstr "大文字と小文字を区別"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
-msgid "Clip Contents Designer"
-msgstr "Clip Contents Designer"
+msgid "Place markers"
+msgstr "Place markers"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "Add-on for managing clipboard text."
-msgstr "クリップボードのテキストを扱うためのアドオン"
+msgid "Add-on for setting place markers on specific virtual documents"
+msgstr "ドキュメントにプレイスマーカーを設定できます"

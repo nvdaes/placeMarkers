@@ -1,123 +1,170 @@
-# quản lý nội dung tạm #
+# Đánh dấu #
+* Tác giả: Noelia, Chris.
+* NVDA tương thích: 2019.3 trở lên.
+* tải về [phiên bản chính thức][1]
+* tải về [phiên bản thử nghiệm][2]
 
-*	Tác giả: Noelia, Abdel.
-*	NVDA tương thích: 2019.3 trở lên
-*	Tải về [phiên bản chính thức][1]
-*	Tải về [phiên bản thử nghiệm][2]
+Addon này dùng để lưu lại và tìm kiếm một chuỗi văn bản hay dấu trang cụ
+thể. nó có thể được dùng trên các trang web hay tài liệu trong chế độ duyệt
+của NVDA. Nó cũng có thể được dùng để lưu lại hoặc tìm kiếm các chuỗi văn
+bản trong các điều khiển nhập liệu nhiều dòng; trường hợp này, nếu không thể
+cập nhật dấu trang, chuỗi văn bản tương ứng sẽ được chép vào bộ nhớ tạm nên
+có thể tìm kiếm bằng những công cụ khác. Plugin này lưu các chuỗi văn bản và
+dấu trang được chỉ định vào các tập tin được đặt tên dựa trên tựa đề và URL
+của tài liệu hiện tại. Addon này dựa trên addon SpecificSearch và
+Bookmark&Search, phát triển bởi cùng tác giả. Bạn nên gỡ bỏ chúng để dùng
+addon này vì chúng có những tính năng và phím lệnh trùng nhau.
+
+## Các phím lệnh: ##
+
+*	control+shift+NVDA+f: mở hộp thoại với ô nhập liệu hiển thị tìm kiếm cuối
+  cùng được lưu; trong hộp thoại này, bạn cũng có thể chọn các tìm kiếm đã
+  được lưu trước đó  từ một hộp xổ hay xóa chuỗi văn bản được chọn khỏi lịch
+  sử bằng một hộp kiểm. Bạn có thể chọn để lưu văn bản hiện tại trong ô nhập
+  liệu vào lịch sử lưu văn bản của bạn. Cuối cùng, chọn một hoạt động từ
+  nhóm radio buttons (tìm tiếp, tìm trước hay không tìm kiếm), và thiết lập
+  nếu muốn NVDA tìm kiếm phân biệt chữ hoa  thường. Khi bạn bấm okay, NVDA
+  sẽ tìm kiếm chuỗi văn bản.
+*	control+shift+NVDA+k: Lưu vị trí hiện tại thành một dấu trang. Nếu muốn
+  đặt tên dấu trang, hãy chọn vài từ tại vị trí con trỏ trước khi lưu nó.
+*	control+shift+NVDA+delete: Xóa dấu trang tại vị trí tương ứng.
+*	NVDA+k: Chuyển đến dấu trang kế tiếp.
+*	shift+NVDA+k: Chuyển đến dấu trang trước.
+*	Chưa gán: Hiển thị tên tập tin dùng để lưu dữ liệu của các điểm đánh dấu ở
+  chế độ duyệt mà không có phần mở rộng.
+*	alt+NVDA+k: Mở hộp thoại với các dấu trang đã lưu cho tài liệu hiện
+  tại. Bạn có thể viết ghi chú cho mỗi dấu trang; bấm Lưu ghi chú để lưu các
+  thay đổi. Có thể xóa dấu trang hiện tại bằng cách bấm Delete. Bấm OK để di
+  chuyển đến vị trí đã được chọn.
+*	Chưa gán lệnh: Lưu một vị trí thành dấu trang tạm thời.
+*	Chưa gán lệnh: Chuyển đến dấu trang tạm thời của tài liệu hiện thời.
+*	Chưa gán lệnh: tìm văn bản tiếp theo có chứa nội dugn tìm kiếm gần nhất
+  cho mọi tài liệu cụ thể.
+*	Chưa gán lệnh: tìm văn bản trước đó có chứa nội dugn tìm kiếm gần nhất cho
+  mọi tài liệu cụ thể.
 
 
-Add-on này dùng để thêm văn bản vào bộ nhớ tạm, có thể hữu ích khi bạn muốn
-kết hợp nhiều phần văn bản lại với nhau rồi mới dán.  Bạn cũng có thể xóa
-nội dung bộ nhớ tạm hoặc cho chúng hiển thị trong chế độ duyệt.
+## Đánh dấu thực đơn con (NVDA+N) ##
 
-## Các phím lệnh ##
+Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có thể truy cập:
 
-* NVDA+windows+c: thêm văn bản đã chọn vào bộ nhớ tạm, bao gồm các kí tự chữ
-  nổi Unicode thể hiện dưới dạng đối tượng MathML hoặc các chuỗi được đánh
-  dấu với con trỏ duyệt.
-* NVDA+windows+x: xóa nội dung bộ nhớ tạm.
-* Chưa gán: chép vào (hoặc cắt từ) bộ nhớ tạm với khả năng yêu cầu xác nhận
+*	Thư mục tìm kiếm cụ thể: mở thư mục của những tìm kiếm cụ thể đã được lưu
   trước đó.
-* Not assigned: Shows the clipboard text in browse mode, or announces if
-  clipboard is empty or has contents which can't be presented in a
-  browseable message, for instance if files or folders are been copied from
-  Windows Explorer.
+*	Thư mục dấu trang: mở thư mục các dấu trang đã lưu.
+*	Sao chép thư mục các điểm đánh dấu: Bạn có thể tạo một bản sao của thư mục
+  các điểm đánh dấu.
+*	Khôi phục các điểm đánh dấu: Bạn có thể khôi phục các điểm đánh dấu từ thư
+  mục các điểm đánh dấu đã lưu trước đó.
 
-Lưu ý: có thể thay đổi các lệnh nói trên từ trình đơn NVDA, Tùy chọn, hộp
-thoại Quản lý thao tác, phân loại duyệt nội dung.
+Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
+động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
-## Trình đơn cấu hình ##
-*	Thiết lập quản lý nội dung tạm: cho phép đặt dấu phân cách có thể dùng để tìm các phần của văn bản khi dán toàn bộ các nội dung đã thêm vào.
-Nó cũng cho phép chọn việc thêm văn bản vào trước hay sau, nếu các hoạt động hiện có (them vào, xóa bộ nhớ tạm, mô phỏng sao chép và cắt) phải được thực hiện ngay hay thực hiện sau khi xác nhận, và nếu việc xác nhận sẽ luôn được yêu cầu, chỉ khi có văn bản trong bộ nhớ tạm, hay bộ nhớ tạm không rỗng.
-Hơn thế nữa, nó cũng cho phép thay đổi định dạng và số kí tự tối đa của văn bản trong bộ nhớ tạm được hiển thị trong chế độ duyệt. Xin lưu ý rằng việc tăng số kí tự tối đa có thể gây ra lỗi nếu bộ nhớ tạm có các chuỗi văn bản dài. Giới hạn mặc định là 100000 kí tự.
+## Các thay đổi cho phiên bản 14.0 ##
+*	Lệnh chép tên của tập tin sẽ lưu dữ liệu của các điểm đánh dấu đã được
+  thay thế bởi một lệnh để hiển thị tên này trong chế độ duyệt. Lệnh này
+  không được gán thao tác.
+*	Ô "Văn bản cần tìm" không còn bị tràn qua ô "Các văn bản đã lưu" nữa. (cảm
+  ơn Cyrille Bougot).
+*	Yêu cầu NVDA 2019.3 trở lên.
 
-Lưu ý:
+## Các thay đổi cho phiên bản 13.0 ##
+*	Thêm các lệnh tìm kiếm văn bản kế và văn bản trước có chứa nội dugn tìm
+  kiếm gần nhất cho mọi tài liệu cụ thể.
+*	Tính năng tìm kiếm cụ thể hoạt động khi hộp thoại giới thiệu NVDA được mở.
+*	Trong hộp thoại tìm kiếm cụ thể, hộp kiểm phân biệt chữ hoa thường sẽ được
+  chọn nếu nó đã được chọn cho tìm kiếm trước đó.
+*	Khi cập nhật add-on, các dấu trang và chuỗi tìm kiếm cụ thể đã lưu trong
+  phiên bản trước đây sẽ được tự sao chép qua phiên bản mới, trừ khi bạn
+  chọn nạp các dấu trang đã lưu trong thư mục cấu hình chính của NVDA.
+*	Khi dùng hộp thoại để sao chép các dấu trang, nếu thư mục đã chọn không
+  được đặt tên là placeMarkersBackup, một thư mục con với tên này sẽ được
+  tạo để ngăn chạn việc xóa những thư mục chứa các dữ liệu quan trọng như
+  Documents hay Downloads.
 
-*	Có thể thay đổi các lệnh nói trên từ trình đơn NVDA, Tùy chọn, Hộp thoại
-  quản lý thao tác, phân loại cấu hình.
-*	Sẽ không có yêu cầu xác nhận khi có một hộp thông điệp của NVDA đang
-  mở. Các trường hợp này, các hành động sd4 được thực hiện ngay lập tức.
+## Các thay đổi cho phiên bản 12.0 ##
+*	Sửa một lỗi nghiêm trọng làm cho NVDA bị treo khi nỗ lực mở hộp thoại các
+  ghi chú, nếu các kí tự tiếng Trung Quốc được chọn trước khi lưu các dấu
+  trang.
 
-## Changes for 12.0
-* Fixed bugs when using emulate copy in applications like LibreOffice
-  Writer.
-
-## Các thay đổi cho bản 11.0
-* Giờ đây đã có thể them các điểm đánh dấu văn bản với con trỏ duyệt với
-  phím lệnh chuẩn của NVDA (NVDA+f9 và NVDA+f10). NVDA+windows+f9 không còn
-  được dùng nữa, để cho một sự tích hợp mới tốt hơn với lệnh NVDA+shift+f9.
-* Yêu cầu NVDA 2019.3 trở lên.
-
-## Các thay đổi cho bản 10.0
-* Sửa một lỗi trong hộp thoại dùng để hiển thị văn bản trong bộ nhớ tạm khi
-  tên của nó có chứa các kí tự không phải chữ latin.
-* Sửa một lỗi khi dùng các tính năng mô phỏng sao chép và cắt với kiểu bàn
-  phím tiếng Ả Rập. Nó được sửa bởi Abdel, được xem như một tác giả của
-  add-on.
-
-## Các thay đổi cho bản 9.0
-
-* Thêm khả năng hiển thị văn bản trong bộ nhớ tạm ở chế độ duyệt.
-* Thêm tùy chọn để yêu cầu xác nhận khi bộ nhớ tạm không rỗng. ví dụ, nó đã
-  chép các tập tin hay thư mục.
-* Yêu cầu NVDA 2018.4 trở lên.
-
-## Các thay đổi cho bản 8.0 ##
-
-* Bản thiết lập của add-on được hiển thị ở phân loại thích hợp trong hộp
-  thoại cấu hình NVDA.
-* Yêu cầu NVDA 2018.2 trở lên.
-* Nếu cần, bạn có thể tải [phiên bản cuối cùng tương thích với NVDA
+## Các thay đổi cho phiên bản 11.0 ##
+*	Tương thích với NVDA 2018.3 trở lên (yêu cầu).
+*	Nếu cần, bạn có thể tải về [phiên bản cuối cùng tương thích với NVDA
   2017.3][3].
 
-## Các thay đổi cho bản 7.0
+## Các thay đổi cho phiên bản 10.0 ##
+*	Trong Edge, các thao tác liên quan đến chọn dấu trang như NVDA+k,
+  NVDA+shift+k hay NVDA+alt+k sẽ gửi tới ứng dụng thay vì cố gắng chuyển con
+  trỏ đến các dấu trang, nhằm tránh gây ra lỗi, đặc biệt là trong các tài
+  liệu dài.
+*	Giờ đây đã hỗ trợ tìm kiếm cụ thể trong Edge.
 
-* Ở hộp thoại cấu hình tính năng mô phỏng cắt và sao chép trong khi cài đặt,
-  nếu chọn không (no), dòng lệnh cho tính năng này sẽ bị gỡ bỏvà bạn có thể
-  sử dụng cách thức bình thường cho lệnh control+c và control+x.
+## Các thay đổi cho phiên bản 9.0
+*	Khi chuyển đến một dấu trang từ hộp thoại ghi chú, con trỏ duyệt đi theo
+  con trỏ hệ thống.
+*	Phím lệnh chọn dấu trang trước đã hoạt động trở lại như mong muốn.
+*	Có thể xóa các dấu trang thông qua hộp thoại ghi chú.
+*	Giờ đây bạn có thể gán lệnh để lưu và di chuyển đến một dấu trang tạm thời
+  cho mỗi tài liệu.
 
-## Các thay đổi cho bản 6.0
+## Các thay đổi cho phiên bản 8.0 ##
+*	Gỡ bỏ số nhận dạng phân đoạn từ tập tin các dấu trang, nhằm tránh gây ra
+  lỗi trong VitalSource Bookshelf ePUB reader.
+*	Đã thêm hộp thoại ghi chú để tích hợp chú thích cho các dấu trang đã lưu
+  và di chuyển đến vị trí được chọn.
 
-*	 Thêm tùy chọn để chọn hành động thích hợp sẽ được thực hiện sau khi xác nhận.
-*	Thêm các dòng lệnh mô phỏng cắt và sao chép, có thể gán thao tác từ hộp thoại quản lý các thao tác.
-*	 Thêm một hộp thoại để cấu hình tính năng mô phỏng sao chép và cắt trong khi cài đặt. Điều này cho phép gán các lệnh control+c và control+x để chép và cắt, cũng như yêu cầu bạn xác nhận thay thế nội dung trong bộ nhớ tạm khi bấm các lệnh này.
-*	Sửa nội dugn tài liệu cho phần script_add (Windows+NVDA+c).
-
-## Các thay đổi cho bản 5.0 ##
-
-*	Cải thiện trình bày giao diện của hộp thoại, tuân theo cách trình bày của
-  các hộp thoại khác của NVDA.
+## Các thay đổi cho phiên bản 7.0 ##
+*	Hộp thoại lưu chuỗi văn bản cho tìm kiếm cụ thể đã được gỡ bỏ. Tính năng
+  này giờ đây được tích hợp trong hộp thoại tìm kiếm cụ thể, đã được thiết
+  kế lại để cho phép thực hiện các hoạt động khác nhau khi bấm OK.
+*	Trình bày trực quan của các hộp thoại đã được cải thiện, giống như cách
+  xuất hiện các hộp thoại của NVDA.
+*	Thực hiện lệnh tìm tiếp hay tìm trước trong chế độ duyệt giờ đây sẽ tìm
+  kiếm phân biệt chữ hoa / thường một cách chính xác nếu tìm kiếm gốc là
+  phân biệt chữ hoa / thường.
 *	Yêu cầu NVDA 2016.4 trở lên.
+*	Giờ bạn có thể  gán các thao tác để mở các hộp thoại sao chép và khôi phục
+  các điểm đánh dấu.
+*	NVDA sẽ phát một thông điệp để thông báo khi các điểm đánh dấu được sao
+  chép hay khôi phục ở các hộp thoại tương ứng.
 
-## Các thay đổi cho bản 4.0 ##
-*	Add-on settings are managed from NVDA configuration, so that standard
-  profiles can be used to save different separators, and it's not needed to
-  copy the settings for importing at reinstallation.
-*	Now it's possible to choose if the added text will be appended or
-  prepended, using the Add text before clip data check box from the Clip
-  Contents Designer settings dialog.
+## Các thay đổi cho phiên bản 6.0 ##
+* Khi không dùng được tính năng của add-on, các thao tác sẽ được gửi đến các
+  ứng dụng tương ứng.
 
-## Các thay đổi cho bản 3.0 ##
-*	Braille representation of MathML objects can be added to the clipboard if
-  MathPlayer is installed.
-*	Nếu không có dấu phân cách, sẽ chỉ có một dòng trắng được đặt giữa các
-  phần văn bản được thêm vào.
-*	A shortcut can be assigned to open the Clip Contents Designer settings
-  dialog.
-*	Added a check box in the settings dialog, for choosing if the separator
-  should be copied to be imported when reinstalling the add-on.
+## Các thay đổi cho phiên bản 5.0 ##
+* Thêm tính năng tìm kiếm phân biệt chữ hoa / thường.
+* Gỡ bỏ tùy chọn mở tài liệu từ trình đơn đánh dấu.
+* Thêm các phím lệnh trực quan.
 
-## Các thay đổi cho bản 2.0 ##
-*	Có thể dùng các kí tự chữ Hindi để phân cách giữa các phần nội dung đã
-  thêm vào.
+## Các thay đổi cho phiên bản 4.0 ##
+* Gỡ bỏ  số nhận dạng phân đoạn từ tên tập tin dấu trang nhằm tránh gây ra
+  lỗi trong ePUBREADER Firefox add-on.
+* Thông tin giúp đỡ cho add-on đã hiển thị trong phần quản lý add-on.
 
-## Các thay đổi cho bản 1.0 ##
-*	Phiên bản đầu tiên
+## Các thay đổi cho phiên bản 3.1 ##
+* Cập nhất các bản dịch và ngôn ngữ mới.
+* Vị trí dấu trang không được thông báo trong chế độ thay đổi vị trí đọc.
+
+## Các thay đổi cho phiên bản 3.0 ##
+* Thêm hỗ trợ cho thay đổi vị trí đọc.
+
+## Các thay đổi cho phiên bản 2.0 ##
+* Thêm các tùy chọn để lưu và xóa các tìm kiếm khác nhau cho mỗi tập tin.
+* Sửa lỗi bị treo khi đường dẫn chứa các kí tự không phải chữ latin.
+* Các phím tắt giờ đây có thể gán lại bằng hộp thoại quản lý thao tác của
+  NVDA.
+
+## Các thay đổi cho phiên bản 1.0 ##
+* Phiên bản đầu tiên.
+* Đã dịch sang các ngôn ngữ: Bồ Đào Nha brazi, Farsi, Phần Lan, Pháp,
+  Galicia, Đức, Ý, Nhật, Hàn Quốc, Nepal, Bồ Đào Nha, Tây Ban Nha, Slovak,
+  Slovenia, Nam Ấn Độ.
+
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o

@@ -1,129 +1,176 @@
-# Leikepöydän sisällön käsittelijä #
+# Paikkamerkit #
+* Tekijät: Noelia, Chris
+* Yhteensopivuus: NVDA 2019.3 tai uudempi
+* Lataa [vakaa versio][1]
+* Lataa [kehitysversio][2]
 
-*	Tekijät: Noelia, Abdel.
-*	Yhteensopivuus: NVDA 2019.3 tai uudempi
-*	Lataa [vakaa versio][1]
-*	Lataa [kehitysversio][2]
+Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
+paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
+dokumenteista. Sitä voidaan käyttää myös merkkijonojen tallentamiseen tai
+etsimiseen monirivisistä säätimistä. Mikäli järjestelmäkohdistimen
+siirtäminen ei ole tällöin mahdollista, hakua vastaava merkkijono kopioidaan
+leikepöydälle, jotta sitä voidaan etsiä muilla tavoilla.  Merkkijonot ja
+paikkamerkit tallennetaan tiedostoihin, joiden nimet perustuvat nykyisen
+dokumentin nimeen ja URL-osoitteeseen.  Tämä lisäosa perustuu saman tekijän
+SpecificSearch- ja Bookmark&Search-lisäosiin. Sinun tulisi poistaa ne tämän
+version käyttämiseksi, sillä niissä on samoja näppäinkomentoja ja
+ominaisuuksia.
+
+## Näppäinkomennot: ##
+
+*	Ctrl+Vaihto+NVDA+F: Avaa muokkausruudun sisältävän valintaikkunan, joka
+  näyttää viimeksi tallennetun haun. Tässä ikkunassa voit myös valita
+  yhdistelmäruudusta aiemmin tallennettuja hakuja  tai poistaa valitun
+  merkkijonon hakuhistoriasta valintaruutua käyttäen. Voit lisäksi valita,
+  lisätäänkö muokkausruudun sisältämä teksti hakuhistoriaasi. Valitse
+  lopuksi toiminto seuraavasta valintapainikeryhmästä (Etsi seuraava, Etsi
+  edellinen tai Ei hakua) ja määritä, suorittaako NVDA kirjainkoon
+  huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
+*	Ctrl+Vaihto+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
+  haluat antaa sille nimen, valitse sijainnista lyhyt tekstipätkä ennen
+  paikkamerkin tallentamista.
+*	Ctrl+Vaihto+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
+*	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
+*	Vaihto+NVDA+K: Siirtää edelliseen paikkamerkkiin.
+*	Ei määritetty: Näyttää paikkamerkkitiedoston nimen selaustilassa ilman
+  tarkennetta.
+*	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle asiakirjalle
+  tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
+  muistiinpanon. Tallenna muutokset painamalla Tallenna muistiinpano. Voit
+  poistaa valitun paikkamerkin painamalla Delete. Siirry valittuun
+  sijaintiin painamalla OK.
+*	Ei määritetty: Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi.
+*	Ei määritetty: Siirtää tilapäiseen kirjanmerkkiin nykyisessä asiakirjassa.
+*	Ei määritetty: Etsii viimeksi haetun tekstin seuraavan esiintymän mistä
+  tahansa määrätystä asiakirjasta.
+*	Ei määritetty: Etsii viimeksi haetun tekstin edellisen esiintymän mistä
+  tahansa määrätystä asiakirjasta.
 
 
-Tätä lisäosaa käytetään tekstin lisäämiseen leikepöydälle, mistä voi olla
-hyötyä, jos haluat yhdistää tekstin eri osia yhdeksi kokonaisuudeksi
-liittääksesi sen jonnekin.  Leikepöydän sisällön voi myös tyhjentää ja
-näyttää selaustilassa.
+## Paikkamerkit-alavalikko (NVDA+N) ##
 
-## Näppäinkomennot ##
+Asetukset-valikosta löytyvästä Paikkamerkit-alavalikosta pääset käyttämään
+seuraavia toimintoja:
 
-* NVDA+Windows+C: Lisää valittu/tarkastelukohdistimella merkitty teksti tai
-  MathML-objekteja kuvaavat Unicode-pistekirjoitusmerkit leikepöydälle.
-* NVDA+Windows+X: Tyhjennä leikepöydän sisältö.
-* Ei määritetty: Kopioi leikepöydälle tai leikkaa siltä ja pyytää
-  vaihtoehtoisesti vahvistuksen.
-* Ei määritetty: Näyttää leikepöydällä olevan tekstin selaustilassa tai
-  ilmoittaa, mikäli leikepöytä on tyhjä tai jos sillä on sisältöä, jota ei
-  voida näyttää, esim. Resurssienhallinnasta kopioituja tiedostoja tai
-  kansioita.
+*	Sivukohtaisen haun kansio: avaa tallennettujen sivukohtaisten hakujen
+  kansion.
+*	Paikkamerkkien kansio: Avaa tallennettujen paikkamerkkien kansion.
+*	Kopioi paikkamerkkien kansio: Tallentaa kopion paikkamerkkien kansiosta.
+*	Palauta paikkamerkit: Palauttaa paikkamerkit aiemmin tallennetusta
+  paikkamerkkien kansiosta.
 
-Huomaa, että edellä mainittuja komentoja on mahdollista muuttaa kohdasta
-NVDA-valikko -> Asetukset -> Syötekomennot ja valitsemalla avautuvasta
-valintaikkunasta Tekstin tarkastelu -kategoria.
+Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
+sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
+paikkamerkkien asemesta sivukohtaista hakua.
 
-## Asetukset-valikko ##
-*	Leikepöydän sisällön käsittelijä: Mahdollistaa erottimen määrittämisen, jota voidaan käyttää tekstilohkojen etsimiseen, kun lisätty tekstikokonaisuus on ensin liitetty jonnekin.
-On myös mahdollista valita, liitetäänkö lisätty teksti jo leikepöydällä olevan tekstin loppuun vai alkuun, suoritetaanko käytettävissä olevat toiminnot (lisää, tyhjennä leikepöytä, kopioinnin ja leikkaamisen emulointi) heti vai pyydetäänkö ensin vahvistus, ja pyydetäänkö aiemman sisällön korvaamiseen vahvistus, jos leikepöydällä on vain tekstiä tai jos se ei ole tyhjä.
-Lisäksi on mahdollista muuttaa leikepöydällä olevan tekstin muotoa ja selaustilassa näytettävien merkkien enimmäismäärää. Huomaa, että tämän rajan nostaminen saattaa aiheuttaa ongelmia, jos leikepöydällä on paljon tekstiä. Oletusraja on 100 000 merkkiä.
+## Muutokset versiossa 14.0 ##
+*	Paikkamerkkitiedoston nimen kopioiva komento on korvattu komennolla, joka
+  näyttää tiedostonimen selaustilassa. Syötekomentoa ei ole määritetty.
+*	"Etsittävä teksti" -kenttä ei enää ole "Tallennettu teksti" -kentän
+  päällä. (Kiitos Cyrille Bougotille).
+*	Edellyttää NVDA 2019.3:a tai uudempaa.
 
-Huomautuksia:
+## Muutokset versiossa 13.0 ##
+*	Lisätty komennot ilman näppäinkomentoa viimeksi haetun tekstin seuraavan
+  ja edellisen esiintymän etsimiseen mistä tahansa  määrätystä asiakirjasta.
+*	Sivukohtainen haku toimii, kun NVDA:n Tietoja-valintaikkuna on avoimena.
+*	Sama kirjainkoko -valintaruutu valitaan sivukohtaisen haun
+  valintaikkunassa, jos se oli valittuna edellistä hakua suoritettaessa.
+*	Kun lisäosa päivitetään, aiemmassa versiossa tallennetut paikkamerkit ja
+  sivukohtaisen haun merkkijonot kopioidaan automaattisesti uuteen versioon,
+  paitsi jos haluat tuoda paikkamerkit NVDA-asetusten pääkansiosta.
+*	Jos valitulle kansiolle ei ole paikkamerkkien kopiointivalintaikkunassa
+  annettu nimeksi placeMarkersBackup, sen niminen alikansio luodaan, jotta
+  estetään tärkeää dataa sisältävien hakemistojen, kuten Tiedostot tai
+  Ladatut tiedostot, poistaminen.
 
-*	Edellä mainittua komentoa on mahdollista muuttaa kohdasta NVDA-valikko ->
-  Asetukset -> Syötekomennot ja valitsemalla avautuvasta valintaikkunasta
-  Asetukset-kategoria.
-*	Vahvistusta ei pyydetä NVDA:n ilmoitusruudun ollessa avoimena, vaan
-  toiminnot suoritetaan heti.
+## Muutokset versiossa 12.0 ##
+*	Korjattu kriittinen bugi, joka kaatoi NVDA:n yritettäessä avata
+  Muistiinpanot-valintaikkunaa, mikäli kiinalaisia merkkejä oli valittuna
+  ennen paikkamerkkien tallentamista.
 
-## Muutokset versiossa 12.0
-* Korjattu bugeja käytettäessä kopioinnin emulointia sellaisissa
-  sovelluksissa kuin LibreOffice Writer.
+## Muutokset versiossa 11.0 ##
+*	Yhteensopiva NVDA 2018.3:n tai uudemman kanssa (vaaditaan).
+*	Viimeisen NVDA 2017.3:n kanssa yhteensopivan version voi ladata
+  [tästä.][3]
 
-## Muutokset versiossa 11.0
-* Nyt on mahdollista lisätä tarkastelukohdistimella merkittyä tekstiä
-  tavallisia NVDA-komentoja(NVDA+F9 ja NVDA+F10) käyttäen. Komentoa
-  NVDA+Win+F9 ei enää käytetä paremman uuteen NVDA+Vaihto+F9-komentoon
-  integroinnin takia.
-* Edellyttää NVDA 2019.3:a tai uudempaa.
-
-## Muutokset versiossa 10.0
-* Korjattu ohjelmavirhe leikepöydän sisältämän tekstin näyttämiseen
-  käytettävässä valintaikkunassa, kun sen nimi sisälsi ei-latinalaisia
-  merkkejä.
-* Korjattu ohjelmavirhe leikkaamisen ja kopioinnin emulointitoiminnoissa
-  arabialaista näppäimistöasettelua käytettäessä. Tämän korjasi Abdel, joka
-  on lisätty lisäosan tekijäksi.
+## Muutokset versiossa 10.0 ##
+*	Virheiden välttämiseksi (erityisesti pitkissä dokumenteissa)
+  paikkamerkkien valintaan liittyvät syötekomennot, kuten NVDA+K,
+  NVDA+Vaihto+K tai NVDA+Alt+K, lähetetään Edgessä sovellukselle sen sijaan,
+  että yritettäisiin siirtää kohdistinta paikkamerkkeihin.
+*	Sivukohtaista hakua tuetaan nyt Edgessä.
 
 ## Muutokset versiossa 9.0
-
-* Lisätty mahdollisuus leikepöydän tekstin näyttämiseen selaustilassa.
-* Lisätty asetus, jolla voidaan valita, kysytäänkö vahvistus, jos leikepöytä
-  ei ole tyhjä esim. tiedostoja tai kansioita kopioitaessa.
-* Edellyttää NVDA 2018.4:ää tai uudempaa.
+*	Tarkastelukohdistin seuraa järjestelmän kohdistinta siirryttäessä
+  paikkamerkkiin Muistiinpanot-valintaikkunasta.
+*	Edellisen paikkamerkin valitseva komento toimii jälleen asianmukaisesti.
+*	Paikkamerkkejä on mahdollista poistaa Muistiinpanot-valintaikkunasta.
+*	Voit nyt määrittää kullekin dokumentille syötekomennot paikkamerkkien
+  tallentamista ja niihin siirtymistä varten.
 
 ## Muutokset versiossa 8.0 ##
+*	Osatunnisteet poistettu paikkamerkkitiedostojen nimistä VitalSource
+  Bookshelf -ePub-lukijaan liittyvien ongelmien välttämiseksi.
+*	Lisätty Muistiinpanot-valintaikkuna, jossa on mahdollista liittää
+  tallennettuihin paikkamerkkeihin muistiinpanoja sekä siirtyä valittuun
+  sijaintiin.
 
-* Lisäosan asetukset näkyvät omassa kategoriassaan NVDA:n
-  Asetukset-valintaikkunassa.
-* Edellyttää NVDA 2018.2:ta tai uudempaa.
-* Tarvittaessa voit ladata [viimeisimmän version, joka on yhteensopiva NVDA
-  2017.3:n kanssa.][3]
+## Muutokset versiossa 7.0 ##
+*	Merkkijonon sivukohtaiseen hakuun tallentava valintaikkuna on
+  poistettu. Tämä toiminnallisuus on sisällytetty Sivukohtainen haku
+  -valintaikkunaan, joka on uudelleensuunniteltu mahdollistamaan eri
+  toimintoja OK-painiketta painettaessa.
+*	Valintaikkunoiden visuaalista esitystä on parannettu noudattamaan NVDA:n
+  ikkunoiden ulkoasua.
+*	Etsi seuraava- tai Etsi edellinen -komento suorittaa nyt selaustilassa
+  kirjainkoon huomioivan haun, mikäli alkuperäinen haku oli sellainen.
+*	Edellyttää NVDA 2016.4:ää tai uudempaa.
+*	Paikkamerkkien kopiointi- ja palautusvalintaikkunoille on nyt mahdollista
+  määrittää syötekomennot.
+*	NVDA ilmoittaa, kun paikkamerkkejä on kopioitu tai palautettu omilla
+  valintaikkunoillaan.
 
-## Muutokset versiossa 7.0
-
-* Jos valitset Ei Määritä kopioinnin ja leikkaamisen emuloinnin
-  märitysvalintaikkunassa, joka tulee näkyviin lisäosaa asennettaessa,
-  näiden ominaisuuksien komennot poistetaan käytöstä, mikä palauttaa
-  normaalin Ctrl+C- ja Ctrl+X-toiminnallisuuden.
-
-## Muutokset versiossa 6.0
-
-*	 Lisätty vaihtoehdot, joilla voidaan valita, pyydetäänkö käytettävissä olevien toimintojen suorittamiseen vahvistus.
-*	Lisätty Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -asetukset, joille voidaan määrittää syötekomennot Syötekomennot-valintaikkunasta.
-*	Lisätty valintaikkuna Vahvista kopioinnin emulointi- ja Vahvista leikkaamisen emulointi -toiminnallisuuksien  määrittämiseen lisäosan asennuksen aikana. Kun nämä asetukset ovat käytössä, kopioinnin (Ctrl+C) ja leikkaamisen (Ctrl+X) suorittamiselle pyydetään vahvistus.
-*	Korjattu tekstinlisäämiskomennon (Windows+NVDA+C) ohje.
+## Muutokset versiossa 6.0 ##
+* Kun lisäosan toiminnot eivät ole käytettävissä, komennot lähetetään
+  suoraan aktiiviselle sovellukselle.
 
 ## Muutokset versiossa 5.0 ##
-
-*	Valintaikkunan visuaalista esitystä on parannettu noudattamaan NVDA:n
-  ikkunoiden ulkoasua.
-*	Edellyttää NVDA:n 2016.4-versiota tai uudempaa.
+* Lisätty kirjainkoon huomioiva haku.
+* Poistettu vaihtoehto ohjeen avaamiseen Paikkamerkit-valikosta.
+* Intuitiivisemmat näppäinkomennot.
 
 ## Muutokset versiossa 4.0 ##
-*	NVDA hallitsee nyt lisäosan asetuksia, jotta profiilien käyttäminen eri
-  erottimien tallentamiseen olisi mahdollista, eikä asetusten kopiointia
-  tarvita niiden tuomiseksi asennettaessa lisäosaa uudelleen.
-*	Lisäosan asetusvalintaikkunan Lisää teksti leikepöydän nykyisen sisällön
-  alkuun -valintaruutua käyttäen on nyt mahdollista valita, liitetäänkö
-  lisätty teksti leikepöydällä jo olevan tekstin loppuun vai alkuun.
+* Poistettu osatunnisteet kirjanmerkkitiedostojen nimistä, mikä saattaa
+  välttää ongelmia Firefoxin ePUBREADER-lisäosan kanssa.
+* Ohje on käytettävissä Lisäosien hallinnasta.
+
+## Muutokset versiossa 3.1 ##
+* Käännöksiä päivitetty ja lisätty uusi kieli.
+* Kirjanmerkin sijaintia ei ilmoiteta pikaluvun aikana.
 
 ## Muutokset versiossa 3.0 ##
-*	MathML-objekteja kuvaavat pistekirjoitusmerkit voidaan lisätä
-  leikepöydälle, mikäli MathPlayer on asennettu.
-*	Mikäli erotinta ei ole määritetty, tekstiosuuksien väliin lisätään yksi
-  tyhjä rivi.
-*	Leikepöydän sisällön käsittelijän asetusvalintaikkunan avaamista varten
-  voidaan määrittää pikanäppäin.
-*	Asetusvalintaikkunaan lisätty valintaruutu, jolla voidaan määrittää,
-  kopioidaanko erotin käyttäjän NVDA-asetusten kansioon, josta se voidaan
-  tuoda asennettaessa lisäosaa uudelleen.
+* Lisätty tuki pikaluvulle.
 
 ## Muutokset versiossa 2.0 ##
-*	Hindinkielisiä merkkejä voidaan käyttää tekstiosuuksien välisenä
-  erottimena.
+* Lisätty vaihtoehdot eri hakujen tallentamiseksi ja poistamiseksi kullekin
+  tiedostolle.
+* Korjattu ohjelmavirhe, joka rikkoi lisäosan toiminnan, kun polut
+  sisälsivät muita kuin latinalaisia merkkejä.
+* Pikanäppäimien uudelleenmäärittely on nyt mahdollista NVDA:n
+  Syötekomennot-valintaikkunaa käyttäen.
 
 ## Muutokset versiossa 1.0 ##
-*	Ensimmäinen versio.
+* Ensimmäinen versio.
+* Käännetty kielille: brasilianportugali, espanja, farsi, galego, italia,
+  japani, korea, nepali, portugali, ranska, saksa, slovakki, slovenia, suomi
+  ja tamili.
+
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=ccd
+[1]: https://addons.nvda-project.org/files/get.php?file=pm
 
-[2]: https://addons.nvda-project.org/files/get.php?file=ccd-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
 
-[3]: https://addons.nvda-project.org/files/get.php?file=ccd-o
+[3]: https://addons.nvda-project.org/files/get.php?file=pm-o
