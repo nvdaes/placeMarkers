@@ -64,6 +64,16 @@ aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
 
+## Changes for 15.0 ##
+
+* When reading with say all in browse mode, the specific find next and
+  specific find previous commands do not stop reading anymore if Allow skim
+  reading option is enabled, according to find next and find previous
+  commands from NVDA 2020.4.
+* When the Specific search dialog is opened after running the Specific find
+  previous command, the Search previous option will be selected.
+
+
 ## Alterações para 14.0 ##
 *	O comando para copiar o nome do ficheiro onde os dados dos marcadores
   serão guardados foi substituído pelo comando que mostra o nome do ficheiro

@@ -36,6 +36,16 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
 
+## Changes for 15.0 ##
+
+* When reading with say all in browse mode, the specific find next and
+  specific find previous commands do not stop reading anymore if Allow skim
+  reading option is enabled, according to find next and find previous
+  commands from NVDA 2020.4.
+* When the Specific search dialog is opened after running the Specific find
+  previous command, the Search previous option will be selected.
+
+
 ## 14.0の変更点 ##
 *	place
   markersのデータが保存されるファイル名のコピーのコマンドが、ブラウズモードでそのファイル名を表示するコマンドに変更されました。これはジェスチャーに割り当てされていません。
