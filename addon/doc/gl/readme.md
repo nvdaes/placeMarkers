@@ -62,6 +62,16 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
+## Cambios para 15.0 ##
+
+* Ó ler con ler todo en modo exploración, os atallos específico buscar
+  anterior e específico buscar seguinte xa non deteñen a lectura se a opción
+  Permitir lectura superficial está habilitada, en consoancia cos atallos
+  buscar seguinte e buscar anterior de NVDA 2020.4.
+* Cando o diálogo de busca específico se abre despois de executar o atallo
+  específico buscar anterior, seleccionarase a opción buscar anterior.
+
+
 ## Cambios para 14.0 ##
 *	O atallo para copiar o nome do arquivo onde se gardarán os datos dos
   marcadores de ubicación reemprazouse por un atallo que amosa este nome de

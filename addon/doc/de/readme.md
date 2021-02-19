@@ -66,6 +66,16 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Änderungen in 15.0 ##
+
+* Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die
+  Befehle "Nächste Suche suchen" und "Vorherige Suche suchen" nicht mehr auf
+  zu lesen, wenn die Option "Überfliegen des Lesens zulassen" aktiviert ist.
+* Wenn das Dialogfeld "Spezifische Suche" nach dem Ausführen des Befehls
+  "Vorherige Suche suchen" geöffnet wird, wird die Option "Vorherige Suche"
+  ausgewählt.
+
+
 ## Änderungen für 14.0 ##
 *	Der Befehl zum Kopieren des Namens der Datei, in der Lesezeichen
   gespeichert werden, wurde durch einen Befehl ersetzt, der diesen

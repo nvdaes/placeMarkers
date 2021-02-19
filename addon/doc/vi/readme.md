@@ -59,6 +59,16 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
+## Changes for 15.0 ##
+
+* When reading with say all in browse mode, the specific find next and
+  specific find previous commands do not stop reading anymore if Allow skim
+  reading option is enabled, according to find next and find previous
+  commands from NVDA 2020.4.
+* When the Specific search dialog is opened after running the Specific find
+  previous command, the Search previous option will be selected.
+
+
 ## Các thay đổi cho phiên bản 14.0 ##
 *	Lệnh chép tên của tập tin sẽ lưu dữ liệu của các điểm đánh dấu đã được
   thay thế bởi một lệnh để hiển thị tên này trong chế độ duyệt. Lệnh này

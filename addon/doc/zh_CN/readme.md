@@ -34,6 +34,16 @@
 
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
 
+## Changes for 15.0 ##
+
+* When reading with say all in browse mode, the specific find next and
+  specific find previous commands do not stop reading anymore if Allow skim
+  reading option is enabled, according to find next and find previous
+  commands from NVDA 2020.4.
+* When the Specific search dialog is opened after running the Specific find
+  previous command, the Search previous option will be selected.
+
+
 ## 版本14.0 ##
 *	当前，复制将要保存位置标记数据的文件名的命令，已被在浏览模式下显示该文件名的命令所代替。注意当前没有分配手势。
 *	“现在要搜索的文本”字段不再与“已保存的文本”字段重叠。 （感谢Cyrille Bougot）。

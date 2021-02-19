@@ -72,6 +72,18 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
+## Novità nella versione 15.0 ##
+
+* Quando si usa il comando "dire tutto" (NVDA+freccia giù) in modalità
+  navigazione e l'opzione Lettura continua è attivata, i comandi "trova
+  precedente" e "trova successivo" relativi alla ricerca specifica non
+  interrompono più la lettura, in analogia con i comandi "trova precedente"
+  (NVDA+f3) e "trova successivo" (NVDA+shift+f3) di NVDA 2020.4.
+* Quando, dopo l'esecuzione del comando "Trova precedente" relativo alla
+  ricerca specifica, si apre la finestra Ricerca specifica, viene
+  selezionata l'opzione Cerca precedente.
+
+
 ## Novità nella versione 14.0 ##
 *	Il comando per copiare il nome del file in cui vengono salvati i dati di
   placeMarkers è stato sostituito da un comando che mostra questo nome file

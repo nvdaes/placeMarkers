@@ -65,6 +65,16 @@ Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
 
+## Cambios para 15.0 ##
+
+* Al leer con verbalizar todo en modo exploración, las órdenes específicas
+  de buscar siguiente y buscar anterior ya no dejan de leer si la lectura
+  superficial está habilitada, al igual que las órdenes Buscar siguiente y
+  Buscar anterior de NVDA 2020.4.
+* Cuando se abra el diálogo de búsqueda específica tras ejecutar la orden de
+  búsqueda específica anterior, se seleccionará la opción Buscar anterior.
+
+
 ## Cambios para 14.0 ##
 *	La orden para copiar el nombre del archivo donde se guardarán los datos de
   Place Markers se ha sustituido por una orden que muestra el nombre de este

@@ -1,6 +1,6 @@
 # placeMarkers #
 * Auteurs : Noelia, Chris.
-* NVDA compatibility: 2019.3 or later.
+* Compatibilité NVDA: 2019.3 à 2019.1
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
 
@@ -34,10 +34,10 @@ des raccourcis et des caractéristiques communes.
   texte à partir de cette position avant de l'enregistrer.
 *	Contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
   position.
-*	NVDA+k : Déplacer vers le marqueur suivant.
-*	Maj+NVDA+k : Déplacer vers le marqueur précédent.
-*	Not assigned: Shows the file name where the place markers data will be
-  saved in browse mode, without an extension.
+*	NVDA+k : Aller au marqueur suivant.
+*	Maj+NVDA+k : Aller au marqueur précédent.
+*	Non assignée : Affiche le nom du fichier dans lequel seront sauvegardés
+  les marqueurs en mode navigation, sans extension.
 *	Alt+NVDA+k : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
   document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
   Enregistrer note pour enregistrer les modifications. En appuyant sur
@@ -47,10 +47,10 @@ des raccourcis et des caractéristiques communes.
   temporaire.
 *	Non assigné : Ce déplacer au marqueur temporaire pour le document en
   cours.
-*	Not assigned: Finds the next occurrence of the last text searched for any
-  specific document.
-*	Not assigned: Finds the previous occurrence of the last text searched for
-  any specific document.
+*	Non assignée : Trouver l'occurrence suivante du dernier texte recherché
+  pour n'importe quel document spécifique.
+*	Non assignée : Trouver l'occurrence précédente du dernier texte recherché
+  pour n'importe quel document spécifique.
 
 
 ## Sous-menu des marqueurs (NVDA+N) ##
@@ -70,28 +70,45 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
-## Changes for 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
-*	Requires NVDA 2019.3 or later.
+## Changements pour la version 15.0 ##
 
-## Changes for 13.0 ##
-*	Added not assigned commands to find the next and previous occurrences of
-  the last text searched for any specific document.
-*	The specific search feature works when the NVDA's About dialog is open.
-*	In the Specific search dialog, the case sensitive checkbox will be checked
-  if this option was selected for the last search.
-*	When the add-on is updated, bookmarks and strings for specific search
-  saved in the previous version of the add-on will be automatically copied
-  to the new version, unless you prefer to import place markers saved in the
-  main configuration folder of NVDA.
-*	When using the dialog to copy place markers, if the chosen folder is not
-  named placeMarkersBackup, a subfolder with this name will be created to
-  prevent the deletion of directories containing important data, such as
-  Documents or Downloads.
+* Durant la lecture avec Dire tout en mode navigation, les commandes
+  spécifiques  de recherche précédent et suivant n'interrompront plus la
+  lecture si "Permettre le survol en mode dire-tout" est activé,
+  conformément aux commandes rechercher suivant et rechercher précédent de
+  NVDA 2020.4.
+* Si le dialogue de recherche spécifique est ouvert après exécution de la
+  commande de recherche spécifique du précédent,  l'option "recherche
+  précédent" sera sélectionnée.
+
+
+## Changements pour la version 14.0 ##
+*	La commande permettant de copier le nom du fichier dans lequel les données
+  de Place Markers seront sauvegardées a été remplacée par une commande
+  permettant d'afficher ce nom en mode navigation. Cette commande n'est pas
+  assignée à un geste.
+*	Le champ "Texte à rechercher" n'empiète plus sur le champ "texte
+  sauvegardé". (Merci à Cyrille Bougot).
+*	Nécessite NVDA 2019.3 ou ultérieur.
+
+## Changements pour la version 13.0 ##
+*	Ajout de commandes non assignées pour trouver l'occurrence suivante et
+  l'occurrence précédente du dernier texte recherché pour l'importe quel
+  document spécifique.
+*	La fonctionnalité de recherche spécifique est disponible quand le dialogue
+  "À propos" de NVDA est ouvert.
+*	Dans le dialogue de recherche spécifique, la case à coché "sensible à la
+  casse" sera cochée si cette option était sélectionnée lors de la dernière
+  recherche.
+*	Lors de la mise à jour de l'extension, les signets et textes de recherche
+  spécifique sauvegardés dans la version précédente de l'extension seront
+  automatiquement copiés dans la nouvelle version, à moins que vous ne
+  préfériez importer les marqueurs sauvegardés dans le dossier principal de
+  configuration de NVDA.
+*	Lors de l'utilisation du dialogue de copie des marqueurs, si le dossier
+  choisi ne s'appelle pas placeMarkersBackup, un sous-dossiers de ce nom
+  sera créé pour éviter l'effacement de certains dossiers importants, tels
+  que Documents ou Téléchargements. 
 
 ## Changements pour la version 12.0 ##
 *	Correction d'un bug critique qui provoquait le blocage de NVDA lors de la
