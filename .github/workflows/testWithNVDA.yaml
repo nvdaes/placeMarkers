@@ -1,9 +1,6 @@
 name: Build and test NVDA add-on
 
 on:
-  push:
-    tags-ignore:
-      - '*'
   pull_request:
     branches:
       - master
@@ -18,14 +15,13 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.7
+    - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install scons
-        pip install Markdown
+        pip install scons markdown
         sudo apt update
         sudo apt install gettext
     - name: Add add-on version
@@ -66,10 +62,10 @@ jobs:
     
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.7 x86
+    - name: Set up Python 3.8 x86
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
         architecture: x86
     - name: Checkout NVDA
       uses: actions/checkout@v2
@@ -93,13 +89,14 @@ jobs:
         Expand-Archive addon.zip source\userConfig\addons\addon
     - name: Start NVDA
       run: |
-        cd source
-        pythonw.exe nvda.pyw -m --debug-logging
+        runnvda -m --debug-logging
         ping 127.0.0.1 /n 20
+      shell: cmd
     - name: Quit NVDA
       run: |
-        pythonw.exe nvda.pyw -q
+        runnvda -q
         ping 127.0.0.1 /n 20
+      shell: cmd
     - name: Upload log
       uses: actions/upload-artifact@v2
       with:
@@ -109,7 +106,6 @@ jobs:
       run: |
         move *.pot tests\nvda.pot
         cd tests
-        python checkPot.py nvda.pot
         python checkPot.py nvda.pot > potResults.txt
         If (Select-String -Path potResults.txt -Pattern 'Message has no translator comment' -SimpleMatch) {exit 1}
     - name: Comment on PR
