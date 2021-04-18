@@ -1,9 +1,8 @@
 name: Build and test NVDA add-on
 
 on:
-  pull_request:
-    branches:
-      - master
+  [pull_request, pull_request_target]
+
 jobs:
 
   addon:
@@ -124,17 +123,17 @@ jobs:
   pr-release:
     name: Pull Request Release
 
-    needs: NVDA
+    needs: nvda
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Download add-on
+    - name: Download artifacts
       uses: actions/download-artifact@v2
       with:
-        name: nvda-addon
+        path: artifacts
     - name: Calculate sha256
-      run: sha256sum *.nvda-addon > sha256.txt
+      run: sha256sum artifacts/nvda-addon/*.nvda-addon > sha256.txt
     - name: Automatic release
       uses: marvinpinto/action-automatic-releases@latest
       with:
@@ -143,5 +142,5 @@ jobs:
         prerelease: true
         title: PR ${{ github.event.pull_request.number }}
         files: |
-          *.nvda-addon
+          artifacts/**/*.*
           sha256.txt
