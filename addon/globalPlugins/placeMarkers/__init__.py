@@ -204,7 +204,7 @@ def getSavedBookmarks():
 
 class SpecificSearchDialog(wx.Dialog):
 
-	def __init__(self, parent, reverse=False):
+	def __init__(self,parent,reverse=False):
 		# Translators: The title of the Specific Search dialog.
 		super(SpecificSearchDialog, self).__init__(parent, title=_("Specific search"))
 		self.searchFile = getFileSearch()
