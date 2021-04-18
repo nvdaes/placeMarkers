@@ -124,7 +124,7 @@ jobs:
   pr-release:
     name: Pull Request Release
 
-    needs: NVDA
+    needs: nvda
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
