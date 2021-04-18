@@ -204,7 +204,7 @@ def getSavedBookmarks():
 
 class SpecificSearchDialog(wx.Dialog):
 
-	def __init__(self, parent, reverse=False):
+	def __init__(self,parent,reverse=False):
 		# Translators: The title of the Specific Search dialog.
 		super(SpecificSearchDialog, self).__init__(parent, title=_("Specific search"))
 		self.searchFile = getFileSearch()
@@ -254,6 +254,9 @@ class SpecificSearchDialog(wx.Dialog):
 			self.searchRadioBox.Disable()
 			self.caseSensitiveCheckBox.Disable()
 		self.CentreOnScreen()
+
+	def onTestPRTarget(self,evt:wx.PyEvent):
+		pass
 
 	def onSearchEditTextChange(self, evt):
 		if self.searchTextEdit.Value:
