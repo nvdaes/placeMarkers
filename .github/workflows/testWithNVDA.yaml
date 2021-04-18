@@ -120,4 +120,28 @@ jobs:
             repo: context.repo.repo,
             body: 'This PR has messages without comments for translators'
           })
-          
+
+  pr-release:
+    name: Pull Request Release
+
+    needs: NVDA
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Download add-on
+      uses: actions/download-artifact@v2
+      with:
+        name: nvda-addon
+    - name: Calculate sha256
+      run: sha256sum *.nvda-addon > sha256.txt
+    - name: Automatic release
+      uses: marvinpinto/action-automatic-releases@latest
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        automatic_release_tag: pr-${{ github.event.pull_request.number }}
+        prerelease: true
+        title: PR ${{ github.event.pull_request.number }}
+        files: |
+          *.nvda-addon
+          sha256.txt
