@@ -134,7 +134,7 @@ jobs:
       with:
         path: artifacts
     - name: Calculate sha256
-      run: sha256sum artifacts/nvda-add-on/*.nvda-addon > sha256.txt
+      run: sha256sum artifacts/nvda-addon/*.nvda-addon > sha256.txt
     - name: Automatic release
       uses: marvinpinto/action-automatic-releases@latest
       with:
