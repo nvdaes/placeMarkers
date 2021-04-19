@@ -2,22 +2,30 @@ name: Test comment
 
 on:
   pull_request:
+    branches:
+      - master
 
 jobs:
-  testComment:
 
-    runs-on: ubuntu-latest
+  comment:
+
+    runs-on: windows-latest
+
     steps:
+
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Comment
+      with:
+        fetch-depth: 0
+    - name: Comment on PR
       uses: actions/github-script@v3
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '👋 Thanks for reporting!'
-            })
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: 'Testing'
+          })
+          
