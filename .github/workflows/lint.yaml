@@ -1,31 +1,21 @@
 name: Lint diff
 
 on:
-  [pull_request, pull_request_target]
+  pull_request:
+    branches:
+      - master
 
 jobs:
 
   diff:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-      # https://raw.githubusercontent.com/bugout-dev/locust/1bebcc2cac67e90c1efb09b42c37e91cdae829f9/.github/workflows/locust.yaml
-      - name: PR head repo
-        id: head_repo_name
-        run: |
-          HEAD_REPO_NAME=$(jq -r '.pull_request.head.repo.full_name' "$GITHUB_EVENT_PATH")
-          echo "PR head repo: $HEAD_REPO_NAME"
-          echo "::set-output name=repo::$HEAD_REPO_NAME"
-      - name: Checkout git repo
-        uses: actions/checkout@v2
-        with:
-          repository: ${{ steps.head_repo_name.outputs.repo }}
-          fetch-depth: 0
+
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        repository: ${{ steps.head_repo_name.outputs.repo }}
         fetch-depth: 0
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
@@ -39,7 +29,7 @@ jobs:
         type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
     - name: Comment on PR
       uses: actions/github-script@v3
-      # if: failure()
+      if: failure()
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
