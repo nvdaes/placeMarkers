@@ -30,6 +30,7 @@ jobs:
         run: pip install -r head/requirements.txt
       - name: Lint
         run: |
+          cd head
           git diff -U0 origin/master...HEAD -- addon/. > flake8.diff
           type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
       #- name: Generate Locust summary
