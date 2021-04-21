@@ -29,6 +29,8 @@ jobs:
           git remote add upstream https://github.com/nvdaes/placeMarkers.git
           git fetch upstream
           git branch base upstream/master
+          git checkout base
+          git pull
           git diff -U0 base...${{ github.event.pull_request.head.sha }} -- addon/. > flake8.diff
           type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
           
