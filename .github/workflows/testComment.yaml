@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ${{ steps.head_repo_name.outputs.repo }}
-          ref: refs/pull/${{ github.event.pull_request.number }}/head
+          # ref: refs/pull/${{ github.event.pull_request.number }}/head
       - name: Set up Python 3.7
         uses: actions/setup-python@v2
         with:
