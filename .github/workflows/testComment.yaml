@@ -26,7 +26,10 @@ jobs:
         run: pip install -r requirements.txt
       - name: Lint
         run: |
-          git diff -U0 ${{ github.event.pull_request.head.sha }} -- addon/. > flake8.diff
+          git remote add upstream https://github.com/nvdaes/placeMarkers.git
+          git fetch upstream
+          git branch base upstream/master
+          git diff -U0 base...HEAD -- addon/. > flake8.diff
           type flake8.diff | flake8 --diff --output-file=flake8.txt --tee
           
           
