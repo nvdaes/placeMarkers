@@ -27,7 +27,7 @@ jobs:
     - name: Lint
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        flake8 addon
+        flake8 addon --exit-zero
     - name: Comment on PR
       uses: actions/github-script@v4
       if: failure()
