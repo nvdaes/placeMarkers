@@ -24,13 +24,19 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: pip install -r requirements.txt
-    - name: Add remote
-      run: |
-        git remote add nvdaes https://github.com/nvdaes/placeMarkers
-        git fetch nvdaes
+    - name: Get diff
+      uses: actions/github-script@v4
+      id: set-diff
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          const diff_url = context.payload.pull_request.diff_url
+          const result = await github.request(diff_url)
+          const diff = result.data
+          return diff
     - name: Lint
       run: |
-        git diff -U0 nvdaes/master...HEAD -- addon/. > flake8.diff
+        "${{steps.set-diff.outputs.result}}" -- addon > flake8.diff
         type flake8.diff | flake8 --diff --output-file=flake8.txt 
     - name: Comment on PR
       uses: actions/github-script@v4
