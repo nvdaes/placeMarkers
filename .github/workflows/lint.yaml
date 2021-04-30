@@ -24,9 +24,14 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: pip install -r requirements.txt
+    - name: Add remote
+      run: |
+        git remote add nvdaes https://github.com/nvdaes/placeMarkers
+        fetch nvdaes
     - name: Lint
       run: |
-        flake8 addon --count
+        git diff -U0 nvdaes/master...HEAD -- addon/. > flake8.diff
+        type flake8.diff | flake8 --diff --output-file=flake8.txt 
     - name: Comment on PR
       uses: actions/github-script@v4
       if: failure()
