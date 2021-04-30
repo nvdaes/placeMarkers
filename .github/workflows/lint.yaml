@@ -27,7 +27,7 @@ jobs:
     - name: Add remote
       run: |
         git remote add nvdaes https://github.com/nvdaes/placeMarkers
-        fetch nvdaes
+        git fetch nvdaes
     - name: Lint
       run: |
         git diff -U0 nvdaes/master...HEAD -- addon/. > flake8.diff
