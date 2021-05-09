@@ -105,7 +105,7 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				info.updateCaret()
 			speech.cancelSpeech()
 			info.move(textInfos.UNIT_LINE,1,endPoint="end")
-			speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 		else:
 			wx.CallAfter(
 				gui.messageBox,
@@ -130,7 +130,7 @@ def moveToBookmark(position):
 		obj._set_selection(info)
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE,1,endPoint="end")
-		speech.speakTextInfo(info,reason=controlTypes.REASON_CARET)
+		speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 
 def standardFileName(fileName):
 	notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
