@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
 "PO-Revision-Date: 2020-03-25 14:24+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
