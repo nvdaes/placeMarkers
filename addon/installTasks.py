@@ -34,9 +34,10 @@ def onInstall():
 			),
 			# Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 			_("Install or update add-on"),
-			wx.YES | wx.NO | wx.ICON_WARNING) == wx.YES:
-				copyTree(addonBackupPath, placeMarkersPath)
-				return
+			wx.YES | wx.NO | wx.ICON_WARNING
+		) == wx.YES:
+			copyTree(addonBackupPath, placeMarkersPath)
+			return
 	previousPlaceMarkersPath = os.path.join(
 		configPath, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers"
 	)
