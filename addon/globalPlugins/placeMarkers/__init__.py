@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-#Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 
@@ -12,11 +12,8 @@ import addonHandler
 import globalPluginHandler
 import appModuleHandler
 import api
-import config
 import globalVars
-import languageHandler
 import textInfos
-import review
 from textInfos.offsets import Offsets
 from browseMode import BrowseModeDocumentTreeInterceptor
 import controlTypes
@@ -33,17 +30,20 @@ from .skipTranslation import translate
 
 addonHandler.initTranslation()
 
-### Constants
+# Constants
 CONFIG_PATH = globalVars.appArgs.configPath
-PLACE_MARKERS_PATH = os.path.join(CONFIG_PATH, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers")
+PLACE_MARKERS_PATH = os.path.join(
+	CONFIG_PATH, "addons", "placeMarkers",
+	"globalPlugins", "placeMarkers", "savedPlaceMarkers"
+)
 SEARCH_FOLDER = os.path.join(PLACE_MARKERS_PATH, "search")
 BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
-
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
 ### Globals
 lastFindText = ""
 lastCaseSensitivity = False
+
 
 def createSearchFolder():
 	if os.path.isdir(SEARCH_FOLDER):
@@ -54,6 +54,7 @@ def createSearchFolder():
 		log.debugWarning("Error creating search folder", exc_info=True)
 		raise e
 
+
 def createBookmarksFolder():
 	if os.path.isdir(BOOKMARKS_FOLDER):
 		return
@@ -63,6 +64,7 @@ def createBookmarksFolder():
 		log.debugWarning("Error creating bookmarks folder", exc_info=True)
 		raise e
 
+
 createSearchFolder()
 createBookmarksFolder()
 
@@ -70,20 +72,20 @@ createBookmarksFolder()
 def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False):
 	if not text:
 		return
-	obj=api.getFocusObject()
-	treeInterceptor=obj.treeInterceptor
+	obj = api.getFocusObject()
+	treeInterceptor = obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-		obj=treeInterceptor
+		obj = treeInterceptor
 		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
 		return
 	else:
 		try:
-			info=obj.makeTextInfo(textInfos.POSITION_CARET)
+			info = obj.makeTextInfo(textInfos.POSITION_CARET)
 		except (NotImplementedError, RuntimeError):
-			info=obj.makeTextInfo(textInfos.POSITION_FIRST)
+			info = obj.makeTextInfo(textInfos.POSITION_FIRST)
 		try:
-			res=info.find(text,reverse=reverse, caseSensitive=caseSensitive)
+			res = info.find(text,reverse=reverse, caseSensitive=caseSensitive)
 		except WindowsError:
 			wx.CallAfter(
 				gui.messageBox,
@@ -93,18 +95,18 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				translate("Find Error"),
 				wx.OK|wx.ICON_ERROR
 			)
-		except:
+		except Exception:
 			if api.copyToClip(text):
 				# Translators: message presented when a string of text has been copied to the clipboard.
 				ui.message(_("%s copied to clipboard") % text)
 			return
 		if res:
 			if hasattr(obj,'selection'):
-				obj.selection=info
+				obj.selection = info
 			else:
 				info.updateCaret()
 			speech.cancelSpeech()
-			info.move(textInfos.UNIT_LINE,1,endPoint="end")
+			info.move(textInfos.UNIT_LINE, 1, endPoint="end")
 			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 		else:
 			wx.CallAfter(
@@ -113,16 +115,17 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				translate('text "%s" not found') % text,
 				# Message translated in NVDA core.
 				translate("Find Error"),
-				wx.OK|wx.ICON_ERROR
+				wx.OK | wx.ICON_ERROR
 			)
 
 
 def doFindTextUp(text, caseSensitive=False, willSayAllResume=False):
 	doFindText(text, reverse=True, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
 
+
 def moveToBookmark(position):
 	obj = api.getFocusObject()
-	treeInterceptor=obj.treeInterceptor
+	treeInterceptor = obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 		bookmark = Offsets(position, position)
@@ -132,13 +135,15 @@ def moveToBookmark(position):
 		info.move(textInfos.UNIT_LINE,1,endPoint="end")
 		speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 
+
 def standardFileName(fileName):
-	notAllowed = re.compile("\?|:|\*|\t|<|>|\"|\/|\\||") # Invalid characters
+	notAllowed = re.compile(r"\?|:|\*|\t|<|>|\"|\/|\\||")  # Invalid characters
 	allowed = re.sub(notAllowed, "", fileName)
 	return allowed
 
+
 def getFile(folder, ext=""):
-	obj=api.getForegroundObject()
+	obj = api.getForegroundObject()
 	file = obj.name
 	obj = api.getFocusObject()
 	try:
@@ -200,7 +205,7 @@ def getSavedBookmarks():
 		savedBookmarks = {}
 	return savedBookmarks
 
-### Dialogs
+# Dialogs
 
 class SpecificSearchDialog(wx.Dialog):
 
