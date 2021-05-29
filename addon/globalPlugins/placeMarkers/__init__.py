@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-# Copyright (C) 2012-2021 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 
@@ -31,13 +31,13 @@ from .skipTranslation import translate
 addonHandler.initTranslation()
 
 # Constants
-
 CONFIG_PATH = globalVars.appArgs.configPath
 PLACE_MARKERS_PATH = os.path.join(
 	CONFIG_PATH, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers"
 )
 SEARCH_FOLDER = os.path.join(PLACE_MARKERS_PATH, "search")
 BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
+
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
 # Globals
@@ -89,8 +89,8 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 		except WindowsError:
 			wx.CallAfter(
 				gui.messageBox,
-				# Translators: Message presented when a string of text is not found.
-				_(f'text "{text}" not found'),
+				# Message translated in NVDA core.
+				translate('text "%s" not found') % text,
 				# Message translated in NVDA core.
 				translate("Find Error"),
 				wx.OK | wx.ICON_ERROR
@@ -98,21 +98,21 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 		except Exception:
 			if api.copyToClip(text):
 				# Translators: message presented when a string of text has been copied to the clipboard.
-				ui.message(_(f"{text} copied to clipboard")
+				ui.message(_("%s copied to clipboard") % text)
 			return
 		if res:
-			if hasattr(obj,'selection'):
+			if hasattr(obj, 'selection'):
 				obj.selection = info
 			else:
 				info.updateCaret()
 			speech.cancelSpeech()
 			info.move(textInfos.UNIT_LINE, 1, endPoint="end")
-			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
+			speech.speakTextInfo(info, reason=controlTypes.REASON_CARET)
 		else:
 			wx.CallAfter(
 				gui.messageBox,
-				# Message presented when a string of text is not found.
-				_(f'text "{text"} not found'),
+				# Message translated in NVDA core.
+				translate('text "%s" not found') % text,
 				# Message translated in NVDA core.
 				translate("Find Error"),
 				wx.OK | wx.ICON_ERROR
@@ -132,8 +132,8 @@ def moveToBookmark(position):
 		info = obj.makeTextInfo(bookmark)
 		obj._set_selection(info)
 		speech.cancelSpeech()
-		info.move(textInfos.UNIT_LINE,1,endPoint="end")
-		speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
+		info.move(textInfos.UNIT_LINE, 1, endPoint="end")
+		speech.speakTextInfo(info, reason=controlTypes.REASON_CARET)
 
 
 def standardFileName(fileName):
@@ -151,7 +151,7 @@ def getFile(folder, ext=""):
 		childID = obj.IAccessibleChildID
 		iAObj = obj.IAccessibleObject
 		accValue = iAObj.accValue(childID)
-		nameToAdd = f" - {accValue.split("#")[0].split("/")[-1].split("\\")[-1]}"
+		nameToAdd = " - %s" % accValue.split("#")[0].split("/")[-1].split("\\")[-1]
 	except Exception:
 		nameToAdd = ""
 	file = file.rsplit(" - ", 1)[0]
@@ -159,11 +159,11 @@ def getFile(folder, ext=""):
 	file += nameToAdd
 	file = standardFileName(file)
 	folderPath = os.path.join(PLACE_MARKERS_PATH, folder)
-	maxLenFileName = 232-len(folderPath)
+	maxLenFileName = 232 - len(folderPath)
 	if maxLenFileName <= 0:
 		return ""
 	file = file[:maxLenFileName]
-	file = file+ext
+	file = file + ext
 	path = os.path.join(folderPath, file)
 	return path
 
@@ -185,7 +185,7 @@ def getSavedTexts():
 def getLastSpecificFindText():
 	try:
 		return getSavedTexts()[0]
-	except:
+	except Exception:
 		return ""
 
 
@@ -210,6 +210,7 @@ def getSavedBookmarks():
 	except IOError:
 		savedBookmarks = {}
 	return savedBookmarks
+
 
 # Dialogs
 
@@ -247,7 +248,7 @@ class SpecificSearchDialog(wx.Dialog):
 			# Translators: An action in the Search group of the Specific search dialog.
 			_("&Don't search"),
 		)
-		self.searchRadioBox = sHelper.addItem(wx.RadioBox(self,label=searchActionsLabel, choices=searchChoices))
+		self.searchRadioBox = sHelper.addItem(wx.RadioBox(self, label=searchActionsLabel, choices=searchChoices))
 		if self.reverse:
 			self.searchRadioBox.SetSelection(1)
 		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
@@ -317,8 +318,8 @@ class SpecificSearchDialog(wx.Dialog):
 
 def doCopy(copyDirectory):
 	# Borrowed from @ibrahim-s code for readFeeds in PR#4
-	# to ensure that the removed directory will not be one of the
-# main directories such as documents or music or other important ones
+	# to ensure that the removed directory will not be one of the main directories such as documents or music
+	# or other important ones
 	if not os.path.basename(copyDirectory) == "placeMarkersBackup":
 		copyDirectory = os.path.join(copyDirectory, "placeMarkersBackup")
 	try:
@@ -360,7 +361,7 @@ def doRestore(restoreDirectory):
 			_("Folder not copied"),
 			# Translators: title of error dialog shown when cannot copy placeMarkers folder.
 			_("Copy Error"),
-			wx.OK|wx.ICON_ERROR
+			wx.OK | wx.ICON_ERROR
 		)
 		raise e
 
@@ -387,7 +388,7 @@ class NotesDialog(wx.Dialog):
 		self.notesListBox.Bind(wx.EVT_LISTBOX, self.onNotesChange)
 		# Translators: The label of an edit box in the Notes dialog.
 		noteLabel = _("Not&e:")
-		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, noteLabel, wx.TextCtrl, style=wx.TE_MULTILINE )
+		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(self, noteLabel, wx.TextCtrl, style=wx.TE_MULTILINE)
 		self.noteEdit = noteLabeledCtrl.control
 		self.noteEdit.SetMaxLength(1024)
 		self.noteEdit.Value = firstNoteBody
@@ -476,17 +477,22 @@ class CopyDialog(wx.Dialog):
 		# Translators: An informational message displayed in the Copy dialog.
 		dialogCaption = _("Select a folder to save a backup of your current place markers.")
 		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
-		# Translators: The label of a grouping with controls to select the destination directory in Copy dialog.
+
+		# Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 		directoryGroupText = _("directory for backup:")
-		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(
-			self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL))
+		groupHelper = sHelper.addItem(
+			gui.guiHelper.BoxSizerHelper(
+				self, sizer=wx.StaticBoxSizer(wx.StaticBox(
+					self, label=directoryGroupText), wx.VERTICAL
+				)
+			)
 		)
 		# Message translated in NVDA core.
 		browseText = translate("Browse...")
 		# Translators: The title of the dialog to browse for the destination directory when copying place markers.
 		dirDialogTitle = _("Select directory to copy")
-		directoryEntryControl = groupHelper.addItem(gui.guiHelper.PathSelectionHelper(
-			self, browseText, dirDialogTitle)
+		directoryEntryControl = groupHelper.addItem(
+			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle)
 		)
 		self.copyDirectoryEdit = directoryEntryControl.pathControl
 		self.copyDirectoryEdit.Value = os.path.join(CONFIG_PATH, "placeMarkersBackup")
@@ -505,7 +511,6 @@ class CopyDialog(wx.Dialog):
 		if not self.copyDirectoryEdit.Value:
 			# Message translated in NVDA core.
 			gui.messageBox(
-				# message translated in NVDA core.
 				translate("Please specify a directory."),
 				# Message translated in NVDA core.
 				translate("Error"),
@@ -516,8 +521,7 @@ class CopyDialog(wx.Dialog):
 		if drv and not os.path.isdir(drv):
 			# Message translated in NVDA core.
 			gui.messageBox(
-				# Translators: Message presented when a driver is not valid.
-				_(f"Invalid drive {drv}"),
+				translate("Invalid drive %s") % drv,
 				# Message translated in NVDA core.
 				translate("Error"),
 				wx.OK | wx.ICON_ERROR
@@ -539,8 +543,8 @@ class PathSelectionWithoutNewDir(gui.guiHelper.PathSelectionHelper):
 	def onBrowseForDirectory(self, evt):
 		startPath = self.getDefaultBrowseForDirectoryPath()
 		with wx.DirDialog(
-			self._parent, self._browseForDirectoryTitle, defaultPath=startPath,
-			style=wx.DD_DIR_MUST_EXIST | wx.DD_DEFAULT_STYLE
+			self._parent, self._browseForDirectoryTitle,
+			defaultPath=startPath, style=wx.DD_DIR_MUST_EXIST | wx.DD_DEFAULT_STYLE
 		) as d:
 			if d.ShowModal() == wx.ID_OK:
 				self._textCtrl.Value = d.Path
@@ -554,13 +558,17 @@ class RestoreDialog(wx.Dialog):
 
 		mainSizer = wx.BoxSizer(wx.VERTICAL)
 		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
+
 		# Translators: An informational message displayed in the Restore dialog.
 		dialogCaption = _("Select a folder to restore a backup of your previous copied place markers.")
 		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
+
 		# Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 		directoryGroupText = _("directory containing backup:")
-		groupHelper = sHelper.addItem(gui.guiHelper.BoxSizerHelper(
-			self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL))
+		groupHelper = sHelper.addItem(
+			gui.guiHelper.BoxSizerHelper(
+				self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)
+			)
 		)
 		# Message translated in NVDA core.
 		browseText = translate("Browse...")
@@ -586,7 +594,6 @@ class RestoreDialog(wx.Dialog):
 		if not self.restoreDirectoryEdit.Value:
 			# Message translated in NVDA core.
 			gui.messageBox(
-				# Message translated in NVDA core.
 				translate("Please specify a directory."),
 				# Message translated in NVDA core.
 				translate("Error"),
@@ -595,11 +602,11 @@ class RestoreDialog(wx.Dialog):
 			return
 		drv = os.path.splitdrive(self.restoreDirectoryEdit.Value)[0]
 		if drv and not os.path.isdir(drv):
+			# Message translated in NVDA core.
 			gui.messageBox(
-				# Translators: Message presented when a driver is not valid.
-				_(f"Invalid drive {drv}")
+				translate("Invalid drive %s") % drv,
 				# Message translated in NVDA core.
-				translate( "Error"),
+				translate("Error"),
 				wx.OK | wx.ICON_ERROR
 			)
 			return
@@ -610,8 +617,8 @@ class RestoreDialog(wx.Dialog):
 	def onCancel(self, evt):
 		self.Destroy()
 
-# Note
 
+# Note
 
 class Note(object):
 
@@ -620,8 +627,8 @@ class Note(object):
 		self.title = title
 		self.body = body
 
-# Global plugin
 
+# Global plugin
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
@@ -737,9 +744,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			) and not treeInterceptor.passThrough):
 				gesture.send()
 				return
+
 		# Adapted from Joseph Lee's work in NVDA's core
 		# #8566: We need this to be a modal dialog, but it mustn't block this script.
-
 		def run():
 			gui.mainFrame.prePopup()
 			d = SpecificSearchDialog(gui.mainFrame, reverse=reverse)
@@ -756,9 +763,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		obj = api.getFocusObject()
 		if controlTypes.STATE_MULTILINE not in obj.states:
 			treeInterceptor = obj.treeInterceptor
-			if not (isinstance(
-				treeInterceptor, BrowseModeDocumentTreeInterceptor
-			) and not treeInterceptor.passThrough):
+			if not (
+				isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough
+			):
 				gesture.send()
 				return
 		if not lastFindText:
@@ -779,9 +786,9 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		obj = api.getFocusObject()
 		if controlTypes.STATE_MULTILINE not in obj.states:
 			treeInterceptor = obj.treeInterceptor
-			if not (isinstance(
-				treeInterceptor, BrowseModeDocumentTreeInterceptor
-			) and not treeInterceptor.passThrough):
+			if not (
+				isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough
+			):
 				gesture.send()
 				return
 		if not lastFindText:
@@ -817,9 +824,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor = obj.treeInterceptor
-		if not (isinstance(
-			treeInterceptor, BrowseModeDocumentTreeInterceptor
-		) and not treeInterceptor.passThrough):
+		if not (isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough):
 			gesture.send()
 			return
 		wx.CallAfter(self.popupNotesDialog)
@@ -872,7 +877,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_deleteBookmark(self, gesture):
 		obj = api.getFocusObject()
-		treeInterceptor=obj.treeInterceptor
+		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 			obj = treeInterceptor
 		else:
@@ -957,7 +962,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not willSayAllResume(gesture):
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
-					_("Position: character {nextPos}")
+					_("Position: character %d") % nextPos
 				)
 			return
 		ui.message(
@@ -973,13 +978,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_selectPreviousBookmark(self, gesture):
 		obj = api.getFocusObject()
-		appName=appModuleHandler.getAppNameFromProcessID(obj.processID,True)
+		appName = appModuleHandler.getAppNameFromProcessID(obj.processID, True)
 		if appName == "MicrosoftEdgeCP.exe":
 			gesture.send()
 			return
-		treeInterceptor=obj.treeInterceptor
+		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-			obj=treeInterceptor
+			obj = treeInterceptor
 		else:
 			gesture.send()
 			return
@@ -1014,18 +1019,18 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		description=_("Shows the name of the current file for place markers in browse mode.")
 	)
 	def script_showCurrentBookmarksFile(self, gesture):
-		obj=api.getFocusObject()
-		if not controlTypes.STATE_MULTILINE in obj.states:
-			treeInterceptor=obj.treeInterceptor
-			if not (isinstance(
-				treeInterceptor, BrowseModeDocumentTreeInterceptor
-			) and not treeInterceptor.passThrough):
+		obj = api.getFocusObject()
+		if controlTypes.STATE_MULTILINE not in obj.states:
+			treeInterceptor = obj.treeInterceptor
+			if not (
+				isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough
+			):
 				gesture.send()
 				return
 		fileName = getFile("bookmarks")
 		ui.browseableMessage(
-			# Translators: Title for message presented when the file name for place markers is shown in browse mode.
-			fileName, _(f"{ADDON_SUMMARY} file"
+			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
+			fileName, _("%s file" % ADDON_SUMMARY)
 		)
 
 	@script(
@@ -1040,7 +1045,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-			obj=treeInterceptor
+			obj = treeInterceptor
 		else:
 			gesture.send()
 			return
@@ -1050,7 +1055,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			with open(fileName, "w", encoding="utf-8") as f:
 				f.write(str(bookmark.startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
-				ui.message(_("Saved temporary bookmark at position {bookmark.startOffset}")
+				ui.message(_("Saved temporary bookmark at position %d" % bookmark.startOffset))
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
