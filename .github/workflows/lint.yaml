@@ -1,4 +1,4 @@
-name: Lint and mypy
+name: Lint
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  lint-mypy:
+  lint:
 
     runs-on: windows-latest
 
@@ -23,6 +23,6 @@ jobs:
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: pip install tox
-    - name: Lint and mypy
-      run: tox
+      run: pip install -r requirements.txt
+    - name: Lint
+      run: flake8 addon
