@@ -1,9 +1,8 @@
 name: Check for l10n updates
 on:
-
   push:
     branches:
-      - master
+      - main
   
   schedule:
     # * is a special character in YAML so you have to quote this string

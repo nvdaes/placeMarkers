@@ -1,7 +1,7 @@
 name: Build and test NVDA add-on
 
 on:
-  [ull_request:
+  pull_request:
 
 jobs:
 
@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
     - name: Install dependencies
       run: |
         pip install scons markdown
@@ -106,10 +106,5 @@ jobs:
         move *.pot tests\nvda.pot
         cd tests
         python checkPot.py nvda.pot > potResults.txt
+        type potResults.txt
         If (Select-String -Path potResults.txt -Pattern 'Message has no translator comment' -SimpleMatch) {exit 1}
-    - name: Upload pot results
-      if: failure()
-      uses: actions/upload-artifact@v2
-      with:
-        name: pot-Results
-        path: tests\potResults.txt
