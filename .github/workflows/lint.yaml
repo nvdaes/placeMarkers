@@ -1,10 +1,8 @@
 name: Lint
 
 on:
-  pull_request_target:
+  pull_request:
 
-  push:
-  
 jobs:
 
   lint:
@@ -15,37 +13,8 @@ jobs:
 
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
-        ref: ${{github.event.pull_request.head.ref}}
-        repository: ${{github.event.pull_request.head.repo.full_name}}
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.7
     - name: Install dependencies
       run: pip install -r requirements.txt
-    - name: Get diff
-      uses: actions/github-script@v4
-      id: set-diff
-      with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          const diff_url = context.payload.pull_request.diff_url
-          const result = await github.request(diff_url)
-          const diff = result.data
-          return diff
     - name: Lint
       run: |
-        "${{steps.set-diff.outputs.result}}" -- addon > flake8.diff
-        type flake8.diff | flake8 --diff --output-file=flake8.txt 
-    - name: Comment on PR
-      uses: actions/github-script@v4
-      if: failure()
-      with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          github.issues.createComment({
-            ...context.repo,
-            issue_number: context.payload.pull_request.number,
-            body: "This PR introduces flake8 errors"
-          })
+        flake8 addon
