@@ -23,7 +23,7 @@ import core
 import wx
 import ui
 import speech
-from speech.sayAll import sayAllHandler
+from speech import sayAll
 from scriptHandler import willSayAllResume, script
 from logHandler import log
 from .skipTranslation import translate
@@ -107,7 +107,7 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				info.updateCaret()
 			speech.cancelSpeech()
 			info.move(textInfos.UNIT_LINE, 1, endPoint="end")
-			speech.speakTextInfo(info, reason=controlTypes.OutputReason.REASON_CARET)
+			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 		else:
 			wx.CallAfter(
 				gui.messageBox,
@@ -133,7 +133,7 @@ def moveToBookmark(position):
 		obj._set_selection(info)
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE, 1, endPoint="end")
-		speech.speakTextInfo(info, reason=controlTypes.OutputReason.REASON_CARET)
+		speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 
 
 def standardFileName(fileName):
@@ -757,7 +757,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds the next occurrence of the last text searched for any specific document."),
-		resumeSayAllMode=sayAllHandler.CURSOR.CARET,
+		resumeSayAllMode=sayAll.CURSOR.CARET,
 	)
 	def script_specificFindNext(self, gesture):
 		obj = api.getFocusObject()
@@ -780,7 +780,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("finds the previous occurrence of the last text searched for any specific document."),
-		resumeSayAllMode=sayAllHandler.CURSOR.CARET,
+		resumeSayAllMode=sayAll.CURSOR.CARET,
 	)
 	def script_specificFindPrevious(self, gesture):
 		obj = api.getFocusObject()
@@ -929,7 +929,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("Moves to the next bookmark."),
-		resumeSayAllMode=sayAllHandler.CURSOR.CARET,
+		resumeSayAllMode=sayAll.CURSOR.CARET,
 		gesture="kb:NVDA+k"
 	)
 	def script_selectNextBookmark(self, gesture):
@@ -973,7 +973,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("Moves to the previous bookmark."),
-		resumeSayAllMode=sayAllHandler.CURSOR.CARET,
+		resumeSayAllMode=sayAll.CURSOR.CARET,
 		gesture="kb:NVDA+shift+k"
 	)
 	def script_selectPreviousBookmark(self, gesture):
@@ -1062,7 +1062,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: Message presented in input help mode.
-		description=_("Moves to the temporary bookmark for the current document.")
+		description=_("Moves to the temporary bookmark for the current document."),
+		resumeSayAllMode=sayAll.CURSOR.CARET,
 	)
 	def script_moveToTempBookmark(self, gesture):
 		obj = api.getFocusObject()

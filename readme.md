@@ -37,6 +37,7 @@ Note: The bookmark position is based on the number of characters; and therefore 
 
 ## Changes for 16.0 ##
 *	Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
 *	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changes for 15.0 ##
