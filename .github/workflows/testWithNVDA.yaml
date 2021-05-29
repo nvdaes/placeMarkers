@@ -1,7 +1,7 @@
 name: Build and test NVDA add-on
 
 on:
-  [pull_request, pull_request_target]
+  [ull_request:
 
 jobs:
 
@@ -61,10 +61,10 @@ jobs:
     
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Set up Python 3.8 x86
+    - name: Set up Python 3.7 x86
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.7
         architecture: x86
     - name: Checkout NVDA
       uses: actions/checkout@v2
@@ -107,40 +107,9 @@ jobs:
         cd tests
         python checkPot.py nvda.pot > potResults.txt
         If (Select-String -Path potResults.txt -Pattern 'Message has no translator comment' -SimpleMatch) {exit 1}
-    - name: Comment on PR
-      uses: actions/github-script@v3
+    - name: Upload pot results
       if: failure()
+      uses: actions/upload-artifact@v2
       with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          github.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: 'This PR has messages without comments for translators'
-          })
-
-  pr-release:
-    name: Pull Request Release
-
-    needs: nvda
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Download artifacts
-      uses: actions/download-artifact@v2
-      with:
-        path: artifacts
-    - name: Calculate sha256
-      run: sha256sum artifacts/nvda-addon/*.nvda-addon > sha256.txt
-    - name: Automatic release
-      uses: marvinpinto/action-automatic-releases@latest
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        automatic_release_tag: pr-${{ github.event.pull_request.number }}
-        prerelease: true
-        title: PR ${{ github.event.pull_request.number }}
-        files: |
-          artifacts/**/*.*
-          sha256.txt
+        name: pot-Results
+        path: tests\potResults.txt
