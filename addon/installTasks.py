@@ -27,8 +27,8 @@ def onInstall():
 	addonBackupPath = os.path.join(configPath, "placeMarkersBackup")
 	if os.path.isdir(addonBackupPath):
 		if gui.messageBox(
-			# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 			_(
+				# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 				"Your configuration folder for NVDA contains files that seem to be derived from a previous version of"
 				" this add-on. Do you want to update it?"
 			),
