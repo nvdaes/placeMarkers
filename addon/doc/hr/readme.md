@@ -1,6 +1,6 @@
 # Oznake pozicija (placeMarkers) #
 * Autori: Noelia, Chris.
-* NVDA kompatibilnost: 2019.3 ili novija.
+* NVDA kompatibilnost: 2021.1 ili novija.
 * Preuzmi [stabilnu verziju][1]
 * preuzmi [razvojnu verziju][2]
 
@@ -48,7 +48,7 @@ tipke i funkcije.
   određeni dokument.
 
 
-## Podizbornik „Oznake pozicija” (NVDA+N)  ##
+## Podizbornik „Oznake pozicija” (NVDA+N) ##
 
 Korištenjem podizbornika „Oznake pozicija” u izborniku NVDA postavki, možeš
 pristupiti:
@@ -65,15 +65,19 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
-## Changes for 15.0 ##
+## Promjene u verziji 16.0 ##
+* Kompatibilno s NVDA 2021.1 i novijim verzijama (obavezno).
+* Brzo čitanje je podržano prilikom prelaska na privremene oznake.
+* Ako je potrebno, možeš preuzeti [druge
+  verzije](https://github.com/nvdaes/placeMarkers/releases).
 
+## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and
   specific find previous commands do not stop reading anymore if Allow skim
   reading option is enabled, according to find next and find previous
   commands from NVDA 2020.4.
 * When the Specific search dialog is opened after running the Specific find
   previous command, the Search previous option will be selected.
-
 
 ## Promjene u verziji 14.0 ##
 *	Prečac koji kopira ime datoteke u kojoj se spremaju oznake mjesta
@@ -180,7 +184,6 @@ oznake.
 * Prevedeno na: brazilski portugalski, farsi, finski, francuski, galicijski,
   njemački, talijanski, japanski, korejski, nepalski, portugalski,
   španjolski, slovački, slovenski, tamilski.
-
 
 [[!tag dev stable]]
 

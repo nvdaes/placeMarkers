@@ -1,6 +1,6 @@
 # placeMarkers #
 * Auteurs : Noelia, Chris.
-* Compatibilité NVDA: 2019.3 à 2019.1
+* NVDA compatibility: 2021.1 or later.
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
 
@@ -70,8 +70,13 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
-## Changements pour la version 15.0 ##
+## Changes for 16.0 ##
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
+## Changements pour la version 15.0 ##
 * Durant la lecture avec Dire tout en mode navigation, les commandes
   spécifiques  de recherche précédent et suivant n'interrompront plus la
   lecture si "Permettre le survol en mode dire-tout" est activé,
@@ -80,7 +85,6 @@ spécifique, pas les marqueurs.
 * Si le dialogue de recherche spécifique est ouvert après exécution de la
   commande de recherche spécifique du précédent,  l'option "recherche
   précédent" sera sélectionnée.
-
 
 ## Changements pour la version 14.0 ##
 *	La commande permettant de copier le nom du fichier dans lequel les données
@@ -195,7 +199,6 @@ spécifique, pas les marqueurs.
 * Traduit en : Portugais Brésilien , Farsi, Finnois, Français, Galicien,
   Allemand, Italien, Japonais, Coréen, Nepali, Portugais, Espagnol,
   Slovaque, Slovène, Tamil.
-
 
 [[!tag dev stable]]
 

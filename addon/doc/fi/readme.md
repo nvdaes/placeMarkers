@@ -1,6 +1,6 @@
 # Paikkamerkit #
 * Tekijät: Noelia, Chris
-* Yhteensopivuus: NVDA 2019.3 tai uudempi
+* Yhteensopivuus: NVDA 2021.1 tai uudempi
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 
@@ -63,15 +63,19 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
-## Muutokset versiossa 15.0 ##
+## Muutokset versiossa 16.0 ##
+* Yhteensopiva NVDA 2021.1:n tai uudemman kanssa (vaaditaan).
+* Pikalukua tuetaan tilapäisiin paikkamerkkeihin siirryttäessä.
+* Voit tarvittaessa ladata [muita
+  versioita](https://github.com/nvdaes/placeMarkers/releases).
 
+## Muutokset versiossa 15.0 ##
 * Sivukohtaiset Etsi seuraava ja Etsi edellinen -komennot eivät enää pysäytä
   lukemista selaustilassa jatkuvaa lukua käytettäessä, mikäli Salli pikaluku
   jatkuvassa luvussa -asetus on käytössä NVDA 2020.4:n Etsi seuraava- ja
   Etsi edellinen -komentojen mukaisesti.
 * Etsi edellinen -vaihtoehto valitaan, kun Sivukohtainen haku -valintaikkuna
   avataan sivukohtaisen Etsi edellinen -komennon suorittamisen jälkeen.
-
 
 ## Muutokset versiossa 14.0 ##
 *	Paikkamerkkitiedoston nimen kopioiva komento on korvattu komennolla, joka
@@ -175,7 +179,6 @@ paikkamerkkien asemesta sivukohtaista hakua.
 * Käännetty kielille: brasilianportugali, espanja, farsi, galego, italia,
   japani, korea, nepali, portugali, ranska, saksa, slovakki, slovenia, suomi
   ja tamili.
-
 
 [[!tag dev stable]]
 

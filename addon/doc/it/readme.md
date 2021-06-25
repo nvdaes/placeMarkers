@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autori: Noelia, Chris.
-* Compatibilità con NVDA: versione 2019.3 e successive.
+* NVDA compatibility: 2021.1 or later.
 * scarica la  [versione stabile][1]
 * scarica la [versione in sviluppo][2]
 
@@ -72,8 +72,13 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
-## Novità nella versione 15.0 ##
+## Changes for 16.0 ##
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
+## Novità nella versione 15.0 ##
 * Quando si usa il comando "dire tutto" (NVDA+freccia giù) in modalità
   navigazione e l'opzione Lettura continua è attivata, i comandi "trova
   precedente" e "trova successivo" relativi alla ricerca specifica non
@@ -82,7 +87,6 @@ non i segnaposto, per salvare una posizione precisa.
 * Quando, dopo l'esecuzione del comando "Trova precedente" relativo alla
   ricerca specifica, si apre la finestra Ricerca specifica, viene
   selezionata l'opzione Cerca precedente.
-
 
 ## Novità nella versione 14.0 ##
 *	Il comando per copiare il nome del file in cui vengono salvati i dati di
@@ -194,7 +198,6 @@ non i segnaposto, per salvare una posizione precisa.
 * Tradotto in: portoghese brasiliano, farsi, finlandese, francese,
   galiziano, tedesco, italiano, giapponese, coreano, nepalese, portoghese,
   spagnolo, slovacco, sloveno, tamil.
-
 
 [[!tag dev stable]]
 

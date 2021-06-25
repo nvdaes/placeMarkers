@@ -1,6 +1,6 @@
 # marcadores de lugar #
 * Autores: Noelia, Chris.
-* Compatibilidade com NVDA: 2019.3 ou posterior.
+* NVDA compatibility: 2021.1 or later.
 * baixe a [versão estável][1]
 * baixe a [versão de desenvolvimento][2]
 
@@ -65,15 +65,19 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a busca específica e não
 marcadores.
 
-## Changes for 15.0 ##
+## Changes for 16.0 ##
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
+## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and
   specific find previous commands do not stop reading anymore if Allow skim
   reading option is enabled, according to find next and find previous
   commands from NVDA 2020.4.
 * When the Specific search dialog is opened after running the Specific find
   previous command, the Search previous option will be selected.
-
 
 ## Mudanças na 14.0 ##
 *	O comando para copiar o nome do arquivo no qual os dados dos marcadores de
@@ -184,7 +188,6 @@ marcadores.
 * Traduzido para: Alemão, Coreano, Eslovaco, Esloveno, Espanhol, Finlandês,
   Francês, Galego, Italiano, Japonês, Persa, Português, Português
   Brasileiro, Tâmil.
-
 
 [[!tag dev stable]]
 
