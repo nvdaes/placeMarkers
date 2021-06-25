@@ -1,6 +1,6 @@
 # Đánh dấu #
 * Tác giả: Noelia, Chris.
-* NVDA tương thích: 2019.3 trở lên.
+* NVDA tương thích: 2021.1 trở lên.
 * tải về [phiên bản chính thức][1]
 * tải về [phiên bản thử nghiệm][2]
 
@@ -59,15 +59,19 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
-## Các thay đổi cho phiên bản 15.0 ##
+## Các thay đổi cho phiên bản 16.0 ##
+* Tương thích với NVDA 2021.1 trở lên (yêu cầu).
+* Đã hỗ trợ thay đổi vị trí đọc khi di chuyển đến dấu trang tạm thời.
+* Nếu cần, bạn có thể tải [phiên bản
+  khác](https://github.com/nvdaes/placeMarkers/releases).
 
+## Các thay đổi cho phiên bản 15.0 ##
 * Khi đọc với chế độ đọc tất cả trong chế độ duyệt, các lệnh tìm trước và
   tìm tiếp không còn làm cho dừng đọc nữa nếu tùy chọn cho phép thay đổi vị
   trí khi đọc dược bật, dựa theo các lệnh tìm tiếp và tìm trước của NVDA
   2020.4.
 * Nếu hộp thoại tìm kiếm cụ thể được mở sau khi gọi lệnh tìm trước, tùy chọn
   tìm kiếm trước sẽ được chọn.
-
 
 ## Các thay đổi cho phiên bản 14.0 ##
 *	Lệnh chép tên của tập tin sẽ lưu dữ liệu của các điểm đánh dấu đã được
@@ -169,7 +173,6 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 * Đã dịch sang các ngôn ngữ: Bồ Đào Nha brazi, Farsi, Phần Lan, Pháp,
   Galicia, Đức, Ý, Nhật, Hàn Quốc, Nepal, Bồ Đào Nha, Tây Ban Nha, Slovak,
   Slovenia, Nam Ấn Độ.
-
 
 [[!tag dev stable]]
 

@@ -1,6 +1,6 @@
 # placeMarkers (Stedmærker) #
 * Forfattere: Noelia, Chris.
-* NVDA-kompatibilitet: 2019.3 eller nyere
+* NVDA compatibility: 2021.1 or later.
 * Download [stabil version][1]
 * download [testversion][2]
 
@@ -63,15 +63,19 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
-## Changes for 15.0 ##
+## Changes for 16.0 ##
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
+## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and
   specific find previous commands do not stop reading anymore if Allow skim
   reading option is enabled, according to find next and find previous
   commands from NVDA 2020.4.
 * When the Specific search dialog is opened after running the Specific find
   previous command, the Search previous option will be selected.
-
 
 ## Ændringer for 14.0 ##
 *	Kommandoen til at kopiere navnet på filen, hvor stedmarkeringsdataene
@@ -183,7 +187,6 @@ bogmærker, som gemmer en præcis position.
 * Oversat til: Brasiliansk portugisisk, farsi, finsk, fransk, galicisk,
   tysk, italiensk, japansk, koreansk, nepalesisk, portugisisk, spansk,
   slovakisk, slovensk og tamilsk.
-
 
 [[!tag dev stable]]
 

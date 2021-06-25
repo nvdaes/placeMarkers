@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autores: Noelia, Chris.
-* Compatibilidade con NVDA: 2019.3 ou posterior.
+* Compatibilidade con NVDA: 2021.1 ou posterior.
 * descarga [versión estable][1]
 * descarga [versión de desenvolvemento][2]
 
@@ -62,15 +62,19 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
-## Cambios para 15.0 ##
+## Cambios para 16.0 ##
+* Compatible co NVDA 2021.1 ou posterior (requerido).
+* Sopórtase a lectura superficial ao moverse a unha marca temporal.
+* Se o precisas, podes descargar [outras
+  versións](https://github.com/nvdaes/placeMarkers/releases).
 
+## Cambios para 15.0 ##
 * Ó ler con ler todo en modo exploración, os atallos específico buscar
   anterior e específico buscar seguinte xa non deteñen a lectura se a opción
   Permitir lectura superficial está habilitada, en consoancia cos atallos
   buscar seguinte e buscar anterior de NVDA 2020.4.
 * Cando o diálogo de busca específico se abre despois de executar o atallo
   específico buscar anterior, seleccionarase a opción buscar anterior.
-
 
 ## Cambios para 14.0 ##
 *	O atallo para copiar o nome do arquivo onde se gardarán os datos dos
@@ -181,7 +185,6 @@ marcas.
 * Traducido ó: Alemán, Español, Eslovaco, Esloveno, Farsi, Finés, Francés,
   Galego, Italiano, Coreán, Nepalí, Portugués, Portugués do Brasil, Tamil,
   Xaponés.
-
 
 [[!tag dev stable]]
 

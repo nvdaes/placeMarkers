@@ -1,6 +1,6 @@
 # 位置标记 #
 * 作者: Noelia, Chris.
-* NVDA兼容版本: 2019.3或更高版本。
+* NVDA compatibility: 2021.1 or later.
 * 下载 [稳定版][1]
 * 下载 [开发板][2]
 
@@ -34,15 +34,19 @@
 
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
 
-## Changes for 15.0 ##
+## Changes for 16.0 ##
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
+## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and
   specific find previous commands do not stop reading anymore if Allow skim
   reading option is enabled, according to find next and find previous
   commands from NVDA 2020.4.
 * When the Specific search dialog is opened after running the Specific find
   previous command, the Search previous option will be selected.
-
 
 ## 版本14.0 ##
 *	当前，复制将要保存位置标记数据的文件名的命令，已被在浏览模式下显示该文件名的命令所代替。注意当前没有分配手势。
@@ -113,7 +117,6 @@
 ## 版本1.0 ##
 * 发布初始版本。
 * 翻译为：巴西葡萄牙语，波斯语，芬兰语，法语，加利西亚语，德语，意大利语，日语，韩语，尼泊尔语，葡萄牙语，西班牙语，斯洛伐克语，斯洛维尼亚语，泰米尔语。
-
 
 [[!tag dev stable]]
 

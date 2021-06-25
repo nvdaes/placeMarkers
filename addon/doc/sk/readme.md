@@ -1,6 +1,6 @@
 # Záložky #
 * Autori): Noelia, Chris.
-* Funguje s NVDA od verzie 2019.3.
+* NVDA compatibility: 2021.1 or later.
 * Stiahnuť [Stabilnú verzia][1]
 * Stiahnuť [Vývojovú verzia][2]
 
@@ -54,15 +54,19 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránkach
 je lepšie použiť reťazce hľadania.
 
-## Changes for 15.0 ##
+## Changes for 16.0 ##
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
+## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and
   specific find previous commands do not stop reading anymore if Allow skim
   reading option is enabled, according to find next and find previous
   commands from NVDA 2020.4.
 * When the Specific search dialog is opened after running the Specific find
   previous command, the Search previous option will be selected.
-
 
 ## Zmeny vo verzii 14.0 ##
 *	Namiesto kopírovania názvu súboru do schránky sa teraz názov zobrazí v
@@ -153,7 +157,6 @@ je lepšie použiť reťazce hľadania.
 * Pridané jazyky: Brazílska portugalčina, fínčina, francúzština,
   galícijčina, nemčina, taliančina, japončina, kórejčina, nepálčina,
   Perzština, Portugalčina, španielčina, slovenčina, slovinčina, Tamilčina.
-
 
 [[!tag dev stable]]
 

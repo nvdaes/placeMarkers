@@ -1,6 +1,6 @@
 # Lesezeichen #
 * Autoren: Noelia, Chris.
-* NVDA-Kompatibilität: 2019.3 oder höher.
+* NVDA-Kompatibilität: 2021.1 oder neuer.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 
@@ -66,15 +66,19 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
-## Änderungen in 15.0 ##
+## Änderungen in 16.0 ##
+* Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
+* Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
+* Bei Bedarf können Sie [andere Versionen] herunterladen
+  (https://github.com/nvdaes/placeMarkers/releases).
 
+## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die
   Befehle "Nächste Suche suchen" und "Vorherige Suche suchen" nicht mehr auf
   zu lesen, wenn die Option "Überfliegen des Lesens zulassen" aktiviert ist.
 * Wenn das Dialogfeld "Spezifische Suche" nach dem Ausführen des Befehls
   "Vorherige Suche suchen" geöffnet wird, wird die Option "Vorherige Suche"
   ausgewählt.
-
 
 ## Änderungen für 14.0 ##
 *	Der Befehl zum Kopieren des Namens der Datei, in der Lesezeichen
@@ -192,7 +196,6 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 * Übersetzt in: brasilianisches Portugiesisch, Farsi, Finnisch, französisch,
   Galizisch, deutsch, italienisch, japanisch, Koreanisch, Nepalesisch,
   Portugiesisch, Spanisch, Slovakisch, Slovenisch, Tamil.
-
 
 [[!tag dev stable]]
 
