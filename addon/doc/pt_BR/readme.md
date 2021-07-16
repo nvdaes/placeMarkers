@@ -1,38 +1,40 @@
-# marcadores de lugar #
+# Marcadores de lugar (placeMarkers) #
 * Autores: Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
+* Compatibilidade com NVDA: 2021.1 ou posterior.
 * baixe a [versão estável][1]
 * baixe a [versão de desenvolvimento][2]
 
-Este complemento é usado para salvar e procurar cadeias de texto ou
+Este complemento é usado para salvar e pesquisar cadeias de texto ou
 marcadores específicos. Ele pode ser usado em páginas de Internet ou
 documentos no modo de navegação do NVDA. Pode-se também usá-lo para salvar
-ou procurar cadeias de texto em controles multilinha; nesse caso, se não for
-possível atualizar o cursor, a cadeia correspondente será copiada para a
-área de transferência, para que possa ser buscada por outras ferramentas. O
-plug-in salva as cadeias e marcadores especificados em arquivos cujos nomes
-são baseados no título e no endereço do atual documento. Este complemento é
-baseado nos complementos SpecificSearch e Bookmark&Search, desenvolvidos
-pelo mesmo autor. Você deve desinstalá-los para usar este aqui, pois eles
-têm teclas de atalho e recursos em comum.
+ou pesquisar cadeias de texto em controles multilinha; nesse caso, se não
+for possível atualizar o cursor, a cadeia correspondente será copiada para a
+área de transferência, para que possa ser pesquisada por outras
+ferramentas. O plug-in salva as cadeias e marcadores especificados em
+arquivos cujos nomes são baseados no título e no endereço do documento
+atual. Este complemento é baseado nos complementos SpecificSearch e
+Bookmark&Search, desenvolvidos pelo mesmo autor. Você deve desinstalá-los
+para usar este aqui, pois eles têm teclas de atalho e recursos em comum.
 
 ## Teclas de comando: ##
 
 *	control+shift+NVDA+f: Abre um diálogo com uma caixa de edição que mostra a
-  última busca salva; nesse diálogo, você também pode selecionar numa caixa
-  de combinação as buscas salvas anteriormente ou remover do histórico a
-  cadeia selecionada usando uma caixa de seleção. Pode escolher se o texto
-  contido na caixa de seleção será acrescentado ao histórico de textos
-  salvos. Por mim, escolha uma ação no grupo seguinte de botões de opção
-  (entre procurar próximo, procurar anterior ou não procurar) e especifique
-  se o NVDA fará uma busca diferenciando maiúsculas. Quando pressionar OK, o
-  NVDA buscará essa cadeia.
+  última pesquisa salva; nesse diálogo, você também pode selecionar numa
+  caixa de combinação as pesquisas salvas anteriormente ou remover do
+  histórico a sequência de caracteres selecionada usando uma caixa de
+  seleção. Pode escolher se o texto contido na caixa de edição será
+  acrescentado ao histórico de textos salvos. Finalmente, escolha uma ação
+  no grupo seguinte de botões de opção (entre pesquisar próximo, pesquisar
+  anterior ou não pesquisar) e especifique se o NVDA fará uma pesquisa
+  diferenciando maiúsculas. Quando pressionar OK, o NVDA pesquisará essa
+  cadeia.
 *	control+shift+NVDA+k: Salva a posição atual como marcador. Caso queira
   fornecer um nome para o marcador, selecione algum texto desta posição
   antes de salvar.
-*	control+shift+NVDA+delete: Apaga o marcador correspondente a esta posição.
-*	NVDA+k: Moves para o próximo marcador.
-*	shift+NVDA+k: Moves para o marcador anterior.
+*	control+shift+NVDA+delete: Exclue o marcador correspondente a esta
+  posição.
+*	NVDA+k: Passa para o próximo marcador.
+*	shift+NVDA+k: Passa para o marcador anterior.
 *	Não atribuído: Mostra o nome do arquivo no qual serão salvos os dados de
   marcadores de lugar, sem a extensão.
 *	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores salvos para este
@@ -42,10 +44,10 @@ têm teclas de atalho e recursos em comum.
   posição selecionada.
 *	Não atribuído: salva uma posição como um marcador temporário.
 *	Não atribuído: Move para o marcador temporário do documento atual.
-*	Não atribuído: localiza a ocorrência seguinte do último texto buscado em
-  qualquer documento específico.
-*	Não atribuído: localiza a ocorrência anterior do último texto buscado em
-  qualquer documento específico.
+*	Não atribuído: localiza a ocorrência seguinte do último texto pesquisado
+  em qualquer documento específico.
+*	Não atribuído: localiza a ocorrência anterior do último texto pesquisado
+  em qualquer documento específico.
 
 
 ## Submenu Marcadores de lugar (NVDA+N) ##
@@ -53,8 +55,8 @@ têm teclas de atalho e recursos em comum.
 Ao usar o submenu Marcadores de lugar no menu Preferências do NVDA, pode
 acessar:
 
-*	Pasta de busca específica: abre uma pasta com buscas específicas salvas
-  anteriormente.
+*	Pasta de pesquisa específica: abre uma pasta com pesquisas específicas
+  salvas anteriormente.
 *	Pasta de marcadores: Abre uma pasta com os marcadores salvos.
 *	Copiar pasta de marcadores de lugar: Pode salvar uma cópia da pasta de
   marcadores.
@@ -62,38 +64,40 @@ acessar:
   uma pasta de marcadores de lugar anteriormente salva.
 
 Nota: A posição do marcador é baseada no número de caracteres; assim, em
-páginas de conteúdo dinâmico, é melhor usar a busca específica e não
+páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
 marcadores.
 
-## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+## Mudanças na 16.0 ##
+* Compatível com o NVDA 2021.1 ou posterior (requerido).
+* A leitura dinâmica é suportada ao mover para marcadores temporários.
+* Se necessário, você pode baixar [outras
+  versões](https://github.com/nvdaes/placeMarkers/releases).
 
-## Changes for 15.0 ##
-* When reading with say all in browse mode, the specific find next and
-  specific find previous commands do not stop reading anymore if Allow skim
-  reading option is enabled, according to find next and find previous
-  commands from NVDA 2020.4.
-* When the Specific search dialog is opened after running the Specific find
-  previous command, the Search previous option will be selected.
+## Mudanças na 15.0 ##
+* Ao ler com leitura contínua no modo de navegação, os comandos específicos
+  localizar próximo e localizar anterior não param de ler se a opção
+  Permitir leitura dinâmica estiver habilitada, de acordo com comandos
+  localizar próximo e localizar anteriores do NVDA 2020.4.
+* Quando o diálogo Pesquisa específica for aberto após a execução do comando
+  Localizar anterior específico, a opção Pesquisar anterior será
+  selecionada.
 
 ## Mudanças na 14.0 ##
 *	O comando para copiar o nome do arquivo no qual os dados dos marcadores de
   lugar serão salvos foi substituído por um comando que mostra esse nome de
   arquivo no modo de navegação. Ele não está atribuído a um gesto.
-*	O campo "Texto a buscar" não se sobrepõe mais ao campo "texto
+*	O campo "Texto a pesquisar" não se sobrepõe mais ao campo "texto
   salvo". (Agradecimentos a Cyrille Bougot).
 *	Requer NVDA 2019.3 ou posterior.
 
 ## Mudanças na 13.0 ##
 *	Adicionado um comando não atribuído para localizar as ocorrências seguinte
   e anterior do último texto buscado em qualquer documento específico.
-*	O recurso de busca específica funciona quando o diálogo Sobre o NVDA
+*	O recurso de pesquisa específica funciona quando o diálogo Sobre o NVDA
   estiver aberto.
-*	No diálogo de busca específica, a caixa de seleção diferenciar maiúsculas
-  estará marcada se essa opção tiver sido selecionada na última busca.
+*	No diálogo de pesquisa específica, a caixa de seleção diferenciar
+  maiúsculas estará marcada se essa opção tiver sido selecionada na última
+  pesquisa.
 *	Quando o complemento for atualizado, marcadores e cadeias de buscas
   específicas salvos na versão anterior do complemento serão automaticamente
   copiados para a nova versão, a não ser que você prefira importar
@@ -137,15 +141,15 @@ marcadores.
   e mover para a posição selecionada.
 
 ## Mudanças na 7.0 ##
-*	O diálogo para salvar uma cadeia de texto para busca específica foi
-  removido. Essa função está agora incluída no diálogo de busca específica,
-  que foi remodelada para permitir ações diferentes ao pressionar o botão
-  OK.
+*	O diálogo para salvar uma cadeia de texto para pesquisa específica foi
+  removido. Essa função está agora incluída no diálogo de pesquisa
+  específica, que foi remodelada para permitir ações diferentes ao
+  pressionar o botão OK.
 *	A apresentação visual dos diálogos foi melhorada, aderindo à aparência dos
   diálogos mostrados no NVDA.
-*	Agora ao executar um comando Procurar Próximo ou Procurar Anterior no modo
-  de navegação, será feita corretamente uma busca com diferenças de caixa se
-  a procura original for com diferenças de caixa.
+*	Agora ao executar um comando Localizar Próximo ou Localizar Anterior no
+  modo de navegação, será feita corretamente uma pesquisa com diferenças de
+  maiúsculas se a pesquisa original for com diferenças de maiúsculas.
 *	Requer NVDA 2016.4 ou posterior.
 *	Agora você pode atribuir gestos para abrir os diálogos de copiar e
   restaurar marcadores de lugar.
@@ -157,7 +161,7 @@ marcadores.
   enviados para o aplicativo correspondente.
 
 ## Mudanças na 5.0 ##
-* Adicionada busca com diferenciação de maiúsculas.
+* Adicionada pesquisa com diferenciação de maiúsculas.
 * Removida a opção de abrir a documentação a partir do menu de marcadores de
   lugar.
 * Teclas de comandos mais intuitivas.
@@ -176,7 +180,7 @@ marcadores.
 * Adicionado suporte a leitura dinâmica.
 
 ## Mudanças na 2.0 ##
-* Adicionado opção de salvar e apagar diferentes buscas para um mesmo
+* Adicionado opção de salvar e apagar diferentes pesquisas para um mesmo
   arquivo.
 * Corrigido falha que inviabilizava caminhos que contivessem caracteres
   não-latinos.
