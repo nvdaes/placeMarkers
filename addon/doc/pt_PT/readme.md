@@ -1,6 +1,6 @@
 # Marcadores de lugar #
 * Autores: Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
+* Compatibilidade com o NVDA: 2021.1 ou posteriores.
 * Descarregar [versão estável][1]
 * Descarregar [versão de desenvolvimento][2]
 
@@ -64,19 +64,20 @@ aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
 
-## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+## Alterações para 16.0 ##
+* Compatibilidade com o NVDA 2021.1 ou superiores (obrigatório).
+* A leitura rápida é suportada quando se muda para os marcadores
+  temporários.
+* Se necessário, pode descarregar [outras
+  versões](https://github.com/nvdaes/placeMarkers/releases).
 
-## Changes for 15.0 ##
-* When reading with say all in browse mode, the specific find next and
-  specific find previous commands do not stop reading anymore if Allow skim
-  reading option is enabled, according to find next and find previous
-  commands from NVDA 2020.4.
-* When the Specific search dialog is opened after running the Specific find
-  previous command, the Search previous option will be selected.
+## Alterações para 15.0 ##
+* Ao ler seguidamente, no modo de navegação, os comandos específicos
+  procurar seguinte e procurar anterior,  não param mais de ler se a opção
+  "permitir leitura rápida" estiver activada, de acordo com procurar,
+  procurar próximo e procurar anterior do NVDA 2020.4.
+* Quando o diálogo de procura específica é aberto após a execução do comando
+  procurar anterior, a opção procurar anterior será seleccionada.
 
 ## Alterações para 14.0 ##
 *	O comando para copiar o nome do ficheiro onde os dados dos marcadores
