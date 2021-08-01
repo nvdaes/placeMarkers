@@ -1,3 +1,3 @@
-## Changes for 16.1 ##
+## Changes for 16.2 ##
 * Updated translations.
 
