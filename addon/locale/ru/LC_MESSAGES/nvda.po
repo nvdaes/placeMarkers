@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2017-12-14 09:09-0800\n"
+"PO-Revision-Date: 2021-08-03 16:09+0200\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: LL@li.org\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -24,17 +24,18 @@ msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"Папка конфигурации NVDA содержит файлы, которые, вероятно, остались от "
-"предыдущей версии этого дополнения. Хотите их обновить?"
+"Папка конфигурации для NVDA содержит файлы, которые, по-видимому, получены "
+"из предыдущей версии этого дополнения.\n"
+"\t\t\tВы хотите обновить его?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
-msgstr "Установка или обновление дополнения"
+msgstr "Установить или обновить дополнение"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
 #, python-format
 msgid "%s copied to clipboard"
-msgstr "%s скопирован в буфер обмена"
+msgstr "%s скопировано в буфер обмена"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -106,12 +107,12 @@ msgstr "&Сохранить примечание"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr ""
+msgstr "У&далить..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
-msgstr ""
+msgstr "Эти закладки будут удалены. Это действие нельзя отменить."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
@@ -119,21 +120,16 @@ msgid "No bookmarks"
 msgstr "Нет закладок"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#, fuzzy
 msgid "Bookmarks deleted"
-msgstr "Закладка удалена"
+msgstr "Закладки удалены "
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
 msgstr "Копировать закладки"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#, fuzzy
 msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"Выберите папку для резервной копии ваших текущих закладок.\n"
-"\n"
-"\t\tОни будут скопированы из %s."
+msgstr "Выберите папку для сохранения резервной копии текущих закладок. "
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -148,14 +144,14 @@ msgid "Restore place markers"
 msgstr "Востановить закладки"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#, fuzzy
 msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr ""
 "Выберите папку для восстановления резервной копии из ваших предварительно "
 "сохранённых закладок.\n"
 "\n"
-"\t\tОни будут скопированы в %s."
+"\\n\n"
+"\\t\\t Они будут скопированы в %s."
 
 #. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
 msgid "directory containing backup:"
@@ -229,18 +225,20 @@ msgid ""
 msgstr "Нахождение строки текста от текущей позиции курсора в документе."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
-msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+msgstr ""
+"находит следующее вхождение последнего текста, в течение которого "
+"выполняется поиск по какому-либо конкретному документу."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
-msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+msgstr ""
+"находит предыдущее вхождение последнего текста, в течение которого был "
+"находжен какой-либо конкретный документ."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -301,28 +299,26 @@ msgid "Previous bookmark not found"
 msgstr "Нет предыдущей закладки"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Копирует имени текущего файла закладок в буфер обмена."
+msgstr "Показывает имя текущего файла для закладок в режиме просмотра."
 
 #. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
-msgstr ""
+msgstr "%s файл"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Сохраняет текущую позицию как закладку."
+msgstr "Сохраняет текущую позицию в качестве временной закладки. "
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr ""
+msgstr "Временная закладка сохранена на позиции %d"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr ""
+msgstr "Переходит на временную закладку для текущего документа."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
