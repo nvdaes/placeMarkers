@@ -157,7 +157,7 @@ def getFile(folder, ext=""):
 	file = file.rsplit(" - ", 1)[0]
 	file = file.split("\\")[-1]
 	file += nameToAdd
-	file = standardFileName(file)
+	file = api.filterFileName(standardFileName(file))
 	folderPath = os.path.join(PLACE_MARKERS_PATH, folder)
 	maxLenFileName = 232 - len(folderPath)
 	if maxLenFileName <= 0:
@@ -712,7 +712,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Activates the Copy dialog of %s." % ADDON_SUMMARY)
+		description=_("Activates the Copy dialog of %s.") % ADDON_SUMMARY
 	)
 	def script_activateCopyDialog(self, gesture):
 		wx.CallAfter(self.onCopy, None)
@@ -725,7 +725,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Activates the Restore dialog of %s." % ADDON_SUMMARY)
+		description=_("Activates the Restore dialog of %s.") % ADDON_SUMMARY
 	)
 	def script_activateRestoreDialog(self, gesture):
 		wx.CallAfter(self.onRestore, None)
@@ -1030,7 +1030,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		fileName = getFile("bookmarks")
 		ui.browseableMessage(
 			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
-			fileName, _("%s file" % ADDON_SUMMARY)
+			fileName, _("%s file") % ADDON_SUMMARY
 		)
 
 	@script(
