@@ -1038,7 +1038,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: Presented when the current document has a temporary bookmark.
 			message += "\r\n\r\n" + _("Has temporary bookmark.")
 		ui.browseableMessage(
-					# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
+			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 			message, _("%s file") % ADDON_SUMMARY
 		)
 
