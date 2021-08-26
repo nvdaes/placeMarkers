@@ -1027,10 +1027,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			):
 				gesture.send()
 				return
-		fileName = getFile("bookmarks")
+		message = getFile("bookmarks")
+		if os.path.isfile(getFileBookmarks()):
+			# Translators: Presented when the current document has positional bookmarks.
+			message += "\r\n\r\n" + _("Has bookmarks.")
+		if os.path.isfile(getFileSearch()):
+			# Translators: Presented when the current document has specific search.
+			message += "\r\n\r\n" + _("Has text for specific search.")
+		if os.path.isfile(getFileTempBookmark()):
+			# Translators: Presented when the current document has a temporary bookmark.
+			message += "\r\n\r\n" + _("Has temporary bookmark.")
 		ui.browseableMessage(
-			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
-			fileName, _("%s file") % ADDON_SUMMARY
+					# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
+			message, _("%s file") % ADDON_SUMMARY
 		)
 
 	@script(
