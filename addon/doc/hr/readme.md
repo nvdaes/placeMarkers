@@ -65,6 +65,15 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
+## Changes for 18.0 ##
+* The command to see the path for placeMarkers shows if there are permanent
+  bookmarks, text for specific search or a temporary bookmark for the
+  current document.
+
+## Changes for 17.0 ##
+* Fixed a bug which didn't allow to save place markers in some documents.
+* Fixed translated strings making translations to work properly.
+
 ## Promjene u verziji 16.0 ##
 * Kompatibilno s NVDA 2021.1 i novijim verzijama (obavezno).
 * Brzo čitanje je podržano prilikom prelaska na privremene oznake.

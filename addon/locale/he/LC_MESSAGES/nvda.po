@@ -129,11 +129,11 @@ msgstr "העתק סימניות"
 msgid "Select a folder to save a backup of your current place markers."
 msgstr "בחר תיקייה לשמירת הגיבוי של הסימניות הנוכחיות."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
 msgstr "נתיב לגיבוי:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+#. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "בחר נתיב לגיבוי"
 
@@ -146,11 +146,11 @@ msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr "בחר תיקייה לשחזור הגיבוי של הסימניות האחרונות שנשמרו."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
 msgstr "ספרייה המכילה גיבוי:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+#. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
 msgstr "נא לבחור פעולה"
 
@@ -294,7 +294,22 @@ msgstr "הסימנייה הקודמת לא נמצאה"
 msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "מעתיק את שם הקובץ כסימנייה לתוך הזכרון הזמני."
 
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#. Translators: Presented when the current document has positional bookmarks.
+#, fuzzy
+msgid "Has bookmarks."
+msgstr "אין סימניות"
+
+#. Translators: Presented when the current document has specific search.
+#, fuzzy
+msgid "Has text for specific search."
+msgstr "פותח את תיקיית החיפוש הממוקד."
+
+#. Translators: Presented when the current document has a temporary bookmark.
+#, fuzzy
+msgid "Has temporary bookmark."
+msgstr "סימניה זמנית שמורה במיקום %d"
+
+#. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
 msgstr ""

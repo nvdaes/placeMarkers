@@ -65,6 +65,17 @@ Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
 
+## Cambios para 18.0 ##
+* La orden para ver la ruta de PlaceMarkers muestra si hay marcadores
+  permanentes, texto para búsquedas específicas o un marcador temporal para
+  el documento actual.
+
+## Cambios para 17.0 ##
+* Corregido un fallo que no permitía guardar marcadores de posición en
+  algunos documentos.
+* Corrección de cadenas traducidas para que las traducciones funcionen
+  adecuadamente.
+
 ## Cambios para 16.0 ##
 * Compatible con NVDA 2021.1 o posterior (requerido).
 * Se soporta la lectura superficial al desplazarse a marcadores temporales.

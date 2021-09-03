@@ -130,11 +130,11 @@ msgstr ""
 "Izberite mapo, kjer želite imeti varnostno kopijo vaših trenutnih "
 "prostorskih označb."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
 msgstr "imenik za varnostno kopijo:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+#. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "Izbira imenika za preslikavo"
 
@@ -149,11 +149,11 @@ msgstr ""
 "Izberite mapo, kamor želite obnoviti prostorske označbe iz prej ustvarjene "
 "varnostne kopije."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
 msgstr "imenik, ki vsebuje varnostno kopijo:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+#. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
 msgstr "Izbera imenika za obnovo"
 
@@ -300,7 +300,22 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Pokaže ime trenutne datoteke za prostorske označbe v brskalniškem delovanju."
 
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#. Translators: Presented when the current document has positional bookmarks.
+#, fuzzy
+msgid "Has bookmarks."
+msgstr "Ni zaznamkov"
+
+#. Translators: Presented when the current document has specific search.
+#, fuzzy
+msgid "Has text for specific search."
+msgstr "Odpre mapo posebnega iskanja."
+
+#. Translators: Presented when the current document has a temporary bookmark.
+#, fuzzy
+msgid "Has temporary bookmark."
+msgstr "Začasni zaznamek se je shranil na položaju %d"
+
+#. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
 msgstr "%s datoteka"

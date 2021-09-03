@@ -54,6 +54,15 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránkach
 je lepšie použiť reťazce hľadania.
 
+## Changes for 18.0 ##
+* The command to see the path for placeMarkers shows if there are permanent
+  bookmarks, text for specific search or a temporary bookmark for the
+  current document.
+
+## Changes for 17.0 ##
+* Fixed a bug which didn't allow to save place markers in some documents.
+* Fixed translated strings making translations to work properly.
+
 ## Changes for 16.0 ##
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.

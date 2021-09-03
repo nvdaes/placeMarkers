@@ -129,11 +129,11 @@ msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
 "Seleciona un cartafol para gardar una copia de seguridade das actuáis marcas."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
 msgstr "directorio para copia de seguridade:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+#. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "Seleciona o directorio para copiar"
 
@@ -148,11 +148,11 @@ msgstr ""
 "Seleciona un cartafol para restaurar una copia de seguridade das túas marcas "
 "copiadas anteriormente."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
 msgstr "directorio que contén a copia de seguridade:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+#. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
 msgstr "Selecciona directorio a restaurar"
 
@@ -299,7 +299,22 @@ msgstr "Non se atopou a marca anterior"
 msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Amosa o nome do arquivo actual de marcas en modo exploración."
 
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#. Translators: Presented when the current document has positional bookmarks.
+#, fuzzy
+msgid "Has bookmarks."
+msgstr "Non hai marcas"
+
+#. Translators: Presented when the current document has specific search.
+#, fuzzy
+msgid "Has text for specific search."
+msgstr "Abre o cartafol procura específica."
+
+#. Translators: Presented when the current document has a temporary bookmark.
+#, fuzzy
+msgid "Has temporary bookmark."
+msgstr "A marca gardouse temporalmente na posición %d"
+
+#. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
 msgstr "arquivo %s"
