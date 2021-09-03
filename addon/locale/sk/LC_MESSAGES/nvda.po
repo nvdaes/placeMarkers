@@ -128,11 +128,11 @@ msgstr "Kopírovať záložky"
 msgid "Select a folder to save a backup of your current place markers."
 msgstr "Vyberte priečinok na uloženie záložiek."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
 msgstr "Priečinok so zálohou:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+#. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "Vyberte priečinok"
 
@@ -145,11 +145,11 @@ msgid ""
 "Select a folder to restore a backup of your previous copied place markers."
 msgstr "Vyberte priečinok s uloženou zálohou záložiek."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
 msgstr "Priečinok so zálohou:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+#. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
 msgstr "Vyberte priečinok na obnovenie"
 
@@ -291,7 +291,22 @@ msgstr "Žiadna predchádzajúca záložka"
 msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Skopíruje názov súboru so záložkami do schránky."
 
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#. Translators: Presented when the current document has positional bookmarks.
+#, fuzzy
+msgid "Has bookmarks."
+msgstr "Žiadne záložky"
+
+#. Translators: Presented when the current document has specific search.
+#, fuzzy
+msgid "Has text for specific search."
+msgstr "otvorí priečinok s reťazcami hľadania."
+
+#. Translators: Presented when the current document has a temporary bookmark.
+#, fuzzy
+msgid "Has temporary bookmark."
+msgstr "Dočasná záložka uložená na %d"
+
+#. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
 msgstr ""

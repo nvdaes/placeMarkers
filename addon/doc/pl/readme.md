@@ -62,6 +62,15 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 18.0 ##
+* The command to see the path for placeMarkers shows if there are permanent
+  bookmarks, text for specific search or a temporary bookmark for the
+  current document.
+
+## Changes for 17.0 ##
+* Fixed a bug which didn't allow to save place markers in some documents.
+* Fixed translated strings making translations to work properly.
+
 ## Changes for 16.0 ##
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.

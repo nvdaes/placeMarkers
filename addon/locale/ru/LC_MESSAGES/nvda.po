@@ -131,11 +131,11 @@ msgstr "Копировать закладки"
 msgid "Select a folder to save a backup of your current place markers."
 msgstr "Выберите папку для сохранения резервной копии текущих закладок. "
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
 msgstr "каталог для резервной копии:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+#. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "Выберите каталог для копирования"
 
@@ -153,11 +153,11 @@ msgstr ""
 "\\n\n"
 "\\t\\t Они будут скопированы в %s."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
 msgstr "каталог, содержащий резервную копию:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+#. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
 msgstr "Выберите каталог для восстановления"
 
@@ -302,7 +302,22 @@ msgstr "Нет предыдущей закладки"
 msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Показывает имя текущего файла для закладок в режиме просмотра."
 
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#. Translators: Presented when the current document has positional bookmarks.
+#, fuzzy
+msgid "Has bookmarks."
+msgstr "Нет закладок"
+
+#. Translators: Presented when the current document has specific search.
+#, fuzzy
+msgid "Has text for specific search."
+msgstr "Открывает папку конкретных поисковых запросов."
+
+#. Translators: Presented when the current document has a temporary bookmark.
+#, fuzzy
+msgid "Has temporary bookmark."
+msgstr "Временная закладка сохранена на позиции %d"
+
+#. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
 msgstr "%s файл"

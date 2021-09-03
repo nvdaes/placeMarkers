@@ -67,6 +67,15 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
 marcadores.
 
+## Changes for 18.0 ##
+* The command to see the path for placeMarkers shows if there are permanent
+  bookmarks, text for specific search or a temporary bookmark for the
+  current document.
+
+## Changes for 17.0 ##
+* Fixed a bug which didn't allow to save place markers in some documents.
+* Fixed translated strings making translations to work properly.
+
 ## Mudanças na 16.0 ##
 * Compatível com o NVDA 2021.1 ou posterior (requerido).
 * A leitura dinâmica é suportada ao mover para marcadores temporários.

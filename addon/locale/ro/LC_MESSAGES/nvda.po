@@ -132,11 +132,11 @@ msgstr ""
 "Selectați un dosar în care să salvați o copie de siguranță a locului de "
 "marcaje."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Copy dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
 msgstr "dosar pentru copie de siguranță:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when copying place markers.
+#. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "Selectați dosarul pentru copiere"
 
@@ -151,11 +151,11 @@ msgstr ""
 "Selectați un dosar în care să restaurați o copie de siguranță a locului de "
 "marcaje copiat anterior.."
 
-#. Translators: The label of a grouping containing controls to select the destination directory in the Restore dialog.
+#. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
 msgstr "dosarul care conține copia de siguranță:"
 
-#. Translators: The title of the dialog presented when browsing for the destination directory when restoring place markers.
+#. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
 msgstr "Selectează dosarul pentru restaurare"
 
@@ -304,7 +304,22 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr ""
 "Copiază numele fișierului curent pentru marcaje de locație în planșetă."
 
-#. Translators: Title for the message presented when the file name for place markers is shown in browse mode.
+#. Translators: Presented when the current document has positional bookmarks.
+#, fuzzy
+msgid "Has bookmarks."
+msgstr "Fără semne de carte"
+
+#. Translators: Presented when the current document has specific search.
+#, fuzzy
+msgid "Has text for specific search."
+msgstr "Deschide dosarul de căutare specifică."
+
+#. Translators: Presented when the current document has a temporary bookmark.
+#, fuzzy
+msgid "Has temporary bookmark."
+msgstr "Semn de carte temporar salvar la poziția %d"
+
+#. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
 msgid "%s file"
 msgstr "fișierul %s"

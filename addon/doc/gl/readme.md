@@ -62,6 +62,17 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
+## Cambios para 18.0 ##
+* O atallo para amosar a ruta de placeMarkers amosa se hai marcas
+  permanentes, texto para busca específica ou unha marca temporal para o
+  documento actual.
+
+## Cambios para 17.0 ##
+* Arranxado un erro que non permitía gardar marcas de posición nalgúns
+  documentos.
+* Arranxadas as cadeas traducidas facendo funcionar correctamente as
+  traducións.
+
 ## Cambios para 16.0 ##
 * Compatible co NVDA 2021.1 ou posterior (requerido).
 * Sopórtase a lectura superficial ao moverse a unha marca temporal.
