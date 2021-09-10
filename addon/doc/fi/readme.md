@@ -63,14 +63,15 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Muutokset versiossa 18.0 ##
+* Paikkamerkkien polun ilmoittava komento näyttää, mikäli nykyisellä
+  asiakirjalla on pysyviä paikkamerkkejä, sivukohtainen haku tai tilapäinen
+  paikkamerkki.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Muutokset versiossa 17.0 ##
+* Korjattu bugi, joka ei sallinut paikkamerkkien tallentamista joissakin
+  asiakirjoissa.
+* Käännettävät merkkijonot korjattu, mikä saa käännökset toimimaan oikein.
 
 ## Muutokset versiossa 16.0 ##
 * Yhteensopiva NVDA 2021.1:n tai uudemman kanssa (vaaditaan).

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 2.0-dev\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-07-07 08:47+0200\n"
-"PO-Revision-Date: 2021-06-30 12:35+0200\n"
+"PO-Revision-Date: 2021-09-07 11:22+0200\n"
 "Last-Translator: Nicolai Svendsen <chojiro1990@gmail.com>\n"
 "Language-Team: Dansk NVDA <dansk@nvda.dk>\n"
 "Language: da\n"
@@ -48,7 +48,7 @@ msgstr "&Fjern fra oversigt"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
-msgstr "&Tekst der skal søges efter"
+msgstr "&Tekst, der skal søges efter"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Add to history"
@@ -80,7 +80,7 @@ msgstr "Mappe ikke kopieret"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
 msgid "Copy Error"
-msgstr "kopieringsfejl"
+msgstr "Kopieringsfejl"
 
 #. Translators: Message presented when place markers have been restored.
 msgid "Place markers restored"
@@ -296,19 +296,16 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Viser navnet på den aktuelle fil til stedmærker i gennemsynstilstand."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Ingen bogmærker"
+msgstr "Har bogmærker."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Åbner mappen med specifikke søgninger."
+msgstr "Har tekst for en bestemt søgning"
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Gemt midlertidigt bogmærke ved position %d"
+msgstr "Har midlertidigt bogmærke."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
