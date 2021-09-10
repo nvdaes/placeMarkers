@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '8.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-02-12 08:16+0300\n"
+"PO-Revision-Date: 2021-09-06 09:13+0300\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: tr <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -298,19 +298,16 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Yerimleri için kullanılan dosya adını tarama kipinde gösterir"
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Yerimi bulunmuyor"
+msgstr "Yer imleri var."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Özel arama klasörünü açar"
+msgstr "Belirli bir arama için metin içeriyor."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "%d konumunda geçici yer imi kaydedildi"
+msgstr "Geçici yer imi var."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format

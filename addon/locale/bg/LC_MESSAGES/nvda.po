@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2021-02-03 09:45+0200\n"
+"PO-Revision-Date: 2021-09-03 19:44+0300\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -305,19 +305,16 @@ msgstr ""
 "Извежда името на текущия файл за позиционните маркери в режим на разглеждане."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Няма маркери"
+msgstr "Има маркери"
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Отваря папката за специфично търсене."
+msgstr "Има текст за специфично търсене."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Запазен временен маркер на позиция %d"
+msgstr "Има временен маркер."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format

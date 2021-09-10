@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: placeMarkers-10.1\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2018-05-19 18:27+0200\n"
-"PO-Revision-Date: 2021-01-11 13:51+0800\n"
-"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
+"PO-Revision-Date: 2021-09-04 10:03+0800\n"
+"Last-Translator: 完美很难 <1872265132@qq.com>\n"
 "Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
 "2010-2019>\n"
 "Language: zh_CN\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
@@ -23,9 +23,7 @@ msgstr ""
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
-msgstr ""
-"由上一个版本的此插件生成的文件似乎已经被成功从您的 NVDA 配置文件夹中导出。您"
-"希望升级吗？"
+msgstr "您的 NVDA 配置文件夹包含的文件来自此插件的先前版本。您要更新吗？"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -293,19 +291,16 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "在浏览模式下显示当前位置标记的文件名。"
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "没有书签"
+msgstr "有书签。"
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "打开指定的搜索文件夹。"
+msgstr "具有用于特定搜索的文本。"
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "在当前位置保存临时书签%d"
+msgstr "有临时书签。"
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
