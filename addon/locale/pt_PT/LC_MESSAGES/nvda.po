@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2021-02-05 22:48+0000\n"
+"PO-Revision-Date: 2021-09-14 11:27+0100\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -307,19 +307,16 @@ msgstr ""
 "navegação."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Sem marcadores"
+msgstr "Tem marcadores."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Abre a pasta de procura específica"
+msgstr "Tem texto para pesquisa específica."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Guardado marcador temporário na posição %d"
+msgstr "Tem marcador temporário."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
