@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-01-09 20:30+0530\n"
+"PO-Revision-Date: 2021-09-12 18:47+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: Tamil <td.dinkar@gmail.com>\n"
 "Language: ta\n"
@@ -294,19 +294,16 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "இடக்குறிப்பிகளுக்கான தற்போதைய கோப்பின் பெயரை உலாவும் நிலையில் காண்பிக்கிறது."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "நூற்குறிகள் ஏதுமில்லை"
+msgstr "நூற்குறிகளைக் கொண்டுள்ளது"
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "குறிப்பான தேடுதல்களின் கோப்புறையைத் திறக்கிறது"
+msgstr "குறிப்பான தேடுதலுக்கான உரையைக் கொண்டுள்ளது. "
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "தற்காலிக நூற்குறி நிலை %dல் சேமிக்கப்பட்டது"
+msgstr "தற்காலிக நூற்குறியைக் கொண்டுள்ளது. "
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
