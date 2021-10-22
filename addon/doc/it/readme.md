@@ -1,6 +1,6 @@
 # placeMarkers #
 * Autori: Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
+* Compatibilità con NVDA: versione 2021.1 e successive.
 * scarica la  [versione stabile][1]
 * scarica la [versione in sviluppo][2]
 
@@ -72,20 +72,22 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Changes per la 18.0 ##
+* Il comando per vedere il percorso per placeMarkers avvisa se ci sono
+  segnaposto permanenti, testo per una ricerca specifica o un segnalibro
+  temporaneo per il documento corrente.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Changes per la 17.0 ##
+* Risolto un bug che non permetteva di salvare i segnaposto in alcuni
+  documenti.
+* Risolto il problema con le stringhe per tradurre correttamente.
 
-## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+## Changes per la  16.0 ##
+* Compatibile con NVDA 2021.1 o superiore (richiesto).
+* supporto alla lettura rapida nella navigazione con i  segnaposto
+  temporanei.
+* Se necessario, puoi scaricare [versioni
+  precedenti](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Novità nella versione 15.0 ##
 * Quando si usa il comando "dire tutto" (NVDA+freccia giù) in modalità

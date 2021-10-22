@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: placeMarkers-1.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-01-10 11:49+0100\n"
-"Last-Translator: Fabrizio Marini <marini.carlo@fastwebnet.it>\n"
+"PO-Revision-Date: 2021-10-20 11:42+0100\n"
+"Last-Translator: Chris <llajta2012@gmail.com>\n"
 "Language-Team: Chris <llajta2012@hotmail.com>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 1.6.11\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
@@ -22,8 +22,7 @@ msgid ""
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
 "La cartella di configurazione di NVDA contiene dei file che sembrano "
-"appartenere ad una versione precedente di questo componente aggiuntivo. Vuoi "
-"aggiornarlo?"
+"appartenere ad una versione precedente di Place Markers. Vuoi aggiornarlo?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -72,7 +71,7 @@ msgstr "&Non cercare"
 
 #. Translators: Message presented when place markers have been copied.
 msgid "Place markers copied"
-msgstr "Segnaposto copiati"
+msgstr "Segnaposti copiati"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
 msgid "Folder not copied"
@@ -159,7 +158,7 @@ msgstr "Selezionare la cartella da ripristinare"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
-msgstr "Segnapos&to"
+msgstr "P&lace markers"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
@@ -175,7 +174,7 @@ msgstr "Apre la cartella delle ricerche specifiche"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "Cartella Segnaposto"
+msgstr "Cartella Segna&posto"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
@@ -303,19 +302,16 @@ msgstr ""
 "sta utilizzando."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Nessun Segnaposto"
+msgstr "Contiene segnaposto."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Apre la cartella delle ricerche specifiche."
+msgstr "Contiene ricerche specifiche."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Segnaposto temporaneo salvato alla posizione %d"
+msgstr "Contiene segnaposto temporanei."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
