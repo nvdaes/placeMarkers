@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2021-09-14 11:27+0100\n"
+"PO-Revision-Date: 2021-10-30 22:33+0100\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -51,7 +51,7 @@ msgstr "&Remover do histórico"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
-msgstr "&Texto a procurar"
+msgstr "&Texto a procurar."
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Add to history"
@@ -136,7 +136,7 @@ msgstr ""
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "Pasta para cópia de segurança:"
+msgstr "pasta para cópia de segurança:"
 
 #. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
@@ -155,7 +155,7 @@ msgstr ""
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
-msgstr "Pasta que contém a cópia de segurança"
+msgstr "Pasta que contém a cópia de segurança:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -175,7 +175,7 @@ msgstr "Pasta de procuras &específicas"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Abrir a pasta de procura específica:"
+msgstr "Abrir a pasta de procura específica"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
@@ -203,11 +203,11 @@ msgstr "Restaurar os marcadores de lugar previamente guardados"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Abre a pasta de procura específica"
+msgstr "Abre a pasta de procura específica."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Abre a pasta de marcadores"
+msgstr "Abre a pasta de marcadores."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -223,7 +223,7 @@ msgstr "Activa o diálogo de restauro de %s."
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Procura uma expressão a partir da posição actual do cursor para um documento "
+"procura uma expressão a partir da posição actual do cursor para um documento "
 "específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -231,7 +231,7 @@ msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Procura a próxima ocorrência do último texto procurado num documento "
+"procura a próxima ocorrência do último texto procurado num documento "
 "específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -239,16 +239,16 @@ msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Procura a ocorrência anterior do último texto procurado num documento "
+"procura a ocorrência anterior do último texto procurado num documento "
 "específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr "Mostra o diálogo de notas para um documento específico"
+msgstr "Mostra o diálogo de notas para um documento específico."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Guarda a posição actual como marcador"
+msgstr "Guarda a posição actual como marcador."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -261,7 +261,7 @@ msgstr "Não é possível guardar o marcador"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Apaga o marcador actual"
+msgstr "Apaga o marcador actual."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -273,15 +273,15 @@ msgstr "Marcador apagado"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "Não é possível apagar o marcador."
+msgstr "Não é possível apagar o marcador"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Move para o próximo marcador"
+msgstr "Move para o próximo marcador."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Não foram encontrados marcadores."
+msgstr "Não foram encontrados marcadores"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -290,11 +290,11 @@ msgstr "Posição: caracter %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "Próximo marcador não encontrado."
+msgstr "Próximo marcador não encontrado"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Move para o marcador anterior"
+msgstr "Move para o marcador anterior."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
@@ -325,7 +325,7 @@ msgstr "%s ficheiro"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Guarda a posição actual como um marcador temporário"
+msgstr "Guarda a posição actual como um marcador temporário."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
