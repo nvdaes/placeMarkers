@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-01-08 12:35+0100\n"
-"Last-Translator: René Linke <rene.linke@hamburg.de>\n"
+"PO-Revision-Date: 2021-11-07 11:51+0100\n"
+"Last-Translator: Bernd Dorer <mail@bdorer.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"Der Ordner Ihrer NVDA-Konfiguration enthält scheinbar noch eine ältere "
-"Version dieser Erweiterung. Möchten Sie sie jetzt aktualisieren?"
+"Der Ordner Ihrer NVDA-Konfiguration enthält scheinbar Dateien einer älteren "
+"Version dieser Erweiterung. Möchten Sie diese jetzt aktualisieren?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -88,7 +88,7 @@ msgstr "Lesezeichen wiederhergestellt"
 
 #. Translators: The title of the Notes dialog.
 msgid "Notes"
-msgstr "Notiz"
+msgstr "Notizen"
 
 #. Translators: The label of a list box in the Notes dialog.
 msgid "&Bookmarks"
@@ -201,11 +201,11 @@ msgstr "Zuvor gespeicherte Lesezeichen wiederherstellen"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Öffnet den Ordner für die Erweiterte Suche"
+msgstr "Öffnet den Ordner für die erweiterte Suche."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Öffnet den Ordner der Lesezeichen"
+msgstr "Öffnet den Ordner Lesezeichen."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -240,7 +240,7 @@ msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr "zeigt die für das Dokument festgelegte Notiz an."
+msgstr "zeigt die Notiz an, die dem Dokument zugewiesen wurde."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
@@ -301,19 +301,16 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Zeigt den Namen der aktuellen Datei für Lesezeichen im Lesemodus an."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Keine Lesezeichen"
+msgstr "Enthält Lesezeichen."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Öffnet den Ordner für die Erweiterte Suche"
+msgstr "Enthält Text der spezifischen Suche."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Temporäres Lesezeichen bei Position %d gesetzt."
+msgstr "Enthält temporäres Lesezeichen."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
@@ -327,11 +324,11 @@ msgstr "Speichert die aktuelle Position als temporäres Lesezeichen."
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr "Temporäres Lesezeichen bei Position %d gesetzt."
+msgstr "Temporäres Lesezeichen bei Position %d gesetzt"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr "Springt zu dem temporären Lesezeichen für das aktuelle Dokument"
+msgstr "Springt zu dem temporären Lesezeichen für das aktuelle Dokument."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -341,7 +338,7 @@ msgstr "Lesezeichen"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Erweiterung zum Einstellen der Lesezeichen in virtuellen Ansichten."
+msgstr "Erweiterung zum Setzen von Lesezeichen in virtuellen Ansichten"
 
 #~ msgid "Cannot copy file name for place markers"
 #~ msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"
