@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-01-15 13:23+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2021-12-13 18:48+0100\n"
+"Last-Translator: Jožef Gregorc <jozko.gregorc@gmail.com>\n"
 "Language-Team: \n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -301,19 +301,16 @@ msgstr ""
 "Pokaže ime trenutne datoteke za prostorske označbe v brskalniškem delovanju."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Ni zaznamkov"
+msgstr "Ima zaznamke."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Odpre mapo posebnega iskanja."
+msgstr "Ima besedilo za posebno iskanje."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Začasni zaznamek se je shranil na položaju %d"
+msgstr "Ima začasni zaznamek."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
