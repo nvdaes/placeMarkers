@@ -36,7 +36,7 @@ jobs:
         import sys
         import os
         sys.path.append(os.path.join(os.path.dirname(__file__), "validation", "_validate"))
-        from validation._validate import validate
+        import validation._validate.validate
       shell: python
     - name: Automatic release
       uses: marvinpinto/action-automatic-releases@latest
