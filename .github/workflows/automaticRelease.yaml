@@ -26,6 +26,12 @@ jobs:
         sudo apt install gettext
     - name: Build
       run: scons version=${{ github.sha }}
+    - name: Test
+      run: |
+        import buildVars
+        name = addon_info["addon_name"]
+      shel: python
+      
     - name: Automatic release
       uses: marvinpinto/action-automatic-releases@latest
       with:
