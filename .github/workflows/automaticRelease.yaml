@@ -28,8 +28,9 @@ jobs:
       run: scons version=${{ github.sha }}
     - name: Checkout validation
       uses: actions/checkout@v2
-      repository: nvaccess/addon-datastore-validation
-      path: validation
+      with:
+        repository: nvaccess/addon-datastore-validation
+        path: validation
     - name: Test
       run: |
         import sys
