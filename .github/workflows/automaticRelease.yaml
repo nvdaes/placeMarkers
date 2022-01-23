@@ -26,18 +26,6 @@ jobs:
         sudo apt install gettext
     - name: Build
       run: scons version=${{ github.sha }}
-    - name: Checkout validation
-      uses: actions/checkout@v2
-      with:
-        repository: nvaccess/addon-datastore-validation
-        path: validation
-    - name: Test
-      run: |
-        import sys
-        import os
-        sys.path.append(os.path.join(os.path.dirname(__file__), "validation", "_validate"))
-        import validate
-      shell: python
     - name: Automatic release
       uses: marvinpinto/action-automatic-releases@latest
       with:
