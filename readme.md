@@ -35,6 +35,9 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Changes for 18.0 ##
 * The command to see the path for placeMarkers shows if there are permanent bookmarks, text for specific search or a temporary bookmark for the current document.
 
