@@ -635,6 +635,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
+		if globalVars.appArgs.secure:
+			return
 		super(GlobalPlugin, self).__init__()
 		self.menu = gui.mainFrame.sysTrayIcon.preferencesMenu
 		self.BSMenu = wx.Menu()
