@@ -45,6 +45,12 @@ lastFindText = ""
 lastCaseSensitivity = False
 
 
+def disableInSecureMode(decoratedCls):
+	if globalVars.appArgs.secure:
+		return globalPluginHandler.GlobalPlugin
+	return decoratedCls
+
+
 def createSearchFolder():
 	if os.path.isdir(SEARCH_FOLDER):
 		return
@@ -630,6 +636,7 @@ class Note(object):
 
 # Global plugin
 
+@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = ADDON_SUMMARY
