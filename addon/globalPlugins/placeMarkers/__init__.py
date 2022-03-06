@@ -44,6 +44,7 @@ ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 lastFindText = ""
 lastCaseSensitivity = False
 
+
 def disableInSecureMode(decoratedCls):
 	if globalVars.appArgs.secure:
 		return globalPluginHandler.GlobalPlugin
