@@ -44,6 +44,11 @@ ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 lastFindText = ""
 lastCaseSensitivity = False
 
+def disableInSecureMode(decoratedCls):
+	if globalVars.appArgs.secure:
+		return globalPluginHandler.GlobalPlugin
+	return decoratedCls
+
 
 def createSearchFolder():
 	if os.path.isdir(SEARCH_FOLDER):
@@ -630,13 +635,12 @@ class Note(object):
 
 # Global plugin
 
+@disableInSecureMode
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	scriptCategory = ADDON_SUMMARY
 
 	def __init__(self):
-		if globalVars.appArgs.secure:
-			return
 		super(GlobalPlugin, self).__init__()
 		self.menu = gui.mainFrame.sysTrayIcon.preferencesMenu
 		self.BSMenu = wx.Menu()
