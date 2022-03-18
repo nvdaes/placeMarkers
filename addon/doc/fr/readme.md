@@ -70,6 +70,9 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Changes for 18.0 ##
 * The command to see the path for placeMarkers shows if there are permanent
   bookmarks, text for specific search or a temporary bookmark for the

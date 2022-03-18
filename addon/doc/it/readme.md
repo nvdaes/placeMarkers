@@ -72,6 +72,9 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Changes per la 18.0 ##
 * Il comando per vedere il percorso per placeMarkers avvisa se ci sono
   segnaposto permanenti, testo per una ricerca specifica o un segnalibro

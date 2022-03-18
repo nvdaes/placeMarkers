@@ -36,6 +36,9 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Changes for 18.0 ##
 * The command to see the path for placeMarkers shows if there are permanent
   bookmarks, text for specific search or a temporary bookmark for the
