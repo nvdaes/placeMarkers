@@ -1,0 +1,14 @@
+name: Check for MyPy type hints
+
+on:
+
+  push:
+  
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  mypy:
+    name: mypy
+    uses: nvdaes/nvdaAddonWorkflows/.github/workflows/mypy.yaml@main
