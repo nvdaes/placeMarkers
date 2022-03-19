@@ -67,6 +67,9 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
 marcadores.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Changes for 18.0 ##
 * The command to see the path for placeMarkers shows if there are permanent
   bookmarks, text for specific search or a temporary bookmark for the

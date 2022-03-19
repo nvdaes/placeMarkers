@@ -62,6 +62,9 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Cambios para 18.0 ##
 * O atallo para amosar a ruta de placeMarkers amosa se hai marcas
   permanentes, texto para busca específica ou unha marca temporal para o

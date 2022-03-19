@@ -10,18 +10,5 @@ on:
 
 jobs:
   mypy:
-    runs-on: windows-latest
-
-    steps:
-
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.7
-    - name: Install dependencies
-      run: pip install mypy
-    - name: MyPy
-      run: python -m mypy addon
+    name: mypy
+    uses: nvdaes/nvdaAddonWorkflows/.github/workflows/mypy.yaml@main
