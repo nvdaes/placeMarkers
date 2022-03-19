@@ -66,6 +66,9 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Änderungen in 18.0 ##
 * Der Befehl zum zeigen von Pfaden zu Lesezeichen gibt aus, ob gespeicherte
   Lesezeichen, Text für die erweiterte Suche, temporäre Lesezeichen für das

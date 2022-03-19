@@ -65,6 +65,9 @@ Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
 
+## Cambios para 19.0 ##
+* El complemento no se puede ejecutar en pantallas seguras.
+
 ## Cambios para 18.0 ##
 * La orden para ver la ruta de PlaceMarkers muestra si hay marcadores
   permanentes, texto para búsquedas específicas o un marcador temporal para

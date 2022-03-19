@@ -62,6 +62,9 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 19.0 ##
+* The add-on cannot be run on secure screens.
+
 ## Changes for 18.0 ##
 * The command to see the path for placeMarkers shows if there are permanent
   bookmarks, text for specific search or a temporary bookmark for the
