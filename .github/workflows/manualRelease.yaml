@@ -16,7 +16,7 @@ jobs:
   buildAndUpload:
     uses: nvdaes/nvdaAddonWorkflows/.github/workflows/manualRelease.yaml
     with:
-      version: ${{ inputs.version }}
-      prerelease: ${{ inputs.prerelease }}
+      ${{ inputs.version }}
+      ${{ inputs.prerelease }}
     
     
