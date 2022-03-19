@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-# Copyright (C) 2012-2019 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2022 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 
@@ -8,6 +8,10 @@ import pickle
 import re
 import os
 import shutil
+import wx
+from dataclasses import dataclass
+from typing import Callable
+
 import addonHandler
 import globalPluginHandler
 import appModuleHandler
@@ -20,15 +24,17 @@ import controlTypes
 import gui
 from gui import guiHelper
 import core
-import wx
 import ui
 import speech
 from speech import sayAll
 from scriptHandler import willSayAllResume, script
 from logHandler import log
+
 from .skipTranslation import translate
 
 addonHandler.initTranslation()
+
+_: Callable[[str], str]
 
 # Constants
 CONFIG_PATH = globalVars.appArgs.configPath
@@ -626,12 +632,10 @@ class RestoreDialog(wx.Dialog):
 
 # Note
 
-class Note(object):
-
-	def __init__(self, title="", body=""):
-		super(Note, self).__init__()
-		self.title = title
-		self.body = body
+@dataclass
+class Note:
+	title: str = ""
+	body: str = ""
 
 
 # Global plugin
