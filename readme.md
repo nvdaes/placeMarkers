@@ -1,7 +1,7 @@
 # placeMarkers #
 
 * Authors: Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
+* NVDA compatibility: 2022.1 or later.
 * download [stable version][1]
 * download [development version][2]
 
@@ -34,6 +34,9 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 *	Restore placeMarkers: You can restore your bookmarks from a previously saved placeMarkers folder.
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
+
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
 
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.

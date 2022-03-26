@@ -19,7 +19,7 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description": _("Add-on for setting place markers on specific virtual documents"),
 	# version
-	"addon_version": "19.0.1",
+	"addon_version": "",
 	# Author(s)
 	"addon_author": u"Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>",
 	# URL for the add-on documentation support
@@ -27,9 +27,9 @@ addon_info = {
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3")
-	"addon_minimumNVDAVersion": "2021.1",
+	"addon_minimumNVDAVersion": "2022.1",
 	# Last NVDA version supported/tested (e.g. "2018.4", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2021.3.3",
+	"addon_lastTestedNVDAVersion": "2022.1",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel": None,
 }
