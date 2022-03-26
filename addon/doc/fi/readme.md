@@ -63,8 +63,8 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Muutokset versiossa 19.0 ##
+* Lisäosaa ei voi käyttää suojatuissa ruuduissa.
 
 ## Muutokset versiossa 18.0 ##
 * Paikkamerkkien polun ilmoittava komento näyttää, mikäli nykyisellä
