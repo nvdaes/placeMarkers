@@ -89,7 +89,7 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 		obj.doFindText(text=text, reverse=reverse, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume)
-	elif obj.role != controlTypes.ROLE_EDITABLETEXT:
+	elif obj.role != controlTypes.Role.EDITABLETEXT:
 		return
 	else:
 		try:
@@ -748,7 +748,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_specificFind(self, gesture, reverse=False):
 		obj = api.getFocusObject()
-		if controlTypes.STATE_MULTILINE not in obj.states:
+		if controlTypes.State.MULTILINE not in obj.states:
 			treeInterceptor = obj.treeInterceptor
 			if not (isinstance(
 				treeInterceptor, BrowseModeDocumentTreeInterceptor
@@ -772,7 +772,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_specificFindNext(self, gesture):
 		obj = api.getFocusObject()
-		if controlTypes.STATE_MULTILINE not in obj.states:
+		if controlTypes.State.MULTILINE not in obj.states:
 			treeInterceptor = obj.treeInterceptor
 			if not (
 				isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough
@@ -795,7 +795,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_specificFindPrevious(self, gesture):
 		obj = api.getFocusObject()
-		if controlTypes.STATE_MULTILINE not in obj.states:
+		if controlTypes.State.MULTILINE not in obj.states:
 			treeInterceptor = obj.treeInterceptor
 			if not (
 				isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough
@@ -1031,7 +1031,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_showCurrentBookmarksFile(self, gesture):
 		obj = api.getFocusObject()
-		if controlTypes.STATE_MULTILINE not in obj.states:
+		if controlTypes.State.MULTILINE not in obj.states:
 			treeInterceptor = obj.treeInterceptor
 			if not (
 				isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough
