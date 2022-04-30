@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2021-01-09 22:52+0100\n"
+"PO-Revision-Date: 2022-04-24 13:06+0200\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -301,19 +301,16 @@ msgstr ""
 "Prikazuje ime trenutačne datoteke za oznake pozicija u modusu pregledavanja."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Nema knjižnih oznaka"
+msgstr "Ima knjižnih oznaka."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Otvara određenu mapu pretrage."
+msgstr "Ima tekst za određenu pretragu."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Spremljena privremena knjižna oznaka na poziciji %d"
+msgstr "Ima privremenu knjižnu oznaku"
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format

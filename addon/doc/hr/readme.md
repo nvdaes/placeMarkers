@@ -2,7 +2,7 @@
 * Autori: Noelia, Chris.
 * NVDA kompatibilnost: 2021.1 ili novija.
 * Preuzmi [stabilnu verziju][1]
-* preuzmi [razvojnu verziju][2]
+* Preuzmi [razvojnu verziju][2]
 
 Ovaj se dodatak koristi za spremanje i pretraživanje određenih tekstualnih
 nizova ili knjižnih oznaka. Može se koristiti za web stranice ili za
@@ -65,15 +65,15 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Promjene u verziji 19.0 ##
+* Ovaj se dodatak ne može pokretati u sigurnim ekranima.
 
-## Changes for 18.0 ##
+## Promjene u verziji 18.0 ##
 * The command to see the path for placeMarkers shows if there are permanent
   bookmarks, text for specific search or a temporary bookmark for the
   current document.
 
-## Changes for 17.0 ##
+## Promjene u verziji 17.0 ##
 * Fixed a bug which didn't allow to save place markers in some documents.
 * Fixed translated strings making translations to work properly.
 
@@ -83,7 +83,7 @@ oznake.
 * Ako je potrebno, možeš preuzeti [druge
   verzije](https://github.com/nvdaes/placeMarkers/releases).
 
-## Changes for 15.0 ##
+## Promjene u verziji 15.0 ##
 * When reading with say all in browse mode, the specific find next and
   specific find previous commands do not stop reading anymore if Allow skim
   reading option is enabled, according to find next and find previous

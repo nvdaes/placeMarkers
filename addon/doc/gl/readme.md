@@ -62,8 +62,8 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Cambios para 19.0 ##
+* O complemento non se pode executar en pantallas seguras.
 
 ## Cambios para 18.0 ##
 * O atallo para amosar a ruta de placeMarkers amosa se hai marcas
