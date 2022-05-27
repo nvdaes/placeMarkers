@@ -1,8 +1,8 @@
 # Đánh dấu #
+
 * Tác giả: Noelia, Chris.
-* NVDA tương thích: 2021.1 trở lên.
-* tải về [phiên bản chính thức][1]
-* tải về [phiên bản thử nghiệm][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Addon này dùng để lưu lại và tìm kiếm một chuỗi văn bản hay dấu trang cụ
 thể. nó có thể được dùng trên các trang web hay tài liệu trong chế độ duyệt
@@ -59,6 +59,9 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -72,10 +75,9 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 * Fixed translated strings making translations to work properly.
 
 ## Các thay đổi cho phiên bản 16.0 ##
-* Tương thích với NVDA 2021.1 trở lên (yêu cầu).
-* Đã hỗ trợ thay đổi vị trí đọc khi di chuyển đến dấu trang tạm thời.
-* Nếu cần, bạn có thể tải [phiên bản
-  khác](https://github.com/nvdaes/placeMarkers/releases).
+*	Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Các thay đổi cho phiên bản 15.0 ##
 * Khi đọc với chế độ đọc tất cả trong chế độ duyệt, các lệnh tìm trước và

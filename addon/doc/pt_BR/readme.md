@@ -1,8 +1,8 @@
 # Marcadores de lugar (placeMarkers) #
+
 * Autores: Noelia, Chris.
-* Compatibilidade com NVDA: 2021.1 ou posterior.
-* baixe a [versão estável][1]
-* baixe a [versão de desenvolvimento][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento é usado para salvar e pesquisar cadeias de texto ou
 marcadores específicos. Ele pode ser usado em páginas de Internet ou
@@ -67,6 +67,9 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
 marcadores.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -80,10 +83,9 @@ marcadores.
 * Fixed translated strings making translations to work properly.
 
 ## Mudanças na 16.0 ##
-* Compatível com o NVDA 2021.1 ou posterior (requerido).
-* A leitura dinâmica é suportada ao mover para marcadores temporários.
-* Se necessário, você pode baixar [outras
-  versões](https://github.com/nvdaes/placeMarkers/releases).
+*	Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Mudanças na 15.0 ##
 * Ao ler com leitura contínua no modo de navegação, os comandos específicos

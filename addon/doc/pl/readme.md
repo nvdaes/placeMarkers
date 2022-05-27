@@ -1,8 +1,8 @@
 # placeMarkers #
+
 * Autorzy: Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
-* Pobierz [wersja stabilna][1]
-* Pobierz [wersja rozwojowa][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Ten dodatek jest używany do zapisywania i wyszukiwania określonych ciągów
 tekstowych lub zakładek, na stronach internetowych lub dokumentach trybu
@@ -62,6 +62,9 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -75,10 +78,9 @@ określone miejsce.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+*	Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and
