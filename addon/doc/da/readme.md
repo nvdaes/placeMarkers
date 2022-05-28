@@ -1,8 +1,8 @@
 # placeMarkers (Stedmærker) #
+
 * Forfattere: Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
-* Download [stabil version][1]
-* download [testversion][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Dette tilføjelsesprogram bruges til at gemme og søge efter bestemte
 tekststrenge på websider eller i dokumenter, som understøtter NVDAs
@@ -63,6 +63,9 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -76,10 +79,9 @@ bogmærker, som gemmer en præcis position.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+*	Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and

@@ -1,8 +1,8 @@
 # Záložky #
+
 * Autori): Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
-* Stiahnuť [Stabilnú verzia][1]
-* Stiahnuť [Vývojovú verzia][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Doplnok dokáže uložiť reťazec pre vyhľadávanie, alebo konkrétne miesto v
 dokumente ako záložku. Funguje na webových stránkach a dokumentoch v režime
@@ -54,6 +54,9 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránkach
 je lepšie použiť reťazce hľadania.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -67,10 +70,9 @@ je lepšie použiť reťazce hľadania.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+*	Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and

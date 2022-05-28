@@ -1,8 +1,8 @@
 # placeMarkers #
+
 * Autori: Noelia, Chris.
-* Compatibilità con NVDA: versione 2021.1 e successive.
-* scarica la  [versione stabile][1]
-* scarica la [versione in sviluppo][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Questo componente aggiuntivo è utilizzato per salvare e cercare segnaposto e
 stringhe di testo specifiche, sia nelle pagine web che in documenti,
@@ -72,6 +72,9 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -86,11 +89,9 @@ non i segnaposto, per salvare una posizione precisa.
 * Risolto il problema con le stringhe per tradurre correttamente.
 
 ## Changes per la  16.0 ##
-* Compatibile con NVDA 2021.1 o superiore (richiesto).
-* supporto alla lettura rapida nella navigazione con i  segnaposto
-  temporanei.
-* Se necessario, puoi scaricare [versioni
-  precedenti](https://github.com/nvdaes/placeMarkers/releases).
+*	Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Novità nella versione 15.0 ##
 * Quando si usa il comando "dire tutto" (NVDA+freccia giù) in modalità

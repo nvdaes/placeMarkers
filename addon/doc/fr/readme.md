@@ -1,8 +1,8 @@
 # placeMarkers #
+
 * Auteurs : Noelia, Chris.
-* NVDA compatibility: 2021.1 or later.
-* Télécharger [version stable][1]
-* Télécharger [version de développement][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Cette extension sert à sauvegarder et rechercher des chaînes de caractères
 ou des marqueurs spécifiques sur des pages web ou des documents en Mode
@@ -70,6 +70,9 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Changes for 19.0 ##
 * The add-on cannot be run on secure screens.
 
@@ -83,10 +86,9 @@ spécifique, pas les marqueurs.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+*	Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changements pour la version 15.0 ##
 * Durant la lecture avec Dire tout en mode navigation, les commandes

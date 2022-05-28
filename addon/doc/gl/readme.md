@@ -1,8 +1,8 @@
 # placeMarkers #
+
 * Autores: Noelia, Chris.
-* Compatibilidade con NVDA: 2021.1 ou posterior.
-* descarga [versión estable][1]
-* descarga [versión de desenvolvemento][2]
+* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento úsase para gardar e restaurar cadeas de texto específicas
 ou marcas. Pode usarse en páxinas web ou en documentos no modo exploración
@@ -62,6 +62,9 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
+## Changes for 20.0
+* Requires NVDA 2022.1 or later.
+
 ## Cambios para 19.0 ##
 * O complemento non se pode executar en pantallas seguras.
 
@@ -77,10 +80,9 @@ marcas.
   traducións.
 
 ## Cambios para 16.0 ##
-* Compatible co NVDA 2021.1 ou posterior (requerido).
-* Sopórtase a lectura superficial ao moverse a unha marca temporal.
-* Se o precisas, podes descargar [outras
-  versións](https://github.com/nvdaes/placeMarkers/releases).
+*	Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Cambios para 15.0 ##
 * Ó ler con ler todo en modo exploración, os atallos específico buscar

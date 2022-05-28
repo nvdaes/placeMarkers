@@ -1,8 +1,9 @@
 # Lesezeichen #
+
 * Autoren: Noelia, Chris.
-* NVDA-Kompatibilität: 2021.1 oder neuer.
-* [Stabile Version herunterladen][1]
-* [Entwicklerversion herunterladen][2]
+* [Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
+* [Entwicklerversion herunterladen][2] (kompatibel mit NVDA 2022.1 und
+  neuer)
 
 Mit dieser Erweiterung können Sie innerhalb des Lesemodus von NVDA
 Suchanfragen oder Lesezeichen speichern Bzw. Suchläufe durchführen. Die
@@ -66,6 +67,9 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Änderungen in 20.0
+* Benötigt NVDA 2022.1 oder neuer.
+
 ## Änderungen in 19.0 ##
 * Diese Erweiterung kann nicht mehr im geschüttzen Modus verwendet werden.
 
@@ -81,10 +85,9 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
   funktionieren.
 
 ## Änderungen in 16.0 ##
-* Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
-* Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
-* Bei Bedarf können Sie [andere Versionen] herunterladen
-  (https://github.com/nvdaes/placeMarkers/releases).
+*	Kompatibel mit NVDA 2021.1 oder neuer (benötigt).
+* Das Querlesen wird beim Verschieben zu temporären Lesezeichen unterstützt.
+*	Bei Bedarf können Sie [andere Versionen] herunterladen (https://github.com/nvdaes/placeMarkers/releases).
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die

@@ -1,8 +1,8 @@
 # Paikkamerkit #
+
 * Tekijät: Noelia, Chris
-* Yhteensopivuus: NVDA 2021.1 tai uudempi
-* Lataa [vakaa versio][1]
-* Lataa [kehitysversio][2]
+* Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
+* Lataa [kehitysversio][2] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
 
 Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
 paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
@@ -63,6 +63,9 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
+## Muutokset versiossa 20.0
+* Edellyttää NVDA 2022.1:tä tai uudempaa.
+
 ## Muutokset versiossa 19.0 ##
 * Lisäosaa ei voi käyttää suojatuissa ruuduissa.
 
@@ -77,10 +80,9 @@ paikkamerkkien asemesta sivukohtaista hakua.
 * Käännettävät merkkijonot korjattu, mikä saa käännökset toimimaan oikein.
 
 ## Muutokset versiossa 16.0 ##
-* Yhteensopiva NVDA 2021.1:n tai uudemman kanssa (vaaditaan).
-* Pikalukua tuetaan tilapäisiin paikkamerkkeihin siirryttäessä.
-* Voit tarvittaessa ladata [muita
-  versioita](https://github.com/nvdaes/placeMarkers/releases).
+*	Yhteensopiva NVDA 2021.1:n tai uudempien kanssa (vaaditaan).
+* Pikalukua tuetaan tilapäisiin kirjanmerkkeihin siirryttäessä.
+*	Tarvittaessa voit ladata [muita versioita](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Muutokset versiossa 15.0 ##
 * Sivukohtaiset Etsi seuraava ja Etsi edellinen -komennot eivät enää pysäytä
