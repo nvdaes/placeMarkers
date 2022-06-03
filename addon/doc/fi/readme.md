@@ -6,12 +6,12 @@
 
 Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
 paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
-dokumenteista. Sitä voidaan käyttää myös merkkijonojen tallentamiseen tai
+asiakirjoista. Sitä voidaan käyttää myös merkkijonojen tallentamiseen tai
 etsimiseen monirivisistä säätimistä. Mikäli järjestelmäkohdistimen
 siirtäminen ei ole tällöin mahdollista, hakua vastaava merkkijono kopioidaan
 leikepöydälle, jotta sitä voidaan etsiä muilla tavoilla.  Merkkijonot ja
 paikkamerkit tallennetaan tiedostoihin, joiden nimet perustuvat nykyisen
-dokumentin nimeen ja URL-osoitteeseen.  Tämä lisäosa perustuu saman tekijän
+asiakirjan nimeen ja URL-osoitteeseen.  Tämä lisäosa perustuu saman tekijän
 SpecificSearch- ja Bookmark&Search-lisäosiin. Sinun tulisi poistaa ne tämän
 version käyttämiseksi, sillä niissä on samoja näppäinkomentoja ja
 ominaisuuksia.
@@ -94,7 +94,7 @@ paikkamerkkien asemesta sivukohtaista hakua.
 
 ## Muutokset versiossa 14.0 ##
 *	Paikkamerkkitiedoston nimen kopioiva komento on korvattu komennolla, joka
-  näyttää tiedostonimen selaustilassa. Syötekomentoa ei ole määritetty.
+  näyttää tiedostonimen selaustilassa. Näppäinkomentoa ei ole määritetty.
 *	"Etsittävä teksti" -kenttä ei enää ole "Tallennettu teksti" -kentän
   päällä. (Kiitos Cyrille Bougotille).
 *	Edellyttää NVDA 2019.3:a tai uudempaa.
@@ -124,8 +124,8 @@ paikkamerkkien asemesta sivukohtaista hakua.
   [tästä.][3]
 
 ## Muutokset versiossa 10.0 ##
-*	Virheiden välttämiseksi (erityisesti pitkissä dokumenteissa)
-  paikkamerkkien valintaan liittyvät syötekomennot, kuten NVDA+K,
+*	Virheiden välttämiseksi (erityisesti pitkissä asiakirjoissa)
+  paikkamerkkien valintaan liittyvät näppäinkomennot, kuten NVDA+K,
   NVDA+Vaihto+K tai NVDA+Alt+K, lähetetään Edgessä sovellukselle sen sijaan,
   että yritettäisiin siirtää kohdistinta paikkamerkkeihin.
 *	Sivukohtaista hakua tuetaan nyt Edgessä.
@@ -135,7 +135,7 @@ paikkamerkkien asemesta sivukohtaista hakua.
   paikkamerkkiin Muistiinpanot-valintaikkunasta.
 *	Edellisen paikkamerkin valitseva komento toimii jälleen asianmukaisesti.
 *	Paikkamerkkejä on mahdollista poistaa Muistiinpanot-valintaikkunasta.
-*	Voit nyt määrittää kullekin dokumentille syötekomennot paikkamerkkien
+*	Voit nyt määrittää kullekin asiakirjalle näppäinkomennot paikkamerkkien
   tallentamista ja niihin siirtymistä varten.
 
 ## Muutokset versiossa 8.0 ##
@@ -156,7 +156,7 @@ paikkamerkkien asemesta sivukohtaista hakua.
   kirjainkoon huomioivan haun, mikäli alkuperäinen haku oli sellainen.
 *	Edellyttää NVDA 2016.4:ää tai uudempaa.
 *	Paikkamerkkien kopiointi- ja palautusvalintaikkunoille on nyt mahdollista
-  määrittää syötekomennot.
+  määrittää näppäinkomennot.
 *	NVDA ilmoittaa, kun paikkamerkkejä on kopioitu tai palautettu omilla
   valintaikkunoillaan.
 
@@ -187,7 +187,7 @@ paikkamerkkien asemesta sivukohtaista hakua.
 * Korjattu ohjelmavirhe, joka rikkoi lisäosan toiminnan, kun polut
   sisälsivät muita kuin latinalaisia merkkejä.
 * Pikanäppäimien uudelleenmäärittely on nyt mahdollista NVDA:n
-  Syötekomennot-valintaikkunaa käyttäen.
+  Näppäinkomennot-valintaikkunaa käyttäen.
 
 ## Muutokset versiossa 1.0 ##
 * Ensimmäinen versio.

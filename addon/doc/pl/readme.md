@@ -1,8 +1,8 @@
 # placeMarkers #
 
 * Autorzy: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
+* pobierz [stabilna wersja][1] (kompatybilna z NVDA 2022.1 i nowszymi)
+* pobierz [wersja rozwojowa][2] (kompatybilna z NVDA 2022.1 i nowszymi)
 
 Ten dodatek jest używany do zapisywania i wyszukiwania określonych ciągów
 tekstowych lub zakładek, na stronach internetowych lub dokumentach trybu
@@ -31,18 +31,19 @@ dokumentu.
   pozycji.
 *	NVDA+k: Przemieszcza się do następującej zakładki.
 *	shift+NVDA+k: Przemieszcza się do poprzedniej zakładki.
-*	Not assigned: Shows the file name where the place markers data will be
-  saved in browse mode, without an extension.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Not assigned: Saves a position as a temporary bookmark.
-*	Not assigned: Moves to the temporary bookmark for the current document.
-*	Not assigned: Finds the next occurrence of the last text searched for any
-  specific document.
-*	Not assigned: Finds the previous occurrence of the last text searched for
-  any specific document.
+*	Nieprzypisane: Wyświetla nazwę pliku, w którym dane znaczników miejsc
+  zostaną zapisane w trybie przeglądania, bez rozszerzenia.
+*	alt+NVDA+k: Otwiera okno dialogowe z zakładkami zapisanymi dla tego
+  dokumentu. Możesz napisać notatkę dla każdej zakładki; naciśnij Zapisz
+  notatkę, aby zapisać zmiany. Naciskając Delete, możesz usunąć wybraną
+  zakładkę. Naciskając przycisk OK, można przejść do wybranej pozycji.
+*	Nieprzypisane: Zapisuje pozycję jako tymczasową zakładkę.
+*	Nieprzypisane: Powoduje przejście do tymczasowej zakładki bieżącego
+  dokumentu.
+*	Nieprzypisane: Wyszukuje następne wystąpienie ostatnio wyszukiwanego
+  tekstu dla określonego dokumentu.
+*	Nieprzypisane: Wyszukuje poprzednie wystąpienie ostatnio wyszukiwanego
+  tekstu dla określonego dokumentu.
 
 
 ## Podmenu Znaczniki miejsc (NVDA+N) ##
@@ -62,60 +63,66 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Zmiany w wersji 20.0
+* Wymaga NVDA 2022.1 lub nowszego.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Zmiany w wersji 19.0 ##
+* Dodatku nie można uruchomić na bezpiecznych ekranach.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Zmiany w wersji 18.0 ##
+* Polecenie wyświetlania ścieżki dla placeMarkers pokazuje, czy istnieją
+  stałe zakładki, tekst do określonego wyszukiwania lub tymczasowa zakładka
+  dla bieżącego dokumentu.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Zmiany w wersji 17.0 ##
+* Naprawiono błąd, który nie pozwalał na zapisywanie znaczników miejsc w
+  niektórych dokumentach.
+* Naprawiono przetłumaczone ciągi znaków, dzięki czemu tłumaczenia działały
+  poprawnie.
 
-## Changes for 16.0 ##
-*	Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
+## Zmiany w wersji 16.0 ##
+* Kompatybilny z NVDA 2021.1 lub nowszym (wymagane).
+* Czytanie Skim jest obsługiwane podczas przechodzenia do tymczasowych zakładek.
+* W razie potrzeby możesz pobrać [inne wersje] (https://github.com/nvdaes/placeMarkers/releases).
 
-## Changes for 15.0 ##
-* When reading with say all in browse mode, the specific find next and
-  specific find previous commands do not stop reading anymore if Allow skim
-  reading option is enabled, according to find next and find previous
-  commands from NVDA 2020.4.
-* When the Specific search dialog is opened after running the Specific find
-  previous command, the Search previous option will be selected.
+## Zmiany w wersji 15.0 ##
+* Podczas czytania z powiedzmy wszystkim w trybie przeglądania, konkretne
+  polecenia znajdź następny i konkretne znajdź poprzednie nie przestają już
+  czytać, jeśli włączona jest opcja Zezwalaj na czytanie odtłuszczone,
+  zgodnie z znajdź następny i znajdź poprzednie polecenia z NVDA 2020.4.
+* Po otwarciu okna dialogowego Określone wyszukiwanie po uruchomieniu
+  polecenia Określone znajdź poprzednie zostanie wybrana opcja Wyszukaj
+  poprzednie.
 
-## Changes for 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
-*	Requires NVDA 2019.3 or later.
+## Zmiany w wersji 14.0 ##
+*	Polecenie skopiowania nazwy pliku, w którym zostaną zapisane dane
+  znaczników miejsca, zostało zastąpione poleceniem, które pokazuje tę nazwę
+  pliku w trybie przeglądania. Nie jest to przypisane do gestu.
+*	Pole "Tekst do wyszukania" nie nakłada się już na pole "Zapisany
+  tekst". (Podziękowania dla Cyrille Bougot).
+*	Wymaga NVDA 2019.3 lub nowszej.
 
 ## Zmiany dla wersji 13.0 ##
-*	Added not assigned commands to find the next and previous occurrences of
-  the last text searched for any specific document.
-*	The specific search feature works when the NVDA's About dialog is open.
-*	In the Specific search dialog, the case sensitive checkbox will be checked
-  if this option was selected for the last search.
-*	When the add-on is updated, bookmarks and strings for specific search
-  saved in the previous version of the add-on will be automatically copied
-  to the new version, unless you prefer to import place markers saved in the
-  main configuration folder of NVDA.
-*	When using the dialog to copy place markers, if the chosen folder is not
-  named placeMarkersBackup, a subfolder with this name will be created to
-  prevent the deletion of directories containing important data, such as
-  Documents or Downloads.
+*	Dodano nieprzypisane polecenia, aby znaleźć następne i poprzednie
+  wystąpienia ostatniego wyszukiwanego tekstu dla określonego dokumentu.
+*	Określona funkcja wyszukiwania działa, gdy okno dialogowe Informacje NVDA
+  jest otwarte.
+*	W oknie dialogowym Określone wyszukiwanie pole wyboru z uwzględnieniem
+  wielkości liter zostanie zaznaczone, jeśli ta opcja została wybrana dla
+  ostatniego wyszukiwania.
+*	Po zaktualizowaniu dodatku zakładki i ciągi znaków do określonego
+  wyszukiwania zapisane w poprzedniej wersji dodatku zostaną automatycznie
+  skopiowane do nowej wersji, chyba że wolisz importować znaczniki miejsc
+  zapisane w głównym folderze konfiguracyjnym NVDA.
+*	Podczas korzystania z okna dialogowego do kopiowania znaczników miejsc,
+  jeśli wybrany folder nie ma nazwy placeMarkersBackup, zostanie utworzony
+  podfolder o tej nazwie, aby zapobiec usunięciu katalogów zawierających
+  ważne dane, takie jak Dokumenty lub Pobrane.
 
 ## Zmiany dla wersji 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+*	Naprawiono krytyczny błąd, który powodował awarię NVDA podczas próby
+  otwarcia okna dialogowego Notatki, jeśli chińskie znaki zostały wybrane
+  przed zapisaniem zakładek.
 
 ## Zmiany dla wersji 11.0 ##
 *	Zgodny z NVDA 2018.3 i nowszymi (wymagane).
@@ -123,19 +130,19 @@ określone miejsce.
   2017.3][3].
 
 ## Zmiany dla wersji 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
-*	Now specific search is supported in Edge.
+*	W Edge gesty związane z zaznaczaniem zakładek, takie jak NVDA+k,
+  NVDA+shift+k lub NVDA+alt+k, będą wysyłane do aplikacji zamiast próbować
+  przesunąć kursor do zakładek, aby uniknąć błędów, szczególnie w długich
+  dokumentach.
+*	Teraz określone wyszukiwanie jest obsługiwane w Edge.
 
 ## Zmiany dla wersji 8.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+*	Podczas przechodzenia do zakładki z okna dialogowego Notatki kursor
+  recenzji podąża za kursorem systemowym.
+*	Polecenie wyboru poprzedniej zakładki działa ponownie poprawnie.
+*	Zakładki można usuwać z okna dialogowego Notatki.
+*	Teraz możesz przypisywać gesty do zapisywania i przechodzenia do
+  tymczasowej zakładki dla każdego dokumentu.
 
 ## Zmiany dla wersji 8.0 ##
 *	Usunięto identyfikatory fragmentów z nazw plików zakładek, co może
