@@ -1,8 +1,8 @@
 # Oznake pozicija (placeMarkers) #
 
 * Autori: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
+* Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
+* Preuzmi [razvojnu verziju][2] (kompatibilna s NVDA 2022.1 i novijom)
 
 Ovaj se dodatak koristi za spremanje i pretraživanje određenih tekstualnih
 nizova ili knjižnih oznaka. Može se koristiti za web stranice ili za
@@ -65,8 +65,8 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Promjene u verziji 20.0
+* Zahtijeva NVDA 2022.1 ili noviju verziju.
 
 ## Promjene u verziji 19.0 ##
 * Ovaj se dodatak ne može pokretati u sigurnim ekranima.
@@ -81,9 +81,9 @@ oznake.
 * Fixed translated strings making translations to work properly.
 
 ## Promjene u verziji 16.0 ##
-*	Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
+*	Kompatibilan s NVDA 2022.1 i novijom verzijom (obavezno).
+* Podržan je kratki pregled prilikom prelaska na privremenu knjižnu oznaku.
+*	Ako je potrebno, možeš preuzeti [druge verzije](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Promjene u verziji 15.0 ##
 * When reading with say all in browse mode, the specific find next and

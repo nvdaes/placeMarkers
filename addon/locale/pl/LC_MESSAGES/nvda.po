@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: placeMarkers 3.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-12-13 17:50+0100\n"
-"PO-Revision-Date: 2021-05-22 09:36+0200\n"
+"PO-Revision-Date: 2022-05-29 10:58+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
 "Your configuration folder for NVDA contains files that seem to be derived "
 "from a previous version of this add-on. Do you want to update it?"
 msgstr ""
-"Twój folder konfiguracyjny NVDA zawiera pliki pochodzące z poprzedniej "
-"wersji tego dodatku. Czy chcesz je zaktualizować?"
+"Folder konfiguracyjny dla NVDA zawiera pliki, które wydają się pochodzić z "
+"poprzedniej wersji tego dodatku. Czy chcesz go zaktualizować?"
 
 #. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid "Install or update add-on"
@@ -123,7 +123,7 @@ msgstr "Zakładki usunięte"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
-msgstr "kopiuj znaczniki miejsca"
+msgstr "Kopiowanie znaczników miejsc"
 
 #. Translators: An informational message displayed in the Copy dialog.
 msgid "Select a folder to save a backup of your current place markers."
@@ -131,7 +131,7 @@ msgstr "Wybierz katalog do zapisywania kopii znaczników miejsc."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "Katalog dla kopii zapasowej:"
+msgstr "katalog do tworzenia kopii zapasowych:"
 
 #. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
@@ -148,7 +148,7 @@ msgstr "Wybierz katalog do przywracania kopii znaczników miejsc."
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
-msgstr "Katalog zawierający kopie zapasową:"
+msgstr "katalog zawierający kopię zapasową:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -160,7 +160,7 @@ msgstr "Zna&czniki miejsca"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "menu zakładek i wyszukiwania"
+msgstr "Zakładki i menu Szukaj"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
@@ -196,11 +196,11 @@ msgstr "Przywróć poprzednio zapisane znaczniki miejsca"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Otwiera określony folder wyszukiwania"
+msgstr "Otwiera określony folder wyszukiwania."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Otwiera katalog z zakładkami"
+msgstr "Otwiera folder zakładek."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -216,19 +216,23 @@ msgstr "Uaktywnia dialog \"przywróć\" %s."
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Poszukuje ciągu znaków od aktualnej pozycji kursora w określonym dokumencie."
+"wyszukuje ciąg tekstowy z bieżącej pozycji kursora dla określonego dokumentu."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
-msgstr "Wyszukuje następne występowanie tekstu dla określonego dokumentu."
+msgstr ""
+"znajduje następne wystąpienie ostatnio wyszukiwanego tekstu dla dowolnego "
+"określonego dokumentu."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
-msgstr "Wyszukuje poprzednie występowanie tekstu dla określonego dokumentu."
+msgstr ""
+"wyszukuje poprzednie wystąpienie ostatnio wyszukiwanego tekstu dla "
+"określonego dokumentu."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -294,19 +298,16 @@ msgstr ""
 "Pokazuje nazwę bieżącego pliku dla znaczników miejsc w trybie przeglądania."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Brak zakładek"
+msgstr "Posiada zakładki."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Otwiera określony folder wyszukiwania"
+msgstr "Zawiera tekst do określonego wyszukiwania."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Tymczasowy znacznik miejsc został zapisany w pozycji %d"
+msgstr "Posiada tymczasową zakładkę."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
