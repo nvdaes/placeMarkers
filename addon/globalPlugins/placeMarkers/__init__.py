@@ -868,7 +868,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Code for UIA provided by Abdel (@abdel792)
 		if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
-			# To point to where the browse mode caret is located, as there really isn't a real caret, we can use the selection attribute
 			cur = obj.selection
 			cur.expand(textInfos.UNIT_LINE)
 			first.setEndPoint(cur, "endToStart")
@@ -921,7 +920,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
-			# To point to where the browse mode caret is located, as there really isn't a real caret, we can use the selection attribute
 			cur = obj.selection
 			cur.expand(textInfos.UNIT_LINE)
 			first.setEndPoint(cur, "endToStart")
