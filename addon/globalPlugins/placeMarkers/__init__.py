@@ -20,6 +20,7 @@ import globalVars
 import textInfos
 from textInfos.offsets import Offsets
 from browseMode import BrowseModeDocumentTreeInterceptor
+import NVDAObjects
 import controlTypes
 import gui
 from gui import guiHelper
@@ -141,7 +142,14 @@ def moveToBookmark(position):
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 		bookmark = Offsets(position, position)
-		info = obj.makeTextInfo(bookmark)
+		try:
+			info = obj.makeTextInfo(bookmark)
+		except ValueError as e:
+			if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+				# Translators: message presented when cannot move to bookmarks due to UIA.
+				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
+				return
+			raise e
 		obj._set_selection(info)
 		speech.cancelSpeech()
 		info.move(textInfos.UNIT_LINE, 1, endPoint="end")
@@ -857,21 +865,30 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			gesture.send()
 			return
-		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+		# Code for UIA provided by Abdel (@abdel792)
+		if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = obj.selection
+			cur.expand(textInfos.UNIT_LINE)
+			first.setEndPoint(cur, "endToStart")
+			startOffset = len(first.text)
+		else:
+			bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+			startOffset = bookmark.startOffset
 		bookmarks = getSavedBookmarks()
 		noteTitle = obj.makeTextInfo(textInfos.POSITION_SELECTION).text[:100]
-		if bookmark.startOffset in bookmarks:
-			noteBody = bookmarks[bookmark.startOffset].body
+		if startOffset in bookmarks:
+			noteBody = bookmarks[startOffset].body
 		else:
 			noteBody = ""
-		bookmarks[bookmark.startOffset] = Note(noteTitle, noteBody)
+		bookmarks[startOffset] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
 			with open(fileName, "wb") as f:
 				pickle.dump(bookmarks, f, protocol=0)
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
-				_("Saved position at character %d") % bookmark.startOffset
+				_("Saved position at character %d") % startOffset
 			)
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
@@ -901,14 +918,22 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks")
 			)
 			return
-		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
-		if curPos not in bookmarks:
+		if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = obj.selection
+			cur.expand(textInfos.UNIT_LINE)
+			first.setEndPoint(cur, "endToStart")
+			startOffset = len(first.text)
+		else:
+			bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+			startOffset = bookmark.startOffset
+		if startOffset not in bookmarks:
 			ui.message(
 				# Translators: message presented when the current document has bookmarks, but none is selected.
 				_("No bookmark selected")
 			)
 			return
-		del(bookmarks[curPos])
+		del(bookmarks[startOffset])
 		fileName = getFileBookmarks()
 		if bookmarks != {}:
 			try:
@@ -962,7 +987,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		try:
+			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		except AttributeError as e:
+			if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+				# Translators: message presented when cannot move to bookmarks due to UIA.
+				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
+				return
+			raise e
 		nextPos = None
 		for pos in sorted(bookmarks):
 			if pos > curPos:
@@ -1006,7 +1038,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		try:
+			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		except AttributeError as e:
+			if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+				# Translators: message presented when cannot move to bookmarks due to UIA.
+				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
+				return
+			raise e
 		prevPos = None
 		for pos in sorted(bookmarks, reverse=True):
 			if pos < curPos:
