@@ -20,7 +20,7 @@ import globalVars
 import textInfos
 from textInfos.offsets import Offsets
 from browseMode import BrowseModeDocumentTreeInterceptor
-import NVDAObjects
+from NVDAObjects.UIA import chromium
 import controlTypes
 import gui
 from gui import guiHelper
@@ -145,7 +145,7 @@ def moveToBookmark(position):
 		try:
 			info = obj.makeTextInfo(bookmark)
 		except ValueError as e:
-			if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+			if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 				# Translators: message presented when cannot move to bookmarks due to UIA.
 				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
 				return
@@ -866,7 +866,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		# Code for UIA provided by Abdel (@abdel792)
-		if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
 			cur.expand(textInfos.UNIT_LINE)
@@ -918,7 +918,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks")
 			)
 			return
-		if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
 			cur.expand(textInfos.UNIT_LINE)
@@ -990,7 +990,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
 		except AttributeError as e:
-			if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+			if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 				# Translators: message presented when cannot move to bookmarks due to UIA.
 				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
 				return
@@ -1041,7 +1041,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		try:
 			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
 		except AttributeError as e:
-			if isinstance(treeInterceptor, NVDAObjects.UIA.chromium.ChromiumUIATreeInterceptor):
+			if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 				# Translators: message presented when cannot move to bookmarks due to UIA.
 				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
 				return
