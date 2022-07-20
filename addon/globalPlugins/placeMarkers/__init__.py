@@ -7,6 +7,8 @@
 import pickle
 import re
 import os
+import NVDAObjects
+import UIAHandler
 import shutil
 import wx
 from dataclasses import dataclass
@@ -51,6 +53,63 @@ ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 lastFindText = ""
 lastCaseSensitivity = False
 
+
+def goToBookmark (treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffset: int) -> bool:
+	"""
+	Allows to move the start browse mode textInfo endPoint to the location where the offset position passed in parameter is located with Microsoft Edge, hen UIA feature is enabled in NVDA advanced settings.
+	The operation should be initiated from the position closest to the textInfo object
+	@Parameters:
+	@paramm treeInterceptor: The treeInterceptor object in which the move should occur.
+	@type treeInterceptor: chromium.ChromiumUIATreeInterceptor.
+	@param startOffset: The offset value towards which we want to perform the movement.
+	@type startOffset: int.
+	@returns: A boolean confirming the operation.
+	@rtype: bool.
+	"""
+	focus = api.getFocusObject()
+	allText = focus.makeTextInfo(textInfos.POSITION_ALL).text
+	totalLength = len(allText)
+	direction = "previous" if startOffset > totalLength / 2 else "next"
+	# We store the position from which we want to start.
+	if direction == "next":
+		first = focus.treeInterceptor.makeTextInfo(textInfos.POSITION_FIRST)
+		# We perform a first move with the MoveEndPointByUnit method.
+		first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_End, UIAHandler.TextUnit_Character, startOffset)
+		# As the move may not reach the correct offset, we make some adjustments.
+		if len(first.text) > startOffset:
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_End, UIAHandler.TextUnit_Character, - (len(first.text) - startOffset))
+		if startOffset > len(first.text):
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_End, UIAHandler.TextUnit_Character, (startOffset - len(first.text)))
+		if len(first.text) > startOffset:
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_End, UIAHandler.TextUnit_Character, - (len(first.text) - startOffset))
+		if startOffset > len(first.text):
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_End, UIAHandler.TextUnit_Character, (startOffset - len(first.text)))
+	else:
+		first = focus.treeInterceptor.makeTextInfo(textInfos.POSITION_LAST)
+		startOffset = totalLength - startOffset
+		# We perform a first move with the MoveEndPointByUnit method.
+		first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_Start, UIAHandler.TextUnit_Character, - startOffset)
+		# As the move may not reach the correct offset, we make some adjustments.
+		if len(first.text) > startOffset:
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_Start, UIAHandler.TextUnit_Character, (len(first.text) - startOffset))
+		if startOffset > len(first.text):
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_Start, UIAHandler.TextUnit_Character, - (startOffset - len(first.text)))
+		if len(first.text) > startOffset:
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_Start, UIAHandler.TextUnit_Character, (len(first.text) - startOffset))
+		if startOffset > len(first.text):
+			first._rangeObj.MoveEndpointByUnit(UIAHandler.TextPatternRangeEndpoint_Start, UIAHandler.TextUnit_Character, - (startOffset - len(first.text)))
+	if len(first.text) == startOffset:
+		if direction == "previous":
+			first.collapse()
+		else:
+			first.collapse(True)
+		treeInterceptor._set_selection(first)
+		info = treeInterceptor.selection
+		info.expand(textInfos.UNIT_WORD)
+		speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
+		info.collapse()
+		return True
+	return False
 
 def disableInSecureMode(decoratedCls):
 	if globalVars.appArgs.secure:
@@ -142,19 +201,14 @@ def moveToBookmark(position):
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 		bookmark = Offsets(position, position)
-		try:
+		if isinstance(obj.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
 			info = obj.makeTextInfo(bookmark)
-		except ValueError as e:
-			if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
-				# Translators: message presented when cannot move to bookmarks due to UIA.
-				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
-				return
-			raise e
-		obj._set_selection(info)
-		speech.cancelSpeech()
-		info.move(textInfos.UNIT_LINE, 1, endPoint="end")
-		speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
-
+			obj._set_selection(info)
+			speech.cancelSpeech()
+			info.move(textInfos.UNIT_LINE, 1, endPoint="end")
+			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
+		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+			goToBookmark (treeInterceptor, position)
 
 def standardFileName(fileName):
 	notAllowed = re.compile(r"\?|:|\*|\t|<|>|\"|\/|\\||")  # Invalid characters
@@ -163,19 +217,29 @@ def standardFileName(fileName):
 
 
 def getFile(folder, ext=""):
+	rootObj = None
+	treeInterceptor = None
 	obj = api.getForegroundObject()
 	file = obj.name
+	uia = False
 	obj = api.getFocusObject()
-	try:
-		obj = obj.treeInterceptor.rootNVDAObject
-		childID = obj.IAccessibleChildID
-		iAObj = obj.IAccessibleObject
-		accValue = iAObj.accValue(childID)
-		nameToAdd = " - %s" % accValue.split("#")[0].split("/")[-1].split("\\")[-1]
-	except Exception:
+	if obj and obj.treeInterceptor and isinstance(obj.treeInterceptor, BrowseModeDocumentTreeInterceptor) and not obj.treeInterceptor.passThrough:
+		treeInterceptor = obj.treeInterceptor
+		rootObj = obj.treeInterceptor.rootNVDAObject
+		if rootObj and isinstance (rootObj, NVDAObjects.IAccessible.IAccessible):
+			uia = False
+			childID = rootObj.IAccessibleChildID
+			iAObj = rootObj.IAccessibleObject
+			val = iAObj.accValue(childID)
+		if rootObj and treeInterceptor and isinstance (treeInterceptor, chromium.ChromiumUIATreeInterceptor):
+			uia = True
+			val = rootObj.UIAValuePattern.CurrentValue
+		nameToAdd = " - %s" % val.split("#")[0].split("/")[-1].split("\\")[-1]
+	else:
 		nameToAdd = ""
 	file = file.rsplit(" - ", 1)[0]
 	file = file.split("\\")[-1]
+	file = f"uia_{file}" if uia else file
 	file += nameToAdd
 	file = api.filterFileName(standardFileName(file))
 	folderPath = os.path.join(PLACE_MARKERS_PATH, folder)
@@ -869,7 +933,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
-			cur.expand(textInfos.UNIT_LINE)
 			first.setEndPoint(cur, "endToStart")
 			startOffset = len(first.text)
 		else:
@@ -969,6 +1032,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="kb:NVDA+k"
 	)
 	def script_selectNextBookmark(self, gesture):
+		ti = None
 		obj = api.getFocusObject()
 		appName = appModuleHandler.getAppNameFromProcessID(obj.processID, True)
 		if appName == "MicrosoftEdgeCP.exe":
@@ -976,7 +1040,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-			obj = treeInterceptor
+			ti = treeInterceptor
 		else:
 			gesture.send()
 			return
@@ -987,14 +1051,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		try:
+		if ti and isinstance(ti.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
 			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
-		except AttributeError as e:
-			if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
-				# Translators: message presented when cannot move to bookmarks due to UIA.
-				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
-				return
-			raise e
+		if ti and isinstance(ti, chromium.ChromiumUIATreeInterceptor):
+			first = ti.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = ti.selection
+			first.setEndPoint(cur, "endToStart")
+			curPos = len(first.text)
 		nextPos = None
 		for pos in sorted(bookmarks):
 			if pos > curPos:
@@ -1020,6 +1083,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="kb:NVDA+shift+k"
 	)
 	def script_selectPreviousBookmark(self, gesture):
+		ti = None
 		obj = api.getFocusObject()
 		appName = appModuleHandler.getAppNameFromProcessID(obj.processID, True)
 		if appName == "MicrosoftEdgeCP.exe":
@@ -1027,7 +1091,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-			obj = treeInterceptor
+			ti = treeInterceptor
 		else:
 			gesture.send()
 			return
@@ -1038,14 +1102,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		try:
-			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
-		except AttributeError as e:
-			if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
-				# Translators: message presented when cannot move to bookmarks due to UIA.
-				ui.message(_("Cannot move to bookmark with UIA enabled for your browser"))
-				return
-			raise e
+		if ti and isinstance(ti.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
+			curPos = ti.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+		if ti and isinstance(ti, chromium.ChromiumUIATreeInterceptor):
+			first = ti.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = ti.selection
+			first.setEndPoint(cur, "endToStart")
+			curPos = len(first.text)
 		prevPos = None
 		for pos in sorted(bookmarks, reverse=True):
 			if pos < curPos:
