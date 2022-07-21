@@ -3,6 +3,7 @@
 # Copyright (C) 2012-2022 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
+# UIA support added by Abdel in 2022
 
 import pickle
 import re
