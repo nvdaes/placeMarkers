@@ -1035,7 +1035,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
-			cur.expand(textInfos.UNIT_LINE)
 			first.setEndPoint(cur, "endToStart")
 			startOffset = len(first.text)
 		else:
