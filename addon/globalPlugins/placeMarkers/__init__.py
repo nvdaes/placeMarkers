@@ -102,7 +102,7 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 			)
 		if startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
-					UIAHandler.TextPatternRangeEndpoint_End,
+				UIAHandler.TextPatternRangeEndpoint_End,
 				UIAHandler.TextUnit_Character,
 				(startOffset - len(first.text))
 			)
@@ -152,6 +152,7 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 		info.collapse()
 		return True
 	return False
+
 
 def disableInSecureMode(decoratedCls):
 	if globalVars.appArgs.secure:
@@ -252,6 +253,7 @@ def moveToBookmark(position):
 		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
 			goToBookmark(treeInterceptor, position)
 
+
 def standardFileName(fileName):
 	notAllowed = re.compile(r"\?|:|\*|\t|<|>|\"|\/|\\||")  # Invalid characters
 	allowed = re.sub(notAllowed, "", fileName)
@@ -265,12 +267,11 @@ def getFile(folder, ext=""):
 	file = obj.name
 	uia = False
 	obj = api.getFocusObject()
-	if obj and\
-		obj.treeInterceptor\
-		and\
-	isinstance(obj.treeInterceptor, BrowseModeDocumentTreeInterceptor)\
-		and\
-		not obj.treeInterceptor.passThrough:
+	if (
+		obj and obj.treeInterceptor
+		and isinstance(obj.treeInterceptor, BrowseModeDocumentTreeInterceptor)
+		and not obj.treeInterceptor.passThrough
+	):
 		treeInterceptor = obj.treeInterceptor
 		rootObj = obj.treeInterceptor.rootNVDAObject
 		if rootObj and isinstance(rootObj, NVDAObjects.IAccessible.IAccessible):
@@ -371,7 +372,7 @@ class SpecificSearchDialog(wx.Dialog):
 		self.addCheckBox = sHelper.addItem(wx.CheckBox(self, label=_("&Add to history")))
 		# Translators: Label for a set of radio buttons in the Specific search dialog.
 		searchActionsLabel = _("Action on s&earch")
-		searchChoices =(
+		searchChoices = (
 			# Translators: An action in the Search group of the Specific search dialog.
 			_("Search &next"),
 			# Translators: An action in the Search group of the Specific search dialog.
@@ -954,8 +955,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		treeInterceptor = obj.treeInterceptor
-		if not(isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor)
-		and not treeInterceptor.passThrough):
+		if not (
+			isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor)
+			and not treeInterceptor.passThrough
+		):
 			gesture.send()
 			return
 		wx.CallAfter(self.popupNotesDialog)
