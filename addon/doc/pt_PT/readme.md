@@ -64,6 +64,10 @@ aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
 
+## Changes for 21.0
+* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
+  thanks to Abdel.
+
 ## Changes for 20.0
 * Requires NVDA 2022.1 or later.
 
@@ -80,9 +84,11 @@ em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores
 * Fixed translated strings making translations to work properly.
 
 ## Alterações para 16.0 ##
-*	Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
+* Compatibilidade com o NVDA 2021.1 ou superiores (obrigatório).
+* A leitura rápida é suportada quando se muda para os marcadores
+  temporários.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Alterações para 15.0 ##
 * Ao ler seguidamente, no modo de navegação, os comandos específicos

@@ -34,6 +34,10 @@ msgstr "Instalar ou actualizar complemento"
 msgid "%s copied to clipboard"
 msgstr "%s copiado ó portapapeis"
 
+#. Translators: message presented when cannot move to bookmarks due to UIA.
+msgid "Cannot move to bookmark with UIA enabled for your browser"
+msgstr ""
+
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
 msgstr "Procura Específica"

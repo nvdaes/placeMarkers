@@ -63,6 +63,10 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 21.0
+* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
+  thanks to Abdel.
+
 ## Zmiany w wersji 20.0
 * Wymaga NVDA 2022.1 lub nowszego.
 
@@ -81,9 +85,10 @@ określone miejsce.
   poprawnie.
 
 ## Zmiany w wersji 16.0 ##
-* Kompatybilny z NVDA 2021.1 lub nowszym (wymagane).
-* Czytanie Skim jest obsługiwane podczas przechodzenia do tymczasowych zakładek.
-* W razie potrzeby możesz pobrać [inne wersje] (https://github.com/nvdaes/placeMarkers/releases).
+* Compatible with NVDA 2021.1 or later (required).
+* Skim reading is supported when moving to temporary bookmarks.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Zmiany w wersji 15.0 ##
 * Podczas czytania z powiedzmy wszystkim w trybie przeglądania, konkretne

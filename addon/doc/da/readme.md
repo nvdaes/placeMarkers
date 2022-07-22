@@ -63,6 +63,10 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
+## Changes for 21.0
+* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
+  thanks to Abdel.
+
 ## Changes for 20.0
 * Requires NVDA 2022.1 or later.
 
@@ -79,9 +83,10 @@ bogmærker, som gemmer en præcis position.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-*	Compatible with NVDA 2021.1 or later (required).
+* Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
-*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changes for 15.0 ##
 * When reading with say all in browse mode, the specific find next and

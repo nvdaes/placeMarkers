@@ -59,6 +59,10 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
+## Changes for 21.0
+* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
+  thanks to Abdel.
+
 ## Changes for 20.0
 * Requires NVDA 2022.1 or later.
 
@@ -75,9 +79,10 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 * Fixed translated strings making translations to work properly.
 
 ## Các thay đổi cho phiên bản 16.0 ##
-*	Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-*	If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).
+* Tương thích với NVDA 2021.1 trở lên (yêu cầu).
+* Đã hỗ trợ thay đổi vị trí đọc khi di chuyển đến dấu trang tạm thời.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Các thay đổi cho phiên bản 15.0 ##
 * Khi đọc với chế độ đọc tất cả trong chế độ duyệt, các lệnh tìm trước và
