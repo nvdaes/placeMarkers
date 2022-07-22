@@ -1103,7 +1103,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			)
 			return
 		if ti and isinstance(ti.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
-			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
+			curPos = ti.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
 		if ti and isinstance(ti, chromium.ChromiumUIATreeInterceptor):
 			first = ti.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = ti.selection
