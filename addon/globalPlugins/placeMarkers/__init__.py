@@ -1222,13 +1222,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			gesture.send()
 			return
-		bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+		if not isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+			bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+			startOffset = bookmark.startOffset
+		else:
+			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = obj.selection
+			first.setEndPoint(cur, "endToStart")
+			startOffset = len(first.text)
 		fileName = getFileTempBookmark()
 		try:
 			with open(fileName, "w", encoding="utf-8") as f:
-				f.write(str(bookmark.startOffset))
+				f.write(str(startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
-				ui.message(_("Saved temporary bookmark at position %d" % bookmark.startOffset))
+				ui.message(_("Saved temporary bookmark at position %d" % startOffset))
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
