@@ -34,6 +34,10 @@
 
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
 
+## Changes for 21.0
+* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
+  thanks to Abdel.
+
 ## 版本20.0
 * 需要NVDA 2022.1 或更高版本。
 
@@ -48,9 +52,10 @@
 * 修正了翻译字符串，使翻译能够正常工作。
 
 ## 版本16.0 ##
-* 兼容 NVDA 2021.1 或更高版本（必需）。
+* 兼容 NVDA 2021.1或更高版本（必需）。兼容NVDA 2018.3或更高版本（必需）。
 * 移动到临时书签时支持略读。
-* 如果需要，您可以下载[其他版本](https://github.com/nvdaes/placeMarkers/releases)。
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## 版本15.0 ##
 * 在浏览模式下使用全文朗读进行阅读时，根据 NVDA 2020.4

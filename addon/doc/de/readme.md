@@ -67,6 +67,10 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Changes for 21.0
+* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
+  thanks to Abdel.
+
 ## Änderungen in 20.0
 * Benötigt NVDA 2022.1 oder neuer.
 
@@ -85,9 +89,10 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
   funktionieren.
 
 ## Änderungen in 16.0 ##
-*	Kompatibel mit NVDA 2021.1 oder neuer (benötigt).
-* Das Querlesen wird beim Verschieben zu temporären Lesezeichen unterstützt.
-*	Bei Bedarf können Sie [andere Versionen] herunterladen (https://github.com/nvdaes/placeMarkers/releases).
+* Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
+* Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die
