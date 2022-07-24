@@ -89,7 +89,7 @@ def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startO
 				UIAHandler.TextUnit_Character,
 				-(len(first.text) - startOffset)
 			)
-		elif startOffset > len(first.text):
+		if startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_End,
 				UIAHandler.TextUnit_Character,
@@ -101,7 +101,7 @@ def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startO
 				UIAHandler.TextUnit_Character,
 				-(len(first.text) - startOffset)
 			)
-		elif startOffset > len(first.text):
+		if startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_End,
 				UIAHandler.TextUnit_Character,
@@ -123,7 +123,7 @@ def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startO
 				UIAHandler.TextUnit_Character,
 				(len(first.text) - startOffset)
 			)
-		elif startOffset > len(first.text):
+		if startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_Start,
 				UIAHandler.TextUnit_Character,
@@ -135,7 +135,7 @@ def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startO
 				UIAHandler.TextUnit_Character,
 				(len(first.text) - startOffset)
 			)
-		elif startOffset > len(first.text):
+		if startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_Start,
 				UIAHandler.TextUnit_Character,
