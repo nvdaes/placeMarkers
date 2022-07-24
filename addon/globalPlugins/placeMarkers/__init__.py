@@ -55,14 +55,14 @@ lastFindText = ""
 lastCaseSensitivity = False
 
 
-def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffset: int) -> bool:
+def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffset: int) -> bool:
 	"""
 	Allows to move the start browse mode textInfo endPoint
 	to the location where the offset position passed in parameter is located,
-	with Microsoft Edge, hen UIA feature is enabled in NVDA advanced settings.
+	with Microsoft Edge, when UIA feature is enabled in NVDA advanced settings.
 	The operation should be initiated from the position closest to the textInfo object
 	@Parameters:
-	@paramm treeInterceptor: The treeInterceptor object in which the move should occur.
+	@param treeInterceptor: The treeInterceptor object in which the move should occur.
 	@type treeInterceptor: chromium.ChromiumUIATreeInterceptor.
 	@param startOffset: The offset value towards which we want to perform the movement.
 	@type startOffset: int.
@@ -89,7 +89,7 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 				UIAHandler.TextUnit_Character,
 				-(len(first.text) - startOffset)
 			)
-		if startOffset > len(first.text):
+		elif startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_End,
 				UIAHandler.TextUnit_Character,
@@ -101,7 +101,7 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 				UIAHandler.TextUnit_Character,
 				-(len(first.text) - startOffset)
 			)
-		if startOffset > len(first.text):
+		elif startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_End,
 				UIAHandler.TextUnit_Character,
@@ -123,7 +123,7 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 				UIAHandler.TextUnit_Character,
 				(len(first.text) - startOffset)
 			)
-		if startOffset > len(first.text):
+		elif startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_Start,
 				UIAHandler.TextUnit_Character,
@@ -135,7 +135,7 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 				UIAHandler.TextUnit_Character,
 				(len(first.text) - startOffset)
 			)
-		if startOffset > len(first.text):
+		elif startOffset > len(first.text):
 			first._rangeObj.MoveEndpointByUnit(
 				UIAHandler.TextPatternRangeEndpoint_Start,
 				UIAHandler.TextUnit_Character,
@@ -153,6 +153,15 @@ def goToBookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffs
 		info.collapse()
 		return True
 	return False
+
+
+def goToNonUIABookmark(obj, position):
+	bookmark = Offsets(position, position)
+	info = obj.makeTextInfo(bookmark)
+	obj._set_selection(info)
+	speech.cancelSpeech()
+	info.move(textInfos.UNIT_LINE, 1, endPoint="end")
+	speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 
 
 def disableInSecureMode(decoratedCls):
@@ -244,15 +253,10 @@ def moveToBookmark(position):
 	treeInterceptor = obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
-		bookmark = Offsets(position, position)
-		if isinstance(obj.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
-			info = obj.makeTextInfo(bookmark)
-			obj._set_selection(info)
-			speech.cancelSpeech()
-			info.move(textInfos.UNIT_LINE, 1, endPoint="end")
-			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
-			goToBookmark(treeInterceptor, position)
+			goToUIABookmark(obj, position)
+		else:
+			goToNonUIABookmark(obj, position)
 
 
 def standardFileName(fileName):
@@ -1083,7 +1087,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="kb:NVDA+k"
 	)
 	def script_selectNextBookmark(self, gesture):
-		ti = None
 		obj = api.getFocusObject()
 		appName = appModuleHandler.getAppNameFromProcessID(obj.processID, True)
 		if appName == "MicrosoftEdgeCP.exe":
@@ -1091,7 +1094,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-			ti = treeInterceptor
+			obj = treeInterceptor
 		else:
 			gesture.send()
 			return
@@ -1102,13 +1105,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		if ti and isinstance(ti.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
-			curPos = ti.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
-		if ti and isinstance(ti, chromium.ChromiumUIATreeInterceptor):
-			first = ti.makeTextInfo(textInfos.POSITION_FIRST)
-			cur = ti.selection
+		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = obj.selection
 			first.setEndPoint(cur, "endToStart")
 			curPos = len(first.text)
+		else:
+			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
 		nextPos = None
 		for pos in sorted(bookmarks):
 			if pos > curPos:
@@ -1134,7 +1137,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		gesture="kb:NVDA+shift+k"
 	)
 	def script_selectPreviousBookmark(self, gesture):
-		ti = None
 		obj = api.getFocusObject()
 		appName = appModuleHandler.getAppNameFromProcessID(obj.processID, True)
 		if appName == "MicrosoftEdgeCP.exe":
@@ -1142,7 +1144,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		treeInterceptor = obj.treeInterceptor
 		if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
-			ti = treeInterceptor
+			obj = treeInterceptor
 		else:
 			gesture.send()
 			return
@@ -1153,13 +1155,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		if ti and isinstance(ti.rootNVDAObject, NVDAObjects.IAccessible.IAccessible):
-			curPos = ti.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
-		if ti and isinstance(ti, chromium.ChromiumUIATreeInterceptor):
-			first = ti.makeTextInfo(textInfos.POSITION_FIRST)
-			cur = ti.selection
+		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
+			cur = obj.selection
 			first.setEndPoint(cur, "endToStart")
 			curPos = len(first.text)
+		else:
+			curPos = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark.startOffset
 		prevPos = None
 		for pos in sorted(bookmarks, reverse=True):
 			if pos < curPos:
@@ -1222,14 +1224,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		else:
 			gesture.send()
 			return
-		if not isinstance(obj, chromium.ChromiumUIATreeInterceptor):
-			bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
-			startOffset = bookmark.startOffset
-		else:
+		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
 			first.setEndPoint(cur, "endToStart")
 			startOffset = len(first.text)
+		else:
+			bookmark = obj.makeTextInfo(textInfos.POSITION_CARET).bookmark
+			startOffset = bookmark.startOffset
 		fileName = getFileTempBookmark()
 		try:
 			with open(fileName, "w", encoding="utf-8") as f:
