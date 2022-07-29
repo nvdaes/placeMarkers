@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers-7.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-09-04 10:39+0200\n"
+"PO-Revision-Date: 2022-07-22 18:34+0200\n"
 "Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: es_ES\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -36,7 +36,7 @@ msgstr "%s copiado al  portapapeles"
 
 #. Translators: message presented when cannot move to bookmarks due to UIA.
 msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr ""
+msgstr "No puedes moverte al marcador con UIA activada para tu navegador"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -345,18 +345,3 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para establecer las marcas en páginas Web y documentos virtuales "
 "específicos"
-
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "No se puede copiar el nombre del archivo"
-
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "Nombre del archivo de las  marcas copiado en el portapapeles"
-
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "La marca no se puede guardar"
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "La marca no se puede borrar"
-
-#~ msgid "Cannot find any bookmarks"
-#~ msgstr "No se puede encontrar ningún marcador"
