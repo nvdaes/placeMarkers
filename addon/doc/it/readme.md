@@ -1,8 +1,10 @@
 # placeMarkers #
 
 * Autori: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
+* Scarica la  [versione stabile][1] (compatibile con NVDA 2022.1 e
+  successive)
+* scarica la [versione in sviluppo][2] (compatibile con NVDA 2022.1 e
+  successive)
 
 Questo componente aggiuntivo è utilizzato per salvare e cercare segnaposto e
 stringhe di testo specifiche, sia nelle pagine web che in documenti,
@@ -72,15 +74,15 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Novità nella versione 21.0
+* I segnalibri possono essere salvati con UIA abilitato nei browser basati
+  su Chromium, grazie al contributo di Abdel.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Novità nella versione 20.0
+* Richiede NVDA 2022.1 o versioni successive.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Novità nella versione 19.0 ##
+* Il componente aggiuntivo non può essere eseguito in modalità protetta.
 
 ## Changes per la 18.0 ##
 * Il comando per vedere il percorso per placeMarkers avvisa se ci sono
@@ -96,8 +98,8 @@ non i segnaposto, per salvare una posizione precisa.
 * Compatibile con NVDA 2021.1 o superiore (richiesto).
 * supporto alla lettura rapida nella navigazione con i  segnaposto
   temporanei.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Se necessario, puoi scaricare [versioni
+  precedenti](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Novità nella versione 15.0 ##
 * Quando si usa il comando "dire tutto" (NVDA+freccia giù) in modalità

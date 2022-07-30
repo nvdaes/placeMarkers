@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-11-07 11:51+0100\n"
+"PO-Revision-Date: 2022-07-24 13:16+0200\n"
 "Last-Translator: Bernd Dorer <mail@bdorer.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -37,6 +37,7 @@ msgstr "%s in die Zwischenablage kopiert"
 #. Translators: message presented when cannot move to bookmarks due to UIA.
 msgid "Cannot move to bookmark with UIA enabled for your browser"
 msgstr ""
+"Kann nicht zum Lesezeichen wechseln, wenn UIA für Ihren Browser aktiviert ist"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -244,7 +245,7 @@ msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr "zeigt die Notiz an, die dem Dokument zugewiesen wurde."
+msgstr "Zeigt die Notiz an, die dem Dokument zugewiesen wurde."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."

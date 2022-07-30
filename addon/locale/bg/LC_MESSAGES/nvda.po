@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2021-09-03 19:44+0300\n"
+"PO-Revision-Date: 2022-07-22 19:57+0300\n"
 "Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -39,7 +39,7 @@ msgstr "%s е копиран в клипборда"
 
 #. Translators: message presented when cannot move to bookmarks due to UIA.
 msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr ""
+msgstr "Неуспешно преминаване към маркер с включено UIA за браузъра"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
