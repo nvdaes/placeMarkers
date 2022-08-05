@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-26 14:59+0200\n"
-"PO-Revision-Date: 2021-09-04 19:03+0330\n"
+"PO-Revision-Date: 2022-08-02 20:21+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation Team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -36,7 +36,7 @@ msgstr "%s در کلیپ‌برد کپی شد"
 
 #. Translators: message presented when cannot move to bookmarks due to UIA.
 msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr ""
+msgstr "نمیتوانم به نشانک‌ها بروم در حالی که UIA برای مرورگرِ شما فعال است."
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -96,7 +96,7 @@ msgstr "یادداشت‌ها"
 
 #. Translators: The label of a list box in the Notes dialog.
 msgid "&Bookmarks"
-msgstr "&نشان‌ها"
+msgstr "&نشانک‌ها"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
@@ -113,16 +113,16 @@ msgstr "&پاک کردن..."
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
 "This bookmark will be permanently deleted. This action cannot be undone."
-msgstr "این نشان بطور همیشگی پاک خواهد شد. این عمل بازگشت‌پذیر نخواهد بود."
+msgstr "این نشانک برای همیشه پاک خواهد شد. این عمل بازگشت‌پذیر نخواهد بود."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
 msgid "No bookmarks"
-msgstr "نشانی وجود ندارد"
+msgstr "نشانکی وجود ندارد"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
 msgid "Bookmarks deleted"
-msgstr "نشان‌ها پاک شدند"
+msgstr "نشانک‌ها پاک شدند"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -164,7 +164,7 @@ msgstr "&نشان‌گذاری‌ها"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "منوی نشان‌ها و جستجو"
+msgstr "منوی نشانک‌ها و جستجو"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
@@ -176,11 +176,11 @@ msgstr "پوشه‌ی جستجوی اختصاصی را باز میکند"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
-msgstr "پوشه‌ی &نشان‌ها"
+msgstr "پوشه‌ی &نشانک‌ها"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "پوشه‌ی نشان‌ها را باز میکند"
+msgstr "پوشه‌ی نشانک‌ها را باز میکند"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
@@ -204,7 +204,7 @@ msgstr "پوشه‌ی جستجوی اختصاصی را باز میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "پوشه‌ی نشان‌ها را باز میکند."
+msgstr "پوشه‌ی نشانک‌ها را باز میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -239,7 +239,7 @@ msgstr "پنجره‌ی یادداشت‌ها را برای یک سندِ خاص
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "موقعیتِ فعلی را به عنوانِ نشان ذخیره میکند."
+msgstr "موقعیتِ فعلی را به عنوانِ نشانک ذخیره میکند."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -248,31 +248,31 @@ msgstr "موقعیتِ نویسه‌ی %d ذخیره شد"
 
 #. Translators: message presented when a bookmark cannot be saved.
 msgid "Cannot save bookmark"
-msgstr "نمیتوانم نشان را ذخیره کنم"
+msgstr "نمیتوانم نشانک را ذخیره کنم"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "نشانِ فعلی را پاک میکند."
+msgstr "نشانکِ فعلی را پاک میکند."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
-msgstr "نشانی انتخاب نشد"
+msgstr "نشانکی انتخاب نشد"
 
 #. Translators: message presented when a bookmark is deleted.
 msgid "Bookmark deleted"
-msgstr "نشان پاک شد"
+msgstr "نشانک پاک شد"
 
 #. Translators: message presented when cannot delete a bookmark.
 msgid "Cannot delete bookmark"
-msgstr "نمیتوانم نشان را پاک کنم"
+msgstr "نمیتوانم نشانک را پاک کنم"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "به نشانِ بعدی میرود."
+msgstr "به نشانکِ بعدی میرود."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "نشانی پیدا نشد"
+msgstr "نشانکی پیدا نشد"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -281,15 +281,15 @@ msgstr "موقعیت: نویسه‌ی %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
-msgstr "نشانِ بعدی پیدا نشد"
+msgstr "نشانکِ بعدی پیدا نشد"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "به نشانِ قبلی میرود."
+msgstr "به نشانکِ قبلی میرود."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
-msgstr "نشانِ قبلی پیدا نشد"
+msgstr "نشانکِ قبلی پیدا نشد"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Shows the name of the current file for place markers in browse mode."
@@ -297,7 +297,7 @@ msgstr "اسمِ فایلِ فعلی را برای نشان‌گذاری‌ها 
 
 #. Translators: Presented when the current document has positional bookmarks.
 msgid "Has bookmarks."
-msgstr "نشان دارد"
+msgstr "نشانک دارد"
 
 #. Translators: Presented when the current document has specific search.
 msgid "Has text for specific search."
@@ -305,7 +305,7 @@ msgstr "متن برای جستجوی اختصاصی دارد."
 
 #. Translators: Presented when the current document has a temporary bookmark.
 msgid "Has temporary bookmark."
-msgstr "نشانِ موقتی دارد."
+msgstr "نشانکِ موقتی دارد."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
@@ -314,16 +314,16 @@ msgstr "فایلِ %s"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
-msgstr "موقعیتِ فعلی را به عنوان نشانِ موقت ذخیره میکند."
+msgstr "موقعیتِ فعلی را به عنوان نشانکِ موقت ذخیره میکند."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
 msgid "Saved temporary bookmark at position %d"
-msgstr "نشانِ موقتی در موقعیت %d ذخیره شد"
+msgstr "نشانکِ موقتی در موقعیت %d ذخیره شد"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr "به نشانِ موقتی برای سندِ فعلی میرود."
+msgstr "به نشانکِ موقتی برای سندِ فعلی میرود."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -342,10 +342,10 @@ msgstr "افزونه‌ای برای تنظیمِ نشان‌گذاری‌ها �
 #~ msgstr "اسمِ فایلِ نشان‌گذاری‌ها در کلیپ‌برد کپی شد"
 
 #~ msgid "Bookmark cannot be saved"
-#~ msgstr "نشان ذخیره نشد"
+#~ msgstr "نشانک ذخیره نشد"
 
 #~ msgid "Bookmark cannot be deleted"
-#~ msgstr "نشان پاک نمیشود"
+#~ msgstr "نشانک پاک نمیشود"
 
 #~ msgid "Cannot find any bookmarks"
-#~ msgstr "نمیتوانم نشانی پیدا کنم"
+#~ msgstr "نمیتوانم نشانکی پیدا کنم"
