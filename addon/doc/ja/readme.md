@@ -36,6 +36,10 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Changes for 21.0
 * Bookmarks can be saved with UIA enabled in browsers based on Chromium,
   thanks to Abdel.
@@ -56,6 +60,7 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
+
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
 * If needed, you can download [other

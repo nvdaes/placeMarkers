@@ -67,6 +67,10 @@ Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
 marcadores.
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Changes for 21.0
 * Bookmarks can be saved with UIA enabled in browsers based on Chromium,
   thanks to Abdel.
@@ -87,6 +91,7 @@ marcadores.
 * Fixed translated strings making translations to work properly.
 
 ## Mudanças na 16.0 ##
+
 * Compatível com o NVDA 2021.1 ou posterior (requerido).
 * A leitura dinâmica é suportada ao mover para marcadores temporários.
 * If needed, you can download [other

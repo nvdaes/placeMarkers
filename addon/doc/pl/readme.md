@@ -63,6 +63,10 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Changes for 21.0
 * Bookmarks can be saved with UIA enabled in browsers based on Chromium,
   thanks to Abdel.
@@ -85,6 +89,7 @@ określone miejsce.
   poprawnie.
 
 ## Zmiany w wersji 16.0 ##
+
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
 * If needed, you can download [other
