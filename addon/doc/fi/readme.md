@@ -63,6 +63,10 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Muutokset versiossa 21.0
 * Paikkamerkkejä voidaan tallentaa Chromium-pohjaisissa selaimissa, joissa
   on käytössä UIA (kiitos Abdelille).
@@ -84,10 +88,11 @@ paikkamerkkien asemesta sivukohtaista hakua.
 * Käännettävät merkkijonot korjattu, mikä saa käännökset toimimaan oikein.
 
 ## Muutokset versiossa 16.0 ##
+
 * Yhteensopiva NVDA 2021.1:n tai uudemman kanssa (vaaditaan).
 * Pikalukua tuetaan tilapäisiin paikkamerkkeihin siirryttäessä.
-* Tarvittaessa voit ladata [muita
-  versioita](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Muutokset versiossa 15.0 ##
 * Sivukohtaiset Etsi seuraava ja Etsi edellinen -komennot eivät enää pysäytä

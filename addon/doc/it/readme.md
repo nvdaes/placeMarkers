@@ -74,6 +74,10 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Novità nella versione 21.0
 * I segnalibri possono essere salvati con UIA abilitato nei browser basati
   su Chromium, grazie al contributo di Abdel.
@@ -95,11 +99,12 @@ non i segnaposto, per salvare una posizione precisa.
 * Risolto il problema con le stringhe per tradurre correttamente.
 
 ## Changes per la  16.0 ##
+
 * Compatibile con NVDA 2021.1 o superiore (richiesto).
 * supporto alla lettura rapida nella navigazione con i  segnaposto
   temporanei.
-* Se necessario, puoi scaricare [versioni
-  precedenti](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Novità nella versione 15.0 ##
 * Quando si usa il comando "dire tutto" (NVDA+freccia giù) in modalità

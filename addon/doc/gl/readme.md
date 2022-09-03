@@ -62,6 +62,10 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Changes for 21.0
 * Bookmarks can be saved with UIA enabled in browsers based on Chromium,
   thanks to Abdel.
@@ -84,6 +88,7 @@ marcas.
   traducións.
 
 ## Cambios para 16.0 ##
+
 * Compatible co NVDA 2021.1 ou posterior (requerido).
 * Sopórtase a lectura superficial ao moverse a unha marca temporal.
 * If needed, you can download [other

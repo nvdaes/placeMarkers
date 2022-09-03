@@ -1,19 +1,22 @@
 # Lesezeichen #
 
-* Autoren: Noelia, Chris.
+* Autoren: Noelia und Chris
 * [Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
 * [Entwicklerversion herunterladen][2] (kompatibel mit NVDA 2022.1 und
   neuer)
 
-Mit dieser Erweiterung können Sie innerhalb des Lesemodus von NVDA
-Suchanfragen oder Lesezeichen speichern Bzw. Suchläufe durchführen. Die
-Erweiterung kann auch dazu verwendet werden, Suchanfragen in mehrzeiligen
-Elementen zu starten und zu speichern. Wenn der Cursor nicht an die
-Fundposition gezogen werden kann, wird die Stelle in die Zwischenablage
-kopiert, sodass Sie den Text mittels anderer Tools suchen können. Die
-Lesezeichen und Suchanfragen werden dabei in Text- und «pickle»-Dateien
-gespeichert. Die Namen der Dateien richten sich dabei nach den Titeln und
-URLs der angezeigten Dokumente.
+Diese Erweiterung dient zum Speichern und Suchen von bestimmten
+Textzeichenfolgen oder Lesezeichen. Es kann auf Webseiten oder Dokumenten im
+Lesemodus von NVDA verwendet werden. Es kann auch zum Speichern oder
+Durchsuchen von Textstrings in mehrzeiligen Steuerelementen verwendet
+werden; wenn es in diesem Fall nicht möglich ist, den Cursor zu
+aktualisieren, wird der entsprechende String in die Zwischenablage kopiert,
+so dass er mit anderen Tools durchsucht werden kann. Dabei werden die
+angegebenen Zeichenketten und Lesezeichen in Dateien gespeichert, deren Name
+auf dem Titel und der URL des aktuellen Dokuments basiert. Diese Erweiterung
+basiert auf SpecificSearch und Bookmark&Search, die von demselben Autor
+entwickelt wurden. Sie sollten diese deinstallieren, um diese Erweiterung zu
+verwenden, da sie gemeinsame Tastenkombinationen und Funktionen haben.
 
 ## Tastenkombinationen: ##
 
@@ -67,6 +70,10 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Änderungen in 22.0
+* Es können Lesezeichen verschoben und gelöscht werden, wenn UIA aktiviert
+  ist, dank Abdel.
+
 ## Änderungen in 21.0
 * Dank Abdel können Lesezeichen mit aktivierter UIA in Browsern, die auf
   Chromium basieren, gespeichert werden.
@@ -89,10 +96,11 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
   funktionieren.
 
 ## Änderungen in 16.0 ##
+
 * Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
 * Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
-* Bei Bedarf können Sie [andere Versionen] herunterladen
-  (https://github.com/nvdaes/placeMarkers/releases).
+* Falls benötigt, können Sie [andere
+  Versionen](https://github.com/nvdaes/placeMarkers/releases) downloaden.
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die

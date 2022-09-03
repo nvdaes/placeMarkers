@@ -66,6 +66,10 @@ Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
 
+## Cambios para 22.0
+* Podemos desplazarnos a  los marcadores y eliminarlos con UIA activada,
+  gracias a Abdel.
+
 ## Cambios para 21.0
 * Se pueden guardar marcadores con UIA activada en navegadores basados en
   Chromium, gracias a Abdel.
@@ -88,6 +92,7 @@ y no las marcas.
   adecuadamente.
 
 ## Cambios para 16.0 ##
+
 * Compatible con NVDA 2021.1 o posterior (requerido).
 * Se soporta la lectura superficial al desplazarse a marcadores temporales.
 * Si es necesario, puedes descargar [otras

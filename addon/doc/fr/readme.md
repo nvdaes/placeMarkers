@@ -70,6 +70,10 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Changes for 21.0
 * Bookmarks can be saved with UIA enabled in browsers based on Chromium,
   thanks to Abdel.
@@ -90,6 +94,7 @@ spécifique, pas les marqueurs.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
+
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
 * If needed, you can download [other

@@ -34,6 +34,10 @@
 
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
 
+## Changes for 22.0
+* We can move to bookmarks and delete them with UIA enabled, thanks to
+  Abdel.
+
 ## Changes for 21.0
 * Bookmarks can be saved with UIA enabled in browsers based on Chromium,
   thanks to Abdel.
@@ -52,6 +56,7 @@
 * 修正了翻译字符串，使翻译能够正常工作。
 
 ## 版本16.0 ##
+
 * 兼容 NVDA 2021.1或更高版本（必需）。兼容NVDA 2018.3或更高版本（必需）。
 * 移动到临时书签时支持略读。
 * If needed, you can download [other
