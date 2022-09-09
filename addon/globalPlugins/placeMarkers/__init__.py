@@ -1116,7 +1116,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		if (
 			isinstance(obj, chromium.ChromiumUIATreeInterceptor)
-			or isinstance (obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
+			or isinstance(obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
 		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
@@ -1169,7 +1169,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		if (
 			isinstance(obj, chromium.ChromiumUIATreeInterceptor)
-			or isinstance (obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
+			or isinstance(obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
 		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
