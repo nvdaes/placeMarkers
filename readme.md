@@ -34,6 +34,9 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
 
+## Changes for 23.0
+* The add-on works again with Microsoft Word.
+
 ## Changes for 22.0
 * We can move to bookmarks and delete them with UIA enabled, thanks to Abdel.
 
