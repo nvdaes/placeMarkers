@@ -253,7 +253,10 @@ def moveToBookmark(position):
 	treeInterceptor = obj.treeInterceptor
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
-		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+		if (
+			isinstance(obj, chromium.ChromiumUIATreeInterceptor)
+			or isinstance(obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
+		):
 			goToUIABookmark(obj, position)
 		else:
 			goToNonUIABookmark(obj, position)
@@ -287,7 +290,10 @@ def getFile(folder, ext=""):
 		if rootObj and treeInterceptor and isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
 			uia = True
 			val = rootObj.UIAValuePattern.CurrentValue
-		nameToAdd = " - %s" % val.split("#")[0].split("/")[-1].split("\\")[-1]
+		try:
+			nameToAdd = " - %s" % val.split("#")[0].split("/")[-1].split("\\")[-1]
+		except Exception:
+			nameToAdd = ""
 	else:
 		nameToAdd = ""
 	file = file.rsplit(" - ", 1)[0]
@@ -986,7 +992,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			gesture.send()
 			return
 		# Code for UIA provided by Abdel(@abdel792)
-		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
+		if (
+			isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor)
+			or isinstance(treeInterceptor, UIAHandler.browseMode.UIADocumentWithTableNavigation)
+		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
 			first.setEndPoint(cur, "endToStart")
@@ -1105,7 +1114,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+		if (
+			isinstance(obj, chromium.ChromiumUIATreeInterceptor)
+			or isinstance (obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
+		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
 			first.setEndPoint(cur, "endToStart")
@@ -1155,7 +1167,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				_("No bookmarks found")
 			)
 			return
-		if isinstance(obj, chromium.ChromiumUIATreeInterceptor):
+		if (
+			isinstance(obj, chromium.ChromiumUIATreeInterceptor)
+			or isinstance (obj, UIAHandler.browseMode.UIADocumentWithTableNavigation)
+		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
 			first.setEndPoint(cur, "endToStart")
