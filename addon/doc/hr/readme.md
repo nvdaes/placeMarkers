@@ -65,9 +65,8 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## Promjene u verziji 22.0
+* Oznake se mogu premjestiti i izbrisati s UIA-om, zahvaljujući Abdelu.
 
 ## Promjene u verziji 21.0
 * Oznake se mogu spremati s uključenim UIA-om u preglednicima koji se
@@ -92,8 +91,8 @@ oznake.
 
 * Kompatibilno s NVDA 2021.1 i novijim verzijama (obavezno).
 * Brzo čitanje je podržano prilikom prelaska na privremene oznake.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Ako je potrebno, možeš preuzeti [druge
+  verzije](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Promjene u verziji 15.0 ##
 * When reading with say all in browse mode, the specific find next and
