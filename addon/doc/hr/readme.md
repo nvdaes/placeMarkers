@@ -65,6 +65,9 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
+## Promjene u verziji 23.0
+* Dodatak ponovo radi s Microsoft Wordom.
+
 ## Promjene u verziji 22.0
 * Oznake se mogu premjestiti i izbrisati s UIA-om, zahvaljujući Abdelu.
 
@@ -88,7 +91,6 @@ oznake.
 * Fixed translated strings making translations to work properly.
 
 ## Promjene u verziji 16.0 ##
-
 * Kompatibilno s NVDA 2021.1 i novijim verzijama (obavezno).
 * Brzo čitanje je podržano prilikom prelaska na privremene oznake.
 * Ako je potrebno, možeš preuzeti [druge

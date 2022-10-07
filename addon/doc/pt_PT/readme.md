@@ -64,6 +64,9 @@ aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
 
+## Changes for 23.0
+* The add-on works again with Microsoft Word.
+
 ## Changes for 22.0
 * We can move to bookmarks and delete them with UIA enabled, thanks to
   Abdel.
@@ -88,7 +91,6 @@ em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores
 * Fixed translated strings making translations to work properly.
 
 ## Alterações para 16.0 ##
-
 * Compatibilidade com o NVDA 2021.1 ou superiores (obrigatório).
 * A leitura rápida é suportada quando se muda para os marcadores
   temporários.
