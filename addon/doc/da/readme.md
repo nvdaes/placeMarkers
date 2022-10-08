@@ -63,6 +63,9 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
+## Changes for 23.0
+* The add-on works again with Microsoft Word.
+
 ## Changes for 22.0
 * We can move to bookmarks and delete them with UIA enabled, thanks to
   Abdel.
@@ -87,7 +90,6 @@ bogmærker, som gemmer en præcis position.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
 * If needed, you can download [other

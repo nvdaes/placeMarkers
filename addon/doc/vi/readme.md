@@ -59,6 +59,9 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
 
+## Changes for 23.0
+* The add-on works again with Microsoft Word.
+
 ## Changes for 22.0
 * We can move to bookmarks and delete them with UIA enabled, thanks to
   Abdel.
@@ -83,7 +86,6 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 * Fixed translated strings making translations to work properly.
 
 ## Các thay đổi cho phiên bản 16.0 ##
-
 * Tương thích với NVDA 2021.1 trở lên (yêu cầu).
 * Đã hỗ trợ thay đổi vị trí đọc khi di chuyển đến dấu trang tạm thời.
 * If needed, you can download [other

@@ -63,6 +63,9 @@ Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
 
+## Changes for 23.0
+* The add-on works again with Microsoft Word.
+
 ## Changes for 22.0
 * We can move to bookmarks and delete them with UIA enabled, thanks to
   Abdel.
@@ -87,7 +90,6 @@ specifică, și nu marcajele care economisesc o poziție precisă.
 * Fixed translated strings making translations to work properly.
 
 ## Changes for 16.0 ##
-
 * Compatible with NVDA 2021.1 or later (required).
 * Skim reading is supported when moving to temporary bookmarks.
 * If needed, you can download [other

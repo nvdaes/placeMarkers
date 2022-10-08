@@ -1,6 +1,6 @@
 # Lesezeichen #
 
-* Autoren: Noelia und Chris
+* Autoren: Noelia und Chris.
 * [Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
 * [Entwicklerversion herunterladen][2] (kompatibel mit NVDA 2022.1 und
   neuer)
@@ -70,6 +70,9 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Änderungen in 23.0
+* Die Erweiterung funktioniert wieder mit Microsoft Word.
+
 ## Änderungen in 22.0
 * Es können Lesezeichen verschoben und gelöscht werden, wenn UIA aktiviert
   ist, dank Abdel.
@@ -96,11 +99,10 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
   funktionieren.
 
 ## Änderungen in 16.0 ##
-
 * Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
 * Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
-* Falls benötigt, können Sie [andere
-  Versionen](https://github.com/nvdaes/placeMarkers/releases) downloaden.
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die

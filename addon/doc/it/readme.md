@@ -74,6 +74,9 @@ Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
 
+## Changes for 23.0
+* The add-on works again with Microsoft Word.
+
 ## Changes for 22.0
 * We can move to bookmarks and delete them with UIA enabled, thanks to
   Abdel.
@@ -99,7 +102,6 @@ non i segnaposto, per salvare una posizione precisa.
 * Risolto il problema con le stringhe per tradurre correttamente.
 
 ## Changes per la  16.0 ##
-
 * Compatibile con NVDA 2021.1 o superiore (richiesto).
 * supporto alla lettura rapida nella navigazione con i  segnaposto
   temporanei.

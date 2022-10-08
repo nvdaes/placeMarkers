@@ -63,6 +63,9 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
+## Muutokset versiossa 23.0
+* Lisäosa toimii jälleen Microsoft Wordin kanssa.
+
 ## Muutokset versiossa 22.0
 * Paikkamerkkeihin on mahdollista siirtyä ja niitä voidaan poistaa, kun UIA
   on käytössä (kiitos Abdelille).
@@ -88,7 +91,6 @@ paikkamerkkien asemesta sivukohtaista hakua.
 * Käännettävät merkkijonot korjattu, mikä saa käännökset toimimaan oikein.
 
 ## Muutokset versiossa 16.0 ##
-
 * Yhteensopiva NVDA 2021.1:n tai uudemman kanssa (vaaditaan).
 * Pikalukua tuetaan tilapäisiin paikkamerkkeihin siirryttäessä.
 * Tarvittaessa voit ladata [muita

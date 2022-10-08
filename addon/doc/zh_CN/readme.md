@@ -34,13 +34,14 @@
 
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## 版本23.0
+* 恢复对 Word 的支持。
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## 版本22.0
+* 感谢 Abdel，插件目前支持在启用 UIA 的情况下移动到书签，删除书签。
+
+## 版本21.0
+* 感谢 Abdel，在基于 Chromium 的浏览器中启用 UIA 的情况下，支持保存书签。
 
 ## 版本20.0
 * 需要NVDA 2022.1 或更高版本。
@@ -56,11 +57,9 @@
 * 修正了翻译字符串，使翻译能够正常工作。
 
 ## 版本16.0 ##
-
 * 兼容 NVDA 2021.1或更高版本（必需）。兼容NVDA 2018.3或更高版本（必需）。
 * 移动到临时书签时支持略读。
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* 如果需要，您可以下载[其他版本](https://github.com/nvdaes/placeMarkers/releases)。
 
 ## 版本15.0 ##
 * 在浏览模式下使用全文朗读进行阅读时，根据 NVDA 2020.4
