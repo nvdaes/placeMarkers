@@ -1,8 +1,8 @@
 # placeMarkers (Stedmærker) #
 
 * Forfattere: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
+* Download [stabil version][1] (kompatibel med NVDA 2022.1 og nyere)
+* Download [udviklingsversion][2] (kompatibel med NVDA 2022.1 og nyere)
 
 Dette tilføjelsesprogram bruges til at gemme og søge efter bestemte
 tekststrenge på websider eller i dokumenter, som understøtter NVDAs
@@ -63,45 +63,45 @@ Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## Ændringer for 23.0
+* Tilføjelsen fungerer igen med Microsoft Word.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
+## Ændringer for 22.0
+* Vi kan flytte til bogmærker og slette dem med UIA aktiveret, takket være
   Abdel.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Ændringer for 21.0
+* Bogmærker kan gemmes med UIA aktiveret i browsere baseret på Chromium,
+  takket være Abdel.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Ændringer for 20.0
+* Kræver NVDA 2022.1 eller nyere.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Ændringer for 19.0 ##
+* Tilføjelsen kan ikke køres på sikre skærme.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Ændringer for 18.0 ##
+* Kommandoen til at se stien til stedsmarkører viser, om der er permanente
+  bogmærker, tekst til specifik søgning eller et midlertidigt bogmærke for
+  det aktuelle dokument.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Ændringer for 17.0 ##
+* Rettede en fejl, som ikke tillod at gemme stedsmarkører i nogle
+  dokumenter.
+* Rettede oversatte strenge, der fik oversættelser til at fungere korrekt.
 
-## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+## Ændringer for 16.0 ##
+* Kompatibel med NVDA 2021.1 eller nyere (påkrævet).
+* Skimlæsning understøttes, når du flytter til midlertidige bogmærker.
+* Hvis det er nødvendigt, kan du downloade [andre
+  versioner](https://github.com/nvdaes/placeMarkers/releases).
 
-## Changes for 15.0 ##
-* When reading with say all in browse mode, the specific find next and
-  specific find previous commands do not stop reading anymore if Allow skim
-  reading option is enabled, according to find next and find previous
-  commands from NVDA 2020.4.
-* When the Specific search dialog is opened after running the Specific find
-  previous command, the Search previous option will be selected.
+## Ændringer for 15.0 ##
+* Når du læser med sig alt i gennemsynstilstand, stopper kommandoerne til
+  "find forrige" og "find næste" ikke længere med at læse, hvis
+  indstillingen "Tillad skimlæsning" er aktiveret.
+* Når dialogboksen Specifik søgning åbnes efter at have kørt kommandoen
+  Specifik find forrige, vil indstillingen Søg forrige blive valgt.
 
 ## Ændringer for 14.0 ##
 *	Kommandoen til at kopiere navnet på filen, hvor stedmarkeringsdataene
