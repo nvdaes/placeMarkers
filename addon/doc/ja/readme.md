@@ -1,12 +1,12 @@
 # placeMarkers #
 
 * 作者: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
+* ダウンロード [安定版][1] (NVDA 2022.1以降に互換)
+* ダウンロード [開発版][2] (NVDA 2022.1以降に互換)
 
 このアドオンは、特定の文字列やブックマークを保存して検索するのに使用されます。これはWebページまたはNVDAのブラウズモードのドキュメントに使用出来ます。また、複数行のコントロール中のテキストを保存したり検索したりするのに使用出来ます。この場合、キャレットを更新出来ない場合は、対応する文字列がクリップボードにコピーされ、他のツールを使用して検索出来るようになります。このプラグインは特定の文字列とブックマークを、そのドキュメントのタイトルとURLに基づいて付けられた名前のファイルに保存します。このアドオンは、同じ作者により開発された、SpecificSearchとBookmard&Searchに基づいています。よって、このアドオンを使用するには、これらをアンインストールしなければなりません。共通のショートカットキーと機能があるからです。
 
-## キー操作: ##
+## キーコマンド: ##
 
 *	control+shift+NVDA+f:
   最後に保存された検索のエディットボックスのあるダイアログを開きます。このダイアログでは以前に保存した検索をコンボボックスから選択したり、選択した文字列をチェックボックスを使用して履歴から削除したり出来ます。エディットボックスに含まれる文字列を、保存した文字列の履歴に追加するかどうかを選択出来ます。最後に、次の組のラジオボタンから、動作を選択します（次を検索、前を検索、または検索しない）。OKを押すと、NVDAはその文字列を探します。
@@ -26,7 +26,7 @@
 
 ## プレイスマーカーのサブメニュー(NVDA+N) ##
 
-NVDAの設定メニュー下の、Place Markersのサブメニューを利用して、次の物にアクセス出来ます。
+NVDAの設定メニュー下の、Place Markersのサブメニューを利用して、次の物にアクセス出来ます:
 
 *	検索保存フォルダー: 検索保存フォルダーを開きます。
 *	ブックマークフォルダー: 保存したブックマークのフォルダーを開きます。
@@ -36,45 +36,37 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## 23.0の変更点
+* このアドオンが再びMicrosoft Wordで動作するようになりました。
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## 22.0の変更点
+* ブックマークに移動し、有効化されたUIAから削除出来るようになりました。Abdelのおかげです。
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## 21.0の変更点
+* Chromiumベースのブラウザで有効化されたUIAで、ブックマークを保存出来るようになりました。Abdelのおかげです。
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## 20.0の変更点
+* NVDA 2022.1以降が必要です。
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## 19.0の変更点 ##
+* アドオンがセキュア画面で動作不能になりました。
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## 18.0の変更点 ##
+* placeMakerのパスを見るコマンドが、永久的なブックマークか、特定の検索の単語か、現在のドキュメントの一時的なブックマークかを表示するようになりました。
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## バージョン 17.0 ##
+* 一部のドキュメントでplace markerを保存出来ないバグを修正しました。
+* 翻訳が適切に動作するように、翻訳された文字列を修正しました。
 
-## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+## バージョン 16.0 ##
+* NVDA 2021.1以降に互換(必要)。
+* 一時的なブックマークに移動する時に、流し読みをサポートするようになりました。
+* もし必要であれば、[他のバージョン](https://github.com/nvdaes/placeMarkers/releases)をダウンロード出来ます。
 
-## Changes for 15.0 ##
-* When reading with say all in browse mode, the specific find next and
-  specific find previous commands do not stop reading anymore if Allow skim
-  reading option is enabled, according to find next and find previous
-  commands from NVDA 2020.4.
-* When the Specific search dialog is opened after running the Specific find
-  previous command, the Search previous option will be selected.
+## 15.0の変更点 ##
+* NVDA
+  2020.4からの次を検索および前を検索コマンドに従い、ブラウズモードで全て読み上げで読み上げている時、流し読みの選択肢が有効化されていると、特定の次を検索および特定の前を検索コマンドにより、読み上げが停止しなくなりました。
+* 特定の前を検索コマンドを実行後に特定の検索ダイアログが開いている時、前の選択肢を検索が選択されるようになりました。
 
 ## 14.0の変更点 ##
 *	place
@@ -96,7 +88,7 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 
 ## 11.0の変更点 ##
 *	NVDA 2018.3以降に互換します。（2018.3以降が必要）
-*	必要な場合は、NVDA 2017.3に互換する最後のバージョン[3]もダウンロード出来ます。
+*	必要な場合は、[NVDA 2017.3に互換する最後のバージョン][3]もダウンロード出来ます。
 
 ## 10.0の変更点 ##
 *	Edgeでは、ブックマーク選択に関するジェスチャー、NVDA+k、NVDA+shift+kまたはNVDA+alt+kは、カーソルをブックマークに移動する代わりに、アプリケーションに送られます。これは、特に長いドキュメントにおいて、エラーを避けるためです。
@@ -125,30 +117,30 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 * ジェスチャーに対応するアドオンの機能が使用出来ない場合、そのジェスチャーは対応するアプリケーションに送られるようになりました。
 
 ## 5.0の変更点 ##
-* 大文字と小文字を区別した検索が追加されました
-* プレイスマーカーのメニューから、説明を開く項目を削除しました
-* より直観的なキーコマンドになりました
+* 大文字と小文字を区別した検索が追加されました。
+* プレイスマーカーのメニューから、説明を開く項目を削除しました。
+* より直観的なキーコマンドになりました。
 
 ## 4.0の変更点 ##
-* FirefoxのePUBREADERアドオンでの問題を避けるため、ブックマークのファイル名から、部分識別子を削除しました
-* アドオン　ヘルプはアドオン　マネージャーから使用可能になりました
+* FirefoxのePUBREADERアドオンでの問題を避けるため、ブックマークのファイル名から、部分識別子を削除しました。
+* アドオンヘルプはアドオンマネージャーから使用可能になりました。
 
 ## 3.1の変更点 ##
-* 翻訳の更新と新しい言語
-* 流し読みでブックマーク位置が通知されないようになりました
+* 翻訳の更新と新しい言語。
+* 流し読みでブックマーク位置が通知されないようになりました。
 
 ## 3.0の変更点 ##
-* 流し読みのサポートが追加されました
+* 流し読みのサポートが追加されました。
 
 ## 2.0の変更点 ##
-* それぞれの検索を、別々のファイルに保存と削除をする選択肢が追加されました
-* ラテン文字以外の文字がパスに入っている場合に起きる不具合が修正されました
-* NVDAジェスチャー入力ダイアログを使用して、ショートカットを再設定できるようになりました
+* それぞれの検索を、別々のファイルに保存と削除をする選択肢が追加されました。
+* ラテン文字以外の文字がパスに入っている場合に起きる不具合が修正されました。
+* NVDAジェスチャー入力ダイアログを使用して、ショートカットを再設定できるようになりました。
 
-## バージョン 1.0 ##
-* 最初のバージョン
+## 1.0の変更点 ##
+* 最初のバージョン。
 * 次の言語に翻訳されました:
-  ブラジルポルトガル語、ファルシ(ペルシア)語、フィンランド語、フランス語、ガリシア語、ドイツ語、イタリア語、日本語、韓国語、ネパール語、ポルトガル語、スペイン語、スロバキア語、スロベニア語、タミル語
+  ブラジルポルトガル語、ファルシ(ペルシア)語、フィンランド語、フランス語、ガリシア語、ドイツ語、イタリア語、日本語、韓国語、ネパール語、ポルトガル語、スペイン語、スロバキア語、スロベニア語、タミル語。
 
 [[!tag dev stable]]
 
