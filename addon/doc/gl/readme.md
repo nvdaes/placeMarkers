@@ -1,8 +1,9 @@
 # placeMarkers #
 
 * Autores: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
+* descargar [versión estable][1] (compatible con NVDA 2022.1 e posterior)
+* Descargar [versión de desenvolvemento][2] (compatible con NVDA 2022.1 en
+  diante)
 
 Este complemento úsase para gardar e restaurar cadeas de texto específicas
 ou marcas. Pode usarse en páxinas web ou en documentos no modo exploración
@@ -62,19 +63,19 @@ Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## Cambios para 23.0
+* O complemento volve a funcionar con Microsoft Word.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
+## Cambios para 22.0
+* Podemos movernos a marcadores e eliminalos con UIA activado, grazas a
   Abdel.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Cambios para 21.0
+* Pódense gardar os marcadores con UIA activado en navegadores baseados en
+  Chromium, grazas a Abdel.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Cambios para 20.0
+* Require NVDA 2022.1 ou posterior.
 
 ## Cambios para 19.0 ##
 * O complemento non se pode executar en pantallas seguras.
@@ -93,8 +94,8 @@ marcas.
 ## Cambios para 16.0 ##
 * Compatible co NVDA 2021.1 ou posterior (requerido).
 * Sopórtase a lectura superficial ao moverse a unha marca temporal.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Se o precisas, podes descargar [outras
+  versións](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Cambios para 15.0 ##
 * Ó ler con ler todo en modo exploración, os atallos específico buscar
