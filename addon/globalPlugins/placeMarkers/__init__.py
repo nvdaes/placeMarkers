@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-# Copyright (C) 2012-2022 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2023 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 # UIA support added by Abdel in 2022
