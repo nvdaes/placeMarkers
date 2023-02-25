@@ -11,12 +11,12 @@ This addon is based on SpecificSearch and Bookmark&Search, developed by the same
 ## Key Commands: ##
 
 *	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box or remove the selected string from the history using a checkbox. You can choose if the text contained in the edit box will be added to the history of your saved texts. Finally, choose an action from the next group of radio buttons (between Search next, Search previous or Don't search), and specify if NVDA will make a case sensitive search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Saves the current position as a bookmark. If you want to provide a name for this bookmark, select some text from this position before saving it.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you want to provide a name for this bookmark, select some text from this position before saving it.
 *	control+shift+NVDA+delete: Deletes the bookmark corresponding to this position.
-*	NVDA+k: Moves to the next bookmark.
-*	shift+NVDA+k: Moves to the previous bookmark.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Not assigned: Shows the file name where the place markers data will be saved in browse mode, without an extension.
-*	alt+NVDA+k: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing Delete you can remove the selected bookmark. Pressing OK you can move to the selected position.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You can write a note for each bookmark; press Save note to save changes. Pressing Delete you can remove the selected bookmark. Pressing OK you can move to the selected position.
 *	Not assigned: Saves a position as a temporary bookmark.
 *	Not assigned: Moves to the temporary bookmark for the current document.
 *	Not assigned: Finds the next occurrence of the last text searched for any specific document.
@@ -33,6 +33,10 @@ Using the Place markers submenu under NVDA's Preferences menu, you can access:
 *	Restore placeMarkers: You can restore your bookmarks from a previously saved placeMarkers folder.
 
 Note: The bookmark position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not bookmarks.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k, NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Changes for 23.0
 * The add-on works again with Microsoft Word.
