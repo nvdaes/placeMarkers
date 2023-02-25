@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-# Copyright (C) 2012-2022 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2023 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 # UIA support added by Abdel in 2022
@@ -957,7 +957,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("Show the Notes dialog for a specific document."),
-		gesture="kb:NVDA+alt+k"
+		gesture="kb:NVDA+alt+y"
 	)
 	def script_activateNotesDialog(self, gesture):
 		obj = api.getFocusObject()
@@ -977,7 +977,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("Saves the current position as a bookmark."),
-		gesture="kb:NVDA+control+shift+k"
+		gesture="kb:NVDA+control+shift+y"
 	)
 	def script_saveBookmark(self, gesture):
 		obj = api.getFocusObject()
@@ -1093,7 +1093,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("Moves to the next bookmark."),
 		resumeSayAllMode=sayAll.CURSOR.CARET,
-		gesture="kb:NVDA+k"
+		gesture="kb:NVDA+y"
 	)
 	def script_selectNextBookmark(self, gesture):
 		obj = api.getFocusObject()
@@ -1146,7 +1146,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 		description=_("Moves to the previous bookmark."),
 		resumeSayAllMode=sayAll.CURSOR.CARET,
-		gesture="kb:NVDA+shift+k"
+		gesture="kb:NVDA+shift+y"
 	)
 	def script_selectPreviousBookmark(self, gesture):
 		obj = api.getFocusObject()
