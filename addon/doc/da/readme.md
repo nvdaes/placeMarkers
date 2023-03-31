@@ -2,7 +2,6 @@
 
 * Forfattere: Noelia, Chris.
 * Download [stabil version][1] (kompatibel med NVDA 2022.1 og nyere)
-* Download [udviklingsversion][2] (kompatibel med NVDA 2022.1 og nyere)
 
 Dette tilføjelsesprogram bruges til at gemme og søge efter bestemte
 tekststrenge på websider eller i dokumenter, som understøtter NVDAs
@@ -216,8 +215,6 @@ bogmærker, som gemmer en præcis position.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

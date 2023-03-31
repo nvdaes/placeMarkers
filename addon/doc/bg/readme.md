@@ -3,8 +3,6 @@
 * Автори: Noelia, Chris.
 * Изтегляне на [стабилна версия][1] (съвместима с NVDA 2022.1 и по-нови
   версии)
-* Изтегляне на [тестова версия][2] (съвместима с NVDA 2022.1 и по-нови
-  версии)
 
 Тази добавка се използва за запазване и търсене на определен текст или
 маркер в уеб страници или други документи в режим на разглеждане с
@@ -225,8 +223,6 @@ Bookmark&Search, разработени от същия автор. Трябва
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

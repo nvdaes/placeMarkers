@@ -2,7 +2,6 @@
 
 * Tác giả: Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Addon này dùng để lưu lại và tìm kiếm một chuỗi văn bản hay dấu trang cụ
 thể. nó có thể được dùng trên các trang web hay tài liệu trong chế độ duyệt
@@ -202,8 +201,6 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

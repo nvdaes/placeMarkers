@@ -3,8 +3,6 @@
 * Autori: Noelia, Chris.
 * Scarica la  [versione stabile][1] (compatibile con NVDA 2022.1 e
   successive)
-* scarica la [versione in sviluppo][2] (compatibile con NVDA 2022.1 e
-  successive)
 
 Questo componente aggiuntivo è utilizzato per salvare e cercare segnaposto e
 stringhe di testo specifiche, sia nelle pagine web che in documenti,
@@ -231,8 +229,6 @@ non i segnaposto, per salvare una posizione precisa.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

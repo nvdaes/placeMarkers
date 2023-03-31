@@ -2,7 +2,6 @@
 
 * Auteurs : Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Cette extension sert à sauvegarder et rechercher des chaînes de caractères
 ou des marqueurs spécifiques sur des pages web ou des documents en Mode
@@ -228,8 +227,6 @@ spécifique, pas les marqueurs.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

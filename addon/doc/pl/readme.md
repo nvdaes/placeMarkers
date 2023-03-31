@@ -2,7 +2,6 @@
 
 * Autorzy: Noelia, Chris.
 * pobierz [stabilna wersja][1] (kompatybilna z NVDA 2022.1 i nowszymi)
-* pobierz [wersja rozwojowa][2] (kompatybilna z NVDA 2022.1 i nowszymi)
 
 Ten dodatek jest używany do zapisywania i wyszukiwania określonych ciągów
 tekstowych lub zakładek, na stronach internetowych lub dokumentach trybu
@@ -214,8 +213,6 @@ określone miejsce.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o
