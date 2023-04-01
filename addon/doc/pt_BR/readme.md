@@ -2,7 +2,6 @@
 
 * Autores: Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Este complemento é usado para salvar e pesquisar cadeias de texto ou
 marcadores específicos. Ele pode ser usado em páginas de Internet ou
@@ -221,8 +220,6 @@ marcadores.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

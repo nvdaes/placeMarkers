@@ -2,7 +2,6 @@
 
 * 作者: Noelia, Chris.
 * 下载[稳定版][1]（兼容NVDA 2022.1及更高版本）
-* 下载 [开发板][2]（兼容NVDA 2022.1及更高版本）
 
 此插件用于保存和搜索特定的文本字符串或书签。它可以在NVDA浏览模式下的网页或文档中使用。它也可以用于保存或搜索多行控件中的文本字符串;在这种情况下，如果不能更新插入符，相应的字符串将被复制到剪贴板，以便可以使用其他工具进行搜索。该插件将指定的字符串和书签保存到名称基于当前文档的标题和URL的文件中。该插件基于由同一作者开发的SpecificSearch和Bookmark＆Search插件。您应该卸载它们以使用当前的插件，因为它们具有常见的快捷键和功能。
 
@@ -138,8 +137,6 @@
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

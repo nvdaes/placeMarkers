@@ -2,7 +2,6 @@
 
 * 作者: Noelia, Chris.
 * ダウンロード [安定版][1] (NVDA 2022.1以降に互換)
-* ダウンロード [開発版][2] (NVDA 2022.1以降に互換)
 
 このアドオンは、特定の文字列やブックマークを保存して検索するのに使用されます。これはWebページまたはNVDAのブラウズモードのドキュメントに使用出来ます。また、複数行のコントロール中のテキストを保存したり検索したりするのに使用出来ます。この場合、キャレットを更新出来ない場合は、対応する文字列がクリップボードにコピーされ、他のツールを使用して検索出来るようになります。このプラグインは特定の文字列とブックマークを、そのドキュメントのタイトルとURLに基づいて付けられた名前のファイルに保存します。このアドオンは、同じ作者により開発された、SpecificSearchとBookmard&Searchに基づいています。よって、このアドオンを使用するには、これらをアンインストールしなければなりません。共通のショートカットキーと機能があるからです。
 
@@ -144,8 +143,6 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

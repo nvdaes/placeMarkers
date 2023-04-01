@@ -2,7 +2,6 @@
 
 * Tekijät: Noelia, Chris
 * Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
-* Lataa [kehitysversio][2] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
 
 Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
 paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
@@ -209,8 +208,6 @@ paikkamerkkien asemesta sivukohtaista hakua.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

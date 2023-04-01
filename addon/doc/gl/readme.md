@@ -2,8 +2,6 @@
 
 * Autores: Noelia, Chris.
 * descargar [versión estable][1] (compatible con NVDA 2022.1 e posterior)
-* Descargar [versión de desenvolvemento][2] (compatible con NVDA 2022.1 en
-  diante)
 
 Este complemento úsase para gardar e restaurar cadeas de texto específicas
 ou marcas. Pode usarse en páxinas web ou en documentos no modo exploración
@@ -217,8 +215,6 @@ marcas.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

@@ -2,7 +2,6 @@
 
 * Autori): Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 Doplnok dokáže uložiť reťazec pre vyhľadávanie, alebo konkrétne miesto v
 dokumente ako záložku. Funguje na webových stránkach a dokumentoch v režime
@@ -186,8 +185,6 @@ je lepšie použiť reťazce hľadania.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

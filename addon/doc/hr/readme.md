@@ -2,7 +2,6 @@
 
 * Autori: Noelia, Chris.
 * Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
-* Preuzmi [razvojnu verziju][2] (kompatibilna s NVDA 2022.1 i novijom)
 
 Ovaj se dodatak koristi za spremanje i pretraživanje određenih tekstualnih
 nizova ili knjižnih oznaka. Može se koristiti za web stranice ili za
@@ -212,8 +211,6 @@ oznake.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o

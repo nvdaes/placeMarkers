@@ -2,8 +2,6 @@
 
 * Autoren: Noelia und Chris.
 * [Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
-* [Entwicklerversion herunterladen][2] (kompatibel mit NVDA 2022.1 und
-  neuer)
 
 Diese Erweiterung dient zum Speichern und Suchen von bestimmten
 Textzeichenfolgen oder Lesezeichen. Es kann auf Webseiten oder Dokumenten im
@@ -231,8 +229,6 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=pm
-
-[2]: https://addons.nvda-project.org/files/get.php?file=pm-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=placeMarkers
 
 [3]: https://addons.nvda-project.org/files/get.php?file=pm-o
