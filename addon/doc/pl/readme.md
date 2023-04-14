@@ -62,16 +62,15 @@ Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## Zmiany w wersji 23.0
+* Dodatek działa ponownie z programem Microsoft Word.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## Zmiany w wersji 22.0
+* Możemy przejść do zakładek i usunąć je z włączonym UIA, dzięki Abdelowi.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Zmiany w wersji 21.0
+* Zakładki można zapisywać z włączonym UIA w przeglądarkach opartych na
+  Chromium, dzięki Abdelowi.
 
 ## Zmiany w wersji 20.0
 * Wymaga NVDA 2022.1 lub nowszego.
@@ -91,10 +90,11 @@ określone miejsce.
   poprawnie.
 
 ## Zmiany w wersji 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Kompatybilny z NVDA 2021.1 lub nowszym (wymagane).
+* Czytanie z tłuszczem jest obsługiwane podczas przechodzenia do zakładek
+  tymczasowych.
+* W razie potrzeby możesz pobrać [inne
+  wersje](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Zmiany w wersji 15.0 ##
 * Podczas czytania z powiedzmy wszystkim w trybie przeglądania, konkretne
