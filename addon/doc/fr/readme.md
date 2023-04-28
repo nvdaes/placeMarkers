@@ -1,7 +1,7 @@
 # placeMarkers #
 
 * Auteurs : Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* Télécharger [version stable][1] (compatible avec NVDA 2022.1 et au-delà)
 
 Cette extension sert à sauvegarder et rechercher des chaînes de caractères
 ou des marqueurs spécifiques sur des pages web ou des documents en Mode
@@ -69,36 +69,39 @@ Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## Changements pour la version 23.0
+* L'extension fonctionne à nouveau avec Microsoft Word.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## Changements pour la version 22.0
+* Nous pouvons passer aux marqueurs et les supprimer avec UIA activé, merci
+  à Abdel.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Changements pour la version 21.0
+* Les marqueurs peuvent être enregistrés avec UIA activés dans les
+  navigateurs basé sur Chromium, merci à Abdel.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Changements pour la version 20.0
+* Nécessite NVDA 2022 ou ultérieur.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Changements pour la version 19.0 ##
+* L'extension ne peut pas être exécuté sur des écrans sécurisés.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Changements pour la version 18.0 ##
+* La commande pour voir le chemin de placeMarkers affiche s'il y a des
+  marqueurs permanents, du texte pour une recherche spécifique ou un
+  marqueur temporaire pour le document actuel.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Changements pour la version 17.0 ##
+* Correction d'un bug qui ne permettait pas d'enregistrer les marqueurs dans
+  certains documents.
+* Correction des chaînes traduites faisant que les traductions fonctionnent
+  correctement.
 
-## Changes for 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
+## Changements pour la version 16.0 ##
+* Compatible avec NVDA 2021.1 ou version ultérieure (requis).
+* La lecture rapide est prise en charge lors du passage à des marqueurs
+  temporaires.
+* Si nécessaire, vous pouvez télécharger [d'autres
   versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Changements pour la version 15.0 ##
