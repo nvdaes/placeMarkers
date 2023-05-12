@@ -99,8 +99,9 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 ## Änderungen in 16.0 ##
 * Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
 * Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Falls gewünscht, können Sie
+  [hier](https://github.com/nvdaes/placeMarkers/releases) andere Versionen
+  herunterladen.
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die
