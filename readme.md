@@ -2,7 +2,6 @@
 
 * Authors: Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
-* download [development version][2] (compatible with NVDA 2022.1 and beyond)
 
 This addon is used for saving and searching specific text strings or bookmarks. It can be used  on web pages or documents in NVDA's browse mode. It can also be used for saving or searching strings of text in multi-line controls; in this case, if it's not possible to update the caret, the corresponding string will be copied to the clipboard, so that it can be searched using other tools.
 The plugin saves the specified strings and bookmarks to files whose name is based on the title and URL of the current document.
@@ -138,8 +137,6 @@ Note: The bookmark position is based on the number of characters; and therefore 
 * Initial version.
 * Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
 
-[1]: http://addons.nvda-project.org/files/get.php?file=pm
+[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
-[2]: http://addons.nvda-project.org/files/get.php?file=pm-dev
-
-[3]: http://addons.nvda-project.org/files/get.php?file=pm-o
+[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o
