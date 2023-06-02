@@ -26,19 +26,19 @@ teclas y características.
   del siguiente grupo de botones de opción (entre buscar siguiente, buscar
   anterior o no buscar), y especificar si NVDA hará una búsqueda sensible a
   las mayúsculas. Cuando pulses Aceptar, NVDA buscará esta cadena.
-*	control+shift+NVDA+k: guarda la posición actual como una marca. Si quieres
+*	control+shift+NVDA+y: guarda la posición actual como una marca. Si quieres
   proporcionar un nombre para esta marca, selecciona algún texto de esta
   posición antes de guardarla.
 *	control+shift+NVDA+suprimir: elimina la marca correspondiente a esta
   posición.
-*	NVDA+k: se mueve a la marca siguiente.
-*	shift+NVDA+k: se mueve a la marca anterior.
+*	NVDA+y: se mueve al siguiente marcador.
+*	shift+NVDA+y: se mueve al marcador anterior.
 *	Sin asignar: muestra el nombre del archivo donde se guardarán los datos de
   Place Markers en modo exploración, sin extensión.
-*	alt+NVDA+k: abre un diálogo con las marcas guardadas para este
+*	alt+NVDA+y: abre un diálogo con las marcas guardadas para este
   documento. Puedes escribir una nota para cada marca; pulsa Guardar Nota
-  para guardar cambios. Pulsando Aceptar puedes moverte a la posición
-  seleccionada.
+  para guardar cambios. Pulsando suprimir se elimina la nota
+  seleccionada. Pulsando Aceptar puedes moverte a la posición seleccionada.
 *	Sin asignar: guarda la posición actual como una marca temporal.
 *	Sin asignar: Se mueve a la marca temporal para el documento actual.
 *	Sin asignar: encuentra la siguiente coincidencia del último texto buscado
@@ -63,6 +63,11 @@ a:
 Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
+
+## Cambios para 24.0
+* Se usa Y en vez de K en gestos como NVDA+k, NVDA+shift+k, NVDA+alt+k y
+  NVDA+control+shift+k.
+* Compatible con NVDA 2023.1.
 
 ## Cambios para 23.0
 * El complemento funciona otra vez con Microsoft Word.

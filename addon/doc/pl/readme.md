@@ -23,19 +23,19 @@ dokumentu.
   (pomiędzy wyszukaj następny, wyszukaj poprzedni albo nie wyszukuj), i
   określić, czy NVDA ma zrwacać uwagę na wielkość liter. When you press
   okay, NVDA will search for this string.
-*	control+shift+NVDA+k: Zapisuje terażniejszą pozycję jako zakładkę. Jeżeli
-  chcesz nadać nazwę tej zakładce, zaznacz jakiś tekst z tej pozycji przed
-  zapisywaniem zakładki.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: Usuwa zakładkę, odnoszącą się do konkretnej
   pozycji.
-*	NVDA+k: Przemieszcza się do następującej zakładki.
-*	shift+NVDA+k: Przemieszcza się do poprzedniej zakładki.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Nieprzypisane: Wyświetla nazwę pliku, w którym dane znaczników miejsc
   zostaną zapisane w trybie przeglądania, bez rozszerzenia.
-*	alt+NVDA+k: Otwiera okno dialogowe z zakładkami zapisanymi dla tego
-  dokumentu. Możesz napisać notatkę dla każdej zakładki; naciśnij Zapisz
-  notatkę, aby zapisać zmiany. Naciskając Delete, możesz usunąć wybraną
-  zakładkę. Naciskając przycisk OK, można przejść do wybranej pozycji.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Nieprzypisane: Zapisuje pozycję jako tymczasową zakładkę.
 *	Nieprzypisane: Powoduje przejście do tymczasowej zakładki bieżącego
   dokumentu.
@@ -61,6 +61,11 @@ dostęp do:
 Uwaga: pozycja zakładki opiera się na ilości znaków; na stronach z
 dynamiczną treścią lepiej używać wyszukiwania , by precyzyjnie zapamiętać
 określone miejsce.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Zmiany w wersji 23.0
 * Dodatek działa ponownie z programem Microsoft Word.
@@ -90,11 +95,11 @@ określone miejsce.
   poprawnie.
 
 ## Zmiany w wersji 16.0 ##
-* Kompatybilny z NVDA 2021.1 lub nowszym (wymagane).
+* Compatible with NVDA 2021.1 or later (required).
 * Czytanie z tłuszczem jest obsługiwane podczas przechodzenia do zakładek
   tymczasowych.
-* W razie potrzeby możesz pobrać [inne
-  wersje](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Zmiany w wersji 15.0 ##
 * Podczas czytania z powiedzmy wszystkim w trybie przeglądania, konkretne

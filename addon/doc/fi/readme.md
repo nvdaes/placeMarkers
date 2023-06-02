@@ -25,19 +25,19 @@ ominaisuuksia.
   lopuksi toiminto seuraavasta valintapainikeryhmästä (Etsi seuraava, Etsi
   edellinen tai Ei hakua) ja määritä, suorittaako NVDA kirjainkoon
   huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
-*	Ctrl+Vaihto+NVDA+K: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
+*	Ctrl+Vaihto+NVDA+Y: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
   haluat antaa sille nimen, valitse sijainnista lyhyt tekstipätkä ennen
   paikkamerkin tallentamista.
 *	Ctrl+Vaihto+NVDA+Delete: Poistaa paikkamerkin nykyisestä sijainnista.
-*	NVDA+K: Siirtää seuraavaan paikkamerkkiin.
-*	Vaihto+NVDA+K: Siirtää edelliseen paikkamerkkiin.
+*	NVDA+Y: Siirtää seuraavaan paikkamerkkiin.
+*	Vaihto+NVDA+Y: Siirtää edelliseen paikkamerkkiin.
 *	Ei määritetty: Näyttää paikkamerkkitiedoston nimen selaustilassa ilman
   tarkennetta.
-*	Alt+NVDA+K: Avaa valintaikkunan, jossa näkyvät nykyiselle asiakirjalle
+*	Alt+NVDA+Y: Avaa valintaikkunan, jossa näkyvät nykyiselle asiakirjalle
   tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
-  muistiinpanon. Tallenna muutokset painamalla Tallenna muistiinpano. Voit
-  poistaa valitun paikkamerkin painamalla Delete. Siirry valittuun
-  sijaintiin painamalla OK.
+  muistiinpanon. Tallenna muutokset painamalla Tallenna muistiinpano
+  -painiketta. Voit poistaa valitun paikkamerkin painamalla
+  Del-näppäintä. Siirry valittuun sijaintiin painamalla OK.
 *	Ei määritetty: Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi.
 *	Ei määritetty: Siirtää tilapäiseen kirjanmerkkiin nykyisessä asiakirjassa.
 *	Ei määritetty: Etsii viimeksi haetun tekstin seuraavan esiintymän mistä
@@ -61,6 +61,11 @@ seuraavia toimintoja:
 Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
+
+## Muutokset versiossa 24.0
+* Sellaisissa näppäinkomennoissa kuin NVDA+K, NVDA+Vaihto+K, NVDA+Alt+K ja
+  NVDA+Ctrl+Vaihto+K käytetään K:n sijaan Y:tä.
+* Yhteensopiva NVDA 2023.1:n kanssa.
 
 ## Muutokset versiossa 23.0
 * Lisäosa toimii jälleen Microsoft Wordin kanssa.

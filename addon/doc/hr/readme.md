@@ -25,15 +25,15 @@ tipke i funkcije.
   odaberi radnju iz sljedeće grupe izbornih gumba (Traži sljedeću, Traži
   prethodnu ili Ne traži), te odredi osjetljivost na velika i mala slova
   tijekom pretrage. Pritiskom gumba „U redu”, NVDA će tražiti taj niz.
-*	kontrol+šift+NVDA+k: Sprema trenutačnu poziciju kao knjižnu oznaku. Ako
+*	kontrol+šift+NVDA+y: Sprema trenutačnu poziciju kao knjižnu oznaku. Ako
   toj knjižnoj oznaci želiš dodijeliti ime, odaberi neki tekst ove pozicije
   prije spremanja.
 *	kontrol+šift+NVDA+delete: Briše knjižnu oznaku koja odgovara ovoj
   poziciji.
-*	NVDA+k: Premješta se na sljedeću knjižnu oznaku.
-*	šift+NVDA+k: Premješta se na prethodnu knjižnu oznaku.
+*	NVDA+y: Premješta se na sljedeću knjižnu oznaku.
+*	šift+NVDA+y: Premješta se na prethodnu knjižnu oznaku.
 *	Nije dodijeljeno: Pokazuje naziv datoteke u modusu čitanja, bez nastavka.
-*	alt+NVDA+k: Otvara dijaloški okvir sa spremljenim knjižnim oznakama za
+*	alt+NVDA+y: Otvara dijaloški okvir sa spremljenim knjižnim oznakama za
   ovaj dokument. Za svaku knjižnu oznaku je moguće upisati napomenu;
   pritisni „Spremi napomenu” za spremanje promjene. Pritiskom na „Odustani”
   brišeš odabranu knjižnu oznaka. Pritiskom na „U redu” premještaš se na
@@ -64,6 +64,11 @@ Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
 dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
 oznake.
 
+## Promjene u verziji 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Kompatibilno s NVDA 2023.1.
+
 ## Promjene u verziji 23.0
 * Dodatak ponovo radi s Microsoft Wordom.
 
@@ -92,7 +97,7 @@ oznake.
 ## Promjene u verziji 16.0 ##
 * Kompatibilno s NVDA 2021.1 i novijim verzijama (obavezno).
 * Brzo čitanje je podržano prilikom prelaska na privremene oznake.
-* Ako je potrebno, možeš preuzeti [druge
+* Ako je potrebno možeš preuzeti [druge
   verzije](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Promjene u verziji 15.0 ##

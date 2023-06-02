@@ -27,20 +27,19 @@ para usar este aqui, pois eles têm teclas de atalho e recursos em comum.
   anterior ou não pesquisar) e especifique se o NVDA fará uma pesquisa
   diferenciando maiúsculas. Quando pressionar OK, o NVDA pesquisará essa
   cadeia.
-*	control+shift+NVDA+k: Salva a posição atual como marcador. Caso queira
-  fornecer um nome para o marcador, selecione algum texto desta posição
-  antes de salvar.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: Exclue o marcador correspondente a esta
   posição.
-*	NVDA+k: Passa para o próximo marcador.
-*	shift+NVDA+k: Passa para o marcador anterior.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Não atribuído: Mostra o nome do arquivo no qual serão salvos os dados de
   marcadores de lugar, sem a extensão.
-*	alt+NVDA+k: Abre uma caixa de diálogo com os marcadores salvos para este
-  documento. Você pode escrever uma nota para cada marcador; pressione
-  Salvar nota para salvar as alterações. Pressionando Excluir você pode
-  remover o marcador selecionado. Pressionando OK você pode se mover para a
-  posição selecionada.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Não atribuído: salva uma posição como um marcador temporário.
 *	Não atribuído: Move para o marcador temporário do documento atual.
 *	Não atribuído: localiza a ocorrência seguinte do último texto pesquisado
@@ -65,6 +64,11 @@ acessar:
 Nota: A posição do marcador é baseada no número de caracteres; assim, em
 páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
 marcadores.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Changes for 23.0
 * The add-on works again with Microsoft Word.
@@ -93,7 +97,7 @@ marcadores.
 * Fixed translated strings making translations to work properly.
 
 ## Mudanças na 16.0 ##
-* Compatível com o NVDA 2021.1 ou posterior (requerido).
+* Compatible with NVDA 2021.1 or later (required).
 * A leitura dinâmica é suportada ao mover para marcadores temporários.
 * If needed, you can download [other
   versions](https://github.com/nvdaes/placeMarkers/releases).

@@ -9,13 +9,17 @@
 
 *	control+shift+NVDA+f:
   打开一个对话框，其中显示一个编辑框，显示上次保存的搜索;在此对话框中，您还可以从组合框中选择以前保存的搜索，或使用复选框从历史记录中删除选定的字符串。您可以选择编辑框中包含的文本是否会添加到保存文本的历史记录中。最后，从下一组单选按钮中选择一个操作（在下一个搜索，搜索上一个或不搜索之间），并指定NVDA是否进行区分大小写搜索。当你按下确定的时候，NVDA会搜索这个字符串。
-*	control+shift+NVDA+k: 将当前位置保存为书签。如果您想为此书签重命名，请​​在保存之前从该位置选择一些文本。
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: 删除与此位置相对应的书签。
-*	NVDA+k: 移至下一个书签。
-*	shift+NVDA+k: 移至上一个书签。
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	未分配：在浏览模式下显示保存位置标记数据的文件名，注意不带扩展名。
-*	alt+NVDA+k:
-  打开一个对话框，其中包含为此文档保存的书签。您可以为每个书签写一个笔记;按保存备注保存更改。按Delete键可以删除所选书签。按确定您可以移动到选定的位置。
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	未分配：将位置保存为临时书签。
 *	未分配：移至当前文档的临时书签。
 *	未分配：从光标所在位置处查找下一个匹配项。
@@ -32,6 +36,11 @@
 *	恢复位置标记：您可以从先前保存的位置标记文件夹中恢复您的书签。
 
 注意：书签位置基于字符数量;因此，在动态页面中，最好使用特定搜索，而不是书签。
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## 版本23.0
 * 恢复对 Word 的支持。
@@ -56,9 +65,10 @@
 * 修正了翻译字符串，使翻译能够正常工作。
 
 ## 版本16.0 ##
-* 兼容 NVDA 2021.1或更高版本（必需）。兼容NVDA 2018.3或更高版本（必需）。
+* Compatible with NVDA 2021.1 or later (required).
 * 移动到临时书签时支持略读。
-* 如果需要，您可以下载[其他版本](https://github.com/nvdaes/placeMarkers/releases)。
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## 版本15.0 ##
 * 在浏览模式下使用全文朗读进行阅读时，根据 NVDA 2020.4

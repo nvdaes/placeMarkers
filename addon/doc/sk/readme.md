@@ -20,17 +20,18 @@ súboroch. Názvy súborov sú odvodené od cesty, názvu a URL dokumentu.
   (hľadať predchádzajúce, hľadať nasledujúce), prípadne nehľadať
   vôbec. Takisto môžete začiarknuť rozlišovanie malých a veľkých
   písmen. Hľadanie spustíte tlačidlom OK.
-*	ctrl+shift+NVDA+k: Uloží aktuálne miesto ako záložku. Ak chcete záložku
-  pomenovať, vyberte pred stlačením skratky nejaký text, ktorý sa použije
-  ako názov.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	ctrl+shift+NVDA+delete: Odstráni záložku pod kurzorom.
-*	Nvda+k: Presunie kurzor na nasledujúcu záložku.
-*	NVDA+shift+k: Presunie kurzor na predchádzajúcu záložku.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Nedefinované: zobrazí v režime prehliadania názov súboru so záložkami pre
   aktuálny dokument.
-*	alt+NVDA+k: Otvorí dialóg s uloženými záložkami pre aktuálny dokument. Tu
-  môžete k záložkám priradiť poznámky. Tlačidlom vymazať záložku odstránite
-  vybratú záložku. Tlačidlom OK presuniete kurzor na vybratú záložku.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Nedefinované: Uloží pozíciu kurzora ako dočasnú záložku.
 *	Nedefinované: Presunie kurzor na dočasnú záložku.
 *	Nedefinované: Nájde nasledujúci výskyt posledného hľadaného reťazca v
@@ -52,6 +53,11 @@ Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
 
 Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránkach
 je lepšie použiť reťazce hľadania.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Changes for 23.0
 * The add-on works again with Microsoft Word.

@@ -29,21 +29,20 @@ stesse funzioni di Place Markers.
   azioni Cerca successiva, Cerca Precedente o Non Cercare, e specificare se
   distinguere tra le lettere maiuscole e minuscole nella ricerca. Premendo
   Ok NVDA cercherà la stringa digitata.
-*	control+shift+NVDA+k: Salva la posizione corrente come segnaposto. Se si
-  desidera dare un nome al segnaposto, selezionare del testo da questa
-  posizione prima di salvarlo.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+Shift+NVDA+canc: Elimina il segnaposto corrispondente a questa
   posizione.
-*	NVDA+k: va al segnaposto successivo.
-*	shift+NVDA+k: va al segnaposto precedente.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Tasto non assegnato: mostra il nome del file per il quale verranno salvati
   i segnaposto e le ricerche in modalità navigazione. (Il nome non contiene
   l'estensione).
-*	alt+NVDA+k: apre una finestra di dialogo con i segnaposto salvati per il
-  documento corrente. È possibile scrivere una nota per ogni segnaposto;
-  premere Salva nota per salvare le modifiche. Premendo il tasto Canc è
-  possibile rimuovere il segnaposto selezionato. Premendo OK si sposta il
-  cursore nella posizione selezionata.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Tasto non assegnato: Salva la posizione attuale come segnaposto
   temporaneo.
 *	Tasto non assegnato: sposta il cursore nel segnaposto temporaneo del
@@ -71,6 +70,11 @@ accedere a:
 Nota: La posizione del segnaposto è basata sul numero di caratteri; in
 pagine con un contenuto dinamico è meglio utilizzare la ricerca specifica, e
 non i segnaposto, per salvare una posizione precisa.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Changes for 23.0
 * The add-on works again with Microsoft Word.
@@ -100,7 +104,7 @@ non i segnaposto, per salvare una posizione precisa.
 * Risolto il problema con le stringhe per tradurre correttamente.
 
 ## Changes per la  16.0 ##
-* Compatibile con NVDA 2021.1 o superiore (richiesto).
+* Compatible with NVDA 2021.1 or later (required).
 * supporto alla lettura rapida nella navigazione con i  segnaposto
   temporanei.
 * If needed, you can download [other
