@@ -24,19 +24,19 @@ URL-ul documentului curent.
   rotative (între caută următorul, caută anteriorul, sau nu căuta), și
   specificați dacă NVDA va face un caz senzitiv de căutare. Când apăsați OK,
   NVDA va căuta pentru această frază.
-*	control+shift+NVDA+k: Salvează poziția curentă ca un semn de carte. Dacă
-  vreți să furnizați un nume pentru el, selectați textul din acea poziție
-  înainte de a o salva.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: Șterge semnul de carte corespunzător acestei
   poziții.
-*	NVDA+k: Deplasează la semnul de carte următor.
-*	shift+NVDA+k: Deplasează la semnul de carte precedent.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Not assigned: Shows the file name where the place markers data will be
   saved in browse mode, without an extension.
-*	alt+NVDA+k: Deschide un dialog cu semnele de carte salvate pentru acest
-  document. Puteți scrie o notă pentru fiecare semn de carte. Apăsați
-  „Salvare notă” pentru a salva modificările. Prin apăsarea butonului „OK”
-  vă deplasați la poziția selectată.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Neatribuit: Salvează poziția curentă ca un semn de carte temporar.
 *	Neatribuită: Mută la semnul de carte temporar pentru documentul curent.
 *	Not assigned: Finds the next occurrence of the last text searched for any
@@ -61,6 +61,11 @@ Folosind submeniul Place markers din meniul Preferințe, puteți accesa:
 Notă: Poziția semn de carte se bazează pe numărul de caractere; și, prin
 urmare, în pagini cu un conținut dinamic este mai bine să utilizați căutarea
 specifică, și nu marcajele care economisesc o poziție precisă.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Changes for 23.0
 * The add-on works again with Microsoft Word.

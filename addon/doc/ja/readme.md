@@ -9,14 +9,17 @@
 
 *	control+shift+NVDA+f:
   最後に保存された検索のエディットボックスのあるダイアログを開きます。このダイアログでは以前に保存した検索をコンボボックスから選択したり、選択した文字列をチェックボックスを使用して履歴から削除したり出来ます。エディットボックスに含まれる文字列を、保存した文字列の履歴に追加するかどうかを選択出来ます。最後に、次の組のラジオボタンから、動作を選択します（次を検索、前を検索、または検索しない）。OKを押すと、NVDAはその文字列を探します。
-*	control+shift+NVDA+k:
-  現在の位置をブックマークとして保存します。このブックマークに名前を付けたい場合は、保存する前に、この位置で何か文字列を選択します。
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	この位置に対応するブックマークを削除します。
-*	NVDA+k: 次のブックマークに移動します。
-*	shift+NVDA+k: 前に移動します。
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	アサインなし: ブラウズモードで、place markersがデータを保存するファイル名を、拡張子なしで表示します。
-*	alt+NVDA+k:
-  このドキュメントに対して保存されているブックマークのダイアログを開きます。それぞれのブックマークに対してノートを書くことが出来ます。変更を保存するには、ノートを保存を押します。削除を押すと、選択されたブックマークを削除出来ます。OKを押すと選択された場所に移動出来ます。
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	アサインなし: 一時的なブックマークとして位置を保存します。
 *	アサインなし: 現在のドキュメントの一時的なブックマークに移動します。
 *	アサインなし: 特定のドキュメントで最後に検索された文字列について、次の物を見つけます。
@@ -34,6 +37,11 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 
 補足:
 ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## 23.0の変更点
 * このアドオンが再びMicrosoft Wordで動作するようになりました。
@@ -58,9 +66,10 @@ NVDAの設定メニュー下の、Place Markersのサブメニューを利用し
 * 翻訳が適切に動作するように、翻訳された文字列を修正しました。
 
 ## バージョン 16.0 ##
-* NVDA 2021.1以降に互換(必要)。
+* Compatible with NVDA 2021.1 or later (required).
 * 一時的なブックマークに移動する時に、流し読みをサポートするようになりました。
-* もし必要であれば、[他のバージョン](https://github.com/nvdaes/placeMarkers/releases)をダウンロード出来ます。
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## 15.0の変更点 ##
 * NVDA

@@ -25,19 +25,19 @@ anbefales at du afinstallerer dem, før du bruger denne tilføjelse.
   fremad, søg bagud eller søg ikke), og dernæst beslutte om NVDA skal gøre
   forskel på store og små bogstaver under søgningen. Når du trykker på "ok",
   vil NVDA udføre din søgning.
-*	CTRL+skift+NVDA+k: Gemmer den aktuelle position som et bogmærke. Hvis du
-  vil angive et navn til dette bogmærke, skal du vælge en tekst fra denne
-  position, før du gemmer den.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	CTRL+skift+NVDA+delete: Sletter bogmærket, der svarer til den aktuelle
   position.
-*	NVDA+K: Flytter til det næste bogmærke.
-*	Skift+NVDA+K: Flytter til det forrige bogmærke.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Ikke tildelt: Viser filnavnet, hvor stedmarkørens data gemmes i
   gennemsynstilstand uden en filtypenavn.
-*	Alt+NVDA+K: Åbner en dialog med de bogmærker, der er gemt for det aktuelle
-  dokument. Du kan skrive en note til hvert bogmærke. Tryk på "Gem note" for
-  at gemme ændringer. Ved at trykke på OK kan du flytte til den valgte
-  position.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Ikke tildelt: Gemmer en position som et midlertidigt bogmærke.
 *	Ikke tildelt: Flytter til det midlertidige bogmærke for det aktuelle
   dokument.
@@ -61,6 +61,11 @@ Ved hjælp af undermenuen for stedmærker (place markers) kan du komme til:
 Bemærk: Positionen for et bogmærke er baseret på antallet af tegn. På
 dynamiske sider er det derfor bedre at bruge specifikke søgninger og ikke
 bogmærker, som gemmer en præcis position.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Ændringer for 23.0
 * Tilføjelsen fungerer igen med Microsoft Word.
@@ -90,10 +95,10 @@ bogmærker, som gemmer en præcis position.
 * Rettede oversatte strenge, der fik oversættelser til at fungere korrekt.
 
 ## Ændringer for 16.0 ##
-* Kompatibel med NVDA 2021.1 eller nyere (påkrævet).
+* Compatible with NVDA 2021.1 or later (required).
 * Skimlæsning understøttes, når du flytter til midlertidige bogmærker.
-* Hvis det er nødvendigt, kan du downloade [andre
-  versioner](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Ændringer for 15.0 ##
 * Når du læser med sig alt i gennemsynstilstand, stopper kommandoerne til

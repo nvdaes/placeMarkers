@@ -28,21 +28,22 @@ verwenden, da sie gemeinsame Tastenkombinationen und Funktionen haben.
   aus (weiter suchen, Rückwärtssuche oder keine Suche) und geben Sie an, ob
   NVDA die Groß- und Kleinschreibung berücksichtigen soll. Wenn Sie auf OK
   drücken, sucht NVDA nach dieser Zeichenfolge.
-*	STRG+Umschalt+NVDA+k: Speichert die aktuelle Position als
-  Lesezeichen. Wenn Sie einen Namen für dieses Lesezeichen vergeben möchten,
-  wählen Sie einen Teil vom Text an dieser Position aus, bevor Sie das
-  Lesezeichen speichern.
+*	Strg+Umschalt+NVDA+Y: Speichert die aktuelle Position als
+  Lesezeichen. Wenn Sie diesem Lesezeichen einen Namen vergeben möchten,
+  wählen Sie vor dem Speichern einen Namen für den Text an dieser Position
+  aus.
 *	STRG+Umschalt+NVDA+Entfernen: Löscht das Lesezeichen an der aktuellen
   Position.
-*	NVDA+K: Wechselt zum nächsten Lesezeichen.
-*	Umschalt+NVDA+K: Wechselt zum vorherigen Lesezeichen.
+*	NVDA+Y: Wechselt zum nächsten Lesezeichen.
+*	Umschalt+NVDA+Y: Wechselt zum vorherigen Lesezeichen.
 *	Nicht zugewiesen: Zeigt die Datei, in welcher die Lesezeichen gespeichert
   werden im Lesemodus, ohne deren Erweiterung an.
-*	Alt+NVDA+K: Öffnet einen Dialog mit den für dieses Dokument gespeicherten
-  Lesezeichen. Sie können für jedes Lesezeichen eine Notiz schreiben. Mit
-  Klicken auf "Notiz speichern" können Sie die Änderungen speichern. Mit
-  "Entfernen" können Sie das ausgewählte Lesezeichen löschen und mit dem
-  Schalter OK können Sie zur gewählten Position springen.
+*	Alt+NVDA+Y: Öffnet ein Dialogfeld mit den für dieses Dokument
+  gespeicherten Lesezeichen. Sie können zu jedem Lesezeichen eine Notiz
+  schreiben; Klicken Sie auf "Notiz speichern", um die Änderungen zu
+  speichern. Durch klicken auf "Löschen" können Sie das ausgewählte
+  Lesezeichen entfernen. Mit "OK" können Sie zu der ausgewählten Position
+  wechseln.
 *	Nicht zugewiesen: speichert die Position als temporäres Lesezeichen.
 *	Nicht zugewiesen: springt zum temporären Lesezeichen für das aktuelle
   Dokument.
@@ -67,6 +68,11 @@ Elemente zugreifen:
 Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
+
+## Änderungen in 24.0
+* Der Buchstabe Y wird anstelle von K in Tastenbefehlen wie NVDA+K,
+  Umschalt+NVDA+K, Alt+NVDA+K und Strg+Umschalt+NVDA+K verwendet.
+* Kompatibel mit NVDA 2023.1.
 
 ## Änderungen in 23.0
 * Die Erweiterung funktioniert wieder mit Microsoft Word.
@@ -99,9 +105,8 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 ## Änderungen in 16.0 ##
 * Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
 * Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
-* Falls gewünscht, können Sie
-  [hier](https://github.com/nvdaes/placeMarkers/releases) andere Versionen
-  herunterladen.
+* Bei Bedarf können Sie [andere Versionen
+  herunterladen](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die

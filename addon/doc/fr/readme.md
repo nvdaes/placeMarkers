@@ -28,16 +28,16 @@ des raccourcis et des caractéristiques communes.
   radio (entre Recherche suivante, Recherche précédente ou Ne pas
   rechercher), et spécifiez si NVDA effectuera une recherche Respecter la
   casse. Lorsque vous appuyez sur OK, NVDA recherche cette chaîne.
-*	Contrôle+maj+NVDA+k : Enregistre la position actuelle comme un
+*	Contrôle+maj+NVDA+y : Enregistre la position actuelle comme un
   marqueur. Si vous souhaitez donner un nom à ce marqueur, sélectionner un
   texte à partir de cette position avant de l'enregistrer.
 *	Contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
   position.
-*	NVDA+k : Aller au marqueur suivant.
-*	Maj+NVDA+k : Aller au marqueur précédent.
+*	NVDA+y : Aller au marqueur suivant.
+*	Maj+NVDA+y : Aller au marqueur précédent.
 *	Non assignée : Affiche le nom du fichier dans lequel seront sauvegardés
   les marqueurs en mode navigation, sans extension.
-*	Alt+NVDA+k : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
+*	Alt+NVDA+y : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
   document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
   Enregistrer note pour enregistrer les modifications. En appuyant sur
   Supprimer vous pouvez supprimer le marqueur sélectionné. En appuyant sur
@@ -68,6 +68,11 @@ vous pouvez accéder à :
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
+
+## Changements pour la version 24.0
+* Y est utilisé à la place de k dans des gestes tels que NVDA+k, NVDA+maj+k,
+  NVDA+alt+k et NVDA+contrôle+maj+k.
+* Compatible avec NVDA 2023.1.
 
 ## Changements pour la version 23.0
 * L'extension fonctionne à nouveau avec Microsoft Word.

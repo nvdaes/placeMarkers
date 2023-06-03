@@ -24,17 +24,18 @@ addon này vì chúng có những tính năng và phím lệnh trùng nhau.
   nhóm radio buttons (tìm tiếp, tìm trước hay không tìm kiếm), và thiết lập
   nếu muốn NVDA tìm kiếm phân biệt chữ hoa  thường. Khi bạn bấm okay, NVDA
   sẽ tìm kiếm chuỗi văn bản.
-*	control+shift+NVDA+k: Lưu vị trí hiện tại thành một dấu trang. Nếu muốn
-  đặt tên dấu trang, hãy chọn vài từ tại vị trí con trỏ trước khi lưu nó.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+delete: Xóa dấu trang tại vị trí tương ứng.
-*	NVDA+k: Chuyển đến dấu trang kế tiếp.
-*	shift+NVDA+k: Chuyển đến dấu trang trước.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Chưa gán: Hiển thị tên tập tin dùng để lưu dữ liệu của các điểm đánh dấu ở
   chế độ duyệt mà không có phần mở rộng.
-*	alt+NVDA+k: Mở hộp thoại với các dấu trang đã lưu cho tài liệu hiện
-  tại. Bạn có thể viết ghi chú cho mỗi dấu trang; bấm Lưu ghi chú để lưu các
-  thay đổi. Có thể xóa dấu trang hiện tại bằng cách bấm Delete. Bấm OK để di
-  chuyển đến vị trí đã được chọn.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Chưa gán lệnh: Lưu một vị trí thành dấu trang tạm thời.
 *	Chưa gán lệnh: Chuyển đến dấu trang tạm thời của tài liệu hiện thời.
 *	Chưa gán lệnh: tìm văn bản tiếp theo có chứa nội dugn tìm kiếm gần nhất
@@ -57,6 +58,11 @@ Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có th
 
 Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
 động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Changes for 23.0
 * The add-on works again with Microsoft Word.
@@ -85,7 +91,7 @@ Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên tr
 * Fixed translated strings making translations to work properly.
 
 ## Các thay đổi cho phiên bản 16.0 ##
-* Tương thích với NVDA 2021.1 trở lên (yêu cầu).
+* Compatible with NVDA 2021.1 or later (required).
 * Đã hỗ trợ thay đổi vị trí đọc khi di chuyển đến dấu trang tạm thời.
 * If needed, you can download [other
   versions](https://github.com/nvdaes/placeMarkers/releases).

@@ -25,18 +25,18 @@ combinacións de teclas e características.
   botóns de opción (entre procurar seguinte, procurar anterior ou non
   procurar), e especificar se NVDA fará unha procura sensible ás
   maiúsculas. Cando premas Aceptar, NVDA procurará esta cadea.
-*	control+shift+NVDA+k: garda a posición actual coma unha marca. Se queres
-  proporcionar un nome para esta marca, seleciona algún texto desta posición
-  antes de gardala.
+*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
+  want to provide a name for this bookmark, select some text from this
+  position before saving it.
 *	control+shift+NVDA+suprimir: borra a marca correspondente a esta posición.
-*	NVDA+k: Move á marca seguinte.
-*	shift+NVDA+k: move á marca anterior.
+*	NVDA+y: Moves to the next bookmark.
+*	shift+NVDA+y: Moves to the previous bookmark.
 *	Sen asignar: Amosa o nome do arquivo no que se gardarán os datos dos
   marcadores de ubicación en modo exploración, sen extensión.
-*	alt+NVDA+k: abre un diálogo coas marcas gardadas para este
-  documento. Podes escreber unha nota para cada marca; preme Gardar Nota
-  para guardar cambios. Pulsando Aceptar puedes moverte al a la posición
-  seleccionada.
+*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
+  can write a note for each bookmark; press Save note to save
+  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
+  you can move to the selected position.
 *	Sen asignar: garda a posición actual coma unha marca temporal.
 *	Sen asignar: Móvese á marca temporal para o documento actual.
 *	Sen asignar: Buscar seguinte ocorrencia do último texto procurado en
@@ -60,6 +60,11 @@ Usando o submenú Place markers no Menú Preferencias, podes acceder a:
 Nota: A posición da marca baséase no número de caracteres, polo tanto en
 páxinas con contido dinámico é mellor usar a busca específica,e non as
 marcas.
+
+## Changes for 24.0
+* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
+  NVDA+alt+k and NVDA+control+shift+k.
+* Compatible with NVDA 2023.1.
 
 ## Cambios para 23.0
 * O complemento volve a funcionar con Microsoft Word.
@@ -90,10 +95,10 @@ marcas.
   traducións.
 
 ## Cambios para 16.0 ##
-* Compatible co NVDA 2021.1 ou posterior (requerido).
+* Compatible with NVDA 2021.1 or later (required).
 * Sopórtase a lectura superficial ao moverse a unha marca temporal.
-* Se o precisas, podes descargar [outras
-  versións](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Cambios para 15.0 ##
 * Ó ler con ler todo en modo exploración, os atallos específico buscar
