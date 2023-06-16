@@ -1,7 +1,7 @@
 # Marcadores de lugar #
 
 * Autores: Noelia, Chris.
-* download [stable version][1] (compatible with NVDA 2022.1 and beyond)
+* [descarregar versão estável][1] (compatível com NVDA 2022.1 e posteriores)
 
 Este extra é usado para guardar e procurar expressões ou marcadores de texto
 específicos. Pode ser usado em páginas da Web ou documentos no modo de
@@ -26,18 +26,18 @@ usar este, uma vez que têm comandos e recursos comuns.
   Pesquisar anterior ou Não pesquisar) e especifique se o NVDA fará uma
   pesquisa sensível a maiúsculas e minúsculas. Quando pressiona ok, o NVDA
   procurará essa cadeia.
-*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
-  position before saving it.
+*	control+shift+NVDA+y: Guarda a posição actual como um marcador. Se quiser
+  dar um nome a este marcador, seleccione algum texto desta posição antes de
+  o guardar.
 *	control+shift+NVDA+delete: Apaga o marcador correspondente a esta posição.
-*	NVDA+y: Moves to the next bookmark.
-*	shift+NVDA+y: Moves to the previous bookmark.
+*	NVDA+y: Passa para o marcador seguinte.
+*	shift+NVDA+y: Desloca-se para o marcador anterior.
 *	Não atribuído: Mostra o nome do ficheiro onde os dados dos marcadores de
   lugar serão guardados em modo de navegação, sem uma extensão.
-*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
+*	alt+NVDA+y: um diálogo com os marcadores guardados para este
+  documento. Pode escrever uma nota para cada marcador; prima Guardar nota
+  para guardar as alterações. Ao premir Apagar, pode remover o marcador
+  seleccionado. Ao premir OK, pode mover-se para a posição seleccionada.
 *	Não atribuído: salva uma posição como um marcador temporário.
 *	Não atribuído: Move para o marcador temporário do documento actual.
 *	Não atribuído: Procura a próxima ocorrência do último texto procurado num
@@ -62,43 +62,45 @@ aceder a:
 Nota: A posição do marcador é baseada no número de caracteres; e, portanto,
 em páginas dinâmicas, é melhor usar a Procura específica, não os marcadores.
 
-## Changes for 24.0
-* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
-  NVDA+alt+k and NVDA+control+shift+k.
-* Compatible with NVDA 2023.1.
+## Alterações para 24.0
+* Y é utilizado em vez de k em atalhos como NVDA+k, NVDA+shift+k, NVDA+alt+k
+  e NVDA+control+shift+k.
+* Compatível com NVDA 2023.1.
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## Alterações para 23.0
+* O extra funciona novamente com o Microsoft Word.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## Alterações para 22.0
+* Podemos mover-nos para os marcadores e apagá-los com a UIA activada,
+  graças a Abdel.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Alterações para 21.0
+* Os marcadores podem ser guardados com a UIA activada em navegadores
+  baseados no Chrome, graças ao Abdel.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Alterações para 20.0
+* Requer NVDA 2022.1 ou posterior.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Alterações para 19.0 ##
+* O extra não pode ser executado em ecrãs seguros.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Alterações para 18.0 ##
+* O comando para ver o caminho para placeMarkers mostra se existem
+  marcadores permanentes, texto para pesquisa específica ou um marcador de
+  página temporário para o documento actual.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Alterações para 17.0 ##
+* Corrigido um erro que não permitia guardar marcadores de lugar em alguns
+  documentos.
+* fixadas  algumas cadeias de tradução, fazendo as traduções funcionar
+  correctamente.
 
 ## Alterações para 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+* Compatibilidade com o NVDA 2021.1 ou superiores (obrigatório).
 * A leitura rápida é suportada quando se muda para os marcadores
   temporários.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Se necessário, pode descarregar [outras
+  versões](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Alterações para 15.0 ##
 * Ao ler seguidamente, no modo de navegação, os comandos específicos
