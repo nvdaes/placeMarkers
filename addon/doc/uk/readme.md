@@ -3,16 +3,16 @@
 * Автори: Noelia, Chris.
 * завантажити [стабільну версію][1] (сумісну з NVDA 2022.1 і новішими)
 
-Цей додаток призначений для збереження й пошуку певних текстових рядків або
-закладок. Може використовуватися на веб-сторінках або документах у режимі
-огляду. Також може використовуватися для збереження або пошуку рядків тексту
-в багаторядкових елементах керування; в цьому випадку, якщо немає можливості
-оновити каретку, відповідний рядок буде скопійовано в буфер обміну, щоб його
-можна було шукати за допомогою інших інструментів.  Плагін зберігає вказані
-рядки і закладки у файлах, ім'я яких базується на назві та URL поточного
-документа.  Цей додаток базується на додатках SpecificSearch та
-Bookmark&Search, розроблених тим же автором. Для використання цього додатка
-їх варто видалити, оскільки вони мають спільні комбінації клавіш і функції.
+This add-on is used for saving and searching specific text strings or
+placemarkers. It can be used on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+placemarkers to files whose name is based on the title and URL of the
+current document.  This add-on is based on SpecificSearch and
+Bookmark&Search, developed by the same author. You should uninstall them to
+use this one, since they have common keystrokes and features.
 
 ## Комбінації клавіш: ##
 
@@ -25,41 +25,42 @@ Bookmark&Search, розроблених тим же автором. Для ви�
   (між «Шукати далі», «Шукати попереднє» або «Не шукати») і вкажіть, чи буде
   NVDA здійснювати пошук з урахуванням регістру. Коли ви натиснете кнопку
   «Гаразд», NVDA здійснить пошук цього рядка.
-*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
+*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
+  want to provide a name for this placemarker, select some text from this
   position before saving it.
-*	control+shift+NVDA+delete: видаляє закладку, яка відповідає цій позиції.
-*	NVDA+y: Moves to the next bookmark.
-*	shift+NVDA+y: Moves to the previous bookmark.
-*	Не призначено: показує ім'я файлу, в якому будуть збережені дані про
-  маркери місць в режимі огляду, без розширення.
-*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Не призначено: зберігає поточну позицію як тимчасову закладку.
-*	Не призначено: переходить до тимчасової закладки в поточному документі.
+*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
+  position.
+*	NVDA+y: Moves to the next placemarker.
+*	shift+NVDA+y: Moves to the previous placemarker.
+*	Not assigned: Shows the file name where the placemarkers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
+  document. You can write a note for each placemarker; press Save note to
+  save changes. Pressing Delete you can remove the selected
+  placemarker. Pressing OK you can move to the selected position.
+*	Not assigned: Saves a position as a temporary placemarker.
+*	Not assigned: Moves to the temporary placemarker for the current document.
 *	Не призначено: знаходить наступний фрагмент останнього шуканого тексту в
   будь-якому конкретному документі.
 *	Не призначено: знаходить попередній фрагмент останнього шуканого тексту в
   будь-якому конкретному документі.
 
 
-## Підменю маркерів місць (NVDA+N) ##
+## PlaceMarkers Submenu (NVDA+N) ##
 
-За допомогою підменю Place markers в меню параметрів NVDA можна отримати
-доступ:
+Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
+access:
 
-*	Папка конкретного пошуку: відкриває папку раніше збережених конкретних
-  пошуків.
-*	Папка закладок: відкриває папку зі збереженими закладками.
-*	Скопіювати папку PlaceMarkers: Ви можете зберегти копію папки закладок.
-*	Відновлення placeMarkers: Ви можете відновити закладки з раніше збереженої
-  папки placeMarkers.
+*	Specific search folder: Opens a folder of specific searches previously
+  saved.
+*	Bookmarks folder: Opens a folder of the saved placemarkers.
+*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
+*	Restore placeMarkers: You can restore your placeMarkers from a previously
+  saved placeMarkers folder.
 
-Примітка: Позиція закладки залежить від кількості символів, тому на
-динамічних сторінках краще користуватися конкретним пошуком, а не
-закладками.
+Note: The placemarker position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+placemarkers.
 
 ## Changes for 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,

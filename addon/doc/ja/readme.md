@@ -3,40 +3,55 @@
 * 作者: Noelia, Chris.
 * ダウンロード [安定版][1] (NVDA 2022.1以降に互換)
 
-このアドオンは、特定の文字列やブックマークを保存して検索するのに使用されます。これはWebページまたはNVDAのブラウズモードのドキュメントに使用出来ます。また、複数行のコントロール中のテキストを保存したり検索したりするのに使用出来ます。この場合、キャレットを更新出来ない場合は、対応する文字列がクリップボードにコピーされ、他のツールを使用して検索出来るようになります。このプラグインは特定の文字列とブックマークを、そのドキュメントのタイトルとURLに基づいて付けられた名前のファイルに保存します。このアドオンは、同じ作者により開発された、SpecificSearchとBookmard&Searchに基づいています。よって、このアドオンを使用するには、これらをアンインストールしなければなりません。共通のショートカットキーと機能があるからです。
+This add-on is used for saving and searching specific text strings or
+placemarkers. It can be used on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+placemarkers to files whose name is based on the title and URL of the
+current document.  This add-on is based on SpecificSearch and
+Bookmark&Search, developed by the same author. You should uninstall them to
+use this one, since they have common keystrokes and features.
 
 ## キーコマンド: ##
 
 *	control+shift+NVDA+f:
   最後に保存された検索のエディットボックスのあるダイアログを開きます。このダイアログでは以前に保存した検索をコンボボックスから選択したり、選択した文字列をチェックボックスを使用して履歴から削除したり出来ます。エディットボックスに含まれる文字列を、保存した文字列の履歴に追加するかどうかを選択出来ます。最後に、次の組のラジオボタンから、動作を選択します（次を検索、前を検索、または検索しない）。OKを押すと、NVDAはその文字列を探します。
-*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
+*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
+  want to provide a name for this placemarker, select some text from this
   position before saving it.
-*	この位置に対応するブックマークを削除します。
-*	NVDA+y: Moves to the next bookmark.
-*	shift+NVDA+y: Moves to the previous bookmark.
-*	アサインなし: ブラウズモードで、place markersがデータを保存するファイル名を、拡張子なしで表示します。
-*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	アサインなし: 一時的なブックマークとして位置を保存します。
-*	アサインなし: 現在のドキュメントの一時的なブックマークに移動します。
+*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
+  position.
+*	NVDA+y: Moves to the next placemarker.
+*	shift+NVDA+y: Moves to the previous placemarker.
+*	Not assigned: Shows the file name where the placemarkers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
+  document. You can write a note for each placemarker; press Save note to
+  save changes. Pressing Delete you can remove the selected
+  placemarker. Pressing OK you can move to the selected position.
+*	Not assigned: Saves a position as a temporary placemarker.
+*	Not assigned: Moves to the temporary placemarker for the current document.
 *	アサインなし: 特定のドキュメントで最後に検索された文字列について、次の物を見つけます。
 *	アサインなし: 特定のドキュメントで最後に検索された文字列について、前の物を見つけます。
 
 
-## プレイスマーカーのサブメニュー(NVDA+N) ##
+## PlaceMarkers Submenu (NVDA+N) ##
 
-NVDAの設定メニュー下の、Place Markersのサブメニューを利用して、次の物にアクセス出来ます:
+Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
+access:
 
-*	検索保存フォルダー: 検索保存フォルダーを開きます。
-*	ブックマークフォルダー: 保存したブックマークのフォルダーを開きます。
-*	プレイスマーカーフォルダーのコピー: ブックマークフォルダーのコピーを保存出来ます。
-*	マーカー情報の復元: マーカー情報のバックアップからブックマークを復元できます。
+*	Specific search folder: Opens a folder of specific searches previously
+  saved.
+*	Bookmarks folder: Opens a folder of the saved placemarkers.
+*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
+*	Restore placeMarkers: You can restore your placeMarkers from a previously
+  saved placeMarkers folder.
 
-補足:
-ブックマークの位置は文字数に基づいています。ページの内容が動的に変化する場合は、ブックマークでは正確な位置を保存できないので、検索保存をお使いください。
+Note: The placemarker position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+placemarkers.
 
 ## Changes for 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,

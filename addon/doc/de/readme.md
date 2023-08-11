@@ -3,18 +3,18 @@
 * Autoren: Noelia und Chris.
 * [Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
 
-Diese Erweiterung dient zum Speichern und Suchen von bestimmten
+Diese NVDA-Erweiterung dient zum Speichern und Suchen bestimmter
 Textzeichenfolgen oder Lesezeichen. Es kann auf Webseiten oder Dokumenten im
-Lesemodus von NVDA verwendet werden. Es kann auch zum Speichern oder
+Lesemodus in NVDA verwendet werden. Es kann auch zum Speichern oder
 Durchsuchen von Textstrings in mehrzeiligen Steuerelementen verwendet
 werden; wenn es in diesem Fall nicht möglich ist, den Cursor zu
 aktualisieren, wird der entsprechende String in die Zwischenablage kopiert,
-so dass er mit anderen Tools durchsucht werden kann. Dabei werden die
-angegebenen Zeichenketten und Lesezeichen in Dateien gespeichert, deren Name
-auf dem Titel und der URL des aktuellen Dokuments basiert. Diese Erweiterung
-basiert auf SpecificSearch und Bookmark&Search, die von demselben Autor
-entwickelt wurden. Sie sollten diese deinstallieren, um diese Erweiterung zu
-verwenden, da sie gemeinsame Tastenkombinationen und Funktionen haben.
+so dass er mit anderen Tools durchsucht werden kann.  Das Plugin speichert
+die angegebenen Strings und Lesezeichenin-Dateien, deren Name auf dem Titel
+und der URL des aktuellen Dokuments basiert.  Diese NVDA-Erweiterung basiert
+auf SpecificSearch und Bookmark&Search, die vom gleichen Autor entwickelt
+wurden. Sie sollten diese deinstallieren, um dieses Plugin zu verwenden, da
+sie gemeinsame Tastenkombinationen und Funktionen haben.
 
 ## Tastenkombinationen: ##
 
@@ -29,23 +29,21 @@ verwenden, da sie gemeinsame Tastenkombinationen und Funktionen haben.
   NVDA die Groß- und Kleinschreibung berücksichtigen soll. Wenn Sie auf OK
   drücken, sucht NVDA nach dieser Zeichenfolge.
 *	Strg+Umschalt+NVDA+Y: Speichert die aktuelle Position als
-  Lesezeichen. Wenn Sie diesem Lesezeichen einen Namen vergeben möchten,
-  wählen Sie vor dem Speichern einen Namen für den Text an dieser Position
-  aus.
-*	STRG+Umschalt+NVDA+Entfernen: Löscht das Lesezeichen an der aktuellen
-  Position.
+  Lesezeichen. Wenn Sie dem einen Namen vergeben möchten, wählen Sie vor dem
+  Speichern einen Namen für den Text an dieser Position aus.
+*	STRG+Umschalt+NVDA+Entf: Löscht das Lesezeichen an der aktuellen Position.
 *	NVDA+Y: Wechselt zum nächsten Lesezeichen.
 *	Umschalt+NVDA+Y: Wechselt zum vorherigen Lesezeichen.
 *	Nicht zugewiesen: Zeigt die Datei, in welcher die Lesezeichen gespeichert
   werden im Lesemodus, ohne deren Erweiterung an.
 *	Alt+NVDA+Y: Öffnet ein Dialogfeld mit den für dieses Dokument
   gespeicherten Lesezeichen. Sie können zu jedem Lesezeichen eine Notiz
-  schreiben; Klicken Sie auf "Notiz speichern", um die Änderungen zu
-  speichern. Durch klicken auf "Löschen" können Sie das ausgewählte
-  Lesezeichen entfernen. Mit "OK" können Sie zu der ausgewählten Position
-  wechseln.
-*	Nicht zugewiesen: speichert die Position als temporäres Lesezeichen.
-*	Nicht zugewiesen: springt zum temporären Lesezeichen für das aktuelle
+  schreiben; Klicken Sie auf die Schaltfläche "Notiz speichern", um die
+  Änderungen zu speichern. Durch klicken auf die Schaltfläche "Löschen"
+  können Sie das ausgewählte Lesezeichen entfernen. Mit der Schaltfläche
+  "OK" können Sie zu der ausgewählten Position wechseln.
+*	Nicht zugewiesen: Speichert die Position als temporäres Lesezeichen.
+*	Nicht zugewiesen: springt zum temporären Lesezeichen im aktuellen
   Dokument.
 *	Nicht zugeordnet: Findet das nächste Vorkommen des zuletzt gesuchten
   Textes in einem bestimmten Dokument.
@@ -53,14 +51,14 @@ verwenden, da sie gemeinsame Tastenkombinationen und Funktionen haben.
   Textes in einem bestimmten Dokument.
 
 
-## Lesezeichen Untermenü (nvda+n) ##
+## Lesezeichen im Untermenü (NVDA+N) ##
 
 Über das Untermenü Lesezeichen in NVDA-Einstellungen können Sie auf folgende
 Elemente zugreifen:
 
 *	Suchanfragen: Öffnet einen Ordner, in dem zuvor gespeicherte Suchanfragen
   abgelegt sind.
-*	Lesezeichen-Ordner: öffnet einen Ordner mit gespeicherten Lesezeichen.
+*	Lesezeichen-Ordner: Öffnet einen Ordner mit den gespeicherten Lesezeichen.
 *	Lesezeichen-Ordner kopieren: Speichert eine Kopie des Lesezeichen-Ordners.
 *	Lesezeichen wiederherstellen: Stellt die Lesezeichen aus einem zuvor
   gespeicherten Lesezeichen-Ordner wieder her.

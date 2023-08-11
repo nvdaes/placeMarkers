@@ -33,11 +33,11 @@ bunu kullanmak için onları kaldırmalısınız.
 *	shift+NVDA+y: Önceki yerimine gider.
 *	Atanmamış: Tarama modunda yerimleri verilerinin kaydedileceği dosya adını
   uzantısız olarak gösterir.
-*	alt+NVDA+y: Bu belge için kaydedilen yerişaretlerini içeren bir iletişim
+*	alt+NVDA+y: Bu belge için kaydedilen yerimlerini içeren bir iletişim
   kutusu açar. Her yer imi için bir not yazabilirsiniz; Değişiklikleri
-  kaydetmek için Notu kaydet'e basın. Sil'e basarak seçili yer işaretini
+  kaydetmek için Notu kaydet'e basın. Sil'e basarak seçili yer imini
   kaldırabilirsiniz. Tamam'a basarak seçilen konuma geçebilirsiniz.
-*	Atanmamış: Bir konumu geçici yerimi olarak kaydeder.
+*	Atanmamış: Bir konumu geçici yer imi olarak kaydeder.
 *	Atanmamış: Geçerli belge için geçici yerimine gider.
 *	Atanmadı: Belirli bir belge için aranan son metinde sonrakini bulur.
 *	Atanmadı: Belirli bir belge için aranan son metinde öncekini bulur.
