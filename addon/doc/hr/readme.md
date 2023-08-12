@@ -3,17 +3,16 @@
 * Autori: Noelia, Chris.
 * Preuzmi [stabilnu verziju][1] (kompatibilna s NVDA 2022.1 i novijom)
 
-Ovaj se dodatak koristi za spremanje i pretraživanje određenih tekstualnih
-nizova ili knjižnih oznaka. Može se koristiti za web stranice ili za
-dokumente u NVDA modusu čitanja. Može se koristiti i za spremanje i
-pretraživanje teksta u višerednim kontrolama. Ako nije moguće aktualizirati
-tekstualni kursor, odgovarajući niz će se kopirati u međuspremnik, kako bi
-se mogao pretraživati pomoću drugih alata. Dodatak sprema navedene nizove i
-knjižne oznake u datoteke, čije se ime temelji na naslovu i URL-u
-trenutačnog dokumenta. Ovaj se dodatak temelji na „SpecificSearch” i na
-„Bookmark&Search”, koje je razvio isti autor. Da bi se ovaj dodatak mogao
-koristiti, moraju se deinstalirati navedeni dodaci, jer imaju zajedničke
-tipke i funkcije.
+This add-on is used for saving and searching specific text strings or
+placemarkers. It can be used on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+placemarkers to files whose name is based on the title and URL of the
+current document.  This add-on is based on SpecificSearch and
+Bookmark&Search, developed by the same author. You should uninstall them to
+use this one, since they have common keystrokes and features.
 
 ## Tipkovnički prečaci: ##
 
@@ -25,44 +24,42 @@ tipke i funkcije.
   odaberi radnju iz sljedeće grupe izbornih gumba (Traži sljedeću, Traži
   prethodnu ili Ne traži), te odredi osjetljivost na velika i mala slova
   tijekom pretrage. Pritiskom gumba „U redu”, NVDA će tražiti taj niz.
-*	kontrol+šift+NVDA+y: Sprema trenutačnu poziciju kao knjižnu oznaku. Ako
-  toj knjižnoj oznaci želiš dodijeliti ime, odaberi neki tekst ove pozicije
-  prije spremanja.
-*	kontrol+šift+NVDA+delete: Briše knjižnu oznaku koja odgovara ovoj
-  poziciji.
-*	NVDA+y: Premješta se na sljedeću knjižnu oznaku.
-*	šift+NVDA+y: Premješta se na prethodnu knjižnu oznaku.
-*	Nije dodijeljeno: Pokazuje naziv datoteke u modusu čitanja, bez nastavka.
-*	alt+NVDA+y: Otvara dijaloški okvir sa spremljenim knjižnim oznakama za
-  ovaj dokument. Za svaku knjižnu oznaku je moguće upisati napomenu;
-  pritisni „Spremi napomenu” za spremanje promjene. Pritiskom na „Odustani”
-  brišeš odabranu knjižnu oznaka. Pritiskom na „U redu” premještaš se na
-  odabranu poziciju.
-*	Nije dodijeljeno: Sprema poziciju kao privremenu knjižnu oznaku.
-*	Nije dodijeljeno: Pomiče se na privremenu knjižnu oznaku za trenutačni
-  dokument.
+*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
+  want to provide a name for this placemarker, select some text from this
+  position before saving it.
+*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
+  position.
+*	NVDA+y: Moves to the next placemarker.
+*	shift+NVDA+y: Moves to the previous placemarker.
+*	Not assigned: Shows the file name where the placemarkers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
+  document. You can write a note for each placemarker; press Save note to
+  save changes. Pressing Delete you can remove the selected
+  placemarker. Pressing OK you can move to the selected position.
+*	Not assigned: Saves a position as a temporary placemarker.
+*	Not assigned: Moves to the temporary placemarker for the current document.
 *	Nije dodijeljeno: Nalazi sljedeći slučaj zadnje pretrage teksta za svaki
   određeni dokument.
 *	Nije dodijeljeno: Nalazi prethodni slučaj zadnje pretrage teksta za svaki
   određeni dokument.
 
 
-## Podizbornik „Oznake pozicija” (NVDA+N) ##
+## PlaceMarkers Submenu (NVDA+N) ##
 
-Korištenjem podizbornika „Oznake pozicija” u izborniku NVDA postavki, možeš
-pristupiti:
+Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
+access:
 
-*	Mapi određene pretrage: otvara mapu prethodno spremljenih određenih
-  pretraživanja.
-*	Mapi knjižnih oznaka: otvara mapu spremljenih knjižnih oznaka.
-*	Kopiraj mapu za „Oznake pozicija”: omogućuje spremanje kopije mape
-  knjižnih oznaka.
-*	Obnovi „Oznake pozicija”: omogućuje obnovljanje knjižnih oznaka iz mape
-  prethodno spremljenih knjižnih oznaka.
+*	Specific search folder: Opens a folder of specific searches previously
+  saved.
+*	Bookmarks folder: Opens a folder of the saved placemarkers.
+*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
+*	Restore placeMarkers: You can restore your placeMarkers from a previously
+  saved placeMarkers folder.
 
-Napomena: Pozicija knjižne oznake se zasniva na broju znakova. Stoga je u
-dinamičkim stranicama bolje koristiti određenu pretragu, a ne knjižne
-oznake.
+Note: The placemarker position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+placemarkers.
 
 ## Promjene u verziji 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
@@ -97,8 +94,8 @@ oznake.
 ## Promjene u verziji 16.0 ##
 * Kompatibilno s NVDA 2021.1 i novijim verzijama (obavezno).
 * Brzo čitanje je podržano prilikom prelaska na privremene oznake.
-* Ako je potrebno možeš preuzeti [druge
-  verzije](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Promjene u verziji 15.0 ##
 * When reading with say all in browse mode, the specific find next and

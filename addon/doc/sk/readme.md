@@ -3,12 +3,16 @@
 * Autori): Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
 
-Doplnok dokáže uložiť reťazec pre vyhľadávanie, alebo konkrétne miesto v
-dokumente ako záložku. Funguje na webových stránkach a dokumentoch v režime
-prehliadania. Funguje tiež vo viacriadkových editačných poliach. Ak sa nedá
-aktualizovať systémový kurzor, reťazec je skopírovaný do schránky pre
-hľadanie cez iné nástroje. Záložky a reťazce hľadania sú uložené v
-súboroch. Názvy súborov sú odvodené od cesty, názvu a URL dokumentu.
+This add-on is used for saving and searching specific text strings or
+placemarkers. It can be used on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+placemarkers to files whose name is based on the title and URL of the
+current document.  This add-on is based on SpecificSearch and
+Bookmark&Search, developed by the same author. You should uninstall them to
+use this one, since they have common keystrokes and features.
 
 ## Klávesové skratky: ##
 
@@ -20,39 +24,42 @@ súboroch. Názvy súborov sú odvodené od cesty, názvu a URL dokumentu.
   (hľadať predchádzajúce, hľadať nasledujúce), prípadne nehľadať
   vôbec. Takisto môžete začiarknuť rozlišovanie malých a veľkých
   písmen. Hľadanie spustíte tlačidlom OK.
-*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
+*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
+  want to provide a name for this placemarker, select some text from this
   position before saving it.
-*	ctrl+shift+NVDA+delete: Odstráni záložku pod kurzorom.
-*	NVDA+y: Moves to the next bookmark.
-*	shift+NVDA+y: Moves to the previous bookmark.
-*	Nedefinované: zobrazí v režime prehliadania názov súboru so záložkami pre
-  aktuálny dokument.
-*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Nedefinované: Uloží pozíciu kurzora ako dočasnú záložku.
-*	Nedefinované: Presunie kurzor na dočasnú záložku.
+*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
+  position.
+*	NVDA+y: Moves to the next placemarker.
+*	shift+NVDA+y: Moves to the previous placemarker.
+*	Not assigned: Shows the file name where the placemarkers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
+  document. You can write a note for each placemarker; press Save note to
+  save changes. Pressing Delete you can remove the selected
+  placemarker. Pressing OK you can move to the selected position.
+*	Not assigned: Saves a position as a temporary placemarker.
+*	Not assigned: Moves to the temporary placemarker for the current document.
 *	Nedefinované: Nájde nasledujúci výskyt posledného hľadaného reťazca v
   dokumente.
 *	Nedefinované: Nájde predchádzajúci výskyt posledného hľadaného reťazca v
   dokumente.
 
 
-## Podmenu záložky (nvda+n) ##
+## PlaceMarkers Submenu (NVDA+N) ##
 
-Podmenu záložky nájdete v menu možnosti NVDA a obsahuje tieto položky:
+Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
+access:
 
-*	Priečinok s reťazcami hľadania: Otvorí priečinok so súbormi, v ktorých sú
-  uložené reťazce pre hľadanie.
-*	priečinok so záložkami: otvorí priečinok v ktorom sú uložené súbory so
-  záložkami.
-*	Zálohovať záložky: skopíruje priečinok so záložkami na určené miesto.
-*	Obnoviť záložky: Obnoví záložky z uloženého priečinka.
+*	Specific search folder: Opens a folder of specific searches previously
+  saved.
+*	Bookmarks folder: Opens a folder of the saved placemarkers.
+*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
+*	Restore placeMarkers: You can restore your placeMarkers from a previously
+  saved placeMarkers folder.
 
-Poznámka: záložky fungujú na základe počtu znakov. Na dinamických stránkach
-je lepšie použiť reťazce hľadania.
+Note: The placemarker position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+placemarkers.
 
 ## Changes for 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,

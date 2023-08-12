@@ -34,7 +34,7 @@ teclas y características.
 *	NVDA+y: se mueve al siguiente marcador.
 *	shift+NVDA+y: se mueve al marcador anterior.
 *	Sin asignar: muestra el nombre del archivo donde se guardarán los datos de
-  Place Markers en modo exploración, sin extensión.
+  marcas en modo exploración, sin extensión.
 *	alt+NVDA+y: abre un diálogo con las marcas guardadas para este
   documento. Puedes escribir una nota para cada marca; pulsa Guardar Nota
   para guardar cambios. Pulsando suprimir se elimina la nota
@@ -49,8 +49,8 @@ teclas y características.
 
 ## Submmenú Place markers (NVDA+N) ##
 
-Utilizando el submenú Place markers en el menú Preferencias, puedes acceder
-a:
+Utilizando el submenú Place markers en el menú Preferencias de NVDA, puedes
+acceder a:
 
 *	Carpeta de búsqueda específica: abre una carpeta de búsquedas específicas
   guardadas previamente.

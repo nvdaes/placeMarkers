@@ -3,16 +3,16 @@
 * Tác giả: Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
 
-Addon này dùng để lưu lại và tìm kiếm một chuỗi văn bản hay dấu trang cụ
-thể. nó có thể được dùng trên các trang web hay tài liệu trong chế độ duyệt
-của NVDA. Nó cũng có thể được dùng để lưu lại hoặc tìm kiếm các chuỗi văn
-bản trong các điều khiển nhập liệu nhiều dòng; trường hợp này, nếu không thể
-cập nhật dấu trang, chuỗi văn bản tương ứng sẽ được chép vào bộ nhớ tạm nên
-có thể tìm kiếm bằng những công cụ khác. Plugin này lưu các chuỗi văn bản và
-dấu trang được chỉ định vào các tập tin được đặt tên dựa trên tựa đề và URL
-của tài liệu hiện tại. Addon này dựa trên addon SpecificSearch và
-Bookmark&Search, phát triển bởi cùng tác giả. Bạn nên gỡ bỏ chúng để dùng
-addon này vì chúng có những tính năng và phím lệnh trùng nhau.
+This add-on is used for saving and searching specific text strings or
+placemarkers. It can be used on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+placemarkers to files whose name is based on the title and URL of the
+current document.  This add-on is based on SpecificSearch and
+Bookmark&Search, developed by the same author. You should uninstall them to
+use this one, since they have common keystrokes and features.
 
 ## Các phím lệnh: ##
 
@@ -24,40 +24,42 @@ addon này vì chúng có những tính năng và phím lệnh trùng nhau.
   nhóm radio buttons (tìm tiếp, tìm trước hay không tìm kiếm), và thiết lập
   nếu muốn NVDA tìm kiếm phân biệt chữ hoa  thường. Khi bạn bấm okay, NVDA
   sẽ tìm kiếm chuỗi văn bản.
-*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
+*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
+  want to provide a name for this placemarker, select some text from this
   position before saving it.
-*	control+shift+NVDA+delete: Xóa dấu trang tại vị trí tương ứng.
-*	NVDA+y: Moves to the next bookmark.
-*	shift+NVDA+y: Moves to the previous bookmark.
-*	Chưa gán: Hiển thị tên tập tin dùng để lưu dữ liệu của các điểm đánh dấu ở
-  chế độ duyệt mà không có phần mở rộng.
-*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Chưa gán lệnh: Lưu một vị trí thành dấu trang tạm thời.
-*	Chưa gán lệnh: Chuyển đến dấu trang tạm thời của tài liệu hiện thời.
+*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
+  position.
+*	NVDA+y: Moves to the next placemarker.
+*	shift+NVDA+y: Moves to the previous placemarker.
+*	Not assigned: Shows the file name where the placemarkers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
+  document. You can write a note for each placemarker; press Save note to
+  save changes. Pressing Delete you can remove the selected
+  placemarker. Pressing OK you can move to the selected position.
+*	Not assigned: Saves a position as a temporary placemarker.
+*	Not assigned: Moves to the temporary placemarker for the current document.
 *	Chưa gán lệnh: tìm văn bản tiếp theo có chứa nội dugn tìm kiếm gần nhất
   cho mọi tài liệu cụ thể.
 *	Chưa gán lệnh: tìm văn bản trước đó có chứa nội dugn tìm kiếm gần nhất cho
   mọi tài liệu cụ thể.
 
 
-## Đánh dấu thực đơn con (NVDA+N) ##
+## PlaceMarkers Submenu (NVDA+N) ##
 
-Dùng đánh dấu trình đơn con trong trình đơn Tùy Chọn, bạn có thể truy cập:
+Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
+access:
 
-*	Thư mục tìm kiếm cụ thể: mở thư mục của những tìm kiếm cụ thể đã được lưu
-  trước đó.
-*	Thư mục dấu trang: mở thư mục các dấu trang đã lưu.
-*	Sao chép thư mục các điểm đánh dấu: Bạn có thể tạo một bản sao của thư mục
-  các điểm đánh dấu.
-*	Khôi phục các điểm đánh dấu: Bạn có thể khôi phục các điểm đánh dấu từ thư
-  mục các điểm đánh dấu đã lưu trước đó.
+*	Specific search folder: Opens a folder of specific searches previously
+  saved.
+*	Bookmarks folder: Opens a folder of the saved placemarkers.
+*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
+*	Restore placeMarkers: You can restore your placeMarkers from a previously
+  saved placeMarkers folder.
 
-Lưu ý: vị trí dấu trang dựa trên số lượng kí tự; vậy nên trong các trang web
-động thì dùng tìm kiếm cụ thể tốt hơn dấu trang.
+Note: The placemarker position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+placemarkers.
 
 ## Changes for 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,

@@ -10,7 +10,7 @@ etsimiseen monirivisistä säätimistä. Mikäli järjestelmäkohdistimen
 siirtäminen ei ole tällöin mahdollista, hakua vastaava merkkijono kopioidaan
 leikepöydälle, jotta sitä voidaan etsiä muilla tavoilla.  Merkkijonot ja
 paikkamerkit tallennetaan tiedostoihin, joiden nimet perustuvat nykyisen
-asiakirjan nimeen ja URL-osoitteeseen.  Tämä lisäosa perustuu saman tekijän
+asiakirjan nimeen ja URLiin.  Tämä lisäosa perustuu saman tekijän
 SpecificSearch- ja Bookmark&Search-lisäosiin. Sinun tulisi poistaa ne tämän
 version käyttämiseksi, sillä niissä on samoja näppäinkomentoja ja
 ominaisuuksia.
@@ -37,18 +37,18 @@ ominaisuuksia.
   tallennetut paikkamerkit. Voit kirjoittaa kullekin paikkamerkille
   muistiinpanon. Tallenna muutokset painamalla Tallenna muistiinpano
   -painiketta. Voit poistaa valitun paikkamerkin painamalla
-  Del-näppäintä. Siirry valittuun sijaintiin painamalla OK.
+  Delete-näppäintä. Siirry valittuun sijaintiin painamalla OK.
 *	Ei määritetty: Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi.
-*	Ei määritetty: Siirtää tilapäiseen kirjanmerkkiin nykyisessä asiakirjassa.
+*	Ei määritetty: Siirtää tilapäiseen paikkamerkkiin nykyisessä asiakirjassa.
 *	Ei määritetty: Etsii viimeksi haetun tekstin seuraavan esiintymän mistä
   tahansa määrätystä asiakirjasta.
 *	Ei määritetty: Etsii viimeksi haetun tekstin edellisen esiintymän mistä
   tahansa määrätystä asiakirjasta.
 
 
-## Paikkamerkit-alavalikko (NVDA+N) ##
+## Paikkamerkit-alivalikko (NVDA+N) ##
 
-Asetukset-valikosta löytyvästä Paikkamerkit-alavalikosta pääset käyttämään
+Asetukset-valikosta löytyvästä Paikkamerkit-alivalikosta pääset käyttämään
 seuraavia toimintoja:
 
 *	Sivukohtaisen haun kansio: avaa tallennettujen sivukohtaisten hakujen

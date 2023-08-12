@@ -3,17 +3,16 @@
 * Autores: Noelia, Chris.
 * download [stable version][1] (compatible with NVDA 2022.1 and beyond)
 
-Este complemento é usado para salvar e pesquisar cadeias de texto ou
-marcadores específicos. Ele pode ser usado em páginas de Internet ou
-documentos no modo de navegação do NVDA. Pode-se também usá-lo para salvar
-ou pesquisar cadeias de texto em controles multilinha; nesse caso, se não
-for possível atualizar o cursor, a cadeia correspondente será copiada para a
-área de transferência, para que possa ser pesquisada por outras
-ferramentas. O plug-in salva as cadeias e marcadores especificados em
-arquivos cujos nomes são baseados no título e no endereço do documento
-atual. Este complemento é baseado nos complementos SpecificSearch e
-Bookmark&Search, desenvolvidos pelo mesmo autor. Você deve desinstalá-los
-para usar este aqui, pois eles têm teclas de atalho e recursos em comum.
+This add-on is used for saving and searching specific text strings or
+placemarkers. It can be used on web pages or documents in NVDA's browse
+mode. It can also be used for saving or searching strings of text in
+multi-line controls; in this case, if it's not possible to update the caret,
+the corresponding string will be copied to the clipboard, so that it can be
+searched using other tools.  The plugin saves the specified strings and
+placemarkers to files whose name is based on the title and URL of the
+current document.  This add-on is based on SpecificSearch and
+Bookmark&Search, developed by the same author. You should uninstall them to
+use this one, since they have common keystrokes and features.
 
 ## Teclas de comando: ##
 
@@ -27,43 +26,42 @@ para usar este aqui, pois eles têm teclas de atalho e recursos em comum.
   anterior ou não pesquisar) e especifique se o NVDA fará uma pesquisa
   diferenciando maiúsculas. Quando pressionar OK, o NVDA pesquisará essa
   cadeia.
-*	control+shift+NVDA+y: Saves the current position as a bookmark. If you
-  want to provide a name for this bookmark, select some text from this
+*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
+  want to provide a name for this placemarker, select some text from this
   position before saving it.
-*	control+shift+NVDA+delete: Exclue o marcador correspondente a esta
-  posição.
-*	NVDA+y: Moves to the next bookmark.
-*	shift+NVDA+y: Moves to the previous bookmark.
-*	Não atribuído: Mostra o nome do arquivo no qual serão salvos os dados de
-  marcadores de lugar, sem a extensão.
-*	alt+NVDA+y: Opens a dialog with the bookmarks saved for this document. You
-  can write a note for each bookmark; press Save note to save
-  changes. Pressing Delete you can remove the selected bookmark. Pressing OK
-  you can move to the selected position.
-*	Não atribuído: salva uma posição como um marcador temporário.
-*	Não atribuído: Move para o marcador temporário do documento atual.
+*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
+  position.
+*	NVDA+y: Moves to the next placemarker.
+*	shift+NVDA+y: Moves to the previous placemarker.
+*	Not assigned: Shows the file name where the placemarkers data will be
+  saved in browse mode, without an extension.
+*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
+  document. You can write a note for each placemarker; press Save note to
+  save changes. Pressing Delete you can remove the selected
+  placemarker. Pressing OK you can move to the selected position.
+*	Not assigned: Saves a position as a temporary placemarker.
+*	Not assigned: Moves to the temporary placemarker for the current document.
 *	Não atribuído: localiza a ocorrência seguinte do último texto pesquisado
   em qualquer documento específico.
 *	Não atribuído: localiza a ocorrência anterior do último texto pesquisado
   em qualquer documento específico.
 
 
-## Submenu Marcadores de lugar (NVDA+N) ##
+## PlaceMarkers Submenu (NVDA+N) ##
 
-Ao usar o submenu Marcadores de lugar no menu Preferências do NVDA, pode
-acessar:
+Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
+access:
 
-*	Pasta de pesquisa específica: abre uma pasta com pesquisas específicas
-  salvas anteriormente.
-*	Pasta de marcadores: Abre uma pasta com os marcadores salvos.
-*	Copiar pasta de marcadores de lugar: Pode salvar uma cópia da pasta de
-  marcadores.
-*	Restaurar marcadores de lugar: Pode restaurar os marcadores a partir de
-  uma pasta de marcadores de lugar anteriormente salva.
+*	Specific search folder: Opens a folder of specific searches previously
+  saved.
+*	Bookmarks folder: Opens a folder of the saved placemarkers.
+*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
+*	Restore placeMarkers: You can restore your placeMarkers from a previously
+  saved placeMarkers folder.
 
-Nota: A posição do marcador é baseada no número de caracteres; assim, em
-páginas de conteúdo dinâmico, é melhor usar a pesquisa específica e não
-marcadores.
+Note: The placemarker position is based on the number of characters; and
+therefore in dynamic pages it is better to use the specific search, not
+placemarkers.
 
 ## Changes for 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
