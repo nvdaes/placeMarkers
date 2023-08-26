@@ -3,55 +3,36 @@
 * 作者: Noelia, Chris.
 * 下载[稳定版][1]（兼容NVDA 2022.1及更高版本）
 
-This add-on is used for saving and searching specific text strings or
-placemarkers. It can be used on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-placemarkers to files whose name is based on the title and URL of the
-current document.  This add-on is based on SpecificSearch and
-Bookmark&Search, developed by the same author. You should uninstall them to
-use this one, since they have common keystrokes and features.
+此插件用于保存和搜索特定的文本字符串或书签。支持 NVDA
+浏览模式下的网页或文档。还可以用于保存或搜索多行控件中的文本字符串，在这种情况下，如果不能更新系统光标，相应的字符串将被复制到剪贴板，以便可以使用其他工具进行搜索。该插件将指定的字符串和书签保存到名称基于当前文档的标题和URL的文件中。该插件基于由同一作者开发的SpecificSearch和Bookmark＆Search插件更新而来。您如果安装了这些插件，应该先卸载它们以使用该插件，它们具有同样的快捷键和功能。
 
 ## 快捷键： ##
 
 *	control+shift+NVDA+f:
   打开一个对话框，其中显示一个编辑框，显示上次保存的搜索;在此对话框中，您还可以从组合框中选择以前保存的搜索，或使用复选框从历史记录中删除选定的字符串。您可以选择编辑框中包含的文本是否会添加到保存文本的历史记录中。最后，从下一组单选按钮中选择一个操作（在下一个搜索，搜索上一个或不搜索之间），并指定NVDA是否进行区分大小写搜索。当你按下确定的时候，NVDA会搜索这个字符串。
-*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
-  want to provide a name for this placemarker, select some text from this
-  position before saving it.
-*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
-  position.
-*	NVDA+y: Moves to the next placemarker.
-*	shift+NVDA+y: Moves to the previous placemarker.
-*	Not assigned: Shows the file name where the placemarkers data will be
-  saved in browse mode, without an extension.
-*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
-  document. You can write a note for each placemarker; press Save note to
-  save changes. Pressing Delete you can remove the selected
-  placemarker. Pressing OK you can move to the selected position.
-*	Not assigned: Saves a position as a temporary placemarker.
-*	Not assigned: Moves to the temporary placemarker for the current document.
+*	control+shift+NVDA+y: 将当前位置保存为书签。如果您想为此书签命名，请​​在保存之前选中一些文本。
+*	control+shift+NVDA+delete: 删除与此位置相对应的书签。
+*	NVDA+y: 移至下一个书签。
+*	shift+NVDA+y: 移至上一个书签。
+*	未分配: 在浏览模式下显示保存位置标记数据的文件名，不含扩展名。
+*	alt+NVDA+y:
+  打开一个对话框，其中包含为此文档保存的书签。您可以为每个书签写一个备注;按保存备注保存更改。点删除删除所选书签。点确定移动到当前书签对应的位置。
+*	未分配: 将位置保存为临时书签。
+*	未分配: 移至当前文档的临时书签。
 *	未分配：从光标所在位置处查找下一个匹配项。
 *	从光标所在位置处查找上一个匹配项。
 
 
-## PlaceMarkers Submenu (NVDA+N) ##
+## 位置标记子菜单 (NVDA + N) ##
 
-Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
-access:
+通过 NVDA 菜单下的“位置标记”子菜单，可以查看：
 
-*	Specific search folder: Opens a folder of specific searches previously
-  saved.
-*	Bookmarks folder: Opens a folder of the saved placemarkers.
-*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
-*	Restore placeMarkers: You can restore your placeMarkers from a previously
-  saved placeMarkers folder.
+*	特定搜索文件夹：打开之前保存的特定搜索的文件夹。
+*	书签文件夹：打开已保存书签的文件夹。
+*	备份位置标记：您可以保存书签文件夹的副本。
+*	恢复位置标记：您可以从先前保存的位置标记文件夹中恢复您的书签。
 
-Note: The placemarker position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-placemarkers.
+注意：书签位置基于字符数量来确定，因此，在动态页面中，最好使用特定搜索，而不是书签。
 
 ## 版本 24.0
 * 在 NVDA+k、NVDA+shift+k、NVDA+alt+k 和 NVDA+control+shift+k 等手势中使用 Y 代替 k。
@@ -82,8 +63,7 @@ placemarkers.
 ## 版本16.0 ##
 * 兼容 NVDA 2021.1 或更高版本（必需）。
 * 移动到临时书签时支持略读。
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* 如果需要，您可以下载[其他版本](https://github.com/nvdaes/placeMarkers/releases)。
 
 ## 版本15.0 ##
 * 在浏览模式下使用全文朗读进行阅读时，根据 NVDA 2020.4
