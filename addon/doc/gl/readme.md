@@ -1,7 +1,6 @@
 # placeMarkers #
 
 * Autores: Noelia, Chris.
-* descargar [versión estable][1] (compatible con NVDA 2022.1 e posterior)
 
 This add-on is used for saving and searching specific text strings or
 placemarkers. It can be used on web pages or documents in NVDA's browse
@@ -220,7 +219,5 @@ placemarkers.
   Xaponés.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

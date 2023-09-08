@@ -1,7 +1,6 @@
 # placeMarkers #
 
 * Autores: Noelia, Chris.
-* descargar [versión estable][1] (compatible desde NVDA 2022.1 en adelante)
 
 Este complemento se utiliza para guardar y restaurar cadenas de texto
 específicas o marcas. Puede utilizarse en páginas web o en documentos en el
@@ -222,7 +221,5 @@ y no las marcas.
   Portugués del Brasil, Tamil.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o
