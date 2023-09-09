@@ -1,8 +1,6 @@
 # Позиционни маркери (placeMarkers) #
 
 * Автори: Noelia, Chris.
-* Изтегляне на [стабилна версия][1] (съвместима с NVDA 2022.1 и по-нови
-  версии)
 
 Тази добавка се използва за запазване и търсене на определен текст или
 маркер в уеб страници или други документи в режим на разглеждане с
@@ -227,7 +225,5 @@ Bookmark&Search, разработени от същия автор. Трябва
   испански, словашки, словенски, Тамил.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

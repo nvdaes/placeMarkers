@@ -1,7 +1,6 @@
 # yerİmleri #
 
 * Yazarlar: Noelia, Chris.
-* [kararlı sürümü indir][1] (NVDA 2022.1 ve sonrası ile uyumlu)
 
 Bu eklenti, belirli metin dizelerini veya yerimlerini kaydetmek ve aramak
 için kullanılır. NVDA'nın göz atma modunda web sayfalarında veya belgelerde
@@ -207,7 +206,5 @@ sayfalarda, yer imlerini değil, belirli aramayı kullanmak daha iyidir.
   Portekizcesi, Farsça, Fince.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

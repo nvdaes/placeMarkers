@@ -1,7 +1,6 @@
 # Paikkamerkit #
 
 * Tekijät: Noelia, Chris
-* Lataa [vakaa versio][1] (yhteensopiva NVDA 2022.1:n ja uudempien kanssa)
 
 Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
 paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
@@ -212,7 +211,5 @@ paikkamerkkien asemesta sivukohtaista hakua.
   ja tamili.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

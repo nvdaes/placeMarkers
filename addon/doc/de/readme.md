@@ -1,7 +1,6 @@
 # Lesezeichen #
 
 * Autoren: Noelia und Chris.
-* [Stabile Version herunterladen][1] (kompatibel mit NVDA 2022.1 und neuer)
 
 Diese NVDA-Erweiterung dient zum Speichern und Suchen bestimmter
 Textzeichenfolgen oder Lesezeichen. Es kann auf Webseiten oder Dokumenten im
@@ -232,7 +231,5 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
   Portugiesisch, Spanisch, Slovakisch, Slovenisch, Tamil.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

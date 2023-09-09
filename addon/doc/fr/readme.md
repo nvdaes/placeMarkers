@@ -1,7 +1,6 @@
 # placeMarkers #
 
 * Auteurs : Noelia, Chris.
-* Télécharger [version stable][1] (compatible avec NVDA 2022.1 et au-delà)
 
 Cette extension sert à sauvegarder et rechercher des chaînes de caractères
 ou des marqueurs spécifiques sur des pages web ou des documents en Mode
@@ -234,7 +233,5 @@ spécifique, pas les marqueurs.
   Slovaque, Slovène, Tamil.
 
 [[!tag dev stable]]
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=placeMarkers
 
 [3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o
