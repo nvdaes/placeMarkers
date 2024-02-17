@@ -35,6 +35,7 @@ from scriptHandler import willSayAllResume, script
 from logHandler import log
 
 from .skipTranslation import translate
+from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
 
 addonHandler.initTranslation()
 
@@ -1218,7 +1219,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if os.path.isfile(getFileTempBookmark()):
 			# Translators: Presented when the current document has a temporary bookmark.
 			message += "\r\n\r\n" + _("Has temporary bookmark.")
-		ui.browseableMessage(
+		secureBrowseableMessage(
 			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 			message, _("%s file") % ADDON_SUMMARY
 		)
