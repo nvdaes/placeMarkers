@@ -292,7 +292,7 @@ def getFile(folder, ext=""):
 			uia = True
 			val = rootObj.UIAValuePattern.CurrentValue
 		try:
-			nameToAdd = " - %s" % val.split("#")[0].split("/")[-1].split("\\")[-1]
+			nameToAdd = " - %s" % val.split("#")[0].split("?")[0].split("/")[-1].split("\\")[-1]
 		except Exception:
 			nameToAdd = ""
 	else:
