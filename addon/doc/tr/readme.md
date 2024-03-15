@@ -57,6 +57,10 @@ NVDA'nın Tercihler menüsü altındaki Yerimleri alt menüsünü kullanarak
 Not: Yerimi konumu, karakter sayısına bağlıdır; ve bu nedenle dinamik
 sayfalarda, yer imlerini değil, belirli aramayı kullanmak daha iyidir.
 
+## 35.0 için Değişiklikler
+* Yer imlerinin farklı oturumlardaki belirli web siteleri için geçerli
+  olması amacıyla dosya adlarından URL parametreleri kaldırıldı.
+
 ## 24.0 için değişiklikler
 * NVDA+k, NVDA+shift+k, NVDA+alt+k ve NVDA+control+shift+k gibi hareketlerde
   k yerine y kullanılır.

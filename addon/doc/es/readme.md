@@ -63,6 +63,11 @@ Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
 
+## Cambios para 35.0
+* Se eliminan los parámetros de URL de los nombres de archivo, de tal forma
+  que los marcadores sean válidos para sitios web concretos en sesiones
+  diferentes.
+
 ## Cambios para 24.0
 * Se usa Y en vez de K en gestos como NVDA+k, NVDA+shift+k, NVDA+alt+k y
   NVDA+control+shift+k.
