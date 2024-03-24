@@ -61,6 +61,10 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
+## Changes for 35.0
+* Removed URL parameters from file names, so that bookmarks are valid for
+  specific websites in different sessions.
+
 ## Muutokset versiossa 24.0
 * Sellaisissa näppäinkomennoissa kuin NVDA+K, NVDA+Vaihto+K, NVDA+Alt+K ja
   NVDA+Ctrl+Vaihto+K käytetään K:n sijaan Y:tä.

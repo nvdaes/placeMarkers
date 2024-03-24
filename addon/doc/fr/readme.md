@@ -17,7 +17,7 @@ des raccourcis et des caractéristiques communes.
 
 ## Touches de commandes : ##
 
-*	Contrôle+maj+NVDA+f : Ouvre un dialogue avec une zone d'édition qui
+*	contrôle+maj+NVDA+f : Ouvre un dialogue avec une zone d'édition qui
   affiche la dernière recherche enregistrée; Dans ce dialogue, vous pouvez
   également sélectionner les recherches précédemment enregistrées dans une
   zone de liste déroulante ou supprimer la chaîne sélectionnée de
@@ -27,16 +27,16 @@ des raccourcis et des caractéristiques communes.
   radio (entre Recherche suivante, Recherche précédente ou Ne pas
   rechercher), et spécifiez si NVDA effectuera une recherche Respecter la
   casse. Lorsque vous appuyez sur OK, NVDA recherche cette chaîne.
-*	Contrôle+maj+NVDA+y : Enregistre la position actuelle comme un
+*	contrôle+maj+NVDA+y : Enregistre la position actuelle comme un
   marqueur. Si vous souhaitez donner un nom à ce marqueur, sélectionner un
   texte à partir de cette position avant de l'enregistrer.
-*	Contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
+*	contrôle+maj+NVDA+effacement : Supprime le marqueur correspondant à cette
   position.
 *	NVDA+y : Aller au marqueur suivant.
-*	Maj+NVDA+y : Aller au marqueur précédent.
+*	maj+NVDA+y : Aller au marqueur précédent.
 *	Non assignée : Affiche le nom du fichier dans lequel seront sauvegardés
   les marqueurs en mode navigation, sans extension.
-*	Alt+NVDA+y : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
+*	alt+NVDA+y : Ouvre un dialogue avec les marqueurs sauvegardés pour ce
   document. Vous pouvez écrire une note pour chaque marqueur ; Appuyez sur
   Enregistrer note pour enregistrer les modifications. En appuyant sur
   Supprimer vous pouvez supprimer le marqueur sélectionné. En appuyant sur
@@ -67,6 +67,11 @@ vous pouvez accéder à :
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
+
+## Changements pour la version 35.0
+* Les paramètres d'URL sont supprimés des noms de fichiers afin que les
+  marqueurs soient valides pour des sites Web spécifiques dans différentes
+  sessions.
 
 ## Changements pour la version 24.0
 * Y est utilisé à la place de k dans des gestes tels que NVDA+k, NVDA+maj+k,
@@ -144,7 +149,7 @@ spécifique, pas les marqueurs.
 *	Lors de l'utilisation du dialogue de copie des marqueurs, si le dossier
   choisi ne s'appelle pas placeMarkersBackup, un sous-dossiers de ce nom
   sera créé pour éviter l'effacement de certains dossiers importants, tels
-  que Documents ou Téléchargements. 
+  que Documents ou Téléchargements.
 
 ## Changements pour la version 12.0 ##
 *	Correction d'un bug critique qui provoquait le blocage de NVDA lors de la
@@ -227,7 +232,7 @@ spécifique, pas les marqueurs.
   des raccourcis de NVDA.
 
 ## Changements pour la version 1.0 ##
-* Première version
+* Première version.
 * Traduit en : Portugais Brésilien , Farsi, Finnois, Français, Galicien,
   Allemand, Italien, Japonais, Coréen, Nepali, Portugais, Espagnol,
   Slovaque, Slovène, Tamil.

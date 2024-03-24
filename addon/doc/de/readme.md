@@ -66,6 +66,10 @@ Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
+## Changes for 35.0
+* Removed URL parameters from file names, so that bookmarks are valid for
+  specific websites in different sessions.
+
 ## Änderungen in 24.0
 * Der Buchstabe Y wird anstelle von K in Tastenbefehlen wie NVDA+K,
   Umschalt+NVDA+K, Alt+NVDA+K und Strg+Umschalt+NVDA+K verwendet.

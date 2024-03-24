@@ -62,6 +62,10 @@ Note: The placemarker position is based on the number of characters; and
 therefore in dynamic pages it is better to use the specific search, not
 placemarkers.
 
+## Changes for 35.0
+* Removed URL parameters from file names, so that bookmarks are valid for
+  specific websites in different sessions.
+
 ## Alterações para 24.0
 * Y é utilizado em vez de k em atalhos como NVDA+k, NVDA+shift+k, NVDA+alt+k
   e NVDA+control+shift+k.
