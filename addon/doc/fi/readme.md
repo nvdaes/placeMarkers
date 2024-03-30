@@ -1,6 +1,6 @@
 # Paikkamerkit #
 
-* Tekijät: Noelia, Chris
+* Tekijät: Noelia ja Chris
 
 Tätä lisäosaa käytetään NVDA:n selaustilassa määrättyjen merkkijonojen tai
 paikkamerkkien tallentamiseen ja etsimiseen verkkosivuilta tai
@@ -23,7 +23,7 @@ ominaisuuksia.
   lisätäänkö muokkausruudun sisältämä teksti hakuhistoriaasi. Valitse
   lopuksi toiminto seuraavasta valintapainikeryhmästä (Etsi seuraava, Etsi
   edellinen tai Ei hakua) ja määritä, suorittaako NVDA kirjainkoon
-  huomioivan haun. Kun painat OK, NVDA etsii antamaasi merkkijonoa.
+  huomioivan haun. NVDA etsii antamaasi merkkijonoa painaessasi OK.
 *	Ctrl+Vaihto+NVDA+Y: Tallentaa nykyisen sijainnin paikkamerkiksi. Jos
   haluat antaa sille nimen, valitse sijainnista lyhyt tekstipätkä ennen
   paikkamerkin tallentamista.
@@ -61,9 +61,9 @@ Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
 
-## Changes for 35.0
-* Removed URL parameters from file names, so that bookmarks are valid for
-  specific websites in different sessions.
+## Muutokset versiossa 35.0
+* Poistettu URL-parametrit tiedostonimistä, jotta sivukohtaiset paikkamerkit
+  ovat kelvollisia eri istunnoissa.
 
 ## Muutokset versiossa 24.0
 * Sellaisissa näppäinkomennoissa kuin NVDA+K, NVDA+Vaihto+K, NVDA+Alt+K ja
