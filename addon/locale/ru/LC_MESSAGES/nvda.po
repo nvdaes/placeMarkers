@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-08-03 16:09+0200\n"
+"PO-Revision-Date: 2024-05-12 15:43+0300\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: LL@li.org\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -121,7 +121,7 @@ msgstr "Нет закладок"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
 msgid "Bookmarks deleted"
-msgstr "Закладки удалены "
+msgstr "Закладки удалены"
 
 #. Translators: The title of the Copy dialog.
 msgid "Copy place markers"
@@ -129,7 +129,7 @@ msgstr "Копировать закладки"
 
 #. Translators: An informational message displayed in the Copy dialog.
 msgid "Select a folder to save a backup of your current place markers."
-msgstr "Выберите папку для сохранения резервной копии текущих закладок. "
+msgstr "Выберите папку для сохранения резервной копии текущих закладок."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -187,7 +187,7 @@ msgstr "Открывает папку закладок"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Копировать папку закладок"
+msgstr "&Копировать папку закладок..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -195,7 +195,7 @@ msgstr "Создаёт резервную копию закладок"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "Вост&ановить папку закладок"
+msgstr "Восс&тановить закладки..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
@@ -222,7 +222,7 @@ msgstr "Активизирует диалог восстановления из 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr "Нахождение строки текста от текущей позиции курсора в документе."
+msgstr "нахождение строки текста от текущей позиции курсора в документе."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
@@ -303,19 +303,16 @@ msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Показывает имя текущего файла для закладок в режиме просмотра."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Нет закладок"
+msgstr "Содержит закладки."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Открывает папку конкретных поисковых запросов."
+msgstr "Содержит конкретный поисковый запрос."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Временная закладка сохранена на позиции %d"
+msgstr "Содержит временную закладка."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
@@ -324,7 +321,7 @@ msgstr "%s файл"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Сохраняет текущую позицию в качестве временной закладки. "
+msgstr "Сохраняет текущую позицию в качестве временной закладки."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
