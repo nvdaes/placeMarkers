@@ -56,8 +56,8 @@ access:
 *	Restore placeMarkers: You can restore your placeMarkers from a previously
   saved placeMarkers folder.
 
-Note: The placemarker position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
+Примечание: Позиция placemarker зависит от количества символов, и поэтому на
+динамических страницах лучше использовать конкретный поиск, а не
 placemarkers.
 
 ## Изменения для 35.0
@@ -118,11 +118,12 @@ placemarkers.
 *	Требуется NVDA 2019.3 или позднее.
 
 ## Изменения для 13.0 ##
-*	Added not assigned commands to find the next and previous occurrences of
-  the last text searched for any specific document.
-*	The specific search feature works when the NVDA's About dialog is open.
-*	In the Specific search dialog, the case sensitive checkbox will be checked
-  if this option was selected for the last search.
+*	Добавлены не назначенные команды для поиска следующего и предыдущего
+  вхождений последнего искомого текста для любого конкретного документа.
+*	Конкретная функция поиска работает, когда открыто диалоговое окно NVDA "О
+  программе".
+*	В диалоге "Конкретный поиск" будет установлен флажок "Учитывать регистр",
+  если этот параметр был выбран для последнего поиска.
 *	When the add-on is updated, bookmarks and strings for specific search
   saved in the previous version of the add-on will be automatically copied
   to the new version, unless you prefer to import place markers saved in the
@@ -137,16 +138,16 @@ placemarkers.
   Notes dialog, if chinese characters were selected before saving bookmarks.
 
 ## Изменения для 11.0 ##
-*	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA
-  2017.3][3].
+*	Совместимо с NVDA 2018.3 или позднее (обязательно).
+*	При необходимости вы можете загрузить [последнюю версию, совместимую с
+  NVDA 2017.3][3].
 
 ## Изменения для 10.0 ##
 *	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
   NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
   trying to move the cursor to bookmarks, to avoid errors, especially in
   long documents.
-*	Now specific search is supported in Edge.
+*	Теперь в Edge поддерживается специальный поиск.
 
 ## Изменения для 9.0
 *	When moving to a bookmark from the Notes dialog, the review cursor follows
@@ -157,8 +158,8 @@ placemarkers.
   each document.
 
 ## Изменения для 8.0 ##
-*	Removed fragment identifiers from bookmark filenames, which can avoid
-  issues in the VitalSource Bookshelf ePUB reader.
+*	Удалены идентификаторы фрагментов из имен файлов закладок, что позволяет
+  избежать проблем в программе чтения ePUB VitalSource Bookshelf.
 *	Added a Notes dialog, to associate comments for saved bookmarks and move
   to the selected position.
 
