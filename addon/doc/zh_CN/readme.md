@@ -33,9 +33,8 @@
 
 注意：书签位置基于字符数量来确定，因此，在动态页面中，最好使用特定搜索，而不是书签。
 
-## Changes for 35.0
-* Removed URL parameters from file names, so that bookmarks are valid for
-  specific websites in different sessions.
+## 版本35.0
+* 删除了文件名中的 URL 参数，以便书签在不同会话中的特定网站生效。
 
 ## 版本 24.0
 * 在 NVDA+k、NVDA+shift+k、NVDA+alt+k 和 NVDA+control+shift+k 等手势中使用 Y 代替 k。
