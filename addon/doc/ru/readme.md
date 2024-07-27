@@ -67,7 +67,7 @@ placemarkers.
 ## Изменения для 24.0
 * Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
   NVDA+alt+k and NVDA+control+shift+k.
-* Compatible with NVDA 2023.1.
+* Совместимо с NVDA 2023.1.
 
 ## Изменения для 23.0
 * The add-on works again with Microsoft Word.
@@ -93,10 +93,10 @@ placemarkers.
 
 ## Изменения для 17.0 ##
 * Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+* Исправлены переведённые строки, чтобы правильно работали переводы.
 
 ## Изменения для 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+* Совместимо с NVDA 2021.1 или выше (требуется).
 * Skim reading is supported when moving to temporary bookmarks.
 * If needed, you can download [other
   versions](https://github.com/nvdaes/placeMarkers/releases).
@@ -164,10 +164,10 @@ placemarkers.
   to the selected position.
 
 ## Изменения для 7.0 ##
-*	The dialog to save a string of text for specific search has been
-  removed. This functionality is now included in the Specific search dialog,
-  which has been redesigned to allow different actions when pressing the OK
-  button.
+*	Диалог для сохранения текстовой строки для конкретного поиска был
+  удалён. Эта функция теперь включена в диалог конкретного поиска, дизайн
+  которого был изменён таким образом, чтобы при нажатии кнопки OK можно было
+  выполнять другие действия.
 *	Визуальное представление диалогов было модифицировано, придерживаясь
   внешнего вида диалогов, отображаемых в NVDA.
 *	Performing a Find Next or Find Previous command in Browse Mode will now
@@ -176,8 +176,8 @@ placemarkers.
 *	Требуется NVDA 2016.4 или позднее.
 *	Now you can assign gestures to open the Copy and Restore place markers
   dialogs.
-*	NVDA will present a message to notify when place markers have been copied
-  or restored with the corresponding dialogs.
+*	NVDA выдаст сообщение с уведомлением о копировании или восстановлении
+  маркеров местоположения с помощью соответствующих диалогов.
 
 ## Изменения для 6.0 ##
 * Когда дополнительные функции не могут использоваться, жесты посылаются в
