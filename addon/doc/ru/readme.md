@@ -2,16 +2,18 @@
 
 * Авторы: Noelia, Chris.
 
-This add-on is used for saving and searching specific text strings or
-placemarkers. It can be used on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-placemarkers to files whose name is based on the title and URL of the
-current document.  This add-on is based on SpecificSearch and
-Bookmark&Search, developed by the same author. You should uninstall them to
-use this one, since they have common keystrokes and features.
+Это дополнение используется для сохранения и поиска определённых текстовых
+строк или меток размещения. Его можно использовать на веб-страницах или в
+документах в режиме обзора NVDA. Его также можно использовать для сохранения
+или поиска строк текста в многострочных элементах управления; в этом случае,
+если невозможно обновить курсор, соответствующая строка будет скопирована в
+буфер обмена, чтобы её можно было искать с помощью других инструментов.
+Дополнение сохраняет указанные строки и метки размещения в файлах, название
+которых основано на заголовке и URL-адресе текущего документа.  В основе
+дополнения лежат такие плагины для NVDA, как SpecificSearch и
+Bookmark&Search, разработанных тем же автором. Чтобы использовать это
+дополнение, вам следует удалить их, поскольку они имеют общие сочитания
+клавиш и функции.
 
 ## Клавиатурные Команды: ##
 
@@ -134,8 +136,9 @@ placemarkers.
   Documents or Downloads.
 
 ## Изменения для 12.0 ##
-*	Fixed a critical bug which caused NVDA to crash when trying to open the
-  Notes dialog, if chinese characters were selected before saving bookmarks.
+*	Исправлена критическая ошибка, приводившая к сбою NVDA при попытке открыть
+  диалог заметок, если перед сохранением закладок были выбраны китайские
+  иероглифы.
 
 ## Изменения для 11.0 ##
 *	Совместимо с NVDA 2018.3 или позднее (обязательно).
@@ -143,25 +146,24 @@ placemarkers.
   NVDA 2017.3][3].
 
 ## Изменения для 10.0 ##
-*	In Edge, gestures associated with bookmarks selection, such as NVDA+k,
-  NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of
-  trying to move the cursor to bookmarks, to avoid errors, especially in
-  long documents.
+*	В Edge жесты, связанные с выбором закладок, такие как NVDA+k, NVDA+shift+k
+  или NVDA+alt+k, будут отправляться в приложение вместо попыток навести
+  курсор на закладки, чтобы избежать ошибок, особенно в длинных документах.
 *	Теперь в Edge поддерживается специальный поиск.
 
 ## Изменения для 9.0
-*	When moving to a bookmark from the Notes dialog, the review cursor follows
-  the system cursor.
-*	The command to select the previous bookmark works properly again.
-*	Bookmarks can be deleted from the Notes dialog.
-*	Now you can assign gestures to save and move to a temporary bookmark for
-  each document.
+*	При переходе к закладке в диалоге "Заметки" просмотровый курсор следует за
+  системным курсором.
+*	Команда для выбора предыдущей закладки снова работает корректно.
+*	Закладки можно удалить из диалога Заметок.
+*	Теперь вы можете назначать жесты для сохранения и перемещения во временную
+  закладку для каждого документа.
 
 ## Изменения для 8.0 ##
 *	Удалены идентификаторы фрагментов из имен файлов закладок, что позволяет
   избежать проблем в программе чтения ePUB VitalSource Bookshelf.
-*	Added a Notes dialog, to associate comments for saved bookmarks and move
-  to the selected position.
+*	Добавлен диалог заметок, позволяющий привязывать комментарии к сохранённым
+  закладкам и перемещаться в выбранную позицию.
 
 ## Изменения для 7.0 ##
 *	Диалог для сохранения текстовой строки для конкретного поиска был
@@ -170,12 +172,12 @@ placemarkers.
   выполнять другие действия.
 *	Визуальное представление диалогов было модифицировано, придерживаясь
   внешнего вида диалогов, отображаемых в NVDA.
-*	Performing a Find Next or Find Previous command in Browse Mode will now
-  correctly do a case sensitive search if the original Find was case
-  sensitive.
+*	Выполнение команды "Найти следующее" или "Найти предыдущее" в режиме
+  обзора теперь будет корректно выполнять поиск с учётом регистра, если
+  исходный поиск был выполнен с учётом регистра.
 *	Требуется NVDA 2016.4 или позднее.
-*	Now you can assign gestures to open the Copy and Restore place markers
-  dialogs.
+*	Теперь вы можете назначать жесты для открытия диалогов Копирования и
+  восстановления маркеров.
 *	NVDA выдаст сообщение с уведомлением о копировании или восстановлении
   маркеров местоположения с помощью соответствующих диалогов.
 
