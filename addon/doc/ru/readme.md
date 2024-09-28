@@ -11,112 +11,113 @@
 Дополнение сохраняет указанные строки и метки размещения в файлах, название
 которых основано на заголовке и URL-адресе текущего документа.  В основе
 дополнения лежат такие плагины для NVDA, как SpecificSearch и
-Bookmark&Search, разработанных тем же автором. Чтобы использовать это
-дополнение, вам следует удалить их, поскольку они имеют общие сочитания
+Bookmark&Search, разработанные тем же автором. Чтобы использовать это
+дополнение, вам следует удалить их, поскольку они имеют общие сочетания
 клавиш и функции.
 
 ## Клавиатурные Команды: ##
 
-*	control+shift+NVDA+f: Opens a dialog with an edit box that shows the last
-  saved search; in this dialog you can also select the previously saved
-  searches from a combo box or remove the selected string from the history
-  using a checkbox. You can choose if the text contained in the edit box
-  will be added to the history of your saved texts. Finally, choose an
-  action from the next group of radio buttons (between Search next, Search
-  previous or Don't search), and specify if NVDA will make a case sensitive
-  search. When you press okay, NVDA will search for this string.
-*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
-  want to provide a name for this placemarker, select some text from this
-  position before saving it.
-*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
-  position.
-*	NVDA+y: Moves to the next placemarker.
-*	shift+NVDA+y: Moves to the previous placemarker.
-*	Not assigned: Shows the file name where the placemarkers data will be
-  saved in browse mode, without an extension.
-*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
-  document. You can write a note for each placemarker; press Save note to
-  save changes. Pressing Delete you can remove the selected
-  placemarker. Pressing OK you can move to the selected position.
-*	Not assigned: Saves a position as a temporary placemarker.
-*	Not assigned: Moves to the temporary placemarker for the current document.
-*	Not assigned: Finds the next occurrence of the last text searched for any
-  specific document.
-*	Not assigned: Finds the previous occurrence of the last text searched for
-  any specific document.
+*	control+shift+NVDA+f: Открывает диалог с полем редактирования, в котором
+  отображается последний сохранённый поиск; в этом диалоге вы также можете
+  выбрать ранее сохранённые поисковые запросы из комбинированного списка или
+  удалить выбранную строку из истории с помощью флажка. Вы можете выбрать,
+  будет ли текст, содержащийся в поле редактирования, добавлен в историю
+  сохранённых вами текстов. Наконец, выберите действие из следующей группы
+  переключателей (между поиском далее, поиском Предыдущего или не искать) и
+  укажите, будет ли NVDA выполнять поиск с учётом регистра. Когда вы нажмёте
+  ОК, NVDA выполнит поиск этой строки.
+*	control+shift+NVDA+y: Сохраняет текущую позицию в качестве метки. Если вы
+  хотите указать имя для этой метки, выделите текст в этой позиции перед его
+  сохранением.
+*	control+shift+NVDA+delete: Удаляет метку, соответствующую этой позиции.
+*	NVDA+y: Переход к следующей метке.
+*	shift+NVDA+y: Переход к предыдущей метке.
+*	Не назначено: Показывает имя файла, в котором данные меток будут сохранены
+  в режиме просмотра, без расширения.
+*	alt+NVDA+y: Открывает диалог с метками, сохранёнными для этого
+  документа. Вы можете написать примечание для каждой метки; нажмите
+  Сохранить примечание, чтобы сохранить изменения. Нажав Удалить, вы можете
+  удалить выбранную метку. Нажав ОК, вы можете перейти в выбранную позицию.
+*	Не назначено: позиция сохраняется в качестве временной метки.
+*	Не назначено: переход к временной метке текущего документа.
+*	Не назначено: находит следующее вхождение последнего текста, искомого для
+  любого конкретного документа.
+*	Не назначено: находит предыдущее вхождение последнего текста, искомого для
+  любого конкретного документа.
 
 
-## PlaceMarkers Submenu (NVDA+N) ##
+## Подменю закладок (NVDA+N) ##
 
-Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
-access:
+Используя подменю закладок в меню настроек NVDA, вы можете получить доступ
+к:
 
-*	Specific search folder: Opens a folder of specific searches previously
-  saved.
-*	Bookmarks folder: Opens a folder of the saved placemarkers.
-*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
-*	Restore placeMarkers: You can restore your placeMarkers from a previously
-  saved placeMarkers folder.
+*	Папка конкретного поиска: открывает папку с ранее сохраненными
+  определёнными поисковыми запросами.
+*	Папка закладок: открывает папку с сохраненными метками.
+*	Копировать папку закладок: вы можете сохранить копию папки PlaceMarkers.
+*	Восстановить закладки: вы можете восстановить свои закладки из ранее
+  сохранённой папки PlaceMarkers.
 
 Примечание: Позиция placemarker зависит от количества символов, и поэтому на
 динамических страницах лучше использовать конкретный поиск, а не
 placemarkers.
 
 ## Изменения для 35.0
-* Removed URL parameters from file names, so that bookmarks are valid for
-  specific websites in different sessions.
+* Удалены параметры URL-адресов из имён файлов, чтобы закладки были
+  действительны для определённых веб-сайтов в разных сеансах.
 
 ## Изменения для 24.0
-* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
-  NVDA+alt+k and NVDA+control+shift+k.
+* Y используется вместо k в таких жестах, как NVDA+k, NVDA+shift+k,
+  NVDA+alt+k и NVDA+control+shift+k.
 * Совместимо с NVDA 2023.1.
 
 ## Изменения для 23.0
-* The add-on works again with Microsoft Word.
+* Дополнение снова работает с Microsoft Word.
 
 ## Изменения для 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+* Мы можем переходить к закладкам и удалять их с включенным UIA, благодаря
+  Абделю.
 
 ## Изменения для 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+* Благодаря Абделю, закладки можно сохранять с включенным UIA в браузерах на
+  базе Chromium.
 
 ## Изменения для 20.0
 * Требуется NVDA 2022.1 или позднее.
 
 ## Изменения для 19.0 ##
-* The add-on cannot be run on secure screens.
+* Дополнение нельзя запустить на защищенных экранах.
 
 ## Изменения для 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+* Команда просмотра пути к PlaceMarkers показывает, есть ли постоянные
+  закладки, текст для конкретного поиска или временная закладка для текущего
+  документа.
 
 ## Изменения для 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
+* Исправлена ​​ошибка, из-за которой в некоторых документах не сохранялись
+  маркеры мест.
 * Исправлены переведённые строки, чтобы правильно работали переводы.
 
 ## Изменения для 16.0 ##
 * Совместимо с NVDA 2021.1 или выше (требуется).
-* Skim reading is supported when moving to temporary bookmarks.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Поддерживается беглое чтение при переходе к временным закладкам.
+* При необходимости вы можете скачать [другие
+  версии](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Изменения для 15.0 ##
-* When reading with say all in browse mode, the specific find next and
-  specific find previous commands do not stop reading anymore if Allow skim
-  reading option is enabled, according to find next and find previous
-  commands from NVDA 2020.4.
-* When the Specific search dialog is opened after running the Specific find
-  previous command, the Search previous option will be selected.
+* При чтении с использованием режима чтения всего в режиме обзора,
+  конкретные команды поиска следующего и поиска предыдущего больше не
+  прекращают чтение, если включена опция беглого чтения, в соответствии с
+  командами поиска следующего и поиска предыдущего в NVDA 2020.4.
+* Когда диалог специального поиска открывается после выполнения команды
+  конкретного поиска предыдущего, будет выбран параметр поиска предыдущего.
 
 ## Изменения для 14.0 ##
-*	The command to copy the name of the file where place markers data will be
-  saved has been replaced by a command which shows this file name in browse
-  mode. This is not assigned to a gesture.
-*	The "Text to search" field does not overlap the "Saved text" field
-  anymore. (Thanks to Cyrille Bougot).
+*	Команда копирования имени файла, в котором будут сохранены данные маркеров
+  места, заменена командой, которая отображает это имя файла в режиме
+  обзора. На неё не назначен жест.
+*	Поле "Текст для поиска" больше не перекрывает поле "Сохраненный
+  текст". (Спасибо Cyrille Bougot).
 *	Требуется NVDA 2019.3 или позднее.
 
 ## Изменения для 13.0 ##
@@ -126,14 +127,14 @@ placemarkers.
   программе".
 *	В диалоге "Конкретный поиск" будет установлен флажок "Учитывать регистр",
   если этот параметр был выбран для последнего поиска.
-*	When the add-on is updated, bookmarks and strings for specific search
-  saved in the previous version of the add-on will be automatically copied
-  to the new version, unless you prefer to import place markers saved in the
-  main configuration folder of NVDA.
-*	When using the dialog to copy place markers, if the chosen folder is not
-  named placeMarkersBackup, a subfolder with this name will be created to
-  prevent the deletion of directories containing important data, such as
-  Documents or Downloads.
+*	При обновлении дополнения закладки и строки для конкретного поиска,
+  сохранённые в предыдущей версии дополнения, будут автоматически
+  скопированы в новую версию, если только вы не предпочитаете импортировать
+  маркеры мест, сохраненные в основной папке конфигурации NVDA.
+*	Если при использовании диалога копирования маркеров места выбранная папка
+  не называется PlaceMarkersBackup, будет создана подпапка с этим именем,
+  чтобы предотвратить удаление каталогов, содержащих важные данные, таких
+  как документы или загрузки.
 
 ## Изменения для 12.0 ##
 *	Исправлена критическая ошибка, приводившая к сбою NVDA при попытке открыть
