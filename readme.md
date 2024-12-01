@@ -87,7 +87,6 @@ Note: The placemarker position is based on the number of characters; and therefo
 
 ## Changes for 11.0 ##
 *	Compatible with NVDA 2018.3 or later (required).
-*	If needed, you can download the [last version compatible with NVDA 2017.3][3].
 
 ## Changes for 10.0 ##
 *	In Edge, gestures associated with bookmarks selection, such as NVDA+k, NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of trying to move the cursor to bookmarks, to avoid errors, especially in long documents.
@@ -139,4 +138,3 @@ Note: The placemarker position is based on the number of characters; and therefo
 * Initial version.
 * Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o
