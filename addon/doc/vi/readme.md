@@ -138,8 +138,6 @@ placemarkers.
 
 ## Các thay đổi cho phiên bản 11.0 ##
 *	Tương thích với NVDA 2018.3 trở lên (yêu cầu).
-*	Nếu cần, bạn có thể tải về [phiên bản cuối cùng tương thích với NVDA
-  2017.3][3].
 
 ## Các thay đổi cho phiên bản 10.0 ##
 *	Trong Edge, các thao tác liên quan đến chọn dấu trang như NVDA+k,
@@ -212,4 +210,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

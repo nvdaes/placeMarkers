@@ -147,8 +147,6 @@ y no las marcas.
 
 ## Cambios para 11.0 ##
 *	Compatible con NVDA 2018.3 o posterior (requerido).
-*	Si fuese necesario, puedes descargar la [última versión compatible con
-  NVDA 2017.3][3].
 
 ## Cambios para 10.0 ##
 *	En Edge, los gestos asociados con la selección de marcas, tales como
@@ -227,4 +225,3 @@ y no las marcas.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

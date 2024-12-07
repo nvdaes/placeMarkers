@@ -144,8 +144,6 @@ placemarkers.
 
 ## Zmiany dla wersji 11.0 ##
 *	Zgodny z NVDA 2018.3 i nowszymi (wymagane).
-*	Jeżeli jest to konieczne, możesz pobrać [ostatnią wersję zgodną z NVDA
-  2017.3][3].
 
 ## Zmiany dla wersji 10.0 ##
 *	W Edge gesty związane z zaznaczaniem zakładek, takie jak NVDA+k,
@@ -220,4 +218,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

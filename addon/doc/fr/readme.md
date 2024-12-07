@@ -158,8 +158,6 @@ spécifique, pas les marqueurs.
 
 ## Changements pour la version 11.0 ##
 *	Compatible avec NVDA 2018.3 ou version ultérieure (requis).
-*	Si nécessaire, vous pouvez télécharger la [dernière version compatible
-  avec NVDA 2017.3][3].
 
 ## Changements pour la version 10.0 ##
 *	Dans Edge, les gestes associés à la sélection de marqueurs tels que
@@ -239,4 +237,3 @@ spécifique, pas les marqueurs.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

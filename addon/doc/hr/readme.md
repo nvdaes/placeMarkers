@@ -139,8 +139,6 @@ placemarkers.
 
 ## Promjene u verziji 11.0 ##
 *	Kompatibilno s NVDA 2018.3 i budućim verzijama (obavezno).
-*	Ako treba, moguće je preuzeti [zadnju verziju kompatibilnu s NVDA
-  2017.3][3].
 
 ## Promjene u verziji 10.0 ##
 *	U Edgeu, geste koje su povezane s odabirom knjižnih oznaka, kao što su
@@ -216,4 +214,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

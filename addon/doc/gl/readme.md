@@ -145,8 +145,6 @@ placemarkers.
 
 ## Cambios para 11.0 ##
 *	Compatible co NVDA 2018.3 ou posterior (requerido).
-*	Se fora necesario, podes descargar a [última versión compatible co NVDA
-  2017.3][3].
 
 ## Cambios para 10.0 ##
 *	En Edge, os xestos asociados coa seleción de marcas, como NVDA+k,
@@ -224,4 +222,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

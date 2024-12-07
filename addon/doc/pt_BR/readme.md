@@ -144,8 +144,6 @@ placemarkers.
 
 ## Mudanças na 11.0 ##
 *	Compatível com o NVDA 2018.3 ou posterior (requerido).
-*	Se necessário, você pode fazer o download da [última versão compatível com
-  o NVDA 2017.3][3].
 
 ## Mudanças na 10.0 ##
 *	No Edge, os gestos associados à seleção de favoritos, como NVDA+k,
@@ -225,4 +223,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

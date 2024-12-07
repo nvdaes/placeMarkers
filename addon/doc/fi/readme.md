@@ -139,8 +139,6 @@ paikkamerkkien asemesta sivukohtaista hakua.
 
 ## Muutokset versiossa 11.0 ##
 *	Yhteensopiva NVDA 2018.3:n tai uudemman kanssa (vaaditaan).
-*	Viimeisen NVDA 2017.3:n kanssa yhteensopivan version voi ladata
-  [tästä.][3]
 
 ## Muutokset versiossa 10.0 ##
 *	Virheiden välttämiseksi (erityisesti pitkissä asiakirjoissa)
@@ -216,4 +214,3 @@ paikkamerkkien asemesta sivukohtaista hakua.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

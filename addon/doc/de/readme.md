@@ -151,8 +151,6 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
 ## Änderungen in 11.0 ##
 *	Kompatibel mit NVDA 2018.3 oder neuer (erforderlich).
-*	Bei Bedarf können Sie die [letzte Version][3], die mit NVDA 2017.3
-  kompatibel ist herunterladen.
 
 ## Änderungen in 10.0 ##
 *	In Microsoft Edge, vor allem in langen Dokumenten, werden bestimmte
@@ -236,4 +234,3 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

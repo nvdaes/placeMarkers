@@ -89,7 +89,6 @@
 
 ## 版本11.0 ##
 *	兼容NVDA 2018.3或更高版本（必需）。
-*	如果需要，您可以下载[与NVDA 2017.3兼容的最新版本] [3]。
 
 ## 版本10.0 ##
 *	在Edge中，与书签选择相关联的手势（例如NVDA + k，NVDA + shift + k或NVDA + alt +
@@ -144,4 +143,3 @@
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

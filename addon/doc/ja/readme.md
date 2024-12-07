@@ -114,7 +114,6 @@ placemarkers.
 
 ## 11.0の変更点 ##
 *	NVDA 2018.3以降に互換します。（2018.3以降が必要）
-*	必要な場合は、[NVDA 2017.3に互換する最後のバージョン][3]もダウンロード出来ます。
 
 ## 10.0の変更点 ##
 *	Edgeでは、ブックマーク選択に関するジェスチャー、NVDA+k、NVDA+shift+kまたはNVDA+alt+kは、カーソルをブックマークに移動する代わりに、アプリケーションに送られます。これは、特に長いドキュメントにおいて、エラーを避けるためです。
@@ -170,4 +169,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

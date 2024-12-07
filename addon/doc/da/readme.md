@@ -143,8 +143,6 @@ placemarkers.
 
 ## Ændringer for 11.0 ##
 *	Kompatibel med NVDA 2018.3 eller nyere (påkrævet).
-*	Hvis nødvendigt, kan du hente [den sidste version kompatibel med NVDA
-  2017.3][3].
 
 ## Ændringer for 10.0 ##
 *	I Edge vil kommandoer i forbindelse med bogmærkevalg, såsom NVDA+k,
@@ -222,4 +220,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

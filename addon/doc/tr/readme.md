@@ -137,7 +137,6 @@ sayfalarda, yer imlerini değil, belirli aramayı kullanmak daha iyidir.
 
 ## 11.0 için değişiklikler ##
 *	NVDA 2018.3 veya sonrası ile uyumludur (gerekli).
-*	Gerekirse [NVDA 2017.3] ile uyumlu son sürümü[3] indirebilirsiniz.
 
 ## 10.0 için değişiklikler ##
 *	Edge'de, NVDA+k, NVDA+shift+k veya NVDA+alt+k gibi yer imleri seçimiyle
@@ -211,4 +210,3 @@ sayfalarda, yer imlerini değil, belirli aramayı kullanmak daha iyidir.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

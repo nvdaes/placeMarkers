@@ -149,8 +149,6 @@ placemarkers.
 
 ## Novità nella versione 11.0 ##
 *	Compatibile con NVDA 2018.3 o superiore (richiesto).
-*	Se è necessario, è possibile scaricare la  [versione compatibile  con NVDA
-  2017.3][3].
 
 ## Novità nella versione 10.0 ##
 *	In Edge, i comandi associati ai segnaposto, come NVDA+k, NVDA+shift+k o
@@ -228,4 +226,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

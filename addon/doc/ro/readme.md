@@ -140,8 +140,6 @@ placemarkers.
 
 ## Modificări în 11.0 ##
 *	Compatibil cu NVDA 2018.3 sau mai nou (necesar).
-*	Dacă e musai, puteți descărca [ultima versiune compatibilă cu NVDA
-  2017.3][3].
 
 ## Modificări în 10.0 ##
 *	În Edge, gesturile asociate cu selectarea semnelor de carte, cum ar fi
@@ -217,4 +215,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o

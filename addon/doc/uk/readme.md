@@ -141,8 +141,6 @@ placemarkers.
 
 ## Зміни у версії 11.0 ##
 *	Сумісність з NVDA 2018.3 та новіші (необхідно).
-*	За потреби ви можете завантажити [останню версію, сумісну з NVDA
-  2017.3][3].
 
 ## Зміни у версії 10.0 ##
 *	В Edge жести, пов'язані з вибором закладок, такі як NVDA+k, NVDA+shift+k
@@ -216,4 +214,3 @@ placemarkers.
 
 [[!tag dev stable]]
 
-[3]: https://www.nvaccess.org/addonStore/legacy?file=pm-o
