@@ -32,4 +32,4 @@ jobs:
         git pull
         git add .
         git commit -m "Changes from ruff"
-        git push
+        git push origin ${{ github.head_ref }}
