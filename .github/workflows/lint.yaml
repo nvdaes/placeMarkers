@@ -24,4 +24,8 @@ jobs:
       run: ruff check --fix
     - name: Format
       run: ruff format
-      
+    - name: Push changes
+      run: |
+        git add .
+        git commit -m "Commit changes from ruff"
+        git push
