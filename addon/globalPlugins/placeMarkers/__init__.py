@@ -706,7 +706,7 @@ class SetDefaultFolderDialog(wx.Dialog):
 		dialogCaption = _("Select the folder where your place markers will be searched.")
 		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
 
-		# Translators: The label of a grouping with controls to select the destination directory in the Set default folder dialog.
+		# Translators: The label of a grouping with controls to select the directory in the Set default folder dialog.
 		directoryGroupText = _("default directory for place markers:")
 		groupHelper = sHelper.addItem(
 			gui.guiHelper.BoxSizerHelper(
