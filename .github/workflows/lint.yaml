@@ -26,7 +26,8 @@ jobs:
       run: ruff format
     - name: Push changes
       run: |
-        git checkout ${{ github.head_ref }}
+        git fetch origin
+        git checkout ${{ origin/github.head_ref }}
         git config user.name github-actions
         git config user.email github-actions@github.com
         git pull origin ${{ github.head_ref }}
