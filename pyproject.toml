@@ -20,6 +20,7 @@ include = [
 exclude = [
 	".git",
 	"__pycache__",
+	"buildVars.py",
 ]
 
 [tool.ruff.format]
