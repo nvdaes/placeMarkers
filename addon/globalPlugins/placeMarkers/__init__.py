@@ -757,9 +757,6 @@ class SetDefaultFolderDialog(wx.Dialog):
 			return
 		self.Hide()
 		config.conf["placeMarkers"]["defaultFolder"] = self.defaultDirectoryEdit.Value
-		globals
-		searchFolder = os.path.join(getDefaultFolder(), "search")
-		bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
 		createSearchFolder()
 		createBookmarksFolder()
 		self.Destroy()
