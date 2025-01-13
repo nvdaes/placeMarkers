@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
-# Copyright (C) 2012-2023 Noelia Ruiz Martínez, other contributors
+# Copyright (C) 2012-2025 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 # UIA support added by Abdel in 2022
@@ -8,6 +8,7 @@
 import pickle
 import re
 import os
+from pathlib import Path
 import NVDAObjects
 import UIAHandler
 import shutil
@@ -33,6 +34,7 @@ import speech
 from speech import sayAll
 from scriptHandler import willSayAllResume, script
 from logHandler import log
+import config
 
 from .skipTranslation import translate
 from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
@@ -46,14 +48,27 @@ CONFIG_PATH = globalVars.appArgs.configPath
 PLACE_MARKERS_PATH = os.path.join(
 	CONFIG_PATH, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers"
 )
-SEARCH_FOLDER = os.path.join(PLACE_MARKERS_PATH, "search")
-BOOKMARKS_FOLDER = os.path.join(PLACE_MARKERS_PATH, "bookmarks")
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
 # Globals
 lastFindText = ""
 lastCaseSensitivity = False
+
+confspec = {
+	"defaultFolder": "string(default='')"
+}
+config.conf.spec["placeMarkers"] = confspec
+
+
+def getDefaultFolder() -> str:
+	if defaultFolder := config.conf["placeMarkers"]["defaultFolder"]:  # noqa E701
+		return Path(defaultFolder)
+	return PLACE_MARKERS_PATH
+
+
+searchFolder = os.path.join(getDefaultFolder(), "search")
+bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
 
 
 def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffset: int) -> bool:
@@ -172,20 +187,20 @@ def disableInSecureMode(decoratedCls):
 
 
 def createSearchFolder():
-	if os.path.isdir(SEARCH_FOLDER):
+	if os.path.isdir(searchFolder):
 		return
 	try:
-		os.makedirs(SEARCH_FOLDER)
+		os.makedirs(searchFolder)
 	except Exception as e:
 		log.debugWarning("Error creating search folder", exc_info=True)
 		raise e
 
 
 def createBookmarksFolder():
-	if os.path.isdir(BOOKMARKS_FOLDER):
+	if os.path.isdir(bookmarksFolder):
 		return
 	try:
-		os.makedirs(BOOKMARKS_FOLDER)
+		os.makedirs(bookmarksFolder)
 	except Exception as e:
 		log.debugWarning("Error creating bookmarks folder", exc_info=True)
 		raise e
@@ -302,18 +317,17 @@ def getFile(folder, ext=""):
 	file = f"uia_{file}" if uia else file
 	file += nameToAdd
 	file = api.filterFileName(standardFileName(file))
-	folderPath = os.path.join(PLACE_MARKERS_PATH, folder)
-	maxLenFileName = 232 - len(folderPath)
+	maxLenFileName = 232 - len(folder)
 	if maxLenFileName <= 0:
 		return ""
 	file = file[:maxLenFileName]
 	file = file + ext
-	path = os.path.join(folderPath, file)
+	path = os.path.join(folder, file)
 	return path
 
 
 def getFileSearch():
-	return getFile("search", ".txt")
+	return getFile(searchFolder, ".txt")
 
 
 def getSavedTexts():
@@ -334,11 +348,11 @@ def getLastSpecificFindText():
 
 
 def getFileBookmarks():
-	return getFile("bookmarks", ".pickle")
+	return getFile(bookmarksFolder, ".pickle")
 
 
 def getFileTempBookmark():
-	return getFile("bookmarks", ".txt")
+	return getFile(bookmarksFolder, ".txt")
 
 
 def getSavedBookmarks():
@@ -679,6 +693,78 @@ class CopyDialog(wx.Dialog):
 		self.Destroy()
 
 
+class SetDefaultFolderDialog(wx.Dialog):
+
+	def __init__(self, parent):
+		# Translators: The title of the Set default folder dialog.
+		super().__init__(parent, title=_("Set default folder for place markers"))
+
+		mainSizer = wx.BoxSizer(wx.VERTICAL)
+		sHelper = gui.guiHelper.BoxSizerHelper(self, orientation=wx.VERTICAL)
+
+		# Translators: An informational message displayed in the Set default folder dialog.
+		dialogCaption = _("Select the folder where your place markers will be searched.")
+		sHelper.addItem(wx.StaticText(self, label=dialogCaption))
+
+		# Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+		directoryGroupText = _("default directory for place markers:")
+		groupHelper = sHelper.addItem(
+			gui.guiHelper.BoxSizerHelper(
+				self, sizer=wx.StaticBoxSizer(wx.StaticBox(
+					self, label=directoryGroupText), wx.VERTICAL
+				)
+			)
+		)
+		# Message translated in NVDA core.
+		browseText = translate("Browse...")
+		# Translators: The title of the dialog to browse for the default directory for place markers.
+		dirDialogTitle = _("Select default directory")
+		directoryEntryControl = groupHelper.addItem(
+			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle)
+		)
+		self.defaultDirectoryEdit = directoryEntryControl.pathControl
+		self.defaultDirectoryEdit.Value = PLACE_MARKERS_PATH
+		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
+		# Message translated in NVDA core.
+		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
+		continueButton.SetDefault()
+		continueButton.Bind(wx.EVT_BUTTON, self.onSetDefaultFolder)
+		bHelper.addButton(self, id=wx.ID_CANCEL)
+		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
+		self.Sizer = mainSizer
+		mainSizer.Fit(self)
+		self.CentreOnScreen()
+
+	def onSetDefaultFolder(self, evt):
+		if not self.defaultDirectoryEdit.Value:
+			# Message translated in NVDA core.
+			gui.messageBox(
+				translate("Please specify a directory."),
+				# Message translated in NVDA core.
+				translate("Error"),
+				wx.OK | wx.ICON_ERROR
+			)
+			return
+		drv = os.path.splitdrive(self.defaultDirectoryEdit.Value)[0]
+		if drv and not os.path.isdir(drv):
+			# Message translated in NVDA core.
+			gui.messageBox(
+				translate("Invalid drive %s") % drv,
+				# Message translated in NVDA core.
+				translate("Error"),
+				wx.OK | wx.ICON_ERROR
+			)
+			return
+		self.Hide()
+		config.conf["placeMarkers"]["defaultFolder"] = self.defaultDirectoryEdit.Value
+		createSearchFolder()
+		createBookmarksFolder()
+		self.Destroy()
+
+	def onCancel(self, evt):
+		self.Destroy()
+
+
 class PathSelectionWithoutNewDir(gui.guiHelper.PathSelectionHelper):
 
 	def __init__(self, parent, buttonText, browseForDirectoryTitle):
@@ -820,6 +906,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Restore previously saved place markers")
 		)
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onRestore, self.restoreItem)
+		self.setDefaultFolderItem = self.BSMenu.Append(
+			wx.ID_ANY,
+			# Translators: the name for an item of addon submenu.
+			_("Set &default place markers folder..."),
+			# Translators: the tooltip text for an item of addon submenu.
+			_("Sets default folder for place markers")
+		)
+		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSetDefaultFolder, self.setDefaultFolderItem)
 
 	def terminate(self):
 		try:
@@ -828,7 +922,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 
 	def onSpecificSearch(self, evt):
-		os.startfile(SEARCH_FOLDER)
+		os.startfile(searchFolder)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -838,7 +932,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		wx.CallAfter(self.onSpecificSearch, None)
 
 	def onBookmarks(self, evt):
-		os.startfile(BOOKMARKS_FOLDER)
+		os.startfile(bookmarksFolder)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -872,6 +966,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	)
 	def script_activateRestoreDialog(self, gesture):
 		wx.CallAfter(self.onRestore, None)
+
+	def onSetDefaultFolder(self, evt):
+		gui.mainFrame.prePopup()
+		d = SetDefaultFolderDialog(gui.mainFrame)
+		d.Show()
+		gui.mainFrame.postPopup()
+
+	@script(
+		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+		description=_("Activates the Set default folder dialog of %s.") % ADDON_SUMMARY
+	)
+	def script_activateSetDefaultFolderDialog(self, gesture):
+		wx.CallAfter(self.onSetDefaultFolder, None)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
