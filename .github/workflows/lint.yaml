@@ -28,3 +28,6 @@ jobs:
       run: ruff format
     - name: Push changes
       uses: Andro999b/push@v1.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
