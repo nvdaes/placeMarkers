@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 
     - name: Install ruff
       uses: astral-sh/ruff-action@v3
       with:
@@ -25,12 +27,4 @@ jobs:
     - name: Format
       run: ruff format
     - name: Push changes
-      run: |
-        git fetch origin
-        git checkout origin/${{ github.head_ref }}
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git pull origin ${{ github.head_ref }}
-        git add .
-        git commit -m "Changes from ruff"
-        git push origin ${{ github.head_ref }}
+      uses: Andro999b/push@v1.3
