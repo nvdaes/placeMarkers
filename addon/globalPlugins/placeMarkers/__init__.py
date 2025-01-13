@@ -62,12 +62,14 @@ config.conf.spec["placeMarkers"] = confspec
 
 
 def getDefaultFolder() -> str:
-	if defaultFolder := config.conf["placeMarkers"]["defaultFolder"]:
+	if defaultFolder := config.conf["placeMarkers"]["defaultFolder"]:  # noqa E701
 		return Path(defaultFolder)
 	return PLACE_MARKERS_PATH
 
+
 searchFolder = os.path.join(getDefaultFolder(), "search")
 bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
+
 
 def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffset: int) -> bool:
 	"""
