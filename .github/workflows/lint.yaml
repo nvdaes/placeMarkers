@@ -11,5 +11,13 @@ on:
 jobs:
 
   lint:
-    uses: nvdaes/nvdaAddonWorkflows/.github/workflows/lint.yaml@main
-    
+    steps:
+    - name: Install ruff
+      uses: astral-sh/ruff-action@v3
+      with:
+      src: "./addon"
+    - name: Check and fix
+      run: ruff check --fix
+    - name: Format
+      run: ruff format
+      
