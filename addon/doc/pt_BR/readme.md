@@ -222,4 +222,3 @@ placemarkers.
   Brasileiro, Tâmil.
 
 [[!tag dev stable]]
-

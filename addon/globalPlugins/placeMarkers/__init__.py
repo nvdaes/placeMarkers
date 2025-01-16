@@ -46,7 +46,12 @@ _: Callable[[str], str]
 # Constants
 CONFIG_PATH = globalVars.appArgs.configPath
 PLACE_MARKERS_PATH = os.path.join(
-	CONFIG_PATH, "addons", "placeMarkers", "globalPlugins", "placeMarkers", "savedPlaceMarkers"
+	CONFIG_PATH,
+	"addons",
+	"placeMarkers",
+	"globalPlugins",
+	"placeMarkers",
+	"savedPlaceMarkers",
 )
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
@@ -92,7 +97,9 @@ def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startO
 		first = focus.treeInterceptor.makeTextInfo(textInfos.POSITION_FIRST)
 		# We perform a first move with the MoveEndPointByUnit method.
 		first._rangeObj.MoveEndpointByUnit(
-			UIAHandler.TextPatternRangeEndpoint_End, UIAHandler.TextUnit_Character, startOffset
+			UIAHandler.TextPatternRangeEndpoint_End,
+			UIAHandler.TextUnit_Character,
+			startOffset,
 		)
 		# As the move may not reach the correct offset, we make some adjustments.
 		if len(first.text) > startOffset:
@@ -124,7 +131,9 @@ def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startO
 		startOffset = totalLength - startOffset
 		# We perform a first move with the MoveEndPointByUnit method.
 		first._rangeObj.MoveEndpointByUnit(
-			UIAHandler.TextPatternRangeEndpoint_Start, UIAHandler.TextUnit_Character, -startOffset
+			UIAHandler.TextPatternRangeEndpoint_Start,
+			UIAHandler.TextUnit_Character,
+			-startOffset,
 		)
 		# As the move may not reach the correct offset, we make some adjustments.
 		if len(first.text) > startOffset:
@@ -212,7 +221,10 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 		obj.doFindText(
-			text=text, reverse=reverse, caseSensitive=caseSensitive, willSayAllResume=willSayAllResume
+			text=text,
+			reverse=reverse,
+			caseSensitive=caseSensitive,
+			willSayAllResume=willSayAllResume,
 		)
 	elif obj.role != controlTypes.Role.EDITABLETEXT:
 		return
@@ -266,7 +278,8 @@ def moveToBookmark(position):
 	if isinstance(treeInterceptor, BrowseModeDocumentTreeInterceptor) and not treeInterceptor.passThrough:
 		obj = treeInterceptor
 		if isinstance(obj, chromium.ChromiumUIATreeInterceptor) or isinstance(
-			obj, UIAHandler.browseMode.UIADocumentWithTableNavigation
+			obj,
+			UIAHandler.browseMode.UIADocumentWithTableNavigation,
 		):
 			goToUIABookmark(obj, position)
 		else:
@@ -381,7 +394,9 @@ class SpecificSearchDialog(wx.Dialog):
 		# Translators: The label of a combo box in the Specific Search dialog.
 		savedTextsLabel = _("Sa&ved texts")
 		self.savedTextsComboBox = sHelper.addLabeledControl(
-			savedTextsLabel, wx.Choice, choices=self.savedTexts
+			savedTextsLabel,
+			wx.Choice,
+			choices=self.savedTexts,
 		)
 		self.savedTextsComboBox.Bind(wx.EVT_CHOICE, self.onSavedTextsChange)
 		# Translators: A label for a chekbox in the Specific search dialog.
@@ -405,7 +420,7 @@ class SpecificSearchDialog(wx.Dialog):
 			_("&Don't search"),
 		)
 		self.searchRadioBox = sHelper.addItem(
-			wx.RadioBox(self, label=searchActionsLabel, choices=searchChoices)
+			wx.RadioBox(self, label=searchActionsLabel, choices=searchChoices),
 		)
 		if self.reverse:
 			self.searchRadioBox.SetSelection(1)
@@ -548,7 +563,10 @@ class NotesDialog(wx.Dialog):
 		# Translators: The label of an edit box in the Notes dialog.
 		noteLabel = _("Not&e:")
 		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(
-			self, noteLabel, wx.TextCtrl, style=wx.TE_MULTILINE
+			self,
+			noteLabel,
+			wx.TextCtrl,
+			style=wx.TE_MULTILINE,
 		)
 		self.noteEdit = noteLabeledCtrl.control
 		self.noteEdit.SetMaxLength(1024)
@@ -647,15 +665,16 @@ class CopyDialog(wx.Dialog):
 		directoryGroupText = _("directory for backup:")
 		groupHelper = sHelper.addItem(
 			gui.guiHelper.BoxSizerHelper(
-				self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)
-			)
+				self,
+				sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL),
+			),
 		)
 		# Message translated in NVDA core.
 		browseText = translate("Browse...")
 		# Translators: The title of the dialog to browse for the destination directory when copying place markers.
 		dirDialogTitle = _("Select directory to copy")
 		directoryEntryControl = groupHelper.addItem(
-			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle)
+			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle),
 		)
 		self.copyDirectoryEdit = directoryEntryControl.pathControl
 		self.copyDirectoryEdit.Value = os.path.join(CONFIG_PATH, "placeMarkersBackup")
@@ -714,15 +733,16 @@ class SetDefaultFolderDialog(wx.Dialog):
 		directoryGroupText = _("default directory for place markers:")
 		groupHelper = sHelper.addItem(
 			gui.guiHelper.BoxSizerHelper(
-				self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)
-			)
+				self,
+				sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL),
+			),
 		)
 		# Message translated in NVDA core.
 		browseText = translate("Browse...")
 		# Translators: The title of the dialog to browse for the default directory for place markers.
 		dirDialogTitle = _("Select default directory")
 		directoryEntryControl = groupHelper.addItem(
-			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle)
+			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle),
 		)
 		self.defaultDirectoryEdit = directoryEntryControl.pathControl
 		self.defaultDirectoryEdit.Value = PLACE_MARKERS_PATH
@@ -799,15 +819,16 @@ class RestoreDialog(wx.Dialog):
 		directoryGroupText = _("directory containing backup:")
 		groupHelper = sHelper.addItem(
 			gui.guiHelper.BoxSizerHelper(
-				self, sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL)
-			)
+				self,
+				sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=directoryGroupText), wx.VERTICAL),
+			),
 		)
 		# Message translated in NVDA core.
 		browseText = translate("Browse...")
 		# Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 		dirDialogTitle = _("Select directory to restore")
 		directoryEntryControl = groupHelper.addItem(
-			PathSelectionWithoutNewDir(self, browseText, dirDialogTitle)
+			PathSelectionWithoutNewDir(self, browseText, dirDialogTitle),
 		)
 		self.restoreDirectoryEdit = directoryEntryControl.pathControl
 		backupDirectory = os.path.join(CONFIG_PATH, "placeMarkersBackup")
@@ -931,7 +952,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Opens the specific search folder.")
+		description=_("Opens the specific search folder."),
 	)
 	def script_openSpecificSearchFolder(self, gesture):
 		wx.CallAfter(self.onSpecificSearch, None)
@@ -941,7 +962,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Opens the bookmarks folder.")
+		description=_("Opens the bookmarks folder."),
 	)
 	def script_openBookmarksFolder(self, gesture):
 		wx.CallAfter(self.onBookmarks, None)
@@ -954,7 +975,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Activates the Copy dialog of %s.") % ADDON_SUMMARY
+		description=_("Activates the Copy dialog of %s.") % ADDON_SUMMARY,
 	)
 	def script_activateCopyDialog(self, gesture):
 		wx.CallAfter(self.onCopy, None)
@@ -967,7 +988,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Activates the Restore dialog of %s.") % ADDON_SUMMARY
+		description=_("Activates the Restore dialog of %s.") % ADDON_SUMMARY,
 	)
 	def script_activateRestoreDialog(self, gesture):
 		wx.CallAfter(self.onRestore, None)
@@ -980,7 +1001,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Activates the Set default folder dialog of %s.") % ADDON_SUMMARY
+		description=_("Activates the Set default folder dialog of %s.") % ADDON_SUMMARY,
 	)
 	def script_activateSetDefaultFolderDialog(self, gesture):
 		wx.CallAfter(self.onSetDefaultFolder, None)
@@ -1063,7 +1084,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if getSavedBookmarks() == {}:
 			ui.message(
 				# Translators: message presented when the current document doesn't contain bookmarks.
-				_("No bookmarks")
+				_("No bookmarks"),
 			)
 			return
 		gui.mainFrame.prePopup()
@@ -1109,7 +1130,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			return
 		# Code for UIA provided by Abdel(@abdel792)
 		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor) or isinstance(
-			treeInterceptor, UIAHandler.browseMode.UIADocumentWithTableNavigation
+			treeInterceptor,
+			UIAHandler.browseMode.UIADocumentWithTableNavigation,
 		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
@@ -1131,13 +1153,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				pickle.dump(bookmarks, f, protocol=0)
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
-				_("Saved position at character %d") % startOffset
+				_("Saved position at character %d") % startOffset,
 			)
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
 			ui.message(
 				# Translators: message presented when a bookmark cannot be saved.
-				_("Cannot save bookmark")
+				_("Cannot save bookmark"),
 			)
 			raise e
 
@@ -1158,7 +1180,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if bookmarks == {}:
 			ui.message(
 				# Translators: message presented when the current document doesn't contain bookmarks.
-				_("No bookmarks")
+				_("No bookmarks"),
 			)
 			return
 		if isinstance(treeInterceptor, chromium.ChromiumUIATreeInterceptor):
@@ -1172,7 +1194,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if startOffset not in bookmarks:
 			ui.message(
 				# Translators: message presented when the current document has bookmarks, but none is selected.
-				_("No bookmark selected")
+				_("No bookmark selected"),
 			)
 			return
 		del bookmarks[startOffset]
@@ -1183,7 +1205,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 					pickle.dump(bookmarks, f, protocol=0)
 				ui.message(
 					# Translators: message presented when a bookmark is deleted.
-					_("Bookmark deleted")
+					_("Bookmark deleted"),
 				)
 				return
 			except Exception:
@@ -1193,7 +1215,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				os.remove(fileName)
 				ui.message(
 					# Translators: message presented when the current document doesn't contain bookmarks.
-					_("No bookmarks")
+					_("No bookmarks"),
 				)
 				return
 			except WindowsError:
@@ -1201,7 +1223,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		log.debugWarning("Error saving bookmarks", exc_info=True)
 		ui.message(
 			# Translators: message presented when cannot delete a bookmark.
-			_("Cannot delete bookmark")
+			_("Cannot delete bookmark"),
 		)
 
 	@script(
@@ -1226,11 +1248,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if bookmarks == {}:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
-				_("No bookmarks found")
+				_("No bookmarks found"),
 			)
 			return
 		if isinstance(obj, chromium.ChromiumUIATreeInterceptor) or isinstance(
-			obj, UIAHandler.browseMode.UIADocumentWithTableNavigation
+			obj,
+			UIAHandler.browseMode.UIADocumentWithTableNavigation,
 		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
@@ -1248,12 +1271,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not willSayAllResume(gesture):
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
-					_("Position: character %d") % nextPos
+					_("Position: character %d") % nextPos,
 				)
 			return
 		ui.message(
 			# Translators: message presented when the next bookmark is not found.
-			_("Next bookmark not found")
+			_("Next bookmark not found"),
 		)
 
 	@script(
@@ -1278,11 +1301,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if bookmarks == {}:
 			ui.message(
 				# Translators: message presented when trying to select a bookmark, but none is found.
-				_("No bookmarks found")
+				_("No bookmarks found"),
 			)
 			return
 		if isinstance(obj, chromium.ChromiumUIATreeInterceptor) or isinstance(
-			obj, UIAHandler.browseMode.UIADocumentWithTableNavigation
+			obj,
+			UIAHandler.browseMode.UIADocumentWithTableNavigation,
 		):
 			first = obj.makeTextInfo(textInfos.POSITION_FIRST)
 			cur = obj.selection
@@ -1300,17 +1324,17 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if not willSayAllResume(gesture):
 				ui.message(
 					# Translators: message presented when a bookmark is selected.
-					_("Position: character %d") % prevPos
+					_("Position: character %d") % prevPos,
 				)
 			return
 		ui.message(
 			# Translators: message presented when the previous bookmark is not found.
-			_("Previous bookmark not found")
+			_("Previous bookmark not found"),
 		)
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Shows the name of the current file for place markers in browse mode.")
+		description=_("Shows the name of the current file for place markers in browse mode."),
 	)
 	def script_showCurrentBookmarksFile(self, gesture):
 		obj = api.getFocusObject()
@@ -1340,7 +1364,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-		description=_("Saves the current position as a temporary bookmark.")
+		description=_("Saves the current position as a temporary bookmark."),
 	)
 	def script_saveTempBookmark(self, gesture):
 		obj = api.getFocusObject()

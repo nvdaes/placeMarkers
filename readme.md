@@ -138,4 +138,3 @@ Note: The placemarker position is based on the number of characters; and therefo
 ## Changes for 1.0 ##
 * Initial version.
 * Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
-
