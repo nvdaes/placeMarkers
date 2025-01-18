@@ -1,6 +1,3 @@
-[tool.ruff]
-line-length = 110
-
 builtins = [
 	# translation lookup
 	"_",
@@ -22,6 +19,9 @@ exclude = [
 	"__pycache__",
 	"buildVars.py",
 ]
+
+[tool.ruff]
+line-length = 110
 
 [tool.ruff.format]
 indent-style = "tab"

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the NVDA package.
 # Cleverson Casarin Uliana <clever97@gmail.com>, 2013-2015, 2017, 2019-2020.
 # Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2018, 2021.
+# Josevan Barbosa Fernandes <josevanfernandes@yahoo.com.br>, 2024-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 'placeMarkers'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-06-26 19:06-0300\n"
-"Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
+"PO-Revision-Date: 2025-01-11 09:42-0300\n"
+"Last-Translator: Josevan Fernandes <josevanfernandes@yahoo.com.br>\n"
 "Language-Team: NVDA Brazilian Portuguese translation team (Equipe de "
 "tradução do NVDA para Português Brasileiro) <clever97@gmail.com>\n"
 "Language: pt_BR\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -305,19 +306,16 @@ msgstr ""
 "Mostra o nome do arquivo atual para marcadores de lugar no modo de navegação."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#, fuzzy
 msgid "Has bookmarks."
-msgstr "Sem marcadores"
+msgstr "Possui marcadores."
 
 #. Translators: Presented when the current document has specific search.
-#, fuzzy
 msgid "Has text for specific search."
-msgstr "Abre a pasta de pesquisa específica."
+msgstr "Possui texto para pesquisa específica."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#, fuzzy
 msgid "Has temporary bookmark."
-msgstr "Marcador temporário salvo na posição %d"
+msgstr "Possui marcador temporário."
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format
