@@ -940,12 +940,14 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Sets default folder for place markers"),
 		)
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSetDefaultFolder, self.setDefaultFolderItem)
+		config.conf.BASE_ONLY_SECTIONS.add("placeMarkers")
 
 	def terminate(self):
 		try:
 			self.menu.Remove(self.mainItem)
 		except Exception:
 			pass
+		config.conf.BASE_ONLY_SECTIONS.remove("placeMarkers")
 
 	def onSpecificSearch(self, evt):
 		os.startfile(searchFolder)
@@ -1357,8 +1359,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			# Translators: Presented when the current document has a temporary bookmark.
 			message += "\r\n\r\n" + _("Has temporary bookmark.")
 		secureBrowseableMessage(
-			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 			message,
+			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 			_("%s file") % ADDON_SUMMARY,
 		)
 
