@@ -2,16 +2,17 @@
 
 * Autores: Noelia, Chris.
 
-This add-on is used for saving and searching specific text strings or
-placemarkers. It can be used on web pages or documents in NVDA's browse
-mode. It can also be used for saving or searching strings of text in
-multi-line controls; in this case, if it's not possible to update the caret,
-the corresponding string will be copied to the clipboard, so that it can be
-searched using other tools.  The plugin saves the specified strings and
-placemarkers to files whose name is based on the title and URL of the
-current document.  This add-on is based on SpecificSearch and
-Bookmark&Search, developed by the same author. You should uninstall them to
-use this one, since they have common keystrokes and features.
+Esse complemento é usado para salvar e pesquisar sequências de texto ou
+marcadores de local específicos. Ele pode ser usado em páginas da Web ou
+documentos no modo de navegação do NVDA. Também pode ser usado para salvar
+ou pesquisar cadeias de texto em controles de várias linhas; nesse caso, se
+não for possível atualizar o cursor, a cadeia de caracteres correspondente
+será copiada para a área de transferência, para que possa ser pesquisada
+usando outras ferramentas.  O plug-in salva as cadeias de caracteres e os
+marcadores de local especificados em arquivos cujo nome é baseado no título
+e no URL do documento atual.  Esse complemento é baseado no SpecificSearch e
+no Bookmark&Search, desenvolvidos pelo mesmo autor. Você deve desinstalá-los
+para usar este, pois eles têm teclas e recursos comuns.
 
 ## Teclas de comando: ##
 
@@ -25,83 +26,88 @@ use this one, since they have common keystrokes and features.
   anterior ou não pesquisar) e especifique se o NVDA fará uma pesquisa
   diferenciando maiúsculas. Quando pressionar OK, o NVDA pesquisará essa
   cadeia.
-*	control+shift+NVDA+y: Saves the current position as a placemarker. If you
-  want to provide a name for this placemarker, select some text from this
-  position before saving it.
-*	control+shift+NVDA+delete: Deletes the placemarker corresponding to this
-  position.
-*	NVDA+y: Moves to the next placemarker.
-*	shift+NVDA+y: Moves to the previous placemarker.
-*	Not assigned: Shows the file name where the placemarkers data will be
-  saved in browse mode, without an extension.
-*	alt+NVDA+y: Opens a dialog with the placemarkers saved for this
-  document. You can write a note for each placemarker; press Save note to
-  save changes. Pressing Delete you can remove the selected
-  placemarker. Pressing OK you can move to the selected position.
-*	Not assigned: Saves a position as a temporary placemarker.
-*	Not assigned: Moves to the temporary placemarker for the current document.
+*	control+shift+NVDA+y: Salva a posição atual como um marcador de
+  posição. Se você quiser fornecer um nome para esse marcador de posição,
+  selecione algum texto dessa posição antes de salvá-lo.
+*	control+shift+NVDA+delete: Exclui o marcador de posição correspondente a
+  essa posição.
+*	NVDA+y: Passa para o próximo marcador de posição.
+*	shift+NVDA+y: Move-se para o marcador de posição anterior.
+*	Não atribuído: Mostra o nome do arquivo em que os dados dos marcadores de
+  posição serão salvos no modo de navegação, sem uma extensão.
+*	alt+NVDA+y: Abre uma caixa de diálogo com os marcadores de posição salvos
+  para este documento. Você pode escrever uma nota para cada marcador;
+  pressione Salvar nota para salvar as alterações. Ao pressionar Excluir,
+  você pode remover o marcador selecionado. Ao pressionar OK, você pode ir
+  para a posição selecionada.
+*	Não atribuído: Salva uma posição como um marcador de posição temporário.
+*	Não atribuído: Move-se para o marcador de posição temporário do documento
+  atual.
 *	Não atribuído: localiza a ocorrência seguinte do último texto pesquisado
   em qualquer documento específico.
 *	Não atribuído: localiza a ocorrência anterior do último texto pesquisado
   em qualquer documento específico.
 
 
-## PlaceMarkers Submenu (NVDA+N) ##
+## Submenu PlaceMarkers (NVDA+N) ##
 
-Using the PlaceMarkers submenu under NVDA's Preferences menu, you can
-access:
+Usando o submenu PlaceMarkers no menu Preferências do NVDA, você pode
+acessar:
 
-*	Specific search folder: Opens a folder of specific searches previously
-  saved.
-*	Bookmarks folder: Opens a folder of the saved placemarkers.
-*	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
-*	Restore placeMarkers: You can restore your placeMarkers from a previously
-  saved placeMarkers folder.
+*	Pasta de pesquisa específica: Abre uma pasta de pesquisas específicas
+  salvas anteriormente.
+*	Pasta de marcadores: Abre uma pasta com os marcadores de local salvos.
+*	Copia a pasta placeMarkers: Você pode salvar uma cópia da pasta
+  placeMarkers.
+*	Restaurar placeMarkers: Você pode restaurar seus placeMarkers de uma pasta
+  placeMarkers salva anteriormente.
 
-Note: The placemarker position is based on the number of characters; and
-therefore in dynamic pages it is better to use the specific search, not
-placemarkers.
+Nota: A posição do marcador de posição se baseia no número de caracteres;
+portanto, em páginas dinâmicas, é melhor usar a pesquisa específica, não
+marcadores de posição.
 
-## Changes for 35.0
-* Removed URL parameters from file names, so that bookmarks are valid for
-  specific websites in different sessions.
+## Mudanças na 35.0
+* Remoção dos parâmetros de URL dos nomes de arquivos, para que os
+  marcadores sejam válidos para sites específicos em sessões diferentes.
 
-## Changes for 24.0
-* Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k,
-  NVDA+alt+k and NVDA+control+shift+k.
-* Compatible with NVDA 2023.1.
+## Mudanças na 24.0
+* Y é usado em vez de k em gestos como NVDA+k, NVDA+shift+k, NVDA+alt+k e
+  NVDA+control+shift+k.
+* Compatível com o NVDA 2023.1.
 
-## Changes for 23.0
-* The add-on works again with Microsoft Word.
+## Mudanças na 23.0
+* O complemento trabalha novamente com o Microsoft Word.
 
-## Changes for 22.0
-* We can move to bookmarks and delete them with UIA enabled, thanks to
-  Abdel.
+## Mudanças na 22.0
+* Podemos mover para os marcadores e excluí-los com o UIA ativado, obrigado
+  a Abdel.
 
-## Changes for 21.0
-* Bookmarks can be saved with UIA enabled in browsers based on Chromium,
-  thanks to Abdel.
+## Mudanças na 21.0
+* Os marcadores podem ser salvos com o UIA habilitado em navegadores
+  baseados no Chromium, graças a Abdel.
 
-## Changes for 20.0
-* Requires NVDA 2022.1 or later.
+## Mudanças na 20.0
+* Requer o NVDA 2022.1 ou posterior.
 
-## Changes for 19.0 ##
-* The add-on cannot be run on secure screens.
+## Mudanças na 19.0 ##
+* O complemento não pode ser executado em telas seguras.
 
-## Changes for 18.0 ##
-* The command to see the path for placeMarkers shows if there are permanent
-  bookmarks, text for specific search or a temporary bookmark for the
-  current document.
+## Mudanças na 18.0 ##
+* O comando para ver o caminho para placeMarkers mostra se há marcadores
+  permanentes, texto para pesquisa específica ou um marcador temporário para
+  o documento atual.
 
-## Changes for 17.0 ##
-* Fixed a bug which didn't allow to save place markers in some documents.
-* Fixed translated strings making translations to work properly.
+## Mudanças na 17.0 ##
+* Corrigido um erro que não permitia salvar marcadores de local em alguns
+  documentos.
+* Corrigido cadeias de caracteres traduzidas para que as traduções funcionem
+  corretamente.
 
 ## Mudanças na 16.0 ##
-* Compatible with NVDA 2021.1 or later (required).
+* Compatível com o NVDA 2021.1 ou posterior (requerido).
 * A leitura dinâmica é suportada ao mover para marcadores temporários.
-* If needed, you can download [other
-  versions](https://github.com/nvdaes/placeMarkers/releases).
+* Se necessário, você pode fazer download de [outras versões]
+  (https://github.com/nvdaes/placeMarkers/releases).
 
 ## Mudanças na 15.0 ##
 * Ao ler com leitura contínua no modo de navegação, os comandos específicos
