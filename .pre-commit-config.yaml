@@ -65,9 +65,6 @@ repos:
     - id: check-vcs-permalinks
     # Avoids using reserved Windows filenames.
     - id: check-illegal-windows-names
-    # Checks that tests are named test_*.py.
-    - id: name-tests-test
-      args: ["--unittest"]
 
 - repo: https://github.com/asottile/add-trailing-comma
   rev: v3.1.0
