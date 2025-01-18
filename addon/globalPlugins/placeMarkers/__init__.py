@@ -38,6 +38,7 @@ import config
 
 from .skipTranslation import translate
 from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
+
 a
 addonHandler.initTranslation()
 
