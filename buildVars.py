@@ -4,7 +4,7 @@ import os.path
 # Change this file instead of sconstruct or manifest files, whenever possible.
 
 # Full getext (please don't change)
-_ = lambda x : x
+_ = lambda x: x
 
 # Add-on information variables
 addon_info = {
@@ -21,7 +21,7 @@ addon_info = {
 	# version
 	"addon_version": "44.0.0",
 	# Author(s)
-	"addon_author": u"Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>",
+	"addon_author": "Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>",
 	# URL for the add-on documentation support
 	"addon_url": "https://github.com/nvdaes/placeMarkers",
 	# Documentation file name
@@ -35,11 +35,12 @@ addon_info = {
 }
 
 
-
-
 # Define the python files that are the sources of your add-on.
 # You can use glob expressions here, they will be expanded.
-pythonSources = [os.path.join("addon", "*.py"), os.path.join("addon", "globalPlugins", "placeMarkers", "*.py")]
+pythonSources = [
+	os.path.join("addon", "*.py"),
+	os.path.join("addon", "globalPlugins", "placeMarkers", "*.py"),
+]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources = pythonSources + ["buildVars.py"]
