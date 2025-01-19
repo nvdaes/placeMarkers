@@ -29,6 +29,7 @@ Using the PlaceMarkers submenu under NVDA's Preferences menu, you can access:
 *	Bookmarks folder: Opens a folder of the saved placemarkers.
 *	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
 *	Restore placeMarkers: You can restore your placeMarkers from a previously saved placeMarkers folder.
+*   Set default place markers folder: the default folder for place markers can be set from this dialog.
 
 Note: The placemarker position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not placemarkers.
 
@@ -137,4 +138,3 @@ Note: The placemarker position is based on the number of characters; and therefo
 ## Changes for 1.0 ##
 * Initial version.
 * Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.
-
