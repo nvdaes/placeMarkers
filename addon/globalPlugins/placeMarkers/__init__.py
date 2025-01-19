@@ -779,6 +779,9 @@ class SetDefaultFolderDialog(wx.Dialog):
 			return
 		self.Hide()
 		config.conf["placeMarkers"]["defaultFolder"] = self.defaultDirectoryEdit.Value
+		global searchFolder, bookmarksFolder
+		searchFolder = os.path.join(getDefaultFolder(), "search")
+		bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
 		createSearchFolder()
 		createBookmarksFolder()
 		self.Destroy()
@@ -1348,7 +1351,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			):
 				gesture.send()
 				return
-		message = getFile("bookmarks")
+		message = str(getDefaultFolder())
 		if os.path.isfile(getFileBookmarks()):
 			# Translators: Presented when the current document has positional bookmarks.
 			message += "\r\n\r\n" + _("Has bookmarks.")
