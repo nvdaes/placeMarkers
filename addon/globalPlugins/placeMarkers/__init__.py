@@ -14,7 +14,7 @@ import UIAHandler
 import shutil
 import wx
 from dataclasses import dataclass
-from typing import Callable
+from collections.abc import Callable
 
 import addonHandler
 import globalPluginHandler
@@ -35,6 +35,7 @@ from speech import sayAll
 from scriptHandler import willSayAllResume, script
 from logHandler import log
 import config
+from NVDAState import WritePaths
 
 from .skipTranslation import translate
 from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
@@ -44,11 +45,9 @@ addonHandler.initTranslation()
 _: Callable[[str], str]
 
 # Constants
-CONFIG_PATH = globalVars.appArgs.configPath
+CONFIG_PATH = WritePaths.configDir
 PLACE_MARKERS_PATH = os.path.join(
-	CONFIG_PATH,
-	"addons",
-	"placeMarkers",
+	addonHandler.getCodeAddon().path,
 	"globalPlugins",
 	"placeMarkers",
 	"savedPlaceMarkers",
@@ -62,10 +61,13 @@ lastCaseSensitivity = False
 
 confspec = {"defaultFolder": "string(default='')"}
 config.conf.spec["placeMarkers"] = confspec
+config.conf.BASE_ONLY_SECTIONS.add("placeMarkers")
+config.conf.reset()
 
 
 def getDefaultFolder() -> str:
-	if defaultFolder := config.conf["placeMarkers"]["defaultFolder"]:  # noqa E701
+	defaultFolder = config.conf["placeMarkers"]["defaultFolder"]
+	if ":" in defaultFolder:
 		return Path(defaultFolder)
 	return PLACE_MARKERS_PATH
 
@@ -943,14 +945,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Sets default folder for place markers"),
 		)
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSetDefaultFolder, self.setDefaultFolderItem)
-		config.conf.BASE_ONLY_SECTIONS.add("placeMarkers")
+		config.post_configReset.register(self.handlePostConfigReset)
+
+	def handlePostConfigReset(self):
+		global searchFolder, bookmarksFolder
+		searchFolder = os.path.join(getDefaultFolder(), "search")
+		bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
 
 	def terminate(self):
 		try:
 			self.menu.Remove(self.mainItem)
 		except Exception:
 			pass
-		config.conf.BASE_ONLY_SECTIONS.remove("placeMarkers")
+		config.post_configReset.unregister(self.handlePostConfigReset)
 
 	def onSpecificSearch(self, evt):
 		os.startfile(searchFolder)
