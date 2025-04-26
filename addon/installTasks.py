@@ -1,13 +1,13 @@
 # -*- coding: UTF-8 -*-
 # installTasks for placeMarkers add-on
-# Copyright (C) 2016-2019 Noelia Ruiz Martínez, Łukasz Golonka
+# Copyright (C) 2016-2025 Noelia Ruiz Martínez, Łukasz Golonka
 # Released under GPL 2
 
 import addonHandler
 import os
 import shutil
 import globalVars
-import wx
+from gui.message import MessageDialog, ReturnCode
 
 addonHandler.initTranslation()
 
@@ -20,15 +20,13 @@ def copyTree(src, dst):
 
 
 def onInstall():
-	import gui
-
 	configPath = globalVars.appArgs.configPath
 	addonDir = os.path.abspath(os.path.dirname(__file__))
 	placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
 	addonBackupPath = os.path.join(configPath, "placeMarkersBackup")
 	if os.path.isdir(addonBackupPath):
 		if (
-			gui.messageBox(
+			MessageDialog.ask(
 				_(
 					# Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 					"Your configuration folder for NVDA contains files that seem to be derived from a previous version of"
@@ -36,9 +34,8 @@ def onInstall():
 				),
 				# Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
 				_("Install or update add-on"),
-				wx.YES | wx.NO | wx.ICON_WARNING,
 			)
-			== wx.YES
+			== ReturnCode.YES
 		):
 			copyTree(addonBackupPath, placeMarkersPath)
 			return

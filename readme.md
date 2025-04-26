@@ -36,6 +36,7 @@ Note: The placemarker position is based on the number of characters; and therefo
 ## Changes for 45.0.0
 * Added ability to set the default placeMarkers folder.
 * If plugins are reloaded while this add-on is enabled, the last saved configuration will be applied.
+* Added copy and close buttons to browseable message when showing the current file where bookmarks and specific search strings are saved.
 
 ## Changes for 35.0
 * Removed URL parameters from file names, so that bookmarks are valid for specific websites in different sessions.
