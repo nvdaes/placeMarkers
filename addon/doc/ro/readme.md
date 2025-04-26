@@ -214,3 +214,4 @@ placemarkers.
   Spaniolă, Slovacă, Slovenă, Tamilă.
 
 [[!tag dev stable]]
+
