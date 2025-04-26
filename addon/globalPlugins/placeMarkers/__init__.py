@@ -36,9 +36,9 @@ from scriptHandler import willSayAllResume, script
 from logHandler import log
 import config
 from NVDAState import WritePaths
+from gui.message import MessageDialog, ReturnCode
 
 from .skipTranslation import translate
-from .securityUtils import secureBrowseableMessage  # Created by Cyrille (@CyrilleB79)
 
 addonHandler.initTranslation()
 
@@ -239,12 +239,11 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 			res = info.find(text, reverse=reverse, caseSensitive=caseSensitive)
 		except WindowsError:
 			wx.CallAfter(
-				gui.messageBox,
+				MessageDialog.alert,
 				# Message translated in NVDA core.
 				translate('text "%s" not found') % text,
 				# Message translated in NVDA core.
 				translate("Find Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 		except Exception:
 			if api.copyToClip(text):
@@ -261,12 +260,11 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 			speech.speakTextInfo(info, reason=controlTypes.OutputReason.CARET)
 		else:
 			wx.CallAfter(
-				gui.messageBox,
+				MessageDialog.alert,
 				# Message translated in NVDA core.
 				translate('text "%s" not found') % text,
 				# Message translated in NVDA core.
 				translate("Find Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 
 
@@ -511,12 +509,11 @@ def doCopy(copyDirectory):
 		)
 	except Exception as e:
 		wx.CallAfter(
-			gui.messageBox,
+			MessageDialog.alert,
 			# Translators: label of error dialog shown when cannot copy placeMarkers folder.
 			_("Folder not copied"),
 			# Translators: title of error dialog shown when cannot copy placeMarkers folder.
 			_("Copy Error"),
-			wx.OK | wx.ICON_ERROR,
 		)
 		raise e
 
@@ -533,12 +530,11 @@ def doRestore(restoreDirectory):
 		)
 	except Exception as e:
 		wx.CallAfter(
-			gui.messageBox,
+			MessageDialog.alert,
 			# Translators: label of error dialog shown when cannot copy placeMarkers folder.
 			_("Folder not copied"),
 			# Translators: title of error dialog shown when cannot copy placeMarkers folder.
 			_("Copy Error"),
-			wx.OK | wx.ICON_ERROR,
 		)
 		raise e
 
@@ -607,15 +603,14 @@ class NotesDialog(wx.Dialog):
 
 	def onDelete(self, evt):
 		if (
-			gui.messageBox(
+			MessageDialog.confirm(
 				# Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 				_("This bookmark will be permanently deleted. This action cannot be undone."),
 				# Message translated in NVDA core.
 				translate("Confirm Deletion"),
-				wx.OK | wx.CANCEL | wx.ICON_QUESTION,
 				self,
 			)
-			!= wx.OK
+			!= ReturnCode.OK
 		):
 			return
 		del self.bookmarks[self.pos]
@@ -635,12 +630,11 @@ class NotesDialog(wx.Dialog):
 				os.remove(self.fileName)
 				self.Destroy()
 				wx.CallAfter(
-					gui.messageBox,
+					MessageDialog.alert,
 					# Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 					_("No bookmarks"),
 					# Translators: The title of the warning dialog when all bookmarks have been deleted.
 					_("Bookmarks deleted"),
-					wx.OK | wx.ICON_WARNING,
 					None,
 				)
 			except WindowsError:
@@ -694,21 +688,19 @@ class CopyDialog(wx.Dialog):
 	def onCopy(self, evt):
 		if not self.copyDirectoryEdit.Value:
 			# Message translated in NVDA core.
-			gui.messageBox(
+			MessageDialog.alert(
 				translate("Please specify a directory."),
 				# Message translated in NVDA core.
 				translate("Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 			return
 		drv = os.path.splitdrive(self.copyDirectoryEdit.Value)[0]
 		if drv and not os.path.isdir(drv):
 			# Message translated in NVDA core.
-			gui.messageBox(
+			MessageDialog.alert(
 				translate("Invalid drive %s") % drv,
 				# Message translated in NVDA core.
 				translate("Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 			return
 		self.Hide()
@@ -762,21 +754,19 @@ class SetDefaultFolderDialog(wx.Dialog):
 	def onSetDefaultFolder(self, evt):
 		if not self.defaultDirectoryEdit.Value:
 			# Message translated in NVDA core.
-			gui.messageBox(
+			MessageDialog.alert(
 				translate("Please specify a directory."),
 				# Message translated in NVDA core.
 				translate("Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 			return
 		drv = os.path.splitdrive(self.defaultDirectoryEdit.Value)[0]
 		if drv and not os.path.isdir(drv):
 			# Message translated in NVDA core.
-			gui.messageBox(
+			MessageDialog.alert(
 				translate("Invalid drive %s") % drv,
 				# Message translated in NVDA core.
 				translate("Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 			return
 		self.Hide()
@@ -853,21 +843,19 @@ class RestoreDialog(wx.Dialog):
 	def onRestore(self, evt):
 		if not self.restoreDirectoryEdit.Value:
 			# Message translated in NVDA core.
-			gui.messageBox(
+			MessageDialog.alert(
 				translate("Please specify a directory."),
 				# Message translated in NVDA core.
 				translate("Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 			return
 		drv = os.path.splitdrive(self.restoreDirectoryEdit.Value)[0]
 		if drv and not os.path.isdir(drv):
 			# Message translated in NVDA core.
-			gui.messageBox(
+			MessageDialog.alert(
 				translate("Invalid drive %s") % drv,
 				# Message translated in NVDA core.
 				translate("Error"),
-				wx.OK | wx.ICON_ERROR,
 			)
 			return
 		self.Hide()
@@ -1368,10 +1356,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if os.path.isfile(getFileTempBookmark()):
 			# Translators: Presented when the current document has a temporary bookmark.
 			message += "\r\n\r\n" + _("Has temporary bookmark.")
-		secureBrowseableMessage(
+		ui.browseableMessage(
 			message,
 			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 			_("%s file") % ADDON_SUMMARY,
+			copyButton=True,
+			closeButton=True,
 		)
 
 	@script(

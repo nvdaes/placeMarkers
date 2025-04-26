@@ -221,4 +221,3 @@ placemarkers.
   eslovaco, esloveno, tamil.
 
 [[!tag dev stable]]
-
