@@ -1360,7 +1360,8 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			message,
 			# Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 			_("%s file") % ADDON_SUMMARY,
-			copyButton=True, closeButton=True,
+			copyButton=True,
+			closeButton=True,
 		)
 
 	@script(

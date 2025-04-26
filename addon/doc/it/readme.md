@@ -225,4 +225,3 @@ placemarkers.
   spagnolo, slovacco, sloveno, tamil.
 
 [[!tag dev stable]]
-
