@@ -47,7 +47,7 @@ ominaisuuksia.
 
 ## Paikkamerkit-alivalikko (NVDA+N) ##
 
-Asetukset-valikosta löytyvästä Paikkamerkit-alivalikosta pääset käyttämään
+Mukautukset-valikosta löytyvästä Paikkamerkit-alivalikosta pääset käyttämään
 seuraavia toimintoja:
 
 *	Sivukohtaisen haun kansio: avaa tallennettujen sivukohtaisten hakujen
