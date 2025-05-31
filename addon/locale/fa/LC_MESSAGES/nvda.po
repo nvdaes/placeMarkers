@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-26 14:59+0200\n"
-"PO-Revision-Date: 2022-08-02 20:21+0330\n"
+"PO-Revision-Date: 2025-05-29 10:19+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation Team <nvda-translations@groups.io>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 3.6\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
+"Your configuration folder for NVDA contains files that seem to be derived from a "
+"previous version of this add-on. Do you want to update it?"
 msgstr ""
 "پوشه‌ی تنظیماتِ NVDAِ شما شامل فایل‌هایی است که به نظر میرسد از نسخه‌ی قبلیِ این "
 "افزونه به دست آمده است. آیا میخواهید به‌روزرسانیش کنید؟"
@@ -36,7 +36,7 @@ msgstr "%s در کلیپ‌برد کپی شد"
 
 #. Translators: message presented when cannot move to bookmarks due to UIA.
 msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr "نمیتوانم به نشانک‌ها بروم در حالی که UIA برای مرورگرِ شما فعال است."
+msgstr "نمیتوانم به نشانک‌ها بروم در حالی که UIA برای مرورگرِ شما فعال است"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -111,8 +111,7 @@ msgid "&Delete..."
 msgstr "&پاک کردن..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
-msgid ""
-"This bookmark will be permanently deleted. This action cannot be undone."
+msgid "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr "این نشانک برای همیشه پاک خواهد شد. این عمل بازگشت‌پذیر نخواهد بود."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
@@ -130,8 +129,7 @@ msgstr "کپی کردنِ نشان‌گذاری‌ها"
 
 #. Translators: An informational message displayed in the Copy dialog.
 msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید."
+msgstr "پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -146,8 +144,7 @@ msgid "Restore place markers"
 msgstr "برگرداندنِ نشان‌گذاری‌ها"
 
 #. Translators: An informational message displayed in the Restore dialog.
-msgid ""
-"Select a folder to restore a backup of your previous copied place markers."
+msgid "Select a folder to restore a backup of your previous copied place markers."
 msgstr "پوشه‌ای را برای برگرداندنِ نشان‌گذاری‌های از‌پیش کپی‌شده‌تان انتخاب کنید."
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
@@ -184,7 +181,7 @@ msgstr "پوشه‌ی نشانک‌ها را باز میکند"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&کپیِ پوشه‌ی نشان‌گذاری‌ها"
+msgstr "&کپیِ پوشه‌ی نشان‌گذاری‌ها..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -192,7 +189,7 @@ msgstr "پشتیبانِ نشان‌گذاری‌ها"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "&برگرداندنِ نشان‌گذاری‌ها"
+msgstr "&برگرداندنِ نشان‌گذاری‌ها..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
@@ -219,12 +216,11 @@ msgstr "پنجره‌ی بازگردانیِ %s را فعال میکند."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
-msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند"
+msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"finds the next occurrence of the last text searched for any specific "
-"document."
+"finds the next occurrence of the last text searched for any specific document."
 msgstr "موردِ بعدی از آخرین متنِ جستجو‌شده در هر سندِ معین را پیدا میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -297,7 +293,7 @@ msgstr "اسمِ فایلِ فعلی را برای نشان‌گذاری‌ها 
 
 #. Translators: Presented when the current document has positional bookmarks.
 msgid "Has bookmarks."
-msgstr "نشانک دارد"
+msgstr "نشانک دارد."
 
 #. Translators: Presented when the current document has specific search.
 msgid "Has text for specific search."
