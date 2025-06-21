@@ -61,10 +61,20 @@ acessar:
   placeMarkers.
 *	Restaurar placeMarkers: Você pode restaurar seus placeMarkers de uma pasta
   placeMarkers salva anteriormente.
+*	Set default place markers folder: the default folder for place markers can
+  be set from this dialog. It will be saved in the normal configuration
+  profile.
 
 Nota: A posição do marcador de posição se baseia no número de caracteres;
 portanto, em páginas dinâmicas, é melhor usar a pesquisa específica, não
 marcadores de posição.
+
+## Changes for 45.0.0
+* Added ability to set the default placeMarkers folder.
+* If plugins are reloaded while this add-on is enabled, the last saved
+  configuration will be applied.
+* Added copy and close buttons to browseable message when showing the
+  current file where bookmarks and specific search strings are saved.
 
 ## Mudanças na 35.0
 * Remoção dos parâmetros de URL dos nomes de arquivos, para que os
@@ -106,8 +116,8 @@ marcadores de posição.
 ## Mudanças na 16.0 ##
 * Compatível com o NVDA 2021.1 ou posterior (requerido).
 * A leitura dinâmica é suportada ao mover para marcadores temporários.
-* Se necessário, você pode fazer download de [outras versões]
-  (https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Mudanças na 15.0 ##
 * Ao ler com leitura contínua no modo de navegação, os comandos específicos

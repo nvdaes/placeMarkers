@@ -33,11 +33,6 @@ msgstr "Installa o Aggiorna"
 msgid "%s copied to clipboard"
 msgstr "%s copiato negli appunti"
 
-#. Translators: message presented when cannot move to bookmarks due to UIA.
-msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr ""
-"Impossibile spostarsi al segnalibro con UIA abilitata nel browser in uso"
-
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
 msgstr "Ricerca Specifica"
@@ -142,6 +137,25 @@ msgstr "cartella per i backup:"
 msgid "Select directory to copy"
 msgstr "Selezionare cartella"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "Backup dei segnaposto"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "Backup dei segnaposto"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "Selezionare cartella"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "Ripristina Segnaposto"
@@ -201,6 +215,16 @@ msgstr "&Ripristina Segnaposto..."
 msgid "Restore previously saved place markers"
 msgstr "Ripristina segnaposto salvati in precedenza"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "&Copia la cartella segnaposto..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "Ripristina Segnaposto"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "Apre la cartella delle ricerche specifiche."
@@ -217,6 +241,11 @@ msgstr "Attiva la finestra di copia per %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "Attiva la finestra di ripristino di %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "Attiva la finestra di ripristino di %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -347,6 +376,10 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Componente aggiuntivo per impostare Segnaposto in pagine Web e documenti "
 "virtuali"
+
+#~ msgid "Cannot move to bookmark with UIA enabled for your browser"
+#~ msgstr ""
+#~ "Impossibile spostarsi al segnalibro con UIA abilitata nel browser in uso"
 
 #~ msgid "Cannot copy file name for place markers"
 #~ msgstr "Impossibile copiare il nome del file dei segnaposto"

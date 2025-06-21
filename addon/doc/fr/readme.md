@@ -63,10 +63,22 @@ vous pouvez accéder à :
   dossier des marqueurs.
 *	Restorer des marqueurs : Vous pouvez restorer vos marqueurs à partir d'un
   dossier de marqueurs précédemment sauvegardé.
+*	Configurer le dossier des marqueurs par défaut: vous pouvez configurer le
+  dossier par défaut pour les marqueurs de ce dialogue. Il sera enregistré
+  dans le profil de configuration normal.
 
 Note : la position du marqueur est basé sur le nombre de caractères. Dans
 les pages au contenu dynamique, il vaut mieux utiliser la recherche de texte
 spécifique, pas les marqueurs.
+
+## Changements pour la version 45.0.0
+* La possibilité de configurer le dossier par défaut de placeMarkers a été
+  ajoutée.
+* Si les plugins sont rechargés pendant que l'extension est activée, la
+  dernière configuration enregistrée sera appliquée.
+* Les boutons Copier et Fermer ont été ajoutés au message navigable lors de
+  l'affichage du fichier actuel où les marqueurs et les chaînes de
+  caractères de recherche spécifique sont enregistrées.
 
 ## Changements pour la version 35.0
 * Les paramètres d'URL sont supprimés des noms de fichiers afin que les

@@ -139,6 +139,25 @@ msgstr "каталог для резервной копии:"
 msgid "Select directory to copy"
 msgstr "Выберите каталог для копирования"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "Создаёт резервную копию закладок"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "Создаёт резервную копию закладок"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "Выберите каталог для копирования"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "Востановить закладки"
@@ -201,6 +220,16 @@ msgstr "Восс&тановить закладки..."
 msgid "Restore previously saved place markers"
 msgstr "Востанавливает ранее сохранённые закладки"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "&Копировать папку закладок..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "Востановить закладки"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "Открывает папку конкретных поисковых запросов."
@@ -217,6 +246,11 @@ msgstr "Активизирует диалог копирования из %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "Активизирует диалог восстановления из %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "Активизирует диалог восстановления из %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.

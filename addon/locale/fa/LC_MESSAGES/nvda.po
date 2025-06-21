@@ -19,8 +19,8 @@ msgstr ""
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived from a "
-"previous version of this add-on. Do you want to update it?"
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
 msgstr ""
 "پوشه‌ی تنظیماتِ NVDAِ شما شامل فایل‌هایی است که به نظر میرسد از نسخه‌ی قبلیِ این "
 "افزونه به دست آمده است. آیا میخواهید به‌روزرسانیش کنید؟"
@@ -33,10 +33,6 @@ msgstr "نصب یا به‌روزرسانیِ افزونه"
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s در کلیپ‌برد کپی شد"
-
-#. Translators: message presented when cannot move to bookmarks due to UIA.
-msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr "نمیتوانم به نشانک‌ها بروم در حالی که UIA برای مرورگرِ شما فعال است"
 
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
@@ -111,7 +107,8 @@ msgid "&Delete..."
 msgstr "&پاک کردن..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
-msgid "This bookmark will be permanently deleted. This action cannot be undone."
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
 msgstr "این نشانک برای همیشه پاک خواهد شد. این عمل بازگشت‌پذیر نخواهد بود."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
@@ -129,7 +126,8 @@ msgstr "کپی کردنِ نشان‌گذاری‌ها"
 
 #. Translators: An informational message displayed in the Copy dialog.
 msgid "Select a folder to save a backup of your current place markers."
-msgstr "پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید."
+msgstr ""
+"پوشه‌ای را برای ذخیره کردنِ یک پشتیبان از نشان‌گذاری‌های فعلیِ خود انتخاب کنید."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -139,12 +137,32 @@ msgstr "پوشه برای پشتیبانگیری:"
 msgid "Select directory to copy"
 msgstr "پوشه را برای کپی کردن انتخاب کنید"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "پشتیبانِ نشان‌گذاری‌ها"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "پشتیبانِ نشان‌گذاری‌ها"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "پوشه را برای کپی کردن انتخاب کنید"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "برگرداندنِ نشان‌گذاری‌ها"
 
 #. Translators: An informational message displayed in the Restore dialog.
-msgid "Select a folder to restore a backup of your previous copied place markers."
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr "پوشه‌ای را برای برگرداندنِ نشان‌گذاری‌های از‌پیش کپی‌شده‌تان انتخاب کنید."
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
@@ -195,6 +213,16 @@ msgstr "&برگرداندنِ نشان‌گذاری‌ها..."
 msgid "Restore previously saved place markers"
 msgstr "نشان‌گذاری‌های از‌پیش ذخیره‌شده را برمیگردانَد"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "&کپیِ پوشه‌ی نشان‌گذاری‌ها..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "برگرداندنِ نشان‌گذاری‌ها"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "پوشه‌ی جستجوی اختصاصی را باز میکند."
@@ -214,13 +242,19 @@ msgid "Activates the Restore dialog of %s."
 msgstr "پنجره‌ی بازگردانیِ %s را فعال میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
+msgstr "پنجره‌ی بازگردانیِ %s را فعال میکند."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr "رشته‌ی متنی از محلِ مکان‌نما برای یک سندِ خاص را پیدا میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
-"finds the next occurrence of the last text searched for any specific document."
+"finds the next occurrence of the last text searched for any specific "
+"document."
 msgstr "موردِ بعدی از آخرین متنِ جستجو‌شده در هر سندِ معین را پیدا میکند."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -330,6 +364,9 @@ msgstr "نشان‌گذاری‌ها"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "افزونه‌ای برای تنظیمِ نشان‌گذاری‌ها در اسنادِ مجازی"
+
+#~ msgid "Cannot move to bookmark with UIA enabled for your browser"
+#~ msgstr "نمیتوانم به نشانک‌ها بروم در حالی که UIA برای مرورگرِ شما فعال است"
 
 #~ msgid "Cannot copy file name for place markers"
 #~ msgstr "نمیتوانم اسمِ فایل را برای نشان‌گذاری‌ها کپی کنم"

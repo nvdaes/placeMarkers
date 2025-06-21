@@ -58,10 +58,22 @@ acceder a:
   marcas.
 *	Restaurar marcas: Puedes guardar tus marcas desde una carpeta de marcas
   guardada anteriormente.
+*	Configurar carpeta de marcadores por defecto: se puede configurar la
+  carpeta predeterminada para los marcadores desde este diálogo. Se guardará
+  en el perfil de configuración normal.
 
 Nota: La posición de la marca se basa en el número de caracteres; y por lo
 tanto en páginas con contenido dinámico es mejor usar la búsqueda específica
 y no las marcas.
+
+## Cambios para  45.0.0
+* Se ha añadido la posibilidad de configurar la carpeta por defecto de
+  placeMarkers.
+* Si se recargan los plugins mientras el complemento está habilitado, se
+  aplicará la última configuración guardada.
+* Se han añadido botones para copiar y cerrar al mensaje explorable al
+  mostrar el archivo actual donde se guardan los marcadores y las cadenas
+  específicas de búsqueda.
 
 ## Cambios para 35.0
 * Se eliminan los parámetros de URL de los nombres de archivo, de tal forma

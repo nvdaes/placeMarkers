@@ -140,6 +140,25 @@ msgstr "map voor back-up:"
 msgid "Select directory to copy"
 msgstr "Selecteer de map om te kopiëren"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "Backup van plaats markeringen"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "Backup van plaats markeringen"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "Selecteer de map om te kopiëren"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "Herstel plaatsmarkeringen"
@@ -199,6 +218,16 @@ msgstr "plaats markeringen t&erugzetten..."
 msgid "Restore previously saved place markers"
 msgstr "Terugzetten van eerder opgeslagen plaats markeringen"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "PlaceMarkers map &kopieren..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "Herstel plaatsmarkeringen"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "Opent de specifieke zoekmap."
@@ -215,6 +244,11 @@ msgstr "Activeert het dialoogvenster Kopiëren van %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "Activeert het dialoogvenster Herstellen van %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "Activeert het dialoogvenster Herstellen van %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.

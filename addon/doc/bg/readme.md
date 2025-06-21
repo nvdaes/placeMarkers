@@ -59,10 +59,20 @@ Bookmark&Search, разработени от същия автор. Трябва
 *	Възстановяване на позиционните маркери: Може да възстановите вашите
   позиционни маркери от предишно съхранено копие на папката с вашите
   позиционни маркери.
+*	Set default place markers folder: the default folder for place markers can
+  be set from this dialog. It will be saved in the normal configuration
+  profile.
 
 Забележка: Позицията на маркерите се базира на броя на знаците. Поради това,
 в страници с динамично съдържание е по-добре да използвате специфичното
 търсене вместо маркерите.
+
+## Changes for 45.0.0
+* Added ability to set the default placeMarkers folder.
+* If plugins are reloaded while this add-on is enabled, the last saved
+  configuration will be applied.
+* Added copy and close buttons to browseable message when showing the
+  current file where bookmarks and specific search strings are saved.
 
 ## Промени във версия 35.0
 * Премахнати са URL параметрите от имената на файловете, така че отметките
@@ -104,8 +114,8 @@ Bookmark&Search, разработени от същия автор. Трябва
 ## Промени във версия 16.0 ##
 * Съвместимост с NVDA 2021.1 или по-нови (изисква се).
 * Беглото четене се поддържа при придвижване до временни маркери.
-* Ако е необходимо, можете да изтеглите [други
-  версии](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Промени във версия 15.0 ##
 * Когато четете с командата за прочитане на всичко в режим на разглеждане,

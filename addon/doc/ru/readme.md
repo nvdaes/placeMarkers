@@ -57,10 +57,20 @@ Bookmark&Search, разработанные тем же автором. Чтоб
 *	Копировать папку закладок: вы можете сохранить копию папки PlaceMarkers.
 *	Восстановить закладки: вы можете восстановить свои закладки из ранее
   сохранённой папки PlaceMarkers.
+*	Set default place markers folder: the default folder for place markers can
+  be set from this dialog. It will be saved in the normal configuration
+  profile.
 
 Примечание: Позиция placemarker зависит от количества символов, и поэтому на
 динамических страницах лучше использовать конкретный поиск, а не
 placemarkers.
+
+## Changes for 45.0.0
+* Added ability to set the default placeMarkers folder.
+* If plugins are reloaded while this add-on is enabled, the last saved
+  configuration will be applied.
+* Added copy and close buttons to browseable message when showing the
+  current file where bookmarks and specific search strings are saved.
 
 ## Изменения для 35.0
 * Удалены параметры URL-адресов из имён файлов, чтобы закладки были
@@ -101,8 +111,8 @@ placemarkers.
 ## Изменения для 16.0 ##
 * Совместимо с NVDA 2021.1 или выше (требуется).
 * Поддерживается беглое чтение при переходе к временным закладкам.
-* При необходимости вы можете скачать [другие
-  версии](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Изменения для 15.0 ##
 * При чтении с использованием режима чтения всего в режиме обзора,

@@ -136,6 +136,25 @@ msgstr "백업할 위치:"
 msgid "Select directory to copy"
 msgstr "복사할 위치 선택"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "북마크 백업"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "북마크 백업"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "복사할 위치 선택"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "북마크 복원"
@@ -193,6 +212,16 @@ msgstr "북마크 복원(&E)"
 msgid "Restore previously saved place markers"
 msgstr "기존에 저장된 북마크를 복원합니다."
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "PlaceMarkers 폴더 복사(&C)"
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "북마크 복원"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "특정 검색 폴더를 엽니다."
@@ -209,6 +238,11 @@ msgstr "%s 복사 대화상자가 활성화 되었습니다."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "%s 복원 대화상자가 활성화 되었습니다."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "%s 복원 대화상자가 활성화 되었습니다."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.

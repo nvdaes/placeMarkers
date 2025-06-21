@@ -30,8 +30,18 @@
 *	书签文件夹：打开已保存书签的文件夹。
 *	备份位置标记：您可以保存书签文件夹的副本。
 *	恢复位置标记：您可以从先前保存的位置标记文件夹中恢复您的书签。
+*	Set default place markers folder: the default folder for place markers can
+  be set from this dialog. It will be saved in the normal configuration
+  profile.
 
 注意：书签位置基于字符数量来确定，因此，在动态页面中，最好使用特定搜索，而不是书签。
+
+## Changes for 45.0.0
+* Added ability to set the default placeMarkers folder.
+* If plugins are reloaded while this add-on is enabled, the last saved
+  configuration will be applied.
+* Added copy and close buttons to browseable message when showing the
+  current file where bookmarks and specific search strings are saved.
 
 ## 版本35.0
 * 删除了文件名中的 URL 参数，以便书签在不同会话中的特定网站生效。
@@ -65,7 +75,8 @@
 ## 版本16.0 ##
 * 兼容 NVDA 2021.1 或更高版本（必需）。
 * 移动到临时书签时支持略读。
-* 如果需要，您可以下载[其他版本](https://github.com/nvdaes/placeMarkers/releases)。
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## 版本15.0 ##
 * 在浏览模式下使用全文朗读进行阅读时，根据 NVDA 2020.4

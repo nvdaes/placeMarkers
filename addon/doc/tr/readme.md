@@ -53,9 +53,19 @@ NVDA'nın Tercihler menüsü altındaki Yerimleri alt menüsünü kullanarak
   kaydedebilirsiniz.
 *	Yerimlerini Geri Yükle: yerimlerinizi önceden kaydedilmiş bir Yerimleri
   klasöründen geri yükleyebilirsiniz.
+*	Varsayılan Yer İmleri Klasörünü ayarlayın: Yer İmleri için varsayılan
+  klasör bu iletişim kutusundan ayarlanabilir. Normal yapılandırma profiline
+  kaydedilecektir.
 
 Not: Yerimi konumu, karakter sayısına bağlıdır; ve bu nedenle dinamik
 sayfalarda, yer imlerini değil, belirli aramayı kullanmak daha iyidir.
+
+## 45.0.0 için değişiklikler
+* Varsayılan yer İmleri klasörünü ayarlama yeteneği eklendi.
+* Bu eklenti etkinken eklentiler yeniden yüklenirse, son kaydedilen
+  yapılandırma uygulanır.
+* Yer imlerinin ve belirli arama dizelerinin kaydedildiği geçerli dosyayı
+  gösterirken taranabilir mesaja kopyala ve kapat düğmeleri eklendi.
 
 ## 35.0 için Değişiklikler
 * Yer imlerinin farklı oturumlardaki belirli web siteleri için geçerli
@@ -94,8 +104,8 @@ sayfalarda, yer imlerini değil, belirli aramayı kullanmak daha iyidir.
 ## 16.0 için değişiklikler ##
 * NVDA 2021.1 veya üstü ile uyumludur (gerekli).
 * Geçici yerimlerine taşınırken hızlı okuma desteklenir.
-* Gerekirse [diğer
-  sürümleri](https://github.com/nvdaes/placeMarkers/releases)
+* Gerekirse [diğer sürümleri
+  buradan](https://github.com/nvdaes/placemarkers/releases)
   indirebilirsiniz.
 
 ## 15.0 için değişiklikler ##

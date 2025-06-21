@@ -61,10 +61,20 @@ Elemente zugreifen:
 *	Lesezeichen-Ordner kopieren: Speichert eine Kopie des Lesezeichen-Ordners.
 *	Lesezeichen wiederherstellen: Stellt die Lesezeichen aus einem zuvor
   gespeicherten Lesezeichen-Ordner wieder her.
+*	Set default place markers folder: the default folder for place markers can
+  be set from this dialog. It will be saved in the normal configuration
+  profile.
 
 Anmerkung: Die Lesezeichen basieren auf der Position im Dokument (welche in
 Zeichen vom Dokumentanfang gemessen wird). Bei dynamischen Webseiten
 empfielt sich daher stattdessen Suchanfragen zu verwenden.
+
+## Changes for 45.0.0
+* Added ability to set the default placeMarkers folder.
+* If plugins are reloaded while this add-on is enabled, the last saved
+  configuration will be applied.
+* Added copy and close buttons to browseable message when showing the
+  current file where bookmarks and specific search strings are saved.
 
 ## Changes for 35.0
 * Removed URL parameters from file names, so that bookmarks are valid for
@@ -106,8 +116,8 @@ empfielt sich daher stattdessen Suchanfragen zu verwenden.
 ## Änderungen in 16.0 ##
 * Kompatibel mit NVDA 2021.1 oder neuer (erforderlich).
 * Beim Wechsel zu temporären Lesezeichen wird das Überspringen unterstützt.
-* Bei Bedarf können Sie [andere Versionen
-  herunterladen](https://github.com/nvdaes/placeMarkers/releases).
+* If needed, you can download [other
+  versions](https://github.com/nvdaes/placeMarkers/releases).
 
 ## Änderungen in 15.0 ##
 * Wenn Sie sich im Suchmodus mit "Alles Lesen" ansagen lassen, hören die

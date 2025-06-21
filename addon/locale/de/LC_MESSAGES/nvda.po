@@ -34,11 +34,6 @@ msgstr "Erweiterung installieren oder aktualisieren"
 msgid "%s copied to clipboard"
 msgstr "%s in die Zwischenablage kopiert"
 
-#. Translators: message presented when cannot move to bookmarks due to UIA.
-msgid "Cannot move to bookmark with UIA enabled for your browser"
-msgstr ""
-"Kann nicht zum Lesezeichen wechseln, wenn UIA für Ihren Browser aktiviert ist"
-
 #. Translators: The title of the Specific Search dialog.
 msgid "Specific search"
 msgstr "Erweiterte Suche"
@@ -145,6 +140,25 @@ msgstr "Ordner für Backups:"
 msgid "Select directory to copy"
 msgstr "Ordner zum Kopieren auswählen"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "Backup der Lesezeichen"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "Backup der Lesezeichen"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "Ordner zum Kopieren auswählen"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "Lesezeichen &wiederherstellen"
@@ -204,6 +218,16 @@ msgstr "Lesezeichen &wiederherstellen..."
 msgid "Restore previously saved place markers"
 msgstr "Zuvor gespeicherte Lesezeichen wiederherstellen"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "Lesezeichenordner &kopieren..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "Lesezeichen &wiederherstellen"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "Öffnet den Ordner für die erweiterte Suche."
@@ -220,6 +244,11 @@ msgstr "Aktiviert das Kopieren-Dialogfeld von %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "Aktiviert das Wiederherstellen-Dialogfeld von %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "Aktiviert das Wiederherstellen-Dialogfeld von %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -344,6 +373,11 @@ msgstr "Lesezeichen"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Erweiterung zum Setzen von Lesezeichen in virtuellen Ansichten"
+
+#~ msgid "Cannot move to bookmark with UIA enabled for your browser"
+#~ msgstr ""
+#~ "Kann nicht zum Lesezeichen wechseln, wenn UIA für Ihren Browser aktiviert "
+#~ "ist"
 
 #~ msgid "Cannot copy file name for place markers"
 #~ msgstr "Dateiname für die Lesezeichen konnte nicht kopiert werden"

@@ -56,10 +56,20 @@ seuraavia toimintoja:
 *	Kopioi paikkamerkkien kansio: Tallentaa kopion paikkamerkkien kansiosta.
 *	Palauta paikkamerkit: Palauttaa paikkamerkit aiemmin tallennetusta
   paikkamerkkien kansiosta.
+*	Määritä paikkamerkkien oletuskansio: Tästä valintaikkunasta voidaan
+  määrittää paikkamerkkien oletuskansio. Se tallennetaan normaaleihin
+  asetuksiin.
 
 Huom: Paikkamerkin sijainti perustuu merkkien lukumäärään, joten muuttuvan
 sisällön sivuilla kannattaa käyttää tarkan sijainnin tallentavien
 paikkamerkkien asemesta sivukohtaista hakua.
+
+## Muutokset versiossa 45.0.0
+* Lisätty mahdollisuus paikkamerkkien oletuskansion määrittämiseen.
+* Viimeksi tallennetut asetukset otetaan käyttöön, jos liitännäiset ladataan
+  uudelleen tämän lisäosan ollessa käytössä.
+* Viestiin, joka näyttää paikkamerkkien ja hakusanojen tallennustiedoston,
+  on lisätty Kopioi- ja Sulje-painikkeet.
 
 ## Muutokset versiossa 35.0
 * Poistettu URL-parametrit tiedostonimistä, jotta sivukohtaiset paikkamerkit

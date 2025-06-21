@@ -140,6 +140,25 @@ msgstr "dosar pentru copie de siguranță:"
 msgid "Select directory to copy"
 msgstr "Selectați dosarul pentru copiere"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "Copie de rezervă a marcajelor de locație"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "Copie de rezervă a marcajelor de locație"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "Selectați dosarul pentru copiere"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "Restaurează locația marcajelor"
@@ -199,6 +218,16 @@ msgstr "R&estaurare marcaje de locație..."
 msgid "Restore previously saved place markers"
 msgstr "Restaurează marcajele de locație salvate anterior"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "&Copiere dosar marcaje locație..."
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "Restaurează locația marcajelor"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "Deschide dosarul de căutare specifică."
@@ -215,6 +244,11 @@ msgstr "Activează dialogul de copiere a %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "Activează dialogul de restaurare a %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "Activează dialogul de restaurare a %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.

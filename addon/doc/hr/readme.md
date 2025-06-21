@@ -55,10 +55,20 @@ access:
 *	Copy placeMarkers folder: You can save a copy of the placeMarkers folder.
 *	Restore placeMarkers: You can restore your placeMarkers from a previously
   saved placeMarkers folder.
+*	Set default place markers folder: the default folder for place markers can
+  be set from this dialog. It will be saved in the normal configuration
+  profile.
 
 Note: The placemarker position is based on the number of characters; and
 therefore in dynamic pages it is better to use the specific search, not
 placemarkers.
+
+## Changes for 45.0.0
+* Added ability to set the default placeMarkers folder.
+* If plugins are reloaded while this add-on is enabled, the last saved
+  configuration will be applied.
+* Added copy and close buttons to browseable message when showing the
+  current file where bookmarks and specific search strings are saved.
 
 ## Changes for 35.0
 * Removed URL parameters from file names, so that bookmarks are valid for

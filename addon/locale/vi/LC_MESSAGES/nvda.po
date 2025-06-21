@@ -136,6 +136,25 @@ msgstr "thư mục để sao lưu:"
 msgid "Select directory to copy"
 msgstr "Chọn thư mục để sao chép"
 
+#. Translators: The title of the Set default folder dialog.
+#, fuzzy
+msgid "Set default folder for place markers"
+msgstr "Sao lưu các điểm đánh dấu"
+
+#. Translators: An informational message displayed in the Set default folder dialog.
+msgid "Select the folder where your place markers will be searched."
+msgstr ""
+
+#. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#, fuzzy
+msgid "default directory for place markers:"
+msgstr "Sao lưu các điểm đánh dấu"
+
+#. Translators: The title of the dialog to browse for the default directory for place markers.
+#, fuzzy
+msgid "Select default directory"
+msgstr "Chọn thư mục để sao chép"
+
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
 msgstr "Phục hồi các điểm đánh dấu"
@@ -197,6 +216,16 @@ msgstr "&Phục hồi các điểm đánh dấu..."
 msgid "Restore previously saved place markers"
 msgstr "Phục hồi các điểm đánh dấu đã lưu trước đó"
 
+#. Translators: the name for an item of addon submenu.
+#, fuzzy
+msgid "Set &default place markers folder..."
+msgstr "Sao &chép thư mục các điểm đánh dấu "
+
+#. Translators: the tooltip text for an item of addon submenu.
+#, fuzzy
+msgid "Sets default folder for place markers"
+msgstr "Phục hồi các điểm đánh dấu"
+
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
 msgstr "Mở thư mục tìm kiếm cụ thể"
@@ -213,6 +242,11 @@ msgstr "Kích hoạt hộp thoại Sao Chép của %s."
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
 msgid "Activates the Restore dialog of %s."
+msgstr "Kích hoạt hộp thoại Khôi Phục của%s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#, fuzzy, python-format
+msgid "Activates the Set default folder dialog of %s."
 msgstr "Kích hoạt hộp thoại Khôi Phục của%s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
