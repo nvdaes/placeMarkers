@@ -1,0 +1,99 @@
+name: Crowdin Action
+
+on:
+  # push:
+    # branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  synchronize-with-crowdin:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install scons markdown
+          sudo apt update
+          sudo apt install gettext
+          sudo apt install translate-toolkit
+      - name: Create add-on
+        run: scons
+      - name: Create pot "file
+        run: scons pot
+      - name: Move addon folder
+        run: |
+          mkdir ${{ github.event.repository.name }}
+          mv addon/locale ${{ github.event.repository.name }}
+          mv addon/doc ${{ github.event.repository.name }}
+          mv *.pot ${{ github.event.repository.name }}
+          mv readme.md ${{ github.event.repository.name }}
+
+      - name: Convert markdown to pot
+        run: md2po -P ${{ github.event.repository.name }}/readme.md ${{ github.event.repository.name }}
+
+      - name: crowdin action
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          upload_translations: true
+          auto_approve_imported: true
+          download_translations: false
+          localization_branch_name: l10n_crowdin_translations
+          create_pull_request: false
+          pull_request_title: 'New Crowdin Translations'
+          pull_request_body: 'New Crowdin translations by [Crowdin GH Action](https://github.com/crowdin/github-action)'
+          pull_request_base_branch_name: 'main'
+        env:
+          # A classic GitHub Personal Access Token with the 'repo' scope selected (the user should have write access to the repository).
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          # A numeric ID, found at https://crowdin.com/project/<projectName>/tools/api
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+
+          # Visit https://crowdin.com/settings#api-key to create this token
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Convert doc to markdown
+        run: |
+          for dir in ${{ github.event.repository.name }}/doc; do po2md -i $dir -t ${{ github.event.repository.name }}/readme.md -o $dir/translated; done
+      - name: list
+        run: ls -R ${{  github.event.repository.name }}
+      - name: Upload doc
+        uses: actions/upload-artifact@v4
+        with:
+          name: translatedDoc
+          path: ${{ github.event.repository.name }}/doc/translated
+
+  pullTranslations:
+    needs: synchronize-with-crowdin
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Download
+      uses: actions/download-artifact@v4
+      with:
+        name: translatedDoc
+        path: addon/doc
+    - name: Add translated doc
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git status
+        git add .
+        git commit -m "Test"
+
+
+
