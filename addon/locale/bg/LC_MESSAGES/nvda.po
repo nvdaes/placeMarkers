@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 1.0-beta\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-06-27 21:32+0200\n"
-"PO-Revision-Date: 2024-05-03 17:07+0300\n"
+"PO-Revision-Date: 2025-06-20 20:26+0300\n"
 "Last-Translator: Kostadin Kolev <k.kolev1985@gmail.com>\n"
 "Language-Team: Български <>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -143,23 +143,20 @@ msgid "Select directory to copy"
 msgstr "Избор на папка за копирането"
 
 #. Translators: The title of the Set default folder dialog.
-#, fuzzy
 msgid "Set default folder for place markers"
-msgstr "Резервно копие на позиционните маркери"
+msgstr "Задаване на папка по подразбиране за позиционните маркери"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
 msgid "Select the folder where your place markers will be searched."
-msgstr ""
+msgstr "Изберете папката, където ще се търси за вашите позиционни маркери."
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#, fuzzy
 msgid "default directory for place markers:"
-msgstr "Резервно копие на позиционните маркери"
+msgstr "директория по подразбиране за позиционните маркери:"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#, fuzzy
 msgid "Select default directory"
-msgstr "Избор на папка за копирането"
+msgstr "Избор на папка по подразбиране"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
@@ -221,14 +218,12 @@ msgid "Restore previously saved place markers"
 msgstr "Възстановява предишно запазени позиционни маркери"
 
 #. Translators: the name for an item of addon submenu.
-#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr "&Копиране на папката с позиционни маркери..."
+msgstr "&Задай папка по подразбиране за позиционните маркери..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr "Възстановяване на позиционните маркери"
+msgstr "Задава папка по подразбиране за позиционните маркери"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
@@ -249,9 +244,9 @@ msgid "Activates the Restore dialog of %s."
 msgstr "Задейства диалоговия прозорец за възстановяване на %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy, python-format
+#, python-format
 msgid "Activates the Set default folder dialog of %s."
-msgstr "Задейства диалоговия прозорец за възстановяване на %s."
+msgstr "Извежда диалоговия прозорец „Задаване на папка по подразбиране“ на %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""

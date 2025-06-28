@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: placeMarkers\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2022-07-23 09:39+0200\n"
+"PO-Revision-Date: 2025-06-20 23:54+0300\n"
 "Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -41,7 +41,7 @@ msgstr "Sivukohtainen haku"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "Ta&llennetut tekstit"
+msgstr "T&allennetut tekstit"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
@@ -49,7 +49,7 @@ msgstr "&Poista historiasta"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
 msgid "&Text to search:"
-msgstr "Ets&ittävä teksti:"
+msgstr "Etsittävä te&ksti:"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Add to history"
@@ -57,7 +57,7 @@ msgstr "&Lisää historiaan"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
 msgid "Action on s&earch"
-msgstr "To&iminto"
+msgstr "Hakuto&iminto"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "Search &next"
@@ -69,7 +69,7 @@ msgstr "Etsi &edellinen"
 
 #. Translators: An action in the Search group of the Specific search dialog.
 msgid "&Don't search"
-msgstr "&Ei hakua"
+msgstr "Ei &hakua"
 
 #. Translators: Message presented when place markers have been copied.
 msgid "Place markers copied"
@@ -97,7 +97,7 @@ msgstr "&Paikkamerkit"
 
 #. Translators: The label of an edit box in the Notes dialog.
 msgid "Not&e:"
-msgstr "Mu&istiinpano:"
+msgstr "&Muistiinpano:"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Save note"
@@ -105,7 +105,7 @@ msgstr "Ta&llenna muistiinpano"
 
 #. Translators: The label for a button in the Notes dialog.
 msgid "&Delete..."
-msgstr "&Poista..."
+msgstr "Po&ista..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
 msgid ""
@@ -128,7 +128,7 @@ msgstr "Kopioi paikkamerkit"
 #. Translators: An informational message displayed in the Copy dialog.
 msgid "Select a folder to save a backup of your current place markers."
 msgstr ""
-"Valitse kansio, johon nykyisten paikkamerkkiesi varmuuskopio tallennetaan."
+"Valitse kansio, johon nykyisten paikkamerkkien varmuuskopio tallennetaan."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
@@ -139,23 +139,20 @@ msgid "Select directory to copy"
 msgstr "Valitse kansio, johon kopioidaan"
 
 #. Translators: The title of the Set default folder dialog.
-#, fuzzy
 msgid "Set default folder for place markers"
-msgstr "Paikkamerkkien varmuuskopio"
+msgstr "Määritä paikkamerkkien oletuskansio"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
 msgid "Select the folder where your place markers will be searched."
-msgstr ""
+msgstr "Valitse kansio, josta paikkamerkkejä etsitään."
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#, fuzzy
 msgid "default directory for place markers:"
-msgstr "Paikkamerkkien varmuuskopio"
+msgstr "Paikkamerkkien oletuskansio:"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#, fuzzy
 msgid "Select default directory"
-msgstr "Valitse kansio, johon kopioidaan"
+msgstr "Valitse oletuskansio"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
@@ -173,7 +170,7 @@ msgstr "Varmuuskopion sisältävä kansio:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
-msgstr "Valitse palautettava kansio"
+msgstr "Valitse kansio, josta palautetaan"
 
 #. Translators: the name of addon submenu.
 msgid "P&lace markers"
@@ -181,7 +178,7 @@ msgstr "Paikka&merkit"
 
 #. Translators: the tooltip text for addon submenu.
 msgid "Bookmarks and Search menu"
-msgstr "Paikkamerkkien ja hakujen valikko"
+msgstr "Avaa paikkamerkkien ja hakujen valikon."
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Specific search folder"
@@ -189,7 +186,7 @@ msgstr "&Sivukohtaisen haun kansio"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the specific search folder"
-msgstr "Avaa sivukohtaisen haun kansion"
+msgstr "Avaa sivukohtaisen haun kansion."
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Bookmarks folder"
@@ -197,7 +194,7 @@ msgstr "&Paikkamerkkien kansio"
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Opens the bookmarks folder"
-msgstr "Avaa paikkamerkkien kansion"
+msgstr "Avaa paikkamerkkien kansion."
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
@@ -205,7 +202,7 @@ msgstr "&Kopioi paikkamerkkien kansio..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
-msgstr "Paikkamerkkien varmuuskopio"
+msgstr "Varmuuskopioi paikkamerkit."
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
@@ -213,17 +210,15 @@ msgstr "&Palauta paikkamerkit..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
-msgstr "Palauta aiemmin tallennetut paikkamerkit"
+msgstr "Palauttaa aiemmin tallennetut paikkamerkit."
 
 #. Translators: the name for an item of addon submenu.
-#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr "&Kopioi paikkamerkkien kansio..."
+msgstr "Määritä paikkamerkkien &oletuskansio..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr "Palauta paikkamerkit"
+msgstr "Määrittää paikkamerkkien oletuskansion."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
@@ -244,9 +239,9 @@ msgid "Activates the Restore dialog of %s."
 msgstr "Avaa %s-lisäosan palautusvalintaikkunan."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy, python-format
+#, python-format
 msgid "Activates the Set default folder dialog of %s."
-msgstr "Avaa %s-lisäosan palautusvalintaikkunan."
+msgstr "Avaa valintaikkunan %s-lisäosan oletuskansion määrittämistä varten."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
@@ -272,7 +267,7 @@ msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
-msgstr "Näytä Muistiinpanot-valintaikkuna nykyiselle dokumentille."
+msgstr "Näyttää Muistiinpanot-valintaikkunan nykyiselle dokumentille."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
@@ -309,7 +304,7 @@ msgstr "Siirtää seuraavaan paikkamerkkiin."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
-msgstr "Paikkamerkkejä ei löytynyt"
+msgstr "Paikkamerkkejä ei löydy"
 
 #. Translators: message presented when a bookmark is selected.
 #, python-format
@@ -334,15 +329,15 @@ msgstr "Näyttää nykyisen paikkamerkkitiedoston nimen  selaustilassa."
 
 #. Translators: Presented when the current document has positional bookmarks.
 msgid "Has bookmarks."
-msgstr "Sisältää paikkamerkkejä."
+msgstr "Sisältää paikkamerkkejä"
 
 #. Translators: Presented when the current document has specific search.
 msgid "Has text for specific search."
-msgstr "Sisältää sivukohtaisen haun."
+msgstr "Sisältää sivukohtaisen haun"
 
 #. Translators: Presented when the current document has a temporary bookmark.
 msgid "Has temporary bookmark."
-msgstr "Sisältää tilapäisen paikkamerkin."
+msgstr "Sisältää tilapäisen paikkamerkin"
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
 #, python-format

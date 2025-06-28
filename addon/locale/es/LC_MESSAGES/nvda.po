@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: placeMarkers-7.0\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2022-07-22 18:34+0200\n"
-"Last-Translator: José Manuel Delicado <jmdaweb@hotmail.com>\n"
+"PO-Revision-Date: 2025-06-20 22:52+0200\n"
+"Last-Translator: José Manuel Delicado <jm.delicado@nvda.es>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -139,23 +139,20 @@ msgid "Select directory to copy"
 msgstr "Selecciona el directorio para copiar"
 
 #. Translators: The title of the Set default folder dialog.
-#, fuzzy
 msgid "Set default folder for place markers"
-msgstr "Copia de seguridad de las Marcas"
+msgstr "Configurar carpeta por defecto para los marcadores"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
 msgid "Select the folder where your place markers will be searched."
-msgstr ""
+msgstr "Selecciona la carpeta donde se buscarán tus marcadores."
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#, fuzzy
 msgid "default directory for place markers:"
-msgstr "Copia de seguridad de las Marcas"
+msgstr "carpeta de marcadores por defecto:"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#, fuzzy
 msgid "Select default directory"
-msgstr "Selecciona el directorio para copiar"
+msgstr "Seleccionar carpeta por defecto"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
@@ -217,14 +214,12 @@ msgid "Restore previously saved place markers"
 msgstr "Restaurar a partir de una carpeta de Marcas guardada previamente"
 
 #. Translators: the name for an item of addon submenu.
-#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr "&Copiar la carpeta Marcas..."
+msgstr "Configurar carpeta de marcadores por defecto..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr "Restaurar marcadores"
+msgstr "Configura la carpeta predeterminada de marcadores"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
@@ -245,9 +240,9 @@ msgid "Activates the Restore dialog of %s."
 msgstr "Activa el diálogo Restaurar de %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy, python-format
+#, python-format
 msgid "Activates the Set default folder dialog of %s."
-msgstr "Activa el diálogo Restaurar de %s."
+msgstr "Activa el diálogo de configurar carpeta por defecto de %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
@@ -375,6 +370,3 @@ msgid "Add-on for setting place markers on specific virtual documents"
 msgstr ""
 "Complemento para establecer las marcas en páginas Web y documentos virtuales "
 "específicos"
-
-#~ msgid "Cannot move to bookmark with UIA enabled for your browser"
-#~ msgstr "No puedes moverte al marcador con UIA activada para tu navegador"

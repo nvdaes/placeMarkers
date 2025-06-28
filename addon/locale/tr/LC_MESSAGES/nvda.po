@@ -5,17 +5,17 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'placeMarkers' '8.1\n"
+"Project-Id-Version: Yerimleri\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2021-09-06 09:13+0300\n"
-"Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
-"Language-Team: tr <cagrid@hotmail.com>\n"
-"Language: tr\n"
+"PO-Revision-Date: 2025-06-20 19:57+0300\n"
+"Last-Translator: Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language-Team: tr <cagrid@hotmail.com> Umut KORKMAZ <umutkork@gmail.com>\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ../../../globalPlugins\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -43,7 +43,7 @@ msgstr "Özel arama"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
 msgid "Sa&ved texts"
-msgstr "&Kayıtlı m&etinler:"
+msgstr "&Kayıtlı m&etinler"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
 msgid "&Remove from history"
@@ -133,30 +133,27 @@ msgstr "Mevcut yerimlerinizin yedekleneceği klasörü seçin."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
 msgid "directory for backup:"
-msgstr "Yedekleme dizini:"
+msgstr "yedekleme dizini:"
 
 #. Translators: The title of the dialog to browse for the destination directory when copying place markers.
 msgid "Select directory to copy"
 msgstr "Kopyalanacak dizini seçin"
 
 #. Translators: The title of the Set default folder dialog.
-#, fuzzy
 msgid "Set default folder for place markers"
-msgstr "Yerimleri yedeği"
+msgstr "Yerimleri için varsayılan klasörü ayarlayın"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
 msgid "Select the folder where your place markers will be searched."
-msgstr ""
+msgstr "Yer imlerinizin aranacağı klasörü seçin."
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#, fuzzy
 msgid "default directory for place markers:"
-msgstr "Yerimleri yedeği"
+msgstr "yerimleri için varsayılan dizin:"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#, fuzzy
 msgid "Select default directory"
-msgstr "Kopyalanacak dizini seçin"
+msgstr "Varsayılan dizini seçin"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
@@ -170,7 +167,7 @@ msgstr ""
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
 msgid "directory containing backup:"
-msgstr "Yedeği içeren klasör:"
+msgstr "yedeği içeren klasör:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
 msgid "Select directory to restore"
@@ -202,7 +199,7 @@ msgstr "Yerimi klasörünü açar"
 
 #. Translators: the name for an item of addon submenu.
 msgid "&Copy placeMarkers folder..."
-msgstr "&Yerimi klasörünü kopyala"
+msgstr "&Yerimi klasörünü kopyala..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Backup of place markers"
@@ -210,29 +207,27 @@ msgstr "Yerimleri yedeği"
 
 #. Translators: the name for an item of addon submenu.
 msgid "R&estore place markers..."
-msgstr "Y&erimlerini geri al"
+msgstr "Y&erimlerini geri al..."
 
 #. Translators: the tooltip text for an item of addon submenu.
 msgid "Restore previously saved place markers"
 msgstr "Önceden kaydedilen yerimlerini geri al"
 
 #. Translators: the name for an item of addon submenu.
-#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr "&Yerimi klasörünü kopyala"
+msgstr "&Yerimi klasörünü kopyala..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr "Yerimlerini geri yükle"
+msgstr "Yerimleri için varsayılan klasörü ayarlar"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
-msgstr "Özel arama klasörünü açar"
+msgstr "Özel arama klasörünü açar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the bookmarks folder."
-msgstr "Yerimi klasörünü açar"
+msgstr "Yerimi klasörünü açar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 #, python-format
@@ -245,29 +240,29 @@ msgid "Activates the Restore dialog of %s."
 msgstr "%s geri yükleme iletişim kutusunu açar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy, python-format
+#, python-format
 msgid "Activates the Set default folder dialog of %s."
-msgstr "%s geri yükleme iletişim kutusunu açar."
+msgstr "%s için ayarlanmış varsayılan klasör iletişim kutusunu açar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds a text string from the current cursor position for a specific document."
 msgstr ""
-"Özel bir belge içinde imlecin mevcut konumundan itibaren özel bir metin arar"
+"özel bir belge içinde imlecin mevcut konumundan itibaren özel bir metin arar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds the next occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Özel bir belge içinde daha önce aranan metni belgenin sonraki kısmında arar"
+"özel bir belge içinde daha önce aranan metni belgenin sonraki kısmında arar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
 "finds the previous occurrence of the last text searched for any specific "
 "document."
 msgstr ""
-"Özel bir belge içinde daha önce aranan metni belgenin önceki kısmında arar"
+"özel bir belge içinde daha önce aranan metni belgenin önceki kısmında arar."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Show the Notes dialog for a specific document."
@@ -275,7 +270,7 @@ msgstr "Belli bir belgeyle ilgili notlar iletişim kutusunu gösterir."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a bookmark."
-msgstr "Mevcut konumu yerimi olarak kaydeder"
+msgstr "Mevcut konumu yerimi olarak kaydeder."
 
 #. Translators: message presented when a position is saved as a bookmark.
 #, python-format
@@ -288,7 +283,7 @@ msgstr "Yerimi kaydedilemedi"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Deletes the current bookmark."
-msgstr "Mevcut yerimini siler"
+msgstr "Mevcut yerimini siler."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
 msgid "No bookmark selected"
@@ -304,7 +299,7 @@ msgstr "Yerimi silinemiyor"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the next bookmark."
-msgstr "Sonraki yerimine gider"
+msgstr "Sonraki yerimine gider."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
 msgid "No bookmarks found"
@@ -313,7 +308,7 @@ msgstr "Yerimi bulunamadı"
 #. Translators: message presented when a bookmark is selected.
 #, python-format
 msgid "Position: character %d"
-msgstr "konum: karakter %d"
+msgstr "Konum: karakter %d"
 
 #. Translators: message presented when the next bookmark is not found.
 msgid "Next bookmark not found"
@@ -321,7 +316,7 @@ msgstr "Sonraki yerimi bulunamadı"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Moves to the previous bookmark."
-msgstr "Önceki yerimine gider"
+msgstr "Önceki yerimine gider."
 
 #. Translators: message presented when the previous bookmark is not found.
 msgid "Previous bookmark not found"
@@ -329,7 +324,7 @@ msgstr "Önceki yerimi bulunamadı"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Yerimleri için kullanılan dosya adını tarama kipinde gösterir"
+msgstr "Yerimleri için kullanılan dosya adını tarama kipinde gösterir."
 
 #. Translators: Presented when the current document has positional bookmarks.
 msgid "Has bookmarks."
@@ -350,7 +345,7 @@ msgstr "%s dosya"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Saves the current position as a temporary bookmark."
-msgstr "Mevcut konumu geçici yerimi olarak kaydeder"
+msgstr "Mevcut konumu geçici yerimi olarak kaydeder."
 
 #. Translators: Message presented when a temporary bookmark is saved.
 #, python-format
@@ -359,7 +354,7 @@ msgstr "%d konumunda geçici yer imi kaydedildi"
 
 #. Translators: Message presented in input help mode.
 msgid "Moves to the temporary bookmark for the current document."
-msgstr "Mevcut belgede geçici yer imine gider"
+msgstr "Mevcut belgede geçici yerimine gider."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
