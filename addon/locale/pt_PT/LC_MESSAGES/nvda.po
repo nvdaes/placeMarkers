@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: placeMarkers 8.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-11-03 16:00+1000\n"
-"PO-Revision-Date: 2023-07-28 14:44+0100\n"
+"PO-Revision-Date: 2025-07-06 19:14+0100\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.6\n"
 
 #. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
 msgid ""
@@ -143,23 +143,20 @@ msgid "Select directory to copy"
 msgstr "Seleccionar pasta para copiar"
 
 #. Translators: The title of the Set default folder dialog.
-#, fuzzy
 msgid "Set default folder for place markers"
-msgstr "Cópia de segurança de marcadores de lugar"
+msgstr "Definir pasta predefinida para marcadores de local"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
 msgid "Select the folder where your place markers will be searched."
-msgstr ""
+msgstr "Selecione a pasta onde os seus marcadores de local serão pesquisados."
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#, fuzzy
 msgid "default directory for place markers:"
-msgstr "Cópia de segurança de marcadores de lugar"
+msgstr "diretório predefinido para os marcadores de local:"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#, fuzzy
 msgid "Select default directory"
-msgstr "Seleccionar pasta para copiar"
+msgstr "Selecionar o diretório predefinido"
 
 #. Translators: The title of the Restore dialog.
 msgid "Restore place markers"
@@ -221,14 +218,12 @@ msgid "Restore previously saved place markers"
 msgstr "Restaurar os marcadores de lugar previamente guardados"
 
 #. Translators: the name for an item of addon submenu.
-#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr "&Copiar pasta de marcadores de lugar..."
+msgstr "Definir a pasta &default place markers..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr "Restaurar marcadores de lugar"
+msgstr "Define a pasta predefinida para os marcadores de local"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid "Opens the specific search folder."
@@ -249,9 +244,9 @@ msgid "Activates the Restore dialog of %s."
 msgstr "Activa o diálogo de restauro de %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#, fuzzy, python-format
+#, python-format
 msgid "Activates the Set default folder dialog of %s."
-msgstr "Activa o diálogo de restauro de %s."
+msgstr "Ativa a caixa de diálogo Definir pasta predefinida de %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
 msgid ""
