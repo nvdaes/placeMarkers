@@ -227,4 +227,3 @@ placemarkers.
   hiszpański, słowacki, słoweński, tamilski.
 
 [[!tag dev stable]]
-
