@@ -383,6 +383,8 @@ def getSavedBookmarks():
 
 
 class SpecificSearchDialog(wx.Dialog):
+	shouldSuspendConfigProfileTriggers = True
+
 	def __init__(self, parent, reverse=False):
 		# Translators: The title of the Specific Search dialog.
 		super(SpecificSearchDialog, self).__init__(parent, title=_("Specific search"))
@@ -540,6 +542,8 @@ def doRestore(restoreDirectory):
 
 
 class NotesDialog(wx.Dialog):
+	shouldSuspendConfigProfileTriggers = True
+
 	def __init__(self, parent, fileName):
 		# Translators: The title of the Notes dialog.
 		super(NotesDialog, self).__init__(parent, title=_("Notes"))
