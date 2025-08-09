@@ -383,7 +383,6 @@ def getSavedBookmarks():
 
 
 class SpecificSearchDialog(wx.Dialog):
-
 	shouldSuspendConfigProfileTriggers = True
 
 	def __init__(self, parent, reverse=False):
@@ -543,7 +542,6 @@ def doRestore(restoreDirectory):
 
 
 class NotesDialog(wx.Dialog):
-
 	shouldSuspendConfigProfileTriggers = True
 
 	def __init__(self, parent, fileName):
