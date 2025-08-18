@@ -229,4 +229,3 @@ placemarkers.
   slovakisk, slovensk og tamilsk.
 
 [[!tag dev stable]]
-
