@@ -61,8 +61,6 @@ lastCaseSensitivity = False
 
 confspec = {"defaultFolder": "string(default='')"}
 config.conf.spec["placeMarkers"] = confspec
-config.conf.BASE_ONLY_SECTIONS.add("placeMarkers")
-config.conf.reset()
 
 
 def getDefaultFolder() -> str:
@@ -937,19 +935,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			_("Sets default folder for place markers"),
 		)
 		gui.mainFrame.sysTrayIcon.Bind(wx.EVT_MENU, self.onSetDefaultFolder, self.setDefaultFolderItem)
-		config.post_configReset.register(self.handlePostConfigReset)
-
-	def handlePostConfigReset(self):
-		global searchFolder, bookmarksFolder
-		searchFolder = os.path.join(getDefaultFolder(), "search")
-		bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
 
 	def terminate(self):
 		try:
 			self.menu.Remove(self.mainItem)
 		except Exception:
 			pass
-		config.post_configReset.unregister(self.handlePostConfigReset)
 
 	def onSpecificSearch(self, evt):
 		os.startfile(searchFolder)
