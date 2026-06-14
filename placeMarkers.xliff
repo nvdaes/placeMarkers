@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+<file id="readme.md" original="https://raw.githubusercontent.com/nvdaes/placeMarkers/37c816ac07b05bea025de35d4b881cc3df937594/readme.md">
+<skeleton>
+# $(ID:fae9dc9f-a485-4b4c-af71-ab28a0d422d4)
+
+* $(ID:815b1ffe-fc3f-4e7c-90a4-477ce0edeb99)
+
+$(ID:edc6f84c-f186-48c0-bfe6-170ebf3401eb)
+$(ID:e0f6bdbc-6f0a-4d7d-be1e-6d043e6d72cf)
+$(ID:4e2c378f-6b6d-4beb-9e7e-98ca4562ca2f)
+
+## $(ID:bb890f07-93d6-4b72-bb8e-828327c66cae)
+
+*	$(ID:884e89bd-91c0-4246-95ba-fc09f39aa596)
+*	$(ID:17a9a54c-50b2-4994-90b3-24056527dafc)
+*	$(ID:2973143f-7558-4097-bfdf-f39747a9f333)
+*	$(ID:2707d71a-a283-44b9-a4e3-4893f413d522)
+*	$(ID:a30fb4da-eb53-4f75-a66c-17a27e7123f3)
+*	$(ID:87dc9fed-667b-4cf5-9b61-ffc9602c777c)
+*	$(ID:8515f76e-abc1-4dfd-9f9d-ce635457105a)
+*	$(ID:e7674d97-35d9-4472-8ed8-fba4ee978585)
+*	$(ID:1b2c797d-4dd9-4f6c-8b56-850b04bdbb5d)
+*	$(ID:98cebcc0-7277-4de8-ac10-ff256d0c441c)
+*	$(ID:98a2d960-a442-48f0-a9ab-2b17a9c5b3ff)
+
+
+## $(ID:711dd9e7-03e8-4900-ac72-30115aea2650)
+
+$(ID:509d50c1-a254-41e2-b92a-3139e6cab64a)
+
+*	$(ID:2ad7bf61-f4ca-4835-84ed-4b69b2604353)
+*	$(ID:53d222df-3355-46fa-81bc-19cbe446f6c1)
+*	$(ID:d24b45f5-ab0e-4c6a-8aa1-49df2007d304)
+*	$(ID:9b61c26a-9c43-4c81-bb5e-44fcd953da71)
+*   $(ID:52ab3e6f-0a1d-42c4-8225-be3848099b8b)
+
+$(ID:ebce2766-ca49-49b4-b827-188f8f45a4b8)
+
+## $(ID:e4f8189c-f4cd-4ba3-8010-eb09555a6b25)
+* $(ID:7ea1b626-17ab-44ff-8da6-a1a1b07d6fe2)
+* $(ID:fab191de-ebce-4871-8d3e-69e597b0f489)
+* $(ID:1647da79-d473-452e-9467-51435761a9cb)
+
+## $(ID:8426027a-b528-4b12-ab45-ac38574256a3)
+* $(ID:6d134cb1-8f57-4f17-a99c-1a407788e584)
+
+## $(ID:d40652c5-ee5e-48c6-a628-e84d93baa01c)
+* $(ID:08a9ddf1-5697-4ff6-95e2-a83e05bc9a39)
+* $(ID:4030d66d-2a5b-4037-986a-219048d36f83)
+
+## $(ID:534f13a2-65ce-402c-98d4-be0b5310ef7d)
+* $(ID:e8d380e9-28ea-49da-af4c-f97fc176fcdd)
+
+## $(ID:fa749e53-ca94-421b-b4c0-abe9da2f2b3c)
+* $(ID:8012ef92-98c6-475f-9b0d-21f1bed15b02)
+
+## $(ID:47761604-c574-419a-bf15-76cddc4e67d7)
+* $(ID:eb571197-f9ee-47f9-af4e-6619e5d446fc)
+
+## $(ID:30a15d13-ffd7-4648-95fa-e5172e4171f1)
+* $(ID:41ced87a-85f6-4922-9f52-5fd41c36e9a6)
+
+## $(ID:0e124bd0-de9b-450b-87de-e45a474377b1)
+* $(ID:73e2a575-1942-4a28-b28d-08af99e23243)
+
+## $(ID:d8f57ffc-d5d5-4215-ac3b-2565acb54f6d)
+* $(ID:4740a11f-4284-4b3e-b255-d37da9f425ff)
+
+## $(ID:f4521fc9-47d2-4084-adce-fee552714b85)
+* $(ID:8b19a01b-5229-410b-ad42-21443b66804f)
+* $(ID:a06d829d-f300-4175-aacc-553ae6a46b77)
+
+## $(ID:5b09e247-0401-407f-8922-6d110d57c82a)
+*	$(ID:c4dd45eb-b70d-4e5b-a1fe-ae9193f375ee)
+* $(ID:28965423-54ed-4560-8204-e4aa665ebf50)
+*	$(ID:bad3be28-1f18-4663-b8cd-9b9db2b663d7)
+
+## $(ID:53103645-db57-443b-bf73-d41a4e08603f)
+* $(ID:0a2cbbc1-6d47-428f-a2d1-b1d92883a83d)
+* $(ID:ce4aede4-8a4d-4f49-a5dc-c5b165a24cd2)
+
+## $(ID:0e5fa541-0ff4-429b-970d-3f42d9e5cd2f)
+*	$(ID:0727b201-0815-4465-8f48-c3b8abc3d72b)
+*	$(ID:7ba01bca-d831-400f-96ef-a1edc3a657f1)
+*	$(ID:032a29f3-32e6-4e94-a11d-0a34ba5d1376)
+
+## $(ID:314ae749-69a6-48d5-98ba-579f680c46b9)
+*	$(ID:258304cd-12e9-40bd-a78a-1e789e635cee)
+*	$(ID:0a14d3c9-2df1-4459-b5f6-e0c518004649)
+*	$(ID:6facb50a-5c9e-41be-a64c-21a5e448d412)
+*	$(ID:ac636d44-72fd-490e-aa1e-7c93a456fa3f)
+*	$(ID:22f8dfcf-d352-4792-8b86-4776f633b24e)
+
+## $(ID:cc91215d-453b-4110-b03d-ac31b117dc77)
+*	$(ID:f125febb-6bc8-49f5-80db-e6474444eaec)
+
+## $(ID:8c906452-058e-4b61-9ab7-91011e973bbf)
+*	$(ID:8188232a-f872-401c-b940-a44d19d4cb83)
+
+## $(ID:7fdc4697-059b-4337-b921-b90434b656e4)
+*	$(ID:2c51411c-507a-4ccd-95f2-e25e8bc6c730)
+*	$(ID:61308264-d61a-46c8-87c5-c3378eaf19e5)
+
+## $(ID:68b98d66-6ebe-4af4-a760-f7c73a4238da)
+*	$(ID:1ceba6e3-c3c7-4482-a304-d6150bbff0f1)
+*	$(ID:5509e880-060d-4da8-9852-7bed78f3d0bd)
+*	$(ID:bf3a84ae-7f1a-4204-9bdf-ff07fe0536fc)
+*	$(ID:60050ec1-b7de-4c7f-ae12-739f4bc4c5f5)
+
+## $(ID:b3e86e41-0685-4c6f-826c-87dc5bea67e0)
+*	$(ID:bb084853-00cd-433a-8538-0802f45d6b1e)
+*	$(ID:1f933ca4-a333-4c51-8551-b7d595f75204)
+
+## $(ID:b1c417e4-3e49-490f-a9b4-b33db93104df)
+*	$(ID:2a624165-8081-4c4a-aefc-6de5bd4bfc91)
+*	$(ID:4a8931ad-1040-42d2-972e-de28be663900)
+*	$(ID:6193e613-6246-4b19-b464-4cc8e2030fd7)
+*	$(ID:63b795b6-a4e4-41a5-9edb-534fb8d1848e)
+*	$(ID:fe452281-0a7e-48c7-b654-afc00ace5239)
+*	$(ID:8876e7a4-d5a1-4afd-ab06-960a4c0f1a0d)
+
+## $(ID:1fa4ebfb-b3ab-419e-a0af-ce04da8dd104)
+* $(ID:5383882c-7aa8-4ca9-9e8f-e84014411a13)
+
+## $(ID:28dd4ab7-ed27-4c3f-a768-c01db6038eeb)
+* $(ID:3b12f04e-b115-4c3f-85c4-ee39dd9139cc)
+* $(ID:24c3e6fd-632e-480b-beb8-155e9982adea)
+* $(ID:fc47f56f-af9b-4301-9e4e-4604bf8b2daf)
+
+## $(ID:7a7b543f-867a-40d5-a6e6-3d976009d2e5)
+* $(ID:98086f59-27c9-48b7-9db7-69e867a581a3)
+* $(ID:7f0d69ad-5c87-4fc4-a200-a76cc286e8b8)
+
+## $(ID:397770ef-ee19-4ed1-ac65-3e40b3bd22a5)
+* $(ID:058c53fa-287d-4d52-9693-b7e2f58ab14f)
+* $(ID:d17742b7-5ed2-4d36-a23b-ed9b0dbd39f5)
+
+## $(ID:80d459b2-57bb-4a49-b826-5e161ac82a52)
+* $(ID:b9428c14-cdd3-42f5-8179-0aa327415a2f)
+
+## $(ID:e541185d-3653-4184-9491-252c8458fd90)
+* $(ID:486712f7-18e1-49a2-83fa-6a80debf6034)
+* $(ID:8edfb407-5225-4d07-a492-ec9e15d9ae89)
+* $(ID:2ab375c8-3344-4e14-b5fe-a61f9a1694c6)
+
+## $(ID:f05f86db-84ba-41f5-bdab-90d26c194681)
+* $(ID:ec2ad624-87a4-4c71-ac7d-698bfc121cab)
+* $(ID:509dc7f8-3d96-46af-bce0-e334057f0913)
+
+</skeleton>
+<unit id="fae9dc9f-a485-4b4c-af71-ab28a0d422d4">
+<notes>
+<note appliesTo="source">line: 2</note>
+<note appliesTo="source">prefix: # </note>
+</notes>
+<segment>
+<source>placeMarkers #</source>
+</segment>
+</unit>
+<unit id="815b1ffe-fc3f-4e7c-90a4-477ce0edeb99">
+<notes>
+<note appliesTo="source">line: 4</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Authors: Noelia, Chris.</source>
+</segment>
+</unit>
+<unit id="edc6f84c-f186-48c0-bfe6-170ebf3401eb">
+<notes>
+<note appliesTo="source">line: 6</note>
+</notes>
+<segment>
+<source>This add-on is used for saving and searching specific text strings or placemarkers. It can be used on web pages or documents in NVDA's browse mode. It can also be used for saving or searching strings of text in multi-line controls; in this case, if it's not possible to update the caret, the corresponding string will be copied to the clipboard, so that it can be searched using other tools.</source>
+</segment>
+</unit>
+<unit id="e0f6bdbc-6f0a-4d7d-be1e-6d043e6d72cf">
+<notes>
+<note appliesTo="source">line: 7</note>
+</notes>
+<segment>
+<source>The plugin saves the specified strings and placemarkers to files whose name is based on the title and URL of the current document.</source>
+</segment>
+</unit>
+<unit id="4e2c378f-6b6d-4beb-9e7e-98ca4562ca2f">
+<notes>
+<note appliesTo="source">line: 8</note>
+</notes>
+<segment>
+<source>This add-on is based on SpecificSearch and Bookmark&amp;Search, developed by the same author. You should uninstall them to use this one, since they have common keystrokes and features.</source>
+</segment>
+</unit>
+<unit id="bb890f07-93d6-4b72-bb8e-828327c66cae">
+<notes>
+<note appliesTo="source">line: 10</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Key Commands: ##</source>
+</segment>
+</unit>
+<unit id="884e89bd-91c0-4246-95ba-fc09f39aa596">
+<notes>
+<note appliesTo="source">line: 12</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>control+shift+NVDA+f: Opens a dialog with an edit box that shows the last saved search; in this dialog you can also select the previously saved searches from a combo box or remove the selected string from the history using a checkbox. You can choose if the text contained in the edit box will be added to the history of your saved texts. Finally, choose an action from the next group of radio buttons (between Search next, Search previous or Don't search), and specify if NVDA will make a case sensitive search. When you press okay, NVDA will search for this string.</source>
+</segment>
+</unit>
+<unit id="17a9a54c-50b2-4994-90b3-24056527dafc">
+<notes>
+<note appliesTo="source">line: 13</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>control+shift+NVDA+y: Saves the current position as a placemarker. If you want to provide a name for this placemarker, select some text from this position before saving it.</source>
+</segment>
+</unit>
+<unit id="2973143f-7558-4097-bfdf-f39747a9f333">
+<notes>
+<note appliesTo="source">line: 14</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>control+shift+NVDA+delete: Deletes the placemarker corresponding to this position.</source>
+</segment>
+</unit>
+<unit id="2707d71a-a283-44b9-a4e3-4893f413d522">
+<notes>
+<note appliesTo="source">line: 15</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>NVDA+y: Moves to the next placemarker.</source>
+</segment>
+</unit>
+<unit id="a30fb4da-eb53-4f75-a66c-17a27e7123f3">
+<notes>
+<note appliesTo="source">line: 16</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>shift+NVDA+y: Moves to the previous placemarker.</source>
+</segment>
+</unit>
+<unit id="87dc9fed-667b-4cf5-9b61-ffc9602c777c">
+<notes>
+<note appliesTo="source">line: 17</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Not assigned: Shows the file name where the placemarkers data will be saved in browse mode, without an extension.</source>
+</segment>
+</unit>
+<unit id="8515f76e-abc1-4dfd-9f9d-ce635457105a">
+<notes>
+<note appliesTo="source">line: 18</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>alt+NVDA+y: Opens a dialog with the placemarkers saved for this document. You can write a note for each placemarker; press Save note to save changes. Pressing Delete you can remove the selected placemarker. Pressing OK you can move to the selected position.</source>
+</segment>
+</unit>
+<unit id="e7674d97-35d9-4472-8ed8-fba4ee978585">
+<notes>
+<note appliesTo="source">line: 19</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Not assigned: Saves a position as a temporary placemarker.</source>
+</segment>
+</unit>
+<unit id="1b2c797d-4dd9-4f6c-8b56-850b04bdbb5d">
+<notes>
+<note appliesTo="source">line: 20</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Not assigned: Moves to the temporary placemarker for the current document.</source>
+</segment>
+</unit>
+<unit id="98cebcc0-7277-4de8-ac10-ff256d0c441c">
+<notes>
+<note appliesTo="source">line: 21</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Not assigned: Finds the next occurrence of the last text searched for any specific document.</source>
+</segment>
+</unit>
+<unit id="98a2d960-a442-48f0-a9ab-2b17a9c5b3ff">
+<notes>
+<note appliesTo="source">line: 22</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Not assigned: Finds the previous occurrence of the last text searched for any specific document.</source>
+</segment>
+</unit>
+<unit id="711dd9e7-03e8-4900-ac72-30115aea2650">
+<notes>
+<note appliesTo="source">line: 25</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>PlaceMarkers Submenu (NVDA+N) ##</source>
+</segment>
+</unit>
+<unit id="509d50c1-a254-41e2-b92a-3139e6cab64a">
+<notes>
+<note appliesTo="source">line: 27</note>
+</notes>
+<segment>
+<source>Using the PlaceMarkers submenu under NVDA's Preferences menu, you can access:</source>
+</segment>
+</unit>
+<unit id="2ad7bf61-f4ca-4835-84ed-4b69b2604353">
+<notes>
+<note appliesTo="source">line: 29</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Specific search folder: Opens a folder of specific searches previously saved.</source>
+</segment>
+</unit>
+<unit id="53d222df-3355-46fa-81bc-19cbe446f6c1">
+<notes>
+<note appliesTo="source">line: 30</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Bookmarks folder: Opens a folder of the saved placemarkers.</source>
+</segment>
+</unit>
+<unit id="d24b45f5-ab0e-4c6a-8aa1-49df2007d304">
+<notes>
+<note appliesTo="source">line: 31</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Copy placeMarkers folder: You can save a copy of the placeMarkers folder.</source>
+</segment>
+</unit>
+<unit id="9b61c26a-9c43-4c81-bb5e-44fcd953da71">
+<notes>
+<note appliesTo="source">line: 32</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Restore placeMarkers: You can restore your placeMarkers from a previously saved placeMarkers folder.</source>
+</segment>
+</unit>
+<unit id="52ab3e6f-0a1d-42c4-8225-be3848099b8b">
+<notes>
+<note appliesTo="source">line: 33</note>
+<note appliesTo="source">prefix: *   </note>
+</notes>
+<segment>
+<source>Set default place markers folder: the default folder for place markers can be set from this dialog. It will be saved in the normal configuration profile.</source>
+</segment>
+</unit>
+<unit id="ebce2766-ca49-49b4-b827-188f8f45a4b8">
+<notes>
+<note appliesTo="source">line: 35</note>
+</notes>
+<segment>
+<source>Note: The placemarker position is based on the number of characters; and therefore in dynamic pages it is better to use the specific search, not placemarkers.</source>
+</segment>
+</unit>
+<unit id="e4f8189c-f4cd-4ba3-8010-eb09555a6b25">
+<notes>
+<note appliesTo="source">line: 37</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 45.0.0</source>
+</segment>
+</unit>
+<unit id="7ea1b626-17ab-44ff-8da6-a1a1b07d6fe2">
+<notes>
+<note appliesTo="source">line: 38</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added ability to set the default placeMarkers folder.</source>
+</segment>
+</unit>
+<unit id="fab191de-ebce-4871-8d3e-69e597b0f489">
+<notes>
+<note appliesTo="source">line: 39</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>If plugins are reloaded while this add-on is enabled, the last saved configuration will be applied.</source>
+</segment>
+</unit>
+<unit id="1647da79-d473-452e-9467-51435761a9cb">
+<notes>
+<note appliesTo="source">line: 40</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added copy and close buttons to browseable message when showing the current file where bookmarks and specific search strings are saved.</source>
+</segment>
+</unit>
+<unit id="8426027a-b528-4b12-ab45-ac38574256a3">
+<notes>
+<note appliesTo="source">line: 42</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 35.0</source>
+</segment>
+</unit>
+<unit id="6d134cb1-8f57-4f17-a99c-1a407788e584">
+<notes>
+<note appliesTo="source">line: 43</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Removed URL parameters from file names, so that bookmarks are valid for specific websites in different sessions.</source>
+</segment>
+</unit>
+<unit id="d40652c5-ee5e-48c6-a628-e84d93baa01c">
+<notes>
+<note appliesTo="source">line: 45</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 24.0</source>
+</segment>
+</unit>
+<unit id="08a9ddf1-5697-4ff6-95e2-a83e05bc9a39">
+<notes>
+<note appliesTo="source">line: 46</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Y is used instead of k in gestures such as NVDA+k, NVDA+shift+k, NVDA+alt+k and NVDA+control+shift+k.</source>
+</segment>
+</unit>
+<unit id="4030d66d-2a5b-4037-986a-219048d36f83">
+<notes>
+<note appliesTo="source">line: 47</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Compatible with NVDA 2023.1.</source>
+</segment>
+</unit>
+<unit id="534f13a2-65ce-402c-98d4-be0b5310ef7d">
+<notes>
+<note appliesTo="source">line: 49</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 23.0</source>
+</segment>
+</unit>
+<unit id="e8d380e9-28ea-49da-af4c-f97fc176fcdd">
+<notes>
+<note appliesTo="source">line: 50</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The add-on works again with Microsoft Word.</source>
+</segment>
+</unit>
+<unit id="fa749e53-ca94-421b-b4c0-abe9da2f2b3c">
+<notes>
+<note appliesTo="source">line: 52</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 22.0</source>
+</segment>
+</unit>
+<unit id="8012ef92-98c6-475f-9b0d-21f1bed15b02">
+<notes>
+<note appliesTo="source">line: 53</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>We can move to bookmarks and delete them with UIA enabled, thanks to Abdel.</source>
+</segment>
+</unit>
+<unit id="47761604-c574-419a-bf15-76cddc4e67d7">
+<notes>
+<note appliesTo="source">line: 55</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 21.0</source>
+</segment>
+</unit>
+<unit id="eb571197-f9ee-47f9-af4e-6619e5d446fc">
+<notes>
+<note appliesTo="source">line: 56</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Bookmarks can be saved with UIA enabled in browsers based on Chromium, thanks to Abdel.</source>
+</segment>
+</unit>
+<unit id="30a15d13-ffd7-4648-95fa-e5172e4171f1">
+<notes>
+<note appliesTo="source">line: 58</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 20.0</source>
+</segment>
+</unit>
+<unit id="41ced87a-85f6-4922-9f52-5fd41c36e9a6">
+<notes>
+<note appliesTo="source">line: 59</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Requires NVDA 2022.1 or later.</source>
+</segment>
+</unit>
+<unit id="0e124bd0-de9b-450b-87de-e45a474377b1">
+<notes>
+<note appliesTo="source">line: 61</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 19.0 ##</source>
+</segment>
+</unit>
+<unit id="73e2a575-1942-4a28-b28d-08af99e23243">
+<notes>
+<note appliesTo="source">line: 62</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The add-on cannot be run on secure screens.</source>
+</segment>
+</unit>
+<unit id="d8f57ffc-d5d5-4215-ac3b-2565acb54f6d">
+<notes>
+<note appliesTo="source">line: 64</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 18.0 ##</source>
+</segment>
+</unit>
+<unit id="4740a11f-4284-4b3e-b255-d37da9f425ff">
+<notes>
+<note appliesTo="source">line: 65</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>The command to see the path for placeMarkers shows if there are permanent bookmarks, text for specific search or a temporary bookmark for the current document.</source>
+</segment>
+</unit>
+<unit id="f4521fc9-47d2-4084-adce-fee552714b85">
+<notes>
+<note appliesTo="source">line: 67</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 17.0 ##</source>
+</segment>
+</unit>
+<unit id="8b19a01b-5229-410b-ad42-21443b66804f">
+<notes>
+<note appliesTo="source">line: 68</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed a bug which didn't allow to save place markers in some documents.</source>
+</segment>
+</unit>
+<unit id="a06d829d-f300-4175-aacc-553ae6a46b77">
+<notes>
+<note appliesTo="source">line: 69</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed translated strings making translations to work properly.</source>
+</segment>
+</unit>
+<unit id="5b09e247-0401-407f-8922-6d110d57c82a">
+<notes>
+<note appliesTo="source">line: 71</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 16.0 ##</source>
+</segment>
+</unit>
+<unit id="c4dd45eb-b70d-4e5b-a1fe-ae9193f375ee">
+<notes>
+<note appliesTo="source">line: 72</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Compatible with NVDA 2021.1 or later (required).</source>
+</segment>
+</unit>
+<unit id="28965423-54ed-4560-8204-e4aa665ebf50">
+<notes>
+<note appliesTo="source">line: 73</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Skim reading is supported when moving to temporary bookmarks.</source>
+</segment>
+</unit>
+<unit id="bad3be28-1f18-4663-b8cd-9b9db2b663d7">
+<notes>
+<note appliesTo="source">line: 74</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>If needed, you can download [other versions](https://github.com/nvdaes/placeMarkers/releases).</source>
+</segment>
+</unit>
+<unit id="53103645-db57-443b-bf73-d41a4e08603f">
+<notes>
+<note appliesTo="source">line: 76</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 15.0 ##</source>
+</segment>
+</unit>
+<unit id="0a2cbbc1-6d47-428f-a2d1-b1d92883a83d">
+<notes>
+<note appliesTo="source">line: 77</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>When reading with say all in browse mode, the specific find next and specific find previous commands do not stop reading anymore if Allow skim reading option is enabled, according to find next and find previous commands from NVDA 2020.4.</source>
+</segment>
+</unit>
+<unit id="ce4aede4-8a4d-4f49-a5dc-c5b165a24cd2">
+<notes>
+<note appliesTo="source">line: 78</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>When the Specific search dialog is opened after running the Specific find previous command, the Search previous option will be selected.</source>
+</segment>
+</unit>
+<unit id="0e5fa541-0ff4-429b-970d-3f42d9e5cd2f">
+<notes>
+<note appliesTo="source">line: 80</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 14.0 ##</source>
+</segment>
+</unit>
+<unit id="0727b201-0815-4465-8f48-c3b8abc3d72b">
+<notes>
+<note appliesTo="source">line: 81</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The command to copy the name of the file where place markers data will be saved has been replaced by a command which shows this file name in browse mode. This is not assigned to a gesture.</source>
+</segment>
+</unit>
+<unit id="7ba01bca-d831-400f-96ef-a1edc3a657f1">
+<notes>
+<note appliesTo="source">line: 82</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The "Text to search" field does not overlap the "Saved text" field anymore. (Thanks to Cyrille Bougot).</source>
+</segment>
+</unit>
+<unit id="032a29f3-32e6-4e94-a11d-0a34ba5d1376">
+<notes>
+<note appliesTo="source">line: 83</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Requires NVDA 2019.3 or later.</source>
+</segment>
+</unit>
+<unit id="314ae749-69a6-48d5-98ba-579f680c46b9">
+<notes>
+<note appliesTo="source">line: 85</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 13.0 ##</source>
+</segment>
+</unit>
+<unit id="258304cd-12e9-40bd-a78a-1e789e635cee">
+<notes>
+<note appliesTo="source">line: 86</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Added not assigned commands to find the next and previous occurrences of the last text searched for any specific document.</source>
+</segment>
+</unit>
+<unit id="0a14d3c9-2df1-4459-b5f6-e0c518004649">
+<notes>
+<note appliesTo="source">line: 87</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The specific search feature works when the NVDA's About dialog is open.</source>
+</segment>
+</unit>
+<unit id="6facb50a-5c9e-41be-a64c-21a5e448d412">
+<notes>
+<note appliesTo="source">line: 88</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>In the Specific search dialog, the case sensitive checkbox will be checked if this option was selected for the last search.</source>
+</segment>
+</unit>
+<unit id="ac636d44-72fd-490e-aa1e-7c93a456fa3f">
+<notes>
+<note appliesTo="source">line: 89</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>When the add-on is updated, bookmarks and strings for specific search saved in the previous version of the add-on will be automatically copied to the new version, unless you prefer to import place markers saved in the main configuration folder of NVDA.</source>
+</segment>
+</unit>
+<unit id="22f8dfcf-d352-4792-8b86-4776f633b24e">
+<notes>
+<note appliesTo="source">line: 90</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>When using the dialog to copy place markers, if the chosen folder is not named placeMarkersBackup, a subfolder with this name will be created to prevent the deletion of directories containing important data, such as Documents or Downloads.</source>
+</segment>
+</unit>
+<unit id="cc91215d-453b-4110-b03d-ac31b117dc77">
+<notes>
+<note appliesTo="source">line: 92</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 12.0 ##</source>
+</segment>
+</unit>
+<unit id="f125febb-6bc8-49f5-80db-e6474444eaec">
+<notes>
+<note appliesTo="source">line: 93</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Fixed a critical bug which caused NVDA to crash when trying to open the Notes dialog, if chinese characters were selected before saving bookmarks.</source>
+</segment>
+</unit>
+<unit id="8c906452-058e-4b61-9ab7-91011e973bbf">
+<notes>
+<note appliesTo="source">line: 95</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 11.0 ##</source>
+</segment>
+</unit>
+<unit id="8188232a-f872-401c-b940-a44d19d4cb83">
+<notes>
+<note appliesTo="source">line: 96</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Compatible with NVDA 2018.3 or later (required).</source>
+</segment>
+</unit>
+<unit id="7fdc4697-059b-4337-b921-b90434b656e4">
+<notes>
+<note appliesTo="source">line: 98</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 10.0 ##</source>
+</segment>
+</unit>
+<unit id="2c51411c-507a-4ccd-95f2-e25e8bc6c730">
+<notes>
+<note appliesTo="source">line: 99</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>In Edge, gestures associated with bookmarks selection, such as NVDA+k, NVDA+shift+k or NVDA+alt+k, will be sent to the application instead of trying to move the cursor to bookmarks, to avoid errors, especially in long documents.</source>
+</segment>
+</unit>
+<unit id="61308264-d61a-46c8-87c5-c3378eaf19e5">
+<notes>
+<note appliesTo="source">line: 100</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Now specific search is supported in Edge.</source>
+</segment>
+</unit>
+<unit id="68b98d66-6ebe-4af4-a760-f7c73a4238da">
+<notes>
+<note appliesTo="source">line: 102</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 9.0</source>
+</segment>
+</unit>
+<unit id="1ceba6e3-c3c7-4482-a304-d6150bbff0f1">
+<notes>
+<note appliesTo="source">line: 103</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>When moving to a bookmark from the Notes dialog, the review cursor follows the system cursor.</source>
+</segment>
+</unit>
+<unit id="5509e880-060d-4da8-9852-7bed78f3d0bd">
+<notes>
+<note appliesTo="source">line: 104</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The command to select the previous bookmark works properly again.</source>
+</segment>
+</unit>
+<unit id="bf3a84ae-7f1a-4204-9bdf-ff07fe0536fc">
+<notes>
+<note appliesTo="source">line: 105</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Bookmarks can be deleted from the Notes dialog.</source>
+</segment>
+</unit>
+<unit id="60050ec1-b7de-4c7f-ae12-739f4bc4c5f5">
+<notes>
+<note appliesTo="source">line: 106</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Now you can assign gestures to save and move to a temporary bookmark for each document.</source>
+</segment>
+</unit>
+<unit id="b3e86e41-0685-4c6f-826c-87dc5bea67e0">
+<notes>
+<note appliesTo="source">line: 108</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 8.0 ##</source>
+</segment>
+</unit>
+<unit id="bb084853-00cd-433a-8538-0802f45d6b1e">
+<notes>
+<note appliesTo="source">line: 109</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Removed fragment identifiers from bookmark filenames, which can avoid issues in the VitalSource Bookshelf ePUB reader.</source>
+</segment>
+</unit>
+<unit id="1f933ca4-a333-4c51-8551-b7d595f75204">
+<notes>
+<note appliesTo="source">line: 110</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Added a Notes dialog, to associate comments for saved bookmarks and move to the selected position.</source>
+</segment>
+</unit>
+<unit id="b1c417e4-3e49-490f-a9b4-b33db93104df">
+<notes>
+<note appliesTo="source">line: 112</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 7.0 ##</source>
+</segment>
+</unit>
+<unit id="2a624165-8081-4c4a-aefc-6de5bd4bfc91">
+<notes>
+<note appliesTo="source">line: 113</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The dialog to save a string of text for specific search has been removed. This functionality is now included in the Specific search dialog, which has been redesigned to allow different actions when pressing the OK button.</source>
+</segment>
+</unit>
+<unit id="4a8931ad-1040-42d2-972e-de28be663900">
+<notes>
+<note appliesTo="source">line: 114</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>The visual presentation of the dialogs has been enhanced, adhering to the appearance of the dialogs shown in NVDA.</source>
+</segment>
+</unit>
+<unit id="6193e613-6246-4b19-b464-4cc8e2030fd7">
+<notes>
+<note appliesTo="source">line: 115</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Performing a Find Next or Find Previous command in Browse Mode will now correctly do a case sensitive search if the original Find was case sensitive.</source>
+</segment>
+</unit>
+<unit id="63b795b6-a4e4-41a5-9edb-534fb8d1848e">
+<notes>
+<note appliesTo="source">line: 116</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Requires NVDA 2016.4 or later.</source>
+</segment>
+</unit>
+<unit id="fe452281-0a7e-48c7-b654-afc00ace5239">
+<notes>
+<note appliesTo="source">line: 117</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>Now you can assign gestures to open the Copy and Restore place markers dialogs.</source>
+</segment>
+</unit>
+<unit id="8876e7a4-d5a1-4afd-ab06-960a4c0f1a0d">
+<notes>
+<note appliesTo="source">line: 118</note>
+<note appliesTo="source">prefix: *	</note>
+</notes>
+<segment>
+<source>NVDA will present a message to notify when place markers have been copied or restored with the corresponding dialogs.</source>
+</segment>
+</unit>
+<unit id="1fa4ebfb-b3ab-419e-a0af-ce04da8dd104">
+<notes>
+<note appliesTo="source">line: 120</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 6.0 ##</source>
+</segment>
+</unit>
+<unit id="5383882c-7aa8-4ca9-9e8f-e84014411a13">
+<notes>
+<note appliesTo="source">line: 121</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>When the add-on features are not usable, gestures are sent to the corresponding application.</source>
+</segment>
+</unit>
+<unit id="28dd4ab7-ed27-4c3f-a768-c01db6038eeb">
+<notes>
+<note appliesTo="source">line: 123</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 5.0 ##</source>
+</segment>
+</unit>
+<unit id="3b12f04e-b115-4c3f-85c4-ee39dd9139cc">
+<notes>
+<note appliesTo="source">line: 124</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added case sensitive search.</source>
+</segment>
+</unit>
+<unit id="24c3e6fd-632e-480b-beb8-155e9982adea">
+<notes>
+<note appliesTo="source">line: 125</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Removed option to open documentation from Place markers menu.</source>
+</segment>
+</unit>
+<unit id="fc47f56f-af9b-4301-9e4e-4604bf8b2daf">
+<notes>
+<note appliesTo="source">line: 126</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>More intuitive key commands.</source>
+</segment>
+</unit>
+<unit id="7a7b543f-867a-40d5-a6e6-3d976009d2e5">
+<notes>
+<note appliesTo="source">line: 128</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 4.0 ##</source>
+</segment>
+</unit>
+<unit id="98086f59-27c9-48b7-9db7-69e867a581a3">
+<notes>
+<note appliesTo="source">line: 129</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Removed fragment identifiers from bookmark filenames, which can avoid issues in ePUBREADER Firefox add-on.</source>
+</segment>
+</unit>
+<unit id="7f0d69ad-5c87-4fc4-a200-a76cc286e8b8">
+<notes>
+<note appliesTo="source">line: 130</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Add-on help is available from the Add-ons Manager.</source>
+</segment>
+</unit>
+<unit id="397770ef-ee19-4ed1-ac65-3e40b3bd22a5">
+<notes>
+<note appliesTo="source">line: 132</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 3.1 ##</source>
+</segment>
+</unit>
+<unit id="058c53fa-287d-4d52-9693-b7e2f58ab14f">
+<notes>
+<note appliesTo="source">line: 133</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Translation updates and new language.</source>
+</segment>
+</unit>
+<unit id="d17742b7-5ed2-4d36-a23b-ed9b0dbd39f5">
+<notes>
+<note appliesTo="source">line: 134</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Bookmark position is not announced in skim reading.</source>
+</segment>
+</unit>
+<unit id="80d459b2-57bb-4a49-b826-5e161ac82a52">
+<notes>
+<note appliesTo="source">line: 136</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 3.0 ##</source>
+</segment>
+</unit>
+<unit id="b9428c14-cdd3-42f5-8179-0aa327415a2f">
+<notes>
+<note appliesTo="source">line: 137</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added support for skim reading.</source>
+</segment>
+</unit>
+<unit id="e541185d-3653-4184-9491-252c8458fd90">
+<notes>
+<note appliesTo="source">line: 139</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 2.0 ##</source>
+</segment>
+</unit>
+<unit id="486712f7-18e1-49a2-83fa-6a80debf6034">
+<notes>
+<note appliesTo="source">line: 140</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Added options to save and delete different searches for each file.</source>
+</segment>
+</unit>
+<unit id="8edfb407-5225-4d07-a492-ec9e15d9ae89">
+<notes>
+<note appliesTo="source">line: 141</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Fixed bug which broke when paths contained non latin characters.</source>
+</segment>
+</unit>
+<unit id="2ab375c8-3344-4e14-b5fe-a61f9a1694c6">
+<notes>
+<note appliesTo="source">line: 142</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Shortcuts can now be reassigned using the NVDA gesture input dialog.</source>
+</segment>
+</unit>
+<unit id="f05f86db-84ba-41f5-bdab-90d26c194681">
+<notes>
+<note appliesTo="source">line: 144</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Changes for 1.0 ##</source>
+</segment>
+</unit>
+<unit id="ec2ad624-87a4-4c71-ac7d-698bfc121cab">
+<notes>
+<note appliesTo="source">line: 145</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Initial version.</source>
+</segment>
+</unit>
+<unit id="509dc7f8-3d96-46af-bce0-e334057f0913">
+<notes>
+<note appliesTo="source">line: 146</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Translated into: Brazilian Portuguese, Farsi, Finnish, French, Galician, German, Italian, Japanese, Korean, Nepali, Portuguese, Spanish, Slovak, Slovenian, Tamil.</source>
+</segment>
+</unit>
+</file>
+</xliff>
