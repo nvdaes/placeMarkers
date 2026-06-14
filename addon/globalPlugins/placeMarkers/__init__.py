@@ -1,12 +1,11 @@
-# -*- coding: UTF-8 -*-
 # placeMarkers: Plugin to manage place markers based on positions or strings in specific documents
 # Copyright (C) 2012-2025 Noelia Ruiz Martínez, other contributors
 # Released under GPL 2
 # Converted to Python 3 by Joseph Lee in 2017
 # UIA support added by Abdel in 2022
 
-import pickle
 import re
+import yaml
 import os
 from pathlib import Path
 import NVDAObjects
@@ -14,7 +13,6 @@ import UIAHandler
 import shutil
 import wx
 from dataclasses import dataclass
-from collections.abc import Callable
 
 import addonHandler
 import globalPluginHandler
@@ -42,36 +40,40 @@ from .skipTranslation import translate
 
 addonHandler.initTranslation()
 
-_: Callable[[str], str]
-
 # Constants
 CONFIG_PATH = WritePaths.configDir
-PLACE_MARKERS_PATH = os.path.join(
-	addonHandler.getCodeAddon().path,
-	"globalPlugins",
-	"placeMarkers",
-	"savedPlaceMarkers",
+PLACE_MARKERS_PATH = (
+	Path(addonHandler.getCodeAddon().path) / "globalPlugins" / "placeMarkers" / "savedPlaceMarkers"
 )
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
 
-# Globals
-lastFindText = ""
-lastCaseSensitivity = False
+
+@dataclass
+class _FindState:
+	text: str = ""
+	caseSensitive: bool = False
+
+
+_findState = _FindState()
 
 confspec = {"defaultFolder": "string(default='')"}
 config.conf.spec["placeMarkers"] = confspec
 
 
-def getDefaultFolder() -> str:
+def getDefaultFolder() -> Path:
 	defaultFolder = config.conf["placeMarkers"]["defaultFolder"]
 	if ":" in defaultFolder:
 		return Path(defaultFolder)
 	return PLACE_MARKERS_PATH
 
 
-searchFolder = os.path.join(getDefaultFolder(), "search")
-bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
+def getSearchFolder() -> Path:
+	return getDefaultFolder() / "search"
+
+
+def getBookmarksFolder() -> Path:
+	return getDefaultFolder() / "bookmarks"
 
 
 def goToUIABookmark(treeInterceptor: chromium.ChromiumUIATreeInterceptor, startOffset: int) -> bool:
@@ -190,20 +192,16 @@ def disableInSecureMode(decoratedCls):
 
 
 def createSearchFolder():
-	if os.path.isdir(searchFolder):
-		return
 	try:
-		os.makedirs(searchFolder)
+		getSearchFolder().mkdir(parents=True, exist_ok=True)
 	except Exception as e:
 		log.debugWarning("Error creating search folder", exc_info=True)
 		raise e
 
 
 def createBookmarksFolder():
-	if os.path.isdir(bookmarksFolder):
-		return
 	try:
-		os.makedirs(bookmarksFolder)
+		getBookmarksFolder().mkdir(parents=True, exist_ok=True)
 	except Exception as e:
 		log.debugWarning("Error creating bookmarks folder", exc_info=True)
 		raise e
@@ -243,6 +241,7 @@ def doFindText(text, reverse=False, caseSensitive=False, willSayAllResume=False)
 				# Message translated in NVDA core.
 				translate("Find Error"),
 			)
+			return
 		except Exception:
 			if api.copyToClip(text):
 				# Translators: message presented when a string of text has been copied to the clipboard.
@@ -324,17 +323,16 @@ def getFile(folder, ext=""):
 	file = f"uia_{file}" if uia else file
 	file += nameToAdd
 	file = api.filterFileName(standardFileName(file))
-	maxLenFileName = 232 - len(folder)
+	maxLenFileName = 232 - len(str(folder))
 	if maxLenFileName <= 0:
-		return ""
+		return Path()
 	file = file[:maxLenFileName]
 	file = file + ext
-	path = os.path.join(folder, file)
-	return path
+	return folder / file
 
 
 def getFileSearch():
-	return getFile(searchFolder, ".txt")
+	return getFile(getSearchFolder(), ".txt")
 
 
 def getSavedTexts():
@@ -355,23 +353,24 @@ def getLastSpecificFindText():
 
 
 def getFileBookmarks():
-	return getFile(bookmarksFolder, ".pickle")
+	return getFile(getBookmarksFolder(), ".yaml")
 
 
 def getFileTempBookmark():
-	return getFile(bookmarksFolder, ".txt")
+	return getFile(getBookmarksFolder(), ".txt")
 
 
 def getSavedBookmarks():
 	fileName = getFileBookmarks()
 	try:
-		with open(fileName, "rb") as f:
-			savedBookmarks = pickle.load(f)
-		if isinstance(savedBookmarks, list):
-			bookmarksDic = {}
-			for bookmark in savedBookmarks:
-				bookmarksDic[bookmark] = Note()
-			savedBookmarks = bookmarksDic
+		with open(fileName, "r", encoding="utf-8") as f:
+			raw = yaml.safe_load(f)
+		if raw:
+			savedBookmarks = {
+				int(k): Note(title=v.get("title", ""), body=v.get("body", "")) for k, v in raw.items()
+			}
+		else:
+			savedBookmarks = {}
 	except IOError:
 		savedBookmarks = {}
 	return savedBookmarks
@@ -427,7 +426,7 @@ class SpecificSearchDialog(wx.Dialog):
 		self.searchRadioBox.Bind(wx.EVT_RADIOBOX, self.onSearchRadioBox)
 		# Message translated in NVDA core.
 		self.caseSensitiveCheckBox = sHelper.addItem(wx.CheckBox(self, label=translate("Case &sensitive")))
-		self.caseSensitiveCheckBox.Value = lastCaseSensitivity
+		self.caseSensitiveCheckBox.Value = _findState.caseSensitive
 		sHelper.addDialogDismissButtons(self.CreateButtonSizer(wx.OK | wx.CANCEL))
 		self.Bind(wx.EVT_BUTTON, self.onOk, id=wx.ID_OK)
 		mainSizer.Add(sHelper.sizer, border=gui.guiHelper.BORDER_FOR_DIALOGS, flag=wx.ALL)
@@ -469,9 +468,8 @@ class SpecificSearchDialog(wx.Dialog):
 				core.callLater(1000, doFindText, text, caseSensitive=caseSensitive)
 			else:
 				core.callLater(1000, doFindTextUp, text, caseSensitive=caseSensitive)
-			global lastFindText, lastCaseSensitivity
-			lastFindText = text
-			lastCaseSensitivity = caseSensitive
+			_findState.text = text
+			_findState.caseSensitive = caseSensitive
 		if self.addCheckBox.Value or self.removeCheckBox.Value:
 			savedStrings = self.savedTexts
 			if self.removeCheckBox.Value:
@@ -479,7 +477,7 @@ class SpecificSearchDialog(wx.Dialog):
 			if self.addCheckBox.Value and "\n" not in text and text not in savedStrings:
 				savedStrings.insert(0, text)
 			if len(savedStrings) == 0:
-				os.remove(self.searchFile)
+				self.searchFile.unlink()
 				return
 			try:
 				with open(self.searchFile, "w", encoding="utf-8") as f:
@@ -493,10 +491,11 @@ def doCopy(copyDirectory):
 	# Borrowed from @ibrahim-s code for readFeeds in PR#4
 	# to ensure that the removed directory will not be one of the main directories such as documents or music
 	# or other important ones
-	if not os.path.basename(copyDirectory) == "placeMarkersBackup":
-		copyDirectory = os.path.join(copyDirectory, "placeMarkersBackup")
+	copyDirectory = Path(copyDirectory)
+	if not copyDirectory.name == "placeMarkersBackup":
+		copyDirectory = copyDirectory / "placeMarkersBackup"
 	try:
-		if os.path.exists(copyDirectory):
+		if copyDirectory.exists():
 			# if it exists, only placeMarkersBackup folder will be removed,
 			# which is the base name of copyDirectory path
 			shutil.rmtree(copyDirectory, ignore_errors=True)
@@ -562,13 +561,11 @@ class NotesDialog(wx.Dialog):
 		self.notesListBox.Bind(wx.EVT_LISTBOX, self.onNotesChange)
 		# Translators: The label of an edit box in the Notes dialog.
 		noteLabel = _("Not&e:")
-		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(
-			self,
+		self.noteEdit = sHelper.addLabeledControl(
 			noteLabel,
 			wx.TextCtrl,
 			style=wx.TE_MULTILINE,
 		)
-		self.noteEdit = noteLabeledCtrl.control
 		self.noteEdit.SetMaxLength(1024)
 		self.noteEdit.Value = firstNoteBody
 		bHelper = sHelper.addItem(guiHelper.ButtonHelper(orientation=wx.HORIZONTAL))
@@ -596,8 +593,12 @@ class NotesDialog(wx.Dialog):
 		note = Note(noteTitle, noteBody)
 		self.bookmarks[self.pos] = note
 		try:
-			with open(self.fileName, "wb") as f:
-				pickle.dump(self.bookmarks, f, protocol=0)
+			with open(self.fileName, "w", encoding="utf-8") as f:
+				yaml.safe_dump(
+					{k: {"title": v.title, "body": v.body} for k, v in self.bookmarks.items()},
+					f,
+					allow_unicode=True,
+				)
 			self.notesListBox.SetFocus()
 		except Exception as e:
 			log.debugWarning("Error saving bookmark", exc_info=True)
@@ -618,8 +619,12 @@ class NotesDialog(wx.Dialog):
 		del self.bookmarks[self.pos]
 		if len(self.bookmarks.keys()) > 0:
 			try:
-				with open(self.fileName, "wb") as f:
-					pickle.dump(self.bookmarks, f, protocol=0)
+				with open(self.fileName, "w", encoding="utf-8") as f:
+					yaml.safe_dump(
+						{k: {"title": v.title, "body": v.body} for k, v in self.bookmarks.items()},
+						f,
+						allow_unicode=True,
+					)
 				self.notesListBox.Delete(self.notesListBox.Selection)
 				self.notesListBox.Selection = 0
 				self.onNotesChange(None)
@@ -629,7 +634,7 @@ class NotesDialog(wx.Dialog):
 				raise e
 		else:
 			try:
-				os.remove(self.fileName)
+				self.fileName.unlink()
 				self.Destroy()
 				wx.CallAfter(
 					MessageDialog.alert,
@@ -675,7 +680,7 @@ class CopyDialog(wx.Dialog):
 			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle),
 		)
 		self.copyDirectoryEdit = directoryEntryControl.pathControl
-		self.copyDirectoryEdit.Value = os.path.join(CONFIG_PATH, "placeMarkersBackup")
+		self.copyDirectoryEdit.Value = str(Path(CONFIG_PATH) / "placeMarkersBackup")  # wx requires str
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
 		# Message translated in NVDA core.
 		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
@@ -697,7 +702,7 @@ class CopyDialog(wx.Dialog):
 			)
 			return
 		drv = os.path.splitdrive(self.copyDirectoryEdit.Value)[0]
-		if drv and not os.path.isdir(drv):
+		if drv and not Path(drv).is_dir():
 			# Message translated in NVDA core.
 			MessageDialog.alert(
 				translate("Invalid drive %s") % drv,
@@ -741,7 +746,7 @@ class SetDefaultFolderDialog(wx.Dialog):
 			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle),
 		)
 		self.defaultDirectoryEdit = directoryEntryControl.pathControl
-		self.defaultDirectoryEdit.Value = PLACE_MARKERS_PATH
+		self.defaultDirectoryEdit.Value = str(PLACE_MARKERS_PATH)
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
 		# Message translated in NVDA core.
 		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
@@ -763,7 +768,7 @@ class SetDefaultFolderDialog(wx.Dialog):
 			)
 			return
 		drv = os.path.splitdrive(self.defaultDirectoryEdit.Value)[0]
-		if drv and not os.path.isdir(drv):
+		if drv and not Path(drv).is_dir():
 			# Message translated in NVDA core.
 			MessageDialog.alert(
 				translate("Invalid drive %s") % drv,
@@ -773,9 +778,6 @@ class SetDefaultFolderDialog(wx.Dialog):
 			return
 		self.Hide()
 		config.conf["placeMarkers"]["defaultFolder"] = self.defaultDirectoryEdit.Value
-		global searchFolder, bookmarksFolder
-		searchFolder = os.path.join(getDefaultFolder(), "search")
-		bookmarksFolder = os.path.join(getDefaultFolder(), "bookmarks")
 		createSearchFolder()
 		createBookmarksFolder()
 		self.Destroy()
@@ -828,9 +830,9 @@ class RestoreDialog(wx.Dialog):
 			PathSelectionWithoutNewDir(self, browseText, dirDialogTitle),
 		)
 		self.restoreDirectoryEdit = directoryEntryControl.pathControl
-		backupDirectory = os.path.join(CONFIG_PATH, "placeMarkersBackup")
-		if os.path.isdir(backupDirectory):
-			self.restoreDirectoryEdit.Value = backupDirectory
+		backupDirectory = Path(CONFIG_PATH) / "placeMarkersBackup"
+		if backupDirectory.is_dir():
+			self.restoreDirectoryEdit.Value = str(backupDirectory)
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
 		# Message translated in NVDA core.
 		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
@@ -852,7 +854,7 @@ class RestoreDialog(wx.Dialog):
 			)
 			return
 		drv = os.path.splitdrive(self.restoreDirectoryEdit.Value)[0]
-		if drv and not os.path.isdir(drv):
+		if drv and not Path(drv).is_dir():
 			# Message translated in NVDA core.
 			MessageDialog.alert(
 				translate("Invalid drive %s") % drv,
@@ -943,7 +945,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			pass
 
 	def onSpecificSearch(self, evt):
-		os.startfile(searchFolder)
+		os.startfile(getSearchFolder())
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -953,7 +955,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		wx.CallAfter(self.onSpecificSearch, None)
 
 	def onBookmarks(self, evt):
-		os.startfile(bookmarksFolder)
+		os.startfile(getBookmarksFolder())
 
 	@script(
 		# Translators: message presented in input mode, when a keystroke of an addon script is pressed.
@@ -1042,12 +1044,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			):
 				gesture.send()
 				return
-		if not lastFindText:
+		if not _findState.text:
 			self.script_specificFind(gesture)
 		else:
 			doFindText(
-				lastFindText,
-				lastCaseSensitivity,
+				_findState.text,
+				_findState.caseSensitive,
 				willSayAllResume=willSayAllResume(gesture),
 			)
 
@@ -1066,12 +1068,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			):
 				gesture.send()
 				return
-		if not lastFindText:
+		if not _findState.text:
 			self.script_specificFind(gesture, reverse=True)
 		else:
 			doFindTextUp(
-				lastFindText,
-				lastCaseSensitivity,
+				_findState.text,
+				_findState.caseSensitive,
 				willSayAllResume=willSayAllResume(gesture),
 			)
 
@@ -1144,8 +1146,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		bookmarks[startOffset] = Note(noteTitle, noteBody)
 		fileName = getFileBookmarks()
 		try:
-			with open(fileName, "wb") as f:
-				pickle.dump(bookmarks, f, protocol=0)
+			with open(fileName, "w", encoding="utf-8") as f:
+				yaml.safe_dump(
+					{k: {"title": v.title, "body": v.body} for k, v in bookmarks.items()},
+					f,
+					allow_unicode=True,
+				)
 			ui.message(
 				# Translators: message presented when a position is saved as a bookmark.
 				_("Saved position at character %d") % startOffset,
@@ -1196,8 +1202,12 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		fileName = getFileBookmarks()
 		if bookmarks != {}:
 			try:
-				with open(fileName, "wb") as f:
-					pickle.dump(bookmarks, f, protocol=0)
+				with open(fileName, "w", encoding="utf-8") as f:
+					yaml.safe_dump(
+						{k: {"title": v.title, "body": v.body} for k, v in bookmarks.items()},
+						f,
+						allow_unicode=True,
+					)
 				ui.message(
 					# Translators: message presented when a bookmark is deleted.
 					_("Bookmark deleted"),
@@ -1207,7 +1217,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				pass
 		else:
 			try:
-				os.remove(fileName)
+				fileName.unlink()
 				ui.message(
 					# Translators: message presented when the current document doesn't contain bookmarks.
 					_("No bookmarks"),
@@ -1342,13 +1352,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				gesture.send()
 				return
 		message = str(getDefaultFolder())
-		if os.path.isfile(getFileBookmarks()):
+		if getFileBookmarks().is_file():
 			# Translators: Presented when the current document has positional bookmarks.
 			message += "\r\n\r\n" + _("Has bookmarks.")
-		if os.path.isfile(getFileSearch()):
+		if getFileSearch().is_file():
 			# Translators: Presented when the current document has specific search.
 			message += "\r\n\r\n" + _("Has text for specific search.")
-		if os.path.isfile(getFileTempBookmark()):
+		if getFileTempBookmark().is_file():
 			# Translators: Presented when the current document has a temporary bookmark.
 			message += "\r\n\r\n" + _("Has temporary bookmark.")
 		ui.browseableMessage(
@@ -1388,7 +1398,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			with open(fileName, "w", encoding="utf-8") as f:
 				f.write(str(startOffset))
 				# Translators: Message presented when a temporary bookmark is saved.
-				ui.message(_("Saved temporary bookmark at position %d" % startOffset))
+				ui.message(_("Saved temporary bookmark at position %d") % startOffset)
 		except Exception as e:
 			log.debugWarning("Error saving temporary bookmark", exc_info=True)
 			raise e
@@ -1417,4 +1427,4 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			moveToBookmark(tempBookmark)
 		except Exception:
 			# Translators: Message presented when a temporary bookmark can't be found.
-			ui.message("Temporary bookmark not found")
+			ui.message(_("Temporary bookmark not found"))

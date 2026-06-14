@@ -1,12 +1,14 @@
-# -*- coding: UTF-8 -*-
 # installTasks for placeMarkers add-on
-# Copyright (C) 2016-2025 Noelia Ruiz Martínez, Łukasz Golonka
+# Copyright (C) 2016-2026 Noelia Ruiz Martínez, Łukasz Golonka
 # Released under GPL 2
 
 import addonHandler
-import os
+import pickle
+import yaml
 import shutil
-import globalVars
+from pathlib import Path
+
+from NVDAState import WritePaths
 from gui.message import MessageDialog, ReturnCode
 
 addonHandler.initTranslation()
@@ -19,12 +21,38 @@ def copyTree(src, dst):
 		pass
 
 
+def migratePickleToYaml(folder):
+	"""Convert all .pickle bookmark files under folder to .yaml using safe_dump."""
+	for pickleFile in Path(folder).rglob("*.pickle"):
+		try:
+			with open(pickleFile, "rb") as f:
+				data = pickle.load(f)
+			if isinstance(data, list):
+				yamlData = {pos: {"title": "", "body": ""} for pos in data}
+			elif isinstance(data, dict):
+				yamlData = {
+					pos: {
+						"title": getattr(note, "title", ""),
+						"body": getattr(note, "body", ""),
+					}
+					for pos, note in data.items()
+				}
+			else:
+				continue
+			yamlFile = pickleFile.with_suffix(".yaml")
+			with open(yamlFile, "w", encoding="utf-8") as f:
+				yaml.safe_dump(yamlData, f, allow_unicode=True)
+			pickleFile.unlink()
+		except Exception:
+			pass
+
+
 def onInstall():
-	configPath = globalVars.appArgs.configPath
-	addonDir = os.path.abspath(os.path.dirname(__file__))
-	placeMarkersPath = os.path.join(addonDir, "globalPlugins", "placeMarkers", "savedPlaceMarkers")
-	addonBackupPath = os.path.join(configPath, "placeMarkersBackup")
-	if os.path.isdir(addonBackupPath):
+	placeMarkersPath = (
+		Path(addonHandler.getCodeAddon().path) / "globalPlugins" / "placeMarkers" / "savedPlaceMarkers"
+	)
+	addonBackupPath = Path(WritePaths.configDir) / "placeMarkersBackup"
+	if addonBackupPath.is_dir():
 		if (
 			MessageDialog.ask(
 				_(
@@ -37,15 +65,17 @@ def onInstall():
 			)
 			== ReturnCode.YES
 		):
+			migratePickleToYaml(addonBackupPath)
 			copyTree(addonBackupPath, placeMarkersPath)
 			return
-	previousPlaceMarkersPath = os.path.join(
-		configPath,
-		"addons",
-		"placeMarkers",
-		"globalPlugins",
-		"placeMarkers",
-		"savedPlaceMarkers",
+	previousPlaceMarkersPath = (
+		Path(WritePaths.configDir)
+		/ "addons"
+		/ "placeMarkers"
+		/ "globalPlugins"
+		/ "placeMarkers"
+		/ "savedPlaceMarkers"
 	)
-	if os.path.isdir(previousPlaceMarkersPath):
+	if previousPlaceMarkersPath.is_dir():
+		migratePickleToYaml(previousPlaceMarkersPath)
 		copyTree(previousPlaceMarkersPath, placeMarkersPath)
