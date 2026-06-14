@@ -43,10 +43,7 @@ addonHandler.initTranslation()
 # Constants
 CONFIG_PATH = WritePaths.configDir
 PLACE_MARKERS_PATH = (
-	Path(addonHandler.getCodeAddon().path)
-	/ "globalPlugins"
-	/ "placeMarkers"
-	/ "savedPlaceMarkers"
+	Path(addonHandler.getCodeAddon().path) / "globalPlugins" / "placeMarkers" / "savedPlaceMarkers"
 )
 
 ADDON_SUMMARY = addonHandler.getCodeAddon().manifest["summary"]
@@ -370,8 +367,7 @@ def getSavedBookmarks():
 			raw = yaml.safe_load(f)
 		if raw:
 			savedBookmarks = {
-				int(k): Note(title=v.get("title", ""), body=v.get("body", ""))
-				for k, v in raw.items()
+				int(k): Note(title=v.get("title", ""), body=v.get("body", "")) for k, v in raw.items()
 			}
 		else:
 			savedBookmarks = {}

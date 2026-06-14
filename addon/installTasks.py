@@ -69,7 +69,12 @@ def onInstall():
 			copyTree(addonBackupPath, placeMarkersPath)
 			return
 	previousPlaceMarkersPath = (
-		Path(WritePaths.configDir) / "addons" / "placeMarkers" / "globalPlugins" / "placeMarkers" / "savedPlaceMarkers"
+		Path(WritePaths.configDir)
+		/ "addons"
+		/ "placeMarkers"
+		/ "globalPlugins"
+		/ "placeMarkers"
+		/ "savedPlaceMarkers"
 	)
 	if previousPlaceMarkersPath.is_dir():
 		migratePickleToYaml(previousPlaceMarkersPath)
