@@ -21,35 +21,22 @@ def copyTree(src, dst):
 		pass
 
 
-class _NoteProxy:
-	"""Placeholder class used when unpickling Note objects during migration."""
-
-	title: str = ""
-	body: str = ""
-
-
-class _SafeUnpickler(pickle.Unpickler):
-	def find_class(self, module, name):
-		if name == "Note":
-			return _NoteProxy
-		raise pickle.UnpicklingError(f"Refusing to unpickle {module}.{name}")
-
-
 def migratePickleToYaml(folder):
 	"""Convert all .pickle bookmark files under folder to .yaml using safe_dump."""
 	for pickleFile in Path(folder).rglob("*.pickle"):
 		try:
 			with open(pickleFile, "rb") as f:
-				data = _SafeUnpickler(f).load()
+				data = pickle.load(f)
 			if isinstance(data, list):
 				yamlData = {pos: {"title": "", "body": ""} for pos in data}
 			elif isinstance(data, dict):
-				yamlData = {}
-				for pos, note in data.items():
-					if isinstance(note, _NoteProxy):
-						yamlData[pos] = {"title": note.title, "body": note.body}
-					else:
-						yamlData[pos] = {"title": "", "body": ""}
+				yamlData = {
+					pos: {
+						"title": getattr(note, "title", ""),
+						"body": getattr(note, "body", ""),
+					}
+					for pos, note in data.items()
+				}
 			else:
 				continue
 			yamlFile = pickleFile.with_suffix(".yaml")
@@ -78,12 +65,12 @@ def onInstall():
 			)
 			== ReturnCode.YES
 		):
+			migratePickleToYaml(addonBackupPath)
 			copyTree(addonBackupPath, placeMarkersPath)
-			migratePickleToYaml(placeMarkersPath)
 			return
 	previousPlaceMarkersPath = (
 		Path(WritePaths.configDir) / "addons" / "placeMarkers" / "globalPlugins" / "placeMarkers" / "savedPlaceMarkers"
 	)
 	if previousPlaceMarkersPath.is_dir():
+		migratePickleToYaml(previousPlaceMarkersPath)
 		copyTree(previousPlaceMarkersPath, placeMarkersPath)
-	migratePickleToYaml(placeMarkersPath)

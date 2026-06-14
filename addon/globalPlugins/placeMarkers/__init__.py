@@ -565,13 +565,11 @@ class NotesDialog(wx.Dialog):
 		self.notesListBox.Bind(wx.EVT_LISTBOX, self.onNotesChange)
 		# Translators: The label of an edit box in the Notes dialog.
 		noteLabel = _("Not&e:")
-		noteLabeledCtrl = gui.guiHelper.LabeledControlHelper(
-			self,
+		self.noteEdit = sHelper.addLabeledControl(
 			noteLabel,
 			wx.TextCtrl,
 			style=wx.TE_MULTILINE,
 		)
-		self.noteEdit = noteLabeledCtrl.control
 		self.noteEdit.SetMaxLength(1024)
 		self.noteEdit.Value = firstNoteBody
 		bHelper = sHelper.addItem(guiHelper.ButtonHelper(orientation=wx.HORIZONTAL))
