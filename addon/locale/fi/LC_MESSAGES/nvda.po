@@ -1,386 +1,439 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: placeMarkers\n"
+"Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2013-06-05 23:05+0200\n"
-"PO-Revision-Date: 2025-06-20 23:54+0300\n"
-"Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
-"Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
-"Language: fi\n"
+"POT-Creation-Date: 2026-06-15 01:21+0000\n"
+"PO-Revision-Date: 2026-06-15 01:23\n"
+"Last-Translator: \n"
+"Language-Team: Finnish\n"
+"Language: fi_FI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
-
-#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid ""
-"Your configuration folder for NVDA contains files that seem to be derived "
-"from a previous version of this add-on. Do you want to update it?"
-msgstr ""
-"NVDA:n asetushakemistossa on tiedostoja, jotka ovat peräisin tämän lisäosan "
-"aiemmasta versiosta. Haluatko päivittää ne?"
-
-#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
-msgid "Install or update add-on"
-msgstr "Lisäosan asennus tai päivitys"
+"X-Crowdin-Project: nvdaaddons\n"
+"X-Crowdin-Project-ID: 780748\n"
+"X-Crowdin-Language: fi\n"
+"X-Crowdin-File: placeMarkers.pot\n"
+"X-Crowdin-File-ID: 576\n"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
+#: addon\globalPlugins\placeMarkers\__init__.py:248
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s kopioitu leikepöydälle"
 
 #. Translators: The title of the Specific Search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:387
 msgid "Specific search"
 msgstr "Sivukohtainen haku"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:394
 msgid "Sa&ved texts"
 msgstr "T&allennetut tekstit"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:402
 msgid "&Remove from history"
 msgstr "&Poista historiasta"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:405
 msgid "&Text to search:"
 msgstr "Etsittävä te&ksti:"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:410
 msgid "&Add to history"
 msgstr "&Lisää historiaan"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:412
 msgid "Action on s&earch"
 msgstr "Hakuto&iminto"
 
 #. Translators: An action in the Search group of the Specific search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:415
 msgid "Search &next"
 msgstr "Etsi &seuraava"
 
 #. Translators: An action in the Search group of the Specific search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:417
 msgid "Search &previous"
 msgstr "Etsi &edellinen"
 
 #. Translators: An action in the Search group of the Specific search dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:419
 msgid "&Don't search"
 msgstr "Ei &hakua"
 
 #. Translators: Message presented when place markers have been copied.
+#: addon\globalPlugins\placeMarkers\__init__.py:507
 msgid "Place markers copied"
 msgstr "Paikkamerkit kopioitu"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
+#: addon\globalPlugins\placeMarkers\__init__.py:513
+#: addon\globalPlugins\placeMarkers\__init__.py:534
 msgid "Folder not copied"
 msgstr "Kansiota ei kopioitu"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
+#: addon\globalPlugins\placeMarkers\__init__.py:515
+#: addon\globalPlugins\placeMarkers\__init__.py:536
 msgid "Copy Error"
 msgstr "Kopiointivirhe"
 
 #. Translators: Message presented when place markers have been restored.
+#: addon\globalPlugins\placeMarkers\__init__.py:528
 msgid "Place markers restored"
 msgstr "Paikkamerkit palautettu"
 
 #. Translators: The title of the Notes dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:546
 msgid "Notes"
 msgstr "Muistiinpanot"
 
 #. Translators: The label of a list box in the Notes dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:551
 msgid "&Bookmarks"
 msgstr "&Paikkamerkit"
 
 #. Translators: The label of an edit box in the Notes dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:563
 msgid "Not&e:"
 msgstr "&Muistiinpano:"
 
 #. Translators: The label for a button in the Notes dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:573
 msgid "&Save note"
 msgstr "Ta&llenna muistiinpano"
 
 #. Translators: The label for a button in the Notes dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:576
 msgid "&Delete..."
 msgstr "Po&ista..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
-msgid ""
-"This bookmark will be permanently deleted. This action cannot be undone."
+#: addon\globalPlugins\placeMarkers\__init__.py:611
+msgid "This bookmark will be permanently deleted. This action cannot be undone."
 msgstr "Tämä paikkamerkki poistetaan pysyvästi. Poistoa ei voi perua."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
+#: addon\globalPlugins\placeMarkers\__init__.py:642
+#: addon\globalPlugins\placeMarkers\__init__.py:1084
+#: addon\globalPlugins\placeMarkers\__init__.py:1184
+#: addon\globalPlugins\placeMarkers\__init__.py:1223
 msgid "No bookmarks"
 msgstr "Ei paikkamerkkejä"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
+#: addon\globalPlugins\placeMarkers\__init__.py:644
 msgid "Bookmarks deleted"
 msgstr "Paikkamerkit poistettu"
 
 #. Translators: The title of the Copy dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:658
 msgid "Copy place markers"
 msgstr "Kopioi paikkamerkit"
 
 #. Translators: An informational message displayed in the Copy dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:664
 msgid "Select a folder to save a backup of your current place markers."
-msgstr ""
-"Valitse kansio, johon nykyisten paikkamerkkien varmuuskopio tallennetaan."
+msgstr "Valitse kansio, johon nykyisten paikkamerkkien varmuuskopio tallennetaan."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:668
 msgid "directory for backup:"
 msgstr "Varmuuskopion tallennuskansio:"
 
 #. Translators: The title of the dialog to browse for the destination directory when copying place markers.
+#: addon\globalPlugins\placeMarkers\__init__.py:678
 msgid "Select directory to copy"
 msgstr "Valitse kansio, johon kopioidaan"
 
 #. Translators: The title of the Set default folder dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:724
 msgid "Set default folder for place markers"
 msgstr "Määritä paikkamerkkien oletuskansio"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:730
 msgid "Select the folder where your place markers will be searched."
 msgstr "Valitse kansio, josta paikkamerkkejä etsitään."
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:734
 msgid "default directory for place markers:"
 msgstr "Paikkamerkkien oletuskansio:"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
+#: addon\globalPlugins\placeMarkers\__init__.py:744
 msgid "Select default directory"
 msgstr "Valitse oletuskansio"
 
 #. Translators: The title of the Restore dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:808
 msgid "Restore place markers"
 msgstr "Palauta paikkamerkit"
 
 #. Translators: An informational message displayed in the Restore dialog.
-msgid ""
-"Select a folder to restore a backup of your previous copied place markers."
-msgstr ""
-"Valitse kansio, josta aiemmin varmuuskopioimasi paikkamerkit palautetaan."
+#: addon\globalPlugins\placeMarkers\__init__.py:814
+msgid "Select a folder to restore a backup of your previous copied place markers."
+msgstr "Valitse kansio, josta aiemmin varmuuskopioimasi paikkamerkit palautetaan."
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
+#: addon\globalPlugins\placeMarkers\__init__.py:818
 msgid "directory containing backup:"
 msgstr "Varmuuskopion sisältävä kansio:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
+#: addon\globalPlugins\placeMarkers\__init__.py:828
 msgid "Select directory to restore"
 msgstr "Valitse kansio, josta palautetaan"
 
 #. Translators: the name of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:896
 msgid "P&lace markers"
 msgstr "Paikka&merkit"
 
 #. Translators: the tooltip text for addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:898
 msgid "Bookmarks and Search menu"
 msgstr "Avaa paikkamerkkien ja hakujen valikon."
 
 #. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:903
 msgid "&Specific search folder"
 msgstr "&Sivukohtaisen haun kansio"
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:905
 msgid "Opens the specific search folder"
 msgstr "Avaa sivukohtaisen haun kansion."
 
 #. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:911
 msgid "&Bookmarks folder"
 msgstr "&Paikkamerkkien kansio"
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:913
 msgid "Opens the bookmarks folder"
 msgstr "Avaa paikkamerkkien kansion."
 
 #. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:919
 msgid "&Copy placeMarkers folder..."
 msgstr "&Kopioi paikkamerkkien kansio..."
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:921
 msgid "Backup of place markers"
 msgstr "Varmuuskopioi paikkamerkit."
 
 #. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:927
 msgid "R&estore place markers..."
 msgstr "&Palauta paikkamerkit..."
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:929
 msgid "Restore previously saved place markers"
 msgstr "Palauttaa aiemmin tallennetut paikkamerkit."
 
 #. Translators: the name for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:935
 msgid "Set &default place markers folder..."
 msgstr "Määritä paikkamerkkien &oletuskansio..."
 
 #. Translators: the tooltip text for an item of addon submenu.
+#: addon\globalPlugins\placeMarkers\__init__.py:937
 msgid "Sets default folder for place markers"
 msgstr "Määrittää paikkamerkkien oletuskansion."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:952
 msgid "Opens the specific search folder."
 msgstr "Avaa sivukohtaisen haun kansion."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:962
 msgid "Opens the bookmarks folder."
 msgstr "Avaa paikkamerkkien kansion."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:975
 #, python-format
 msgid "Activates the Copy dialog of %s."
 msgstr "Avaa %s-lisäosan kopiointivalintaikkunan."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:988
 #, python-format
 msgid "Activates the Restore dialog of %s."
 msgstr "Avaa %s-lisäosan palautusvalintaikkunan."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1001
 #, python-format
 msgid "Activates the Set default folder dialog of %s."
 msgstr "Avaa valintaikkunan %s-lisäosan oletuskansion määrittämistä varten."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds a text string from the current cursor position for a specific document."
-msgstr ""
-"Etsii sivukohtaista merkkijonoa kohdistimen nykyisestä sijainnista lähtien."
+#: addon\globalPlugins\placeMarkers\__init__.py:1008
+msgid "finds a text string from the current cursor position for a specific document."
+msgstr "Etsii sivukohtaista merkkijonoa kohdistimen nykyisestä sijainnista lähtien."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds the next occurrence of the last text searched for any specific "
-"document."
-msgstr ""
-"Etsii viimeksi haetun merkkijonon seuraavan esiintymän mistä tahansa "
-"määrätystä asiakirjasta."
+#: addon\globalPlugins\placeMarkers\__init__.py:1034
+msgid "finds the next occurrence of the last text searched for any specific document."
+msgstr "Etsii viimeksi haetun merkkijonon seuraavan esiintymän mistä tahansa määrätystä asiakirjasta."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-msgid ""
-"finds the previous occurrence of the last text searched for any specific "
-"document."
-msgstr ""
-"Etsii viimeksi haetun merkkijonon edellisen esiintymän mistä tahansa "
-"määrätystä asiakirjasta."
+#: addon\globalPlugins\placeMarkers\__init__.py:1058
+msgid "finds the previous occurrence of the last text searched for any specific document."
+msgstr "Etsii viimeksi haetun merkkijonon edellisen esiintymän mistä tahansa määrätystä asiakirjasta."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1094
 msgid "Show the Notes dialog for a specific document."
 msgstr "Näyttää Muistiinpanot-valintaikkunan nykyiselle dokumentille."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1113
 msgid "Saves the current position as a bookmark."
 msgstr "Tallentaa nykyisen sijainnin paikkamerkiksi."
 
 #. Translators: message presented when a position is saved as a bookmark.
+#: addon\globalPlugins\placeMarkers\__init__.py:1157
 #, python-format
 msgid "Saved position at character %d"
 msgstr "Sijainti tallennettu merkin %d kohdalle"
 
 #. Translators: message presented when a bookmark cannot be saved.
+#: addon\globalPlugins\placeMarkers\__init__.py:1163
 msgid "Cannot save bookmark"
 msgstr "Paikkamerkkiä ei voi tallentaa"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1169
 msgid "Deletes the current bookmark."
 msgstr "Poistaa nykyisen paikkamerkin."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
+#: addon\globalPlugins\placeMarkers\__init__.py:1198
 msgid "No bookmark selected"
 msgstr "Paikkamerkkiä ei valittu"
 
 #. Translators: message presented when a bookmark is deleted.
+#: addon\globalPlugins\placeMarkers\__init__.py:1213
 msgid "Bookmark deleted"
 msgstr "Paikkamerkki poistettu"
 
 #. Translators: message presented when cannot delete a bookmark.
+#: addon\globalPlugins\placeMarkers\__init__.py:1231
 msgid "Cannot delete bookmark"
 msgstr "Paikkamerkkiä ei voi poistaa"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1236
 msgid "Moves to the next bookmark."
 msgstr "Siirtää seuraavaan paikkamerkkiin."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
+#: addon\globalPlugins\placeMarkers\__init__.py:1256
+#: addon\globalPlugins\placeMarkers\__init__.py:1309
 msgid "No bookmarks found"
 msgstr "Paikkamerkkejä ei löydy"
 
 #. Translators: message presented when a bookmark is selected.
+#: addon\globalPlugins\placeMarkers\__init__.py:1279
+#: addon\globalPlugins\placeMarkers\__init__.py:1332
 #, python-format
 msgid "Position: character %d"
 msgstr "Sijainti: merkki %d"
 
 #. Translators: message presented when the next bookmark is not found.
+#: addon\globalPlugins\placeMarkers\__init__.py:1284
 msgid "Next bookmark not found"
 msgstr "Seuraavaa paikkamerkkiä ei löydy"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1289
 msgid "Moves to the previous bookmark."
 msgstr "Siirtää edelliseen paikkamerkkiin."
 
 #. Translators: message presented when the previous bookmark is not found.
+#: addon\globalPlugins\placeMarkers\__init__.py:1337
 msgid "Previous bookmark not found"
 msgstr "Edellistä paikkamerkkiä ei löydy"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1342
 msgid "Shows the name of the current file for place markers in browse mode."
 msgstr "Näyttää nykyisen paikkamerkkitiedoston nimen  selaustilassa."
 
 #. Translators: Presented when the current document has positional bookmarks.
+#: addon\globalPlugins\placeMarkers\__init__.py:1357
 msgid "Has bookmarks."
 msgstr "Sisältää paikkamerkkejä"
 
 #. Translators: Presented when the current document has specific search.
+#: addon\globalPlugins\placeMarkers\__init__.py:1360
 msgid "Has text for specific search."
 msgstr "Sisältää sivukohtaisen haun"
 
 #. Translators: Presented when the current document has a temporary bookmark.
+#: addon\globalPlugins\placeMarkers\__init__.py:1363
 msgid "Has temporary bookmark."
 msgstr "Sisältää tilapäisen paikkamerkin"
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
+#: addon\globalPlugins\placeMarkers\__init__.py:1367
 #, python-format
 msgid "%s file"
 msgstr "%s-tiedosto"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+#: addon\globalPlugins\placeMarkers\__init__.py:1374
 msgid "Saves the current position as a temporary bookmark."
 msgstr "Tallentaa nykyisen sijainnin tilapäiseksi paikkamerkiksi."
 
 #. Translators: Message presented when a temporary bookmark is saved.
+#: addon\globalPlugins\placeMarkers\__init__.py:1401
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Tilapäinen paikkamerkki tallennettu sijaintiin %d"
 
 #. Translators: Message presented in input help mode.
+#: addon\globalPlugins\placeMarkers\__init__.py:1408
 msgid "Moves to the temporary bookmark for the current document."
 msgstr "Siirtää tilapäiseen paikkamerkkiin nykyisessä dokumentissa."
 
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Message presented when a temporary bookmark can't be found.
+#: addon\globalPlugins\placeMarkers\__init__.py:1430
+msgid "Temporary bookmark not found"
+msgstr ""
+
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
 msgid "Place markers"
 msgstr "Paikkamerkit"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
 msgid "Add-on for setting place markers on specific virtual documents"
 msgstr "Lisäosa sivukohtaisten paikkamerkkien määrittämiseen"
 
-#~ msgid "Cannot move to bookmark with UIA enabled for your browser"
-#~ msgstr "Paikkamerkkeihin ei voi siirtyä selaimessasi, kun UIA on käytössä"
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:29
+msgid "* Bookmarks will be stored in yaml files."
+msgstr ""
 
-#~ msgid "Cannot copy file name for place markers"
-#~ msgstr "Paikkamerkkitiedoston nimeä ei voi kopioida"
-
-#~ msgid "Place markers file name copied to clipboard"
-#~ msgstr "Paikkamerkkkitiedoston nimi kopioitu leikepöydälle"
-
-#~ msgid "Bookmark cannot be saved"
-#~ msgstr "Paikkamerkkiä ei voi tallentaa"
-
-#~ msgid "Bookmark cannot be deleted"
-#~ msgstr "Paikkamerkkiä ei voi poistaa"
-
-#~ msgid "Cannot find any bookmarks"
-#~ msgstr "Paikkamerkkejä ei löydy"
