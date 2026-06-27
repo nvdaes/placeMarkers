@@ -1,439 +1,383 @@
+# Hrvatska lokalizacija za NVDA.
+# Copyright (C) 2006-2019 NVDA contributors <https://www.nvda-project.org>
+# This file is distributed under the same license as the virtualRevision package.
+# Zvonimir Stanečić <zvonimirek222@yandex.com>, 2019.
+# Milo Ivir <mail@milotype.de>, 2019.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: nvdaaddons\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-06-15 01:21+0000\n"
-"PO-Revision-Date: 2026-06-21 08:14\n"
-"Last-Translator: \n"
-"Language-Team: Croatian\n"
-"Language: hr_HR\n"
+"Project-Id-Version: placeMarkers 3.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2013-12-13 17:50+0100\n"
+"PO-Revision-Date: 2022-04-24 13:06+0200\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: hr <LL@li.org>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Crowdin-Project: nvdaaddons\n"
-"X-Crowdin-Project-ID: 780748\n"
-"X-Crowdin-Language: hr\n"
-"X-Crowdin-File: placeMarkers.pot\n"
-"X-Crowdin-File-ID: 576\n"
+"X-Generator: Poedit 3.0\n"
+
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"Konfiguracijska mapa za NVDA čitača sadrži datoteke, koje su vjerojatno "
+"izrađene iz prethodne verzije ovoga dodatka. Želiš li nadograditi dodatak?"
+
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Instaliraj ili nadogradi dodatak"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
-#: addon\globalPlugins\placeMarkers\__init__.py:248
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s kopirano u međuspremnik"
 
 #. Translators: The title of the Specific Search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:387
 msgid "Specific search"
 msgstr "Određena pretraga"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:394
 msgid "Sa&ved texts"
 msgstr "&Spremljeni tekstovi"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:402
 msgid "&Remove from history"
 msgstr "&Ukloni iz povijesti"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:405
 msgid "&Text to search:"
 msgstr "&Tekst koji se traži:"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:410
 msgid "&Add to history"
 msgstr "&Dodaj u povijest"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:412
 msgid "Action on s&earch"
 msgstr "Radnja tijekom pre&trage"
 
 #. Translators: An action in the Search group of the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:415
 msgid "Search &next"
 msgstr "Traži &sljedeće"
 
 #. Translators: An action in the Search group of the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:417
 msgid "Search &previous"
 msgstr "Traži &prethodno"
 
 #. Translators: An action in the Search group of the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:419
 msgid "&Don't search"
 msgstr "&Ne traži"
 
 #. Translators: Message presented when place markers have been copied.
-#: addon\globalPlugins\placeMarkers\__init__.py:507
 msgid "Place markers copied"
 msgstr "Oznaka pozicija su kopirane"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-#: addon\globalPlugins\placeMarkers\__init__.py:513
-#: addon\globalPlugins\placeMarkers\__init__.py:534
 msgid "Folder not copied"
 msgstr "Mapa nije kopirana"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-#: addon\globalPlugins\placeMarkers\__init__.py:515
-#: addon\globalPlugins\placeMarkers\__init__.py:536
 msgid "Copy Error"
 msgstr "Greška pri kopiranju"
 
 #. Translators: Message presented when place markers have been restored.
-#: addon\globalPlugins\placeMarkers\__init__.py:528
 msgid "Place markers restored"
 msgstr "Oznake pozicija su obnovljene"
 
 #. Translators: The title of the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:546
 msgid "Notes"
 msgstr "Napomene"
 
 #. Translators: The label of a list box in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:551
 msgid "&Bookmarks"
 msgstr "&Knjižne oznake"
 
 #. Translators: The label of an edit box in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:563
 msgid "Not&e:"
 msgstr "&Napomena:"
 
 #. Translators: The label for a button in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:573
 msgid "&Save note"
 msgstr "&Spremi napomenu"
 
 #. Translators: The label for a button in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:576
 msgid "&Delete..."
 msgstr "&Izbriši …"
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:611
-msgid "This bookmark will be permanently deleted. This action cannot be undone."
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
 msgstr "Ova knjižna oznaka će se trajno izbrisati. Ova radnja je nepovratna."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
-#: addon\globalPlugins\placeMarkers\__init__.py:642
-#: addon\globalPlugins\placeMarkers\__init__.py:1084
-#: addon\globalPlugins\placeMarkers\__init__.py:1184
-#: addon\globalPlugins\placeMarkers\__init__.py:1223
 msgid "No bookmarks"
 msgstr "Nema knjižnih oznaka"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#: addon\globalPlugins\placeMarkers\__init__.py:644
 msgid "Bookmarks deleted"
 msgstr "Knjižne oznake su izbrisane"
 
 #. Translators: The title of the Copy dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:658
 msgid "Copy place markers"
 msgstr "Kopiraj oznake pozicija"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:664
 msgid "Select a folder to save a backup of your current place markers."
-msgstr "Odaberi mapu za spremanje sigurnosne kopije trenutačnih oznaka pozicija."
+msgstr ""
+"Odaberi mapu za spremanje sigurnosne kopije trenutačnih oznaka pozicija."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:668
 msgid "directory for backup:"
 msgstr "Mapa za sigurnosnu kopiju:"
 
 #. Translators: The title of the dialog to browse for the destination directory when copying place markers.
-#: addon\globalPlugins\placeMarkers\__init__.py:678
 msgid "Select directory to copy"
 msgstr "Odaberi mapu za kopiranje"
 
 #. Translators: The title of the Set default folder dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:724
+#, fuzzy
 msgid "Set default folder for place markers"
-msgstr ""
+msgstr "Sigurnosna kopija oznaka pozicija"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:730
 msgid "Select the folder where your place markers will be searched."
 msgstr ""
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:734
+#, fuzzy
 msgid "default directory for place markers:"
-msgstr ""
+msgstr "Sigurnosna kopija oznaka pozicija"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#: addon\globalPlugins\placeMarkers\__init__.py:744
+#, fuzzy
 msgid "Select default directory"
-msgstr ""
+msgstr "Odaberi mapu za kopiranje"
 
 #. Translators: The title of the Restore dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:808
 msgid "Restore place markers"
 msgstr "Obnovi oznake pozicija"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:814
-msgid "Select a folder to restore a backup of your previous copied place markers."
-msgstr "Odaberi mapu za obnavljanje prethodno kopiranih oznaka pozicija pomoću sigurnosne kopije."
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers."
+msgstr ""
+"Odaberi mapu za obnavljanje prethodno kopiranih oznaka pozicija pomoću "
+"sigurnosne kopije."
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:818
 msgid "directory containing backup:"
 msgstr "Mapa koja sadrži sigurnosnu kopiju:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
-#: addon\globalPlugins\placeMarkers\__init__.py:828
 msgid "Select directory to restore"
 msgstr "Odaberi mapu za obnavljanje oznaka"
 
 #. Translators: the name of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:896
 msgid "P&lace markers"
 msgstr "&Oznake pozicija"
 
 #. Translators: the tooltip text for addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:898
 msgid "Bookmarks and Search menu"
 msgstr "Knjižne oznake i izbornik pretrage"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:903
 msgid "&Specific search folder"
 msgstr "&Određena mapa pretrage"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:905
 msgid "Opens the specific search folder"
 msgstr "Otvara određenu mapu pretrage"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:911
 msgid "&Bookmarks folder"
 msgstr "&Mapa knjižnih oznaka"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:913
 msgid "Opens the bookmarks folder"
 msgstr "Otvara mapu knjižnih oznaka"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:919
 msgid "&Copy placeMarkers folder..."
 msgstr "&Kopiraj mapu oznaka pozicija …"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:921
 msgid "Backup of place markers"
 msgstr "Sigurnosna kopija oznaka pozicija"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:927
 msgid "R&estore place markers..."
 msgstr "Ob&novi oznake pozicija …"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:929
 msgid "Restore previously saved place markers"
 msgstr "Obnovi prethodno spremljene oznake pozicija"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:935
+#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr ""
+msgstr "&Kopiraj mapu oznaka pozicija …"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:937
+#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr ""
+msgstr "Obnovi oznake pozicija"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:952
 msgid "Opens the specific search folder."
 msgstr "Otvara određenu mapu pretrage."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:962
 msgid "Opens the bookmarks folder."
 msgstr "Otvara mapu knjižnih oznaka."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:975
 #, python-format
 msgid "Activates the Copy dialog of %s."
 msgstr "Aktivira dijaloški okvir „Kopiraj” od %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:988
 #, python-format
 msgid "Activates the Restore dialog of %s."
 msgstr "Aktivira dijaloški okvir „Obnovi” od %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1001
-#, python-format
+#, fuzzy, python-format
 msgid "Activates the Set default folder dialog of %s."
+msgstr "Aktivira dijaloški okvir „Obnovi” od %s."
+
+#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
+msgid ""
+"finds a text string from the current cursor position for a specific document."
 msgstr ""
+"nalazi niz znakova u tekstu od trenutačne pozicije kursora za određeni "
+"dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1008
-msgid "finds a text string from the current cursor position for a specific document."
-msgstr "nalazi niz znakova u tekstu od trenutačne pozicije kursora za određeni dokument."
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"nalazi sljedeći slučaj zadnje traženog teksta za bilo koji određeni dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1034
-msgid "finds the next occurrence of the last text searched for any specific document."
-msgstr "nalazi sljedeći slučaj zadnje traženog teksta za bilo koji određeni dokument."
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
+msgstr ""
+"nalazi prethodnu pojavu zadnje traženog teksta za bilo koji određeni "
+"dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1058
-msgid "finds the previous occurrence of the last text searched for any specific document."
-msgstr "nalazi prethodnu pojavu zadnje traženog teksta za bilo koji određeni dokument."
-
-#. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1094
 msgid "Show the Notes dialog for a specific document."
 msgstr "Prikaži dijaloški okvir napomena za određeni dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1113
 msgid "Saves the current position as a bookmark."
 msgstr "Sprema trenutačnu poziciju kao knjižnu oznaku."
 
 #. Translators: message presented when a position is saved as a bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:1157
 #, python-format
 msgid "Saved position at character %d"
 msgstr "Spremljena pozicija pri znaku %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
-#: addon\globalPlugins\placeMarkers\__init__.py:1163
 msgid "Cannot save bookmark"
 msgstr "Nije moguće spremiti knjižnu oznaku"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1169
 msgid "Deletes the current bookmark."
 msgstr "Briše trenutačnu knjižnu oznaku."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
-#: addon\globalPlugins\placeMarkers\__init__.py:1198
 msgid "No bookmark selected"
 msgstr "Nije odabrana niti jedna knjižna oznaka"
 
 #. Translators: message presented when a bookmark is deleted.
-#: addon\globalPlugins\placeMarkers\__init__.py:1213
 msgid "Bookmark deleted"
 msgstr "Knjižna oznaka je izbrisana"
 
 #. Translators: message presented when cannot delete a bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:1231
 msgid "Cannot delete bookmark"
 msgstr "Nije moguće izbrisati knjižnu oznaku"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1236
 msgid "Moves to the next bookmark."
 msgstr "Premješta se na sljedeću knjižnu oznaku."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1256
-#: addon\globalPlugins\placeMarkers\__init__.py:1309
 msgid "No bookmarks found"
 msgstr "Nema knjižnih oznaka"
 
 #. Translators: message presented when a bookmark is selected.
-#: addon\globalPlugins\placeMarkers\__init__.py:1279
-#: addon\globalPlugins\placeMarkers\__init__.py:1332
 #, python-format
 msgid "Position: character %d"
 msgstr "Pozicija: znak %d"
 
 #. Translators: message presented when the next bookmark is not found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1284
 msgid "Next bookmark not found"
 msgstr "Nema sljedeće knjižne oznake"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1289
 msgid "Moves to the previous bookmark."
 msgstr "Premješta se na prethodnu knjižnu oznaku."
 
 #. Translators: message presented when the previous bookmark is not found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1337
 msgid "Previous bookmark not found"
 msgstr "Nema prethodne knjižne oznake"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1342
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr "Prikazuje ime trenutačne datoteke za oznake pozicija u modusu pregledavanja."
+msgstr ""
+"Prikazuje ime trenutačne datoteke za oznake pozicija u modusu pregledavanja."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#: addon\globalPlugins\placeMarkers\__init__.py:1357
 msgid "Has bookmarks."
 msgstr "Ima knjižnih oznaka."
 
 #. Translators: Presented when the current document has specific search.
-#: addon\globalPlugins\placeMarkers\__init__.py:1360
 msgid "Has text for specific search."
 msgstr "Ima tekst za određenu pretragu."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:1363
 msgid "Has temporary bookmark."
 msgstr "Ima privremenu knjižnu oznaku"
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
-#: addon\globalPlugins\placeMarkers\__init__.py:1367
 #, python-format
 msgid "%s file"
 msgstr "%s datoteka"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1374
 msgid "Saves the current position as a temporary bookmark."
 msgstr "Sprema trenutačnu poziciju kao privremenu knjižnu oznaku."
 
 #. Translators: Message presented when a temporary bookmark is saved.
-#: addon\globalPlugins\placeMarkers\__init__.py:1401
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Spremljena privremena knjižna oznaka na poziciji %d"
 
 #. Translators: Message presented in input help mode.
-#: addon\globalPlugins\placeMarkers\__init__.py:1408
 msgid "Moves to the temporary bookmark for the current document."
 msgstr "Premješta se na privremenu knjižnu oznaku za trenutačni dokument."
 
-#. Translators: Message presented when a temporary bookmark can't be found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1430
-msgid "Temporary bookmark not found"
-msgstr ""
-
-#. Add-on summary/title, usually the user visible name of the add-on
-#. Translators: Summary/title for this add-on
-#. to be shown on installation and add-on information found in add-on store
-#: buildVars.py:21
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
 msgstr "Oznake pozicija"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-on store
-#: buildVars.py:24
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "Dodatak koji omogućuje postavljanje oznaka pozicija na određene virtualne dokumente"
-
-#. Brief changelog for this version
-#. Translators: what's new content for the add-on version to be shown in the add-on store
-#: buildVars.py:29
-msgid "* Bookmarks will be stored in yaml files."
 msgstr ""
+"Dodatak koji omogućuje postavljanje oznaka pozicija na određene virtualne "
+"dokumente"
 
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nije moguće kopirati ime datoteke za oznake pozicija"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Ime datoteke za oznake pozicija je kopirano u međuspremnik"
