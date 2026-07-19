@@ -3,8 +3,8 @@ name: Crowdin l10n
 on:
   workflow_dispatch:
   schedule:
-    # Every Monday at 00:00 UTC
-    - cron: '0 0 * * 1'
+    # Every Tuesday at 07:00 UTC
+    - cron: '0 7 * * 2'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -32,7 +32,7 @@ jobs:
           Write-Host "Sleeping for $delaySeconds seconds..."
           Start-Sleep -Seconds $delaySeconds
       - name: Checkout add-on
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           submodules: true
       - name: Set up Python
