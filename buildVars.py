@@ -22,10 +22,11 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_('Add-on for setting place markers on specific virtual documents'),
 	# version
-	addon_version='52.1.0',
+	addon_version="52.1.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_('* Bookmarks will be stored in yaml files.'),
+	addon_changelog=_("""* Bookmarks will be stored in yaml files.
+* Updates to translations."""),
 	# Author(s)
 	addon_author='Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>',
 	# URL for the add-on documentation support
