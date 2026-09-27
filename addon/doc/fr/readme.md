@@ -248,4 +248,3 @@ spécifique, pas les marqueurs.
   Slovaque, Slovène, Tamil.
 
 [[!tag dev stable]]
-
