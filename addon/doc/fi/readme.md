@@ -223,4 +223,3 @@ paikkamerkkien asemesta sivukohtaista hakua.
   ja tamili.
 
 [[!tag dev stable]]
-

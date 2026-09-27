@@ -57,9 +57,6 @@ class _FindState:
 
 _findState = _FindState()
 
-confspec = {"defaultFolder": "string(default='')"}
-config.conf.spec["placeMarkers"] = confspec
-
 
 def getDefaultFolder() -> Path:
 	defaultFolder = config.conf["placeMarkers"]["defaultFolder"]
@@ -746,7 +743,7 @@ class SetDefaultFolderDialog(wx.Dialog):
 			gui.guiHelper.PathSelectionHelper(self, browseText, dirDialogTitle),
 		)
 		self.defaultDirectoryEdit = directoryEntryControl.pathControl
-		self.defaultDirectoryEdit.Value = str(PLACE_MARKERS_PATH)
+		self.defaultDirectoryEdit.Value = str(getDefaultFolder())
 		bHelper = sHelper.addDialogDismissButtons(gui.guiHelper.ButtonHelper(wx.HORIZONTAL))
 		# Message translated in NVDA core.
 		continueButton = bHelper.addButton(self, label=translate("&Continue"), id=wx.ID_OK)
