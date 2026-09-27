@@ -25,8 +25,7 @@ addon_info = AddonInfo(
 	addon_version="53.0.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""* Bookmarks will be stored in yaml files.
-* Updates to translations."""),
+	addon_changelog=_("""* The default folder for storing place markers will be set in the normal configuration profile."""),
 	# Author(s)
 	addon_author='Noelia <nrm1977@gmail.com>, Chris <llajta2012@gmail.com>',
 	# URL for the add-on documentation support

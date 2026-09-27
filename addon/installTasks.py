@@ -8,10 +8,13 @@ import yaml
 import shutil
 from pathlib import Path
 
+import config
 from NVDAState import WritePaths
 from gui.message import MessageDialog, ReturnCode
 
 addonHandler.initTranslation()
+
+confspec = {"defaultFolder": "string(default='')"}
 
 
 def copyTree(src, dst):
@@ -48,6 +51,7 @@ def migratePickleToYaml(folder):
 
 
 def onInstall():
+	config.configSections.registerSection("placeMarkers", confspec, True)
 	placeMarkersPath = (
 		Path(addonHandler.getCodeAddon().path) / "globalPlugins" / "placeMarkers" / "savedPlaceMarkers"
 	)
@@ -79,3 +83,8 @@ def onInstall():
 	if previousPlaceMarkersPath.is_dir():
 		migratePickleToYaml(previousPlaceMarkersPath)
 		copyTree(previousPlaceMarkersPath, placeMarkersPath)
+	defaultFolder = config.conf["placeMarkers"]["defaultFolder"]
+	if defaultFolder:
+		defaultFolderPath = Path(defaultFolder)
+		if defaultFolderPath.is_dir():
+			migratePickleToYaml(defaultFolderPath)
