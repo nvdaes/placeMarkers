@@ -1,439 +1,386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: nvdaaddons\n"
+"Project-Id-Version: 'placeMarkers' '1.0-beta'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-29 07:20+0000\n"
-"PO-Revision-Date: 2026-09-29 07:21\n"
-"Last-Translator: \n"
-"Language-Team: Slovak\n"
-"Language: sk_SK\n"
+"POT-Creation-Date: 2013-06-05 23:05+0200\n"
+"PO-Revision-Date: 2020-01-16 17:45+0100\n"
+"Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
+"Language-Team: \n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
-"X-Crowdin-Project: nvdaaddons\n"
-"X-Crowdin-Project-ID: 780748\n"
-"X-Crowdin-Language: sk\n"
-"X-Crowdin-File: placeMarkers.pot\n"
-"X-Crowdin-File-ID: 576\n"
+"X-Generator: Poedit 1.6.11\n"
+
+#. Translators: label of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid ""
+"Your configuration folder for NVDA contains files that seem to be derived "
+"from a previous version of this add-on. Do you want to update it?"
+msgstr ""
+"priečinok s nastaveniami obsahuje súbory zo staršej verzie tohto doplnku. "
+"Chcete ho aktualizovať?"
+
+#. Translators: title of a dialog presented when installing this addon and placeMarkersBackup is found.
+msgid "Install or update add-on"
+msgstr "Inštalovať alebo aktualizovať doplnok"
 
 #. Translators: message presented when a string of text has been copied to the clipboard.
-#: addon\globalPlugins\placeMarkers\__init__.py:245
 #, python-format
 msgid "%s copied to clipboard"
 msgstr "%s skopírované do schránky"
 
 #. Translators: The title of the Specific Search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:384
 msgid "Specific search"
 msgstr "Špecifické vyhľadávanie"
 
 #. Translators: The label of a combo box in the Specific Search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:391
 msgid "Sa&ved texts"
 msgstr "&Uložené reťazce"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:399
 msgid "&Remove from history"
 msgstr "Odstrániť z &Histórie"
 
 #. Translators: The label of an edit box in the Specific Search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:402
 msgid "&Text to search:"
 msgstr "Zadajte text, ktorý &hľadáte"
 
 #. Translators: A label for a chekbox in the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:407
 msgid "&Add to history"
 msgstr "&Pridať do histórie"
 
 #. Translators: Label for a set of radio buttons in the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:409
 msgid "Action on s&earch"
 msgstr "Dostupné možnosti"
 
 #. Translators: An action in the Search group of the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:412
 msgid "Search &next"
 msgstr "Hľadať ď&alej"
 
 #. Translators: An action in the Search group of the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:414
 msgid "Search &previous"
 msgstr "Hľadať &predchádzajúce"
 
 #. Translators: An action in the Search group of the Specific search dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:416
 msgid "&Don't search"
 msgstr "&Nevyhľadávať"
 
 #. Translators: Message presented when place markers have been copied.
-#: addon\globalPlugins\placeMarkers\__init__.py:504
 msgid "Place markers copied"
 msgstr "Záložky zálohované"
 
 #. Translators: label of error dialog shown when cannot copy placeMarkers folder.
-#: addon\globalPlugins\placeMarkers\__init__.py:510
-#: addon\globalPlugins\placeMarkers\__init__.py:531
 msgid "Folder not copied"
 msgstr "priečinok nebol skopírovaný"
 
 #. Translators: title of error dialog shown when cannot copy placeMarkers folder.
-#: addon\globalPlugins\placeMarkers\__init__.py:512
-#: addon\globalPlugins\placeMarkers\__init__.py:533
 msgid "Copy Error"
 msgstr "Chyba pri kopírovaní"
 
 #. Translators: Message presented when place markers have been restored.
-#: addon\globalPlugins\placeMarkers\__init__.py:525
 msgid "Place markers restored"
 msgstr "Záložky obnovené"
 
 #. Translators: The title of the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:543
 msgid "Notes"
 msgstr "Poznámky"
 
 #. Translators: The label of a list box in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:548
 msgid "&Bookmarks"
 msgstr "&Záložky"
 
 #. Translators: The label of an edit box in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:560
 msgid "Not&e:"
 msgstr "&Poznámka:"
 
 #. Translators: The label for a button in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:570
 msgid "&Save note"
 msgstr "&Uložiť poznámku"
 
 #. Translators: The label for a button in the Notes dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:573
 msgid "&Delete..."
 msgstr "&Vymazať..."
 
 #. Translators: The confirmation prompt displayed when the user requests to delete a bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:608
-msgid "This bookmark will be permanently deleted. This action cannot be undone."
+msgid ""
+"This bookmark will be permanently deleted. This action cannot be undone."
 msgstr "Záložka bude odstránená."
 
 #. Translators: The message presented when all bookmarks have been deleted from the Notes dialog.
 #. Translators: message presented when the current document doesn't contain bookmarks.
-#: addon\globalPlugins\placeMarkers\__init__.py:639
-#: addon\globalPlugins\placeMarkers\__init__.py:1081
-#: addon\globalPlugins\placeMarkers\__init__.py:1181
-#: addon\globalPlugins\placeMarkers\__init__.py:1220
 msgid "No bookmarks"
 msgstr "Žiadne záložky"
 
 #. Translators: The title of the warning dialog when all bookmarks have been deleted.
-#: addon\globalPlugins\placeMarkers\__init__.py:641
 msgid "Bookmarks deleted"
 msgstr "Záložky vymazané"
 
 #. Translators: The title of the Copy dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:655
 msgid "Copy place markers"
 msgstr "Kopírovať záložky"
 
 #. Translators: An informational message displayed in the Copy dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:661
 msgid "Select a folder to save a backup of your current place markers."
 msgstr "Vyberte priečinok na uloženie záložiek."
 
 #. Translators: The label of a grouping with controls to select the destination directory in the Copy dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:665
 msgid "directory for backup:"
 msgstr "Priečinok so zálohou:"
 
 #. Translators: The title of the dialog to browse for the destination directory when copying place markers.
-#: addon\globalPlugins\placeMarkers\__init__.py:675
 msgid "Select directory to copy"
 msgstr "Vyberte priečinok"
 
 #. Translators: The title of the Set default folder dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:721
+#, fuzzy
 msgid "Set default folder for place markers"
-msgstr ""
+msgstr "Zálohovanie záložiek"
 
 #. Translators: An informational message displayed in the Set default folder dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:727
 msgid "Select the folder where your place markers will be searched."
 msgstr ""
 
 #. Translators: The label of a grouping with controls to select the folder in the Set default folder dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:731
+#, fuzzy
 msgid "default directory for place markers:"
-msgstr ""
+msgstr "Zálohovanie záložiek"
 
 #. Translators: The title of the dialog to browse for the default directory for place markers.
-#: addon\globalPlugins\placeMarkers\__init__.py:741
+#, fuzzy
 msgid "Select default directory"
-msgstr ""
+msgstr "Vyberte priečinok"
 
 #. Translators: The title of the Restore dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:805
 msgid "Restore place markers"
 msgstr "obnoviť záložky"
 
 #. Translators: An informational message displayed in the Restore dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:811
-msgid "Select a folder to restore a backup of your previous copied place markers."
+msgid ""
+"Select a folder to restore a backup of your previous copied place markers."
 msgstr "Vyberte priečinok s uloženou zálohou záložiek."
 
 #. Translators: The label of a grouping with controls to select the destination directory in Restore dialog.
-#: addon\globalPlugins\placeMarkers\__init__.py:815
 msgid "directory containing backup:"
 msgstr "Priečinok so zálohou:"
 
 #. Translators: The title of the dialog to browse for the destination directory when restoring place markers.
-#: addon\globalPlugins\placeMarkers\__init__.py:825
 msgid "Select directory to restore"
 msgstr "Vyberte priečinok na obnovenie"
 
 #. Translators: the name of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:893
 msgid "P&lace markers"
 msgstr "&Záložky"
 
 #. Translators: the tooltip text for addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:895
 msgid "Bookmarks and Search menu"
 msgstr "Menu zo záložkami a reťazcami hľadania"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:900
 msgid "&Specific search folder"
 msgstr "Priečinok s reťazcami &hľadania"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:902
 msgid "Opens the specific search folder"
 msgstr "otvorí priečinok s reťazcami hľadania"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:908
 msgid "&Bookmarks folder"
 msgstr "&Priečinok so záložkami"
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:910
 msgid "Opens the bookmarks folder"
 msgstr "otvorí priečinok so záložkami"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:916
 msgid "&Copy placeMarkers folder..."
 msgstr "&Zálohovať záložky..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:918
 msgid "Backup of place markers"
 msgstr "Zálohovanie záložiek"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:924
 msgid "R&estore place markers..."
 msgstr "&obnoviť záložky..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:926
 msgid "Restore previously saved place markers"
 msgstr "obnoví uložené záložky"
 
 #. Translators: the name for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:932
+#, fuzzy
 msgid "Set &default place markers folder..."
-msgstr ""
+msgstr "&Zálohovať záložky..."
 
 #. Translators: the tooltip text for an item of addon submenu.
-#: addon\globalPlugins\placeMarkers\__init__.py:934
+#, fuzzy
 msgid "Sets default folder for place markers"
-msgstr ""
+msgstr "obnoviť záložky"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:949
 msgid "Opens the specific search folder."
 msgstr "otvorí priečinok s reťazcami hľadania."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:959
 msgid "Opens the bookmarks folder."
 msgstr "otvorí priečinok so záložkami."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:972
 #, python-format
 msgid "Activates the Copy dialog of %s."
 msgstr "Aktivuje dialóg zálohovania %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:985
 #, python-format
 msgid "Activates the Restore dialog of %s."
 msgstr "Aktivuje dialóg obnovenia %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:998
-#, python-format
+#, fuzzy, python-format
 msgid "Activates the Set default folder dialog of %s."
-msgstr ""
+msgstr "Aktivuje dialóg obnovenia %s."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1005
-msgid "finds a text string from the current cursor position for a specific document."
+msgid ""
+"finds a text string from the current cursor position for a specific document."
 msgstr "Vyhľadá zadaný reťazec v aktuálnom dokumente."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1031
-msgid "finds the next occurrence of the last text searched for any specific document."
+msgid ""
+"finds the next occurrence of the last text searched for any specific "
+"document."
 msgstr "Vyhľadá najbližší výskyt zadaného reťazca v aktuálnom dokumente."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1055
-msgid "finds the previous occurrence of the last text searched for any specific document."
+msgid ""
+"finds the previous occurrence of the last text searched for any specific "
+"document."
 msgstr "Vyhľadá predchádzajúci výskyt reťazca v aktuálnom dokumente."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1091
 msgid "Show the Notes dialog for a specific document."
 msgstr "Zobrazí dialóg s poznámkami pre aktívny dokument."
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1110
 msgid "Saves the current position as a bookmark."
 msgstr "Uloží aktuálne miesto v dokumente ako záložku."
 
 #. Translators: message presented when a position is saved as a bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:1154
 #, python-format
 msgid "Saved position at character %d"
 msgstr "Záložka uložená na pozícii %d"
 
 #. Translators: message presented when a bookmark cannot be saved.
-#: addon\globalPlugins\placeMarkers\__init__.py:1160
 msgid "Cannot save bookmark"
 msgstr "Nie je možné uložiť záložku"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1166
 msgid "Deletes the current bookmark."
 msgstr "Odstráni aktuálnu záložku."
 
 #. Translators: message presented when the current document has bookmarks, but none is selected.
-#: addon\globalPlugins\placeMarkers\__init__.py:1195
 msgid "No bookmark selected"
 msgstr "Žiadna vybratá záložka"
 
 #. Translators: message presented when a bookmark is deleted.
-#: addon\globalPlugins\placeMarkers\__init__.py:1210
 msgid "Bookmark deleted"
 msgstr "Záložka vymazaná"
 
 #. Translators: message presented when cannot delete a bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:1228
 msgid "Cannot delete bookmark"
 msgstr "Nie je možné odstrániť záložku"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1233
 msgid "Moves to the next bookmark."
 msgstr "prejde na ďalšiu záložku."
 
 #. Translators: message presented when trying to select a bookmark, but none is found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1253
-#: addon\globalPlugins\placeMarkers\__init__.py:1306
 msgid "No bookmarks found"
 msgstr "Žiadne záložky"
 
 #. Translators: message presented when a bookmark is selected.
-#: addon\globalPlugins\placeMarkers\__init__.py:1276
-#: addon\globalPlugins\placeMarkers\__init__.py:1329
 #, python-format
 msgid "Position: character %d"
 msgstr "Pozícia: %d"
 
 #. Translators: message presented when the next bookmark is not found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1281
 msgid "Next bookmark not found"
 msgstr "Žiadna ďalšia záložka"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1286
 msgid "Moves to the previous bookmark."
 msgstr "prejde na predchádzajúcu záložku."
 
 #. Translators: message presented when the previous bookmark is not found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1334
 msgid "Previous bookmark not found"
 msgstr "Žiadna predchádzajúca záložka"
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1339
+#, fuzzy
 msgid "Shows the name of the current file for place markers in browse mode."
-msgstr ""
+msgstr "Skopíruje názov súboru so záložkami do schránky."
 
 #. Translators: Presented when the current document has positional bookmarks.
-#: addon\globalPlugins\placeMarkers\__init__.py:1354
+#, fuzzy
 msgid "Has bookmarks."
-msgstr ""
+msgstr "Žiadne záložky"
 
 #. Translators: Presented when the current document has specific search.
-#: addon\globalPlugins\placeMarkers\__init__.py:1357
+#, fuzzy
 msgid "Has text for specific search."
-msgstr ""
+msgstr "otvorí priečinok s reťazcami hľadania."
 
 #. Translators: Presented when the current document has a temporary bookmark.
-#: addon\globalPlugins\placeMarkers\__init__.py:1360
+#, fuzzy
 msgid "Has temporary bookmark."
-msgstr ""
+msgstr "Dočasná záložka uložená na %d"
 
 #. Translators: Title for a message presented when the file name for place markers is shown in browse mode.
-#: addon\globalPlugins\placeMarkers\__init__.py:1364
 #, python-format
 msgid "%s file"
 msgstr ""
 
 #. Translators: message presented in input mode, when a keystroke of an addon script is pressed.
-#: addon\globalPlugins\placeMarkers\__init__.py:1371
 msgid "Saves the current position as a temporary bookmark."
 msgstr "Uloží aktuálne miesto v dokumente ako dočasnú záložku."
 
 #. Translators: Message presented when a temporary bookmark is saved.
-#: addon\globalPlugins\placeMarkers\__init__.py:1398
 #, python-format
 msgid "Saved temporary bookmark at position %d"
 msgstr "Dočasná záložka uložená na %d"
 
 #. Translators: Message presented in input help mode.
-#: addon\globalPlugins\placeMarkers\__init__.py:1405
 msgid "Moves to the temporary bookmark for the current document."
 msgstr "Presunie kurzor na dočasnú záložku v aktuálnom dokumente."
 
-#. Translators: Message presented when a temporary bookmark can't be found.
-#: addon\globalPlugins\placeMarkers\__init__.py:1427
-msgid "Temporary bookmark not found"
-msgstr ""
-
-#. Add-on summary/title, usually the user visible name of the add-on
-#. Translators: Summary/title for this add-on
-#. to be shown on installation and add-on information found in add-on store
-#: buildVars.py:20
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "Place markers"
 msgstr "Záložky"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-on store
-#: buildVars.py:23
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "Add-on for setting place markers on specific virtual documents"
-msgstr "umožňuje pridávať záložky do dokumentov zobrazených v režime prehliadania "
-
-#. Brief changelog for this version
-#. Translators: what's new content for the add-on version to be shown in the add-on store
-#: buildVars.py:28
-msgid "* The default folder for storing place markers will be set in the normal configuration profile."
 msgstr ""
+"umožňuje pridávať záložky do dokumentov zobrazených v režime prehliadania "
 
+#~ msgid "Cannot copy file name for place markers"
+#~ msgstr "Nie je možné skopírovať názov súboru so záložkami"
+
+#~ msgid "Place markers file name copied to clipboard"
+#~ msgstr "Názov súboru so záložkami skopírovaný do schránky"
+
+#~ msgid "Bookmark cannot be saved"
+#~ msgstr "Záložku sa nepodarilo uložiť"
+
+#~ msgid "Bookmark cannot be deleted"
+#~ msgstr "Záložku nie je možné odstrániť"
+
+#, fuzzy
+#~ msgid "Cannot find any bookmarks"
+#~ msgstr "Nie je možné nájsť žiadne záložky"
