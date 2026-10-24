@@ -209,4 +209,3 @@ placemarkers.
   Perzština, Portugalčina, španielčina, slovenčina, slovinčina, Tamilčina.
 
 [[!tag dev stable]]
-
